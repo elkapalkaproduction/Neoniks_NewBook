@@ -1,0 +1,24 @@
+//
+//  World.pch
+//  World
+//
+//  Created by Andrei Vidrasco on 2/2/15.
+//  Copyright (c) 2015 Andrei Vidrasco. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <UIKit/UIKit.h>
+#import "UIFont+CustomFonts.h"
+#import "UIColor+SystemColors.h"
+#import "NSBundle+Language.h"
+#import "UIDevice+ScreenSize.h"
+
+#endif

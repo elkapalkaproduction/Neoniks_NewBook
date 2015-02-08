@@ -1,0 +1,108 @@
+
+//Answers Question1
+"q0_title" = "Question # 1";
+"q0_question" = "Magic wand is a good instrument";
+"q0_answer_0" = "to scratch your back";
+"q0_answer_1" = "to beat the dust out\nof the carpet";
+"q0_answer_2" = "to eat sushi with";
+"q0_answer_3" = "to increase magic force";
+
+//Answers Question2
+"q1_title" = "Question # 2";
+"q1_question" = "A dragon is";
+"q1_answer_0" = "a powerful insecticide";
+"q1_answer_1" = "a fire-breathing reptile";
+"q1_answer_2" = "a fireproof brick";
+"q1_answer_3" = "a bully in kindergarten";
+
+//Answers Question3
+"q2_title" = "Question # 3";
+"q2_question" = "Will Power helps a wizard";
+"q2_answer_0" = "to wiggle his or her ears";
+"q2_answer_1" = "to open a fridge";
+"q2_answer_2" = "to control magic";
+"q2_answer_3" = "to lift a barbell";
+
+//Answers Question4
+"q3_title" = "Question # 4";
+"q3_question" = "You shouldn’t do the following with a ball of magic";
+"q3_answer_0" = "keep it next to\na demonite rock";
+"q3_answer_1" = "use it as a battery";
+"q3_answer_2" = "keep it in a little flask";
+"q3_answer_3" = "exchange it for an ice-cream\nor any other commodity";
+
+//Answers Question5
+"q4_title" = "Question # 5";
+"q4_question" = "Magic words are used";
+"q4_answer_0" = "after someone sneezes";
+"q4_answer_1" = "when someone forgets\nto lock the bathroom door";
+"q4_answer_2" = "when someone gets stuck\nin an elevator";
+"q4_answer_3" = "when someone casts\na magic spell";
+
+//Answers Question6
+"q5_title" = "Question # 6";
+"q5_question" = "Neoniks are";
+"q5_answer_0" = "magical people with wings";
+"q5_answer_1" = "luminous tubes\nin the neon street signs";
+"q5_answer_2" = "tropical fish";
+"q5_answer_3" = "trendy sneakers";
+
+//Answers Question7
+"q6_title" = "Question # 7";
+"q6_question" = "Muses do the following";
+"q6_answer_0" = "study at musical classes";
+"q6_answer_1" = "inspire poets and artists\nto new works of art";
+"q6_answer_2" = "work as guards at the\nUnnatural History Museum";
+"q6_answer_3" = "cause blisters\non dragons’ wings";
+
+//Answers Question8
+"q7_title" = "Question # 8";
+"q7_question" = "Magical lacegrass will wither away unless you";
+"q7_answer_0" = "feed it with cake crumbs";
+"q7_answer_1" = "water it with perfume";
+"q7_answer_2" = "compliment it";
+"q7_answer_3" = "all of the above";
+
+//Answers Question9
+"q8_title" = "Question # 9";
+"q8_question" = "Kids go to the Magic School to learn how to";
+"q8_answer_0" = "become a professional\nvillain";
+"q8_answer_1" = "graffiti a school wall\nin 5 minutes";
+"q8_answer_2" = "knit socks using\nyour magic force";
+"q8_answer_3" = "tickle passersby and\nget away with it";
+
+//Answers Question10
+"q9_title" = "Question # 10";
+"q9_question" = "If you meet a walking skeleton, you should";
+"q9_answer_0" = "visit a doctor";
+"q9_answer_1" = "run away screaming,\n“Mommy!”";
+"q9_answer_2" = "say “Hi!” and\nkeep going your way";
+"q9_answer_3" = "try to wake up";
+
+
+
+/////Images
+"q2_answer_img" = "q2_answer_img_en";
+"video_title" = "video_title_en";
+"shadow_name_1" = "shadow_name_1_en";
+"shadow_name_2" = "shadow_name_2_en";
+"shadow_name_3" = "shadow_name_3_en";
+"shadow_name_4" = "shadow_name_4_en";
+"shadow_name_5" = "shadow_name_5_en";
+"shadow_name_6" = "shadow_name_6_en";
+"shadow_name_7" = "shadow_name_7_en";
+"shadow_name_8" = "shadow_name_8_en";
+"shadow_title" = "shadow_title_en";
+"start_video_path" = "https://www.dropbox.com/sm/playlist/0smioq97vbrcx50/Neoniks.eng.mp4?secure_hash=";
+///////////
+
+
+
+"shadow_description_1" = "Jay is a 10-year-old who dreams of becoming a mighty wizard. His greatest achievement is creating a tiny talking fox Mystie.";
+"shadow_description_2" = "Wanda is a magic wand. She flunked out of the Magic Wand College, so her skills are not as impressive as her looks.";
+"shadow_description_3" = "Mystie is a magic talking fox. She is so tiny she can wrap herself around your wrist like a bracelet.";
+"shadow_description_4" = "Justacreep used to be a promising actor but he committed a horrible crime and was stripped of his magic powers. Since then, no theater wants anything to do with him.";
+"shadow_description_5" = "Justacreep wears a fur coat with a talking lion head on its collar. But it’s  urcoat who is really in charge.";
+"shadow_description_6" = "Phoebe is a 12-year-old who dreams of becoming a muse. Muses are magic beauties who inspire poets and artists to new works of art.";
+"shadow_description_7" = "Greedy Miner found enormous reserves of magic hidden underground. His greed exhausted him so much that his body shriveled up and he turned into a skeleton.";
+"shadow_description_8" = "Young dragon named Harold works as a billposter. He doesn't know how to fly but he can run very fast, even up and down walls.";

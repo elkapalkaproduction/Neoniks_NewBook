@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>character1</key>
+	<dict>
+		<key>shadow_character1_part1</key>
+		<string>{{279, 108}, {208, 186}}</string>
+		<key>shadow_character1_part10</key>
+		<string>{{327, 626}, {74, 249}}</string>
+		<key>shadow_character1_part11</key>
+		<string>{{374, 568}, {139, 286}}</string>
+		<key>shadow_character1_part2</key>
+		<string>{{279, 196}, {175, 132}}</string>
+		<key>shadow_character1_part3</key>
+		<string>{{442, 390}, {75, 207}}</string>
+		<key>shadow_character1_part4</key>
+		<string>{{445, 848}, {95, 122}}</string>
+		<key>shadow_character1_part5</key>
+		<string>{{478, 952}, {88, 59}}</string>
+		<key>shadow_character1_part6</key>
+		<string>{{244, 845}, {159, 153}}</string>
+		<key>shadow_character1_part7</key>
+		<string>{{339, 312}, {140, 169}}</string>
+		<key>shadow_character1_part8</key>
+		<string>{{302, 379}, {134, 140}}</string>
+		<key>shadow_character1_part9</key>
+		<string>{{266, 469}, {181, 218}}</string>
+	</dict>
+	<key>character2</key>
+	<dict>
+		<key>shadow_character2_part1</key>
+		<string>{{352, 134}, {134, 68}}</string>
+		<key>shadow_character2_part10</key>
+		<string>{{280, 516}, {260, 111}}</string>
+		<key>shadow_character2_part11</key>
+		<string>{{323, 469}, {192, 73}}</string>
+		<key>shadow_character2_part12</key>
+		<string>{{286, 596}, {269, 119}}</string>
+		<key>shadow_character2_part13</key>
+		<string>{{295, 663}, {257, 114}}</string>
+		<key>shadow_character2_part2</key>
+		<string>{{321, 167}, {189, 77}}</string>
+		<key>shadow_character2_part3</key>
+		<string>{{311, 230}, {204, 93}}</string>
+		<key>shadow_character2_part4</key>
+		<string>{{308, 294}, {213, 83}}</string>
+		<key>shadow_character2_part5</key>
+		<string>{{288, 354}, {221, 73}}</string>
+		<key>shadow_character2_part6</key>
+		<string>{{239, 413}, {91, 146}}</string>
+		<key>shadow_character2_part7</key>
+		<string>{{305, 401}, {204, 99}}</string>
+		<key>shadow_character2_part8</key>
+		<string>{{384, 852}, {78, 182}}</string>
+		<key>shadow_character2_part9</key>
+		<string>{{309, 754}, {218, 110}}</string>
+	</dict>
+	<key>character3</key>
+	<dict>
+		<key>shadow_character3_part1</key>
+		<string>{{274, 176}, {140, 125}}</string>
+		<key>shadow_character3_part10</key>
+		<string>{{274, 625}, {222, 157}}</string>
+		<key>shadow_character3_part11</key>
+		<string>{{128, 633}, {168, 176}}</string>
+		<key>shadow_character3_part12</key>
+		<string>{{486, 788}, {195, 161}}</string>
+		<key>shadow_character3_part13</key>
+		<string>{{314, 747}, {196, 215}}</string>
+		<key>shadow_character3_part14</key>
+		<string>{{128, 786}, {90, 155}}</string>
+		<key>shadow_character3_part15</key>
+		<string>{{196, 747}, {147, 214}}</string>
+		<key>shadow_character3_part2</key>
+		<string>{{423, 220}, {157, 101}}</string>
+		<key>shadow_character3_part3</key>
+		<string>{{175, 293}, {116, 157}}</string>
+		<key>shadow_character3_part4</key>
+		<string>{{274, 278}, {219, 123}}</string>
+		<key>shadow_character3_part5</key>
+		<string>{{445, 306}, {156, 151}}</string>
+		<key>shadow_character3_part6</key>
+		<string>{{376, 391}, {183, 180}}</string>
+		<key>shadow_character3_part7</key>
+		<string>{{200, 365}, {194, 204}}</string>
+		<key>shadow_character3_part8</key>
+		<string>{{469, 655}, {219, 182}}</string>
+		<key>shadow_character3_part9</key>
+		<string>{{298, 525}, {213, 154}}</string>
+	</dict>
+	<key>character4</key>
+	<dict>
+		<key>shadow_character4_part1</key>
+		<string>{{246, 53}, {112, 94}}</string>
+		<key>shadow_character4_part10</key>
+		<string>{{414, 738}, {162, 180}}</string>
+		<key>shadow_character4_part11</key>
+		<string>{{371, 598}, {93, 153}}</string>
+		<key>shadow_character4_part12</key>
+		<string>{{397, 519}, {71, 108}}</string>
+		<key>shadow_character4_part13</key>
+		<string>{{342, 466}, {65, 146}}</string>
+		<key>shadow_character4_part14</key>
+		<string>{{380, 447}, {104, 92}}</string>
+		<key>shadow_character4_part15</key>
+		<string>{{215, 739}, {117, 162}}</string>
+		<key>shadow_character4_part16</key>
+		<string>{{194, 507}, {103, 247}}</string>
+		<key>shadow_character4_part17</key>
+		<string>{{227, 127}, {150, 75}}</string>
+		<key>shadow_character4_part18</key>
+		<string>{{126, 322}, {97, 191}}</string>
+		<key>shadow_character4_part19</key>
+		<string>{{164, 498}, {78, 105}}</string>
+		<key>shadow_character4_part2</key>
+		<string>{{297, 764}, {166, 164}}</string>
+		<key>shadow_character4_part20</key>
+		<string>{{216, 394}, {88, 151}}</string>
+		<key>shadow_character4_part21</key>
+		<string>{{272, 371}, {197, 122}}</string>
+		<key>shadow_character4_part22</key>
+		<string>{{256, 315}, {177, 87}}</string>
+		<key>shadow_character4_part23</key>
+		<string>{{325, 156}, {123, 166}}</string>
+		<key>shadow_character4_part24</key>
+		<string>{{232, 165}, {121, 157}}</string>
+		<key>shadow_character4_part3</key>
+		<string>{{251, 479}, {125, 182}}</string>
+		<key>shadow_character4_part4</key>
+		<string>{{270, 608}, {152, 183}}</string>
+		<key>shadow_character4_part5</key>
+		<string>{{212, 880}, {138, 178}}</string>
+		<key>shadow_character4_part6</key>
+		<string>{{332, 892}, {154, 144}}</string>
+		<key>shadow_character4_part7</key>
+		<string>{{473, 946}, {219, 105}}</string>
+		<key>shadow_character4_part8</key>
+		<string>{{464, 902}, {153, 116}}</string>
+		<key>shadow_character4_part9</key>
+		<string>{{417, 1025}, {74, 55}}</string>
+	</dict>
+	<key>character5</key>
+	<dict>
+		<key>shadow_character5_part1</key>
+		<string>{{368, 190}, {262, 134}}</string>
+		<key>shadow_character5_part10</key>
+		<string>{{400, 474}, {218, 199}}</string>
+		<key>shadow_character5_part11</key>
+		<string>{{144, 457}, {340, 319}}</string>
+		<key>shadow_character5_part12</key>
+		<string>{{432, 749}, {306, 178}}</string>
+		<key>shadow_character5_part13</key>
+		<string>{{321, 658}, {311, 224}}</string>
+		<key>shadow_character5_part14</key>
+		<string>{{494, 510}, {283, 329}}</string>
+		<key>shadow_character5_part2</key>
+		<string>{{230, 189}, {177, 156}}</string>
+		<key>shadow_character5_part3</key>
+		<string>{{142, 313}, {199, 165}}</string>
+		<key>shadow_character5_part4</key>
+		<string>{{329, 280}, {184, 194}}</string>
+		<key>shadow_character5_part5</key>
+		<string>{{495, 313}, {127, 173}}</string>
+		<key>shadow_character5_part6</key>
+		<string>{{40, 771}, {234, 165}}</string>
+		<key>shadow_character5_part7</key>
+		<string>{{82, 634}, {218, 205}}</string>
+		<key>shadow_character5_part8</key>
+		<string>{{177, 718}, {266, 209}}</string>
+		<key>shadow_character5_part9</key>
+		<string>{{330, 462}, {184, 104}}</string>
+	</dict>
+	<key>character6</key>
+	<dict>
+		<key>shadow_character6_part1</key>
+		<string>{{334, 108}, {187, 90}}</string>
+		<key>shadow_character6_part10</key>
+		<string>{{277, 914}, {154, 87}}</string>
+		<key>shadow_character6_part11</key>
+		<string>{{360, 803}, {59, 136}}</string>
+		<key>shadow_character6_part12</key>
+		<string>{{333, 679}, {83, 160}}</string>
+		<key>shadow_character6_part13</key>
+		<string>{{293, 523}, {239, 125}}</string>
+		<key>shadow_character6_part14</key>
+		<string>{{371, 565}, {235, 150}}</string>
+		<key>shadow_character6_part15</key>
+		<string>{{199, 546}, {208, 153}}</string>
+		<key>shadow_character6_part2</key>
+		<string>{{302, 163}, {220, 87}}</string>
+		<key>shadow_character6_part3</key>
+		<string>{{281, 229}, {157, 177}}</string>
+		<key>shadow_character6_part4</key>
+		<string>{{401, 196}, {176, 219}}</string>
+		<key>shadow_character6_part5</key>
+		<string>{{333, 346}, {187, 158}}</string>
+		<key>shadow_character6_part6</key>
+		<string>{{394, 445}, {206, 130}}</string>
+		<key>shadow_character6_part7</key>
+		<string>{{215, 411}, {199, 142}}</string>
+		<key>shadow_character6_part8</key>
+		<string>{{501, 931}, {87, 98}}</string>
+		<key>shadow_character6_part9</key>
+		<string>{{445, 696}, {116, 245}}</string>
+	</dict>
+	<key>character7</key>
+	<dict>
+		<key>shadow_character7_part1</key>
+		<string>{{102, 804}, {107, 235}}</string>
+		<key>shadow_character7_part10</key>
+		<string>{{193, 473}, {137, 151}}</string>
+		<key>shadow_character7_part11</key>
+		<string>{{402, 106}, {152, 121}}</string>
+		<key>shadow_character7_part12</key>
+		<string>{{366, 156}, {144, 144}}</string>
+		<key>shadow_character7_part13</key>
+		<string>{{440, 167}, {130, 192}}</string>
+		<key>shadow_character7_part14</key>
+		<string>{{243, 432}, {145, 185}}</string>
+		<key>shadow_character7_part15</key>
+		<string>{{206, 301}, {155, 217}}</string>
+		<key>shadow_character7_part16</key>
+		<string>{{288, 254}, {215, 187}}</string>
+		<key>shadow_character7_part17</key>
+		<string>{{297, 309}, {161, 312}}</string>
+		<key>shadow_character7_part18</key>
+		<string>{{436, 360}, {85, 281}}</string>
+		<key>shadow_character7_part19</key>
+		<string>{{492, 495}, {125, 119}}</string>
+		<key>shadow_character7_part2</key>
+		<string>{{292, 916}, {206, 98}}</string>
+		<key>shadow_character7_part20</key>
+		<string>{{593, 431}, {142, 160}}</string>
+		<key>shadow_character7_part3</key>
+		<string>{{265, 671}, {106, 176}}</string>
+		<key>shadow_character7_part4</key>
+		<string>{{145, 698}, {79, 231}}</string>
+		<key>shadow_character7_part5</key>
+		<string>{{125, 969}, {111, 81}}</string>
+		<key>shadow_character7_part6</key>
+		<string>{{294, 726}, {111, 234}}</string>
+		<key>shadow_character7_part7</key>
+		<string>{{288, 608}, {146, 184}}</string>
+		<key>shadow_character7_part8</key>
+		<string>{{283, 508}, {109, 192}}</string>
+		<key>shadow_character7_part9</key>
+		<string>{{197, 550}, {65, 228}}</string>
+	</dict>
+	<key>character8</key>
+	<dict>
+		<key>shadow_character8_part1</key>
+		<string>{{305, 54}, {189, 165}}</string>
+		<key>shadow_character8_part10</key>
+		<string>{{158, 733}, {150, 158}}</string>
+		<key>shadow_character8_part11</key>
+		<string>{{138, 665}, {200, 105}}</string>
+		<key>shadow_character8_part12</key>
+		<string>{{320, 786}, {104, 97}}</string>
+		<key>shadow_character8_part13</key>
+		<string>{{459, 787}, {92, 104}}</string>
+		<key>shadow_character8_part14</key>
+		<string>{{339, 702}, {85, 97}}</string>
+		<key>shadow_character8_part15</key>
+		<string>{{458, 722}, {90, 96}}</string>
+		<key>shadow_character8_part16</key>
+		<string>{{233, 600}, {213, 139}}</string>
+		<key>shadow_character8_part17</key>
+		<string>{{287, 499}, {68, 139}}</string>
+		<key>shadow_character8_part18</key>
+		<string>{{314, 403}, {92, 127}}</string>
+		<key>shadow_character8_part19</key>
+		<string>{{343, 283}, {144, 169}}</string>
+		<key>shadow_character8_part2</key>
+		<string>{{329, 177}, {165, 118}}</string>
+		<key>shadow_character8_part20</key>
+		<string>{{415, 336}, {140, 114}}</string>
+		<key>shadow_character8_part21</key>
+		<string>{{393, 417}, {148, 86}}</string>
+		<key>shadow_character8_part22</key>
+		<string>{{501, 473}, {68, 154}}</string>
+		<key>shadow_character8_part23</key>
+		<string>{{507, 607}, {65, 103}}</string>
+		<key>shadow_character8_part24</key>
+		<string>{{372, 572}, {168, 167}}</string>
+		<key>shadow_character8_part25</key>
+		<string>{{389, 476}, {129, 120}}</string>
+		<key>shadow_character8_part3</key>
+		<string>{{311, 230}, {154, 146}}</string>
+		<key>shadow_character8_part4</key>
+		<string>{{504, 916}, {181, 117}}</string>
+		<key>shadow_character8_part5</key>
+		<string>{{409, 869}, {105, 117}}</string>
+		<key>shadow_character8_part6</key>
+		<string>{{445, 974}, {134, 85}}</string>
+		<key>shadow_character8_part7</key>
+		<string>{{282, 857}, {145, 107}}</string>
+		<key>shadow_character8_part8</key>
+		<string>{{286, 956}, {121, 111}}</string>
+		<key>shadow_character8_part9</key>
+		<string>{{191, 814}, {106, 158}}</string>
+	</dict>
+</dict>
+</plist>
