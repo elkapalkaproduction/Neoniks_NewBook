@@ -51,8 +51,8 @@ const CGFloat ShapedButtonAlphaVisibleThreshold = 0.1f;
     CGSize bSize = self.bounds.size;
     point.x *= (bSize.width != 0) ? (iSize.width / bSize.width) : 1;
     point.y *= (bSize.height != 0) ? (iSize.height / bSize.height) : 1;
-
-    UIColor *pixelColor = [self colorAtPixel:point inImage:image];
+    
+    UIColor *pixelColor = [image colorAtPixel:point];
     CGFloat alpha = 0.0;
 
     if ([pixelColor respondsToSelector:@selector(getRed:green:blue:alpha:)]) {
@@ -131,42 +131,5 @@ const CGFloat ShapedButtonAlphaVisibleThreshold = 0.1f;
 }
 
 
-- (UIColor *)colorAtPixel:(CGPoint)point inImage:(UIImage *)image {
-    if (!CGRectContainsPoint(CGRectMake(0.0f, 0.0f, image.size.width, image.size.height), point)) {
-        return nil;
-    }
-    NSInteger pointX = trunc(point.x);
-    NSInteger pointY = trunc(point.y);
-    CGImageRef cgImage = image.CGImage;
-    NSUInteger width = image.size.width;
-    NSUInteger height = image.size.height;
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    int bytesPerPixel = 4;
-    int bytesPerRow = bytesPerPixel * 1;
-    NSUInteger bitsPerComponent = 8;
-    unsigned char pixelData[4] = {0, 0, 0, 0};
-    CGContextRef context = CGBitmapContextCreate(pixelData,
-                                                 1,
-                                                 1,
-                                                 bitsPerComponent,
-                                                 bytesPerRow,
-                                                 colorSpace,
-                                                 kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
-    CGColorSpaceRelease(colorSpace);
-    CGContextSetBlendMode(context, kCGBlendModeCopy);
-
-    // Draw the pixel we are interested in onto the bitmap context
-    CGContextTranslateCTM(context, -pointX, pointY - (CGFloat)height);
-    CGContextDrawImage(context, CGRectMake(0.0f, 0.0f, (CGFloat)width, (CGFloat)height), cgImage);
-    CGContextRelease(context);
-
-    // Convert color values [0..255] to floats [0.0..1.0]
-    CGFloat red   = (CGFloat)pixelData[0] / 255.0f;
-    CGFloat green = (CGFloat)pixelData[1] / 255.0f;
-    CGFloat blue  = (CGFloat)pixelData[2] / 255.0f;
-    CGFloat alpha = (CGFloat)pixelData[3] / 255.0f;
-
-    return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
-}
 
 @end

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */; };
 		75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423AA21A7D8A4000D2C36E /* BaseViewController.m */; };
+		75635ADE1AABBEAA005BD4CB /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */; };
 		757E93DB1A7E2DEE000B2537 /* MagicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757E93DA1A7E2DEE000B2537 /* MagicTableViewController.m */; };
 		75C12A651A754B6C0075FD8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A641A754B6C0075FD8D /* main.m */; };
 		75C12A681A754B6C0075FD8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A671A754B6C0075FD8D /* AppDelegate.m */; };
@@ -199,6 +200,10 @@
 		75E237861A85645100BE6540 /* Answers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75E237851A85645100BE6540 /* Answers.plist */; };
 		75E86E231A82BE3F00419776 /* NNKShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E86E221A82BE3F00419776 /* NNKShapedButton.m */; };
 		75E86E321A82C06800419776 /* DragableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E86E311A82C06800419776 /* DragableButton.m */; };
+		75EBF3241AAB6948005F5E8C /* IslandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBF3231AAB6948005F5E8C /* IslandViewController.m */; };
+		75EBF3271AAB7BB4005F5E8C /* UIImage+Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBF3261AAB7BB4005F5E8C /* UIImage+Colors.m */; };
+		75EBF32A1AAB7D29005F5E8C /* IslandViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBF3291AAB7D29005F5E8C /* IslandViewModel.m */; };
+		75EBF3601AAB7F5A005F5E8C /* answers_colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75EBF35F1AAB7F5A005F5E8C /* answers_colors.plist */; };
 		75EC14161A7ECF460086803E /* MagicSchoolAnswersHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EC14151A7ECF460086803E /* MagicSchoolAnswersHandler.m */; };
 		75EDA1841A83FBCA002546E0 /* shadow_wrong_position.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75EDA1831A83FBCA002546E0 /* shadow_wrong_position.plist */; };
 		75EDA1871A83FE7E002546E0 /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDA1861A83FE7E002546E0 /* Storage.m */; };
@@ -221,6 +226,8 @@
 		75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolOfMagicViewController.m; sourceTree = "<group>"; };
 		75423AA11A7D8A4000D2C36E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		75423AA21A7D8A4000D2C36E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		75635ADC1AABBEA9005BD4CB /* PopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpViewController.h; sourceTree = "<group>"; };
+		75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpViewController.m; sourceTree = "<group>"; };
 		757E93D91A7E2DEE000B2537 /* MagicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicTableViewController.h; sourceTree = "<group>"; };
 		757E93DA1A7E2DEE000B2537 /* MagicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicTableViewController.m; sourceTree = "<group>"; };
 		75C12A5F1A754B6C0075FD8D /* World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = World.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -428,6 +435,13 @@
 		75E86E221A82BE3F00419776 /* NNKShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKShapedButton.m; sourceTree = "<group>"; };
 		75E86E301A82C06800419776 /* DragableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragableButton.h; sourceTree = "<group>"; };
 		75E86E311A82C06800419776 /* DragableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragableButton.m; sourceTree = "<group>"; };
+		75EBF3221AAB6948005F5E8C /* IslandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IslandViewController.h; sourceTree = "<group>"; };
+		75EBF3231AAB6948005F5E8C /* IslandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IslandViewController.m; sourceTree = "<group>"; };
+		75EBF3251AAB7BB4005F5E8C /* UIImage+Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Colors.h"; sourceTree = "<group>"; };
+		75EBF3261AAB7BB4005F5E8C /* UIImage+Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Colors.m"; sourceTree = "<group>"; };
+		75EBF3281AAB7D29005F5E8C /* IslandViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IslandViewModel.h; sourceTree = "<group>"; };
+		75EBF3291AAB7D29005F5E8C /* IslandViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IslandViewModel.m; sourceTree = "<group>"; };
+		75EBF35F1AAB7F5A005F5E8C /* answers_colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = answers_colors.plist; sourceTree = "<group>"; };
 		75EC14141A7ECF460086803E /* MagicSchoolAnswersHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicSchoolAnswersHandler.h; sourceTree = "<group>"; };
 		75EC14151A7ECF460086803E /* MagicSchoolAnswersHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicSchoolAnswersHandler.m; sourceTree = "<group>"; };
 		75EDA1831A83FBCA002546E0 /* shadow_wrong_position.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shadow_wrong_position.plist; sourceTree = "<group>"; };
@@ -457,6 +471,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		759320F21AAC8D6E009E75E0 /* Island */ = {
+			isa = PBXGroup;
+			children = (
+				75EBF3221AAB6948005F5E8C /* IslandViewController.h */,
+				75EBF3231AAB6948005F5E8C /* IslandViewController.m */,
+				75EBF3281AAB7D29005F5E8C /* IslandViewModel.h */,
+				75EBF3291AAB7D29005F5E8C /* IslandViewModel.m */,
+				75635ADC1AABBEA9005BD4CB /* PopUpViewController.h */,
+				75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */,
+				75EBF35F1AAB7F5A005F5E8C /* answers_colors.plist */,
+			);
+			name = Island;
+			sourceTree = "<group>";
+		};
 		75C12A561A754B6C0075FD8D = {
 			isa = PBXGroup;
 			children = (
@@ -485,6 +513,7 @@
 				75423AA21A7D8A4000D2C36E /* BaseViewController.m */,
 				75C12A691A754B6C0075FD8D /* ViewController.h */,
 				75C12A6A1A754B6C0075FD8D /* ViewController.m */,
+				759320F21AAC8D6E009E75E0 /* Island */,
 				75EDA1991A841D1B002546E0 /* Video View Controller */,
 				75DFE0C51A80099B00CE9E69 /* SchoolOfMagic */,
 				75EDA1881A840665002546E0 /* ShadowPlay */,
@@ -836,6 +865,8 @@
 				75E237651A85454B00BE6540 /* UIFont+CustomFonts.m */,
 				75E237691A854BD800BE6540 /* UIColor+SystemColors.h */,
 				75E2376A1A854BD800BE6540 /* UIColor+SystemColors.m */,
+				75EBF3251AAB7BB4005F5E8C /* UIImage+Colors.h */,
+				75EBF3261AAB7BB4005F5E8C /* UIImage+Colors.m */,
 				75E237721A8557CA00BE6540 /* NSBundle+Language.h */,
 				75E237731A8557CA00BE6540 /* NSBundle+Language.m */,
 				75F1DB1E1A86D758005ACBA7 /* UIDevice+ScreenSize.h */,
@@ -978,6 +1009,7 @@
 				75DFE1041A800CE500CE9E69 /* Shadow_portret_border_2.png in Resources */,
 				75DC68061A816AA100D6A553 /* shadow_character7_part2.png in Resources */,
 				75DC67FE1A816AA100D6A553 /* shadow_character7_part12.png in Resources */,
+				75EBF3601AAB7F5A005F5E8C /* answers_colors.plist in Resources */,
 				75DC67A41A816AA100D6A553 /* shadow_character1_part4.png in Resources */,
 				75DC67D51A816AA100D6A553 /* shadow_character4_part23.png in Resources */,
 				75DC67CB1A816AA100D6A553 /* shadow_character4_part14.png in Resources */,
@@ -1151,6 +1183,9 @@
 				75E86E321A82C06800419776 /* DragableButton.m in Sources */,
 				75DC66C91A814F9300D6A553 /* ShadowPlayOpenedHandler.m in Sources */,
 				75E2376B1A854BD800BE6540 /* UIColor+SystemColors.m in Sources */,
+				75EBF32A1AAB7D29005F5E8C /* IslandViewModel.m in Sources */,
+				75EBF3271AAB7BB4005F5E8C /* UIImage+Colors.m in Sources */,
+				75EBF3241AAB6948005F5E8C /* IslandViewController.m in Sources */,
 				75EC14161A7ECF460086803E /* MagicSchoolAnswersHandler.m in Sources */,
 				75F1DB201A86D758005ACBA7 /* UIDevice+ScreenSize.m in Sources */,
 				75DFE0C91A8009C800CE9E69 /* CharacterShadowViewController.m in Sources */,
@@ -1158,6 +1193,7 @@
 				75E237661A85454B00BE6540 /* UIFont+CustomFonts.m in Sources */,
 				75E237741A8557CA00BE6540 /* NSBundle+Language.m in Sources */,
 				75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */,
+				75635ADE1AABBEAA005BD4CB /* PopUpViewController.m in Sources */,
 				75C12A681A754B6C0075FD8D /* AppDelegate.m in Sources */,
 				75C12A651A754B6C0075FD8D /* main.m in Sources */,
 			);

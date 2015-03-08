@@ -20,5 +20,6 @@
 #import "UIColor+SystemColors.h"
 #import "NSBundle+Language.h"
 #import "UIDevice+ScreenSize.h"
+#import "UIImage+Colors.h"
 
 #endif
