@@ -11,6 +11,8 @@
 		75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423AA21A7D8A4000D2C36E /* BaseViewController.m */; };
 		75635ADE1AABBEAA005BD4CB /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */; };
 		757E93DB1A7E2DEE000B2537 /* MagicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757E93DA1A7E2DEE000B2537 /* MagicTableViewController.m */; };
+		7597094C1AC8901000FFB11E /* TopBarIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7597094B1AC8901000FFB11E /* TopBarIconViewController.m */; };
+		7597094E1AC8947900FFB11E /* TopBarIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7597094D1AC8947900FFB11E /* TopBarIconViewController.xib */; };
 		75C12A651A754B6C0075FD8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A641A754B6C0075FD8D /* main.m */; };
 		75C12A681A754B6C0075FD8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A671A754B6C0075FD8D /* AppDelegate.m */; };
 		75C12A6B1A754B6C0075FD8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A6A1A754B6C0075FD8D /* ViewController.m */; };
@@ -18,6 +20,7 @@
 		75C12A701A754B6C0075FD8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A6F1A754B6C0075FD8D /* Images.xcassets */; };
 		75C12A731A754B6C0075FD8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A711A754B6C0075FD8D /* LaunchScreen.xib */; };
 		75C12A7F1A754B6D0075FD8D /* WorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A7E1A754B6D0075FD8D /* WorldTests.m */; };
+		75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D268FD1AC3448B00A17632 /* InfiniteTableView.m */; };
 		75DC66C91A814F9300D6A553 /* ShadowPlayOpenedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DC66C81A814F9300D6A553 /* ShadowPlayOpenedHandler.m */; };
 		75DC66DB1A81520A00D6A553 /* full_portret_color_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CB1A81520A00D6A553 /* full_portret_color_1.png */; };
 		75DC66DC1A81520A00D6A553 /* full_portret_color_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CC1A81520A00D6A553 /* full_portret_color_2.png */; };
@@ -230,6 +233,9 @@
 		75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpViewController.m; sourceTree = "<group>"; };
 		757E93D91A7E2DEE000B2537 /* MagicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicTableViewController.h; sourceTree = "<group>"; };
 		757E93DA1A7E2DEE000B2537 /* MagicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicTableViewController.m; sourceTree = "<group>"; };
+		7597094A1AC8901000FFB11E /* TopBarIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopBarIconViewController.h; sourceTree = "<group>"; };
+		7597094B1AC8901000FFB11E /* TopBarIconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopBarIconViewController.m; sourceTree = "<group>"; };
+		7597094D1AC8947900FFB11E /* TopBarIconViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopBarIconViewController.xib; sourceTree = "<group>"; };
 		75C12A5F1A754B6C0075FD8D /* World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = World.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C12A631A754B6C0075FD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75C12A641A754B6C0075FD8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -243,6 +249,8 @@
 		75C12A781A754B6D0075FD8D /* WorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C12A7D1A754B6D0075FD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75C12A7E1A754B6D0075FD8D /* WorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorldTests.m; sourceTree = "<group>"; };
+		75D268FC1AC3448B00A17632 /* InfiniteTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteTableView.h; sourceTree = "<group>"; };
+		75D268FD1AC3448B00A17632 /* InfiniteTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteTableView.m; sourceTree = "<group>"; };
 		75DC66C71A814F9300D6A553 /* ShadowPlayOpenedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowPlayOpenedHandler.h; sourceTree = "<group>"; };
 		75DC66C81A814F9300D6A553 /* ShadowPlayOpenedHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowPlayOpenedHandler.m; sourceTree = "<group>"; };
 		75DC66CB1A81520A00D6A553 /* full_portret_color_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_1.png; sourceTree = "<group>"; };
@@ -513,6 +521,9 @@
 				75423AA21A7D8A4000D2C36E /* BaseViewController.m */,
 				75C12A691A754B6C0075FD8D /* ViewController.h */,
 				75C12A6A1A754B6C0075FD8D /* ViewController.m */,
+				7597094A1AC8901000FFB11E /* TopBarIconViewController.h */,
+				7597094B1AC8901000FFB11E /* TopBarIconViewController.m */,
+				7597094D1AC8947900FFB11E /* TopBarIconViewController.xib */,
 				759320F21AAC8D6E009E75E0 /* Island */,
 				75EDA1991A841D1B002546E0 /* Video View Controller */,
 				75DFE0C51A80099B00CE9E69 /* SchoolOfMagic */,
@@ -884,6 +895,8 @@
 				75E86E311A82C06800419776 /* DragableButton.m */,
 				75E86E211A82BE3F00419776 /* NNKShapedButton.h */,
 				75E86E221A82BE3F00419776 /* NNKShapedButton.m */,
+				75D268FC1AC3448B00A17632 /* InfiniteTableView.h */,
+				75D268FD1AC3448B00A17632 /* InfiniteTableView.m */,
 			);
 			path = "Custom Classes";
 			sourceTree = "<group>";
@@ -1055,6 +1068,7 @@
 				75DC67DB1A816AA100D6A553 /* shadow_character4_part7.png in Resources */,
 				75DC67DE1A816AA100D6A553 /* shadow_character5_part1.png in Resources */,
 				75DC67EE1A816AA100D6A553 /* shadow_character6_part11.png in Resources */,
+				7597094E1AC8947900FFB11E /* TopBarIconViewController.xib in Resources */,
 				75DC67F21A816AA100D6A553 /* shadow_character6_part15.png in Resources */,
 				75DC67F31A816AA100D6A553 /* shadow_character6_part2.png in Resources */,
 				75DC67AE1A816AA100D6A553 /* shadow_character2_part13.png in Resources */,
@@ -1178,6 +1192,8 @@
 				75C12A6B1A754B6C0075FD8D /* ViewController.m in Sources */,
 				75EDA1871A83FE7E002546E0 /* Storage.m in Sources */,
 				757E93DB1A7E2DEE000B2537 /* MagicTableViewController.m in Sources */,
+				75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */,
+				7597094C1AC8901000FFB11E /* TopBarIconViewController.m in Sources */,
 				75DFE1101A800D6200CE9E69 /* ShadowPlayViewController.m in Sources */,
 				75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */,
 				75E86E321A82C06800419776 /* DragableButton.m in Sources */,

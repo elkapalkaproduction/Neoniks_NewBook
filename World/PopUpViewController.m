@@ -40,7 +40,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.label.font = [UIFont questionFontOfSize:16.f];
+    self.label.font = [UIFont baseFontOfSize:16.f];
     UILabel *label = self.label;
     label.layer.shadowColor = [[UIColor blackColor] CGColor];
     label.layer.shadowOffset = CGSizeMake(1.5f, 2.0);

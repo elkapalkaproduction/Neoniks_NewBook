@@ -41,7 +41,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.shadowElements = [[NSMutableArray alloc] init];
-    self.descriptionLabel.font = [UIFont questionFontOfSize:[UIDevice isIpad] ? 30 : 18];
+    self.descriptionLabel.font = [UIFont baseFontOfSize:[UIDevice isIpad] ? 30 : 18];
     self.bannerImage.image = [UIImage imageNamed:NSLocalizedString(NSPImageNameTitle, nil)];
     self.loadedCharacter = ShadowCharacterJay;
 }
@@ -88,12 +88,6 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     NSString *path = [[NSBundle mainBundle] pathForResource:NSPFileNameCorrectPosition ofType:nil];
     
     return [[NSDictionary alloc] initWithContentsOfFile:path];
-}
-
-
-- (IBAction)reset:(id)sender {
-    [[ShadowPlayOpenedHandler sharedHandler] resetOpenedCharacter];
-    [self backButton:nil];
 }
 
 

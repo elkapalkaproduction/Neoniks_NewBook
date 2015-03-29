@@ -12,7 +12,7 @@
 
 + (CGSize)screenSize {
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
-    if ((NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_7_1) && UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation)) {
+    if ([self isOlderThaniOS7] && UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation)) {
         return CGSizeMake(screenSize.height, screenSize.width);
     } else {
         return screenSize;
@@ -22,6 +22,11 @@
 
 + (BOOL)isIpad {
     return [[self currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad;
+}
+
+
++ (BOOL)isOlderThaniOS7 {
+    return NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_7_1;
 }
 
 @end

@@ -10,7 +10,7 @@
 
 @interface UIColor (SystemColors)
 
-+ (instancetype)answerForQuestionColor;
++ (instancetype)baseYellowColor;
 + (instancetype)questionTitleColor;
 
 @end

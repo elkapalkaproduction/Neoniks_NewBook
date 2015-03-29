@@ -10,7 +10,7 @@
 
 @implementation UIColor (SystemColors)
 
-+ (instancetype)answerForQuestionColor {
++ (instancetype)baseYellowColor {
     return [UIColor colorWithRed:244.f / 255.f green:233.f / 255.f blue:140.f / 255.f alpha:1.f];
 }
 

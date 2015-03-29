@@ -36,4 +36,7 @@ typedef NS_ENUM(NSInteger, IslandToFind) {
 - (IslandToFind)currentNeedToFind;
 - (void)resetAnswers;
 
+
++ (void)deleteAnswers;
+
 @end

@@ -10,6 +10,6 @@
 
 @interface UIFont (CustomFonts)
 
-+ (instancetype)questionFontOfSize:(CGFloat)size;
++ (instancetype)baseFontOfSize:(CGFloat)size;
 
 @end

@@ -80,6 +80,25 @@
 "q9_answer_3" = "try to wake up";
 
 
+"shadow_description_1" = "Jay is a 10-year-old who dreams of becoming a mighty wizard. His greatest achievement is creating a tiny talking fox Mystie.";
+"shadow_description_2" = "Wanda is a magic wand. She flunked out of the Magic Wand College, so her skills are not as impressive as her looks.";
+"shadow_description_3" = "Mystie is a magic talking fox. She is so tiny she can wrap herself around your wrist like a bracelet.";
+"shadow_description_4" = "Justacreep used to be a promising actor but he committed a horrible crime and was stripped of his magic powers. Since then, no theater wants anything to do with him.";
+"shadow_description_5" = "Justacreep wears a fur coat with a talking lion head on its collar. But it’s  urcoat who is really in charge.";
+"shadow_description_6" = "Phoebe is a 12-year-old who dreams of becoming a muse. Muses are magic beauties who inspire poets and artists to new works of art.";
+"shadow_description_7" = "Greedy Miner found enormous reserves of magic hidden underground. His greed exhausted him so much that his body shriveled up and he turned into a skeleton.";
+"shadow_description_8" = "Young dragon named Harold works as a billposter. He doesn't know how to fly but he can run very fast, even up and down walls.";
+
+
+"island_popup_description_0" = "Cake Island\nElementary\nSchool looks like\na bunch of\nmulti-colored\nbirdhouses\nconnected by\nbridges and\nropes.";
+"island_popup_description_1" = "Neoniks live in\nwacky houses\nshaped like\nlanterns, books,\nteapots, or\nanything else the\nowners can think of.";
+"island_popup_description_2" = "Doughnut Café\nserves such\ndelicious treats as\nSweet Dreams, Hot\nTopics, and\nSparkling\nWater-Under-the-\nBridge.";
+"island_popup_description_3" = "There's a lighthouse\non the top of Cake\nIsland. Sea Dog lives\nthere, an old school\nteacher, who\nused to be a captain\non a big ship.";
+"island_popup_description_4" = "The Unnatural\nHistory Museum is\nfamous for its ghost\ngallery of nearly all\nmagical creatures.";
+"island_popup_description_5" = "From a far, the\nFoam Castle looks\nlike it's made out of\nmillions of tiny\nbubbles. The\nmagical beauties,\nthe Muses, live in\nthe Castle.";
+"island_popup_description_6" = "Bottomless Island is\nan extinct volcano\nwith a giant crater\ninside of it. Natives\nsay you could go\ndown forever and\nnever reach the\nbottom.";
+
+
 
 /////Images
 "q2_answer_img" = "q2_answer_img_en";
@@ -102,24 +121,18 @@
 "pop_up_banner_4" = "pop_up_banner_4_en";
 "pop_up_banner_5" = "pop_up_banner_5_en";
 "pop_up_banner_6" = "pop_up_banner_6_en";
+
+
+"top_bar_sound_text" = "top_bar_sound_text_en";
+"top_bar_rate_us_text" = "top_bar_rate_us_text_en";
+"top_bar_play_again_text" = "top_bar_play_again_text_en";
+"top_bar_language_text" = "top_bar_language_text_en";
+"top_bar_language_icon" = "top_bar_language_icon_en";
+"top_bar_contributors_text" = "top_bar_contributors_text_en";
+"top_bar_about_text" = "top_bar_about_text_en";
+
+"opposite_language" = "ru";
+
 ///////////
 
 
-
-"shadow_description_1" = "Jay is a 10-year-old who dreams of becoming a mighty wizard. His greatest achievement is creating a tiny talking fox Mystie.";
-"shadow_description_2" = "Wanda is a magic wand. She flunked out of the Magic Wand College, so her skills are not as impressive as her looks.";
-"shadow_description_3" = "Mystie is a magic talking fox. She is so tiny she can wrap herself around your wrist like a bracelet.";
-"shadow_description_4" = "Justacreep used to be a promising actor but he committed a horrible crime and was stripped of his magic powers. Since then, no theater wants anything to do with him.";
-"shadow_description_5" = "Justacreep wears a fur coat with a talking lion head on its collar. But it’s  urcoat who is really in charge.";
-"shadow_description_6" = "Phoebe is a 12-year-old who dreams of becoming a muse. Muses are magic beauties who inspire poets and artists to new works of art.";
-"shadow_description_7" = "Greedy Miner found enormous reserves of magic hidden underground. His greed exhausted him so much that his body shriveled up and he turned into a skeleton.";
-"shadow_description_8" = "Young dragon named Harold works as a billposter. He doesn't know how to fly but he can run very fast, even up and down walls.";
-
-
-"island_popup_description_0" = "Cake Island\nElementary\nSchool looks like\na bunch of\nmulti-colored\nbirdhouses\nconnected by\nbridges and\nropes.";
-"island_popup_description_1" = "Neoniks live in\nwacky houses\nshaped like\nlanterns, books,\nteapots, or\nanything else the\nowners can think of.";
-"island_popup_description_2" = "Doughnut Café\nserves such\ndelicious treats as\nSweet Dreams, Hot\nTopics, and\nSparkling\nWater-Under-the-\nBridge.";
-"island_popup_description_3" = "There's a lighthouse\non the top of Cake\nIsland. Sea Dog lives\nthere, an old school\nteacher, who\nused to be a captain\non a big ship.";
-"island_popup_description_4" = "The Unnatural\nHistory Museum is\nfamous for its ghost\ngallery of nearly all\nmagical creatures.";
-"island_popup_description_5" = "From a far, the\nFoam Castle looks\nlike it's made out of\nmillions of tiny\nbubbles. The\nmagical beauties,\nthe Muses, live in\nthe Castle.";
-"island_popup_description_6" = "Bottomless Island is\nan extinct volcano\nwith a giant crater\ninside of it. Natives\nsay you could go\ndown forever and\nnever reach the\nbottom.";

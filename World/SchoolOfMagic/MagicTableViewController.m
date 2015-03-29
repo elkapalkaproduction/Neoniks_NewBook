@@ -54,13 +54,13 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
         answer.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
         answer.titleLabel.numberOfLines = 2;
         answer.titleLabel.textAlignment = NSTextAlignmentCenter;
-        answer.titleLabel.font = [UIFont questionFontOfSize:9];
+        answer.titleLabel.font = [UIFont baseFontOfSize:9];
         answer.titleLabel.adjustsFontSizeToFitWidth = YES;
-        [answer setTitleColor:[UIColor answerForQuestionColor] forState:UIControlStateNormal];
+        [answer setTitleColor:[UIColor baseYellowColor] forState:UIControlStateNormal];
     }
     self.questionNumberTitle.textColor = [UIColor questionTitleColor];
-    self.questionNumberTitle.font = [UIFont questionFontOfSize:15];
-    self.questionText.font = [UIFont questionFontOfSize:15];
+    self.questionNumberTitle.font = [UIFont baseFontOfSize:15];
+    self.questionText.font = [UIFont baseFontOfSize:15];
 }
 
 

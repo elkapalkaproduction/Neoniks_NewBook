@@ -109,8 +109,14 @@ NSString *const LastSolvedIsland = @"LastSolvedIsland";
 
 
 - (void)resetAnswers {
-    [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:LastSolvedIsland];
+    [[self class] deleteAnswers];
     [self.delegate updateInterface];
+}
+
+
++ (void)deleteAnswers {
+    [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:LastSolvedIsland];
+
 }
 
 @end

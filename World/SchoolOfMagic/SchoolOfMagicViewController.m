@@ -22,10 +22,4 @@
     }
 }
 
-
-- (IBAction)reset:(id)sender {
-    [[MagicSchoolAnswersHandler sharedHandler] deleteAllAnswers];
-    [self backButton:nil];
-}
-
 @end

@@ -14,7 +14,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [NSBundle setLanguage:@"en"];
+    
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:ShadowCharacterWanda];
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:ShadowCharacterJustacreep];
     

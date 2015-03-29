@@ -10,7 +10,7 @@
 
 @implementation UIFont (CustomFonts)
 
-+ (instancetype)questionFontOfSize:(CGFloat)size {
++ (instancetype)baseFontOfSize:(CGFloat)size {
     CGFloat ratio = [UIDevice isIpad] ? (5.f / 3.f) : 1;
     return [UIFont fontWithName:@"Doux-Medium" size:size * ratio];
 }
