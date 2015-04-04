@@ -1,29 +1,29 @@
 //
-//  TopBarIconViewController.m
+//  SettingsBarIconViewController.m
 //  World
 //
 //  Created by Andrei Vidrasco on 3/29/15.
 //  Copyright (c) 2015 Andrei Vidrasco. All rights reserved.
 //
 
-#import "TopBarIconViewController.h"
+#import "SettingsBarIconViewController.h"
 
-@interface TopBarIconViewController ()
+@interface SettingsBarIconViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *icon;
 @property (weak, nonatomic) IBOutlet UIImageView *titleImage;
-@property (weak, nonatomic) id<TopBarIconDelegate> delegate;
-@property (assign, nonatomic) TopBarIconType type;
+@property (weak, nonatomic) id<SettingsBarIconDelegate> delegate;
+@property (assign, nonatomic) SettingsBarIconType type;
 @property (assign, nonatomic) CGRect frame;
 
 @end
 
-@implementation TopBarIconViewController
+@implementation SettingsBarIconViewController
 
 + (instancetype)instantiateWithFrame:(CGRect)frame
-                                type:(TopBarIconType)type
-                           delegate:(id<TopBarIconDelegate>)delegate {
-    TopBarIconViewController *viewController = [[TopBarIconViewController alloc] initWithNibName:NSStringFromClass([self class]) bundle:nil];
+                                type:(SettingsBarIconType)type
+                           delegate:(id<SettingsBarIconDelegate>)delegate {
+    SettingsBarIconViewController *viewController = [[SettingsBarIconViewController alloc] initWithNibName:NSStringFromClass([self class]) bundle:nil];
     viewController.frame = frame;
     viewController.type = type;
     viewController.delegate = delegate;
@@ -37,22 +37,22 @@
     self.view.frame = self.frame;
     NSString *baseText;
     switch (self.type) {
-        case TopBarIconTypeLanguage:
+        case SettingsBarIconTypeLanguage:
             baseText = @"top_bar_language";
             break;
-        case TopBarIconTypePlayAgain:
+        case SettingsBarIconTypePlayAgain:
             baseText = @"top_bar_play_again";
             break;
-        case TopBarIconTypeAboutProject:
+        case SettingsBarIconTypeAboutProject:
             baseText = @"top_bar_about";
             break;
-        case TopBarIconTypeContributors:
+        case SettingsBarIconTypeContributors:
             baseText = @"top_bar_contributors";
             break;
-        case TopBarIconTypeRateUs:
+        case SettingsBarIconTypeRateUs:
             baseText = @"top_bar_rate_us";
             break;
-        case TopBarIconTypeSound:
+        case SettingsBarIconTypeSound:
             baseText = @"top_bar_sound";
             break;
         default:
@@ -67,7 +67,7 @@
 
 
 - (IBAction)selectIcon:(id)sender {
-    [self.delegate pressIconWithType:self.type];
+    [self.delegate settingBar:self didPressIconWithType:self.type];
 }
 
 

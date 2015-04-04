@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopBarIconViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsBarIconViewController">
             <connections>
                 <outlet property="icon" destination="CyB-5A-avz" id="9TW-oL-pZZ"/>
                 <outlet property="titleImage" destination="v2G-Kw-s83" id="at5-zl-DIe"/>

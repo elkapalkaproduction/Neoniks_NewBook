@@ -98,7 +98,12 @@
 "island_popup_description_5" = "From a far, the\nFoam Castle looks\nlike it's made out of\nmillions of tiny\nbubbles. The\nmagical beauties,\nthe Muses, live in\nthe Castle.";
 "island_popup_description_6" = "Bottomless Island is\nan extinct volcano\nwith a giant crater\ninside of it. Natives\nsay you could go\ndown forever and\nnever reach the\nbottom.";
 
+"about_page_text" = "The Neoniks project exists to turn little gamers into readers. Through a series of games and cartoons, we get children excited about following the adventures of young Neonik wizards, Phoebe and Jay, and then offer the kids a chance to find out what happens next by completing the book.\n\nThe main reason why children have not learned to read for pleasure is because they simply hadn’t found the right stories to capture their attention.\nWhether it's through interactive games or professional audio voice overs, our job is to introduce kids to the wonderful world of literature and make them come back to it over and over again throughout their lives.\n\nPlease visit our website: www.neoniks.com to get free bonuses and content and to learn about our latest releases.";
 
+
+"alert_yes" = "Yes";
+"alert_no" = "No";
+"alert_start_over" = "Do you want to start over?";
 
 /////Images
 "q2_answer_img" = "q2_answer_img_en";
@@ -131,8 +136,14 @@
 "top_bar_contributors_text" = "top_bar_contributors_text_en";
 "top_bar_about_text" = "top_bar_about_text_en";
 
-"opposite_language" = "ru";
+"contributions_title" = "contributions_title_en";
+"contributions_main_image" = "contributions_main_image_en";
+"contributors_site_img" = "contributors_site_img_en";
 
+"about_page_title" = "about_page_title_en";
+
+"opposite_language" = "ru";
+"site_address" = "www.neoniks.com";
 ///////////
 
 

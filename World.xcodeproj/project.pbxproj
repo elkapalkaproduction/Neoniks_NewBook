@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7530D6B31AD068D50063F124 /* ContributorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7530D6B21AD068D50063F124 /* ContributorsViewController.m */; };
+		7530D6B61AD069960063F124 /* ContributorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7530D6B51AD069960063F124 /* ContributorsViewController.xib */; };
 		75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */; };
 		75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423AA21A7D8A4000D2C36E /* BaseViewController.m */; };
 		75635ADE1AABBEAA005BD4CB /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */; };
 		757E93DB1A7E2DEE000B2537 /* MagicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757E93DA1A7E2DEE000B2537 /* MagicTableViewController.m */; };
-		7597094C1AC8901000FFB11E /* TopBarIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7597094B1AC8901000FFB11E /* TopBarIconViewController.m */; };
-		7597094E1AC8947900FFB11E /* TopBarIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7597094D1AC8947900FFB11E /* TopBarIconViewController.xib */; };
+		7597094C1AC8901000FFB11E /* SettingsBarIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7597094B1AC8901000FFB11E /* SettingsBarIconViewController.m */; };
+		7597094E1AC8947900FFB11E /* SettingsBarIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7597094D1AC8947900FFB11E /* SettingsBarIconViewController.xib */; };
+		75A125051AD06F5700BDFB7F /* ContributorsViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75A125041AD06F5700BDFB7F /* ContributorsViewController~ipad.xib */; };
+		75A125101AD0717800BDFB7F /* TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A125071AD0717700BDFB7F /* TransitionAnimation.m */; };
+		75A125111AD0717800BDFB7F /* TransitionAnimationFromUpToDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A125091AD0717700BDFB7F /* TransitionAnimationFromUpToDown.m */; };
+		75A125121AD0717800BDFB7F /* TransitionAnimationFromDownToUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A1250B1AD0717700BDFB7F /* TransitionAnimationFromDownToUp.m */; };
+		75A125131AD0717800BDFB7F /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A1250D1AD0717700BDFB7F /* Animator.m */; };
+		75A125141AD0717800BDFB7F /* ParallaxEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A1250F1AD0717700BDFB7F /* ParallaxEffect.m */; };
+		75A125181AD071B400BDFB7F /* TransitionAnimationDisolve.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A125171AD071B400BDFB7F /* TransitionAnimationDisolve.m */; };
+		75A1251C1AD078E300BDFB7F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A1251B1AD078E300BDFB7F /* AboutViewController.m */; };
+		75A1251F1AD08DC400BDFB7F /* NSURL+Helps.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A1251E1AD08DC400BDFB7F /* NSURL+Helps.m */; };
+		75A125231AD08FE500BDFB7F /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A125221AD08FE500BDFB7F /* AlertViewController.m */; };
 		75C12A651A754B6C0075FD8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A641A754B6C0075FD8D /* main.m */; };
 		75C12A681A754B6C0075FD8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A671A754B6C0075FD8D /* AppDelegate.m */; };
 		75C12A6B1A754B6C0075FD8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A6A1A754B6C0075FD8D /* ViewController.m */; };
@@ -20,6 +32,8 @@
 		75C12A701A754B6C0075FD8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A6F1A754B6C0075FD8D /* Images.xcassets */; };
 		75C12A731A754B6C0075FD8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A711A754B6C0075FD8D /* LaunchScreen.xib */; };
 		75C12A7F1A754B6D0075FD8D /* WorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A7E1A754B6D0075FD8D /* WorldTests.m */; };
+		75CC87E91AD0238D00F6C59E /* MainScreenViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */; };
+		75CC87EC1AD02D4400F6C59E /* InventaryBarIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CC87EB1AD02D4400F6C59E /* InventaryBarIconViewController.m */; };
 		75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D268FD1AC3448B00A17632 /* InfiniteTableView.m */; };
 		75DC66C91A814F9300D6A553 /* ShadowPlayOpenedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DC66C81A814F9300D6A553 /* ShadowPlayOpenedHandler.m */; };
 		75DC66DB1A81520A00D6A553 /* full_portret_color_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CB1A81520A00D6A553 /* full_portret_color_1.png */; };
@@ -225,6 +239,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7530D6B11AD068D50063F124 /* ContributorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContributorsViewController.h; sourceTree = "<group>"; };
+		7530D6B21AD068D50063F124 /* ContributorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsViewController.m; sourceTree = "<group>"; };
+		7530D6B51AD069960063F124 /* ContributorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContributorsViewController.xib; sourceTree = "<group>"; };
 		75423A9C1A7D826A00D2C36E /* SchoolOfMagicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolOfMagicViewController.h; sourceTree = "<group>"; };
 		75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolOfMagicViewController.m; sourceTree = "<group>"; };
 		75423AA11A7D8A4000D2C36E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -233,9 +250,28 @@
 		75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpViewController.m; sourceTree = "<group>"; };
 		757E93D91A7E2DEE000B2537 /* MagicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicTableViewController.h; sourceTree = "<group>"; };
 		757E93DA1A7E2DEE000B2537 /* MagicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicTableViewController.m; sourceTree = "<group>"; };
-		7597094A1AC8901000FFB11E /* TopBarIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopBarIconViewController.h; sourceTree = "<group>"; };
-		7597094B1AC8901000FFB11E /* TopBarIconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopBarIconViewController.m; sourceTree = "<group>"; };
-		7597094D1AC8947900FFB11E /* TopBarIconViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopBarIconViewController.xib; sourceTree = "<group>"; };
+		7597094A1AC8901000FFB11E /* SettingsBarIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsBarIconViewController.h; sourceTree = "<group>"; };
+		7597094B1AC8901000FFB11E /* SettingsBarIconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsBarIconViewController.m; sourceTree = "<group>"; };
+		7597094D1AC8947900FFB11E /* SettingsBarIconViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsBarIconViewController.xib; sourceTree = "<group>"; };
+		75A125041AD06F5700BDFB7F /* ContributorsViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ContributorsViewController~ipad.xib"; sourceTree = "<group>"; };
+		75A125061AD0717700BDFB7F /* TransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimation.h; sourceTree = "<group>"; };
+		75A125071AD0717700BDFB7F /* TransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimation.m; sourceTree = "<group>"; };
+		75A125081AD0717700BDFB7F /* TransitionAnimationFromUpToDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimationFromUpToDown.h; sourceTree = "<group>"; };
+		75A125091AD0717700BDFB7F /* TransitionAnimationFromUpToDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimationFromUpToDown.m; sourceTree = "<group>"; };
+		75A1250A1AD0717700BDFB7F /* TransitionAnimationFromDownToUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimationFromDownToUp.h; sourceTree = "<group>"; };
+		75A1250B1AD0717700BDFB7F /* TransitionAnimationFromDownToUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimationFromDownToUp.m; sourceTree = "<group>"; };
+		75A1250C1AD0717700BDFB7F /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
+		75A1250D1AD0717700BDFB7F /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
+		75A1250E1AD0717700BDFB7F /* ParallaxEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxEffect.h; sourceTree = "<group>"; };
+		75A1250F1AD0717700BDFB7F /* ParallaxEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxEffect.m; sourceTree = "<group>"; };
+		75A125161AD071B400BDFB7F /* TransitionAnimationDisolve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimationDisolve.h; sourceTree = "<group>"; };
+		75A125171AD071B400BDFB7F /* TransitionAnimationDisolve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimationDisolve.m; sourceTree = "<group>"; };
+		75A1251A1AD078E300BDFB7F /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		75A1251B1AD078E300BDFB7F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		75A1251D1AD08DC400BDFB7F /* NSURL+Helps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Helps.h"; sourceTree = "<group>"; };
+		75A1251E1AD08DC400BDFB7F /* NSURL+Helps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Helps.m"; sourceTree = "<group>"; };
+		75A125211AD08FE500BDFB7F /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
+		75A125221AD08FE500BDFB7F /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
 		75C12A5F1A754B6C0075FD8D /* World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = World.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C12A631A754B6C0075FD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75C12A641A754B6C0075FD8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -249,6 +285,10 @@
 		75C12A781A754B6D0075FD8D /* WorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C12A7D1A754B6D0075FD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75C12A7E1A754B6D0075FD8D /* WorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorldTests.m; sourceTree = "<group>"; };
+		75CC87E71AD0238D00F6C59E /* MainScreenViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScreenViewModel.h; sourceTree = "<group>"; };
+		75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScreenViewModel.m; sourceTree = "<group>"; };
+		75CC87EA1AD02D4400F6C59E /* InventaryBarIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventaryBarIconViewController.h; sourceTree = "<group>"; };
+		75CC87EB1AD02D4400F6C59E /* InventaryBarIconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventaryBarIconViewController.m; sourceTree = "<group>"; };
 		75D268FC1AC3448B00A17632 /* InfiniteTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteTableView.h; sourceTree = "<group>"; };
 		75D268FD1AC3448B00A17632 /* InfiniteTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteTableView.m; sourceTree = "<group>"; };
 		75DC66C71A814F9300D6A553 /* ShadowPlayOpenedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowPlayOpenedHandler.h; sourceTree = "<group>"; };
@@ -479,6 +519,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7530D6B41AD068E60063F124 /* TopBar */ = {
+			isa = PBXGroup;
+			children = (
+				7597094A1AC8901000FFB11E /* SettingsBarIconViewController.h */,
+				7597094B1AC8901000FFB11E /* SettingsBarIconViewController.m */,
+				7597094D1AC8947900FFB11E /* SettingsBarIconViewController.xib */,
+				75CC87EA1AD02D4400F6C59E /* InventaryBarIconViewController.h */,
+				75CC87EB1AD02D4400F6C59E /* InventaryBarIconViewController.m */,
+			);
+			name = TopBar;
+			sourceTree = "<group>";
+		};
 		759320F21AAC8D6E009E75E0 /* Island */ = {
 			isa = PBXGroup;
 			children = (
@@ -491,6 +543,37 @@
 				75EBF35F1AAB7F5A005F5E8C /* answers_colors.plist */,
 			);
 			name = Island;
+			sourceTree = "<group>";
+		};
+		75A125151AD0717C00BDFB7F /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				75A125061AD0717700BDFB7F /* TransitionAnimation.h */,
+				75A125071AD0717700BDFB7F /* TransitionAnimation.m */,
+				75A125161AD071B400BDFB7F /* TransitionAnimationDisolve.h */,
+				75A125171AD071B400BDFB7F /* TransitionAnimationDisolve.m */,
+				75A125081AD0717700BDFB7F /* TransitionAnimationFromUpToDown.h */,
+				75A125091AD0717700BDFB7F /* TransitionAnimationFromUpToDown.m */,
+				75A1250A1AD0717700BDFB7F /* TransitionAnimationFromDownToUp.h */,
+				75A1250B1AD0717700BDFB7F /* TransitionAnimationFromDownToUp.m */,
+				75A1250C1AD0717700BDFB7F /* Animator.h */,
+				75A1250D1AD0717700BDFB7F /* Animator.m */,
+				75A1250E1AD0717700BDFB7F /* ParallaxEffect.h */,
+				75A1250F1AD0717700BDFB7F /* ParallaxEffect.m */,
+			);
+			name = Animations;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		75A125191AD0741100BDFB7F /* Contributors */ = {
+			isa = PBXGroup;
+			children = (
+				7530D6B11AD068D50063F124 /* ContributorsViewController.h */,
+				7530D6B21AD068D50063F124 /* ContributorsViewController.m */,
+				7530D6B51AD069960063F124 /* ContributorsViewController.xib */,
+				75A125041AD06F5700BDFB7F /* ContributorsViewController~ipad.xib */,
+			);
+			name = Contributors;
 			sourceTree = "<group>";
 		};
 		75C12A561A754B6C0075FD8D = {
@@ -521,9 +604,14 @@
 				75423AA21A7D8A4000D2C36E /* BaseViewController.m */,
 				75C12A691A754B6C0075FD8D /* ViewController.h */,
 				75C12A6A1A754B6C0075FD8D /* ViewController.m */,
-				7597094A1AC8901000FFB11E /* TopBarIconViewController.h */,
-				7597094B1AC8901000FFB11E /* TopBarIconViewController.m */,
-				7597094D1AC8947900FFB11E /* TopBarIconViewController.xib */,
+				75CC87E71AD0238D00F6C59E /* MainScreenViewModel.h */,
+				75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */,
+				75A1251A1AD078E300BDFB7F /* AboutViewController.h */,
+				75A1251B1AD078E300BDFB7F /* AboutViewController.m */,
+				75A125211AD08FE500BDFB7F /* AlertViewController.h */,
+				75A125221AD08FE500BDFB7F /* AlertViewController.m */,
+				7530D6B41AD068E60063F124 /* TopBar */,
+				75A125191AD0741100BDFB7F /* Contributors */,
 				759320F21AAC8D6E009E75E0 /* Island */,
 				75EDA1991A841D1B002546E0 /* Video View Controller */,
 				75DFE0C51A80099B00CE9E69 /* SchoolOfMagic */,
@@ -863,6 +951,7 @@
 		75EDA18B1A840C4D002546E0 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				75A125151AD0717C00BDFB7F /* Animations */,
 				75EDA18C1A840C55002546E0 /* Categories */,
 				75EDA18D1A840C5E002546E0 /* Custom Classes */,
 			);
@@ -882,6 +971,8 @@
 				75E237731A8557CA00BE6540 /* NSBundle+Language.m */,
 				75F1DB1E1A86D758005ACBA7 /* UIDevice+ScreenSize.h */,
 				75F1DB1F1A86D758005ACBA7 /* UIDevice+ScreenSize.m */,
+				75A1251D1AD08DC400BDFB7F /* NSURL+Helps.h */,
+				75A1251E1AD08DC400BDFB7F /* NSURL+Helps.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1068,7 +1159,7 @@
 				75DC67DB1A816AA100D6A553 /* shadow_character4_part7.png in Resources */,
 				75DC67DE1A816AA100D6A553 /* shadow_character5_part1.png in Resources */,
 				75DC67EE1A816AA100D6A553 /* shadow_character6_part11.png in Resources */,
-				7597094E1AC8947900FFB11E /* TopBarIconViewController.xib in Resources */,
+				7597094E1AC8947900FFB11E /* SettingsBarIconViewController.xib in Resources */,
 				75DC67F21A816AA100D6A553 /* shadow_character6_part15.png in Resources */,
 				75DC67F31A816AA100D6A553 /* shadow_character6_part2.png in Resources */,
 				75DC67AE1A816AA100D6A553 /* shadow_character2_part13.png in Resources */,
@@ -1109,12 +1200,14 @@
 				75DFE0FD1A800CE500CE9E69 /* Shadow_portret_3.png in Resources */,
 				75DC67EF1A816AA100D6A553 /* shadow_character6_part12.png in Resources */,
 				75DC67D31A816AA100D6A553 /* shadow_character4_part21.png in Resources */,
+				7530D6B61AD069960063F124 /* ContributorsViewController.xib in Resources */,
 				75DC67CC1A816AA100D6A553 /* shadow_character4_part15.png in Resources */,
 				75DC67E41A816AA100D6A553 /* shadow_character5_part2.png in Resources */,
 				75DC66E61A81520A00D6A553 /* full_portret_shadow_4.png in Resources */,
 				75DC67BF1A816AA100D6A553 /* shadow_character3_part3.png in Resources */,
 				75DC68141A816AA100D6A553 /* shadow_character8_part14.png in Resources */,
 				75DC66EA1A81520A00D6A553 /* full_portret_shadow_8.png in Resources */,
+				75A125051AD06F5700BDFB7F /* ContributorsViewController~ipad.xib in Resources */,
 				75DC66DE1A81520A00D6A553 /* full_portret_color_4.png in Resources */,
 				75DC67F71A816AA100D6A553 /* shadow_character6_part6.png in Resources */,
 				75DC67FD1A816AA100D6A553 /* shadow_character7_part11.png in Resources */,
@@ -1190,21 +1283,33 @@
 			files = (
 				75E86E231A82BE3F00419776 /* NNKShapedButton.m in Sources */,
 				75C12A6B1A754B6C0075FD8D /* ViewController.m in Sources */,
+				75A1251F1AD08DC400BDFB7F /* NSURL+Helps.m in Sources */,
 				75EDA1871A83FE7E002546E0 /* Storage.m in Sources */,
 				757E93DB1A7E2DEE000B2537 /* MagicTableViewController.m in Sources */,
+				75CC87EC1AD02D4400F6C59E /* InventaryBarIconViewController.m in Sources */,
 				75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */,
-				7597094C1AC8901000FFB11E /* TopBarIconViewController.m in Sources */,
+				7597094C1AC8901000FFB11E /* SettingsBarIconViewController.m in Sources */,
+				75A125121AD0717800BDFB7F /* TransitionAnimationFromDownToUp.m in Sources */,
+				75A125101AD0717800BDFB7F /* TransitionAnimation.m in Sources */,
+				7530D6B31AD068D50063F124 /* ContributorsViewController.m in Sources */,
+				75A125231AD08FE500BDFB7F /* AlertViewController.m in Sources */,
 				75DFE1101A800D6200CE9E69 /* ShadowPlayViewController.m in Sources */,
 				75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */,
+				75CC87E91AD0238D00F6C59E /* MainScreenViewModel.m in Sources */,
+				75A125141AD0717800BDFB7F /* ParallaxEffect.m in Sources */,
 				75E86E321A82C06800419776 /* DragableButton.m in Sources */,
 				75DC66C91A814F9300D6A553 /* ShadowPlayOpenedHandler.m in Sources */,
+				75A125131AD0717800BDFB7F /* Animator.m in Sources */,
 				75E2376B1A854BD800BE6540 /* UIColor+SystemColors.m in Sources */,
 				75EBF32A1AAB7D29005F5E8C /* IslandViewModel.m in Sources */,
 				75EBF3271AAB7BB4005F5E8C /* UIImage+Colors.m in Sources */,
 				75EBF3241AAB6948005F5E8C /* IslandViewController.m in Sources */,
+				75A125111AD0717800BDFB7F /* TransitionAnimationFromUpToDown.m in Sources */,
 				75EC14161A7ECF460086803E /* MagicSchoolAnswersHandler.m in Sources */,
 				75F1DB201A86D758005ACBA7 /* UIDevice+ScreenSize.m in Sources */,
 				75DFE0C91A8009C800CE9E69 /* CharacterShadowViewController.m in Sources */,
+				75A125181AD071B400BDFB7F /* TransitionAnimationDisolve.m in Sources */,
+				75A1251C1AD078E300BDFB7F /* AboutViewController.m in Sources */,
 				75EDA1921A840F31002546E0 /* NNWVideoViewController.m in Sources */,
 				75E237661A85454B00BE6540 /* UIFont+CustomFonts.m in Sources */,
 				75E237741A8557CA00BE6540 /* NSBundle+Language.m in Sources */,

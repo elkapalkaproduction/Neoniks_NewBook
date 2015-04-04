@@ -1,9 +1,5 @@
 #import "InfiniteTableView.h"
 
-static CGFloat DefaultWidth = 150;
-static CGFloat DefaultHeight = 50;
-static CGFloat DefaultGap = 0;
-
 @interface InfiniteTableView ()
 
 @property (nonatomic, strong)  NSMutableArray *visibleLabels;
@@ -92,7 +88,7 @@ static CGFloat DefaultGap = 0;
         return [self.dataSource columnWidthInInfiniteTableView:self];
     }
     
-    return DefaultWidth;
+    return self.superview.frame.size.height;
 }
 
 
@@ -101,7 +97,7 @@ static CGFloat DefaultGap = 0;
         return [self.dataSource columnHeightInInfiniteTableView:self];
     }
     
-    return DefaultHeight;
+    return self.superview.frame.size.height;
 }
 
 
@@ -110,7 +106,7 @@ static CGFloat DefaultGap = 0;
         return [self.dataSource columnGapInInfiniteTableView:self];
     }
     
-    return DefaultGap;
+    return self.superview.frame.size.width / 6.f - self.superview.frame.size.height - 2.f;
 }
 
 

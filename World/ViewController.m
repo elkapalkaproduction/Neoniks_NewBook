@@ -8,87 +8,45 @@
 
 #import "ViewController.h"
 #import "InfiniteTableView.h"
-#import "TopBarIconViewController.h"
+#import "SettingsBarIconViewController.h"
 #import "ShadowPlayOpenedHandler.h"
 #import "MagicSchoolAnswersHandler.h"
 #import "IslandViewModel.h"
+#import "MainScreenViewModel.h"
 
-@interface ViewController () <InfiniteTableViewDatasource, TopBarIconDelegate>
+@interface ViewController () <InfiniteTableViewDatasource, MainScreenViewModelDelegate, UIScrollViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *rightTopBarButton;
-@property (weak, nonatomic) IBOutlet UIButton *leftTopBarButton;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topBarTopConstraint;
 @property (weak, nonatomic) IBOutlet InfiniteTableView *infiniteTableView;
-@property (strong, nonatomic) InfiniteTableView *scrollView;
+@property (weak, nonatomic) IBOutlet UIView *topBarView;
+@property (strong, nonatomic) MainScreenViewModel *viewModel;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *topBarNavigationsButtons;
+
 @end
 
 @implementation ViewController
 
-- (CGFloat)columnWidthInInfiniteTableView:(InfiniteTableView *)tableView {
-    return tableView.superview.frame.size.height;
-}
-
-
-- (CGFloat)columnHeightInInfiniteTableView:(InfiniteTableView *)tableView {
-    return tableView.superview.frame.size.height;
-}
-
-
-- (CGFloat)columnGapInInfiniteTableView:(InfiniteTableView *)tableView {
-    return tableView.superview.frame.size.width / 6.f - tableView.superview.frame.size.height - 2.f;
+- (MainScreenViewModel *)viewModel {
+    if (!_viewModel) {
+        _viewModel = [[MainScreenViewModel alloc] initWithDelegate:self];
+    }
+    
+    return _viewModel;
 }
 
 
 - (CGFloat)numberOfColumnsInInfiniteTableView:(InfiniteTableView *)tableView {
-    return 6;
+    NSInteger numberOfItems = self.viewModel.numberOfItems;
+    [self setTopbarNavigationsButtonsHiddenState:numberOfItems < 7];
+    
+    return numberOfItems;
 }
 
 
 - (UIView *)infiniteTableView:(InfiniteTableView *)tableView viewForIndex:(NSInteger)index widthRect:(CGRect)rect {
-    TopBarIconViewController *viewController = [TopBarIconViewController instantiateWithFrame:rect type:index + 1 delegate:self];
-    [viewController willMoveToParentViewController:self];
-    [self addChildViewController:viewController];
-    [viewController didMoveToParentViewController:self];
-
-    return viewController.view;
+    return [self.viewModel viewForIndex:index inRect:rect parentViewController:self];
 }
 
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.leftTopBarButton.hidden = self.rightTopBarButton.hidden = YES;
-}
-
-
-- (void)click:(UIButton *)sender {
-    [self pressIconWithType:sender.tag];
-}
-
-
-- (void)pressIconWithType:(TopBarIconType)type {
-    switch (type) {
-        case TopBarIconTypeUnknown:
-            break;
-        case TopBarIconTypeLanguage:
-            [NSBundle setLanguage:NSLocalizedString(@"opposite_language", nil)];
-            [self.infiniteTableView reloadData];
-            break;
-        case TopBarIconTypePlayAgain:
-            [[ShadowPlayOpenedHandler sharedHandler] resetOpenedCharacter];
-            [[MagicSchoolAnswersHandler sharedHandler] deleteAllAnswers];
-            [IslandViewModel deleteAnswers];
-            break;
-        case TopBarIconTypeAboutProject:
-            break;
-        case TopBarIconTypeContributors:
-            break;
-        case TopBarIconTypeRateUs:
-            break;
-        case TopBarIconTypeSound:
-            break;
-        default:
-            break;
-    }
-}
 
 
 - (IBAction)pressLeft:(id)sender {
@@ -98,6 +56,77 @@
 
 - (IBAction)pressRight:(id)sender {
     [self.infiniteTableView showNextView];
+}
+
+
+- (BOOL)isShowingTopBar {
+    return self.topBarTopConstraint.constant == CGRectGetHeight(self.topBarView.frame);
+}
+
+
+- (void)closeTopBarWithCompletion:(void(^)())completion {
+    self.topBarTopConstraint.constant = 0;
+    [UIView animateWithDuration:0.3 animations:^{
+        [self.view layoutIfNeeded];
+    }completion:^(BOOL finished) {
+        if (completion) completion();
+    }];
+}
+
+
+- (void)openTopBar {
+    [self.infiniteTableView reloadData];
+    self.topBarTopConstraint.constant = CGRectGetHeight(self.topBarView.frame);
+    [UIView animateWithDuration:0.3 animations:^{
+        [self.view layoutIfNeeded];
+    }];
+}
+
+
+- (void)operOrCloseTopBarForType:(MainScreenTopBarViewType)type {
+    if ([self isShowingTopBar]) {
+        [self closeTopBarWithCompletion:^{
+            if (self.viewModel.type != type) {
+                self.viewModel.type = type;
+                [self openTopBar];
+            }
+        }];
+    } else {
+        self.viewModel.type = type;
+        [self openTopBar];
+    }
+}
+
+
+- (IBAction)showSettings:(id)sender {
+    [self operOrCloseTopBarForType:MainScreenTopBarViewTypeSettings];
+}
+
+
+- (IBAction)showInventary:(id)sender {
+    [self operOrCloseTopBarForType:MainScreenTopBarViewTypeInventary];
+}
+
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self closeTopBarWithCompletion:nil];
+}
+
+
+- (void)setTopbarNavigationsButtonsHiddenState:(BOOL)hidden {
+    for (UIButton *button in self.topBarNavigationsButtons) {
+        button.hidden = hidden;
+    }
+}
+
+
+- (void)didChangeLanguageInMainScreenViewModel:(MainScreenViewModel *)viewModel {
+    [self.infiniteTableView reloadData];
+}
+
+
+- (void)mainScreenViewModel:(MainScreenViewModel *)viewModel didWantToOpenViewController:(UIViewController *)viewController {
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 @end

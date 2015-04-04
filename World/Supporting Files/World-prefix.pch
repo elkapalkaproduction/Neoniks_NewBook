@@ -21,5 +21,6 @@
 #import "NSBundle+Language.h"
 #import "UIDevice+ScreenSize.h"
 #import "UIImage+Colors.h"
+#import "NSURL+Helps.h"
 
 #endif
