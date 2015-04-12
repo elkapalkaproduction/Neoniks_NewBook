@@ -66,9 +66,7 @@ NSString *const AppID = @"899196882";
 - (UIView *)viewForIndex:(NSInteger)index inRect:(CGRect)rect parentViewController:(UIViewController *)parentViewController {
     UIViewController *viewController = [self viewControllerForIndex:index + 1 rect:rect];
     if (!viewController) return [UIView new];
-    [viewController willMoveToParentViewController:parentViewController];
-    [parentViewController addChildViewController:viewController];
-    [viewController didMoveToParentViewController:parentViewController];
+    [parentViewController addChildViewController:viewController withSuperview:nil];
 
     return viewController.view;
 }

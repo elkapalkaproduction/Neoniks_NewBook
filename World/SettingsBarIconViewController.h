@@ -16,6 +16,11 @@ typedef NS_ENUM(NSInteger, SettingsBarIconType) {
     SettingsBarIconTypeContributors,
     SettingsBarIconTypeRateUs,
     SettingsBarIconTypeSound,
+    
+    SettingsBarIconTypeBookContent,
+    SettingsBarIconTypeBookAudio,
+    SettingsBarIconTypeBookBookmark,
+    SettingsBarIconTypeBookFontSize,
 };
 
 @class SettingsBarIconViewController;

@@ -69,11 +69,8 @@
 
 
 - (void)addOnParentView:(UIViewController *)viewController {
-    [self willMoveToParentViewController:viewController];
-    [viewController addChildViewController:self];
-    [self didMoveToParentViewController:viewController];
+    [viewController addChildViewController:self withSuperview:viewController.view];
     self.view.alpha = 0.f;
-    [viewController.view addSubview:self.view];
     [UIView animateWithDuration:0.5 animations:^{
         self.view.alpha = 1.f;
     }];

@@ -13,4 +13,6 @@
 + (instancetype)baseYellowColor;
 + (instancetype)questionTitleColor;
 
++ (instancetype)colorWithHexString:(NSString *)string;
+
 @end

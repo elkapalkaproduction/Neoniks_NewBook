@@ -48,4 +48,9 @@ const NSInteger storyboardScreenWidth = 600;
     return NSStringFromClass([self class]);
 }
 
+
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskLandscape;
+}
+
 @end

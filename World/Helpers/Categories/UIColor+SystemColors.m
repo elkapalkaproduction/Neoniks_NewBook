@@ -19,4 +19,17 @@
     return [UIColor colorWithRed:255.f / 255.f green:192.f / 255.f blue:0.f / 255.f alpha:1.f];
 }
 
+
++ (instancetype)colorWithHexString:(NSString *)hexString {
+    NSString *colorString = [[hexString stringByReplacingOccurrencesOfString:@"#" withString:@""] uppercaseString];
+    unsigned rgbValue = 0;
+    [[NSScanner scannerWithString:colorString] scanHexInt:&rgbValue];
+    
+    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16) / 255.0
+                           green:((rgbValue & 0xFF00) >> 8) / 255.0
+                            blue:(rgbValue & 0xFF) / 255.0
+                           alpha:1.0];
+}
+
+
 @end

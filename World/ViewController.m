@@ -13,6 +13,7 @@
 #import "MagicSchoolAnswersHandler.h"
 #import "IslandViewModel.h"
 #import "MainScreenViewModel.h"
+#import "NewBookViewController.h"
 
 @interface ViewController () <InfiniteTableViewDatasource, MainScreenViewModelDelegate, UIScrollViewDelegate>
 
@@ -127,6 +128,12 @@
 
 - (void)mainScreenViewModel:(MainScreenViewModel *)viewModel didWantToOpenViewController:(UIViewController *)viewController {
     [self presentViewController:viewController animated:YES completion:nil];
+}
+
+
+- (IBAction)openBook {
+    NewBookViewController *newBook = [NewBookViewController instantiate];
+    [self presentViewController:newBook animated:YES completion:nil];
 }
 
 @end

@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56DC915B5D1078DAC3B7C86D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6129DEB65C4E1E920B30AE6B /* libPods.a */; };
 		7530D6B31AD068D50063F124 /* ContributorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7530D6B21AD068D50063F124 /* ContributorsViewController.m */; };
 		7530D6B61AD069960063F124 /* ContributorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7530D6B51AD069960063F124 /* ContributorsViewController.xib */; };
 		75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */; };
 		75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423AA21A7D8A4000D2C36E /* BaseViewController.m */; };
 		75635ADE1AABBEAA005BD4CB /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */; };
+		757DBBD11ADB199500517632 /* UIViewController+Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 757DBBD01ADB199500517632 /* UIViewController+Child.m */; };
 		757E93DB1A7E2DEE000B2537 /* MagicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757E93DA1A7E2DEE000B2537 /* MagicTableViewController.m */; };
 		7597094C1AC8901000FFB11E /* SettingsBarIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7597094B1AC8901000FFB11E /* SettingsBarIconViewController.m */; };
 		7597094E1AC8947900FFB11E /* SettingsBarIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7597094D1AC8947900FFB11E /* SettingsBarIconViewController.xib */; };
@@ -25,13 +27,26 @@
 		75A1251C1AD078E300BDFB7F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A1251B1AD078E300BDFB7F /* AboutViewController.m */; };
 		75A1251F1AD08DC400BDFB7F /* NSURL+Helps.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A1251E1AD08DC400BDFB7F /* NSURL+Helps.m */; };
 		75A125231AD08FE500BDFB7F /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A125221AD08FE500BDFB7F /* AlertViewController.m */; };
+		75AD2E8F1ADAD193002EE482 /* book_eng.epub in Resources */ = {isa = PBXBuildFile; fileRef = 75AD2E7C1ADAD193002EE482 /* book_eng.epub */; };
+		75AD2E901ADAD193002EE482 /* book_rus.epub in Resources */ = {isa = PBXBuildFile; fileRef = 75AD2E7D1ADAD193002EE482 /* book_rus.epub */; };
+		75AD2E911ADAD193002EE482 /* ChaptersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2E7F1ADAD193002EE482 /* ChaptersViewController.m */; };
+		75AD2E931ADAD193002EE482 /* CustomizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2E821ADAD193002EE482 /* CustomizationViewController.m */; };
+		75AD2E951ADAD193002EE482 /* NewBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2E851ADAD193002EE482 /* NewBookViewController.m */; };
+		75AD2E971ADAD193002EE482 /* NNKChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2E881ADAD193002EE482 /* NNKChapter.m */; };
+		75AD2E981ADAD193002EE482 /* NNKEpubToChaptersConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2E8A1ADAD193002EE482 /* NNKEpubToChaptersConverter.m */; };
+		75AD2E991ADAD193002EE482 /* NNKEpubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2E8C1ADAD193002EE482 /* NNKEpubView.m */; };
+		75AD2E9A1ADAD193002EE482 /* UIWebView+CSSRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2E8E1ADAD193002EE482 /* UIWebView+CSSRule.m */; };
+		75AD2E9D1ADAD1B3002EE482 /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2E9C1ADAD1B3002EE482 /* DejalActivityView.m */; };
+		75AD2E9F1ADAD424002EE482 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AD2E9E1ADAD424002EE482 /* Book.storyboard */; };
+		75AD2EA11ADAD65B002EE482 /* NewBookViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2EA01ADAD65B002EE482 /* NewBookViewControllerTests.m */; };
+		75AD2EA31ADAD710002EE482 /* ChaptersViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2EA21ADAD710002EE482 /* ChaptersViewControllerTests.m */; };
+		75AD2EA51ADAD88E002EE482 /* CustomizationViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2EA41ADAD88D002EE482 /* CustomizationViewControllerTests.m */; };
 		75C12A651A754B6C0075FD8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A641A754B6C0075FD8D /* main.m */; };
 		75C12A681A754B6C0075FD8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A671A754B6C0075FD8D /* AppDelegate.m */; };
 		75C12A6B1A754B6C0075FD8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A6A1A754B6C0075FD8D /* ViewController.m */; };
 		75C12A6E1A754B6C0075FD8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A6C1A754B6C0075FD8D /* Main.storyboard */; };
 		75C12A701A754B6C0075FD8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A6F1A754B6C0075FD8D /* Images.xcassets */; };
 		75C12A731A754B6C0075FD8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A711A754B6C0075FD8D /* LaunchScreen.xib */; };
-		75C12A7F1A754B6D0075FD8D /* WorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A7E1A754B6D0075FD8D /* WorldTests.m */; };
 		75CC87E91AD0238D00F6C59E /* MainScreenViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */; };
 		75CC87EC1AD02D4400F6C59E /* InventaryBarIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CC87EB1AD02D4400F6C59E /* InventaryBarIconViewController.m */; };
 		75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D268FD1AC3448B00A17632 /* InfiniteTableView.m */; };
@@ -239,6 +254,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		047A1C67A322F975E7F2E245 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6129DEB65C4E1E920B30AE6B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7530D6B11AD068D50063F124 /* ContributorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContributorsViewController.h; sourceTree = "<group>"; };
 		7530D6B21AD068D50063F124 /* ContributorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsViewController.m; sourceTree = "<group>"; };
 		7530D6B51AD069960063F124 /* ContributorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContributorsViewController.xib; sourceTree = "<group>"; };
@@ -248,6 +265,8 @@
 		75423AA21A7D8A4000D2C36E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		75635ADC1AABBEA9005BD4CB /* PopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpViewController.h; sourceTree = "<group>"; };
 		75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpViewController.m; sourceTree = "<group>"; };
+		757DBBCF1ADB199500517632 /* UIViewController+Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Child.h"; sourceTree = "<group>"; };
+		757DBBD01ADB199500517632 /* UIViewController+Child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Child.m"; sourceTree = "<group>"; };
 		757E93D91A7E2DEE000B2537 /* MagicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicTableViewController.h; sourceTree = "<group>"; };
 		757E93DA1A7E2DEE000B2537 /* MagicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicTableViewController.m; sourceTree = "<group>"; };
 		7597094A1AC8901000FFB11E /* SettingsBarIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsBarIconViewController.h; sourceTree = "<group>"; };
@@ -272,6 +291,28 @@
 		75A1251E1AD08DC400BDFB7F /* NSURL+Helps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Helps.m"; sourceTree = "<group>"; };
 		75A125211AD08FE500BDFB7F /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
 		75A125221AD08FE500BDFB7F /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
+		75AD2E7C1ADAD193002EE482 /* book_eng.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = book_eng.epub; sourceTree = "<group>"; };
+		75AD2E7D1ADAD193002EE482 /* book_rus.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = book_rus.epub; sourceTree = "<group>"; };
+		75AD2E7E1ADAD193002EE482 /* ChaptersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChaptersViewController.h; sourceTree = "<group>"; };
+		75AD2E7F1ADAD193002EE482 /* ChaptersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaptersViewController.m; sourceTree = "<group>"; };
+		75AD2E811ADAD193002EE482 /* CustomizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizationViewController.h; sourceTree = "<group>"; };
+		75AD2E821ADAD193002EE482 /* CustomizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizationViewController.m; sourceTree = "<group>"; };
+		75AD2E841ADAD193002EE482 /* NewBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBookViewController.h; sourceTree = "<group>"; };
+		75AD2E851ADAD193002EE482 /* NewBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBookViewController.m; sourceTree = "<group>"; };
+		75AD2E871ADAD193002EE482 /* NNKChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKChapter.h; sourceTree = "<group>"; };
+		75AD2E881ADAD193002EE482 /* NNKChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKChapter.m; sourceTree = "<group>"; };
+		75AD2E891ADAD193002EE482 /* NNKEpubToChaptersConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKEpubToChaptersConverter.h; sourceTree = "<group>"; };
+		75AD2E8A1ADAD193002EE482 /* NNKEpubToChaptersConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKEpubToChaptersConverter.m; sourceTree = "<group>"; };
+		75AD2E8B1ADAD193002EE482 /* NNKEpubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKEpubView.h; sourceTree = "<group>"; };
+		75AD2E8C1ADAD193002EE482 /* NNKEpubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKEpubView.m; sourceTree = "<group>"; };
+		75AD2E8D1ADAD193002EE482 /* UIWebView+CSSRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIWebView+CSSRule.h"; path = "../../Epub Book/UIWebView+CSSRule.h"; sourceTree = "<group>"; };
+		75AD2E8E1ADAD193002EE482 /* UIWebView+CSSRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+CSSRule.m"; path = "../../Epub Book/UIWebView+CSSRule.m"; sourceTree = "<group>"; };
+		75AD2E9B1ADAD1B3002EE482 /* DejalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejalActivityView.h; sourceTree = "<group>"; };
+		75AD2E9C1ADAD1B3002EE482 /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejalActivityView.m; sourceTree = "<group>"; };
+		75AD2E9E1ADAD424002EE482 /* Book.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Book.storyboard; sourceTree = "<group>"; };
+		75AD2EA01ADAD65B002EE482 /* NewBookViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBookViewControllerTests.m; sourceTree = "<group>"; };
+		75AD2EA21ADAD710002EE482 /* ChaptersViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaptersViewControllerTests.m; sourceTree = "<group>"; };
+		75AD2EA41ADAD88D002EE482 /* CustomizationViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizationViewControllerTests.m; sourceTree = "<group>"; };
 		75C12A5F1A754B6C0075FD8D /* World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = World.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C12A631A754B6C0075FD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75C12A641A754B6C0075FD8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -284,7 +325,6 @@
 		75C12A721A754B6C0075FD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		75C12A781A754B6D0075FD8D /* WorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C12A7D1A754B6D0075FD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75C12A7E1A754B6D0075FD8D /* WorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorldTests.m; sourceTree = "<group>"; };
 		75CC87E71AD0238D00F6C59E /* MainScreenViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScreenViewModel.h; sourceTree = "<group>"; };
 		75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScreenViewModel.m; sourceTree = "<group>"; };
 		75CC87EA1AD02D4400F6C59E /* InventaryBarIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventaryBarIconViewController.h; sourceTree = "<group>"; };
@@ -499,6 +539,7 @@
 		75EDA18F1A840F31002546E0 /* NNWVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNWVideoViewController.m; sourceTree = "<group>"; };
 		75F1DB1E1A86D758005ACBA7 /* UIDevice+ScreenSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ScreenSize.h"; sourceTree = "<group>"; };
 		75F1DB1F1A86D758005ACBA7 /* UIDevice+ScreenSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ScreenSize.m"; sourceTree = "<group>"; };
+		C941A4C850417BA1B0022421 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -506,6 +547,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56DC915B5D1078DAC3B7C86D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +561,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		247C932DFC1AEE48F98697AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				047A1C67A322F975E7F2E245 /* Pods.debug.xcconfig */,
+				C941A4C850417BA1B0022421 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7530D6B41AD068E60063F124 /* TopBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,6 +627,30 @@
 			name = Contributors;
 			sourceTree = "<group>";
 		};
+		75AD2E7B1ADAD18D002EE482 /* Epub Book */ = {
+			isa = PBXGroup;
+			children = (
+				75AD2E9B1ADAD1B3002EE482 /* DejalActivityView.h */,
+				75AD2E9C1ADAD1B3002EE482 /* DejalActivityView.m */,
+				75AD2E7C1ADAD193002EE482 /* book_eng.epub */,
+				75AD2E7D1ADAD193002EE482 /* book_rus.epub */,
+				75AD2E7E1ADAD193002EE482 /* ChaptersViewController.h */,
+				75AD2E7F1ADAD193002EE482 /* ChaptersViewController.m */,
+				75AD2E811ADAD193002EE482 /* CustomizationViewController.h */,
+				75AD2E821ADAD193002EE482 /* CustomizationViewController.m */,
+				75AD2E841ADAD193002EE482 /* NewBookViewController.h */,
+				75AD2E851ADAD193002EE482 /* NewBookViewController.m */,
+				75AD2E871ADAD193002EE482 /* NNKChapter.h */,
+				75AD2E881ADAD193002EE482 /* NNKChapter.m */,
+				75AD2E891ADAD193002EE482 /* NNKEpubToChaptersConverter.h */,
+				75AD2E8A1ADAD193002EE482 /* NNKEpubToChaptersConverter.m */,
+				75AD2E8B1ADAD193002EE482 /* NNKEpubView.h */,
+				75AD2E8C1ADAD193002EE482 /* NNKEpubView.m */,
+				75AD2E9E1ADAD424002EE482 /* Book.storyboard */,
+			);
+			path = "Epub Book";
+			sourceTree = "<group>";
+		};
 		75C12A561A754B6C0075FD8D = {
 			isa = PBXGroup;
 			children = (
@@ -583,6 +658,8 @@
 				75C12A611A754B6C0075FD8D /* World */,
 				75C12A7B1A754B6D0075FD8D /* WorldTests */,
 				75C12A601A754B6C0075FD8D /* Products */,
+				247C932DFC1AEE48F98697AA /* Pods */,
+				E830825D60A1C73B19AD811D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -610,6 +687,7 @@
 				75A1251B1AD078E300BDFB7F /* AboutViewController.m */,
 				75A125211AD08FE500BDFB7F /* AlertViewController.h */,
 				75A125221AD08FE500BDFB7F /* AlertViewController.m */,
+				75AD2E7B1ADAD18D002EE482 /* Epub Book */,
 				7530D6B41AD068E60063F124 /* TopBar */,
 				75A125191AD0741100BDFB7F /* Contributors */,
 				759320F21AAC8D6E009E75E0 /* Island */,
@@ -639,7 +717,9 @@
 		75C12A7B1A754B6D0075FD8D /* WorldTests */ = {
 			isa = PBXGroup;
 			children = (
-				75C12A7E1A754B6D0075FD8D /* WorldTests.m */,
+				75AD2EA01ADAD65B002EE482 /* NewBookViewControllerTests.m */,
+				75AD2EA21ADAD710002EE482 /* ChaptersViewControllerTests.m */,
+				75AD2EA41ADAD88D002EE482 /* CustomizationViewControllerTests.m */,
 				75C12A7C1A754B6D0075FD8D /* Supporting Files */,
 			);
 			path = WorldTests;
@@ -973,6 +1053,10 @@
 				75F1DB1F1A86D758005ACBA7 /* UIDevice+ScreenSize.m */,
 				75A1251D1AD08DC400BDFB7F /* NSURL+Helps.h */,
 				75A1251E1AD08DC400BDFB7F /* NSURL+Helps.m */,
+				75AD2E8D1ADAD193002EE482 /* UIWebView+CSSRule.h */,
+				75AD2E8E1ADAD193002EE482 /* UIWebView+CSSRule.m */,
+				757DBBCF1ADB199500517632 /* UIViewController+Child.h */,
+				757DBBD01ADB199500517632 /* UIViewController+Child.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1001,6 +1085,14 @@
 			path = "Video View Controller";
 			sourceTree = "<group>";
 		};
+		E830825D60A1C73B19AD811D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6129DEB65C4E1E920B30AE6B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1008,9 +1100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75C12A821A754B6D0075FD8D /* Build configuration list for PBXNativeTarget "World" */;
 			buildPhases = (
+				DE9400029F2616ECABDCFC31 /* Check Pods Manifest.lock */,
 				75C12A5B1A754B6C0075FD8D /* Sources */,
 				75C12A5C1A754B6C0075FD8D /* Frameworks */,
 				75C12A5D1A754B6C0075FD8D /* Resources */,
+				B09DDE8963C43012B9296C69 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1160,6 +1254,7 @@
 				75DC67DE1A816AA100D6A553 /* shadow_character5_part1.png in Resources */,
 				75DC67EE1A816AA100D6A553 /* shadow_character6_part11.png in Resources */,
 				7597094E1AC8947900FFB11E /* SettingsBarIconViewController.xib in Resources */,
+				75AD2E9F1ADAD424002EE482 /* Book.storyboard in Resources */,
 				75DC67F21A816AA100D6A553 /* shadow_character6_part15.png in Resources */,
 				75DC67F31A816AA100D6A553 /* shadow_character6_part2.png in Resources */,
 				75DC67AE1A816AA100D6A553 /* shadow_character2_part13.png in Resources */,
@@ -1187,6 +1282,7 @@
 				75DC67A31A816AA100D6A553 /* shadow_character1_part3.png in Resources */,
 				75DFE1061A800CE500CE9E69 /* Shadow_portret_border_4.png in Resources */,
 				75DC67C91A816AA100D6A553 /* shadow_character4_part12.png in Resources */,
+				75AD2E8F1ADAD193002EE482 /* book_eng.epub in Resources */,
 				75DC67D11A816AA100D6A553 /* shadow_character4_part2.png in Resources */,
 				75DC68171A816AA100D6A553 /* shadow_character8_part17.png in Resources */,
 				75DC67C21A816AA100D6A553 /* shadow_character3_part6.png in Resources */,
@@ -1260,6 +1356,7 @@
 				75DC67CE1A816AA100D6A553 /* shadow_character4_part17.png in Resources */,
 				75DC67A51A816AA100D6A553 /* shadow_character1_part5.png in Resources */,
 				75DC67DF1A816AA100D6A553 /* shadow_character5_part10.png in Resources */,
+				75AD2E901ADAD193002EE482 /* book_rus.epub in Resources */,
 				75DC67B11A816AA100D6A553 /* shadow_character2_part4.png in Resources */,
 				75DC67EC1A816AA100D6A553 /* shadow_character6_part1.png in Resources */,
 				75DC67B91A816AA100D6A553 /* shadow_character3_part11.png in Resources */,
@@ -1276,11 +1373,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B09DDE8963C43012B9296C69 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE9400029F2616ECABDCFC31 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75C12A5B1A754B6C0075FD8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75AD2E911ADAD193002EE482 /* ChaptersViewController.m in Sources */,
 				75E86E231A82BE3F00419776 /* NNKShapedButton.m in Sources */,
 				75C12A6B1A754B6C0075FD8D /* ViewController.m in Sources */,
 				75A1251F1AD08DC400BDFB7F /* NSURL+Helps.m in Sources */,
@@ -1289,31 +1420,39 @@
 				75CC87EC1AD02D4400F6C59E /* InventaryBarIconViewController.m in Sources */,
 				75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */,
 				7597094C1AC8901000FFB11E /* SettingsBarIconViewController.m in Sources */,
+				75AD2E981ADAD193002EE482 /* NNKEpubToChaptersConverter.m in Sources */,
+				75AD2E9D1ADAD1B3002EE482 /* DejalActivityView.m in Sources */,
 				75A125121AD0717800BDFB7F /* TransitionAnimationFromDownToUp.m in Sources */,
 				75A125101AD0717800BDFB7F /* TransitionAnimation.m in Sources */,
 				7530D6B31AD068D50063F124 /* ContributorsViewController.m in Sources */,
+				75AD2E951ADAD193002EE482 /* NewBookViewController.m in Sources */,
 				75A125231AD08FE500BDFB7F /* AlertViewController.m in Sources */,
 				75DFE1101A800D6200CE9E69 /* ShadowPlayViewController.m in Sources */,
 				75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */,
 				75CC87E91AD0238D00F6C59E /* MainScreenViewModel.m in Sources */,
+				75AD2E991ADAD193002EE482 /* NNKEpubView.m in Sources */,
 				75A125141AD0717800BDFB7F /* ParallaxEffect.m in Sources */,
 				75E86E321A82C06800419776 /* DragableButton.m in Sources */,
 				75DC66C91A814F9300D6A553 /* ShadowPlayOpenedHandler.m in Sources */,
 				75A125131AD0717800BDFB7F /* Animator.m in Sources */,
+				75AD2E971ADAD193002EE482 /* NNKChapter.m in Sources */,
 				75E2376B1A854BD800BE6540 /* UIColor+SystemColors.m in Sources */,
 				75EBF32A1AAB7D29005F5E8C /* IslandViewModel.m in Sources */,
 				75EBF3271AAB7BB4005F5E8C /* UIImage+Colors.m in Sources */,
 				75EBF3241AAB6948005F5E8C /* IslandViewController.m in Sources */,
 				75A125111AD0717800BDFB7F /* TransitionAnimationFromUpToDown.m in Sources */,
 				75EC14161A7ECF460086803E /* MagicSchoolAnswersHandler.m in Sources */,
+				75AD2E931ADAD193002EE482 /* CustomizationViewController.m in Sources */,
 				75F1DB201A86D758005ACBA7 /* UIDevice+ScreenSize.m in Sources */,
 				75DFE0C91A8009C800CE9E69 /* CharacterShadowViewController.m in Sources */,
+				75AD2E9A1ADAD193002EE482 /* UIWebView+CSSRule.m in Sources */,
 				75A125181AD071B400BDFB7F /* TransitionAnimationDisolve.m in Sources */,
 				75A1251C1AD078E300BDFB7F /* AboutViewController.m in Sources */,
 				75EDA1921A840F31002546E0 /* NNWVideoViewController.m in Sources */,
 				75E237661A85454B00BE6540 /* UIFont+CustomFonts.m in Sources */,
 				75E237741A8557CA00BE6540 /* NSBundle+Language.m in Sources */,
 				75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */,
+				757DBBD11ADB199500517632 /* UIViewController+Child.m in Sources */,
 				75635ADE1AABBEAA005BD4CB /* PopUpViewController.m in Sources */,
 				75C12A681A754B6C0075FD8D /* AppDelegate.m in Sources */,
 				75C12A651A754B6C0075FD8D /* main.m in Sources */,
@@ -1324,7 +1463,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75C12A7F1A754B6D0075FD8D /* WorldTests.m in Sources */,
+				75AD2EA31ADAD710002EE482 /* ChaptersViewControllerTests.m in Sources */,
+				75AD2EA11ADAD65B002EE482 /* NewBookViewControllerTests.m in Sources */,
+				75AD2EA51ADAD88E002EE482 /* CustomizationViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1449,10 +1590,12 @@
 		};
 		75C12A831A754B6D0075FD8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 047A1C67A322F975E7F2E245 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "World/Supporting Files/World-prefix.pch";
 				INFOPLIST_FILE = "World/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1460,10 +1603,12 @@
 		};
 		75C12A841A754B6D0075FD8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C941A4C850417BA1B0022421 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "World/Supporting Files/World-prefix.pch";
 				INFOPLIST_FILE = "World/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -55,6 +55,18 @@
         case SettingsBarIconTypeSound:
             baseText = @"top_bar_sound";
             break;
+        case SettingsBarIconTypeBookAudio:
+            baseText = @"book_top_audio";
+            break;
+        case SettingsBarIconTypeBookBookmark:
+            baseText = @"book_top_bookmarks";
+            break;
+        case SettingsBarIconTypeBookContent:
+            baseText = @"book_top_content";
+            break;
+        case SettingsBarIconTypeBookFontSize:
+            baseText = @"book_top_font";
+            break;
         default:
             break;
     }

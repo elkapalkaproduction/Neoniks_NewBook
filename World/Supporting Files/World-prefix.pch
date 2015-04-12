@@ -22,5 +22,6 @@
 #import "UIDevice+ScreenSize.h"
 #import "UIImage+Colors.h"
 #import "NSURL+Helps.h"
+#import "UIViewController+Child.h"
 
 #endif
