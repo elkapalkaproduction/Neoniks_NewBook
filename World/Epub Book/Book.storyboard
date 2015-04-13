@@ -41,41 +41,41 @@
                                             <constraint firstAttribute="width" secondItem="HOF-Ab-kUy" secondAttribute="height" multiplier="1:1" id="Z3l-FZ-7az"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M1Z-5T-uqX">
-                                        <rect key="frame" x="111" y="0.0" width="54" height="54"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1Z-5T-uqX">
+                                        <rect key="frame" x="112" y="0.0" width="54" height="54"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="M1Z-5T-uqX" secondAttribute="height" multiplier="1:1" id="Bjn-RY-gRT"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qBB-fk-OOh">
-                                        <rect key="frame" x="213" y="0.0" width="54" height="54"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBB-fk-OOh">
+                                        <rect key="frame" x="214" y="0.0" width="54" height="54"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="qBB-fk-OOh" secondAttribute="height" multiplier="1:1" id="mZM-3S-O5K"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CJw-iK-y79">
-                                        <rect key="frame" x="315" y="0.0" width="54" height="54"/>
+                                        <rect key="frame" x="316" y="0.0" width="54" height="54"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="CJw-iK-y79" secondAttribute="height" multiplier="1:1" id="wRB-ah-7qZ"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="691-ig-Zc9">
-                                        <rect key="frame" x="369" y="0.0" width="137" height="54"/>
+                                        <rect key="frame" x="370" y="0.0" width="136" height="54"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zk5-VA-sWI">
-                                        <rect key="frame" x="267" y="0.0" width="48" height="54"/>
+                                        <rect key="frame" x="268" y="0.0" width="48" height="54"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o2f-oO-kmQ">
-                                        <rect key="frame" x="165" y="0.0" width="48" height="54"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2f-oO-kmQ">
+                                        <rect key="frame" x="166" y="0.0" width="48" height="54"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mkv-x5-oJ6">
-                                        <rect key="frame" x="64" y="0.0" width="47" height="54"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mkv-x5-oJ6">
+                                        <rect key="frame" x="64" y="0.0" width="48" height="54"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPG-rM-U0K">
@@ -213,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="856" y="647"/>
         </scene>
-        <!--Chapters View Controller-->
+        <!--Book Options View Controller-->
         <scene sceneID="rau-Yu-FzO">
             <objects>
-                <viewController storyboardIdentifier="ChaptersViewController" id="f9g-Wf-R81" customClass="ChaptersViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookOptionsViewController" id="f9g-Wf-R81" customClass="BookOptionsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RZs-u3-SJR"/>
                         <viewControllerLayoutGuide type="bottom" id="eZq-fl-BXR"/>
@@ -245,55 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5nw-24-M41" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1545" y="168"/>
-        </scene>
-        <!--Customization View Controller-->
-        <scene sceneID="bi4-y9-wy0">
-            <objects>
-                <viewController storyboardIdentifier="CustomizationViewController" id="qxU-pu-gbx" customClass="CustomizationViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zZ7-im-djF"/>
-                        <viewControllerLayoutGuide type="bottom" id="F6P-7T-n9Q"/>
-                    </layoutGuides>
-                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Uxu-Ri-hgr">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="OhW-Yt-uDV">
-                                <rect key="frame" x="0.0" y="38" width="600" height="562"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="qxU-pu-gbx" id="JO0-UG-vYm"/>
-                                    <outlet property="delegate" destination="qxU-pu-gbx" id="8rY-Mc-WXG"/>
-                                </connections>
-                            </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="557-zF-zGb">
-                                <rect key="frame" x="0.0" y="10" width="600" height="29"/>
-                                <segments>
-                                    <segment title="White"/>
-                                    <segment title="Sepia"/>
-                                    <segment title="Black"/>
-                                </segments>
-                                <connections>
-                                    <action selector="segmentControllerValueChanged:" destination="qxU-pu-gbx" eventType="valueChanged" id="utM-jz-Okl"/>
-                                </connections>
-                            </segmentedControl>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="F6P-7T-n9Q" firstAttribute="top" secondItem="OhW-Yt-uDV" secondAttribute="bottom" id="5UZ-Ej-JCD"/>
-                            <constraint firstItem="557-zF-zGb" firstAttribute="leading" secondItem="Uxu-Ri-hgr" secondAttribute="leading" id="WgE-8S-0hn"/>
-                            <constraint firstAttribute="trailing" secondItem="557-zF-zGb" secondAttribute="trailing" id="d28-57-Y8j"/>
-                            <constraint firstItem="557-zF-zGb" firstAttribute="top" secondItem="Uxu-Ri-hgr" secondAttribute="top" constant="10" id="h6b-ml-28a"/>
-                            <constraint firstAttribute="trailing" secondItem="OhW-Yt-uDV" secondAttribute="trailing" id="iiV-xl-FfU"/>
-                            <constraint firstItem="OhW-Yt-uDV" firstAttribute="top" secondItem="557-zF-zGb" secondAttribute="bottom" id="sWM-50-84L"/>
-                            <constraint firstItem="OhW-Yt-uDV" firstAttribute="leading" secondItem="Uxu-Ri-hgr" secondAttribute="leading" id="y9R-LV-Fsa"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e1i-04-Qnh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1545" y="824"/>
+            <point key="canvasLocation" x="1543" y="647"/>
         </scene>
     </scenes>
     <resources>

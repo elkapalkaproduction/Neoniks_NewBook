@@ -19,6 +19,7 @@ NSString *const NSPImagePatterName = @"shadow_name_%ld";
 @property (weak, nonatomic) IBOutlet UIImageView *characterImage;
 @property (weak, nonatomic) IBOutlet UIImageView *characterName;
 @property (weak, nonatomic) IBOutlet UIImageView *nameBackground;
+
 @end
 
 @implementation CharacterShadowViewController
@@ -50,17 +51,20 @@ NSString *const NSPImagePatterName = @"shadow_name_%ld";
     self.nameBackground.hidden = YES;
 }
 
+
 - (void)changeToCharacterOpenState {
     self.characterImage.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternPortrait, self.loadedCharacter]];
     self.characterName.hidden = NO;
     self.nameBackground.hidden = NO;
 }
 
+
 - (void)changeToCharacterSelectedState {
     self.characterImage.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternBorder, self.loadedCharacter]];
     self.characterName.hidden = NO;
     self.nameBackground.hidden = NO;
 }
+
 
 - (void)updateInterface {
     NSString *key = [NSString stringWithFormat:NSPImagePatterName, self.loadedCharacter];

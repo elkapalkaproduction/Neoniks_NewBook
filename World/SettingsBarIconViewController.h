@@ -36,4 +36,9 @@ typedef NS_ENUM(NSInteger, SettingsBarIconType) {
                                 type:(SettingsBarIconType)type
                             delegate:(id<SettingsBarIconDelegate>)delegate;
 
++ (instancetype)instantiateWithFrame:(CGRect)frame
+                                type:(SettingsBarIconType)type
+                              target:(id)target
+                            selector:(SEL)selector;
+
 @end

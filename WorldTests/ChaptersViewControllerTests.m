@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "ChaptersViewController.h"
+#import "BookOptionsViewController.h"
 
 @interface ChaptersViewControllerTests : XCTestCase
 
@@ -17,9 +17,9 @@
 @implementation ChaptersViewControllerTests
 
 - (void)testExample {
-    ChaptersViewController *chapters = [ChaptersViewController instantiateWithChapterList:nil delegate:nil];
+    BookOptionsViewController *chapters = [BookOptionsViewController instantiateWithChapterList:nil delegate:nil];
     // This is an example of a functional test case.
-    XCTAssert([chapters isKindOfClass:[ChaptersViewController class]], @"Pass");
+    XCTAssert([chapters isKindOfClass:[BookOptionsViewController class]], @"Pass");
 }
 
 @end

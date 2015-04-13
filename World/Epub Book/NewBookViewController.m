@@ -9,20 +9,18 @@
 #import "NewBookViewController.h"
 #import "NNKEpubView.h"
 #import "DejalActivityView.h"
-#import "ChaptersViewController.h"
-#import "CustomizationViewController.h"
-#import <WYPopoverController.h>
+#import "BookOptionsViewController.h"
+#import "WYPopoverController.h"
 #import "SettingsBarIconViewController.h"
 
-@interface NewBookViewController () <NNKEpubViewDelegate, ChaptersListDelegate, CustomizationDelegate, UIPopoverPresentationControllerDelegate, SettingsBarIconDelegate>
+@interface NewBookViewController () <NNKEpubViewDelegate, ChaptersListDelegate, CustomizationDelegate, UIPopoverPresentationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet NNKEpubView *epubView;
 @property (weak, nonatomic) IBOutlet UIView *topBar;
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 @property (weak, nonatomic) IBOutlet UISlider *slider;
 @property (weak, nonatomic) IBOutlet UILabel *label;
-@property (strong, nonatomic) UIPopoverPresentationController *popover;
-//@property (strong, nonatomic) WYPopoverController *popover;
+@property (strong, nonatomic) WYPopoverController *popover;
 @property (assign, nonatomic) BOOL beforePaginationHiddingState;
 @property (weak, nonatomic) IBOutlet UILabel *bookNameFooter;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leadingConstraint;
@@ -39,7 +37,7 @@
 + (instancetype)instantiate {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Book" bundle:[NSBundle mainBundle]];
     NewBookViewController *newBook = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(self)];
-    
+
     return newBook;
 }
 
@@ -61,19 +59,22 @@
 }
 
 
-- (void)createTopBarItemWithType:(SettingsBarIconType)type onView:(UIView *)view {
+- (void)createTopBarItemWithType:(SettingsBarIconType)type
+                          onView:(UIView *)view
+                        selector:(SEL)selector {
     SettingsBarIconViewController *contentIcon = [SettingsBarIconViewController instantiateWithFrame:view.bounds
                                                                                                 type:type
-                                                                                            delegate:self];
+                                                                                              target:self
+                                                                                            selector:selector];
     [self addChildViewController:contentIcon withSuperview:view];
 }
 
 
 - (void)createTabBar {
-    [self createTopBarItemWithType:SettingsBarIconTypeBookAudio onView:self.topAudioSuperview];
-    [self createTopBarItemWithType:SettingsBarIconTypeBookBookmark onView:self.topBookmarksSuperview];
-    [self createTopBarItemWithType:SettingsBarIconTypeBookContent onView:self.topContentSuperview];
-    [self createTopBarItemWithType:SettingsBarIconTypeBookFontSize onView:self.topFontSuperview];
+    [self createTopBarItemWithType:SettingsBarIconTypeBookAudio onView:self.topAudioSuperview selector:@selector(disableAudioBook:)];
+    [self createTopBarItemWithType:SettingsBarIconTypeBookBookmark onView:self.topBookmarksSuperview selector:@selector(saveBookmark:)];
+    [self createTopBarItemWithType:SettingsBarIconTypeBookContent onView:self.topContentSuperview selector:@selector(chapters:)];
+    [self createTopBarItemWithType:SettingsBarIconTypeBookFontSize onView:self.topFontSuperview selector:@selector(customization:)];
 }
 
 
@@ -109,29 +110,13 @@
 
 - (void)didSelectChapter:(NNKChapter *)chapter {
     [self.epubView loadSpine:chapter.chapterIndex atPageIndex:0];
-//    [self.popover dismissPopoverAnimated:YES];
+    [self.popover dismissPopoverAnimated:YES];
 }
 
 
 - (void)didChangeFontToFontWithName:(NSString *)fontName {
     self.epubView.fontName = fontName;
-//    [self.popover dismissPopoverAnimated:YES];
-}
-
-
-- (void)didChangeBackgroundColorToColor:(NSString *)color {
-    if ([color isEqualToString:@"white"]) {
-        self.label.textColor = [UIColor blackColor];
-        self.view.backgroundColor = [UIColor whiteColor];
-    } else if ([color isEqualToString:@"black"]) {
-        self.label.textColor = [UIColor whiteColor];
-        self.view.backgroundColor = [UIColor blackColor];
-    } else {
-        self.label.textColor = [UIColor blackColor];
-        self.view.backgroundColor = [UIColor colorWithHexString:color];
-    }
-    [self.epubView changeColorToColor:color];
-//    [self.popover dismissPopoverAnimated:YES];
+    [self.popover dismissPopoverAnimated:YES];
 }
 
 
@@ -160,36 +145,33 @@
 
 
 - (IBAction)chapters:(UIButton *)sender {
-    ChaptersViewController *viewController = [ChaptersViewController instantiateWithChapterList:self.epubView.chapters
+    BookOptionsViewController *viewController = [BookOptionsViewController instantiateWithChapterList:self.epubView.chapters
                                                                                        delegate:self];
-    self.popover = [[UIPopoverPresentationController alloc] initWithPresentedViewController:viewController
-                                                                   presentingViewController:self];
-    viewController.modalPresentationStyle = UIModalPresentationPopover;
-    CGRect rect = sender.frame;
-    rect.origin.y += sender.superview.frame.origin.y;
-    rect.origin.x += sender.superview.frame.origin.x;
-    [self presentViewController:viewController animated:YES completion:nil];
-//    [self.popover presentPopoverFromRect:rect inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    [self presentViewController:viewController fromButton:sender];
+}
+
+
+- (void)presentViewController:(BookOptionsViewController *)viewController fromButton:(UIButton *)sender {
+    self.popover = [[WYPopoverController alloc] initWithContentViewController:viewController];
+    CGRect buttonFrame = sender.frame;
+    CGRect rect = [sender convertRect:buttonFrame toView:self.view];
+    [self.popover presentPopoverFromRect:rect inView:self.view permittedArrowDirections:WYPopoverArrowDirectionAny animated:YES];
 }
 
 
 - (IBAction)customization:(UIButton *)sender {
-    CustomizationViewController *viewController = [CustomizationViewController instantiateWithDelegate:self];
-    self.popover = [[UIPopoverPresentationController alloc] initWithPresentedViewController:viewController
-                                                                   presentingViewController:self];
-    viewController.modalPresentationStyle = UIModalPresentationPopover;
-    CGRect rect = sender.frame;
-    rect.origin.y += sender.superview.frame.origin.y;
-    rect.origin.x += sender.superview.frame.origin.x;
-    [self presentViewController:viewController animated:YES completion:nil];
-    UIPopoverPresentationController *presentationController =
-    [viewController popoverPresentationController];
-    presentationController.delegate = self;
-//    presentationController.presentationStyle = UIModalPresentationPopover;
-    presentationController.permittedArrowDirections = UIPopoverArrowDirectionAny;
-    presentationController.sourceView = self.view;
-    presentationController.sourceRect = rect;
-//    [self.popover presentPopoverFromRect:rect inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    BookOptionsViewController *viewController = [BookOptionsViewController instantiateFontSelectWithDelegate:self];
+    [self presentViewController:viewController fromButton:sender];
+}
+
+
+- (void)disableAudioBook:(UIButton *)sender {
+    
+}
+
+
+- (void)saveBookmark:(UIButton *)sender {
+    
 }
 
 
@@ -201,6 +183,7 @@
 - (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller {
     return UIModalPresentationPopover;
 }
+
 
 - (NSUInteger)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskAll;
@@ -219,13 +202,15 @@
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
     switch (orientation) {
         case UIInterfaceOrientationLandscapeLeft:
-        case UIInterfaceOrientationLandscapeRight:
+        case UIInterfaceOrientationLandscapeRight: {
             return NSLayoutAttributeLeading;
-        default:
+        }
+
+        default: {
             return NSLayoutAttributeCenterX;
             break;
+        }
     }
-
 }
 
 
@@ -239,24 +224,6 @@
                                                          multiplier:1
                                                            constant:0];
     [self.view addConstraint:self.leadingConstraint];
-}
-
-
-- (void)settingBar:(SettingsBarIconViewController *)settings didPressIconWithType:(SettingsBarIconType)type {
-    
-}
-
-@end
-
-@interface UIPopoverController (iPhone)
-+ (BOOL)_popoversDisabled;
-@end
-
-// UIPopoverController+iPhone.m file
-@implementation UIPopoverController (iPhone)
-
-+ (BOOL)_popoversDisabled {
-    return NO;
 }
 
 @end

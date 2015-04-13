@@ -13,6 +13,7 @@
 @property (assign, nonatomic) CGFloat firstY;
 
 @property (strong, nonatomic) UIPanGestureRecognizer *panRecognizer;
+
 @end
 
 @implementation DragableButton

@@ -15,18 +15,39 @@
 @property (weak, nonatomic) id<SettingsBarIconDelegate> delegate;
 @property (assign, nonatomic) SettingsBarIconType type;
 @property (assign, nonatomic) CGRect frame;
+@property (weak, nonatomic) id target;
+@property (assign, nonatomic) SEL selector;
 
 @end
 
 @implementation SettingsBarIconViewController
 
-+ (instancetype)instantiateWithFrame:(CGRect)frame
-                                type:(SettingsBarIconType)type
-                           delegate:(id<SettingsBarIconDelegate>)delegate {
++ (SettingsBarIconViewController *)instantiateWithFrame:(CGRect)frame type:(SettingsBarIconType)type {
     SettingsBarIconViewController *viewController = [[SettingsBarIconViewController alloc] initWithNibName:NSStringFromClass([self class]) bundle:nil];
     viewController.frame = frame;
     viewController.type = type;
+    
+    return viewController;
+}
+
+
++ (instancetype)instantiateWithFrame:(CGRect)frame
+                                type:(SettingsBarIconType)type
+                           delegate:(id<SettingsBarIconDelegate>)delegate {
+    SettingsBarIconViewController *viewController = [self instantiateWithFrame:frame type:type];
     viewController.delegate = delegate;
+    
+    return viewController;
+}
+
+
++ (instancetype)instantiateWithFrame:(CGRect)frame
+                                type:(SettingsBarIconType)type
+                              target:(id)target
+                            selector:(SEL)selector {
+    SettingsBarIconViewController *viewController = [self instantiateWithFrame:frame type:type];
+    viewController.target = target;
+    viewController.selector = selector;
     
     return viewController;
 }
@@ -74,6 +95,12 @@
     NSString *textImageName = NSLocalizedString([baseText stringByAppendingString:@"_text"], nil);
     [self.icon setImage:[UIImage imageNamed:iconName] forState:UIControlStateNormal];
     [self.titleImage setImage:[UIImage imageNamed:textImageName]];
+    if (!self.target) {
+        self.target = self;
+        self.selector = @selector(selectIcon:);
+    }
+    [self.icon addTarget:self.target action:self.selector forControlEvents:UIControlEventTouchUpInside];
+
     // Do any additional setup after loading the view.
 }
 
@@ -81,6 +108,5 @@
 - (IBAction)selectIcon:(id)sender {
     [self.delegate settingBar:self didPressIconWithType:self.type];
 }
-
 
 @end

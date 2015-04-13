@@ -24,14 +24,13 @@
 @property (assign, nonatomic) NSUInteger currentPageInSpineIndex;
 @property (assign, nonatomic) NSUInteger pagesInCurrentSpineCount;
 @property (assign, nonatomic) NSUInteger currentTextSize;
-@property (strong, nonatomic) NSString *textColor;
-@property (strong, nonatomic) NSString *backgroundColor;
 @property (assign, nonatomic, readwrite) NSUInteger totalPagesCount;
 @property (assign, nonatomic) BOOL paginating;
 
 @end
 
 @implementation NNKEpubView
+
 @synthesize currentPageNumber = _currentPageNumber;
 @synthesize fontName = _fontName;
 
@@ -121,13 +120,6 @@
 }
 
 
-- (void)changeColorToColor:(NSString *)color {
-    self.textColor = [color isEqual:@"black"] ? @"white" : @"black";
-    self.backgroundColor = color;
-    [self updatePagination];
-}
-
-
 #pragma mark - Chapters Delegate
 
 - (void)chapterDidFinishLoad:(NNKChapter *)chapter {
@@ -149,20 +141,19 @@
 
 #pragma mark - WebView Delegate
 
-
 - (void)webViewDidFinishLoad:(UIWebView *)theWebView {
     [self updateCurrentSpineIndexBasedOnWebView:theWebView];
     [self.webView runCSSRulesToWebViewWithPercentSize:self.currentTextSize
-                                             fontName:self.fontName
-                                            fontColor:self.textColor];
+                                             fontName:self.fontName];
     self.pagesInCurrentSpineCount = self.webView.numberOfPages;
     [self gotoPageInCurrentSpine:self.currentPageInSpineIndex];
 }
 
 
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer*)otherGestureRecognizer {
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
     return YES;
 }
+
 
 #pragma mark - Custom Accessors
 
@@ -181,8 +172,7 @@
     } else {
         if ([self.delegate respondsToSelector:@selector(paginationDidFinish)]) {
             [self.webView runCSSRulesToWebViewWithPercentSize:self.currentTextSize
-                                                     fontName:self.fontName
-                                                    fontColor:self.textColor];
+                                                     fontName:self.fontName];
             [self.delegate paginationDidFinish];
         }
     }
@@ -235,24 +225,6 @@
     }
 
     return _webView;
-}
-
-
-- (NSString *)textColor {
-    if (!_textColor) {
-        _textColor = @"black";
-    }
-    
-    return _textColor;
-}
-
-
-- (NSString *)backgroundColor {
-    if (!_backgroundColor) {
-        _backgroundColor = @"white";
-    }
-    
-    return _backgroundColor;
 }
 
 

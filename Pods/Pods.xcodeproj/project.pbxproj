@@ -7,446 +7,352 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		003B5252747E4BE54F56F547 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = C05B05EA7F471706E00380FC /* crypt.h */; };
-		021451A0334AA40CA50F5B68 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E19DDEA7A6F22E1F4927EA /* QuartzCore.framework */; };
-		023701A06A021C60E63A0C4E /* CXMLElement_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 72ACF892323547D6EAF73C7C /* CXMLElement_CreationExtensions.h */; };
-		0C9321CEF62B55CB7C33EF13 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82BDD55006D0E1F4BD8629DA /* CTidy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		1064F777C0045637324E5B0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2687267A39457E945059BDF /* Foundation.framework */; };
-		109685947D89C0AE0092989F /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 138C2A90A5DFD43A3656524D /* CXMLElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		15FC97984514FBEF7068CFFB /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A5E0AB5CC1D5CAE1504120 /* CXMLDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		165B66C556668CF97A69AE3A /* CXMLElement_ElementTreeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 66854498405F69907F12E1E8 /* CXMLElement_ElementTreeExtensions.h */; };
-		2135E9ED829A65152F81BE33 /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6434A218CAACE4C1DDB386 /* CXMLElement_ElementTreeExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		2150FFAABDC7C34FB4B1AD50 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 56909C970894801079DFD151 /* CXMLNode_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		21985DF99E03BD14E0C82D62 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC1D288D28DD1C28610D77B /* Pods-dummy.m */; };
-		24B40F351E5618EE15A03D9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2687267A39457E945059BDF /* Foundation.framework */; };
-		29577826CE2D7597DD6A2312 /* CXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = AE88C56899E3C12EFC00991E /* CXMLDocument.h */; };
-		2CD4175AC6F3F58AB2DBE9CC /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB58AA31DE517B9FC0F6833 /* CXMLDocument_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		3567ECFC08EC31C984F581BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E1436F831FC5F67F6FB26B /* CoreGraphics.framework */; };
-		36A054DF0D13436B0FD2342A /* CXMLNode_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 038E6B99E526BEA624F11739 /* CXMLNode_CreationExtensions.h */; };
-		3C8CBF6C2816AA1357DB7639 /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D9685DFF8B61FAC7FC7041BF /* CXHTMLDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		4127CB74BC6AB11DDD70660A /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AEA2518201ECE7414FDDE99 /* unzip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		419327A30E3435295E17E753 /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 76238E9CF6EEF75C55A928DE /* CXMLNamespaceNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		47156669FF116D1E0DEB14C7 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 31F00316A6551EBCBAF8923C /* ZipArchive.h */; };
-		47F2064834653FFD825695CB /* CXMLNamespaceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A24395D05B6E7224ED039C /* CXMLNamespaceNode.h */; };
-		4B286B2585B7AFAEC48CE7BA /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BF5F12F670DFC148A924E1 /* ioapi.h */; };
-		4BC7FD8423BC0492225B9CDE /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = BDBBA81A8513C1C2F85B0388 /* mztools.h */; };
-		4FE679C8BDCA21AF21261734 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2687267A39457E945059BDF /* Foundation.framework */; };
-		5468490B44F87DBD1C3774AF /* CTidy.h in Headers */ = {isa = PBXBuildFile; fileRef = C6DB75990EB80AF79EE42937 /* CTidy.h */; };
-		54B62397CE19E9C979636C4C /* WYStoryboardPopoverSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FC6A4EE26C59F1167FA03D3 /* WYStoryboardPopoverSegue.h */; };
-		551C2AACFA81DFC46B7E624F /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1378E44CFDA3742A865E3 /* CXMLElement_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		57C1D4402B77ED1B0A732F19 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 267C108DF88299B205280FF8 /* zip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		5B4C3BB8CF6EB7F7579E581C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2687267A39457E945059BDF /* Foundation.framework */; };
-		5C71281421F62196EECD3C8D /* Pods-WYPopoverController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3850FB0732DF35DC946B09FD /* Pods-WYPopoverController-dummy.m */; };
-		5D920381A855486336EC6F31 /* Pods-ZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7222FEDED5C0E8CD7CBD0AD /* Pods-ZipArchive-dummy.m */; };
-		643E08211488BD088C762324 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B791F43281929C84D19A6FE /* UIKit.framework */; };
-		66546F518E8F1DB8F5FBE19D /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 882AFD6C22CB7D1BFC2F319C /* CXMLNode_XPathExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		688847B1F07433189900DC56 /* CXHTMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = AD353E17815BB8A1753F0145 /* CXHTMLDocument.h */; };
-		69607A4E4A68BC3953ABB1A9 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA213D6ABEE48BCE170B076 /* unzip.h */; };
-		6EBCD403ABE121EF276B7EB9 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9CA39CB34195C9FD9BA3AC /* CXMLDocument_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		72C2C1B9C38BB07338316E53 /* CXMLNode_XPathExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8565C30F5DD8244FD4127738 /* CXMLNode_XPathExtensions.h */; };
-		7F0EDFA8D23F4DC6D3DC44DD /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F6703E1E8637FC14F3F38F8E /* CXMLNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		81FCD8D3546CF4BC308830D1 /* TouchXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 854987BF3057199C50CC7231 /* TouchXML.h */; };
-		85246CE8F9CAADB3B5BAF5E3 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFCB2B91DABAEEF8E0CA693 /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		8F42B69C9817841DBA8D799E /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4972BB299BEFDBD98484C2B8 /* WYPopoverController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		93764D5934E70246ACE173C9 /* Pods-TouchXML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFD40900ECBA8597DDE0729 /* Pods-TouchXML-dummy.m */; };
-		94CFE846C03ACB0804A093CC /* CXMLDocument_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DDA5AAA935A3C5827BB6424 /* CXMLDocument_CreationExtensions.h */; };
-		A9AF88F0C451BF822047E450 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F0751971EFBC29DA1424132 /* mztools.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		ACBD7571EF82B7E26122620F /* CXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = BBE777247DEB791874DB752F /* CXMLElement.h */; };
-		B3278E9BE92A77DDA0C858E6 /* CXMLNode_PrivateExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = C8C864D4E957CCD2679AFF65 /* CXMLNode_PrivateExtensions.h */; };
-		B500C6FC1721F7701C15355A /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A48916C2CA8451E922DB59B /* CXMLNode_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		B8E03E5051A9BA625169B85E /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8656BC0B46C8FC04F1B9E8B6 /* WYStoryboardPopoverSegue.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		C1899CD2738A72C8DA7B291D /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = DF8A2C55FA44A9CD864F567B /* zip.h */; };
-		D5814FC571D699F51658072C /* CXMLDocument_PrivateExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A2E72EB8CCC02453D3832D27 /* CXMLDocument_PrivateExtensions.h */; };
-		D618552140EDA3D0A3947240 /* WYPopoverController.h in Headers */ = {isa = PBXBuildFile; fileRef = D2907C01D6AB1C112DB66D86 /* WYPopoverController.h */; };
-		DD4310E3B1F6658668C1339D /* CXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 101BE34014C842148802B5F4 /* CXMLNode.h */; };
-		FE6BF0BF9CEF57D5DBC30452 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = FBB0284271213EE97E3A2486 /* ioapi.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		070F4CDC34B3384E734AC673 /* CXMLDocument_PrivateExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D592361ABD3433106B9F13 /* CXMLDocument_PrivateExtensions.h */; };
+		075B127C33706CBA5971A856 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E179C94C486C71CDB1F483 /* Foundation.framework */; };
+		22A1FC7273172F2BABA8C666 /* CXMLElement_ElementTreeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0396845188E0ABE63081C23A /* CXMLElement_ElementTreeExtensions.h */; };
+		264C0552161C606C3BD37CB9 /* CXMLElement_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 883BE13B879A5A7873CD6675 /* CXMLElement_CreationExtensions.h */; };
+		290720F218CB48730DFF838E /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 87C97B16D1CE9A1300F83DF6 /* unzip.h */; };
+		31E059794639A0A678B7C3D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E179C94C486C71CDB1F483 /* Foundation.framework */; };
+		398D8CF929F84509FEF64C9C /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = F76C3BBDD0CDDEE5C3789532 /* ioapi.h */; };
+		3D8B5EDD3C176DD7B8C868F1 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = FB7237036DCEA26C8D31EF1E /* zip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		46B3ADE960C2EF403DDBCDB4 /* CXMLNode_XPathExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F57B60E87A078797FB3C64B /* CXMLNode_XPathExtensions.h */; };
+		57FBE2E38006FEF87A5CE151 /* CXMLNode_PrivateExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 397A5B8DDE620350EB077736 /* CXMLNode_PrivateExtensions.h */; };
+		5E7B2FDC0A2B10B89DE28FAA /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB405CCCC6E28173500873 /* CXMLDocument_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		5FE1D0E30FAADAE2737A10B9 /* CTidy.h in Headers */ = {isa = PBXBuildFile; fileRef = 673E9C64EC1D5B322FF3B0FD /* CTidy.h */; };
+		64C0FC08AD49DE44FF821E6A /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = E94DBE77E0FEE7E3BEA1D7A6 /* mztools.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		66338512248306E8D1D214E0 /* CXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = D80E7CDC2BED76482EC54D80 /* CXMLDocument.h */; };
+		67F93D3E05234C4077B522F0 /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B70E05530CA59125999B884D /* CXHTMLDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		6A9C76F655CBDCEE2373DAA6 /* CXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EE4296933808F4B2FD7FE40 /* CXMLElement.h */; };
+		6C6CDA69EF5A80BBE5A91E37 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A40A67F3AA6C5E9AE583D0DA /* CXMLNode_XPathExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		6CD1E72E2F0595176DC136DD /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 92854B605878745DBFF1C969 /* CXMLDocument_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		6F5F53E80770780E43116A64 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 35B615D7E065C6E91991C423 /* ioapi.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		7D1A14544202AFCC04BECA63 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DDF498E671B413504509846 /* crypt.h */; };
+		83CE75164E956BF8C631A7DE /* CXMLNamespaceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F2FEB94E444D1AC8416599F1 /* CXMLNamespaceNode.h */; };
+		84A4E6C3C6DC565B93234449 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A80904F10FDD7E9246FD08F3 /* CXMLNode_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		86413820D020AB015D7BC0E4 /* CXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F29C9A75087F10F471F681C9 /* CXMLNode.h */; };
+		9352EFCADF6CC2B20256A56F /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D45D5995843EA59B12F686F1 /* CXMLElement_ElementTreeExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		A1AC59216A62267D93F17090 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9D8A9948A0EBEED55DD46F /* CTidy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		A2D2CE79B26A9395EC7E3239 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B34741A0371F319C9AB98D /* mztools.h */; };
+		A4789B91090D54A7435980BC /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE86D71D20E7CFBBEF8EDDB /* CXMLNamespaceNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		A5295759ACD7315E49EFE538 /* CXHTMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D92FA06EB061038BEFA6B9 /* CXHTMLDocument.h */; };
+		AA2DB0F16BE8A504662BF274 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F99A7B7FEBF4A5A7FA736946 /* CXMLNode_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		AC43B8671013816985F3B419 /* CXMLNode_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7949A3B3CE2506EDB1F6F587 /* CXMLNode_CreationExtensions.h */; };
+		B4909B4879EBE645E8F95CA8 /* TouchXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B25683E3CD61F333A0491A /* TouchXML.h */; };
+		BCF0AB52FEB1559378A8DFE9 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A06CAD2D9F68C4210BA7EC3 /* CXMLDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		BE9443591F8F8003DBDB66E8 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA3E3BEF5857E880EC43CF8 /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		C2480AED44541A4BE2BB5FBB /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 16423FF1E1C95D29A1A61DB2 /* unzip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		C259EF85700823C048DA7BC7 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F41E8FE11D656FD63F08CF /* ZipArchive.h */; };
+		C725806C7C3C44FD976578F5 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 746D0648BDD6199240B9389F /* CXMLNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		C9230C6B9118D2512AD0CAF5 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6401D4E2C1338A1B0A9AB628 /* CXMLElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		D183DC05013F618CFA1DF548 /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 686E678EDB1C4ED62235F271 /* CXMLElement_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		D6921CB24DD31B3B46CD4027 /* Pods-TouchXML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D160C6B2BF9CE8E58BEF6B6 /* Pods-TouchXML-dummy.m */; };
+		D92F420D4BB161932A21C050 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D3F96CD0EB2E46E9A419B5C /* zip.h */; };
+		DC93E0D46A22A692914E8FB3 /* Pods-ZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 817720C927C62ECEFED02CCE /* Pods-ZipArchive-dummy.m */; };
+		E9E4B57E294AD78BC00B3B7D /* CXMLDocument_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2464330BDB1B090C1D151A69 /* CXMLDocument_CreationExtensions.h */; };
+		F6E991128235D7A49897EC4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E179C94C486C71CDB1F483 /* Foundation.framework */; };
+		FB80E3DB6E2AC4FD4CFE6E42 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29422F27DDBF23948C1E333D /* Pods-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		08CF4E667CD301461E87D71C /* PBXContainerItemProxy */ = {
+		D670B452D64DFF2E81252BEB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 11F2239BB2FD20C76AA5510E /* Project object */;
+			containerPortal = DB119010198D157CC99973D2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 15BED6F54854A0B657D4B10A;
-			remoteInfo = "Pods-WYPopoverController";
-		};
-		7CCDDE5F9AF14A6AFEADE4AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11F2239BB2FD20C76AA5510E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 54706ED0D9820F6BA08EA175;
-			remoteInfo = "Pods-ZipArchive";
-		};
-		EB1A005F4ADDB3E0E82CAA83 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11F2239BB2FD20C76AA5510E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A4E099639C3745F3FC6E8804;
+			remoteGlobalIDString = 8CF69E5C1CF8ABBB6936341B;
 			remoteInfo = "Pods-TouchXML";
+		};
+		F80E7DEB2BDFD71E739D66D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB119010198D157CC99973D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39481C92340B15964669019C;
+			remoteInfo = "Pods-ZipArchive";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		038E6B99E526BEA624F11739 /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode_CreationExtensions.h; path = Source/Creation/CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
-		0A48916C2CA8451E922DB59B /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_CreationExtensions.m; path = Source/Creation/CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
-		0B1642E8D9F8A5F8E88B23B8 /* Pods-WYPopoverController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WYPopoverController.xcconfig"; sourceTree = "<group>"; };
-		101BE34014C842148802B5F4 /* CXMLNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode.h; path = Source/CXMLNode.h; sourceTree = "<group>"; };
-		138C2A90A5DFD43A3656524D /* CXMLElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLElement.m; path = Source/CXMLElement.m; sourceTree = "<group>"; };
-		2049BB96B218047100EA57AC /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		267C108DF88299B205280FF8 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = minizip/zip.c; sourceTree = "<group>"; };
-		2AC1D288D28DD1C28610D77B /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		2DDA5AAA935A3C5827BB6424 /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLDocument_CreationExtensions.h; path = Source/Creation/CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
-		31F00316A6551EBCBAF8923C /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
-		3850FB0732DF35DC946B09FD /* Pods-WYPopoverController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WYPopoverController-dummy.m"; sourceTree = "<group>"; };
-		3AEA2518201ECE7414FDDE99 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = minizip/unzip.c; sourceTree = "<group>"; };
-		3B4AE71510ADA3C173C51CF6 /* Pods-ZipArchive-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZipArchive-Private.xcconfig"; sourceTree = "<group>"; };
-		3B791F43281929C84D19A6FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		3F0751971EFBC29DA1424132 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = minizip/mztools.c; sourceTree = "<group>"; };
-		3FC6A4EE26C59F1167FA03D3 /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WYStoryboardPopoverSegue.h; path = WYPopoverController/WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
-		3FFCB2B91DABAEEF8E0CA693 /* ZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
-		461D10743E7B60CAA6890EB4 /* libPods-TouchXML.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TouchXML.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4972BB299BEFDBD98484C2B8 /* WYPopoverController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WYPopoverController.m; path = WYPopoverController/WYPopoverController.m; sourceTree = "<group>"; };
-		56909C970894801079DFD151 /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_PrivateExtensions.m; path = Source/CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
-		5C2849A507387DAACE7B2037 /* Pods-WYPopoverController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WYPopoverController-Private.xcconfig"; sourceTree = "<group>"; };
-		5DA213D6ABEE48BCE170B076 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/unzip.h; sourceTree = "<group>"; };
-		637126F1E2BFFAEC51C7462D /* libPods-ZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZipArchive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		66854498405F69907F12E1E8 /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLElement_ElementTreeExtensions.h; path = Source/CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
-		6A45167DFAF7BEC37FA84D18 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		72ACF892323547D6EAF73C7C /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLElement_CreationExtensions.h; path = Source/CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
-		76238E9CF6EEF75C55A928DE /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNamespaceNode.m; path = Source/CXMLNamespaceNode.m; sourceTree = "<group>"; };
-		7B6434A218CAACE4C1DDB386 /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLElement_ElementTreeExtensions.m; path = Source/CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
-		7DFD40900ECBA8597DDE0729 /* Pods-TouchXML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TouchXML-dummy.m"; sourceTree = "<group>"; };
-		82BDD55006D0E1F4BD8629DA /* CTidy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTidy.m; path = Source/Tidy/CTidy.m; sourceTree = "<group>"; };
-		854987BF3057199C50CC7231 /* TouchXML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TouchXML.h; path = Source/TouchXML.h; sourceTree = "<group>"; };
-		8565C30F5DD8244FD4127738 /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode_XPathExtensions.h; path = Source/CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
-		8656BC0B46C8FC04F1B9E8B6 /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WYStoryboardPopoverSegue.m; path = WYPopoverController/WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
-		882AFD6C22CB7D1BFC2F319C /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_XPathExtensions.m; path = Source/CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
-		8A2F82C5B072ECF080BFDFEC /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		8ABAEF172691040FC24D77D3 /* Pods-TouchXML-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TouchXML-Private.xcconfig"; sourceTree = "<group>"; };
-		8D57588B6AA474F37D0E2079 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B0CC08AA285A77E35B287C7 /* Pods-ZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZipArchive-prefix.pch"; sourceTree = "<group>"; };
-		A2687267A39457E945059BDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A2E72EB8CCC02453D3832D27 /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLDocument_PrivateExtensions.h; path = Source/CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
-		A6F1378E44CFDA3742A865E3 /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLElement_CreationExtensions.m; path = Source/CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
-		AAC70D44C538C07744F1A24B /* libPods-WYPopoverController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WYPopoverController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD353E17815BB8A1753F0145 /* CXHTMLDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXHTMLDocument.h; path = Source/CXHTMLDocument.h; sourceTree = "<group>"; };
-		AE88C56899E3C12EFC00991E /* CXMLDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLDocument.h; path = Source/CXMLDocument.h; sourceTree = "<group>"; };
-		B1A5E0AB5CC1D5CAE1504120 /* CXMLDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument.m; path = Source/CXMLDocument.m; sourceTree = "<group>"; };
-		B5E1436F831FC5F67F6FB26B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		B9A24395D05B6E7224ED039C /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNamespaceNode.h; path = Source/CXMLNamespaceNode.h; sourceTree = "<group>"; };
-		BB9CA39CB34195C9FD9BA3AC /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument_CreationExtensions.m; path = Source/Creation/CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
-		BBE777247DEB791874DB752F /* CXMLElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLElement.h; path = Source/CXMLElement.h; sourceTree = "<group>"; };
-		BDBBA81A8513C1C2F85B0388 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = minizip/mztools.h; sourceTree = "<group>"; };
-		C05B05EA7F471706E00380FC /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/crypt.h; sourceTree = "<group>"; };
-		C6DB75990EB80AF79EE42937 /* CTidy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTidy.h; path = Source/Tidy/CTidy.h; sourceTree = "<group>"; };
-		C8C864D4E957CCD2679AFF65 /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode_PrivateExtensions.h; path = Source/CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
-		D0BF5F12F670DFC148A924E1 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = minizip/ioapi.h; sourceTree = "<group>"; };
-		D2907C01D6AB1C112DB66D86 /* WYPopoverController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WYPopoverController.h; path = WYPopoverController/WYPopoverController.h; sourceTree = "<group>"; };
-		D38402B29319D013D7CE279C /* Pods-WYPopoverController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WYPopoverController-prefix.pch"; sourceTree = "<group>"; };
-		D3AE0EA54E3548A82953887D /* Pods-ZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZipArchive.xcconfig"; sourceTree = "<group>"; };
-		D7E19DDEA7A6F22E1F4927EA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		D9685DFF8B61FAC7FC7041BF /* CXHTMLDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXHTMLDocument.m; path = Source/CXHTMLDocument.m; sourceTree = "<group>"; };
-		DBEEE1529E6FC64D5742938F /* Pods-TouchXML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TouchXML.xcconfig"; sourceTree = "<group>"; };
-		DDB58AA31DE517B9FC0F6833 /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument_PrivateExtensions.m; path = Source/CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
-		DF8A2C55FA44A9CD864F567B /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/zip.h; sourceTree = "<group>"; };
-		E45B30089CF93AB546A055D7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		E7222FEDED5C0E8CD7CBD0AD /* Pods-ZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZipArchive-dummy.m"; sourceTree = "<group>"; };
-		E89C2E6737A9F35D01AB80A3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		F3B2A7C64D543847AD1E60FC /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F649EB8B8007DB4B020FB1F7 /* Pods-TouchXML-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TouchXML-prefix.pch"; sourceTree = "<group>"; };
-		F6703E1E8637FC14F3F38F8E /* CXMLNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode.m; path = Source/CXMLNode.m; sourceTree = "<group>"; };
-		FA36CE2F08DF5C117F5D693E /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		FBB0284271213EE97E3A2486 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = minizip/ioapi.c; sourceTree = "<group>"; };
+		014C88E6573A8E0952E218BA /* Pods-TouchXML-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TouchXML-Private.xcconfig"; sourceTree = "<group>"; };
+		0396845188E0ABE63081C23A /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLElement_ElementTreeExtensions.h; path = Source/CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
+		06D92FA06EB061038BEFA6B9 /* CXHTMLDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXHTMLDocument.h; path = Source/CXHTMLDocument.h; sourceTree = "<group>"; };
+		0D3F96CD0EB2E46E9A419B5C /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/zip.h; sourceTree = "<group>"; };
+		0EE4296933808F4B2FD7FE40 /* CXMLElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLElement.h; path = Source/CXMLElement.h; sourceTree = "<group>"; };
+		0F9D8A9948A0EBEED55DD46F /* CTidy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTidy.m; path = Source/Tidy/CTidy.m; sourceTree = "<group>"; };
+		16423FF1E1C95D29A1A61DB2 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = minizip/unzip.c; sourceTree = "<group>"; };
+		16B25683E3CD61F333A0491A /* TouchXML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TouchXML.h; path = Source/TouchXML.h; sourceTree = "<group>"; };
+		1AE86D71D20E7CFBBEF8EDDB /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNamespaceNode.m; path = Source/CXMLNamespaceNode.m; sourceTree = "<group>"; };
+		2464330BDB1B090C1D151A69 /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLDocument_CreationExtensions.h; path = Source/Creation/CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
+		264FECEBCAA849D700808675 /* Pods-TouchXML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TouchXML.xcconfig"; sourceTree = "<group>"; };
+		28A471FD4153ACF1014521B1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		29422F27DDBF23948C1E333D /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		2F57B60E87A078797FB3C64B /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode_XPathExtensions.h; path = Source/CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		3011248D689CDB9C4964405D /* Pods-TouchXML-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TouchXML-prefix.pch"; sourceTree = "<group>"; };
+		31BB405CCCC6E28173500873 /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument_CreationExtensions.m; path = Source/Creation/CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
+		33D592361ABD3433106B9F13 /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLDocument_PrivateExtensions.h; path = Source/CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		35B615D7E065C6E91991C423 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = minizip/ioapi.c; sourceTree = "<group>"; };
+		37E179C94C486C71CDB1F483 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		397A5B8DDE620350EB077736 /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode_PrivateExtensions.h; path = Source/CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		477533CBCD14452099AD51BD /* libPods-TouchXML.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TouchXML.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BFB8738CEAFBE1DE80F4EC6 /* Pods-ZipArchive-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZipArchive-Private.xcconfig"; sourceTree = "<group>"; };
+		4D160C6B2BF9CE8E58BEF6B6 /* Pods-TouchXML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TouchXML-dummy.m"; sourceTree = "<group>"; };
+		4DA3E3BEF5857E880EC43CF8 /* ZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
+		61589F8950694DD91B34B707 /* libPods-ZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZipArchive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6401D4E2C1338A1B0A9AB628 /* CXMLElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLElement.m; path = Source/CXMLElement.m; sourceTree = "<group>"; };
+		655456067237BC80F8DEEF9C /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		673E9C64EC1D5B322FF3B0FD /* CTidy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTidy.h; path = Source/Tidy/CTidy.h; sourceTree = "<group>"; };
+		686E678EDB1C4ED62235F271 /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLElement_CreationExtensions.m; path = Source/CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
+		746D0648BDD6199240B9389F /* CXMLNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode.m; path = Source/CXMLNode.m; sourceTree = "<group>"; };
+		7949A3B3CE2506EDB1F6F587 /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode_CreationExtensions.h; path = Source/Creation/CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
+		7A06CAD2D9F68C4210BA7EC3 /* CXMLDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument.m; path = Source/CXMLDocument.m; sourceTree = "<group>"; };
+		7A19DC08B31AE4A9AF7E1DE5 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		817720C927C62ECEFED02CCE /* Pods-ZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZipArchive-dummy.m"; sourceTree = "<group>"; };
+		87C97B16D1CE9A1300F83DF6 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/unzip.h; sourceTree = "<group>"; };
+		883BE13B879A5A7873CD6675 /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLElement_CreationExtensions.h; path = Source/CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
+		8DDF498E671B413504509846 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/crypt.h; sourceTree = "<group>"; };
+		92854B605878745DBFF1C969 /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument_PrivateExtensions.m; path = Source/CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		93B34741A0371F319C9AB98D /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = minizip/mztools.h; sourceTree = "<group>"; };
+		A40A67F3AA6C5E9AE583D0DA /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_XPathExtensions.m; path = Source/CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		A80904F10FDD7E9246FD08F3 /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_PrivateExtensions.m; path = Source/CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		A8ADEB6C4BEC9DAC2AAFF878 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70E05530CA59125999B884D /* CXHTMLDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXHTMLDocument.m; path = Source/CXHTMLDocument.m; sourceTree = "<group>"; };
+		D3033AB1EB55CD1DF6449E18 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		D45D5995843EA59B12F686F1 /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLElement_ElementTreeExtensions.m; path = Source/CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
+		D80E7CDC2BED76482EC54D80 /* CXMLDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLDocument.h; path = Source/CXMLDocument.h; sourceTree = "<group>"; };
+		DE767CB62D616CFD574B9A6F /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E297FC2A8610F0328133B3F3 /* Pods-ZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZipArchive.xcconfig"; sourceTree = "<group>"; };
+		E94DBE77E0FEE7E3BEA1D7A6 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = minizip/mztools.c; sourceTree = "<group>"; };
+		F1F41E8FE11D656FD63F08CF /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		F29C9A75087F10F471F681C9 /* CXMLNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode.h; path = Source/CXMLNode.h; sourceTree = "<group>"; };
+		F2FEB94E444D1AC8416599F1 /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNamespaceNode.h; path = Source/CXMLNamespaceNode.h; sourceTree = "<group>"; };
+		F3F1C250CBA25D7B092D909A /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		F76C3BBDD0CDDEE5C3789532 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = minizip/ioapi.h; sourceTree = "<group>"; };
+		F99A7B7FEBF4A5A7FA736946 /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_CreationExtensions.m; path = Source/Creation/CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
+		FB4468297D32D4F26ECF2591 /* Pods-ZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		FB7237036DCEA26C8D31EF1E /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = minizip/zip.c; sourceTree = "<group>"; };
+		FD993CDE9FE89291B05582E0 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F1837381EFC970A02840146 /* Frameworks */ = {
+		0F7C765BF1607F633C877033 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3567ECFC08EC31C984F581BF /* CoreGraphics.framework in Frameworks */,
-				4FE679C8BDCA21AF21261734 /* Foundation.framework in Frameworks */,
-				021451A0334AA40CA50F5B68 /* QuartzCore.framework in Frameworks */,
-				643E08211488BD088C762324 /* UIKit.framework in Frameworks */,
+				F6E991128235D7A49897EC4F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A6E49FB662F846F6393E590 /* Frameworks */ = {
+		55C753A3B163CF4C9D98656B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24B40F351E5618EE15A03D9B /* Foundation.framework in Frameworks */,
+				31E059794639A0A678B7C3D9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB1137D410BB230BBFC81BB6 /* Frameworks */ = {
+		6263F45F0A0E685B5376607F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B4C3BB8CF6EB7F7579E581C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0045C5414BC276B24346171 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1064F777C0045637324E5B0D /* Foundation.framework in Frameworks */,
+				075B127C33706CBA5971A856 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F80F3887C9298B1A4E70286 /* Support Files */ = {
+		0A6E2F7C90C125158F631F7D /* ZipArchive */ = {
 			isa = PBXGroup;
 			children = (
-				DBEEE1529E6FC64D5742938F /* Pods-TouchXML.xcconfig */,
-				8ABAEF172691040FC24D77D3 /* Pods-TouchXML-Private.xcconfig */,
-				7DFD40900ECBA8597DDE0729 /* Pods-TouchXML-dummy.m */,
-				F649EB8B8007DB4B020FB1F7 /* Pods-TouchXML-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-TouchXML";
-			sourceTree = "<group>";
-		};
-		5E88D550DD1E0E606E9053EF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				B5E1436F831FC5F67F6FB26B /* CoreGraphics.framework */,
-				A2687267A39457E945059BDF /* Foundation.framework */,
-				D7E19DDEA7A6F22E1F4927EA /* QuartzCore.framework */,
-				3B791F43281929C84D19A6FE /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		6153D7AE5AC5094493CF5405 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BCA0147AAA303BE887223F59 /* TouchXML */,
-				C3686238E4AF5FE67ED587EE /* WYPopoverController */,
-				BE7691A3A4604FE691AFF313 /* ZipArchive */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		629CFF129C958D024D12FBC5 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B06E1FEBC267B25475B6746E /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		68A55CD570E00F3BB41B5EBB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E88D550DD1E0E606E9053EF /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8EE6CAC9C73B643C80BC8E98 = {
-			isa = PBXGroup;
-			children = (
-				6A45167DFAF7BEC37FA84D18 /* Podfile */,
-				68A55CD570E00F3BB41B5EBB /* Frameworks */,
-				6153D7AE5AC5094493CF5405 /* Pods */,
-				CD1C074AAE0CA5448227AB6C /* Products */,
-				629CFF129C958D024D12FBC5 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		B06E1FEBC267B25475B6746E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F3B2A7C64D543847AD1E60FC /* Pods-acknowledgements.markdown */,
-				8A2F82C5B072ECF080BFDFEC /* Pods-acknowledgements.plist */,
-				2AC1D288D28DD1C28610D77B /* Pods-dummy.m */,
-				FA36CE2F08DF5C117F5D693E /* Pods-environment.h */,
-				2049BB96B218047100EA57AC /* Pods-resources.sh */,
-				E45B30089CF93AB546A055D7 /* Pods.debug.xcconfig */,
-				E89C2E6737A9F35D01AB80A3 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		BCA0147AAA303BE887223F59 /* TouchXML */ = {
-			isa = PBXGroup;
-			children = (
-				C6DB75990EB80AF79EE42937 /* CTidy.h */,
-				82BDD55006D0E1F4BD8629DA /* CTidy.m */,
-				AD353E17815BB8A1753F0145 /* CXHTMLDocument.h */,
-				D9685DFF8B61FAC7FC7041BF /* CXHTMLDocument.m */,
-				AE88C56899E3C12EFC00991E /* CXMLDocument.h */,
-				B1A5E0AB5CC1D5CAE1504120 /* CXMLDocument.m */,
-				2DDA5AAA935A3C5827BB6424 /* CXMLDocument_CreationExtensions.h */,
-				BB9CA39CB34195C9FD9BA3AC /* CXMLDocument_CreationExtensions.m */,
-				A2E72EB8CCC02453D3832D27 /* CXMLDocument_PrivateExtensions.h */,
-				DDB58AA31DE517B9FC0F6833 /* CXMLDocument_PrivateExtensions.m */,
-				BBE777247DEB791874DB752F /* CXMLElement.h */,
-				138C2A90A5DFD43A3656524D /* CXMLElement.m */,
-				72ACF892323547D6EAF73C7C /* CXMLElement_CreationExtensions.h */,
-				A6F1378E44CFDA3742A865E3 /* CXMLElement_CreationExtensions.m */,
-				66854498405F69907F12E1E8 /* CXMLElement_ElementTreeExtensions.h */,
-				7B6434A218CAACE4C1DDB386 /* CXMLElement_ElementTreeExtensions.m */,
-				B9A24395D05B6E7224ED039C /* CXMLNamespaceNode.h */,
-				76238E9CF6EEF75C55A928DE /* CXMLNamespaceNode.m */,
-				101BE34014C842148802B5F4 /* CXMLNode.h */,
-				F6703E1E8637FC14F3F38F8E /* CXMLNode.m */,
-				038E6B99E526BEA624F11739 /* CXMLNode_CreationExtensions.h */,
-				0A48916C2CA8451E922DB59B /* CXMLNode_CreationExtensions.m */,
-				C8C864D4E957CCD2679AFF65 /* CXMLNode_PrivateExtensions.h */,
-				56909C970894801079DFD151 /* CXMLNode_PrivateExtensions.m */,
-				8565C30F5DD8244FD4127738 /* CXMLNode_XPathExtensions.h */,
-				882AFD6C22CB7D1BFC2F319C /* CXMLNode_XPathExtensions.m */,
-				854987BF3057199C50CC7231 /* TouchXML.h */,
-				2F80F3887C9298B1A4E70286 /* Support Files */,
-			);
-			path = TouchXML;
-			sourceTree = "<group>";
-		};
-		BE7691A3A4604FE691AFF313 /* ZipArchive */ = {
-			isa = PBXGroup;
-			children = (
-				31F00316A6551EBCBAF8923C /* ZipArchive.h */,
-				3FFCB2B91DABAEEF8E0CA693 /* ZipArchive.m */,
-				C05B05EA7F471706E00380FC /* crypt.h */,
-				FBB0284271213EE97E3A2486 /* ioapi.c */,
-				D0BF5F12F670DFC148A924E1 /* ioapi.h */,
-				3F0751971EFBC29DA1424132 /* mztools.c */,
-				BDBBA81A8513C1C2F85B0388 /* mztools.h */,
-				3AEA2518201ECE7414FDDE99 /* unzip.c */,
-				5DA213D6ABEE48BCE170B076 /* unzip.h */,
-				267C108DF88299B205280FF8 /* zip.c */,
-				DF8A2C55FA44A9CD864F567B /* zip.h */,
-				F14637A532C4BEB218F9A1C1 /* Support Files */,
+				F1F41E8FE11D656FD63F08CF /* ZipArchive.h */,
+				4DA3E3BEF5857E880EC43CF8 /* ZipArchive.m */,
+				8DDF498E671B413504509846 /* crypt.h */,
+				35B615D7E065C6E91991C423 /* ioapi.c */,
+				F76C3BBDD0CDDEE5C3789532 /* ioapi.h */,
+				E94DBE77E0FEE7E3BEA1D7A6 /* mztools.c */,
+				93B34741A0371F319C9AB98D /* mztools.h */,
+				16423FF1E1C95D29A1A61DB2 /* unzip.c */,
+				87C97B16D1CE9A1300F83DF6 /* unzip.h */,
+				FB7237036DCEA26C8D31EF1E /* zip.c */,
+				0D3F96CD0EB2E46E9A419B5C /* zip.h */,
+				781B24E9B6BF5F97B47AB119 /* Support Files */,
 			);
 			path = ZipArchive;
 			sourceTree = "<group>";
 		};
-		C3686238E4AF5FE67ED587EE /* WYPopoverController */ = {
+		1C881BEE90397061BC5DC231 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D2907C01D6AB1C112DB66D86 /* WYPopoverController.h */,
-				4972BB299BEFDBD98484C2B8 /* WYPopoverController.m */,
-				3FC6A4EE26C59F1167FA03D3 /* WYStoryboardPopoverSegue.h */,
-				8656BC0B46C8FC04F1B9E8B6 /* WYStoryboardPopoverSegue.m */,
-				C45FC88271A5A154B36EE804 /* Support Files */,
+				37E179C94C486C71CDB1F483 /* Foundation.framework */,
 			);
-			path = WYPopoverController;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		C45FC88271A5A154B36EE804 /* Support Files */ = {
+		47ADDB4BEFF8AA0C4E1D307A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0B1642E8D9F8A5F8E88B23B8 /* Pods-WYPopoverController.xcconfig */,
-				5C2849A507387DAACE7B2037 /* Pods-WYPopoverController-Private.xcconfig */,
-				3850FB0732DF35DC946B09FD /* Pods-WYPopoverController-dummy.m */,
-				D38402B29319D013D7CE279C /* Pods-WYPopoverController-prefix.pch */,
+				51DEEDB315163AD7125623D2 /* TouchXML */,
+				0A6E2F7C90C125158F631F7D /* ZipArchive */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-WYPopoverController";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		CD1C074AAE0CA5448227AB6C /* Products */ = {
+		50D0B44CC4F1FAF1CBE68A29 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8D57588B6AA474F37D0E2079 /* libPods.a */,
-				461D10743E7B60CAA6890EB4 /* libPods-TouchXML.a */,
-				AAC70D44C538C07744F1A24B /* libPods-WYPopoverController.a */,
-				637126F1E2BFFAEC51C7462D /* libPods-ZipArchive.a */,
+				E2948169469D9EC75333FCC4 /* Pods */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F14637A532C4BEB218F9A1C1 /* Support Files */ = {
+		51DEEDB315163AD7125623D2 /* TouchXML */ = {
 			isa = PBXGroup;
 			children = (
-				D3AE0EA54E3548A82953887D /* Pods-ZipArchive.xcconfig */,
-				3B4AE71510ADA3C173C51CF6 /* Pods-ZipArchive-Private.xcconfig */,
-				E7222FEDED5C0E8CD7CBD0AD /* Pods-ZipArchive-dummy.m */,
-				9B0CC08AA285A77E35B287C7 /* Pods-ZipArchive-prefix.pch */,
+				673E9C64EC1D5B322FF3B0FD /* CTidy.h */,
+				0F9D8A9948A0EBEED55DD46F /* CTidy.m */,
+				06D92FA06EB061038BEFA6B9 /* CXHTMLDocument.h */,
+				B70E05530CA59125999B884D /* CXHTMLDocument.m */,
+				D80E7CDC2BED76482EC54D80 /* CXMLDocument.h */,
+				7A06CAD2D9F68C4210BA7EC3 /* CXMLDocument.m */,
+				2464330BDB1B090C1D151A69 /* CXMLDocument_CreationExtensions.h */,
+				31BB405CCCC6E28173500873 /* CXMLDocument_CreationExtensions.m */,
+				33D592361ABD3433106B9F13 /* CXMLDocument_PrivateExtensions.h */,
+				92854B605878745DBFF1C969 /* CXMLDocument_PrivateExtensions.m */,
+				0EE4296933808F4B2FD7FE40 /* CXMLElement.h */,
+				6401D4E2C1338A1B0A9AB628 /* CXMLElement.m */,
+				883BE13B879A5A7873CD6675 /* CXMLElement_CreationExtensions.h */,
+				686E678EDB1C4ED62235F271 /* CXMLElement_CreationExtensions.m */,
+				0396845188E0ABE63081C23A /* CXMLElement_ElementTreeExtensions.h */,
+				D45D5995843EA59B12F686F1 /* CXMLElement_ElementTreeExtensions.m */,
+				F2FEB94E444D1AC8416599F1 /* CXMLNamespaceNode.h */,
+				1AE86D71D20E7CFBBEF8EDDB /* CXMLNamespaceNode.m */,
+				F29C9A75087F10F471F681C9 /* CXMLNode.h */,
+				746D0648BDD6199240B9389F /* CXMLNode.m */,
+				7949A3B3CE2506EDB1F6F587 /* CXMLNode_CreationExtensions.h */,
+				F99A7B7FEBF4A5A7FA736946 /* CXMLNode_CreationExtensions.m */,
+				397A5B8DDE620350EB077736 /* CXMLNode_PrivateExtensions.h */,
+				A80904F10FDD7E9246FD08F3 /* CXMLNode_PrivateExtensions.m */,
+				2F57B60E87A078797FB3C64B /* CXMLNode_XPathExtensions.h */,
+				A40A67F3AA6C5E9AE583D0DA /* CXMLNode_XPathExtensions.m */,
+				16B25683E3CD61F333A0491A /* TouchXML.h */,
+				DD1F8F03562868E7E021E8BF /* Support Files */,
+			);
+			path = TouchXML;
+			sourceTree = "<group>";
+		};
+		62F3B85BC77FB2FF55AAFE5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C881BEE90397061BC5DC231 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		781B24E9B6BF5F97B47AB119 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E297FC2A8610F0328133B3F3 /* Pods-ZipArchive.xcconfig */,
+				4BFB8738CEAFBE1DE80F4EC6 /* Pods-ZipArchive-Private.xcconfig */,
+				817720C927C62ECEFED02CCE /* Pods-ZipArchive-dummy.m */,
+				FB4468297D32D4F26ECF2591 /* Pods-ZipArchive-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-ZipArchive";
 			sourceTree = "<group>";
 		};
+		A68C6322DDC8985E1780107A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8ADEB6C4BEC9DAC2AAFF878 /* libPods.a */,
+				477533CBCD14452099AD51BD /* libPods-TouchXML.a */,
+				61589F8950694DD91B34B707 /* libPods-ZipArchive.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD1F8F03562868E7E021E8BF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				264FECEBCAA849D700808675 /* Pods-TouchXML.xcconfig */,
+				014C88E6573A8E0952E218BA /* Pods-TouchXML-Private.xcconfig */,
+				4D160C6B2BF9CE8E58BEF6B6 /* Pods-TouchXML-dummy.m */,
+				3011248D689CDB9C4964405D /* Pods-TouchXML-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-TouchXML";
+			sourceTree = "<group>";
+		};
+		E2948169469D9EC75333FCC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE767CB62D616CFD574B9A6F /* Pods-acknowledgements.markdown */,
+				F3F1C250CBA25D7B092D909A /* Pods-acknowledgements.plist */,
+				29422F27DDBF23948C1E333D /* Pods-dummy.m */,
+				7A19DC08B31AE4A9AF7E1DE5 /* Pods-environment.h */,
+				FD993CDE9FE89291B05582E0 /* Pods-resources.sh */,
+				D3033AB1EB55CD1DF6449E18 /* Pods.debug.xcconfig */,
+				28A471FD4153ACF1014521B1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		F479444638EDA1A4C744D557 = {
+			isa = PBXGroup;
+			children = (
+				655456067237BC80F8DEEF9C /* Podfile */,
+				62F3B85BC77FB2FF55AAFE5A /* Frameworks */,
+				47ADDB4BEFF8AA0C4E1D307A /* Pods */,
+				A68C6322DDC8985E1780107A /* Products */,
+				50D0B44CC4F1FAF1CBE68A29 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		54EFA3CBBDE480DFB9965129 /* Headers */ = {
+		CFB3F6513DEDD9E7793545F2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D618552140EDA3D0A3947240 /* WYPopoverController.h in Headers */,
-				54B62397CE19E9C979636C4C /* WYStoryboardPopoverSegue.h in Headers */,
+				C259EF85700823C048DA7BC7 /* ZipArchive.h in Headers */,
+				7D1A14544202AFCC04BECA63 /* crypt.h in Headers */,
+				398D8CF929F84509FEF64C9C /* ioapi.h in Headers */,
+				A2D2CE79B26A9395EC7E3239 /* mztools.h in Headers */,
+				290720F218CB48730DFF838E /* unzip.h in Headers */,
+				D92F420D4BB161932A21C050 /* zip.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EB386C7A5C4DE9ED02115CE /* Headers */ = {
+		E11FCCB474C906FD059F0592 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47156669FF116D1E0DEB14C7 /* ZipArchive.h in Headers */,
-				003B5252747E4BE54F56F547 /* crypt.h in Headers */,
-				4B286B2585B7AFAEC48CE7BA /* ioapi.h in Headers */,
-				4BC7FD8423BC0492225B9CDE /* mztools.h in Headers */,
-				69607A4E4A68BC3953ABB1A9 /* unzip.h in Headers */,
-				C1899CD2738A72C8DA7B291D /* zip.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B309CD15D5E8293F295BC5FA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5468490B44F87DBD1C3774AF /* CTidy.h in Headers */,
-				688847B1F07433189900DC56 /* CXHTMLDocument.h in Headers */,
-				29577826CE2D7597DD6A2312 /* CXMLDocument.h in Headers */,
-				94CFE846C03ACB0804A093CC /* CXMLDocument_CreationExtensions.h in Headers */,
-				D5814FC571D699F51658072C /* CXMLDocument_PrivateExtensions.h in Headers */,
-				ACBD7571EF82B7E26122620F /* CXMLElement.h in Headers */,
-				023701A06A021C60E63A0C4E /* CXMLElement_CreationExtensions.h in Headers */,
-				165B66C556668CF97A69AE3A /* CXMLElement_ElementTreeExtensions.h in Headers */,
-				47F2064834653FFD825695CB /* CXMLNamespaceNode.h in Headers */,
-				DD4310E3B1F6658668C1339D /* CXMLNode.h in Headers */,
-				36A054DF0D13436B0FD2342A /* CXMLNode_CreationExtensions.h in Headers */,
-				B3278E9BE92A77DDA0C858E6 /* CXMLNode_PrivateExtensions.h in Headers */,
-				72C2C1B9C38BB07338316E53 /* CXMLNode_XPathExtensions.h in Headers */,
-				81FCD8D3546CF4BC308830D1 /* TouchXML.h in Headers */,
+				5FE1D0E30FAADAE2737A10B9 /* CTidy.h in Headers */,
+				A5295759ACD7315E49EFE538 /* CXHTMLDocument.h in Headers */,
+				66338512248306E8D1D214E0 /* CXMLDocument.h in Headers */,
+				E9E4B57E294AD78BC00B3B7D /* CXMLDocument_CreationExtensions.h in Headers */,
+				070F4CDC34B3384E734AC673 /* CXMLDocument_PrivateExtensions.h in Headers */,
+				6A9C76F655CBDCEE2373DAA6 /* CXMLElement.h in Headers */,
+				264C0552161C606C3BD37CB9 /* CXMLElement_CreationExtensions.h in Headers */,
+				22A1FC7273172F2BABA8C666 /* CXMLElement_ElementTreeExtensions.h in Headers */,
+				83CE75164E956BF8C631A7DE /* CXMLNamespaceNode.h in Headers */,
+				86413820D020AB015D7BC0E4 /* CXMLNode.h in Headers */,
+				AC43B8671013816985F3B419 /* CXMLNode_CreationExtensions.h in Headers */,
+				57FBE2E38006FEF87A5CE151 /* CXMLNode_PrivateExtensions.h in Headers */,
+				46B3ADE960C2EF403DDBCDB4 /* CXMLNode_XPathExtensions.h in Headers */,
+				B4909B4879EBE645E8F95CA8 /* TouchXML.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		15BED6F54854A0B657D4B10A /* Pods-WYPopoverController */ = {
+		39481C92340B15964669019C /* Pods-ZipArchive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33E51322144A794DC2D6B3C0 /* Build configuration list for PBXNativeTarget "Pods-WYPopoverController" */;
+			buildConfigurationList = 99F2ED70E8C434A3043FC17A /* Build configuration list for PBXNativeTarget "Pods-ZipArchive" */;
 			buildPhases = (
-				D703C70EC60BEB4C1D260DA6 /* Sources */,
-				2F1837381EFC970A02840146 /* Frameworks */,
-				54EFA3CBBDE480DFB9965129 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-WYPopoverController";
-			productName = "Pods-WYPopoverController";
-			productReference = AAC70D44C538C07744F1A24B /* libPods-WYPopoverController.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		54706ED0D9820F6BA08EA175 /* Pods-ZipArchive */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 83BC8FD662A50F700500C097 /* Build configuration list for PBXNativeTarget "Pods-ZipArchive" */;
-			buildPhases = (
-				3F37BB893B4FF32A42ADD5BF /* Sources */,
-				AB1137D410BB230BBFC81BB6 /* Frameworks */,
-				5EB386C7A5C4DE9ED02115CE /* Headers */,
+				BB762241DBAC57B662AAC3BF /* Sources */,
+				6263F45F0A0E685B5376607F /* Frameworks */,
+				CFB3F6513DEDD9E7793545F2 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -454,16 +360,16 @@
 			);
 			name = "Pods-ZipArchive";
 			productName = "Pods-ZipArchive";
-			productReference = 637126F1E2BFFAEC51C7462D /* libPods-ZipArchive.a */;
+			productReference = 61589F8950694DD91B34B707 /* libPods-ZipArchive.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A4E099639C3745F3FC6E8804 /* Pods-TouchXML */ = {
+		8CF69E5C1CF8ABBB6936341B /* Pods-TouchXML */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09CE29044AB6D9B9011F0021 /* Build configuration list for PBXNativeTarget "Pods-TouchXML" */;
+			buildConfigurationList = DBD3C0D538D368A6EDC2A533 /* Build configuration list for PBXNativeTarget "Pods-TouchXML" */;
 			buildPhases = (
-				AC8EEEB88ECCC2AAAC7CCA13 /* Sources */,
-				8A6E49FB662F846F6393E590 /* Frameworks */,
-				B309CD15D5E8293F295BC5FA /* Headers */,
+				CF53496BC991230AD0C82045 /* Sources */,
+				55C753A3B163CF4C9D98656B /* Frameworks */,
+				E11FCCB474C906FD059F0592 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -471,166 +377,132 @@
 			);
 			name = "Pods-TouchXML";
 			productName = "Pods-TouchXML";
-			productReference = 461D10743E7B60CAA6890EB4 /* libPods-TouchXML.a */;
+			productReference = 477533CBCD14452099AD51BD /* libPods-TouchXML.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D3C5DB98BD0E3DDEF5F63CF2 /* Pods */ = {
+		FC3717B87DD27DFC7C7E1076 /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF037C70A1A541F25D1A7218 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 61D044AD02B212F2DD9F4440 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				822AE49E305EB6926AC96990 /* Sources */,
-				F0045C5414BC276B24346171 /* Frameworks */,
+				82978670020FDACF64E994CD /* Sources */,
+				0F7C765BF1607F633C877033 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				88E871E07DE86300873FE0EB /* PBXTargetDependency */,
-				E1CB72B4759D5C70D1BA4E77 /* PBXTargetDependency */,
-				028204E8073569F6FD563481 /* PBXTargetDependency */,
+				CC2F1378030A8BB6DBF4714C /* PBXTargetDependency */,
+				16BD202A5241DB16BFA6364C /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 8D57588B6AA474F37D0E2079 /* libPods.a */;
+			productReference = A8ADEB6C4BEC9DAC2AAFF878 /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		11F2239BB2FD20C76AA5510E /* Project object */ = {
+		DB119010198D157CC99973D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 9F36718EB280D3938B48C4A0 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 851B356B9D39A9D556642157 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8EE6CAC9C73B643C80BC8E98;
-			productRefGroup = CD1C074AAE0CA5448227AB6C /* Products */;
+			mainGroup = F479444638EDA1A4C744D557;
+			productRefGroup = A68C6322DDC8985E1780107A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D3C5DB98BD0E3DDEF5F63CF2 /* Pods */,
-				A4E099639C3745F3FC6E8804 /* Pods-TouchXML */,
-				15BED6F54854A0B657D4B10A /* Pods-WYPopoverController */,
-				54706ED0D9820F6BA08EA175 /* Pods-ZipArchive */,
+				FC3717B87DD27DFC7C7E1076 /* Pods */,
+				8CF69E5C1CF8ABBB6936341B /* Pods-TouchXML */,
+				39481C92340B15964669019C /* Pods-ZipArchive */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3F37BB893B4FF32A42ADD5BF /* Sources */ = {
+		82978670020FDACF64E994CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D920381A855486336EC6F31 /* Pods-ZipArchive-dummy.m in Sources */,
-				85246CE8F9CAADB3B5BAF5E3 /* ZipArchive.m in Sources */,
-				FE6BF0BF9CEF57D5DBC30452 /* ioapi.c in Sources */,
-				A9AF88F0C451BF822047E450 /* mztools.c in Sources */,
-				4127CB74BC6AB11DDD70660A /* unzip.c in Sources */,
-				57C1D4402B77ED1B0A732F19 /* zip.c in Sources */,
+				FB80E3DB6E2AC4FD4CFE6E42 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		822AE49E305EB6926AC96990 /* Sources */ = {
+		BB762241DBAC57B662AAC3BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21985DF99E03BD14E0C82D62 /* Pods-dummy.m in Sources */,
+				DC93E0D46A22A692914E8FB3 /* Pods-ZipArchive-dummy.m in Sources */,
+				BE9443591F8F8003DBDB66E8 /* ZipArchive.m in Sources */,
+				6F5F53E80770780E43116A64 /* ioapi.c in Sources */,
+				64C0FC08AD49DE44FF821E6A /* mztools.c in Sources */,
+				C2480AED44541A4BE2BB5FBB /* unzip.c in Sources */,
+				3D8B5EDD3C176DD7B8C868F1 /* zip.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC8EEEB88ECCC2AAAC7CCA13 /* Sources */ = {
+		CF53496BC991230AD0C82045 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C9321CEF62B55CB7C33EF13 /* CTidy.m in Sources */,
-				3C8CBF6C2816AA1357DB7639 /* CXHTMLDocument.m in Sources */,
-				15FC97984514FBEF7068CFFB /* CXMLDocument.m in Sources */,
-				6EBCD403ABE121EF276B7EB9 /* CXMLDocument_CreationExtensions.m in Sources */,
-				2CD4175AC6F3F58AB2DBE9CC /* CXMLDocument_PrivateExtensions.m in Sources */,
-				109685947D89C0AE0092989F /* CXMLElement.m in Sources */,
-				551C2AACFA81DFC46B7E624F /* CXMLElement_CreationExtensions.m in Sources */,
-				2135E9ED829A65152F81BE33 /* CXMLElement_ElementTreeExtensions.m in Sources */,
-				419327A30E3435295E17E753 /* CXMLNamespaceNode.m in Sources */,
-				7F0EDFA8D23F4DC6D3DC44DD /* CXMLNode.m in Sources */,
-				B500C6FC1721F7701C15355A /* CXMLNode_CreationExtensions.m in Sources */,
-				2150FFAABDC7C34FB4B1AD50 /* CXMLNode_PrivateExtensions.m in Sources */,
-				66546F518E8F1DB8F5FBE19D /* CXMLNode_XPathExtensions.m in Sources */,
-				93764D5934E70246ACE173C9 /* Pods-TouchXML-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D703C70EC60BEB4C1D260DA6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C71281421F62196EECD3C8D /* Pods-WYPopoverController-dummy.m in Sources */,
-				8F42B69C9817841DBA8D799E /* WYPopoverController.m in Sources */,
-				B8E03E5051A9BA625169B85E /* WYStoryboardPopoverSegue.m in Sources */,
+				A1AC59216A62267D93F17090 /* CTidy.m in Sources */,
+				67F93D3E05234C4077B522F0 /* CXHTMLDocument.m in Sources */,
+				BCF0AB52FEB1559378A8DFE9 /* CXMLDocument.m in Sources */,
+				5E7B2FDC0A2B10B89DE28FAA /* CXMLDocument_CreationExtensions.m in Sources */,
+				6CD1E72E2F0595176DC136DD /* CXMLDocument_PrivateExtensions.m in Sources */,
+				C9230C6B9118D2512AD0CAF5 /* CXMLElement.m in Sources */,
+				D183DC05013F618CFA1DF548 /* CXMLElement_CreationExtensions.m in Sources */,
+				9352EFCADF6CC2B20256A56F /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				A4789B91090D54A7435980BC /* CXMLNamespaceNode.m in Sources */,
+				C725806C7C3C44FD976578F5 /* CXMLNode.m in Sources */,
+				AA2DB0F16BE8A504662BF274 /* CXMLNode_CreationExtensions.m in Sources */,
+				84A4E6C3C6DC565B93234449 /* CXMLNode_PrivateExtensions.m in Sources */,
+				6C6CDA69EF5A80BBE5A91E37 /* CXMLNode_XPathExtensions.m in Sources */,
+				D6921CB24DD31B3B46CD4027 /* Pods-TouchXML-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		028204E8073569F6FD563481 /* PBXTargetDependency */ = {
+		16BD202A5241DB16BFA6364C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ZipArchive";
-			target = 54706ED0D9820F6BA08EA175 /* Pods-ZipArchive */;
-			targetProxy = 7CCDDE5F9AF14A6AFEADE4AF /* PBXContainerItemProxy */;
+			target = 39481C92340B15964669019C /* Pods-ZipArchive */;
+			targetProxy = F80E7DEB2BDFD71E739D66D5 /* PBXContainerItemProxy */;
 		};
-		88E871E07DE86300873FE0EB /* PBXTargetDependency */ = {
+		CC2F1378030A8BB6DBF4714C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-TouchXML";
-			target = A4E099639C3745F3FC6E8804 /* Pods-TouchXML */;
-			targetProxy = EB1A005F4ADDB3E0E82CAA83 /* PBXContainerItemProxy */;
-		};
-		E1CB72B4759D5C70D1BA4E77 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-WYPopoverController";
-			target = 15BED6F54854A0B657D4B10A /* Pods-WYPopoverController */;
-			targetProxy = 08CF4E667CD301461E87D71C /* PBXContainerItemProxy */;
+			target = 8CF69E5C1CF8ABBB6936341B /* Pods-TouchXML */;
+			targetProxy = D670B452D64DFF2E81252BEB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0DDFCAA72D51E87D7FD9C533 /* Release */ = {
+		08C9BA5429484F3A9805E7CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4AE71510ADA3C173C51CF6 /* Pods-ZipArchive-Private.xcconfig */;
+			baseConfigurationReference = D3033AB1EB55CD1DF6449E18 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZipArchive/Pods-ZipArchive-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		126D4C9FD8687370D2337094 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8ABAEF172691040FC24D77D3 /* Pods-TouchXML-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-TouchXML/Pods-TouchXML-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		21B60E793C409335346D1BA8 /* Debug */ = {
+		13E93015761CE2784BE6F899 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -662,20 +534,36 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		485D829701C07B646FE8CC14 /* Release */ = {
+		34B0DFFD5AEFA9ACE8ED8131 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C2849A507387DAACE7B2037 /* Pods-WYPopoverController-Private.xcconfig */;
+			baseConfigurationReference = 28A471FD4153ACF1014521B1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-WYPopoverController/Pods-WYPopoverController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		471708C790065FE738F29B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BFB8738CEAFBE1DE80F4EC6 /* Pods-ZipArchive-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZipArchive/Pods-ZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -685,7 +573,55 @@
 			};
 			name = Release;
 		};
-		69CCB74EEA3F5DE1FCA8CC91 /* Release */ = {
+		507FA46B8EAFC14B384A2BD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 014C88E6573A8E0952E218BA /* Pods-TouchXML-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TouchXML/Pods-TouchXML-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		59C7650A01C4AB780CDD1171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BFB8738CEAFBE1DE80F4EC6 /* Pods-ZipArchive-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZipArchive/Pods-ZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6230BA01F1EBFD26338BACE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 014C88E6573A8E0952E218BA /* Pods-TouchXML-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TouchXML/Pods-TouchXML-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8AC0BADEB53500720CEAD334 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -712,142 +648,53 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		814582B7E12AA2C46101692A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E45B30089CF93AB546A055D7 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		956CD97B6AD412A64325EE7B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C2849A507387DAACE7B2037 /* Pods-WYPopoverController-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-WYPopoverController/Pods-WYPopoverController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		96514F89EB213C4CC32F36CB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4AE71510ADA3C173C51CF6 /* Pods-ZipArchive-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZipArchive/Pods-ZipArchive-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		9A25F8BC348CDCA219C56DDC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8ABAEF172691040FC24D77D3 /* Pods-TouchXML-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-TouchXML/Pods-TouchXML-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		CD9C60643C4FB0B2698A7090 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E89C2E6737A9F35D01AB80A3 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09CE29044AB6D9B9011F0021 /* Build configuration list for PBXNativeTarget "Pods-TouchXML" */ = {
+		61D044AD02B212F2DD9F4440 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A25F8BC348CDCA219C56DDC /* Debug */,
-				126D4C9FD8687370D2337094 /* Release */,
+				08C9BA5429484F3A9805E7CF /* Debug */,
+				34B0DFFD5AEFA9ACE8ED8131 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		33E51322144A794DC2D6B3C0 /* Build configuration list for PBXNativeTarget "Pods-WYPopoverController" */ = {
+		851B356B9D39A9D556642157 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				956CD97B6AD412A64325EE7B /* Debug */,
-				485D829701C07B646FE8CC14 /* Release */,
+				13E93015761CE2784BE6F899 /* Debug */,
+				8AC0BADEB53500720CEAD334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83BC8FD662A50F700500C097 /* Build configuration list for PBXNativeTarget "Pods-ZipArchive" */ = {
+		99F2ED70E8C434A3043FC17A /* Build configuration list for PBXNativeTarget "Pods-ZipArchive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				96514F89EB213C4CC32F36CB /* Debug */,
-				0DDFCAA72D51E87D7FD9C533 /* Release */,
+				59C7650A01C4AB780CDD1171 /* Debug */,
+				471708C790065FE738F29B27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F36718EB280D3938B48C4A0 /* Build configuration list for PBXProject "Pods" */ = {
+		DBD3C0D538D368A6EDC2A533 /* Build configuration list for PBXNativeTarget "Pods-TouchXML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				21B60E793C409335346D1BA8 /* Debug */,
-				69CCB74EEA3F5DE1FCA8CC91 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EF037C70A1A541F25D1A7218 /* Build configuration list for PBXNativeTarget "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				814582B7E12AA2C46101692A /* Debug */,
-				CD9C60643C4FB0B2698A7090 /* Release */,
+				6230BA01F1EBFD26338BACE1 /* Debug */,
+				507FA46B8EAFC14B384A2BD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 11F2239BB2FD20C76AA5510E /* Project object */;
+	rootObject = DB119010198D157CC99973D2 /* Project object */;
 }

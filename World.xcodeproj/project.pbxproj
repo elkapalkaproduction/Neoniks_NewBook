@@ -10,6 +10,7 @@
 		56DC915B5D1078DAC3B7C86D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6129DEB65C4E1E920B30AE6B /* libPods.a */; };
 		7530D6B31AD068D50063F124 /* ContributorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7530D6B21AD068D50063F124 /* ContributorsViewController.m */; };
 		7530D6B61AD069960063F124 /* ContributorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7530D6B51AD069960063F124 /* ContributorsViewController.xib */; };
+		753EFD671ADBC644009F0A38 /* StyleSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 753EFD661ADBC644009F0A38 /* StyleSettings.plist */; };
 		75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */; };
 		75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423AA21A7D8A4000D2C36E /* BaseViewController.m */; };
 		75635ADE1AABBEAA005BD4CB /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */; };
@@ -29,8 +30,7 @@
 		75A125231AD08FE500BDFB7F /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A125221AD08FE500BDFB7F /* AlertViewController.m */; };
 		75AD2E8F1ADAD193002EE482 /* book_eng.epub in Resources */ = {isa = PBXBuildFile; fileRef = 75AD2E7C1ADAD193002EE482 /* book_eng.epub */; };
 		75AD2E901ADAD193002EE482 /* book_rus.epub in Resources */ = {isa = PBXBuildFile; fileRef = 75AD2E7D1ADAD193002EE482 /* book_rus.epub */; };
-		75AD2E911ADAD193002EE482 /* ChaptersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2E7F1ADAD193002EE482 /* ChaptersViewController.m */; };
-		75AD2E931ADAD193002EE482 /* CustomizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2E821ADAD193002EE482 /* CustomizationViewController.m */; };
+		75AD2E911ADAD193002EE482 /* BookOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2E7F1ADAD193002EE482 /* BookOptionsViewController.m */; };
 		75AD2E951ADAD193002EE482 /* NewBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2E851ADAD193002EE482 /* NewBookViewController.m */; };
 		75AD2E971ADAD193002EE482 /* NNKChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2E881ADAD193002EE482 /* NNKChapter.m */; };
 		75AD2E981ADAD193002EE482 /* NNKEpubToChaptersConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2E8A1ADAD193002EE482 /* NNKEpubToChaptersConverter.m */; };
@@ -40,13 +40,15 @@
 		75AD2E9F1ADAD424002EE482 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AD2E9E1ADAD424002EE482 /* Book.storyboard */; };
 		75AD2EA11ADAD65B002EE482 /* NewBookViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2EA01ADAD65B002EE482 /* NewBookViewControllerTests.m */; };
 		75AD2EA31ADAD710002EE482 /* ChaptersViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2EA21ADAD710002EE482 /* ChaptersViewControllerTests.m */; };
-		75AD2EA51ADAD88E002EE482 /* CustomizationViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2EA41ADAD88D002EE482 /* CustomizationViewControllerTests.m */; };
 		75C12A651A754B6C0075FD8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A641A754B6C0075FD8D /* main.m */; };
 		75C12A681A754B6C0075FD8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A671A754B6C0075FD8D /* AppDelegate.m */; };
 		75C12A6B1A754B6C0075FD8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A6A1A754B6C0075FD8D /* ViewController.m */; };
 		75C12A6E1A754B6C0075FD8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A6C1A754B6C0075FD8D /* Main.storyboard */; };
 		75C12A701A754B6C0075FD8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A6F1A754B6C0075FD8D /* Images.xcassets */; };
 		75C12A731A754B6C0075FD8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A711A754B6C0075FD8D /* LaunchScreen.xib */; };
+		75C84D561ADBD868006359E9 /* ChaptersViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C84D551ADBD868006359E9 /* ChaptersViewModel.m */; };
+		75C84D591ADBD955006359E9 /* FontSelectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C84D581ADBD955006359E9 /* FontSelectViewModel.m */; };
+		75C84F031ADC0376006359E9 /* libWYPopoverController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C84EFE1ADC0337006359E9 /* libWYPopoverController.a */; };
 		75CC87E91AD0238D00F6C59E /* MainScreenViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */; };
 		75CC87EC1AD02D4400F6C59E /* InventaryBarIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CC87EB1AD02D4400F6C59E /* InventaryBarIconViewController.m */; };
 		75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D268FD1AC3448B00A17632 /* InfiniteTableView.m */; };
@@ -251,6 +253,27 @@
 			remoteGlobalIDString = 75C12A5E1A754B6C0075FD8D;
 			remoteInfo = World;
 		};
+		75C84EFD1ADC0337006359E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C84E731ADC0337006359E9 /* WYPopoverController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75C84D891ADBFE37006359E9;
+			remoteInfo = WYPopoverController;
+		};
+		75C84EFF1ADC0337006359E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C84E731ADC0337006359E9 /* WYPopoverController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75C84D941ADBFE37006359E9;
+			remoteInfo = WYPopoverControllerTests;
+		};
+		75C84F011ADC0372006359E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C84E731ADC0337006359E9 /* WYPopoverController.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 75C84D881ADBFE37006359E9;
+			remoteInfo = WYPopoverController;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -259,6 +282,7 @@
 		7530D6B11AD068D50063F124 /* ContributorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContributorsViewController.h; sourceTree = "<group>"; };
 		7530D6B21AD068D50063F124 /* ContributorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsViewController.m; sourceTree = "<group>"; };
 		7530D6B51AD069960063F124 /* ContributorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContributorsViewController.xib; sourceTree = "<group>"; };
+		753EFD661ADBC644009F0A38 /* StyleSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StyleSettings.plist; sourceTree = "<group>"; };
 		75423A9C1A7D826A00D2C36E /* SchoolOfMagicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolOfMagicViewController.h; sourceTree = "<group>"; };
 		75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolOfMagicViewController.m; sourceTree = "<group>"; };
 		75423AA11A7D8A4000D2C36E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -293,10 +317,8 @@
 		75A125221AD08FE500BDFB7F /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
 		75AD2E7C1ADAD193002EE482 /* book_eng.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = book_eng.epub; sourceTree = "<group>"; };
 		75AD2E7D1ADAD193002EE482 /* book_rus.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = book_rus.epub; sourceTree = "<group>"; };
-		75AD2E7E1ADAD193002EE482 /* ChaptersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChaptersViewController.h; sourceTree = "<group>"; };
-		75AD2E7F1ADAD193002EE482 /* ChaptersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaptersViewController.m; sourceTree = "<group>"; };
-		75AD2E811ADAD193002EE482 /* CustomizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizationViewController.h; sourceTree = "<group>"; };
-		75AD2E821ADAD193002EE482 /* CustomizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizationViewController.m; sourceTree = "<group>"; };
+		75AD2E7E1ADAD193002EE482 /* BookOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookOptionsViewController.h; sourceTree = "<group>"; };
+		75AD2E7F1ADAD193002EE482 /* BookOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookOptionsViewController.m; sourceTree = "<group>"; };
 		75AD2E841ADAD193002EE482 /* NewBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBookViewController.h; sourceTree = "<group>"; };
 		75AD2E851ADAD193002EE482 /* NewBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBookViewController.m; sourceTree = "<group>"; };
 		75AD2E871ADAD193002EE482 /* NNKChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKChapter.h; sourceTree = "<group>"; };
@@ -307,12 +329,11 @@
 		75AD2E8C1ADAD193002EE482 /* NNKEpubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKEpubView.m; sourceTree = "<group>"; };
 		75AD2E8D1ADAD193002EE482 /* UIWebView+CSSRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIWebView+CSSRule.h"; path = "../../Epub Book/UIWebView+CSSRule.h"; sourceTree = "<group>"; };
 		75AD2E8E1ADAD193002EE482 /* UIWebView+CSSRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+CSSRule.m"; path = "../../Epub Book/UIWebView+CSSRule.m"; sourceTree = "<group>"; };
-		75AD2E9B1ADAD1B3002EE482 /* DejalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejalActivityView.h; sourceTree = "<group>"; };
-		75AD2E9C1ADAD1B3002EE482 /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejalActivityView.m; sourceTree = "<group>"; };
+		75AD2E9B1ADAD1B3002EE482 /* DejalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DejalActivityView.h; path = "../../Epub Book/DejalActivityView.h"; sourceTree = "<group>"; };
+		75AD2E9C1ADAD1B3002EE482 /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DejalActivityView.m; path = "../../Epub Book/DejalActivityView.m"; sourceTree = "<group>"; };
 		75AD2E9E1ADAD424002EE482 /* Book.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Book.storyboard; sourceTree = "<group>"; };
 		75AD2EA01ADAD65B002EE482 /* NewBookViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBookViewControllerTests.m; sourceTree = "<group>"; };
 		75AD2EA21ADAD710002EE482 /* ChaptersViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaptersViewControllerTests.m; sourceTree = "<group>"; };
-		75AD2EA41ADAD88D002EE482 /* CustomizationViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizationViewControllerTests.m; sourceTree = "<group>"; };
 		75C12A5F1A754B6C0075FD8D /* World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = World.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C12A631A754B6C0075FD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75C12A641A754B6C0075FD8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -325,6 +346,13 @@
 		75C12A721A754B6C0075FD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		75C12A781A754B6D0075FD8D /* WorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C12A7D1A754B6D0075FD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C84D531ADBD7BD006359E9 /* BookOptionsProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookOptionsProtocol.h; sourceTree = "<group>"; };
+		75C84D541ADBD868006359E9 /* ChaptersViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChaptersViewModel.h; sourceTree = "<group>"; };
+		75C84D551ADBD868006359E9 /* ChaptersViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaptersViewModel.m; sourceTree = "<group>"; };
+		75C84D571ADBD955006359E9 /* FontSelectViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontSelectViewModel.h; sourceTree = "<group>"; };
+		75C84D581ADBD955006359E9 /* FontSelectViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontSelectViewModel.m; sourceTree = "<group>"; };
+		75C84E731ADC0337006359E9 /* WYPopoverController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = WYPopoverController.xcodeproj; sourceTree = "<group>"; };
+		75C84F041ADC03DD006359E9 /* WYPopoverController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WYPopoverController.h; path = WYPopoverController/WYPopoverController.h; sourceTree = "<group>"; };
 		75CC87E71AD0238D00F6C59E /* MainScreenViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScreenViewModel.h; sourceTree = "<group>"; };
 		75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScreenViewModel.m; sourceTree = "<group>"; };
 		75CC87EA1AD02D4400F6C59E /* InventaryBarIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventaryBarIconViewController.h; sourceTree = "<group>"; };
@@ -547,6 +575,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C84F031ADC0376006359E9 /* libWYPopoverController.a in Frameworks */,
 				56DC915B5D1078DAC3B7C86D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,14 +659,9 @@
 		75AD2E7B1ADAD18D002EE482 /* Epub Book */ = {
 			isa = PBXGroup;
 			children = (
-				75AD2E9B1ADAD1B3002EE482 /* DejalActivityView.h */,
-				75AD2E9C1ADAD1B3002EE482 /* DejalActivityView.m */,
 				75AD2E7C1ADAD193002EE482 /* book_eng.epub */,
 				75AD2E7D1ADAD193002EE482 /* book_rus.epub */,
-				75AD2E7E1ADAD193002EE482 /* ChaptersViewController.h */,
-				75AD2E7F1ADAD193002EE482 /* ChaptersViewController.m */,
-				75AD2E811ADAD193002EE482 /* CustomizationViewController.h */,
-				75AD2E821ADAD193002EE482 /* CustomizationViewController.m */,
+				75C84D5A1ADBEB4F006359E9 /* Book Options */,
 				75AD2E841ADAD193002EE482 /* NewBookViewController.h */,
 				75AD2E851ADAD193002EE482 /* NewBookViewController.m */,
 				75AD2E871ADAD193002EE482 /* NNKChapter.h */,
@@ -654,6 +678,7 @@
 		75C12A561A754B6C0075FD8D = {
 			isa = PBXGroup;
 			children = (
+				753EFD661ADBC644009F0A38 /* StyleSettings.plist */,
 				75E237671A85490800BE6540 /* doux.ttf */,
 				75C12A611A754B6C0075FD8D /* World */,
 				75C12A7B1A754B6D0075FD8D /* WorldTests */,
@@ -719,7 +744,6 @@
 			children = (
 				75AD2EA01ADAD65B002EE482 /* NewBookViewControllerTests.m */,
 				75AD2EA21ADAD710002EE482 /* ChaptersViewControllerTests.m */,
-				75AD2EA41ADAD88D002EE482 /* CustomizationViewControllerTests.m */,
 				75C12A7C1A754B6D0075FD8D /* Supporting Files */,
 			);
 			path = WorldTests;
@@ -731,6 +755,38 @@
 				75C12A7D1A754B6D0075FD8D /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75C84D5A1ADBEB4F006359E9 /* Book Options */ = {
+			isa = PBXGroup;
+			children = (
+				75C84D531ADBD7BD006359E9 /* BookOptionsProtocol.h */,
+				75AD2E7E1ADAD193002EE482 /* BookOptionsViewController.h */,
+				75AD2E7F1ADAD193002EE482 /* BookOptionsViewController.m */,
+				75C84D541ADBD868006359E9 /* ChaptersViewModel.h */,
+				75C84D551ADBD868006359E9 /* ChaptersViewModel.m */,
+				75C84D571ADBD955006359E9 /* FontSelectViewModel.h */,
+				75C84D581ADBD955006359E9 /* FontSelectViewModel.m */,
+			);
+			name = "Book Options";
+			sourceTree = "<group>";
+		};
+		75C84DD91ADC0337006359E9 /* WYPopoverController */ = {
+			isa = PBXGroup;
+			children = (
+				75C84F041ADC03DD006359E9 /* WYPopoverController.h */,
+				75C84E731ADC0337006359E9 /* WYPopoverController.xcodeproj */,
+			);
+			path = WYPopoverController;
+			sourceTree = "<group>";
+		};
+		75C84E741ADC0337006359E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75C84EFE1ADC0337006359E9 /* libWYPopoverController.a */,
+				75C84F001ADC0337006359E9 /* WYPopoverControllerTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		75DC66CA1A81520A00D6A553 /* characters */ = {
@@ -1072,6 +1128,8 @@
 				75E86E221A82BE3F00419776 /* NNKShapedButton.m */,
 				75D268FC1AC3448B00A17632 /* InfiniteTableView.h */,
 				75D268FD1AC3448B00A17632 /* InfiniteTableView.m */,
+				75AD2E9B1ADAD1B3002EE482 /* DejalActivityView.h */,
+				75AD2E9C1ADAD1B3002EE482 /* DejalActivityView.m */,
 			);
 			path = "Custom Classes";
 			sourceTree = "<group>";
@@ -1088,6 +1146,7 @@
 		E830825D60A1C73B19AD811D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75C84DD91ADC0337006359E9 /* WYPopoverController */,
 				6129DEB65C4E1E920B30AE6B /* libPods.a */,
 			);
 			name = Frameworks;
@@ -1105,10 +1164,12 @@
 				75C12A5C1A754B6C0075FD8D /* Frameworks */,
 				75C12A5D1A754B6C0075FD8D /* Resources */,
 				B09DDE8963C43012B9296C69 /* Copy Pods Resources */,
+				OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				75C84F021ADC0372006359E9 /* PBXTargetDependency */,
 			);
 			name = World;
 			productName = World;
@@ -1163,6 +1224,12 @@
 			mainGroup = 75C12A561A754B6C0075FD8D;
 			productRefGroup = 75C12A601A754B6C0075FD8D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 75C84E741ADC0337006359E9 /* Products */;
+					ProjectRef = 75C84E731ADC0337006359E9 /* WYPopoverController.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				75C12A5E1A754B6C0075FD8D /* World */,
@@ -1170,6 +1237,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		75C84EFE1ADC0337006359E9 /* libWYPopoverController.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libWYPopoverController.a;
+			remoteRef = 75C84EFD1ADC0337006359E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75C84F001ADC0337006359E9 /* WYPopoverControllerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WYPopoverControllerTests.xctest;
+			remoteRef = 75C84EFF1ADC0337006359E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		75C12A5D1A754B6C0075FD8D /* Resources */ = {
@@ -1195,6 +1279,7 @@
 				75DC66E21A81520A00D6A553 /* full_portret_color_8.png in Resources */,
 				75DC67F61A816AA100D6A553 /* shadow_character6_part5.png in Resources */,
 				75DC66E91A81520A00D6A553 /* full_portret_shadow_7.png in Resources */,
+				753EFD671ADBC644009F0A38 /* StyleSettings.plist in Resources */,
 				75DC67CF1A816AA100D6A553 /* shadow_character4_part18.png in Resources */,
 				75DC67FC1A816AA100D6A553 /* shadow_character7_part10.png in Resources */,
 				75C12A6E1A754B6C0075FD8D /* Main.storyboard in Resources */,
@@ -1404,6 +1489,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		OBJCLEANCUSTOMRUNSCRIPTT /* Objective-Clean Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Objective-Clean Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if [[ -z ${SKIP_OBJCLEAN} || ${SKIP_OBJCLEAN} != 1 ]]; then\nif [[ -d \"${LOCAL_APPS_DIR}/Objective-Clean.app\" ]]; then \n\"${LOCAL_APPS_DIR}\"/Objective-Clean.app/Contents/Resources/ObjClean.app/Contents/MacOS/ObjClean \"${SRCROOT}\" \nelse\necho \"warning: You have to install and set up Objective-Clean to use its features!\" \nfi\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1411,8 +1510,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75AD2E911ADAD193002EE482 /* ChaptersViewController.m in Sources */,
+				75AD2E911ADAD193002EE482 /* BookOptionsViewController.m in Sources */,
 				75E86E231A82BE3F00419776 /* NNKShapedButton.m in Sources */,
+				75C84D561ADBD868006359E9 /* ChaptersViewModel.m in Sources */,
 				75C12A6B1A754B6C0075FD8D /* ViewController.m in Sources */,
 				75A1251F1AD08DC400BDFB7F /* NSURL+Helps.m in Sources */,
 				75EDA1871A83FE7E002546E0 /* Storage.m in Sources */,
@@ -1439,10 +1539,10 @@
 				75E2376B1A854BD800BE6540 /* UIColor+SystemColors.m in Sources */,
 				75EBF32A1AAB7D29005F5E8C /* IslandViewModel.m in Sources */,
 				75EBF3271AAB7BB4005F5E8C /* UIImage+Colors.m in Sources */,
+				75C84D591ADBD955006359E9 /* FontSelectViewModel.m in Sources */,
 				75EBF3241AAB6948005F5E8C /* IslandViewController.m in Sources */,
 				75A125111AD0717800BDFB7F /* TransitionAnimationFromUpToDown.m in Sources */,
 				75EC14161A7ECF460086803E /* MagicSchoolAnswersHandler.m in Sources */,
-				75AD2E931ADAD193002EE482 /* CustomizationViewController.m in Sources */,
 				75F1DB201A86D758005ACBA7 /* UIDevice+ScreenSize.m in Sources */,
 				75DFE0C91A8009C800CE9E69 /* CharacterShadowViewController.m in Sources */,
 				75AD2E9A1ADAD193002EE482 /* UIWebView+CSSRule.m in Sources */,
@@ -1465,7 +1565,6 @@
 			files = (
 				75AD2EA31ADAD710002EE482 /* ChaptersViewControllerTests.m in Sources */,
 				75AD2EA11ADAD65B002EE482 /* NewBookViewControllerTests.m in Sources */,
-				75AD2EA51ADAD88E002EE482 /* CustomizationViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1476,6 +1575,11 @@
 			isa = PBXTargetDependency;
 			target = 75C12A5E1A754B6C0075FD8D /* World */;
 			targetProxy = 75C12A791A754B6D0075FD8D /* PBXContainerItemProxy */;
+		};
+		75C84F021ADC0372006359E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WYPopoverController;
+			targetProxy = 75C84F011ADC0372006359E9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1594,9 +1698,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "World/Supporting Files/World-prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/TouchXML\"",
+					"\"${PODS_ROOT}/Headers/Public/ZipArchive\"",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "World/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/World/Helpers/Custom",
+					Classes/WYPopoverController,
+					"$(PROJECT_DIR)/WYPopoverController/build/WYPopoverController.build/Debug-iphoneos/WYPopoverController.build/Objects-normal/arm64",
+					"$(PROJECT_DIR)/WYPopoverController/build/WYPopoverController.build/Debug-iphoneos/WYPopoverController.build/Objects-normal/armv7",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1607,9 +1725,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "World/Supporting Files/World-prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/TouchXML\"",
+					"\"${PODS_ROOT}/Headers/Public/ZipArchive\"",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "World/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/World/Helpers/Custom",
+					Classes/WYPopoverController,
+					"$(PROJECT_DIR)/WYPopoverController/build/WYPopoverController.build/Debug-iphoneos/WYPopoverController.build/Objects-normal/arm64",
+					"$(PROJECT_DIR)/WYPopoverController/build/WYPopoverController.build/Debug-iphoneos/WYPopoverController.build/Objects-normal/armv7",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

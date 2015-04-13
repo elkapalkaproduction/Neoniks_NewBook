@@ -21,9 +21,6 @@
                     <state key="normal" image="top_bar_about_icon">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <connections>
-                        <action selector="selectIcon:" destination="-1" eventType="touchUpInside" id="Rwn-UZ-PAe"/>
-                    </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_bar_about_text_en" translatesAutoresizingMaskIntoConstraints="NO" id="v2G-Kw-s83">
                     <rect key="frame" x="-14" y="32" width="82" height="22"/>

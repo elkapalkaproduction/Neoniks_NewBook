@@ -21,7 +21,6 @@ static NSString *const kIDPFKey = @"http://www.idpf.org/2007/opf";
 static NSString *const kOPFItemKey = @"//opf:item";
 static NSString *const kOPFItemRefKey = @"//opf:itemref";
 
-
 @interface NNKEpubToChaptersConverter ()
 
 @property (nonatomic, strong) NSString *epubFilePath;
@@ -94,6 +93,7 @@ static NSString *const kOPFItemRefKey = @"//opf:itemref";
             return value;
         }
     }
+    
     return nil;
 }
 
@@ -191,6 +191,5 @@ static NSString *const kOPFItemRefKey = @"//opf:itemref";
 - (NSString *)basePathWithLastPathComponent:(NSString *)lastPathComponent {
     return [[self baseEpubPath] stringByAppendingPathComponent:lastPathComponent];
 }
-
 
 @end

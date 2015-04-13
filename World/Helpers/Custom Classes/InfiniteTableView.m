@@ -245,12 +245,14 @@
 
 - (CGFloat)leftEdge {
     UIView *firstLabel = [self.visibleLabels firstObject];
+    
     return CGRectGetMinX([firstLabel frame]);
 }
 
 
 - (CGFloat)rightEdge {
     UIView *lastLabel = [self.visibleLabels lastObject];
+    
     return CGRectGetMaxX([lastLabel frame]);
 }
 

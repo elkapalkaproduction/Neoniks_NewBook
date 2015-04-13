@@ -16,4 +16,5 @@
 - (void)markAsOpenedCharacter:(ShadowCharacter)character;
 - (NSIndexSet *)allOpenedCharacter;
 - (void)resetOpenedCharacter;
+
 @end

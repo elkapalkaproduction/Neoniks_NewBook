@@ -17,6 +17,7 @@ NSString *const AnswersFileName = @"Answers.plist";
 @interface MagicSchoolAnswersHandler ()
 
 @property (strong, nonatomic) NSArray *correctAnswers;
+
 @end
 
 @implementation MagicSchoolAnswersHandler

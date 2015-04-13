@@ -9,4 +9,5 @@
 #import "BaseViewController.h"
 
 @interface SchoolOfMagicViewController : BaseViewController
+
 @end

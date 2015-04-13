@@ -8,16 +8,18 @@
 
 #import "AppDelegate.h"
 #import "ShadowPlayOpenedHandler.h"
+
 @interface AppDelegate ()
+
 @end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:ShadowCharacterWanda];
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:ShadowCharacterJustacreep];
     
     return YES;
 }
+
 @end

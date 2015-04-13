@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *contentImage;
 @property (weak, nonatomic) IBOutlet UIImageView *topBanner;
 @property (weak, nonatomic) id<PopUpDelegate> delegate;
+
 @end
 
 @implementation PopUpViewController
@@ -37,6 +38,7 @@
     
     return popUpViewController;
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

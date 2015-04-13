@@ -7,4 +7,5 @@
 //
 
 @interface NNKShapedButton : UIButton
+
 @end

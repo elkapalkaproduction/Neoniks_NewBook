@@ -12,6 +12,7 @@
 
 @interface SchoolOfMagicViewController ()
 @property (weak, nonatomic) MagicTableViewController *tableViewController;
+
 @end
 
 @implementation SchoolOfMagicViewController

@@ -29,13 +29,13 @@ NSString *const SOMCorrectBorder = @"school_corect_border";
 NSString *const SOMWrongBorder = @"school_wrong_border";
 NSString *const SOMNoBorder = @"school_not_selected_border";
 
-
 @interface MagicTableViewController ()
+
 @property (weak, nonatomic) IBOutlet UILabel *questionNumberTitle;
 @property (weak, nonatomic) IBOutlet UILabel *questionText;
 @property (weak, nonatomic) IBOutlet UIImageView *answerImage;
-@property (strong, nonatomic)IBOutletCollection(UIButton) NSArray * answers;
-@property (strong, nonatomic)IBOutletCollection(UIButton) NSArray * questionIndicators;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *answers;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *questionIndicators;
 @property (assign, nonatomic) NSUInteger questionNumber;
 
 @end
@@ -87,6 +87,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
         [answer setBackgroundImage:[UIImage imageNamed:SOMNoBorder] forState:UIControlStateNormal];
     }];
 }
+
 
 - (void)correctAnswerExists {
     [self resetAnswerToNoBorderState];
@@ -154,6 +155,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
         [alert show];
     }
 }
+
 
 - (void)updateQuestionsIndicator {
     [self resetAllQuestionIndicatorsToNoAnswer];

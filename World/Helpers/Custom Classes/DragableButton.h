@@ -12,6 +12,7 @@
 @protocol DragableButtonDelegate <NSObject>
 
 - (BOOL)correctTargetPositionForButton:(DragableButton *)button;
+
 @end
 
 @interface DragableButton : NNKShapedButton

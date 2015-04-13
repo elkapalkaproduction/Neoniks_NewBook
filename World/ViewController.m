@@ -49,7 +49,6 @@
 }
 
 
-
 - (IBAction)pressLeft:(id)sender {
     [self.infiniteTableView showPreviousView];
 }

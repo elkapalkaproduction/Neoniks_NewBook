@@ -48,6 +48,7 @@ NSString *const LastSolvedIsland = @"LastSolvedIsland";
     return _answersImage;
 }
 
+
 - (void)didTapOnPoint:(CGPoint)point {
     UIColor *pixelColor = [self.answersImage colorAtPixel:point];
     BOOL find = [pixelColor isEqual:[self correctColorForIndex:[self currentNeedToFind]]];
@@ -73,6 +74,7 @@ NSString *const LastSolvedIsland = @"LastSolvedIsland";
     CGFloat red = [dict[@"red"] floatValue] / 255.f;
     CGFloat green = [dict[@"green"] floatValue] / 255.f;
     CGFloat blue = [dict[@"blue"] floatValue] / 255.f;
+    
     return [UIColor colorWithRed:red green:green blue:blue alpha:1.f];
 }
 
@@ -80,6 +82,7 @@ NSString *const LastSolvedIsland = @"LastSolvedIsland";
 - (IslandToFind)currentNeedToFind {
     return [[NSUserDefaults standardUserDefaults] integerForKey:LastSolvedIsland];
 }
+
 
 - (void)increaeCurrentAnswer {
     IslandToFind current = [self currentNeedToFind];

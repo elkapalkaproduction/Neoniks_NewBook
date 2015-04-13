@@ -8,8 +8,9 @@
 
 @interface BaseViewController : UIViewController
 
-@property (strong, nonatomic)IBOutletCollection(NSLayoutConstraint) NSArray * constraintsToUpdate;
+@property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *constraintsToUpdate;
 
 + (NSString *)storyboardID;
 - (IBAction)backButton:(id)sender;
+
 @end

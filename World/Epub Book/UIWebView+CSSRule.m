@@ -55,31 +55,22 @@
 }
 
 
-- (void)applyColorsWithTextColor:(NSString *)textColor {
-    NSString *backgroundRule = [NSString stringWithFormat:backgroundColorRule, @"transparent"];
-    [self stringByEvaluatingJavaScriptFromString:backgroundRule];
-    
-    NSString *textRule = [NSString stringWithFormat:textColorRule, textColor];
-    [self stringByEvaluatingJavaScriptFromString:textRule];
-
-}
-
-
 - (void)runCSSRulesToWebViewWithPercentSize:(NSUInteger)fontPercentSize
-                                   fontName:(NSString *)fontName
-                                  fontColor:(NSString *)fontColor {
+                                   fontName:(NSString *)fontName {
     [self stringByEvaluatingJavaScriptFromString:varMySheet];
     [self stringByEvaluatingJavaScriptFromString:addCSSRules];
     [self runFormatingTextRulesWithFontPercentSize:fontPercentSize];
     if (fontName) {
         [self runFormatingTextRulesWithFontName:fontName];
     }
-    [self applyColorsWithTextColor:fontColor];
+    NSString *backgroundRule = [NSString stringWithFormat:backgroundColorRule, @"transparent"];
+    [self stringByEvaluatingJavaScriptFromString:backgroundRule];
 }
 
 
 - (NSUInteger)numberOfPages {
     float totalWidth = [[self stringByEvaluatingJavaScriptFromString:documentWidth] floatValue];
+    
     return (NSUInteger)ceil((totalWidth / self.bounds.size.width));
 }
 

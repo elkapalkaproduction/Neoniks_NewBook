@@ -8,6 +8,7 @@
 
 #import "BaseViewController.h"
 typedef void (^AlertButtonAction)();
+
 @interface AlertViewController : BaseViewController
 
 + (instancetype)initWithTitle:(NSString *)title

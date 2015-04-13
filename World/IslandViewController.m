@@ -156,6 +156,7 @@
     [controller addOnParentView:self];
 }
 
+
 - (IBAction)reset {
     [self.viewModel resetAnswers];
 }

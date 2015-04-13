@@ -29,6 +29,7 @@ typedef NS_ENUM (NSInteger, CharactersInteraction) {
 @protocol CharacterShadowDelegate <NSObject>
 
 - (void)didPressCharacter:(ShadowCharacter)character;
+
 @end
 
 @interface CharacterShadowViewController : BaseViewController
@@ -38,4 +39,5 @@ typedef NS_ENUM (NSInteger, CharactersInteraction) {
 
 @property (weak, nonatomic) id <CharacterShadowDelegate> delegate;
 @property (assign, nonatomic, readonly) ShadowCharacter loadedCharacter;
+
 @end

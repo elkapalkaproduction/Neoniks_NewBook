@@ -102,5 +102,4 @@ NSString *const SVPVideoPath = @"start_video_path";
     return self.videoPlayer.playbackState == MPMoviePlaybackStatePlaying;
 }
 
-
 @end

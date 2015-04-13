@@ -42,6 +42,7 @@ NSString *const AppID = @"899196882";
     return self.type == MainScreenTopBarViewTypeSettings;
 }
 
+
 - (NSInteger)numberOfItems {
     return [self isOpenedSettings] ? 6 : 8;
 }
@@ -62,6 +63,7 @@ NSString *const AppID = @"899196882";
             break;
     }
 }
+
 
 - (UIView *)viewForIndex:(NSInteger)index inRect:(CGRect)rect parentViewController:(UIViewController *)parentViewController {
     UIViewController *viewController = [self viewControllerForIndex:index + 1 rect:rect];

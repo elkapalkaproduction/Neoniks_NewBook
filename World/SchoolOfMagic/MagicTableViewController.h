@@ -9,4 +9,5 @@
 #import "BaseViewController.h"
 
 @interface MagicTableViewController : BaseViewController
+
 @end

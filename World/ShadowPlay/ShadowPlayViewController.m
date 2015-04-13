@@ -179,6 +179,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     CGRect newFrame = [button.superview convertRect:button.frame toView:self.viewForResults];
     if (CGRectIntersectsRect(newFrame, button.correctRect)) {
         [self putButton:button onRightFrame:newFrame];
+        
         return YES;
     }
     

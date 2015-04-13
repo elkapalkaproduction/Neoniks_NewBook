@@ -13,6 +13,7 @@ const NSInteger storyboardScreenWidth = 600;
 @interface BaseViewController ()
 
 @property (strong, nonatomic) NSMutableArray *constants;
+
 @end
 
 @implementation BaseViewController

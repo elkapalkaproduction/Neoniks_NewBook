@@ -16,6 +16,7 @@ const CGFloat ShapedButtonAlphaVisibleThreshold = 0.1f;
 @property (nonatomic, assign) BOOL previousTouchHitTestResponse;
 @property (nonatomic, strong) UIImage *buttonImage;
 @property (nonatomic, strong) UIImage *buttonBackground;
+
 @end
 
 @implementation NNKShapedButton
@@ -129,7 +130,5 @@ const CGFloat ShapedButtonAlphaVisibleThreshold = 0.1f;
     self.previousTouchPoint = CGPointMake(CGFLOAT_MIN, CGFLOAT_MIN);
     self.previousTouchHitTestResponse = NO;
 }
-
-
 
 @end

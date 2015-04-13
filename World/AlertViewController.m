@@ -68,7 +68,6 @@
 }
 
 
-
 - (IBAction)firstButtonPressed:(id)sender {
     if (self.firstAction) self.firstAction();
     [self dismissViewControllerAnimated:YES completion:nil];
