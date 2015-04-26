@@ -8,6 +8,7 @@
 
 #import "MagicTableViewController.h"
 #import "MagicSchoolAnswersHandler.h"
+#import "InventaryContentHandler.h"
 
 NSString *const SOMSadImageName = @"school_sad";
 NSString *const SOMSadderImageName = @"school_sadder";
@@ -37,6 +38,8 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *answers;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *questionIndicators;
 @property (assign, nonatomic) NSUInteger questionNumber;
+@property (weak, nonatomic) IBOutlet UIView *answerView;
+@property (weak, nonatomic) IBOutlet UIView *prizeView;
 
 @end
 
@@ -146,13 +149,18 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 }
 
 
+- (BOOL)shouldShowPrize {
+    InventaryIconShowing format = [[InventaryContentHandler sharedHandler] formatForItemType:InventaryBarIconTypeMedal];
+    
+    return [[MagicSchoolAnswersHandler sharedHandler] answeredToAllQuestion] && format == InventaryIconShowingEmpty;
+}
+
+
 - (void)showSuccesMessage {
-    if ([[MagicSchoolAnswersHandler sharedHandler] answeredToAllQuestion]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
-                                                        message:@"Now you should see prize"
-                                                       delegate:nil cancelButtonTitle:@"Ok"
-                                              otherButtonTitles:nil];
-        [alert show];
+    if ([self shouldShowPrize]) {
+        [self showPrize];
+    } else {
+        self.prizeView.hidden = YES;
     }
 }
 
@@ -196,6 +204,26 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
     [self.answers enumerateObjectsUsingBlock:^(UIButton *button, NSUInteger idx, BOOL *stop) {
         [button setUserInteractionEnabled:YES];
     }];
+}
+
+
+- (void)showPrize {
+    self.answerView.hidden = YES;
+    self.questionNumberTitle.hidden = YES;
+    self.questionText.hidden = YES;
+    self.answerImage.hidden = YES;
+    self.prizeView.hidden = NO;
+}
+
+
+- (IBAction)getPrize:(id)sender {
+    self.answerView.hidden = NO;
+    self.questionNumberTitle.hidden = NO;
+    self.questionText.hidden = NO;
+    self.answerImage.hidden = NO;
+    self.prizeView.hidden = YES;
+    [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeMedal
+                                                   withFormat:InventaryIconShowingFull];
 }
 
 @end

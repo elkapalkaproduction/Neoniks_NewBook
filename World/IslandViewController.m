@@ -9,6 +9,7 @@
 #import "IslandViewController.h"
 #import "IslandViewModel.h"
 #import "PopUpViewController.h"
+#import "InventaryContentHandler.h"
 
 @interface IslandViewController () <UIScrollViewDelegate, IslandViewModelDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
@@ -19,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIView *currentToFindView;
 @property (weak, nonatomic) IBOutlet UIImageView *currentToFindImage;
 @property (strong, nonatomic) NSLayoutConstraint *currentToFindViewConstraint;
+@property (weak, nonatomic) IBOutlet UIView *prizeView;
 
 @end
 
@@ -66,6 +68,19 @@
                                                                          constant:0];
         [self.currentToFindView.superview addConstraint:self.currentToFindViewConstraint];
     }
+    if ([self shouldShowPrize]) {
+        [self showPrize];
+    } else {
+        self.prizeView.hidden = YES;
+
+    }
+}
+
+
+- (BOOL)shouldShowPrize {
+    InventaryIconShowing format = [[InventaryContentHandler sharedHandler] formatForItemType:InventaryBarIconTypeIslandMap];
+    
+    return self.currentToFindView.hidden && format == InventaryIconShowingEmpty;
 }
 
 
@@ -157,8 +172,21 @@
 }
 
 
-- (IBAction)reset {
-    [self.viewModel resetAnswers];
+- (void)showPrize {
+    for (UIImageView *imageView in self.stars) {
+        imageView.hidden = YES;
+    }
+    self.prizeView.hidden = NO;
+}
+
+
+- (IBAction)getPrize:(id)sender {
+    for (UIImageView *imageView in self.stars) {
+        imageView.hidden = NO;
+    }
+    self.prizeView.hidden = YES;
+    [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeIslandMap
+                                                   withFormat:InventaryIconShowingFull];
 }
 
 @end

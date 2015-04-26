@@ -21,6 +21,39 @@ typedef NS_ENUM(NSInteger, SettingsBarIconType) {
     SettingsBarIconTypeBookAudio,
     SettingsBarIconTypeBookBookmark,
     SettingsBarIconTypeBookFontSize,
+    
+    SettingsBarIconTypeIslandMap,
+    SettingsBarIconTypeMagicWand,
+    SettingsBarIconTypeMagicBook,
+    SettingsBarIconTypeMedal,
+    SettingsBarIconTypeBottleOfMagic,
+    SettingsBarIconTypeMagicBall,
+    SettingsBarIconTypeExtinguisher,
+    SettingsBarIconTypeDandelion,
+    SettingsBarIconTypeSword,
+    SettingsBarIconTypeWrench,
+    SettingsBarIconTypeSnail,
+};
+
+typedef NS_ENUM(NSInteger, InventaryBarIconType) {
+    InventaryBarIconTypeUnknown,
+    InventaryBarIconTypeIslandMap,
+    InventaryBarIconTypeMagicWand,
+    InventaryBarIconTypeMagicBook,
+    InventaryBarIconTypeMedal,
+    InventaryBarIconTypeBottleOfMagic,
+    InventaryBarIconTypeMagicBall,
+    InventaryBarIconTypeExtinguisher,
+    InventaryBarIconTypeDandelion,
+    InventaryBarIconTypeSword,
+    InventaryBarIconTypeWrench,
+    InventaryBarIconTypeSnail,
+};
+
+typedef NS_ENUM(NSInteger, InventaryIconShowing) {
+    InventaryIconShowingEmpty,
+    InventaryIconShowingFull,
+    InventaryIconShowingHidden,
 };
 
 @class SettingsBarIconViewController;
@@ -40,5 +73,12 @@ typedef NS_ENUM(NSInteger, SettingsBarIconType) {
                                 type:(SettingsBarIconType)type
                               target:(id)target
                             selector:(SEL)selector;
+
++ (instancetype)instantiateWithFrame:(CGRect)frame
+                                type:(InventaryBarIconType)type
+                              format:(InventaryIconShowing)format
+                            delegate:(id<SettingsBarIconDelegate>)delegate;
+
+@property (assign, nonatomic, readonly) InventaryIconShowing format;
 
 @end

@@ -32,4 +32,14 @@
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
 }
 
+
++ (void)saveInteger:(NSInteger)integer forKey:(NSString *)key {
+    [[NSUserDefaults standardUserDefaults] setInteger:integer forKey:key];
+}
+
+
++ (NSInteger)loadIntegerForKey:(NSString *)key {
+    return [[NSUserDefaults standardUserDefaults] integerForKey:key];
+}
+
 @end

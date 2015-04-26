@@ -14,4 +14,7 @@
 + (NSIndexSet *)loadDataForKey:(NSString *)key;
 + (void)removeDataForKey:(NSString *)key;
 
++ (void)saveInteger:(NSInteger)integer forKey:(NSString *)key;
++ (NSInteger)loadIntegerForKey:(NSString *)key;
+
 @end

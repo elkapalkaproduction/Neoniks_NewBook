@@ -13,6 +13,8 @@
 		753EFD671ADBC644009F0A38 /* StyleSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 753EFD661ADBC644009F0A38 /* StyleSettings.plist */; };
 		75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */; };
 		75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423AA21A7D8A4000D2C36E /* BaseViewController.m */; };
+		755CDE101AECE1BE0095B6DF /* InventaryContentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 755CDE0F1AECE1BE0095B6DF /* InventaryContentHandler.m */; };
+		755CDE151AECE3380095B6DF /* InventaryItemOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 755CDE141AECE3380095B6DF /* InventaryItemOption.m */; };
 		75635ADE1AABBEAA005BD4CB /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */; };
 		757DBBD11ADB199500517632 /* UIViewController+Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 757DBBD01ADB199500517632 /* UIViewController+Child.m */; };
 		757E93DB1A7E2DEE000B2537 /* MagicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757E93DA1A7E2DEE000B2537 /* MagicTableViewController.m */; };
@@ -48,9 +50,7 @@
 		75C12A731A754B6C0075FD8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A711A754B6C0075FD8D /* LaunchScreen.xib */; };
 		75C84D561ADBD868006359E9 /* ChaptersViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C84D551ADBD868006359E9 /* ChaptersViewModel.m */; };
 		75C84D591ADBD955006359E9 /* FontSelectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C84D581ADBD955006359E9 /* FontSelectViewModel.m */; };
-		75C84F031ADC0376006359E9 /* libWYPopoverController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C84EFE1ADC0337006359E9 /* libWYPopoverController.a */; };
 		75CC87E91AD0238D00F6C59E /* MainScreenViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */; };
-		75CC87EC1AD02D4400F6C59E /* InventaryBarIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CC87EB1AD02D4400F6C59E /* InventaryBarIconViewController.m */; };
 		75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D268FD1AC3448B00A17632 /* InfiniteTableView.m */; };
 		75DC66C91A814F9300D6A553 /* ShadowPlayOpenedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DC66C81A814F9300D6A553 /* ShadowPlayOpenedHandler.m */; };
 		75DC66DB1A81520A00D6A553 /* full_portret_color_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CB1A81520A00D6A553 /* full_portret_color_1.png */; };
@@ -253,27 +253,6 @@
 			remoteGlobalIDString = 75C12A5E1A754B6C0075FD8D;
 			remoteInfo = World;
 		};
-		75C84EFD1ADC0337006359E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75C84E731ADC0337006359E9 /* WYPopoverController.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75C84D891ADBFE37006359E9;
-			remoteInfo = WYPopoverController;
-		};
-		75C84EFF1ADC0337006359E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75C84E731ADC0337006359E9 /* WYPopoverController.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75C84D941ADBFE37006359E9;
-			remoteInfo = WYPopoverControllerTests;
-		};
-		75C84F011ADC0372006359E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 75C84E731ADC0337006359E9 /* WYPopoverController.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 75C84D881ADBFE37006359E9;
-			remoteInfo = WYPopoverController;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -287,6 +266,10 @@
 		75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolOfMagicViewController.m; sourceTree = "<group>"; };
 		75423AA11A7D8A4000D2C36E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		75423AA21A7D8A4000D2C36E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		755CDE0E1AECE1BE0095B6DF /* InventaryContentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventaryContentHandler.h; sourceTree = "<group>"; };
+		755CDE0F1AECE1BE0095B6DF /* InventaryContentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventaryContentHandler.m; sourceTree = "<group>"; };
+		755CDE131AECE3380095B6DF /* InventaryItemOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventaryItemOption.h; sourceTree = "<group>"; };
+		755CDE141AECE3380095B6DF /* InventaryItemOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventaryItemOption.m; sourceTree = "<group>"; };
 		75635ADC1AABBEA9005BD4CB /* PopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpViewController.h; sourceTree = "<group>"; };
 		75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpViewController.m; sourceTree = "<group>"; };
 		757DBBCF1ADB199500517632 /* UIViewController+Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Child.h"; sourceTree = "<group>"; };
@@ -351,12 +334,8 @@
 		75C84D551ADBD868006359E9 /* ChaptersViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaptersViewModel.m; sourceTree = "<group>"; };
 		75C84D571ADBD955006359E9 /* FontSelectViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontSelectViewModel.h; sourceTree = "<group>"; };
 		75C84D581ADBD955006359E9 /* FontSelectViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontSelectViewModel.m; sourceTree = "<group>"; };
-		75C84E731ADC0337006359E9 /* WYPopoverController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = WYPopoverController.xcodeproj; sourceTree = "<group>"; };
-		75C84F041ADC03DD006359E9 /* WYPopoverController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WYPopoverController.h; path = WYPopoverController/WYPopoverController.h; sourceTree = "<group>"; };
 		75CC87E71AD0238D00F6C59E /* MainScreenViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScreenViewModel.h; sourceTree = "<group>"; };
 		75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScreenViewModel.m; sourceTree = "<group>"; };
-		75CC87EA1AD02D4400F6C59E /* InventaryBarIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventaryBarIconViewController.h; sourceTree = "<group>"; };
-		75CC87EB1AD02D4400F6C59E /* InventaryBarIconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventaryBarIconViewController.m; sourceTree = "<group>"; };
 		75D268FC1AC3448B00A17632 /* InfiniteTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteTableView.h; sourceTree = "<group>"; };
 		75D268FD1AC3448B00A17632 /* InfiniteTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteTableView.m; sourceTree = "<group>"; };
 		75DC66C71A814F9300D6A553 /* ShadowPlayOpenedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowPlayOpenedHandler.h; sourceTree = "<group>"; };
@@ -575,7 +554,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75C84F031ADC0376006359E9 /* libWYPopoverController.a in Frameworks */,
 				56DC915B5D1078DAC3B7C86D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,8 +583,6 @@
 				7597094A1AC8901000FFB11E /* SettingsBarIconViewController.h */,
 				7597094B1AC8901000FFB11E /* SettingsBarIconViewController.m */,
 				7597094D1AC8947900FFB11E /* SettingsBarIconViewController.xib */,
-				75CC87EA1AD02D4400F6C59E /* InventaryBarIconViewController.h */,
-				75CC87EB1AD02D4400F6C59E /* InventaryBarIconViewController.m */,
 			);
 			name = TopBar;
 			sourceTree = "<group>";
@@ -712,6 +688,10 @@
 				75A1251B1AD078E300BDFB7F /* AboutViewController.m */,
 				75A125211AD08FE500BDFB7F /* AlertViewController.h */,
 				75A125221AD08FE500BDFB7F /* AlertViewController.m */,
+				755CDE0E1AECE1BE0095B6DF /* InventaryContentHandler.h */,
+				755CDE0F1AECE1BE0095B6DF /* InventaryContentHandler.m */,
+				755CDE131AECE3380095B6DF /* InventaryItemOption.h */,
+				755CDE141AECE3380095B6DF /* InventaryItemOption.m */,
 				75AD2E7B1ADAD18D002EE482 /* Epub Book */,
 				7530D6B41AD068E60063F124 /* TopBar */,
 				75A125191AD0741100BDFB7F /* Contributors */,
@@ -769,24 +749,6 @@
 				75C84D581ADBD955006359E9 /* FontSelectViewModel.m */,
 			);
 			name = "Book Options";
-			sourceTree = "<group>";
-		};
-		75C84DD91ADC0337006359E9 /* WYPopoverController */ = {
-			isa = PBXGroup;
-			children = (
-				75C84F041ADC03DD006359E9 /* WYPopoverController.h */,
-				75C84E731ADC0337006359E9 /* WYPopoverController.xcodeproj */,
-			);
-			path = WYPopoverController;
-			sourceTree = "<group>";
-		};
-		75C84E741ADC0337006359E9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				75C84EFE1ADC0337006359E9 /* libWYPopoverController.a */,
-				75C84F001ADC0337006359E9 /* WYPopoverControllerTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		75DC66CA1A81520A00D6A553 /* characters */ = {
@@ -1146,7 +1108,6 @@
 		E830825D60A1C73B19AD811D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				75C84DD91ADC0337006359E9 /* WYPopoverController */,
 				6129DEB65C4E1E920B30AE6B /* libPods.a */,
 			);
 			name = Frameworks;
@@ -1169,7 +1130,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				75C84F021ADC0372006359E9 /* PBXTargetDependency */,
 			);
 			name = World;
 			productName = World;
@@ -1224,12 +1184,6 @@
 			mainGroup = 75C12A561A754B6C0075FD8D;
 			productRefGroup = 75C12A601A754B6C0075FD8D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 75C84E741ADC0337006359E9 /* Products */;
-					ProjectRef = 75C84E731ADC0337006359E9 /* WYPopoverController.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				75C12A5E1A754B6C0075FD8D /* World */,
@@ -1237,23 +1191,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		75C84EFE1ADC0337006359E9 /* libWYPopoverController.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libWYPopoverController.a;
-			remoteRef = 75C84EFD1ADC0337006359E9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		75C84F001ADC0337006359E9 /* WYPopoverControllerTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = WYPopoverControllerTests.xctest;
-			remoteRef = 75C84EFF1ADC0337006359E9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		75C12A5D1A754B6C0075FD8D /* Resources */ = {
@@ -1517,7 +1454,6 @@
 				75A1251F1AD08DC400BDFB7F /* NSURL+Helps.m in Sources */,
 				75EDA1871A83FE7E002546E0 /* Storage.m in Sources */,
 				757E93DB1A7E2DEE000B2537 /* MagicTableViewController.m in Sources */,
-				75CC87EC1AD02D4400F6C59E /* InventaryBarIconViewController.m in Sources */,
 				75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */,
 				7597094C1AC8901000FFB11E /* SettingsBarIconViewController.m in Sources */,
 				75AD2E981ADAD193002EE482 /* NNKEpubToChaptersConverter.m in Sources */,
@@ -1533,6 +1469,8 @@
 				75AD2E991ADAD193002EE482 /* NNKEpubView.m in Sources */,
 				75A125141AD0717800BDFB7F /* ParallaxEffect.m in Sources */,
 				75E86E321A82C06800419776 /* DragableButton.m in Sources */,
+				755CDE101AECE1BE0095B6DF /* InventaryContentHandler.m in Sources */,
+				755CDE151AECE3380095B6DF /* InventaryItemOption.m in Sources */,
 				75DC66C91A814F9300D6A553 /* ShadowPlayOpenedHandler.m in Sources */,
 				75A125131AD0717800BDFB7F /* Animator.m in Sources */,
 				75AD2E971ADAD193002EE482 /* NNKChapter.m in Sources */,
@@ -1575,11 +1513,6 @@
 			isa = PBXTargetDependency;
 			target = 75C12A5E1A754B6C0075FD8D /* World */;
 			targetProxy = 75C12A791A754B6D0075FD8D /* PBXContainerItemProxy */;
-		};
-		75C84F021ADC0372006359E9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WYPopoverController;
-			targetProxy = 75C84F011ADC0372006359E9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1707,14 +1640,8 @@
 				);
 				INFOPLIST_FILE = "World/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/World/Helpers/Custom",
-					Classes/WYPopoverController,
-					"$(PROJECT_DIR)/WYPopoverController/build/WYPopoverController.build/Debug-iphoneos/WYPopoverController.build/Objects-normal/arm64",
-					"$(PROJECT_DIR)/WYPopoverController/build/WYPopoverController.build/Debug-iphoneos/WYPopoverController.build/Objects-normal/armv7",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1734,14 +1661,8 @@
 				);
 				INFOPLIST_FILE = "World/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/World/Helpers/Custom",
-					Classes/WYPopoverController,
-					"$(PROJECT_DIR)/WYPopoverController/build/WYPopoverController.build/Debug-iphoneos/WYPopoverController.build/Objects-normal/arm64",
-					"$(PROJECT_DIR)/WYPopoverController/build/WYPopoverController.build/Debug-iphoneos/WYPopoverController.build/Objects-normal/armv7",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

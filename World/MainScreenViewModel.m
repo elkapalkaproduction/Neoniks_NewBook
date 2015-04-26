@@ -8,7 +8,6 @@
 
 #import "MainScreenViewModel.h"
 #import "SettingsBarIconViewController.h"
-#import "InventaryBarIconViewController.h"
 #import "ContributorsViewController.h"
 #import "AboutViewController.h"
 #import "AlertViewController.h"
@@ -17,10 +16,11 @@
 #import "ShadowPlayOpenedHandler.h"
 #import "MagicSchoolAnswersHandler.h"
 #import "IslandViewModel.h"
+#import "InventaryContentHandler.h"
 
 NSString *const AppID = @"899196882";
 
-@interface MainScreenViewModel () <SettingsBarIconDelegate, InventaryBarIconDelegate>
+@interface MainScreenViewModel () <SettingsBarIconDelegate>
 
 @property (weak, nonatomic) UIViewController<MainScreenViewModelDelegate> *delegate;
 
@@ -44,7 +44,7 @@ NSString *const AppID = @"899196882";
 
 
 - (NSInteger)numberOfItems {
-    return [self isOpenedSettings] ? 6 : 8;
+    return [self isOpenedSettings] ? 6 : [[InventaryContentHandler sharedHandler] numberOfItems];
 }
 
 
@@ -53,17 +53,29 @@ NSString *const AppID = @"899196882";
         case MainScreenTopBarViewTypeUndefinied:
             return nil;
         case MainScreenTopBarViewTypeSettings:
-            return [SettingsBarIconViewController instantiateWithFrame:rect type:index delegate:self];
+            return [SettingsBarIconViewController instantiateWithFrame:rect type:index + 1 delegate:self];
         case MainScreenTopBarViewTypeInventary:
-            return [InventaryBarIconViewController instantiateWithFrame:rect type:index delegate:self];
+            return [self inventaryControllerForIndex:index rect:rect];
         default:
             return nil;
     }
 }
 
 
+- (UIViewController *)inventaryControllerForIndex:(NSInteger)index rect:(CGRect)rect {
+    InventaryContentHandler *handler = [InventaryContentHandler sharedHandler];
+    InventaryItemOption *option = [handler inventaryOptionForType:index];
+    SettingsBarIconViewController *controller = [SettingsBarIconViewController instantiateWithFrame:rect
+                                                                                               type:option.type
+                                                                                             format:option.format
+                                                                                           delegate:self];
+    
+    return controller;
+}
+
+
 - (UIView *)viewForIndex:(NSInteger)index inRect:(CGRect)rect parentViewController:(UIViewController *)parentViewController {
-    UIViewController *viewController = [self viewControllerForIndex:index + 1 rect:rect];
+    UIViewController *viewController = [self viewControllerForIndex:index rect:rect];
     if (!viewController) return [UIView new];
     [parentViewController addChildViewController:viewController withSuperview:nil];
 
@@ -131,11 +143,6 @@ NSString *const AppID = @"899196882";
         default:
             break;
     }
-}
-
-
-- (void)inventaryBar:(InventaryBarIconViewController *)settings didPressIconWithType:(InventaryBarIconType)type {
-    
 }
 
 @end

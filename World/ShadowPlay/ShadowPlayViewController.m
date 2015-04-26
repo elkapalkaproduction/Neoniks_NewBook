@@ -10,6 +10,7 @@
 #import "CharacterShadowViewController.h"
 #import "ShadowPlayOpenedHandler.h"
 #import "DragableButton.h"
+#import "InventaryContentHandler.h"
 
 NSString *const NSPSegueIdentifierPattern = @"character";
 
@@ -33,6 +34,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 @property (weak, nonatomic, readonly) NSDictionary *wrongAnswers;
 @property (weak, nonatomic, readonly) NSDictionary *correctAnswers;
 @property (assign, nonatomic, readonly) CGFloat imageRatio;
+@property (weak, nonatomic) IBOutlet UIView *prizeView;
 
 @end
 
@@ -44,6 +46,11 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     self.descriptionLabel.font = [UIFont baseFontOfSize:[UIDevice isIpad] ? 30 : 18];
     self.bannerImage.image = [UIImage imageNamed:NSLocalizedString(NSPImageNameTitle, nil)];
     self.loadedCharacter = ShadowCharacterJay;
+    if ([self shouldShowPrize]) {
+        [self showMagicWand];
+    } else {
+        self.prizeView.hidden = YES;
+    }
 }
 
 
@@ -92,6 +99,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 
 - (void)didPressCharacter:(ShadowCharacter)character {
+    if (!self.prizeView.hidden) return;
     self.loadedCharacter = character;
     if ([[ShadowPlayOpenedHandler sharedHandler] isOpenedCharacter:character]) {
         [self loadUnlockedCharacter:character];
@@ -139,23 +147,27 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 }
 
 
+- (BOOL)shouldShowPrize {
+    InventaryIconShowing format = [[InventaryContentHandler sharedHandler] formatForItemType:InventaryBarIconTypeMagicWand];
+    
+    return [[[ShadowPlayOpenedHandler sharedHandler] allOpenedCharacter] count] == 8 && format == InventaryIconShowingEmpty;
+}
+
+
 - (void)hideShadowsAndMarksAsSolved {
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:self.loadedCharacter];
-    if ([[[ShadowPlayOpenedHandler sharedHandler] allOpenedCharacter] count] == 8) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
-                                                        message:@"Now you should see prize"
-                                                       delegate:nil
-                                              cancelButtonTitle:@"Ok"
-                                              otherButtonTitles:nil];
-        [alert show];
-    }
+
     [self updateCharactersMenuInformation];
     [self.shadowElements enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
         [UIView animateWithDuration:0.3 animations:^{
             [obj setAlpha:0.f];
         } completion:^(BOOL finished) {
             [obj removeFromSuperview];
-            [self loadUnlockedCharacter:self.loadedCharacter];
+            if ([self shouldShowPrize]) {
+                [self showMagicWand];
+            } else {
+                [self loadUnlockedCharacter:self.loadedCharacter];
+            }
         }];
     }];
 }
@@ -222,6 +234,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     self.fullPortret.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternPortraitColor, character]];
     self.viewForElements.hidden = YES;
     self.descriptionLabel.hidden = NO;
+    self.prizeView.hidden = YES;
 }
 
 
@@ -229,6 +242,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     self.descriptionLabel.hidden = YES;
     self.fullPortret.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternPortraitShadow, character]];
     self.viewForElements.hidden = NO;
+    self.prizeView.hidden = YES;
     [self loadShadowsForCharacter:character];
 }
 
@@ -245,6 +259,21 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     [shadow setImage:image forState:UIControlStateNormal];
     [self.shadowElements addObject:shadow];
     [self.viewForElements addSubview:shadow];
+}
+
+
+- (IBAction)getPrize:(id)sender {
+    self.fullPortret.hidden = NO;
+    [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeMagicWand withFormat:InventaryIconShowingFull];
+    [self loadUnlockedCharacter:self.loadedCharacter];
+}
+
+
+- (void)showMagicWand {
+    self.fullPortret.hidden = YES;
+    self.descriptionLabel.hidden = YES;
+    self.viewForElements.hidden = YES;
+    self.prizeView.hidden = NO;
 }
 
 @end
