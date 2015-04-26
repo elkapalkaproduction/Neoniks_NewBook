@@ -10,8 +10,6 @@
 
 @interface Animator : NSObject <UIViewControllerTransitioningDelegate>
 
-+ (instancetype)fromUpToDownAnimator;
-+ (instancetype)fromDownToUpAnimator;
 + (instancetype)disolveAnimator;
 
 @end

@@ -12,4 +12,6 @@
 
 + (instancetype)baseFontOfSize:(CGFloat)size;
 
++ (instancetype)georgiaFontOfSize:(CGFloat)size;
+
 @end

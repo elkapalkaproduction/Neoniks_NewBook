@@ -15,7 +15,6 @@
 #define textFontRule @"addCSSRule('p', 'font-family: %@;')"
 #define fontSizeRule @"addCSSRule('body', '-webkit-text-size-adjust: %lu%%;')"
 #define backgroundColorRule @"addCSSRule('body', 'background-color: %@;')"
-#define textColorRule @"addCSSRule('p', 'color: %@;')"
 #define imageSizeRule @"addCSSRule('img', 'max-height:%fpx;')"
 #define documentWidth @"document.documentElement.scrollWidth"
 

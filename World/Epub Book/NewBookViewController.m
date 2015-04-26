@@ -48,8 +48,8 @@
     self.epubView.delegate = self;
     [self.epubView loadEpub:epubFilepath];
     self.bookNameFooter.text = NSLocalizedString(@"book_name_footer", nil);
-    self.bookNameFooter.font = [UIFont baseFontOfSize:10];
-    self.label.font = [UIFont baseFontOfSize:10];
+    self.bookNameFooter.font = [UIFont georgiaFontOfSize:10];
+    self.label.font = [UIFont georgiaFontOfSize:10];
     UIImage *thumbnail = [UIImage imageNamed:@"book-slider-thumbnail"];
     [self.slider setThumbImage:thumbnail forState:UIControlStateNormal];
     [self.slider setThumbImage:thumbnail forState:UIControlStateHighlighted];
@@ -208,7 +208,6 @@
 
         default: {
             return NSLayoutAttributeCenterX;
-            break;
         }
     }
 }

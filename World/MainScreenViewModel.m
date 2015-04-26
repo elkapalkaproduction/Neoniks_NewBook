@@ -52,15 +52,12 @@ NSString *const AppID = @"899196882";
     switch (self.type) {
         case MainScreenTopBarViewTypeUndefinied:
             return nil;
-            break;
         case MainScreenTopBarViewTypeSettings:
             return [SettingsBarIconViewController instantiateWithFrame:rect type:index delegate:self];
-            break;
         case MainScreenTopBarViewTypeInventary:
             return [InventaryBarIconViewController instantiateWithFrame:rect type:index delegate:self];
-            break;
         default:
-            break;
+            return nil;
     }
 }
 

@@ -10,7 +10,6 @@
 
 @interface UIDevice (ScreenSize)
 
-+ (CGSize)screenSize;
 + (BOOL)isIpad;
 
 @end

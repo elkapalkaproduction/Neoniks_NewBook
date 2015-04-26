@@ -16,4 +16,11 @@
     return [UIFont fontWithName:@"Doux-Medium" size:size * ratio];
 }
 
+
++ (instancetype)georgiaFontOfSize:(CGFloat)size {
+    CGFloat ratio = [UIDevice isIpad] ? (5.f / 3.f) : 1;
+    
+    return [UIFont fontWithName:@"Georgia" size:size * ratio];
+}
+
 @end

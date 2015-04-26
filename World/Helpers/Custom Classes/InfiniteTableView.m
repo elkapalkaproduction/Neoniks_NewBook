@@ -15,8 +15,6 @@
 
 @implementation InfiniteTableView
 
-@synthesize dataSource;
-
 - (void)defaultSettings {
     self.contentSize = CGSizeMake(5000, self.frame.size.height);
     [self setShowsHorizontalScrollIndicator:NO];

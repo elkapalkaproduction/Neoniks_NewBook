@@ -11,16 +11,9 @@
 #import "MagicSchoolAnswersHandler.h"
 
 @interface SchoolOfMagicViewController ()
-@property (weak, nonatomic) MagicTableViewController *tableViewController;
 
 @end
 
 @implementation SchoolOfMagicViewController
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:[MagicTableViewController storyboardID]]) {
-        self.tableViewController = segue.destinationViewController;
-    }
-}
 
 @end

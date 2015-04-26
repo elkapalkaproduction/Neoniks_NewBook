@@ -74,11 +74,6 @@
 }
 
 
-- (void)setupStateSettingsToDefault {
-    [self setupGesturesRecognizer];
-}
-
-
 - (void)setupGesturesRecognizer {
     [self addGestureRecognizer:self.panRecognizer];
 }

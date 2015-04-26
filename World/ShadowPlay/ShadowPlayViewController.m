@@ -115,10 +115,10 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     NSDictionary *wrongCharacterPositions = self.wrongAnswers[key];
     NSDictionary *correctCharacterPositions = self.correctAnswers[key];
     NSArray *allKeys = [wrongCharacterPositions allKeys];
-    for (NSString *key in allKeys) {
-        [self createShadowElement:[UIImage imageNamed:key]
-              wrongCharacterPositions:CGPointFromString(wrongCharacterPositions[key])
-            correctCharacterPositions:CGRectFromString(correctCharacterPositions[key])];
+    for (NSString *currentKey in allKeys) {
+        [self createShadowElement:[UIImage imageNamed:currentKey]
+              wrongCharacterPositions:CGPointFromString(wrongCharacterPositions[currentKey])
+            correctCharacterPositions:CGRectFromString(correctCharacterPositions[currentKey])];
     }
 }
 

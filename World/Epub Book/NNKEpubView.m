@@ -31,9 +31,6 @@
 
 @implementation NNKEpubView
 
-@synthesize currentPageNumber = _currentPageNumber;
-@synthesize fontName = _fontName;
-
 #pragma mark - Life Cycle
 
 - (instancetype)init {
@@ -157,9 +154,8 @@
 
 #pragma mark - Custom Accessors
 
-- (void)setFontName:(NSString *)fontName {
-    _fontName = fontName;
-    [self updatePagination];
+- (NSString *)fontName {
+    return @"Georgia";
 }
 
 

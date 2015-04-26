@@ -19,10 +19,11 @@
 - (instancetype)initWithPath:(NSString *)theSpinePath
                        title:(NSString *)theTitle
                 chapterIndex:(NSUInteger)theIndex {
-    if (self = [super init]) {
-        self.spinePath = theSpinePath;
-        self.title = theTitle;
-        self.chapterIndex = theIndex;
+    self = [super init];
+    if (self) {
+        _spinePath = theSpinePath;
+        _title = theTitle;
+        _chapterIndex = theIndex;
     }
     
     return self;
