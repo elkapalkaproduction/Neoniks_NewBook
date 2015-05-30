@@ -7,36 +7,54 @@
 //
 
 #import "PopUpViewController.h"
+#import "NNKMuseumNode.h"
+#import "NNKFoamCastleNode.h"
+#import "NNKLanternHouseNode.h"
+#import "NNKBottomlessIslandNode.h"
+#import "MyScene.h"
 
 @import QuartzCore;
 
 @interface PopUpViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
-@property (strong, nonatomic) NSString *stringText;
-@property (strong, nonatomic) UIImage *mainImage;
-@property (strong, nonatomic) UIImage *bannerImage;
 @property (weak, nonatomic) IBOutlet UIImageView *contentImage;
 @property (weak, nonatomic) IBOutlet UIImageView *topBanner;
 @property (weak, nonatomic) id<PopUpDelegate> delegate;
+@property (assign, nonatomic) PopUpType type;
+@property (strong, nonatomic) MyScene *scene;
 
 @end
 
 @implementation PopUpViewController
 
-+ (instancetype)instantiateWithMainImage:(UIImage *)mainImage
-                             bannerImage:(UIImage *)bannerImage
-                                    text:(NSString *)text
-                                delegate:(id<PopUpDelegate>)delegate {
++ (instancetype)instantiateWithType:(PopUpType)type delegate:(id<PopUpDelegate>)delegate {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     PopUpViewController *popUpViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(self)];
     
     popUpViewController.delegate = delegate;
-    popUpViewController.stringText = text;
-    popUpViewController.mainImage = mainImage;
-    popUpViewController.bannerImage = bannerImage;
+    popUpViewController.type = type;
     
     return popUpViewController;
+}
+
+
+- (MyScene *)sceneWithFrame:(CGRect)frame node:(SKNode<CustomNodeProtocol> *)node {
+    MyScene *scene = [MyScene sceneWithSize:frame.size];
+    scene.node = node;
+    scene.backgroundColor = [UIColor clearColor];
+    
+    return scene;
+}
+
+
+- (SKView *)skViewWithSize:(CGRect)frame node:(SKNode<CustomNodeProtocol> *)node {
+    SKView *skView = [[SKView alloc] initWithFrame:frame];
+    skView.allowsTransparency = YES;
+    self.scene = [self sceneWithFrame:frame node:node];
+    [skView presentScene:self.scene];
+    
+    return skView;
 }
 
 
@@ -50,11 +68,20 @@
     label.layer.shadowOpacity = 0.6f;
     label.layer.masksToBounds = NO;
     label.layer.shouldRasterize = YES;
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:self.stringText];
-    [attributedString addAttribute:NSKernAttributeName value:@(1.4) range:NSMakeRange(0, [self.stringText length])];
+    NSString *text = [NSString stringWithFormat:@"island_popup_description_%ld", self.type];
+    NSString *localizedText = NSLocalizedString(text, nil);
+    NSString *bannerImageName = [NSString stringWithFormat:@"pop_up_banner_%ld", self.type];
+    
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:localizedText];
+    [attributedString addAttribute:NSKernAttributeName value:@(1.4) range:NSMakeRange(0, [localizedText length])];
     self.label.attributedText = attributedString;
-    self.topBanner.image = self.bannerImage;
-    self.contentImage.image = self.mainImage;
+    self.topBanner.image = [UIImage imageNamed:NSLocalizedString(bannerImageName, nil)];
+    CGRect frame = self.contentImage.bounds;
+    SKView *skView = [self skViewWithSize:frame node:nil];
+    
+    [self.contentImage addSubview:skView];
+
+    [self setupContentImage];
 }
 
 
@@ -66,7 +93,45 @@
         [self.view removeFromSuperview];
         [weakSelf.delegate didClosePopUp];
     }];
+
+}
+
+
+- (void)setupContentImage {
+    CGSize size = self.contentImage.bounds.size;
+    SKNode<CustomNodeProtocol> *node;
     
+    switch (self.type) {
+        case PopUpTypeMuseum:
+            node = [[NNKMuseumNode alloc] initWithSize:size];
+            break;
+        case PopUpTypeFoamCastle:
+            node = [[NNKFoamCastleNode alloc] initWithSize:size];
+            break;
+        case PopUpTypeLanternHouse:
+            node = [[NNKLanternHouseNode alloc] initWithSize:size];
+            break;
+        case PopUpTypeBottomlessIsland:
+            node = [[NNKBottomlessIslandNode alloc] initWithSize:size];
+            break;
+        case PopUpTypeSchool:
+        case PopUpTypeCafe:
+        case PopUpTypeLighthouse:
+        default:
+            [self setupDefaultContentImage];
+            return;
+            break;
+    }
+    self.contentImage.image = nil;
+    self.contentImage.userInteractionEnabled = YES;
+    self.scene.node = node;
+}
+
+
+- (void)setupDefaultContentImage {
+    NSString *mainImageName = [NSString stringWithFormat:@"pop_up_image_%ld", self.type];
+    self.contentImage.image = [UIImage imageNamed:NSLocalizedString(mainImageName, nil)];
+
 }
 
 

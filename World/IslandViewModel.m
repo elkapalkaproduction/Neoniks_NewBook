@@ -94,13 +94,7 @@ NSString *const LastSolvedIsland = @"LastSolvedIsland";
 
 
 - (PopUpViewController *)popUpForIndex:(NSInteger)index {
-    NSString *text = [NSString stringWithFormat:@"island_popup_description_%ld", (long)index];
-    NSString *mainImageName = [NSString stringWithFormat:@"pop_up_image_%ld", (long)index];
-    NSString *bannerImageName = [NSString stringWithFormat:@"pop_up_banner_%ld", (long)index];
-    PopUpViewController *popUp = [PopUpViewController instantiateWithMainImage:[UIImage imageNamed:mainImageName]
-                                                                   bannerImage:[UIImage imageNamed:NSLocalizedString(bannerImageName, nil)]
-                                                                          text:NSLocalizedString(text, nil)
-                                                                      delegate:self];
+    PopUpViewController *popUp = [PopUpViewController instantiateWithType:index delegate:self];
 
     return popUp;
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -86,9 +86,12 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="5by-dE-M5a" secondAttribute="height" multiplier="151:212" id="HSc-VK-8NE"/>
                                         </constraints>
-                                        <state key="normal" image="goblin_with_key">
+                                        <state key="normal" image="goblin_without_key">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="goblinPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qB0-Yn-CIW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmg-dg-eqQ">
                                         <rect key="frame" x="373" y="426" width="52" height="28"/>
@@ -98,6 +101,9 @@
                                         <state key="normal" image="bat">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="batPress" destination="BYZ-38-t0r" eventType="touchUpInside" id="hIV-nX-p9H"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viC-h4-F4v">
                                         <rect key="frame" x="223" y="447" width="36" height="29"/>
@@ -107,6 +113,9 @@
                                         <state key="normal" image="snail">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="snailPress" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ii-9d-Wc2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JS2-hF-23n">
                                         <rect key="frame" x="83" y="510" width="45" height="75"/>
@@ -116,6 +125,9 @@
                                         <state key="normal" image="dandelion">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="dandelionPress" destination="BYZ-38-t0r" eventType="touchUpInside" id="omd-IA-R2f"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pg-wi-1fR">
                                         <rect key="frame" x="254" y="497" width="80" height="66"/>
@@ -125,6 +137,9 @@
                                         <state key="normal" image="sword">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="skeletPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nIM-1e-X5W"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8v-HL-tDY">
                                         <rect key="frame" x="429" y="424" width="28" height="42"/>
@@ -134,11 +149,29 @@
                                         <state key="normal" image="lamp_off">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="lampPress" destination="BYZ-38-t0r" eventType="touchUpInside" id="z25-pH-Z1S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TO-P7-619">
+                                        <rect key="frame" x="133" y="169" width="78" height="68"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="iIE-PQ-90m"/>
+                                            <constraint firstAttribute="width" constant="78" id="uGI-cX-pXP"/>
+                                        </constraints>
+                                        <state key="normal" image="menu_sheep">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sheepPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zX2-Sh-y5x"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="OFw-L9-7AP" firstAttribute="width" secondItem="hrp-eW-Oaz" secondAttribute="width" multiplier="797:3000" id="1LP-oS-iZi"/>
+                                    <constraint firstItem="1TO-P7-619" firstAttribute="top" secondItem="SgK-f0-cGQ" secondAttribute="bottom" constant="8" id="1pP-XH-5Gg"/>
                                     <constraint firstItem="5nL-Uh-waE" firstAttribute="width" secondItem="hrp-eW-Oaz" secondAttribute="width" multiplier="652:3000" id="4cJ-Qa-fHS"/>
+                                    <constraint firstItem="1TO-P7-619" firstAttribute="leading" secondItem="5nL-Uh-waE" secondAttribute="trailing" constant="3" id="5SU-w3-f1N"/>
                                     <constraint firstItem="5nL-Uh-waE" firstAttribute="leading" secondItem="gx4-4d-NwY" secondAttribute="leading" id="7QX-0u-Pee"/>
                                     <constraint firstAttribute="trailing" secondItem="OFw-L9-7AP" secondAttribute="trailing" constant="10" id="9j8-h1-SQd"/>
                                     <constraint firstItem="yNx-MZ-uMF" firstAttribute="top" secondItem="hrp-eW-Oaz" secondAttribute="bottom" constant="22" id="Bv9-5n-Ytd"/>
@@ -689,17 +722,17 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XVF-vC-bfC" userLabel="Correct Answer">
                                 <rect key="frame" x="92" y="18" width="272" height="377"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="24r-0r-RaJ">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Xf-NN-tVd">
                                         <rect key="frame" x="0.0" y="0.0" width="272" height="377"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="24r-0r-RaJ" secondAttribute="trailing" id="1HZ-31-45g"/>
-                                    <constraint firstItem="24r-0r-RaJ" firstAttribute="leading" secondItem="XVF-vC-bfC" secondAttribute="leading" id="YD3-az-Tju"/>
+                                    <constraint firstItem="1Xf-NN-tVd" firstAttribute="top" secondItem="XVF-vC-bfC" secondAttribute="top" id="9lY-px-neW"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Xf-NN-tVd" secondAttribute="trailing" id="Dhz-qU-ZFz"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Xf-NN-tVd" secondAttribute="bottom" id="Qyg-Ua-wnL"/>
                                     <constraint firstAttribute="width" secondItem="XVF-vC-bfC" secondAttribute="height" multiplier="407:563" id="Yaf-RT-MhE"/>
-                                    <constraint firstItem="24r-0r-RaJ" firstAttribute="top" secondItem="XVF-vC-bfC" secondAttribute="top" id="tPh-HR-5f9"/>
-                                    <constraint firstAttribute="bottom" secondItem="24r-0r-RaJ" secondAttribute="bottom" id="z1c-pi-1Cr"/>
+                                    <constraint firstItem="1Xf-NN-tVd" firstAttribute="leading" secondItem="XVF-vC-bfC" secondAttribute="leading" id="dgC-LZ-tUu"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJf-bw-jzE" userLabel="Shadow Elements">
@@ -948,7 +981,7 @@
                     <connections>
                         <outlet property="bannerImage" destination="Ex0-iW-wyv" id="jwo-vg-UFm"/>
                         <outlet property="descriptionLabel" destination="uFe-fU-JiR" id="1LA-l2-1XA"/>
-                        <outlet property="fullPortret" destination="24r-0r-RaJ" id="Zvi-5W-juF"/>
+                        <outlet property="fullPortret" destination="1Xf-NN-tVd" id="nUf-VE-GWm"/>
                         <outlet property="prizeView" destination="tV5-gJ-nIh" id="5KB-zY-iD0"/>
                         <outlet property="viewForElements" destination="eJf-bw-jzE" id="Vnx-cn-4Zx"/>
                         <outlet property="viewForResults" destination="XVF-vC-bfC" id="8xB-w9-p7j"/>
@@ -1880,7 +1913,7 @@ bottom.</string>
         <image name="dandelion" width="113" height="187"/>
         <image name="find-me_eng" width="77" height="24"/>
         <image name="fon_popup" width="508" height="375"/>
-        <image name="goblin_with_key" width="151" height="212"/>
+        <image name="goblin_without_key" width="151" height="212"/>
         <image name="house_eng" width="338" height="569"/>
         <image name="house_wall" width="90" height="126"/>
         <image name="inventary_full_island_map_icon" width="91" height="91"/>
@@ -1889,6 +1922,7 @@ bottom.</string>
         <image name="island" width="211" height="128"/>
         <image name="lamp_off" width="70" height="105"/>
         <image name="menu_background" width="1500" height="1800"/>
+        <image name="menu_sheep" width="78" height="68"/>
         <image name="panel_left" width="283" height="1242"/>
         <image name="panel_right" width="283" height="1242"/>
         <image name="pop_up_banner_0_en" width="201" height="28"/>

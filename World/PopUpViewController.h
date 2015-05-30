@@ -8,6 +8,16 @@
 
 #import "BaseViewController.h"
 
+typedef NS_ENUM(NSInteger, PopUpType) {
+    PopUpTypeSchool,
+    PopUpTypeLanternHouse,
+    PopUpTypeCafe,
+    PopUpTypeLighthouse,
+    PopUpTypeMuseum,
+    PopUpTypeFoamCastle,
+    PopUpTypeBottomlessIsland,
+};
+
 @protocol PopUpDelegate  <NSObject>
 
 - (void)didClosePopUp;
@@ -16,10 +26,8 @@
 
 @interface PopUpViewController : BaseViewController
 
-+ (instancetype)instantiateWithMainImage:(UIImage *)mainImage
-                             bannerImage:(UIImage *)bannerImage
-                                    text:(NSString *)text
-                                delegate:(id<PopUpDelegate>)delegate;
++ (instancetype)instantiateWithType:(PopUpType)type
+                          delegate:(id<PopUpDelegate>)delegate;
 
 - (void)addOnParentView:(UIViewController *)viewController;
 

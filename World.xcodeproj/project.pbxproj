@@ -8,11 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		56DC915B5D1078DAC3B7C86D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6129DEB65C4E1E920B30AE6B /* libPods.a */; };
+		75015FA61AFF45C10008DE52 /* full_portret_color_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 75015FA51AFF45C10008DE52 /* full_portret_color_7.png */; };
+		75015FB81AFFD88C0008DE52 /* full_portret_color_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75015FB71AFFD88C0008DE52 /* full_portret_color_1.png */; };
+		75037FE61B1A3B7700CB0B83 /* bottom_island.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FD31B1A3B7700CB0B83 /* bottom_island.atlasc */; };
+		75037FE71B1A3B7700CB0B83 /* foam_castle.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FD61B1A3B7700CB0B83 /* foam_castle.atlasc */; };
+		75037FE81B1A3B7700CB0B83 /* furcoat_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FD81B1A3B7700CB0B83 /* furcoat_anim.atlasc */; };
+		75037FE91B1A3B7700CB0B83 /* harold_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FDA1B1A3B7700CB0B83 /* harold_anim.atlasc */; };
+		75037FEA1B1A3B7700CB0B83 /* jay_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FDC1B1A3B7700CB0B83 /* jay_anim.atlasc */; };
+		75037FEB1B1A3B7700CB0B83 /* lantern_house.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FDE1B1A3B7700CB0B83 /* lantern_house.atlasc */; };
+		75037FEC1B1A3B7700CB0B83 /* miner_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FE01B1A3B7700CB0B83 /* miner_anim.atlasc */; };
+		75037FED1B1A3B7700CB0B83 /* museum.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FE21B1A3B7700CB0B83 /* museum.atlasc */; };
+		75037FEE1B1A3B7700CB0B83 /* wanda_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FE41B1A3B7700CB0B83 /* wanda_anim.atlasc */; };
+		750380041B1A3B8900CB0B83 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 75037FF01B1A3B8900CB0B83 /* MyScene.m */; };
+		750380051B1A3B8900CB0B83 /* NNKMinerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75037FF21B1A3B8900CB0B83 /* NNKMinerNode.m */; };
+		750380061B1A3B8900CB0B83 /* NNKJayNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75037FF41B1A3B8900CB0B83 /* NNKJayNode.m */; };
+		750380071B1A3B8900CB0B83 /* NNKWandaNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75037FF61B1A3B8900CB0B83 /* NNKWandaNode.m */; };
+		750380081B1A3B8900CB0B83 /* NNKHaroldNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75037FF81B1A3B8900CB0B83 /* NNKHaroldNode.m */; };
+		750380091B1A3B8900CB0B83 /* NNKFurcoatNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75037FFA1B1A3B8900CB0B83 /* NNKFurcoatNode.m */; };
+		7503800A1B1A3B8900CB0B83 /* NNKMuseumNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75037FFC1B1A3B8900CB0B83 /* NNKMuseumNode.m */; };
+		7503800B1B1A3B8900CB0B83 /* NNKFoamCastleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75037FFE1B1A3B8900CB0B83 /* NNKFoamCastleNode.m */; };
+		7503800C1B1A3B8900CB0B83 /* NNKLanternHouseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 750380001B1A3B8900CB0B83 /* NNKLanternHouseNode.m */; };
+		7503800D1B1A3B8900CB0B83 /* NNKBottomlessIslandNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 750380021B1A3B8900CB0B83 /* NNKBottomlessIslandNode.m */; };
 		7530D6B31AD068D50063F124 /* ContributorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7530D6B21AD068D50063F124 /* ContributorsViewController.m */; };
 		7530D6B61AD069960063F124 /* ContributorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7530D6B51AD069960063F124 /* ContributorsViewController.xib */; };
-		753EFD671ADBC644009F0A38 /* StyleSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 753EFD661ADBC644009F0A38 /* StyleSettings.plist */; };
 		75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */; };
 		75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423AA21A7D8A4000D2C36E /* BaseViewController.m */; };
+		754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 754ED0BC1AF4110F00697F9E /* StyleSettings.plist */; };
 		755CDE101AECE1BE0095B6DF /* InventaryContentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 755CDE0F1AECE1BE0095B6DF /* InventaryContentHandler.m */; };
 		755CDE151AECE3380095B6DF /* InventaryItemOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 755CDE141AECE3380095B6DF /* InventaryItemOption.m */; };
 		75635ADE1AABBEAA005BD4CB /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */; };
@@ -53,13 +74,11 @@
 		75CC87E91AD0238D00F6C59E /* MainScreenViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */; };
 		75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D268FD1AC3448B00A17632 /* InfiniteTableView.m */; };
 		75DC66C91A814F9300D6A553 /* ShadowPlayOpenedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DC66C81A814F9300D6A553 /* ShadowPlayOpenedHandler.m */; };
-		75DC66DB1A81520A00D6A553 /* full_portret_color_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CB1A81520A00D6A553 /* full_portret_color_1.png */; };
 		75DC66DC1A81520A00D6A553 /* full_portret_color_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CC1A81520A00D6A553 /* full_portret_color_2.png */; };
 		75DC66DD1A81520A00D6A553 /* full_portret_color_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CD1A81520A00D6A553 /* full_portret_color_3.png */; };
 		75DC66DE1A81520A00D6A553 /* full_portret_color_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CE1A81520A00D6A553 /* full_portret_color_4.png */; };
 		75DC66DF1A81520A00D6A553 /* full_portret_color_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CF1A81520A00D6A553 /* full_portret_color_5.png */; };
 		75DC66E01A81520A00D6A553 /* full_portret_color_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66D01A81520A00D6A553 /* full_portret_color_6.png */; };
-		75DC66E11A81520A00D6A553 /* full_portret_color_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66D11A81520A00D6A553 /* full_portret_color_7.png */; };
 		75DC66E21A81520A00D6A553 /* full_portret_color_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66D21A81520A00D6A553 /* full_portret_color_8.png */; };
 		75DC66E31A81520A00D6A553 /* full_portret_shadow_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66D31A81520A00D6A553 /* full_portret_shadow_1.png */; };
 		75DC66E41A81520A00D6A553 /* full_portret_shadow_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66D41A81520A00D6A553 /* full_portret_shadow_2.png */; };
@@ -258,14 +277,55 @@
 /* Begin PBXFileReference section */
 		047A1C67A322F975E7F2E245 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6129DEB65C4E1E920B30AE6B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		75015FA51AFF45C10008DE52 /* full_portret_color_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_7.png; sourceTree = "<group>"; };
+		75015FB71AFFD88C0008DE52 /* full_portret_color_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_1.png; sourceTree = "<group>"; };
+		75037FD31B1A3B7700CB0B83 /* bottom_island.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bottom_island.atlasc; sourceTree = "<group>"; };
+		75037FD41B1A3B7700CB0B83 /* bottom_island.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bottom_island.h; sourceTree = "<group>"; };
+		75037FD61B1A3B7700CB0B83 /* foam_castle.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = foam_castle.atlasc; sourceTree = "<group>"; };
+		75037FD71B1A3B7700CB0B83 /* foam_castle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foam_castle.h; sourceTree = "<group>"; };
+		75037FD81B1A3B7700CB0B83 /* furcoat_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = furcoat_anim.atlasc; sourceTree = "<group>"; };
+		75037FD91B1A3B7700CB0B83 /* furcoat_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = furcoat_anim.h; sourceTree = "<group>"; };
+		75037FDA1B1A3B7700CB0B83 /* harold_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = harold_anim.atlasc; sourceTree = "<group>"; };
+		75037FDB1B1A3B7700CB0B83 /* harold_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = harold_anim.h; sourceTree = "<group>"; };
+		75037FDC1B1A3B7700CB0B83 /* jay_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jay_anim.atlasc; sourceTree = "<group>"; };
+		75037FDD1B1A3B7700CB0B83 /* jay_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jay_anim.h; sourceTree = "<group>"; };
+		75037FDE1B1A3B7700CB0B83 /* lantern_house.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lantern_house.atlasc; sourceTree = "<group>"; };
+		75037FDF1B1A3B7700CB0B83 /* lantern_house.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lantern_house.h; sourceTree = "<group>"; };
+		75037FE01B1A3B7700CB0B83 /* miner_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = miner_anim.atlasc; sourceTree = "<group>"; };
+		75037FE11B1A3B7700CB0B83 /* miner_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = miner_anim.h; sourceTree = "<group>"; };
+		75037FE21B1A3B7700CB0B83 /* museum.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = museum.atlasc; sourceTree = "<group>"; };
+		75037FE31B1A3B7700CB0B83 /* museum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = museum.h; sourceTree = "<group>"; };
+		75037FE41B1A3B7700CB0B83 /* wanda_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = wanda_anim.atlasc; sourceTree = "<group>"; };
+		75037FE51B1A3B7700CB0B83 /* wanda_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wanda_anim.h; sourceTree = "<group>"; };
+		75037FEF1B1A3B8900CB0B83 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		75037FF01B1A3B8900CB0B83 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		75037FF11B1A3B8900CB0B83 /* NNKMinerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKMinerNode.h; sourceTree = "<group>"; };
+		75037FF21B1A3B8900CB0B83 /* NNKMinerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKMinerNode.m; sourceTree = "<group>"; };
+		75037FF31B1A3B8900CB0B83 /* NNKJayNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKJayNode.h; sourceTree = "<group>"; };
+		75037FF41B1A3B8900CB0B83 /* NNKJayNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKJayNode.m; sourceTree = "<group>"; };
+		75037FF51B1A3B8900CB0B83 /* NNKWandaNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKWandaNode.h; sourceTree = "<group>"; };
+		75037FF61B1A3B8900CB0B83 /* NNKWandaNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKWandaNode.m; sourceTree = "<group>"; };
+		75037FF71B1A3B8900CB0B83 /* NNKHaroldNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKHaroldNode.h; sourceTree = "<group>"; };
+		75037FF81B1A3B8900CB0B83 /* NNKHaroldNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKHaroldNode.m; sourceTree = "<group>"; };
+		75037FF91B1A3B8900CB0B83 /* NNKFurcoatNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKFurcoatNode.h; sourceTree = "<group>"; };
+		75037FFA1B1A3B8900CB0B83 /* NNKFurcoatNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKFurcoatNode.m; sourceTree = "<group>"; };
+		75037FFB1B1A3B8900CB0B83 /* NNKMuseumNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKMuseumNode.h; sourceTree = "<group>"; };
+		75037FFC1B1A3B8900CB0B83 /* NNKMuseumNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKMuseumNode.m; sourceTree = "<group>"; };
+		75037FFD1B1A3B8900CB0B83 /* NNKFoamCastleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKFoamCastleNode.h; sourceTree = "<group>"; };
+		75037FFE1B1A3B8900CB0B83 /* NNKFoamCastleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKFoamCastleNode.m; sourceTree = "<group>"; };
+		75037FFF1B1A3B8900CB0B83 /* NNKLanternHouseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKLanternHouseNode.h; sourceTree = "<group>"; };
+		750380001B1A3B8900CB0B83 /* NNKLanternHouseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKLanternHouseNode.m; sourceTree = "<group>"; };
+		750380011B1A3B8900CB0B83 /* NNKBottomlessIslandNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKBottomlessIslandNode.h; sourceTree = "<group>"; };
+		750380021B1A3B8900CB0B83 /* NNKBottomlessIslandNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKBottomlessIslandNode.m; sourceTree = "<group>"; };
+		750380031B1A3B8900CB0B83 /* CustomNodeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNodeProtocol.h; sourceTree = "<group>"; };
 		7530D6B11AD068D50063F124 /* ContributorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContributorsViewController.h; sourceTree = "<group>"; };
 		7530D6B21AD068D50063F124 /* ContributorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsViewController.m; sourceTree = "<group>"; };
 		7530D6B51AD069960063F124 /* ContributorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContributorsViewController.xib; sourceTree = "<group>"; };
-		753EFD661ADBC644009F0A38 /* StyleSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StyleSettings.plist; sourceTree = "<group>"; };
 		75423A9C1A7D826A00D2C36E /* SchoolOfMagicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolOfMagicViewController.h; sourceTree = "<group>"; };
 		75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolOfMagicViewController.m; sourceTree = "<group>"; };
 		75423AA11A7D8A4000D2C36E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		75423AA21A7D8A4000D2C36E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		754ED0BC1AF4110F00697F9E /* StyleSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StyleSettings.plist; sourceTree = "<group>"; };
 		755CDE0E1AECE1BE0095B6DF /* InventaryContentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventaryContentHandler.h; sourceTree = "<group>"; };
 		755CDE0F1AECE1BE0095B6DF /* InventaryContentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventaryContentHandler.m; sourceTree = "<group>"; };
 		755CDE131AECE3380095B6DF /* InventaryItemOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventaryItemOption.h; sourceTree = "<group>"; };
@@ -340,13 +400,11 @@
 		75D268FD1AC3448B00A17632 /* InfiniteTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteTableView.m; sourceTree = "<group>"; };
 		75DC66C71A814F9300D6A553 /* ShadowPlayOpenedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowPlayOpenedHandler.h; sourceTree = "<group>"; };
 		75DC66C81A814F9300D6A553 /* ShadowPlayOpenedHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowPlayOpenedHandler.m; sourceTree = "<group>"; };
-		75DC66CB1A81520A00D6A553 /* full_portret_color_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_1.png; sourceTree = "<group>"; };
 		75DC66CC1A81520A00D6A553 /* full_portret_color_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_2.png; sourceTree = "<group>"; };
 		75DC66CD1A81520A00D6A553 /* full_portret_color_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_3.png; sourceTree = "<group>"; };
 		75DC66CE1A81520A00D6A553 /* full_portret_color_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_4.png; sourceTree = "<group>"; };
 		75DC66CF1A81520A00D6A553 /* full_portret_color_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_5.png; sourceTree = "<group>"; };
 		75DC66D01A81520A00D6A553 /* full_portret_color_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_6.png; sourceTree = "<group>"; };
-		75DC66D11A81520A00D6A553 /* full_portret_color_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_7.png; sourceTree = "<group>"; };
 		75DC66D21A81520A00D6A553 /* full_portret_color_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_8.png; sourceTree = "<group>"; };
 		75DC66D31A81520A00D6A553 /* full_portret_shadow_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_shadow_1.png; sourceTree = "<group>"; };
 		75DC66D41A81520A00D6A553 /* full_portret_shadow_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_shadow_2.png; sourceTree = "<group>"; };
@@ -577,6 +635,52 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		75037F9B1B1A3B6800CB0B83 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				75037FEF1B1A3B8900CB0B83 /* MyScene.h */,
+				75037FF01B1A3B8900CB0B83 /* MyScene.m */,
+				75037FF11B1A3B8900CB0B83 /* NNKMinerNode.h */,
+				75037FF21B1A3B8900CB0B83 /* NNKMinerNode.m */,
+				75037FF31B1A3B8900CB0B83 /* NNKJayNode.h */,
+				75037FF41B1A3B8900CB0B83 /* NNKJayNode.m */,
+				75037FF51B1A3B8900CB0B83 /* NNKWandaNode.h */,
+				75037FF61B1A3B8900CB0B83 /* NNKWandaNode.m */,
+				75037FF71B1A3B8900CB0B83 /* NNKHaroldNode.h */,
+				75037FF81B1A3B8900CB0B83 /* NNKHaroldNode.m */,
+				75037FF91B1A3B8900CB0B83 /* NNKFurcoatNode.h */,
+				75037FFA1B1A3B8900CB0B83 /* NNKFurcoatNode.m */,
+				75037FFB1B1A3B8900CB0B83 /* NNKMuseumNode.h */,
+				75037FFC1B1A3B8900CB0B83 /* NNKMuseumNode.m */,
+				75037FFD1B1A3B8900CB0B83 /* NNKFoamCastleNode.h */,
+				75037FFE1B1A3B8900CB0B83 /* NNKFoamCastleNode.m */,
+				75037FFF1B1A3B8900CB0B83 /* NNKLanternHouseNode.h */,
+				750380001B1A3B8900CB0B83 /* NNKLanternHouseNode.m */,
+				750380011B1A3B8900CB0B83 /* NNKBottomlessIslandNode.h */,
+				750380021B1A3B8900CB0B83 /* NNKBottomlessIslandNode.m */,
+				750380031B1A3B8900CB0B83 /* CustomNodeProtocol.h */,
+				75037FD31B1A3B7700CB0B83 /* bottom_island.atlasc */,
+				75037FD41B1A3B7700CB0B83 /* bottom_island.h */,
+				75037FD61B1A3B7700CB0B83 /* foam_castle.atlasc */,
+				75037FD71B1A3B7700CB0B83 /* foam_castle.h */,
+				75037FD81B1A3B7700CB0B83 /* furcoat_anim.atlasc */,
+				75037FD91B1A3B7700CB0B83 /* furcoat_anim.h */,
+				75037FDA1B1A3B7700CB0B83 /* harold_anim.atlasc */,
+				75037FDB1B1A3B7700CB0B83 /* harold_anim.h */,
+				75037FDC1B1A3B7700CB0B83 /* jay_anim.atlasc */,
+				75037FDD1B1A3B7700CB0B83 /* jay_anim.h */,
+				75037FDE1B1A3B7700CB0B83 /* lantern_house.atlasc */,
+				75037FDF1B1A3B7700CB0B83 /* lantern_house.h */,
+				75037FE01B1A3B7700CB0B83 /* miner_anim.atlasc */,
+				75037FE11B1A3B7700CB0B83 /* miner_anim.h */,
+				75037FE21B1A3B7700CB0B83 /* museum.atlasc */,
+				75037FE31B1A3B7700CB0B83 /* museum.h */,
+				75037FE41B1A3B7700CB0B83 /* wanda_anim.atlasc */,
+				75037FE51B1A3B7700CB0B83 /* wanda_anim.h */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		7530D6B41AD068E60063F124 /* TopBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -654,7 +758,7 @@
 		75C12A561A754B6C0075FD8D = {
 			isa = PBXGroup;
 			children = (
-				753EFD661ADBC644009F0A38 /* StyleSettings.plist */,
+				754ED0BC1AF4110F00697F9E /* StyleSettings.plist */,
 				75E237671A85490800BE6540 /* doux.ttf */,
 				75C12A611A754B6C0075FD8D /* World */,
 				75C12A7B1A754B6D0075FD8D /* WorldTests */,
@@ -692,6 +796,7 @@
 				755CDE0F1AECE1BE0095B6DF /* InventaryContentHandler.m */,
 				755CDE131AECE3380095B6DF /* InventaryItemOption.h */,
 				755CDE141AECE3380095B6DF /* InventaryItemOption.m */,
+				75037F9B1B1A3B6800CB0B83 /* Animations */,
 				75AD2E7B1ADAD18D002EE482 /* Epub Book */,
 				7530D6B41AD068E60063F124 /* TopBar */,
 				75A125191AD0741100BDFB7F /* Contributors */,
@@ -755,13 +860,13 @@
 			isa = PBXGroup;
 			children = (
 				75DC670B1A816AA100D6A553 /* characters_shadows_parts */,
-				75DC66CB1A81520A00D6A553 /* full_portret_color_1.png */,
+				75015FB71AFFD88C0008DE52 /* full_portret_color_1.png */,
 				75DC66CC1A81520A00D6A553 /* full_portret_color_2.png */,
 				75DC66CD1A81520A00D6A553 /* full_portret_color_3.png */,
 				75DC66CE1A81520A00D6A553 /* full_portret_color_4.png */,
 				75DC66CF1A81520A00D6A553 /* full_portret_color_5.png */,
 				75DC66D01A81520A00D6A553 /* full_portret_color_6.png */,
-				75DC66D11A81520A00D6A553 /* full_portret_color_7.png */,
+				75015FA51AFF45C10008DE52 /* full_portret_color_7.png */,
 				75DC66D21A81520A00D6A553 /* full_portret_color_8.png */,
 				75DC66D31A81520A00D6A553 /* full_portret_shadow_1.png */,
 				75DC66D41A81520A00D6A553 /* full_portret_shadow_2.png */,
@@ -1199,6 +1304,7 @@
 			files = (
 				75DC681C1A816AA100D6A553 /* shadow_character8_part21.png in Resources */,
 				75DFE0FF1A800CE500CE9E69 /* Shadow_portret_5.png in Resources */,
+				75037FE81B1A3B7700CB0B83 /* furcoat_anim.atlasc in Resources */,
 				75DC67E81A816AA100D6A553 /* shadow_character5_part6.png in Resources */,
 				75DC67A21A816AA100D6A553 /* shadow_character1_part2.png in Resources */,
 				75DC681E1A816AA100D6A553 /* shadow_character8_part23.png in Resources */,
@@ -1216,7 +1322,7 @@
 				75DC66E21A81520A00D6A553 /* full_portret_color_8.png in Resources */,
 				75DC67F61A816AA100D6A553 /* shadow_character6_part5.png in Resources */,
 				75DC66E91A81520A00D6A553 /* full_portret_shadow_7.png in Resources */,
-				753EFD671ADBC644009F0A38 /* StyleSettings.plist in Resources */,
+				754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */,
 				75DC67CF1A816AA100D6A553 /* shadow_character4_part18.png in Resources */,
 				75DC67FC1A816AA100D6A553 /* shadow_character7_part10.png in Resources */,
 				75C12A6E1A754B6C0075FD8D /* Main.storyboard in Resources */,
@@ -1224,7 +1330,7 @@
 				75DC68191A816AA100D6A553 /* shadow_character8_part19.png in Resources */,
 				75DC67AB1A816AA100D6A553 /* shadow_character2_part10.png in Resources */,
 				75DFE1071A800CE500CE9E69 /* Shadow_portret_border_5.png in Resources */,
-				75DC66DB1A81520A00D6A553 /* full_portret_color_1.png in Resources */,
+				75015FA61AFF45C10008DE52 /* full_portret_color_7.png in Resources */,
 				75DFE0FE1A800CE500CE9E69 /* Shadow_portret_4.png in Resources */,
 				75DFE1041A800CE500CE9E69 /* Shadow_portret_border_2.png in Resources */,
 				75DC68061A816AA100D6A553 /* shadow_character7_part2.png in Resources */,
@@ -1245,6 +1351,7 @@
 				75DC67A81A816AA100D6A553 /* shadow_character1_part8.png in Resources */,
 				75DC67C71A816AA100D6A553 /* shadow_character4_part10.png in Resources */,
 				75DC67B31A816AA100D6A553 /* shadow_character2_part6.png in Resources */,
+				75037FEB1B1A3B7700CB0B83 /* lantern_house.atlasc in Resources */,
 				75DC66E81A81520A00D6A553 /* full_portret_shadow_6.png in Resources */,
 				75DC67CA1A816AA100D6A553 /* shadow_character4_part13.png in Resources */,
 				75DC67F81A816AA100D6A553 /* shadow_character6_part7.png in Resources */,
@@ -1252,6 +1359,7 @@
 				75DC67B51A816AA100D6A553 /* shadow_character2_part8.png in Resources */,
 				75DC68161A816AA100D6A553 /* shadow_character8_part16.png in Resources */,
 				75DC680E1A816AA100D6A553 /* shadow_character7_part9.png in Resources */,
+				75037FE91B1A3B7700CB0B83 /* harold_anim.atlasc in Resources */,
 				75DC67EA1A816AA100D6A553 /* shadow_character5_part8.png in Resources */,
 				75DC681D1A816AA100D6A553 /* shadow_character8_part22.png in Resources */,
 				75DC68221A816AA100D6A553 /* shadow_character8_part4.png in Resources */,
@@ -1287,13 +1395,14 @@
 				75DC67C61A816AA100D6A553 /* shadow_character4_part1.png in Resources */,
 				75EDA1841A83FBCA002546E0 /* shadow_wrong_position.plist in Resources */,
 				75DC67D21A816AA100D6A553 /* shadow_character4_part20.png in Resources */,
+				75037FEE1B1A3B7700CB0B83 /* wanda_anim.atlasc in Resources */,
 				75DC67C31A816AA100D6A553 /* shadow_character3_part7.png in Resources */,
 				75DC67E91A816AA100D6A553 /* shadow_character5_part7.png in Resources */,
 				75DFE1011A800CE500CE9E69 /* Shadow_portret_7.png in Resources */,
 				75DC68231A816AA100D6A553 /* shadow_character8_part5.png in Resources */,
-				75DC66E11A81520A00D6A553 /* full_portret_color_7.png in Resources */,
 				75DC681B1A816AA100D6A553 /* shadow_character8_part20.png in Resources */,
 				75DC67A91A816AA100D6A553 /* shadow_character1_part9.png in Resources */,
+				75037FE61B1A3B7700CB0B83 /* bottom_island.atlasc in Resources */,
 				75DC68021A816AA100D6A553 /* shadow_character7_part16.png in Resources */,
 				75DC67D71A816AA100D6A553 /* shadow_character4_part3.png in Resources */,
 				75DC68181A816AA100D6A553 /* shadow_character8_part18.png in Resources */,
@@ -1311,13 +1420,16 @@
 				75DC67A71A816AA100D6A553 /* shadow_character1_part7.png in Resources */,
 				75DC68261A816AA100D6A553 /* shadow_character8_part8.png in Resources */,
 				75DC67DC1A816AA100D6A553 /* shadow_character4_part8.png in Resources */,
+				75037FED1B1A3B7700CB0B83 /* museum.atlasc in Resources */,
 				75DC67C51A816AA100D6A553 /* shadow_character3_part9.png in Resources */,
 				75E237861A85645100BE6540 /* Answers.plist in Resources */,
 				75DFE1081A800CE500CE9E69 /* Shadow_portret_border_6.png in Resources */,
 				75DC67C01A816AA100D6A553 /* shadow_character3_part4.png in Resources */,
 				75DFE0FD1A800CE500CE9E69 /* Shadow_portret_3.png in Resources */,
+				75037FEC1B1A3B7700CB0B83 /* miner_anim.atlasc in Resources */,
 				75DC67EF1A816AA100D6A553 /* shadow_character6_part12.png in Resources */,
 				75DC67D31A816AA100D6A553 /* shadow_character4_part21.png in Resources */,
+				75015FB81AFFD88C0008DE52 /* full_portret_color_1.png in Resources */,
 				7530D6B61AD069960063F124 /* ContributorsViewController.xib in Resources */,
 				75DC67CC1A816AA100D6A553 /* shadow_character4_part15.png in Resources */,
 				75DC67E41A816AA100D6A553 /* shadow_character5_part2.png in Resources */,
@@ -1338,6 +1450,7 @@
 				75DC67B01A816AA100D6A553 /* shadow_character2_part3.png in Resources */,
 				75DC67AF1A816AA100D6A553 /* shadow_character2_part2.png in Resources */,
 				75DC68131A816AA100D6A553 /* shadow_character8_part13.png in Resources */,
+				75037FE71B1A3B7700CB0B83 /* foam_castle.atlasc in Resources */,
 				75DC679F1A816AA100D6A553 /* shadow_character1_part10.png in Resources */,
 				75DFE1091A800CE500CE9E69 /* Shadow_portret_border_7.png in Resources */,
 				75DC67F41A816AA100D6A553 /* shadow_character6_part3.png in Resources */,
@@ -1379,6 +1492,7 @@
 				75DC67A51A816AA100D6A553 /* shadow_character1_part5.png in Resources */,
 				75DC67DF1A816AA100D6A553 /* shadow_character5_part10.png in Resources */,
 				75AD2E901ADAD193002EE482 /* book_rus.epub in Resources */,
+				75037FEA1B1A3B7700CB0B83 /* jay_anim.atlasc in Resources */,
 				75DC67B11A816AA100D6A553 /* shadow_character2_part4.png in Resources */,
 				75DC67EC1A816AA100D6A553 /* shadow_character6_part1.png in Resources */,
 				75DC67B91A816AA100D6A553 /* shadow_character3_part11.png in Resources */,
@@ -1456,21 +1570,26 @@
 				757E93DB1A7E2DEE000B2537 /* MagicTableViewController.m in Sources */,
 				75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */,
 				7597094C1AC8901000FFB11E /* SettingsBarIconViewController.m in Sources */,
+				750380081B1A3B8900CB0B83 /* NNKHaroldNode.m in Sources */,
 				75AD2E981ADAD193002EE482 /* NNKEpubToChaptersConverter.m in Sources */,
 				75AD2E9D1ADAD1B3002EE482 /* DejalActivityView.m in Sources */,
 				75A125121AD0717800BDFB7F /* TransitionAnimationFromDownToUp.m in Sources */,
 				75A125101AD0717800BDFB7F /* TransitionAnimation.m in Sources */,
 				7530D6B31AD068D50063F124 /* ContributorsViewController.m in Sources */,
+				7503800A1B1A3B8900CB0B83 /* NNKMuseumNode.m in Sources */,
 				75AD2E951ADAD193002EE482 /* NewBookViewController.m in Sources */,
 				75A125231AD08FE500BDFB7F /* AlertViewController.m in Sources */,
+				7503800D1B1A3B8900CB0B83 /* NNKBottomlessIslandNode.m in Sources */,
 				75DFE1101A800D6200CE9E69 /* ShadowPlayViewController.m in Sources */,
 				75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */,
 				75CC87E91AD0238D00F6C59E /* MainScreenViewModel.m in Sources */,
 				75AD2E991ADAD193002EE482 /* NNKEpubView.m in Sources */,
 				75A125141AD0717800BDFB7F /* ParallaxEffect.m in Sources */,
+				7503800B1B1A3B8900CB0B83 /* NNKFoamCastleNode.m in Sources */,
 				75E86E321A82C06800419776 /* DragableButton.m in Sources */,
 				755CDE101AECE1BE0095B6DF /* InventaryContentHandler.m in Sources */,
 				755CDE151AECE3380095B6DF /* InventaryItemOption.m in Sources */,
+				750380041B1A3B8900CB0B83 /* MyScene.m in Sources */,
 				75DC66C91A814F9300D6A553 /* ShadowPlayOpenedHandler.m in Sources */,
 				75A125131AD0717800BDFB7F /* Animator.m in Sources */,
 				75AD2E971ADAD193002EE482 /* NNKChapter.m in Sources */,
@@ -1480,18 +1599,23 @@
 				75C84D591ADBD955006359E9 /* FontSelectViewModel.m in Sources */,
 				75EBF3241AAB6948005F5E8C /* IslandViewController.m in Sources */,
 				75A125111AD0717800BDFB7F /* TransitionAnimationFromUpToDown.m in Sources */,
+				750380051B1A3B8900CB0B83 /* NNKMinerNode.m in Sources */,
 				75EC14161A7ECF460086803E /* MagicSchoolAnswersHandler.m in Sources */,
 				75F1DB201A86D758005ACBA7 /* UIDevice+ScreenSize.m in Sources */,
 				75DFE0C91A8009C800CE9E69 /* CharacterShadowViewController.m in Sources */,
 				75AD2E9A1ADAD193002EE482 /* UIWebView+CSSRule.m in Sources */,
+				750380071B1A3B8900CB0B83 /* NNKWandaNode.m in Sources */,
 				75A125181AD071B400BDFB7F /* TransitionAnimationDisolve.m in Sources */,
 				75A1251C1AD078E300BDFB7F /* AboutViewController.m in Sources */,
 				75EDA1921A840F31002546E0 /* NNWVideoViewController.m in Sources */,
 				75E237661A85454B00BE6540 /* UIFont+CustomFonts.m in Sources */,
 				75E237741A8557CA00BE6540 /* NSBundle+Language.m in Sources */,
 				75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */,
+				750380091B1A3B8900CB0B83 /* NNKFurcoatNode.m in Sources */,
 				757DBBD11ADB199500517632 /* UIViewController+Child.m in Sources */,
+				750380061B1A3B8900CB0B83 /* NNKJayNode.m in Sources */,
 				75635ADE1AABBEAA005BD4CB /* PopUpViewController.m in Sources */,
+				7503800C1B1A3B8900CB0B83 /* NNKLanternHouseNode.m in Sources */,
 				75C12A681A754B6C0075FD8D /* AppDelegate.m in Sources */,
 				75C12A651A754B6C0075FD8D /* main.m in Sources */,
 			);
@@ -1630,6 +1754,7 @@
 			baseConfigurationReference = 047A1C67A322F975E7F2E245 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "World/Supporting Files/World-prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1643,6 +1768,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1664,6 +1790,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

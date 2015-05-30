@@ -11,6 +11,12 @@
 #import "ShadowPlayOpenedHandler.h"
 #import "DragableButton.h"
 #import "InventaryContentHandler.h"
+#import "MyScene.h"
+#import "NNKMinerNode.h"
+#import "NNKJayNode.h"
+#import "NNKWandaNode.h"
+#import "NNKHaroldNode.h"
+#import "NNKFurcoatNode.h"
 
 NSString *const NSPSegueIdentifierPattern = @"character";
 
@@ -35,11 +41,30 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 @property (weak, nonatomic, readonly) NSDictionary *correctAnswers;
 @property (assign, nonatomic, readonly) CGFloat imageRatio;
 @property (weak, nonatomic) IBOutlet UIView *prizeView;
+@property (strong, nonatomic) MyScene *scene;
 
 @end
 
 @implementation ShadowPlayViewController
 
+- (MyScene *)sceneWithFrame:(CGRect)frame node:(SKNode<CustomNodeProtocol> *)node {
+    MyScene *scene = [MyScene sceneWithSize:frame.size];
+    scene.node = node;
+    scene.backgroundColor = [UIColor clearColor];
+    
+    return scene;
+}
+
+
+
+- (SKView *)skViewWithSize:(CGRect)frame node:(SKNode<CustomNodeProtocol> *)node {
+    SKView *skView = [[SKView alloc] initWithFrame:frame];
+    skView.allowsTransparency = YES;
+    self.scene = [self sceneWithFrame:frame node:node];
+    [skView presentScene:self.scene];
+    
+    return skView;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.shadowElements = [[NSMutableArray alloc] init];
@@ -51,6 +76,10 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     } else {
         self.prizeView.hidden = YES;
     }
+    CGRect frame = self.viewForResults.bounds;
+    SKView *skView = [self skViewWithSize:frame node:nil];
+    
+    [self.viewForResults addSubview:skView];
 }
 
 
@@ -229,12 +258,46 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 
 - (void)loadUnlockedCharacter:(ShadowCharacter)character {
-    NSString *string = [NSString stringWithFormat:NSPTextPatternDescription, character];
-    self.descriptionLabel.text = NSLocalizedString(string, nil);
-    self.fullPortret.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternPortraitColor, character]];
     self.viewForElements.hidden = YES;
     self.descriptionLabel.hidden = NO;
     self.prizeView.hidden = YES;
+    NSString *string = [NSString stringWithFormat:NSPTextPatternDescription, character];
+    self.descriptionLabel.text = NSLocalizedString(string, nil);
+    
+    CGSize size = self.viewForResults.bounds.size;
+    SKNode<CustomNodeProtocol> *node;
+    
+    switch (character) {
+        case ShadowCharacterJay:
+            node = [[NNKJayNode alloc] initWithSize:size];
+            break;
+        case ShadowCharacterWanda:
+            node = [[NNKWandaNode alloc] initWithSize:size];
+            break;
+        case ShadowCharacterFurcoat:
+            node = [[NNKFurcoatNode alloc] initWithSize:size];
+            break;
+        case ShadowCharacterMiner:
+            node = [[NNKMinerNode alloc] initWithSize:size];
+            break;
+        case ShadowCharacterHarold:
+            node = [[NNKHaroldNode alloc] initWithSize:size];
+            break;
+        case ShadowCharacterUnselected:
+        case ShadowCharacterMystie:
+        case ShadowCharacterJustacreep:
+        case ShadowCharacterPhoebe:{
+            self.fullPortret.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternPortraitColor, character]];
+            self.scene.node = nil;
+            return;
+        }
+        default: {
+            break;
+        }
+    }
+    self.fullPortret.image = nil;
+    self.scene.node = node;
+    
 }
 
 
