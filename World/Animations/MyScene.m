@@ -7,21 +7,7 @@
 //
 
 #import "MyScene.h"
-#import "museum.h"
-#import "foam_castle.h"
-#import "lantern_house.h"
-#import "bottom_island.h"
-#import "wanda_anim.h"
-#import "jay_anim.h"
-#import "harold_anim.h"
-#import "furcoat_anim.h"
-#import "miner_anim.h"
-#import "NNKMinerNode.h"
-
-@interface MyScene ()
-
-
-@end
+#import "CustomNodeProtocol.h"
 
 @implementation MyScene
 

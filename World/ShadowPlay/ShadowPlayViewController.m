@@ -42,6 +42,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 @property (assign, nonatomic, readonly) CGFloat imageRatio;
 @property (weak, nonatomic) IBOutlet UIView *prizeView;
 @property (strong, nonatomic) MyScene *scene;
+@property (strong, nonatomic) SKView *skView;
 
 @end
 
@@ -56,7 +57,6 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 }
 
 
-
 - (SKView *)skViewWithSize:(CGRect)frame node:(SKNode<CustomNodeProtocol> *)node {
     SKView *skView = [[SKView alloc] initWithFrame:frame];
     skView.allowsTransparency = YES;
@@ -65,6 +65,16 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     
     return skView;
 }
+
+
+- (void)prepareSkView {
+    CGRect frame = self.viewForResults.bounds;
+    self.skView = [self skViewWithSize:frame node:nil];
+    
+    [self.viewForResults addSubview:self.skView];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.shadowElements = [[NSMutableArray alloc] init];
@@ -76,10 +86,6 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     } else {
         self.prizeView.hidden = YES;
     }
-    CGRect frame = self.viewForResults.bounds;
-    SKView *skView = [self skViewWithSize:frame node:nil];
-    
-    [self.viewForResults addSubview:skView];
 }
 
 
@@ -92,6 +98,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    [self prepareSkView];
     [self didPressCharacter:self.loadedCharacter];
 }
 
