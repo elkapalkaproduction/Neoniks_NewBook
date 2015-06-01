@@ -63,6 +63,10 @@
 		75AD2E9F1ADAD424002EE482 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AD2E9E1ADAD424002EE482 /* Book.storyboard */; };
 		75AD2EA11ADAD65B002EE482 /* NewBookViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2EA01ADAD65B002EE482 /* NewBookViewControllerTests.m */; };
 		75AD2EA31ADAD710002EE482 /* ChaptersViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2EA21ADAD710002EE482 /* ChaptersViewControllerTests.m */; };
+		75B627F41B1CFBBD000A3172 /* NNKPhoebeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B627F11B1CFBBD000A3172 /* NNKPhoebeNode.m */; };
+		75B627F51B1CFBBD000A3172 /* NNKSchoolNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B627F31B1CFBBD000A3172 /* NNKSchoolNode.m */; };
+		75B627FA1B1CFBD2000A3172 /* phoebe_frames.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75B627F61B1CFBD2000A3172 /* phoebe_frames.atlasc */; };
+		75B627FB1B1CFBD2000A3172 /* school_frames.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75B627F81B1CFBD2000A3172 /* school_frames.atlasc */; };
 		75C12A651A754B6C0075FD8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A641A754B6C0075FD8D /* main.m */; };
 		75C12A681A754B6C0075FD8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A671A754B6C0075FD8D /* AppDelegate.m */; };
 		75C12A6B1A754B6C0075FD8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A6A1A754B6C0075FD8D /* ViewController.m */; };
@@ -377,6 +381,14 @@
 		75AD2E9E1ADAD424002EE482 /* Book.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Book.storyboard; sourceTree = "<group>"; };
 		75AD2EA01ADAD65B002EE482 /* NewBookViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBookViewControllerTests.m; sourceTree = "<group>"; };
 		75AD2EA21ADAD710002EE482 /* ChaptersViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaptersViewControllerTests.m; sourceTree = "<group>"; };
+		75B627F01B1CFBBD000A3172 /* NNKPhoebeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKPhoebeNode.h; sourceTree = "<group>"; };
+		75B627F11B1CFBBD000A3172 /* NNKPhoebeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKPhoebeNode.m; sourceTree = "<group>"; };
+		75B627F21B1CFBBD000A3172 /* NNKSchoolNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKSchoolNode.h; sourceTree = "<group>"; };
+		75B627F31B1CFBBD000A3172 /* NNKSchoolNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKSchoolNode.m; sourceTree = "<group>"; };
+		75B627F61B1CFBD2000A3172 /* phoebe_frames.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = phoebe_frames.atlasc; sourceTree = "<group>"; };
+		75B627F71B1CFBD2000A3172 /* phoebe_frames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phoebe_frames.h; sourceTree = "<group>"; };
+		75B627F81B1CFBD2000A3172 /* school_frames.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = school_frames.atlasc; sourceTree = "<group>"; };
+		75B627F91B1CFBD2000A3172 /* school_frames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = school_frames.h; sourceTree = "<group>"; };
 		75C12A5F1A754B6C0075FD8D /* World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = World.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C12A631A754B6C0075FD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75C12A641A754B6C0075FD8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -658,7 +670,15 @@
 				750380001B1A3B8900CB0B83 /* NNKLanternHouseNode.m */,
 				750380011B1A3B8900CB0B83 /* NNKBottomlessIslandNode.h */,
 				750380021B1A3B8900CB0B83 /* NNKBottomlessIslandNode.m */,
+				75B627F01B1CFBBD000A3172 /* NNKPhoebeNode.h */,
+				75B627F11B1CFBBD000A3172 /* NNKPhoebeNode.m */,
+				75B627F21B1CFBBD000A3172 /* NNKSchoolNode.h */,
+				75B627F31B1CFBBD000A3172 /* NNKSchoolNode.m */,
 				750380031B1A3B8900CB0B83 /* CustomNodeProtocol.h */,
+				75B627F61B1CFBD2000A3172 /* phoebe_frames.atlasc */,
+				75B627F71B1CFBD2000A3172 /* phoebe_frames.h */,
+				75B627F81B1CFBD2000A3172 /* school_frames.atlasc */,
+				75B627F91B1CFBD2000A3172 /* school_frames.h */,
 				75037FD31B1A3B7700CB0B83 /* bottom_island.atlasc */,
 				75037FD41B1A3B7700CB0B83 /* bottom_island.h */,
 				75037FD61B1A3B7700CB0B83 /* foam_castle.atlasc */,
@@ -1320,6 +1340,7 @@
 				75DC67B41A816AA100D6A553 /* shadow_character2_part7.png in Resources */,
 				75E2376E1A854D2900BE6540 /* Localizable.strings in Resources */,
 				75DC66E21A81520A00D6A553 /* full_portret_color_8.png in Resources */,
+				75B627FA1B1CFBD2000A3172 /* phoebe_frames.atlasc in Resources */,
 				75DC67F61A816AA100D6A553 /* shadow_character6_part5.png in Resources */,
 				75DC66E91A81520A00D6A553 /* full_portret_shadow_7.png in Resources */,
 				754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */,
@@ -1413,6 +1434,7 @@
 				75DC67A31A816AA100D6A553 /* shadow_character1_part3.png in Resources */,
 				75DFE1061A800CE500CE9E69 /* Shadow_portret_border_4.png in Resources */,
 				75DC67C91A816AA100D6A553 /* shadow_character4_part12.png in Resources */,
+				75B627FB1B1CFBD2000A3172 /* school_frames.atlasc in Resources */,
 				75AD2E8F1ADAD193002EE482 /* book_eng.epub in Resources */,
 				75DC67D11A816AA100D6A553 /* shadow_character4_part2.png in Resources */,
 				75DC68171A816AA100D6A553 /* shadow_character8_part17.png in Resources */,
@@ -1584,6 +1606,7 @@
 				75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */,
 				75CC87E91AD0238D00F6C59E /* MainScreenViewModel.m in Sources */,
 				75AD2E991ADAD193002EE482 /* NNKEpubView.m in Sources */,
+				75B627F51B1CFBBD000A3172 /* NNKSchoolNode.m in Sources */,
 				75A125141AD0717800BDFB7F /* ParallaxEffect.m in Sources */,
 				7503800B1B1A3B8900CB0B83 /* NNKFoamCastleNode.m in Sources */,
 				75E86E321A82C06800419776 /* DragableButton.m in Sources */,
@@ -1595,6 +1618,7 @@
 				75AD2E971ADAD193002EE482 /* NNKChapter.m in Sources */,
 				75E2376B1A854BD800BE6540 /* UIColor+SystemColors.m in Sources */,
 				75EBF32A1AAB7D29005F5E8C /* IslandViewModel.m in Sources */,
+				75B627F41B1CFBBD000A3172 /* NNKPhoebeNode.m in Sources */,
 				75EBF3271AAB7BB4005F5E8C /* UIImage+Colors.m in Sources */,
 				75C84D591ADBD955006359E9 /* FontSelectViewModel.m in Sources */,
 				75EBF3241AAB6948005F5E8C /* IslandViewController.m in Sources */,

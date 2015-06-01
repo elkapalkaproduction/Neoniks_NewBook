@@ -11,6 +11,7 @@
 #import "NNKFoamCastleNode.h"
 #import "NNKLanternHouseNode.h"
 #import "NNKBottomlessIslandNode.h"
+#import "NNKSchoolNode.h"
 #import "MyScene.h"
 
 @import QuartzCore;
@@ -115,6 +116,8 @@
             node = [[NNKBottomlessIslandNode alloc] initWithSize:size];
             break;
         case PopUpTypeSchool:
+            node = [[NNKSchoolNode alloc] initWithSize:size];
+            break;
         case PopUpTypeCafe:
         case PopUpTypeLighthouse:
         default:

@@ -17,6 +17,7 @@
 #import "NNKWandaNode.h"
 #import "NNKHaroldNode.h"
 #import "NNKFurcoatNode.h"
+#import "NNKPhoebeNode.h"
 
 NSString *const NSPSegueIdentifierPattern = @"character";
 
@@ -290,10 +291,12 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
         case ShadowCharacterHarold:
             node = [[NNKHaroldNode alloc] initWithSize:size];
             break;
+        case ShadowCharacterPhoebe:
+            node = [[NNKPhoebeNode alloc] initWithSize:size];
+            break;
         case ShadowCharacterUnselected:
         case ShadowCharacterMystie:
-        case ShadowCharacterJustacreep:
-        case ShadowCharacterPhoebe:{
+        case ShadowCharacterJustacreep:{
             self.fullPortret.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternPortraitColor, character]];
             self.scene.node = nil;
             return;
