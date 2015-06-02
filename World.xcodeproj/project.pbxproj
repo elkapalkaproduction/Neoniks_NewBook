@@ -29,6 +29,10 @@
 		7503800B1B1A3B8900CB0B83 /* NNKFoamCastleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75037FFE1B1A3B8900CB0B83 /* NNKFoamCastleNode.m */; };
 		7503800C1B1A3B8900CB0B83 /* NNKLanternHouseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 750380001B1A3B8900CB0B83 /* NNKLanternHouseNode.m */; };
 		7503800D1B1A3B8900CB0B83 /* NNKBottomlessIslandNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 750380021B1A3B8900CB0B83 /* NNKBottomlessIslandNode.m */; };
+		750569221B1E5168008DE162 /* NNKLighthouseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7505691F1B1E5168008DE162 /* NNKLighthouseNode.m */; };
+		750569231B1E5168008DE162 /* NNKCafeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 750569211B1E5168008DE162 /* NNKCafeNode.m */; };
+		750569281B1E5177008DE162 /* cafe_frames.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 750569241B1E5177008DE162 /* cafe_frames.atlasc */; };
+		750569291B1E5177008DE162 /* lighthouse_frames.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 750569261B1E5177008DE162 /* lighthouse_frames.atlasc */; };
 		7530D6B31AD068D50063F124 /* ContributorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7530D6B21AD068D50063F124 /* ContributorsViewController.m */; };
 		7530D6B61AD069960063F124 /* ContributorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7530D6B51AD069960063F124 /* ContributorsViewController.xib */; };
 		75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */; };
@@ -322,6 +326,14 @@
 		750380011B1A3B8900CB0B83 /* NNKBottomlessIslandNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKBottomlessIslandNode.h; sourceTree = "<group>"; };
 		750380021B1A3B8900CB0B83 /* NNKBottomlessIslandNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKBottomlessIslandNode.m; sourceTree = "<group>"; };
 		750380031B1A3B8900CB0B83 /* CustomNodeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNodeProtocol.h; sourceTree = "<group>"; };
+		7505691E1B1E5168008DE162 /* NNKLighthouseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKLighthouseNode.h; sourceTree = "<group>"; };
+		7505691F1B1E5168008DE162 /* NNKLighthouseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKLighthouseNode.m; sourceTree = "<group>"; };
+		750569201B1E5168008DE162 /* NNKCafeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKCafeNode.h; sourceTree = "<group>"; };
+		750569211B1E5168008DE162 /* NNKCafeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKCafeNode.m; sourceTree = "<group>"; };
+		750569241B1E5177008DE162 /* cafe_frames.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cafe_frames.atlasc; sourceTree = "<group>"; };
+		750569251B1E5177008DE162 /* cafe_frames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cafe_frames.h; sourceTree = "<group>"; };
+		750569261B1E5177008DE162 /* lighthouse_frames.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lighthouse_frames.atlasc; sourceTree = "<group>"; };
+		750569271B1E5177008DE162 /* lighthouse_frames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lighthouse_frames.h; sourceTree = "<group>"; };
 		7530D6B11AD068D50063F124 /* ContributorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContributorsViewController.h; sourceTree = "<group>"; };
 		7530D6B21AD068D50063F124 /* ContributorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsViewController.m; sourceTree = "<group>"; };
 		7530D6B51AD069960063F124 /* ContributorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContributorsViewController.xib; sourceTree = "<group>"; };
@@ -674,6 +686,10 @@
 				75B627F11B1CFBBD000A3172 /* NNKPhoebeNode.m */,
 				75B627F21B1CFBBD000A3172 /* NNKSchoolNode.h */,
 				75B627F31B1CFBBD000A3172 /* NNKSchoolNode.m */,
+				7505691E1B1E5168008DE162 /* NNKLighthouseNode.h */,
+				7505691F1B1E5168008DE162 /* NNKLighthouseNode.m */,
+				750569201B1E5168008DE162 /* NNKCafeNode.h */,
+				750569211B1E5168008DE162 /* NNKCafeNode.m */,
 				750380031B1A3B8900CB0B83 /* CustomNodeProtocol.h */,
 				75B627F61B1CFBD2000A3172 /* phoebe_frames.atlasc */,
 				75B627F71B1CFBD2000A3172 /* phoebe_frames.h */,
@@ -697,6 +713,10 @@
 				75037FE31B1A3B7700CB0B83 /* museum.h */,
 				75037FE41B1A3B7700CB0B83 /* wanda_anim.atlasc */,
 				75037FE51B1A3B7700CB0B83 /* wanda_anim.h */,
+				750569241B1E5177008DE162 /* cafe_frames.atlasc */,
+				750569251B1E5177008DE162 /* cafe_frames.h */,
+				750569261B1E5177008DE162 /* lighthouse_frames.atlasc */,
+				750569271B1E5177008DE162 /* lighthouse_frames.h */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -1402,6 +1422,7 @@
 				75DC67E71A816AA100D6A553 /* shadow_character5_part5.png in Resources */,
 				75DC67D81A816AA100D6A553 /* shadow_character4_part4.png in Resources */,
 				75DC67DB1A816AA100D6A553 /* shadow_character4_part7.png in Resources */,
+				750569281B1E5177008DE162 /* cafe_frames.atlasc in Resources */,
 				75DC67DE1A816AA100D6A553 /* shadow_character5_part1.png in Resources */,
 				75DC67EE1A816AA100D6A553 /* shadow_character6_part11.png in Resources */,
 				7597094E1AC8947900FFB11E /* SettingsBarIconViewController.xib in Resources */,
@@ -1427,6 +1448,7 @@
 				75DC68021A816AA100D6A553 /* shadow_character7_part16.png in Resources */,
 				75DC67D71A816AA100D6A553 /* shadow_character4_part3.png in Resources */,
 				75DC68181A816AA100D6A553 /* shadow_character8_part18.png in Resources */,
+				750569291B1E5177008DE162 /* lighthouse_frames.atlasc in Resources */,
 				75DC67CD1A816AA100D6A553 /* shadow_character4_part16.png in Resources */,
 				75DC67FA1A816AA100D6A553 /* shadow_character6_part9.png in Resources */,
 				75DC67BC1A816AA100D6A553 /* shadow_character3_part14.png in Resources */,
@@ -1616,6 +1638,7 @@
 				75DC66C91A814F9300D6A553 /* ShadowPlayOpenedHandler.m in Sources */,
 				75A125131AD0717800BDFB7F /* Animator.m in Sources */,
 				75AD2E971ADAD193002EE482 /* NNKChapter.m in Sources */,
+				750569231B1E5168008DE162 /* NNKCafeNode.m in Sources */,
 				75E2376B1A854BD800BE6540 /* UIColor+SystemColors.m in Sources */,
 				75EBF32A1AAB7D29005F5E8C /* IslandViewModel.m in Sources */,
 				75B627F41B1CFBBD000A3172 /* NNKPhoebeNode.m in Sources */,
@@ -1634,6 +1657,7 @@
 				75EDA1921A840F31002546E0 /* NNWVideoViewController.m in Sources */,
 				75E237661A85454B00BE6540 /* UIFont+CustomFonts.m in Sources */,
 				75E237741A8557CA00BE6540 /* NSBundle+Language.m in Sources */,
+				750569221B1E5168008DE162 /* NNKLighthouseNode.m in Sources */,
 				75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */,
 				750380091B1A3B8900CB0B83 /* NNKFurcoatNode.m in Sources */,
 				757DBBD11ADB199500517632 /* UIViewController+Child.m in Sources */,

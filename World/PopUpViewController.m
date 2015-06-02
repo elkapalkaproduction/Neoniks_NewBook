@@ -12,6 +12,8 @@
 #import "NNKLanternHouseNode.h"
 #import "NNKBottomlessIslandNode.h"
 #import "NNKSchoolNode.h"
+#import "NNKCafeNode.h"
+#import "NNKLighthouseNode.h"
 #import "MyScene.h"
 
 @import QuartzCore;
@@ -42,7 +44,7 @@
 
 - (MyScene *)sceneWithFrame:(CGRect)frame node:(SKNode<CustomNodeProtocol> *)node {
     MyScene *scene = [MyScene sceneWithSize:frame.size];
-    scene.node = node;
+    scene.self.scene.node =node;
     scene.backgroundColor = [UIColor clearColor];
     
     return scene;
@@ -100,41 +102,31 @@
 
 - (void)setupContentImage {
     CGSize size = self.contentImage.bounds.size;
-    SKNode<CustomNodeProtocol> *node;
-    
-    switch (self.type) {
-        case PopUpTypeMuseum:
-            node = [[NNKMuseumNode alloc] initWithSize:size];
-            break;
-        case PopUpTypeFoamCastle:
-            node = [[NNKFoamCastleNode alloc] initWithSize:size];
-            break;
-        case PopUpTypeLanternHouse:
-            node = [[NNKLanternHouseNode alloc] initWithSize:size];
-            break;
-        case PopUpTypeBottomlessIsland:
-            node = [[NNKBottomlessIslandNode alloc] initWithSize:size];
-            break;
-        case PopUpTypeSchool:
-            node = [[NNKSchoolNode alloc] initWithSize:size];
-            break;
-        case PopUpTypeCafe:
-        case PopUpTypeLighthouse:
-        default:
-            [self setupDefaultContentImage];
-            return;
-            break;
-    }
     self.contentImage.image = nil;
     self.contentImage.userInteractionEnabled = YES;
-    self.scene.node = node;
-}
-
-
-- (void)setupDefaultContentImage {
-    NSString *mainImageName = [NSString stringWithFormat:@"pop_up_image_%ld", self.type];
-    self.contentImage.image = [UIImage imageNamed:NSLocalizedString(mainImageName, nil)];
-
+    switch (self.type) {
+        case PopUpTypeMuseum:
+            self.scene.node = [[NNKMuseumNode alloc] initWithSize:size];
+            break;
+        case PopUpTypeFoamCastle:
+            self.scene.node = [[NNKFoamCastleNode alloc] initWithSize:size];
+            break;
+        case PopUpTypeLanternHouse:
+            self.scene.node = [[NNKLanternHouseNode alloc] initWithSize:size];
+            break;
+        case PopUpTypeBottomlessIsland:
+            self.scene.node = [[NNKBottomlessIslandNode alloc] initWithSize:size];
+            break;
+        case PopUpTypeSchool:
+            self.scene.node = [[NNKSchoolNode alloc] initWithSize:size];
+            break;
+        case PopUpTypeCafe:
+            self.scene.node = [[NNKCafeNode alloc] initWithSize:size];
+            break;
+        case PopUpTypeLighthouse:
+            self.scene.node = [[NNKLighthouseNode alloc] initWithSize:size];
+            break;
+    }
 }
 
 
