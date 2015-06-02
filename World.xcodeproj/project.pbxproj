@@ -8,17 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		56DC915B5D1078DAC3B7C86D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6129DEB65C4E1E920B30AE6B /* libPods.a */; };
-		75015FA61AFF45C10008DE52 /* full_portret_color_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 75015FA51AFF45C10008DE52 /* full_portret_color_7.png */; };
-		75015FB81AFFD88C0008DE52 /* full_portret_color_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75015FB71AFFD88C0008DE52 /* full_portret_color_1.png */; };
-		75037FE61B1A3B7700CB0B83 /* bottom_island.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FD31B1A3B7700CB0B83 /* bottom_island.atlasc */; };
 		75037FE71B1A3B7700CB0B83 /* foam_castle.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FD61B1A3B7700CB0B83 /* foam_castle.atlasc */; };
 		75037FE81B1A3B7700CB0B83 /* furcoat_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FD81B1A3B7700CB0B83 /* furcoat_anim.atlasc */; };
 		75037FE91B1A3B7700CB0B83 /* harold_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FDA1B1A3B7700CB0B83 /* harold_anim.atlasc */; };
-		75037FEA1B1A3B7700CB0B83 /* jay_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FDC1B1A3B7700CB0B83 /* jay_anim.atlasc */; };
-		75037FEB1B1A3B7700CB0B83 /* lantern_house.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FDE1B1A3B7700CB0B83 /* lantern_house.atlasc */; };
-		75037FEC1B1A3B7700CB0B83 /* miner_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FE01B1A3B7700CB0B83 /* miner_anim.atlasc */; };
 		75037FED1B1A3B7700CB0B83 /* museum.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FE21B1A3B7700CB0B83 /* museum.atlasc */; };
-		75037FEE1B1A3B7700CB0B83 /* wanda_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75037FE41B1A3B7700CB0B83 /* wanda_anim.atlasc */; };
 		750380041B1A3B8900CB0B83 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 75037FF01B1A3B8900CB0B83 /* MyScene.m */; };
 		750380051B1A3B8900CB0B83 /* NNKMinerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75037FF21B1A3B8900CB0B83 /* NNKMinerNode.m */; };
 		750380061B1A3B8900CB0B83 /* NNKJayNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75037FF41B1A3B8900CB0B83 /* NNKJayNode.m */; };
@@ -33,6 +26,11 @@
 		750569231B1E5168008DE162 /* NNKCafeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 750569211B1E5168008DE162 /* NNKCafeNode.m */; };
 		750569281B1E5177008DE162 /* cafe_frames.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 750569241B1E5177008DE162 /* cafe_frames.atlasc */; };
 		750569291B1E5177008DE162 /* lighthouse_frames.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 750569261B1E5177008DE162 /* lighthouse_frames.atlasc */; };
+		7505692D1B1E542C008DE162 /* jay_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 7505692B1B1E542C008DE162 /* jay_anim.atlasc */; };
+		750569321B1E555F008DE162 /* miner_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 7505692E1B1E555F008DE162 /* miner_anim.atlasc */; };
+		750569361B1E55B9008DE162 /* wanda_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 750569341B1E55B9008DE162 /* wanda_anim.atlasc */; };
+		750569391B1E5660008DE162 /* bottom_island.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 750569371B1E5660008DE162 /* bottom_island.atlasc */; };
+		7505693C1B1E56BB008DE162 /* lantern_house.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 7505693A1B1E56BB008DE162 /* lantern_house.atlasc */; };
 		7530D6B31AD068D50063F124 /* ContributorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7530D6B21AD068D50063F124 /* ContributorsViewController.m */; };
 		7530D6B61AD069960063F124 /* ContributorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7530D6B51AD069960063F124 /* ContributorsViewController.xib */; };
 		75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */; };
@@ -82,12 +80,8 @@
 		75CC87E91AD0238D00F6C59E /* MainScreenViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */; };
 		75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D268FD1AC3448B00A17632 /* InfiniteTableView.m */; };
 		75DC66C91A814F9300D6A553 /* ShadowPlayOpenedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DC66C81A814F9300D6A553 /* ShadowPlayOpenedHandler.m */; };
-		75DC66DC1A81520A00D6A553 /* full_portret_color_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CC1A81520A00D6A553 /* full_portret_color_2.png */; };
 		75DC66DD1A81520A00D6A553 /* full_portret_color_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CD1A81520A00D6A553 /* full_portret_color_3.png */; };
 		75DC66DE1A81520A00D6A553 /* full_portret_color_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CE1A81520A00D6A553 /* full_portret_color_4.png */; };
-		75DC66DF1A81520A00D6A553 /* full_portret_color_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CF1A81520A00D6A553 /* full_portret_color_5.png */; };
-		75DC66E01A81520A00D6A553 /* full_portret_color_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66D01A81520A00D6A553 /* full_portret_color_6.png */; };
-		75DC66E21A81520A00D6A553 /* full_portret_color_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66D21A81520A00D6A553 /* full_portret_color_8.png */; };
 		75DC66E31A81520A00D6A553 /* full_portret_shadow_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66D31A81520A00D6A553 /* full_portret_shadow_1.png */; };
 		75DC66E41A81520A00D6A553 /* full_portret_shadow_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66D41A81520A00D6A553 /* full_portret_shadow_2.png */; };
 		75DC66E51A81520A00D6A553 /* full_portret_shadow_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66D51A81520A00D6A553 /* full_portret_shadow_3.png */; };
@@ -285,26 +279,14 @@
 /* Begin PBXFileReference section */
 		047A1C67A322F975E7F2E245 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6129DEB65C4E1E920B30AE6B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		75015FA51AFF45C10008DE52 /* full_portret_color_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_7.png; sourceTree = "<group>"; };
-		75015FB71AFFD88C0008DE52 /* full_portret_color_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_1.png; sourceTree = "<group>"; };
-		75037FD31B1A3B7700CB0B83 /* bottom_island.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bottom_island.atlasc; sourceTree = "<group>"; };
-		75037FD41B1A3B7700CB0B83 /* bottom_island.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bottom_island.h; sourceTree = "<group>"; };
 		75037FD61B1A3B7700CB0B83 /* foam_castle.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = foam_castle.atlasc; sourceTree = "<group>"; };
 		75037FD71B1A3B7700CB0B83 /* foam_castle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foam_castle.h; sourceTree = "<group>"; };
 		75037FD81B1A3B7700CB0B83 /* furcoat_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = furcoat_anim.atlasc; sourceTree = "<group>"; };
 		75037FD91B1A3B7700CB0B83 /* furcoat_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = furcoat_anim.h; sourceTree = "<group>"; };
 		75037FDA1B1A3B7700CB0B83 /* harold_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = harold_anim.atlasc; sourceTree = "<group>"; };
 		75037FDB1B1A3B7700CB0B83 /* harold_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = harold_anim.h; sourceTree = "<group>"; };
-		75037FDC1B1A3B7700CB0B83 /* jay_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jay_anim.atlasc; sourceTree = "<group>"; };
-		75037FDD1B1A3B7700CB0B83 /* jay_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jay_anim.h; sourceTree = "<group>"; };
-		75037FDE1B1A3B7700CB0B83 /* lantern_house.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lantern_house.atlasc; sourceTree = "<group>"; };
-		75037FDF1B1A3B7700CB0B83 /* lantern_house.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lantern_house.h; sourceTree = "<group>"; };
-		75037FE01B1A3B7700CB0B83 /* miner_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = miner_anim.atlasc; sourceTree = "<group>"; };
-		75037FE11B1A3B7700CB0B83 /* miner_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = miner_anim.h; sourceTree = "<group>"; };
 		75037FE21B1A3B7700CB0B83 /* museum.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = museum.atlasc; sourceTree = "<group>"; };
 		75037FE31B1A3B7700CB0B83 /* museum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = museum.h; sourceTree = "<group>"; };
-		75037FE41B1A3B7700CB0B83 /* wanda_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = wanda_anim.atlasc; sourceTree = "<group>"; };
-		75037FE51B1A3B7700CB0B83 /* wanda_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wanda_anim.h; sourceTree = "<group>"; };
 		75037FEF1B1A3B8900CB0B83 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		75037FF01B1A3B8900CB0B83 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
 		75037FF11B1A3B8900CB0B83 /* NNKMinerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKMinerNode.h; sourceTree = "<group>"; };
@@ -334,6 +316,16 @@
 		750569251B1E5177008DE162 /* cafe_frames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cafe_frames.h; sourceTree = "<group>"; };
 		750569261B1E5177008DE162 /* lighthouse_frames.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lighthouse_frames.atlasc; sourceTree = "<group>"; };
 		750569271B1E5177008DE162 /* lighthouse_frames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lighthouse_frames.h; sourceTree = "<group>"; };
+		7505692B1B1E542C008DE162 /* jay_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jay_anim.atlasc; sourceTree = "<group>"; };
+		7505692C1B1E542C008DE162 /* jay_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jay_anim.h; sourceTree = "<group>"; };
+		7505692E1B1E555F008DE162 /* miner_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = miner_anim.atlasc; sourceTree = "<group>"; };
+		7505692F1B1E555F008DE162 /* miner_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = miner_anim.h; sourceTree = "<group>"; };
+		750569341B1E55B9008DE162 /* wanda_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = wanda_anim.atlasc; sourceTree = "<group>"; };
+		750569351B1E55B9008DE162 /* wanda_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wanda_anim.h; sourceTree = "<group>"; };
+		750569371B1E5660008DE162 /* bottom_island.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bottom_island.atlasc; sourceTree = "<group>"; };
+		750569381B1E5660008DE162 /* bottom_island.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bottom_island.h; sourceTree = "<group>"; };
+		7505693A1B1E56BB008DE162 /* lantern_house.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lantern_house.atlasc; sourceTree = "<group>"; };
+		7505693B1B1E56BB008DE162 /* lantern_house.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lantern_house.h; sourceTree = "<group>"; };
 		7530D6B11AD068D50063F124 /* ContributorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContributorsViewController.h; sourceTree = "<group>"; };
 		7530D6B21AD068D50063F124 /* ContributorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsViewController.m; sourceTree = "<group>"; };
 		7530D6B51AD069960063F124 /* ContributorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContributorsViewController.xib; sourceTree = "<group>"; };
@@ -424,12 +416,8 @@
 		75D268FD1AC3448B00A17632 /* InfiniteTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteTableView.m; sourceTree = "<group>"; };
 		75DC66C71A814F9300D6A553 /* ShadowPlayOpenedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowPlayOpenedHandler.h; sourceTree = "<group>"; };
 		75DC66C81A814F9300D6A553 /* ShadowPlayOpenedHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowPlayOpenedHandler.m; sourceTree = "<group>"; };
-		75DC66CC1A81520A00D6A553 /* full_portret_color_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_2.png; sourceTree = "<group>"; };
 		75DC66CD1A81520A00D6A553 /* full_portret_color_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_3.png; sourceTree = "<group>"; };
 		75DC66CE1A81520A00D6A553 /* full_portret_color_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_4.png; sourceTree = "<group>"; };
-		75DC66CF1A81520A00D6A553 /* full_portret_color_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_5.png; sourceTree = "<group>"; };
-		75DC66D01A81520A00D6A553 /* full_portret_color_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_6.png; sourceTree = "<group>"; };
-		75DC66D21A81520A00D6A553 /* full_portret_color_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_8.png; sourceTree = "<group>"; };
 		75DC66D31A81520A00D6A553 /* full_portret_shadow_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_shadow_1.png; sourceTree = "<group>"; };
 		75DC66D41A81520A00D6A553 /* full_portret_shadow_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_shadow_2.png; sourceTree = "<group>"; };
 		75DC66D51A81520A00D6A553 /* full_portret_shadow_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_shadow_3.png; sourceTree = "<group>"; };
@@ -664,12 +652,6 @@
 			children = (
 				75037FEF1B1A3B8900CB0B83 /* MyScene.h */,
 				75037FF01B1A3B8900CB0B83 /* MyScene.m */,
-				75037FF11B1A3B8900CB0B83 /* NNKMinerNode.h */,
-				75037FF21B1A3B8900CB0B83 /* NNKMinerNode.m */,
-				75037FF31B1A3B8900CB0B83 /* NNKJayNode.h */,
-				75037FF41B1A3B8900CB0B83 /* NNKJayNode.m */,
-				75037FF51B1A3B8900CB0B83 /* NNKWandaNode.h */,
-				75037FF61B1A3B8900CB0B83 /* NNKWandaNode.m */,
 				75037FF71B1A3B8900CB0B83 /* NNKHaroldNode.h */,
 				75037FF81B1A3B8900CB0B83 /* NNKHaroldNode.m */,
 				75037FF91B1A3B8900CB0B83 /* NNKFurcoatNode.h */,
@@ -678,6 +660,12 @@
 				75037FFC1B1A3B8900CB0B83 /* NNKMuseumNode.m */,
 				75037FFD1B1A3B8900CB0B83 /* NNKFoamCastleNode.h */,
 				75037FFE1B1A3B8900CB0B83 /* NNKFoamCastleNode.m */,
+				75037FF31B1A3B8900CB0B83 /* NNKJayNode.h */,
+				75037FF41B1A3B8900CB0B83 /* NNKJayNode.m */,
+				75037FF11B1A3B8900CB0B83 /* NNKMinerNode.h */,
+				75037FF21B1A3B8900CB0B83 /* NNKMinerNode.m */,
+				75037FF51B1A3B8900CB0B83 /* NNKWandaNode.h */,
+				75037FF61B1A3B8900CB0B83 /* NNKWandaNode.m */,
 				75037FFF1B1A3B8900CB0B83 /* NNKLanternHouseNode.h */,
 				750380001B1A3B8900CB0B83 /* NNKLanternHouseNode.m */,
 				750380011B1A3B8900CB0B83 /* NNKBottomlessIslandNode.h */,
@@ -691,28 +679,28 @@
 				750569201B1E5168008DE162 /* NNKCafeNode.h */,
 				750569211B1E5168008DE162 /* NNKCafeNode.m */,
 				750380031B1A3B8900CB0B83 /* CustomNodeProtocol.h */,
+				7505693A1B1E56BB008DE162 /* lantern_house.atlasc */,
+				7505693B1B1E56BB008DE162 /* lantern_house.h */,
+				750569371B1E5660008DE162 /* bottom_island.atlasc */,
+				750569381B1E5660008DE162 /* bottom_island.h */,
+				750569341B1E55B9008DE162 /* wanda_anim.atlasc */,
+				750569351B1E55B9008DE162 /* wanda_anim.h */,
+				7505692E1B1E555F008DE162 /* miner_anim.atlasc */,
+				7505692F1B1E555F008DE162 /* miner_anim.h */,
+				7505692B1B1E542C008DE162 /* jay_anim.atlasc */,
+				7505692C1B1E542C008DE162 /* jay_anim.h */,
 				75B627F61B1CFBD2000A3172 /* phoebe_frames.atlasc */,
 				75B627F71B1CFBD2000A3172 /* phoebe_frames.h */,
 				75B627F81B1CFBD2000A3172 /* school_frames.atlasc */,
 				75B627F91B1CFBD2000A3172 /* school_frames.h */,
-				75037FD31B1A3B7700CB0B83 /* bottom_island.atlasc */,
-				75037FD41B1A3B7700CB0B83 /* bottom_island.h */,
 				75037FD61B1A3B7700CB0B83 /* foam_castle.atlasc */,
 				75037FD71B1A3B7700CB0B83 /* foam_castle.h */,
 				75037FD81B1A3B7700CB0B83 /* furcoat_anim.atlasc */,
 				75037FD91B1A3B7700CB0B83 /* furcoat_anim.h */,
 				75037FDA1B1A3B7700CB0B83 /* harold_anim.atlasc */,
 				75037FDB1B1A3B7700CB0B83 /* harold_anim.h */,
-				75037FDC1B1A3B7700CB0B83 /* jay_anim.atlasc */,
-				75037FDD1B1A3B7700CB0B83 /* jay_anim.h */,
-				75037FDE1B1A3B7700CB0B83 /* lantern_house.atlasc */,
-				75037FDF1B1A3B7700CB0B83 /* lantern_house.h */,
-				75037FE01B1A3B7700CB0B83 /* miner_anim.atlasc */,
-				75037FE11B1A3B7700CB0B83 /* miner_anim.h */,
 				75037FE21B1A3B7700CB0B83 /* museum.atlasc */,
 				75037FE31B1A3B7700CB0B83 /* museum.h */,
-				75037FE41B1A3B7700CB0B83 /* wanda_anim.atlasc */,
-				75037FE51B1A3B7700CB0B83 /* wanda_anim.h */,
 				750569241B1E5177008DE162 /* cafe_frames.atlasc */,
 				750569251B1E5177008DE162 /* cafe_frames.h */,
 				750569261B1E5177008DE162 /* lighthouse_frames.atlasc */,
@@ -900,14 +888,8 @@
 			isa = PBXGroup;
 			children = (
 				75DC670B1A816AA100D6A553 /* characters_shadows_parts */,
-				75015FB71AFFD88C0008DE52 /* full_portret_color_1.png */,
-				75DC66CC1A81520A00D6A553 /* full_portret_color_2.png */,
 				75DC66CD1A81520A00D6A553 /* full_portret_color_3.png */,
 				75DC66CE1A81520A00D6A553 /* full_portret_color_4.png */,
-				75DC66CF1A81520A00D6A553 /* full_portret_color_5.png */,
-				75DC66D01A81520A00D6A553 /* full_portret_color_6.png */,
-				75015FA51AFF45C10008DE52 /* full_portret_color_7.png */,
-				75DC66D21A81520A00D6A553 /* full_portret_color_8.png */,
 				75DC66D31A81520A00D6A553 /* full_portret_shadow_1.png */,
 				75DC66D41A81520A00D6A553 /* full_portret_shadow_2.png */,
 				75DC66D51A81520A00D6A553 /* full_portret_shadow_3.png */,
@@ -1359,7 +1341,7 @@
 				75DC67D01A816AA100D6A553 /* shadow_character4_part19.png in Resources */,
 				75DC67B41A816AA100D6A553 /* shadow_character2_part7.png in Resources */,
 				75E2376E1A854D2900BE6540 /* Localizable.strings in Resources */,
-				75DC66E21A81520A00D6A553 /* full_portret_color_8.png in Resources */,
+				750569361B1E55B9008DE162 /* wanda_anim.atlasc in Resources */,
 				75B627FA1B1CFBD2000A3172 /* phoebe_frames.atlasc in Resources */,
 				75DC67F61A816AA100D6A553 /* shadow_character6_part5.png in Resources */,
 				75DC66E91A81520A00D6A553 /* full_portret_shadow_7.png in Resources */,
@@ -1371,13 +1353,13 @@
 				75DC68191A816AA100D6A553 /* shadow_character8_part19.png in Resources */,
 				75DC67AB1A816AA100D6A553 /* shadow_character2_part10.png in Resources */,
 				75DFE1071A800CE500CE9E69 /* Shadow_portret_border_5.png in Resources */,
-				75015FA61AFF45C10008DE52 /* full_portret_color_7.png in Resources */,
 				75DFE0FE1A800CE500CE9E69 /* Shadow_portret_4.png in Resources */,
 				75DFE1041A800CE500CE9E69 /* Shadow_portret_border_2.png in Resources */,
 				75DC68061A816AA100D6A553 /* shadow_character7_part2.png in Resources */,
 				75DC67FE1A816AA100D6A553 /* shadow_character7_part12.png in Resources */,
 				75EBF3601AAB7F5A005F5E8C /* answers_colors.plist in Resources */,
 				75DC67A41A816AA100D6A553 /* shadow_character1_part4.png in Resources */,
+				750569321B1E555F008DE162 /* miner_anim.atlasc in Resources */,
 				75DC67D51A816AA100D6A553 /* shadow_character4_part23.png in Resources */,
 				75DC67CB1A816AA100D6A553 /* shadow_character4_part14.png in Resources */,
 				75DC67F51A816AA100D6A553 /* shadow_character6_part4.png in Resources */,
@@ -1392,7 +1374,6 @@
 				75DC67A81A816AA100D6A553 /* shadow_character1_part8.png in Resources */,
 				75DC67C71A816AA100D6A553 /* shadow_character4_part10.png in Resources */,
 				75DC67B31A816AA100D6A553 /* shadow_character2_part6.png in Resources */,
-				75037FEB1B1A3B7700CB0B83 /* lantern_house.atlasc in Resources */,
 				75DC66E81A81520A00D6A553 /* full_portret_shadow_6.png in Resources */,
 				75DC67CA1A816AA100D6A553 /* shadow_character4_part13.png in Resources */,
 				75DC67F81A816AA100D6A553 /* shadow_character6_part7.png in Resources */,
@@ -1407,8 +1388,6 @@
 				75DC681A1A816AA100D6A553 /* shadow_character8_part2.png in Resources */,
 				75DC680B1A816AA100D6A553 /* shadow_character7_part6.png in Resources */,
 				75DC67E01A816AA100D6A553 /* shadow_character5_part11.png in Resources */,
-				75DC66DF1A81520A00D6A553 /* full_portret_color_5.png in Resources */,
-				75DC66DC1A81520A00D6A553 /* full_portret_color_2.png in Resources */,
 				75DC67A01A816AA100D6A553 /* shadow_character1_part11.png in Resources */,
 				75DC68041A816AA100D6A553 /* shadow_character7_part18.png in Resources */,
 				75DC67F01A816AA100D6A553 /* shadow_character6_part13.png in Resources */,
@@ -1420,6 +1399,7 @@
 				75DC68201A816AA100D6A553 /* shadow_character8_part25.png in Resources */,
 				75DC67E61A816AA100D6A553 /* shadow_character5_part4.png in Resources */,
 				75DC67E71A816AA100D6A553 /* shadow_character5_part5.png in Resources */,
+				7505693C1B1E56BB008DE162 /* lantern_house.atlasc in Resources */,
 				75DC67D81A816AA100D6A553 /* shadow_character4_part4.png in Resources */,
 				75DC67DB1A816AA100D6A553 /* shadow_character4_part7.png in Resources */,
 				750569281B1E5177008DE162 /* cafe_frames.atlasc in Resources */,
@@ -1437,14 +1417,12 @@
 				75DC67C61A816AA100D6A553 /* shadow_character4_part1.png in Resources */,
 				75EDA1841A83FBCA002546E0 /* shadow_wrong_position.plist in Resources */,
 				75DC67D21A816AA100D6A553 /* shadow_character4_part20.png in Resources */,
-				75037FEE1B1A3B7700CB0B83 /* wanda_anim.atlasc in Resources */,
 				75DC67C31A816AA100D6A553 /* shadow_character3_part7.png in Resources */,
 				75DC67E91A816AA100D6A553 /* shadow_character5_part7.png in Resources */,
 				75DFE1011A800CE500CE9E69 /* Shadow_portret_7.png in Resources */,
 				75DC68231A816AA100D6A553 /* shadow_character8_part5.png in Resources */,
 				75DC681B1A816AA100D6A553 /* shadow_character8_part20.png in Resources */,
 				75DC67A91A816AA100D6A553 /* shadow_character1_part9.png in Resources */,
-				75037FE61B1A3B7700CB0B83 /* bottom_island.atlasc in Resources */,
 				75DC68021A816AA100D6A553 /* shadow_character7_part16.png in Resources */,
 				75DC67D71A816AA100D6A553 /* shadow_character4_part3.png in Resources */,
 				75DC68181A816AA100D6A553 /* shadow_character8_part18.png in Resources */,
@@ -1470,10 +1448,8 @@
 				75DFE1081A800CE500CE9E69 /* Shadow_portret_border_6.png in Resources */,
 				75DC67C01A816AA100D6A553 /* shadow_character3_part4.png in Resources */,
 				75DFE0FD1A800CE500CE9E69 /* Shadow_portret_3.png in Resources */,
-				75037FEC1B1A3B7700CB0B83 /* miner_anim.atlasc in Resources */,
 				75DC67EF1A816AA100D6A553 /* shadow_character6_part12.png in Resources */,
 				75DC67D31A816AA100D6A553 /* shadow_character4_part21.png in Resources */,
-				75015FB81AFFD88C0008DE52 /* full_portret_color_1.png in Resources */,
 				7530D6B61AD069960063F124 /* ContributorsViewController.xib in Resources */,
 				75DC67CC1A816AA100D6A553 /* shadow_character4_part15.png in Resources */,
 				75DC67E41A816AA100D6A553 /* shadow_character5_part2.png in Resources */,
@@ -1487,8 +1463,10 @@
 				75DC67FD1A816AA100D6A553 /* shadow_character7_part11.png in Resources */,
 				75DC67BA1A816AA100D6A553 /* shadow_character3_part12.png in Resources */,
 				75DFE0FC1A800CE500CE9E69 /* Shadow_portret_2.png in Resources */,
+				7505692D1B1E542C008DE162 /* jay_anim.atlasc in Resources */,
 				75DFE0FB1A800CE500CE9E69 /* Shadow_portret_1.png in Resources */,
 				75C12A701A754B6C0075FD8D /* Images.xcassets in Resources */,
+				750569391B1E5660008DE162 /* bottom_island.atlasc in Resources */,
 				75DC67F91A816AA100D6A553 /* shadow_character6_part8.png in Resources */,
 				75DC67EB1A816AA100D6A553 /* shadow_character5_part9.png in Resources */,
 				75DC67B01A816AA100D6A553 /* shadow_character2_part3.png in Resources */,
@@ -1510,7 +1488,6 @@
 				75DC67F11A816AA100D6A553 /* shadow_character6_part14.png in Resources */,
 				75DC67E21A816AA100D6A553 /* shadow_character5_part13.png in Resources */,
 				75DFE1021A800CE500CE9E69 /* Shadow_portret_8.png in Resources */,
-				75DC66E01A81520A00D6A553 /* full_portret_color_6.png in Resources */,
 				75DC67D91A816AA100D6A553 /* shadow_character4_part5.png in Resources */,
 				75DC67BD1A816AA100D6A553 /* shadow_character3_part15.png in Resources */,
 				75DC67E11A816AA100D6A553 /* shadow_character5_part12.png in Resources */,
@@ -1536,7 +1513,6 @@
 				75DC67A51A816AA100D6A553 /* shadow_character1_part5.png in Resources */,
 				75DC67DF1A816AA100D6A553 /* shadow_character5_part10.png in Resources */,
 				75AD2E901ADAD193002EE482 /* book_rus.epub in Resources */,
-				75037FEA1B1A3B7700CB0B83 /* jay_anim.atlasc in Resources */,
 				75DC67B11A816AA100D6A553 /* shadow_character2_part4.png in Resources */,
 				75DC67EC1A816AA100D6A553 /* shadow_character6_part1.png in Resources */,
 				75DC67B91A816AA100D6A553 /* shadow_character3_part11.png in Resources */,

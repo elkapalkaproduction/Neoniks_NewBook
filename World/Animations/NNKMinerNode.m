@@ -57,12 +57,11 @@
 
 
 - (SKSpriteNode *)backgroundNodeWithSize:(CGSize)size {
-    SKSpriteNode *background = [SKSpriteNode spriteNodeWithTexture:[SKTexture textureWithImageNamed:@"full_portret_color_7"]];
+    SKSpriteNode *background = [SKSpriteNode spriteNodeWithTexture:MINER_ANIM_TEX_MINER_FULL_PORTRAIT];
     background.size = size;
     background.position = CGPointMake(size.width / 2, size.height / 2);
     
     return background;
 }
-
 
 @end

@@ -57,7 +57,7 @@
 
 
 - (SKSpriteNode *)backgroundNodeWithSize:(CGSize)size {
-    SKSpriteNode *background = [SKSpriteNode spriteNodeWithTexture:[SKTexture textureWithImageNamed:@"pop_up_image_1"]];
+    SKSpriteNode *background = [SKSpriteNode spriteNodeWithTexture:LANTERN_HOUSE_TEX_LANTERN_HOUSE_FULL];
     background.size = size;
     background.position = CGPointMake(size.width / 2, size.height / 2);
     

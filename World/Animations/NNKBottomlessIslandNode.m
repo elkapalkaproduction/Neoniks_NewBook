@@ -23,11 +23,11 @@
 - (instancetype)initWithSize:(CGSize)size {
     self = [super init];
     if (self) {
-        [self addChild:[self backgroundNodeWithSize:size imageName:@"pop_up_image_6"]];
+        [self addChild:[self backgroundNodeWithSize:size texture:BOTTOM_ISLAND_TEX_BOTTOM_ISLAND_BACK]];
         _atlass = [SKTextureAtlas atlasNamed:BOTTOM_ISLAND_ATLAS_NAME];
         _spriteNode = [self mainNodeWithSize:size];
         [self addChild:_spriteNode];
-        [self addChild:[self backgroundNodeWithSize:size imageName:@"bottom_island_front"]];
+        [self addChild:[self backgroundNodeWithSize:size texture:BOTTOM_ISLAND_TEX_BOTTOM_ISLAND_FRONT]];
     }
     
     return self;
@@ -58,8 +58,8 @@
 }
 
 
-- (SKSpriteNode *)backgroundNodeWithSize:(CGSize)size imageName:(NSString *)imageName {
-    SKSpriteNode *background = [SKSpriteNode spriteNodeWithTexture:[SKTexture textureWithImageNamed:imageName]];
+- (SKSpriteNode *)backgroundNodeWithSize:(CGSize)size texture:(SKTexture *)texture {
+    SKSpriteNode *background = [SKSpriteNode spriteNodeWithTexture:texture];
     background.size = size;
     background.position = CGPointMake(size.width / 2, size.height / 2);
     

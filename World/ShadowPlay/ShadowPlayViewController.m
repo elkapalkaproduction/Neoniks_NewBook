@@ -156,7 +156,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 - (void)loadShadowsForCharacter:(ShadowCharacter)character {
     [self removeAllShadowsFromTheScreen];
-    NSString *key = [NSString stringWithFormat:@"character%ld", character];
+    NSString *key = [NSString stringWithFormat:@"character%ld", (long)character];
     NSDictionary *wrongCharacterPositions = self.wrongAnswers[key];
     NSDictionary *correctCharacterPositions = self.correctAnswers[key];
     NSArray *allKeys = [wrongCharacterPositions allKeys];
@@ -269,7 +269,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     self.viewForElements.hidden = YES;
     self.descriptionLabel.hidden = NO;
     self.prizeView.hidden = YES;
-    NSString *string = [NSString stringWithFormat:NSPTextPatternDescription, character];
+    NSString *string = [NSString stringWithFormat:NSPTextPatternDescription, (long)character];
     self.descriptionLabel.text = NSLocalizedString(string, nil);
     
     CGSize size = self.viewForResults.bounds.size;
@@ -297,7 +297,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
         case ShadowCharacterUnselected:
         case ShadowCharacterMystie:
         case ShadowCharacterJustacreep:{
-            self.fullPortret.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternPortraitColor, character]];
+            self.fullPortret.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternPortraitColor, (long)character]];
             self.scene.node = nil;
             return;
         }
@@ -313,7 +313,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 - (void)loadLockedCharacter:(ShadowCharacter)character {
     self.descriptionLabel.hidden = YES;
-    self.fullPortret.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternPortraitShadow, character]];
+    self.fullPortret.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternPortraitShadow, (long)character]];
     self.viewForElements.hidden = NO;
     self.prizeView.hidden = YES;
     [self loadShadowsForCharacter:character];

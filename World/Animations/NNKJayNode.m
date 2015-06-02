@@ -35,6 +35,7 @@
     return self;
 }
 
+
 - (SKAction *)pendantSequence {
     if (!_pendantSequence) {
         _pendantSequence = [SKAction repeatActionForever:[SKAction animateWithTextures:JAY_ANIM_ANIM_JAY_PENDANT
@@ -43,6 +44,8 @@
     
     return _pendantSequence;
 }
+
+
 - (SKAction *)blickSequence {
     if (!_blickSequence) {
         _blickSequence = [SKAction repeatActionForever:[SKAction animateWithTextures:JAY_ANIM_ANIM_JAY_BLICK
@@ -53,7 +56,7 @@
 }
 
 
-- (SKSpriteNode *)mainNodeWithSize:(CGSize)size texture:(SKTexture *)texure{
+- (SKSpriteNode *)mainNodeWithSize:(CGSize)size texture:(SKTexture *)texure {
     SKSpriteNode *spriteNode = [SKSpriteNode spriteNodeWithTexture:texure];
     spriteNode.size = size;
     spriteNode.position = CGPointMake(size.width / 2, size.height / 2);
@@ -69,12 +72,11 @@
 
 
 - (SKSpriteNode *)backgroundNodeWithSize:(CGSize)size {
-    SKSpriteNode *background = [SKSpriteNode spriteNodeWithTexture:[SKTexture textureWithImageNamed:@"full_portret_color_1"]];
+    SKSpriteNode *background = [SKSpriteNode spriteNodeWithTexture:JAY_ANIM_TEX_JAY_FULL_PORTRAIT];
     background.size = size;
     background.position = CGPointMake(size.width / 2, size.height / 2);
     
     return background;
 }
-
 
 @end

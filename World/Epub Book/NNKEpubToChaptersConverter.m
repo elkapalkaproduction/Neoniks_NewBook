@@ -51,9 +51,8 @@ static NSString *const kOPFItemRefKey = @"//opf:itemref";
         [self deleteAllPreviousFilesAtPath:[self baseEpubPath]];
 
         //start unzip
-        BOOL ret = [zipArchive UnzipFileTo:[self basePathWithLastPathComponent:@"/"]
+        [zipArchive UnzipFileTo:[self basePathWithLastPathComponent:@"/"]
                                  overWrite:YES];
-        NSAssert(ret, @"Error when unziping");
         [zipArchive UnzipCloseFile];
     }
 }
@@ -61,8 +60,6 @@ static NSString *const kOPFItemRefKey = @"//opf:itemref";
 
 - (NSString *)extractOPFFileName {
     NSString *manifestFilePath = [self basePathWithLastPathComponent:@"META-INF/container.xml"];
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSAssert([fileManager fileExistsAtPath:manifestFilePath], @"ERROR: ePub not Valid");
 
     CXMLDocument *manifestFile = [[CXMLDocument alloc] initWithContentsOfURL:[NSURL fileURLWithPath:manifestFilePath]
                                                                      options:0

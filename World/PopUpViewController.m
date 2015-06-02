@@ -44,7 +44,7 @@
 
 - (MyScene *)sceneWithFrame:(CGRect)frame node:(SKNode<CustomNodeProtocol> *)node {
     MyScene *scene = [MyScene sceneWithSize:frame.size];
-    scene.self.scene.node =node;
+    scene.node = node;
     scene.backgroundColor = [UIColor clearColor];
     
     return scene;
@@ -71,9 +71,9 @@
     label.layer.shadowOpacity = 0.6f;
     label.layer.masksToBounds = NO;
     label.layer.shouldRasterize = YES;
-    NSString *text = [NSString stringWithFormat:@"island_popup_description_%ld", self.type];
+    NSString *text = [NSString stringWithFormat:@"island_popup_description_%ld", (long)self.type];
     NSString *localizedText = NSLocalizedString(text, nil);
-    NSString *bannerImageName = [NSString stringWithFormat:@"pop_up_banner_%ld", self.type];
+    NSString *bannerImageName = [NSString stringWithFormat:@"pop_up_banner_%ld", (long)self.type];
     
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:localizedText];
     [attributedString addAttribute:NSKernAttributeName value:@(1.4) range:NSMakeRange(0, [localizedText length])];

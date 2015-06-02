@@ -52,7 +52,7 @@
         [self.currentToFindView.superview removeConstraint:self.currentToFindViewConstraint];
     }
     IslandToFind maxSolved = [self.viewModel currentNeedToFind];
-    self.currentToFindImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"puzzle_cake_%ld", maxSolved]];
+    self.currentToFindImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"puzzle_cake_%ld", (long)maxSolved]];
     for (NSInteger index = 0; index < IslandToFindSolvedAll; index++) {
         [self.stars[index] setHidden:index >= maxSolved];
     }

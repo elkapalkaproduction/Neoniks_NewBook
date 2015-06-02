@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 3.8.0 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:50cf44ec98ee1c4da91bde1a398ea7f7:a0b53994078a2216ec53ef571715e228:1c3ed46b939d1d55011631720124eed7$</string>
+            <string>$TexturePacker:SmartUpdate:5e41b16c85f08479889c04fd6de2b90b:a47b7de285e34f1e8ba7c0051acf49df:1c3ed46b939d1d55011631720124eed7$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -17,9 +17,25 @@
                 <key>path</key>
                 <string>jay_anim.1.png</string>
                 <key>size</key>
-                <string>{1056,502}</string>
+                <string>{844,1011}</string>
                 <key>subimages</key>
                 <array>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>jay_full_portrait.png</string>
+                        <key>spriteOffset</key>
+                        <string>{245,110}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{1,1},{324,905}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
                     <dict>
                         <key>aliases</key>
                         <array/>
@@ -32,9 +48,9 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{1,1},{102,365}}</string>
+                        <string>{{1,908},{365,102}}</string>
                         <key>textureRotated</key>
-                        <false/>
+                        <true/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -48,7 +64,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{105,1},{102,353}}</string>
+                        <string>{{327,1},{102,353}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -64,7 +80,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{209,1},{102,337}}</string>
+                        <string>{{327,356},{102,337}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -80,7 +96,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{313,1},{102,320}}</string>
+                        <string>{{431,1},{102,320}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -96,7 +112,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{417,1},{102,304}}</string>
+                        <string>{{431,323},{102,304}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -112,151 +128,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{521,1},{102,287}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>jay_pendant_09.png</string>
-                        <key>spriteOffset</key>
-                        <string>{405,228}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{814,1126}</string>
-                        <key>textureRect</key>
-                        <string>{{625,1},{102,270}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>jay_pendant_08.png</string>
-                        <key>spriteOffset</key>
-                        <string>{405,244}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{814,1126}</string>
-                        <key>textureRect</key>
-                        <string>{{729,1},{102,254}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>jay_pendant_00.png</string>
-                        <key>spriteOffset</key>
-                        <string>{405,376}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{814,1126}</string>
-                        <key>textureRect</key>
-                        <string>{{1,368},{102,133}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>jay_pendant_07.png</string>
-                        <key>spriteOffset</key>
-                        <string>{405,261}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{814,1126}</string>
-                        <key>textureRect</key>
-                        <string>{{833,1},{102,237}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>jay_pendant_06.png</string>
-                        <key>spriteOffset</key>
-                        <string>{405,277}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{814,1126}</string>
-                        <key>textureRect</key>
-                        <string>{{937,1},{102,221}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>jay_pendant_01.png</string>
-                        <key>spriteOffset</key>
-                        <string>{405,360}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{814,1126}</string>
-                        <key>textureRect</key>
-                        <string>{{105,356},{102,138}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>jay_pendant_02.png</string>
-                        <key>spriteOffset</key>
-                        <string>{405,344}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{814,1126}</string>
-                        <key>textureRect</key>
-                        <string>{{209,340},{102,154}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>jay_pendant_03.png</string>
-                        <key>spriteOffset</key>
-                        <string>{405,327}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{814,1126}</string>
-                        <key>textureRect</key>
-                        <string>{{313,323},{102,171}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>jay_pendant_04.png</string>
-                        <key>spriteOffset</key>
-                        <string>{405,311}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{814,1126}</string>
-                        <key>textureRect</key>
-                        <string>{{417,307},{102,187}}</string>
+                        <string>{{535,1},{102,287}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -272,7 +144,23 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{521,290},{102,204}}</string>
+                        <string>{{639,1},{204,102}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>jay_pendant_09.png</string>
+                        <key>spriteOffset</key>
+                        <string>{405,228}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{535,290},{102,270}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -282,15 +170,15 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>jay_blick_05.png</string>
+                        <string>jay_pendant_08.png</string>
                         <key>spriteOffset</key>
-                        <string>{358,823}</string>
+                        <string>{405,244}</string>
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{625,273},{101,109}}</string>
+                        <string>{{639,105},{102,254}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -304,7 +192,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{625,384},{100,109}}</string>
+                        <string>{{743,105},{100,109}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -320,7 +208,23 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{833,240},{109,100}}</string>
+                        <string>{{743,216},{100,109}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>jay_pendant_06.png</string>
+                        <key>spriteOffset</key>
+                        <string>{405,277}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{639,361},{102,221}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -336,23 +240,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{944,224},{100,109}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>jay_blick_02.png</string>
-                        <key>spriteOffset</key>
-                        <string>{337,818}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{814,1126}</string>
-                        <key>textureRect</key>
-                        <string>{{729,257},{101,108}}</string>
+                        <string>{{743,327},{100,109}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -368,7 +256,71 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{832,342},{109,100}}</string>
+                        <string>{{743,438},{100,109}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>jay_pendant_04.png</string>
+                        <key>spriteOffset</key>
+                        <string>{405,311}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{327,695},{102,187}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>jay_pendant_07.png</string>
+                        <key>spriteOffset</key>
+                        <string>{405,261}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{431,629},{102,237}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>jay_pendant_03.png</string>
+                        <key>spriteOffset</key>
+                        <string>{405,327}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{535,562},{102,171}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>jay_pendant_02.png</string>
+                        <key>spriteOffset</key>
+                        <string>{405,344}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{639,584},{102,154}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -384,9 +336,41 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{728,367},{100,108}}</string>
+                        <string>{{743,549},{100,108}}</string>
                         <key>textureRotated</key>
                         <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>jay_pendant_00.png</string>
+                        <key>spriteOffset</key>
+                        <string>{405,376}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{535,735},{102,133}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>jay_pendant_01.png</string>
+                        <key>spriteOffset</key>
+                        <string>{405,360}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{639,740},{102,138}}</string>
+                        <key>textureRotated</key>
+                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -400,7 +384,39 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{944,335},{108,99}}</string>
+                        <string>{{743,659},{99,108}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>jay_blick_05.png</string>
+                        <key>spriteOffset</key>
+                        <string>{358,823}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{368,884},{101,109}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>jay_blick_02.png</string>
+                        <key>spriteOffset</key>
+                        <string>{337,818}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{471,870},{108,101}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>

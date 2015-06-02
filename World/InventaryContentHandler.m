@@ -46,7 +46,7 @@
 
 
 - (NSString *)keyFromType:(InventaryBarIconType)type {
-    return [NSString stringWithFormat:@"inventary%ld", type];
+    return [NSString stringWithFormat:@"inventary%ld", (long)type];
 }
 
 

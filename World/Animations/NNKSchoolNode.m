@@ -18,7 +18,6 @@
 @property (strong, nonatomic) SKSpriteNode *leaves;
 @property (strong, nonatomic) SKAction *houseAction;
 
-
 @end
 
 @implementation NNKSchoolNode
@@ -72,8 +71,10 @@
         [actions addObject:action];
     }
     [actions insertObject:[SKAction waitForDuration:1] atIndex:actions.count - 1];
+    
     return [SKAction sequence:actions];
 }
+
 
 - (void)runAction {
     [self.house removeAllActions];

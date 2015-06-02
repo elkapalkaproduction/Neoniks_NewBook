@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 3.8.0 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:0fca0b56f6a3f71e24429355103137b9:e3e461768f10bd42a7b6ff606463023b:6c40c8fab413a34b3a65bb1cdf2e9108$</string>
+            <string>$TexturePacker:SmartUpdate:594d157c92959e509dd8f4a843823770:22c4bfb5ef3d45c4d92e7fee332c19ac:6c40c8fab413a34b3a65bb1cdf2e9108$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -17,7 +17,7 @@
                 <key>path</key>
                 <string>bottom_island.1.png</string>
                 <key>size</key>
-                <string>{2896,1007}</string>
+                <string>{3185,989}</string>
                 <key>subimages</key>
                 <array>
                     <dict>
@@ -42,31 +42,15 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>bottom_island_01.png</string>
+                        <string>bottom_island_07.png</string>
                         <key>spriteOffset</key>
-                        <string>{161,0}</string>
+                        <string>{156,166}</string>
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{1,550},{357,448}}</string>
+                        <string>{{1,550},{538,436}}</string>
                         <key>textureRotated</key>
                         <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>bottom_island_02.png</string>
-                        <key>spriteOffset</key>
-                        <string>{189,30}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{1525,1127}</string>
-                        <key>textureRect</key>
-                        <string>{{360,550},{430,443}}</string>
-                        <key>textureRotated</key>
-                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -90,13 +74,29 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>bottom_island_11.png</string>
+                        <string>bottom_island_02.png</string>
                         <key>spriteOffset</key>
-                        <string>{117,355}</string>
+                        <string>{189,30}</string>
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{792,542},{433,464}}</string>
+                        <string>{{541,542},{430,443}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>bottom_island_front.png</string>
+                        <key>spriteOffset</key>
+                        <string>{147,19}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{1525,1127}</string>
+                        <key>textureRect</key>
+                        <string>{{958,1},{270,510}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -106,13 +106,13 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>bottom_island_07.png</string>
+                        <string>bottom_island_04.png</string>
                         <key>spriteOffset</key>
-                        <string>{156,166}</string>
+                        <string>{203,90}</string>
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{958,1},{436,538}}</string>
+                        <string>{{973,513},{414,473}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -122,13 +122,29 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>bottom_island_12.png</string>
+                        <string>bottom_island_back.png</string>
                         <key>spriteOffset</key>
-                        <string>{117,403}</string>
+                        <string>{147,19}</string>
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{1227,541},{385,436}}</string>
+                        <string>{{1230,1},{302,509}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>bottom_island_11.png</string>
+                        <key>spriteOffset</key>
+                        <string>{117,355}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{1525,1127}</string>
+                        <key>textureRect</key>
+                        <string>{{1389,512},{433,464}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -144,39 +160,7 @@
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{1396,1},{424,507}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>bottom_island_10.png</string>
-                        <key>spriteOffset</key>
-                        <string>{126,287}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{1525,1127}</string>
-                        <key>textureRect</key>
-                        <string>{{1614,510},{487,491}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>bottom_island_03.png</string>
-                        <key>spriteOffset</key>
-                        <string>{214,64}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{1525,1127}</string>
-                        <key>textureRect</key>
-                        <string>{{1822,1},{413,481}}</string>
+                        <string>{{1534,1},{424,507}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -192,7 +176,7 @@
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{2103,484},{416,478}}</string>
+                        <string>{{1824,510},{416,478}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -202,15 +186,47 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>bottom_island_04.png</string>
+                        <string>bottom_island_10.png</string>
                         <key>spriteOffset</key>
-                        <string>{203,90}</string>
+                        <string>{126,287}</string>
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{2237,1},{414,473}}</string>
+                        <string>{{1960,1},{487,491}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>bottom_island_03.png</string>
+                        <key>spriteOffset</key>
+                        <string>{214,64}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{1525,1127}</string>
+                        <key>textureRect</key>
+                        <string>{{2242,494},{413,481}}</string>
                         <key>textureRotated</key>
                         <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>bottom_island_01.png</string>
+                        <key>spriteOffset</key>
+                        <string>{161,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{1525,1127}</string>
+                        <key>textureRect</key>
+                        <string>{{2449,1},{357,448}}</string>
+                        <key>textureRotated</key>
+                        <true/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -224,9 +240,25 @@
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{2521,476},{327,422}}</string>
+                        <string>{{2808,1},{327,422}}</string>
                         <key>textureRotated</key>
                         <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>bottom_island_12.png</string>
+                        <key>spriteOffset</key>
+                        <string>{117,403}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{1525,1127}</string>
+                        <key>textureRect</key>
+                        <string>{{2657,451},{436,385}}</string>
+                        <key>textureRotated</key>
+                        <false/>
                     </dict>
                 </array>
             </dict>

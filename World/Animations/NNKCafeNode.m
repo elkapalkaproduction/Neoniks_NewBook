@@ -10,6 +10,7 @@
 #import "cafe_frames.h"
 
 @interface NNKCafeNode ()
+
 @property (strong, nonatomic) SKTextureAtlas *atlass;
 @property (assign, nonatomic) BOOL selected;
 @property (strong, nonatomic) SKSpriteNode *mainNode;

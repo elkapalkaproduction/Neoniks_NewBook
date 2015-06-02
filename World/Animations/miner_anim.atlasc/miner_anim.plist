@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 3.8.0 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:ac1b109af91ad44634eda85a81539445:ac7d1e1cd5f30b04e319a2214d646824:ae540a636c33676c213d0e1175ae45e5$</string>
+            <string>$TexturePacker:SmartUpdate:23559c3776530ab05dfa38a510e113a9:839349d0b6385d6dfc147520330ef54c:ae540a636c33676c213d0e1175ae45e5$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -17,9 +17,57 @@
                 <key>path</key>
                 <string>miner_anim.1.png</string>
                 <key>size</key>
-                <string>{897,344}</string>
+                <string>{824,1021}</string>
                 <key>subimages</key>
                 <array>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>miner_full_portrait.png</string>
+                        <key>spriteOffset</key>
+                        <string>{94,99}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{1,1},{619,797}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>miner_anim_01.png</string>
+                        <key>spriteOffset</key>
+                        <string>{387,801}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{1,800},{166,220}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>miner_anim_09.png</string>
+                        <key>spriteOffset</key>
+                        <string>{387,801}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{1,800},{166,220}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
                     <dict>
                         <key>aliases</key>
                         <array/>
@@ -32,9 +80,9 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{1,1},{245,174}}</string>
+                        <string>{{622,1},{174,245}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -48,7 +96,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{248,1},{239,170}}</string>
+                        <string>{{169,800},{239,170}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -64,39 +112,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{489,1},{239,170}}</string>
-                        <key>textureRotated</key>
-                        <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>miner_anim_02.png</string>
-                        <key>spriteOffset</key>
-                        <string>{384,794}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{814,1126}</string>
-                        <key>textureRect</key>
-                        <string>{{730,1},{166,227}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>miner_anim_08.png</string>
-                        <key>spriteOffset</key>
-                        <string>{384,794}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{814,1126}</string>
-                        <key>textureRect</key>
-                        <string>{{730,1},{166,227}}</string>
+                        <string>{{622,248},{170,239}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -112,9 +128,9 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{248,173},{233,168}}</string>
+                        <string>{{622,489},{168,233}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -128,7 +144,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{483,173},{233,168}}</string>
+                        <string>{{410,800},{233,168}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -138,15 +154,15 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>miner_anim_01.png</string>
+                        <string>miner_anim_02.png</string>
                         <key>spriteOffset</key>
-                        <string>{387,801}</string>
+                        <string>{384,794}</string>
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{1,177},{220,166}}</string>
+                        <string>{{645,724},{166,227}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -154,15 +170,15 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>miner_anim_09.png</string>
+                        <string>miner_anim_08.png</string>
                         <key>spriteOffset</key>
-                        <string>{387,801}</string>
+                        <string>{384,794}</string>
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{1,177},{220,166}}</string>
+                        <string>{{645,724},{166,227}}</string>
                         <key>textureRotated</key>
-                        <true/>
+                        <false/>
                     </dict>
                 </array>
             </dict>

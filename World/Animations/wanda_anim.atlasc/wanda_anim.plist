@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 3.8.0 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:7cfbb3248c739febf2d33544195e6589:168afa2d1fdc45364986fe72d9bfe481:8ae6173f1a07461f6710519351435a44$</string>
+            <string>$TexturePacker:SmartUpdate:efa7a400741d0a49b86e484179cc3faf:45e36885d8d05647424a06be514408df:8ae6173f1a07461f6710519351435a44$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -17,9 +17,25 @@
                 <key>path</key>
                 <string>wanda_anim.1.png</string>
                 <key>size</key>
-                <string>{2112,994}</string>
+                <string>{2458,994}</string>
                 <key>subimages</key>
                 <array>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>wanda_full_portrait.png</string>
+                        <key>spriteOffset</key>
+                        <string>{250,115}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{1,1},{310,898}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
                     <dict>
                         <key>aliases</key>
                         <array/>
@@ -32,7 +48,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{1,1},{466,640}}</string>
+                        <string>{{313,1},{466,640}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -48,7 +64,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{1,643},{608,350}}</string>
+                        <string>{{313,643},{608,350}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -64,7 +80,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{469,1},{404,611}}</string>
+                        <string>{{781,1},{404,611}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -80,7 +96,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{611,614},{546,369}}</string>
+                        <string>{{923,614},{546,369}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -96,7 +112,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{875,1},{419,596}}</string>
+                        <string>{{1187,1},{419,596}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -112,7 +128,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{1159,599},{203,357}}</string>
+                        <string>{{1471,599},{203,357}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -128,7 +144,23 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{1296,1},{309,537}}</string>
+                        <string>{{1608,1},{309,537}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>wanda_anim_02.png</string>
+                        <key>spriteOffset</key>
+                        <string>{294,443}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{814,1126}</string>
+                        <key>textureRect</key>
+                        <string>{{1676,540},{255,437}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -144,25 +176,9 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{1607,1},{495,316}}</string>
+                        <string>{{1933,1},{495,316}}</string>
                         <key>textureRotated</key>
                         <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>wanda_anim_02.png</string>
-                        <key>spriteOffset</key>
-                        <string>{294,443}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{814,1126}</string>
-                        <key>textureRect</key>
-                        <string>{{1364,540},{255,437}}</string>
-                        <key>textureRotated</key>
-                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -176,7 +192,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{1607,319},{395,210}}</string>
+                        <string>{{1919,319},{395,210}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -192,7 +208,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{1621,531},{475,260}}</string>
+                        <string>{{1933,531},{475,260}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -208,7 +224,7 @@
                         <key>spriteSourceSize</key>
                         <string>{814,1126}</string>
                         <key>textureRect</key>
-                        <string>{{1621,793},{313,143}}</string>
+                        <string>{{1933,793},{313,143}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>

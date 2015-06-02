@@ -46,28 +46,28 @@ NSString *const NSPImagePatterName = @"shadow_name_%ld";
 
 
 - (void)changeToCharacterClosedState {
-    self.characterImage.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternBorder, self.loadedCharacter]];
+    self.characterImage.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternBorder, (long)self.loadedCharacter]];
     self.characterName.hidden = YES;
     self.nameBackground.hidden = YES;
 }
 
 
 - (void)changeToCharacterOpenState {
-    self.characterImage.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternPortrait, self.loadedCharacter]];
+    self.characterImage.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternPortrait, (long)self.loadedCharacter]];
     self.characterName.hidden = NO;
     self.nameBackground.hidden = NO;
 }
 
 
 - (void)changeToCharacterSelectedState {
-    self.characterImage.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternBorder, self.loadedCharacter]];
+    self.characterImage.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternBorder, (long)self.loadedCharacter]];
     self.characterName.hidden = NO;
     self.nameBackground.hidden = NO;
 }
 
 
 - (void)updateInterface {
-    NSString *key = [NSString stringWithFormat:NSPImagePatterName, self.loadedCharacter];
+    NSString *key = [NSString stringWithFormat:NSPImagePatterName, (long)self.loadedCharacter];
     self.characterName.image = [UIImage imageNamed:NSLocalizedString(key, nil)];
     switch (self.characterInteraction) {
         case CharactersInteractionClosed: {

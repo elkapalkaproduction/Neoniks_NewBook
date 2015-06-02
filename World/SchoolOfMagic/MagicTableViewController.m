@@ -174,7 +174,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 
 
 - (NSString *)questionNameWithString:(NSString *)string {
-    NSString *qString = [NSString stringWithFormat:SOMQuestionPattern, self.questionNumber];
+    NSString *qString = [NSString stringWithFormat:SOMQuestionPattern, (unsigned long)self.questionNumber];
     
     return [qString stringByAppendingString:string];
 }

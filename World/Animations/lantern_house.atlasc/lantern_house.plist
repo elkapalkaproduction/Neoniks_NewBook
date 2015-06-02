@@ -7,7 +7,7 @@
             <key>generator</key>
             <string>TexturePacker 3.8.0 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:d137ab800822d70bee3aff243963cb5a:ea16ae83f73deb34608de126deacb4e0:07579c414d9c323228afd740d60da388$</string>
+            <string>$TexturePacker:SmartUpdate:5e6b7239ca671e5a1c6299e8f42b3387:6f39c50befdeb72b50285a84b5025bd9:07579c414d9c323228afd740d60da388$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -17,9 +17,25 @@
                 <key>path</key>
                 <string>lantern_house.1.png</string>
                 <key>size</key>
-                <string>{809,1001}</string>
+                <string>{996,1280}</string>
                 <key>subimages</key>
                 <array>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>lantern_house_full.png</string>
+                        <key>spriteOffset</key>
+                        <string>{111,80}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{1525,1127}</string>
+                        <key>textureRect</key>
+                        <string>{{1,1},{684,684}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
                     <dict>
                         <key>aliases</key>
                         <array/>
@@ -32,9 +48,9 @@
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{1,1},{316,308}}</string>
+                        <string>{{687,1},{308,316}}</string>
                         <key>textureRotated</key>
-                        <false/>
+                        <true/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -48,41 +64,9 @@
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{319,1},{310,308}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>lantern_house_06.png</string>
-                        <key>spriteOffset</key>
-                        <string>{678,600}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{1525,1127}</string>
-                        <key>textureRect</key>
-                        <string>{{631,1},{161,194}}</string>
+                        <string>{{687,319},{308,310}}</string>
                         <key>textureRotated</key>
                         <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>lantern_house_04.png</string>
-                        <key>spriteOffset</key>
-                        <string>{678,600}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{1525,1127}</string>
-                        <key>textureRect</key>
-                        <string>{{631,197},{159,117}}</string>
-                        <key>textureRotated</key>
-                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -96,7 +80,7 @@
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{1,311},{307,303}}</string>
+                        <string>{{687,631},{307,303}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -112,73 +96,9 @@
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{310,311},{286,276}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>lantern_house_08.png</string>
-                        <key>spriteOffset</key>
-                        <string>{678,600}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{1525,1127}</string>
-                        <key>textureRect</key>
-                        <string>{{598,316},{209,207}}</string>
+                        <string>{{1,936},{276,286}}</string>
                         <key>textureRotated</key>
                         <true/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>lantern_house_07.png</string>
-                        <key>spriteOffset</key>
-                        <string>{678,600}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{1525,1127}</string>
-                        <key>textureRect</key>
-                        <string>{{598,525},{201,185}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>lantern_house_11.png</string>
-                        <key>spriteOffset</key>
-                        <string>{678,600}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{1525,1127}</string>
-                        <key>textureRect</key>
-                        <string>{{310,589},{271,254}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>lantern_house_09.png</string>
-                        <key>spriteOffset</key>
-                        <string>{678,600}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{1525,1127}</string>
-                        <key>textureRect</key>
-                        <string>{{583,712},{225,226}}</string>
-                        <key>textureRotated</key>
-                        <false/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -192,7 +112,7 @@
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{1,940},{36,50}}</string>
+                        <string>{{1,1224},{36,50}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -208,7 +128,55 @@
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{39,616},{248,240}}</string>
+                        <string>{{1,687},{248,240}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>lantern_house_09.png</string>
+                        <key>spriteOffset</key>
+                        <string>{678,600}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{1525,1127}</string>
+                        <key>textureRect</key>
+                        <string>{{251,687},{225,226}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>lantern_house_11.png</string>
+                        <key>spriteOffset</key>
+                        <string>{678,600}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{1525,1127}</string>
+                        <key>textureRect</key>
+                        <string>{{279,915},{254,271}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>lantern_house_08.png</string>
+                        <key>spriteOffset</key>
+                        <string>{678,600}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{1525,1127}</string>
+                        <key>textureRect</key>
+                        <string>{{478,687},{207,209}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -224,9 +192,57 @@
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{39,858},{185,134}}</string>
+                        <string>{{535,898},{134,185}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>lantern_house_07.png</string>
+                        <key>spriteOffset</key>
+                        <string>{678,600}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{1525,1127}</string>
+                        <key>textureRect</key>
+                        <string>{{535,1085},{201,185}}</string>
                         <key>textureRotated</key>
                         <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>lantern_house_04.png</string>
+                        <key>spriteOffset</key>
+                        <string>{678,600}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{1525,1127}</string>
+                        <key>textureRect</key>
+                        <string>{{671,936},{159,117}}</string>
+                        <key>textureRotated</key>
+                        <false/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>lantern_house_06.png</string>
+                        <key>spriteOffset</key>
+                        <string>{678,600}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{1525,1127}</string>
+                        <key>textureRect</key>
+                        <string>{{832,936},{161,194}}</string>
+                        <key>textureRotated</key>
+                        <true/>
                     </dict>
                     <dict>
                         <key>aliases</key>
@@ -240,7 +256,7 @@
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{226,858},{97,123}}</string>
+                        <string>{{738,1132},{97,123}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -256,7 +272,7 @@
                         <key>spriteSourceSize</key>
                         <string>{1525,1127}</string>
                         <key>textureRect</key>
-                        <string>{{325,845},{97,117}}</string>
+                        <string>{{837,1132},{97,117}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
