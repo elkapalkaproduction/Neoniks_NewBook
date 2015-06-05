@@ -81,7 +81,6 @@
 		75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D268FD1AC3448B00A17632 /* InfiniteTableView.m */; };
 		75DC66C91A814F9300D6A553 /* ShadowPlayOpenedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DC66C81A814F9300D6A553 /* ShadowPlayOpenedHandler.m */; };
 		75DC66DD1A81520A00D6A553 /* full_portret_color_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CD1A81520A00D6A553 /* full_portret_color_3.png */; };
-		75DC66DE1A81520A00D6A553 /* full_portret_color_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CE1A81520A00D6A553 /* full_portret_color_4.png */; };
 		75DC66E31A81520A00D6A553 /* full_portret_shadow_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66D31A81520A00D6A553 /* full_portret_shadow_1.png */; };
 		75DC66E41A81520A00D6A553 /* full_portret_shadow_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66D41A81520A00D6A553 /* full_portret_shadow_2.png */; };
 		75DC66E51A81520A00D6A553 /* full_portret_shadow_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66D51A81520A00D6A553 /* full_portret_shadow_3.png */; };
@@ -264,6 +263,8 @@
 		75EDA1871A83FE7E002546E0 /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDA1861A83FE7E002546E0 /* Storage.m */; };
 		75EDA1921A840F31002546E0 /* NNWVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDA18F1A840F31002546E0 /* NNWVideoViewController.m */; };
 		75F1DB201A86D758005ACBA7 /* UIDevice+ScreenSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F1DB1F1A86D758005ACBA7 /* UIDevice+ScreenSize.m */; };
+		75FF2F111B22311D008EB9AA /* NNKJustacreepNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FF2F101B22311D008EB9AA /* NNKJustacreepNode.m */; };
+		75FF2F141B22312B008EB9AA /* justacreep_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75FF2F121B22312B008EB9AA /* justacreep_anim.atlasc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -417,7 +418,6 @@
 		75DC66C71A814F9300D6A553 /* ShadowPlayOpenedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowPlayOpenedHandler.h; sourceTree = "<group>"; };
 		75DC66C81A814F9300D6A553 /* ShadowPlayOpenedHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowPlayOpenedHandler.m; sourceTree = "<group>"; };
 		75DC66CD1A81520A00D6A553 /* full_portret_color_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_3.png; sourceTree = "<group>"; };
-		75DC66CE1A81520A00D6A553 /* full_portret_color_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_4.png; sourceTree = "<group>"; };
 		75DC66D31A81520A00D6A553 /* full_portret_shadow_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_shadow_1.png; sourceTree = "<group>"; };
 		75DC66D41A81520A00D6A553 /* full_portret_shadow_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_shadow_2.png; sourceTree = "<group>"; };
 		75DC66D51A81520A00D6A553 /* full_portret_shadow_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_shadow_3.png; sourceTree = "<group>"; };
@@ -616,6 +616,10 @@
 		75EDA18F1A840F31002546E0 /* NNWVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNWVideoViewController.m; sourceTree = "<group>"; };
 		75F1DB1E1A86D758005ACBA7 /* UIDevice+ScreenSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ScreenSize.h"; sourceTree = "<group>"; };
 		75F1DB1F1A86D758005ACBA7 /* UIDevice+ScreenSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ScreenSize.m"; sourceTree = "<group>"; };
+		75FF2F0F1B22311D008EB9AA /* NNKJustacreepNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKJustacreepNode.h; sourceTree = "<group>"; };
+		75FF2F101B22311D008EB9AA /* NNKJustacreepNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKJustacreepNode.m; sourceTree = "<group>"; };
+		75FF2F121B22312B008EB9AA /* justacreep_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = justacreep_anim.atlasc; sourceTree = "<group>"; };
+		75FF2F131B22312B008EB9AA /* justacreep_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = justacreep_anim.h; sourceTree = "<group>"; };
 		C941A4C850417BA1B0022421 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -678,7 +682,11 @@
 				7505691F1B1E5168008DE162 /* NNKLighthouseNode.m */,
 				750569201B1E5168008DE162 /* NNKCafeNode.h */,
 				750569211B1E5168008DE162 /* NNKCafeNode.m */,
+				75FF2F0F1B22311D008EB9AA /* NNKJustacreepNode.h */,
+				75FF2F101B22311D008EB9AA /* NNKJustacreepNode.m */,
 				750380031B1A3B8900CB0B83 /* CustomNodeProtocol.h */,
+				75FF2F121B22312B008EB9AA /* justacreep_anim.atlasc */,
+				75FF2F131B22312B008EB9AA /* justacreep_anim.h */,
 				7505693A1B1E56BB008DE162 /* lantern_house.atlasc */,
 				7505693B1B1E56BB008DE162 /* lantern_house.h */,
 				750569371B1E5660008DE162 /* bottom_island.atlasc */,
@@ -889,7 +897,6 @@
 			children = (
 				75DC670B1A816AA100D6A553 /* characters_shadows_parts */,
 				75DC66CD1A81520A00D6A553 /* full_portret_color_3.png */,
-				75DC66CE1A81520A00D6A553 /* full_portret_color_4.png */,
 				75DC66D31A81520A00D6A553 /* full_portret_shadow_1.png */,
 				75DC66D41A81520A00D6A553 /* full_portret_shadow_2.png */,
 				75DC66D51A81520A00D6A553 /* full_portret_shadow_3.png */,
@@ -1376,6 +1383,7 @@
 				75DC67B31A816AA100D6A553 /* shadow_character2_part6.png in Resources */,
 				75DC66E81A81520A00D6A553 /* full_portret_shadow_6.png in Resources */,
 				75DC67CA1A816AA100D6A553 /* shadow_character4_part13.png in Resources */,
+				75FF2F141B22312B008EB9AA /* justacreep_anim.atlasc in Resources */,
 				75DC67F81A816AA100D6A553 /* shadow_character6_part7.png in Resources */,
 				75DC68241A816AA100D6A553 /* shadow_character8_part6.png in Resources */,
 				75DC67B51A816AA100D6A553 /* shadow_character2_part8.png in Resources */,
@@ -1458,7 +1466,6 @@
 				75DC68141A816AA100D6A553 /* shadow_character8_part14.png in Resources */,
 				75DC66EA1A81520A00D6A553 /* full_portret_shadow_8.png in Resources */,
 				75A125051AD06F5700BDFB7F /* ContributorsViewController~ipad.xib in Resources */,
-				75DC66DE1A81520A00D6A553 /* full_portret_color_4.png in Resources */,
 				75DC67F71A816AA100D6A553 /* shadow_character6_part6.png in Resources */,
 				75DC67FD1A816AA100D6A553 /* shadow_character7_part11.png in Resources */,
 				75DC67BA1A816AA100D6A553 /* shadow_character3_part12.png in Resources */,
@@ -1608,6 +1615,7 @@
 				75A125141AD0717800BDFB7F /* ParallaxEffect.m in Sources */,
 				7503800B1B1A3B8900CB0B83 /* NNKFoamCastleNode.m in Sources */,
 				75E86E321A82C06800419776 /* DragableButton.m in Sources */,
+				75FF2F111B22311D008EB9AA /* NNKJustacreepNode.m in Sources */,
 				755CDE101AECE1BE0095B6DF /* InventaryContentHandler.m in Sources */,
 				755CDE151AECE3380095B6DF /* InventaryItemOption.m in Sources */,
 				750380041B1A3B8900CB0B83 /* MyScene.m in Sources */,
