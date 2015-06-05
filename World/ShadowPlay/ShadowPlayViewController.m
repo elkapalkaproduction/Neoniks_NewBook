@@ -19,6 +19,7 @@
 #import "NNKFurcoatNode.h"
 #import "NNKPhoebeNode.h"
 #import "NNKJustacreepNode.h"
+#import "NNKMystieNode.h"
 
 NSString *const NSPSegueIdentifierPattern = @"character";
 
@@ -299,9 +300,8 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
             node = [[NNKJustacreepNode alloc] initWithSize:size];
             break;
         case ShadowCharacterMystie:
-            self.fullPortret.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternPortraitColor, (long)character]];
-            self.scene.node = nil;
-            return;
+            node = [[NNKMystieNode alloc] initWithSize:size];
+            break;
         default: {
             break;
         }

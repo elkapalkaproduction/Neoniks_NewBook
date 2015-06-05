@@ -265,6 +265,9 @@
 		75F1DB201A86D758005ACBA7 /* UIDevice+ScreenSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F1DB1F1A86D758005ACBA7 /* UIDevice+ScreenSize.m */; };
 		75FF2F111B22311D008EB9AA /* NNKJustacreepNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FF2F101B22311D008EB9AA /* NNKJustacreepNode.m */; };
 		75FF2F141B22312B008EB9AA /* justacreep_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75FF2F121B22312B008EB9AA /* justacreep_anim.atlasc */; };
+		75FF2FA51B224A0C008EB9AA /* MystieParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 75FF2FA31B224A0C008EB9AA /* MystieParticles.sks */; };
+		75FF2FA61B224A0C008EB9AA /* particleModel.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FF2FA41B224A0C008EB9AA /* particleModel.png */; };
+		75FF2FA91B224A22008EB9AA /* NNKMystieNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FF2FA81B224A22008EB9AA /* NNKMystieNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -620,6 +623,10 @@
 		75FF2F101B22311D008EB9AA /* NNKJustacreepNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKJustacreepNode.m; sourceTree = "<group>"; };
 		75FF2F121B22312B008EB9AA /* justacreep_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = justacreep_anim.atlasc; sourceTree = "<group>"; };
 		75FF2F131B22312B008EB9AA /* justacreep_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = justacreep_anim.h; sourceTree = "<group>"; };
+		75FF2FA31B224A0C008EB9AA /* MystieParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MystieParticles.sks; sourceTree = "<group>"; };
+		75FF2FA41B224A0C008EB9AA /* particleModel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particleModel.png; sourceTree = "<group>"; };
+		75FF2FA71B224A22008EB9AA /* NNKMystieNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKMystieNode.h; sourceTree = "<group>"; };
+		75FF2FA81B224A22008EB9AA /* NNKMystieNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKMystieNode.m; sourceTree = "<group>"; };
 		C941A4C850417BA1B0022421 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -654,6 +661,8 @@
 		75037F9B1B1A3B6800CB0B83 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				75FF2FA31B224A0C008EB9AA /* MystieParticles.sks */,
+				75FF2FA41B224A0C008EB9AA /* particleModel.png */,
 				75037FEF1B1A3B8900CB0B83 /* MyScene.h */,
 				75037FF01B1A3B8900CB0B83 /* MyScene.m */,
 				75037FF71B1A3B8900CB0B83 /* NNKHaroldNode.h */,
@@ -684,6 +693,8 @@
 				750569211B1E5168008DE162 /* NNKCafeNode.m */,
 				75FF2F0F1B22311D008EB9AA /* NNKJustacreepNode.h */,
 				75FF2F101B22311D008EB9AA /* NNKJustacreepNode.m */,
+				75FF2FA71B224A22008EB9AA /* NNKMystieNode.h */,
+				75FF2FA81B224A22008EB9AA /* NNKMystieNode.m */,
 				750380031B1A3B8900CB0B83 /* CustomNodeProtocol.h */,
 				75FF2F121B22312B008EB9AA /* justacreep_anim.atlasc */,
 				75FF2F131B22312B008EB9AA /* justacreep_anim.h */,
@@ -1413,6 +1424,7 @@
 				750569281B1E5177008DE162 /* cafe_frames.atlasc in Resources */,
 				75DC67DE1A816AA100D6A553 /* shadow_character5_part1.png in Resources */,
 				75DC67EE1A816AA100D6A553 /* shadow_character6_part11.png in Resources */,
+				75FF2FA51B224A0C008EB9AA /* MystieParticles.sks in Resources */,
 				7597094E1AC8947900FFB11E /* SettingsBarIconViewController.xib in Resources */,
 				75AD2E9F1ADAD424002EE482 /* Book.storyboard in Resources */,
 				75DC67F21A816AA100D6A553 /* shadow_character6_part15.png in Resources */,
@@ -1423,6 +1435,7 @@
 				75DC680F1A816AA100D6A553 /* shadow_character8_part1.png in Resources */,
 				75DFE1001A800CE500CE9E69 /* Shadow_portret_6.png in Resources */,
 				75DC67C61A816AA100D6A553 /* shadow_character4_part1.png in Resources */,
+				75FF2FA61B224A0C008EB9AA /* particleModel.png in Resources */,
 				75EDA1841A83FBCA002546E0 /* shadow_wrong_position.plist in Resources */,
 				75DC67D21A816AA100D6A553 /* shadow_character4_part20.png in Resources */,
 				75DC67C31A816AA100D6A553 /* shadow_character3_part7.png in Resources */,
@@ -1600,6 +1613,7 @@
 				750380081B1A3B8900CB0B83 /* NNKHaroldNode.m in Sources */,
 				75AD2E981ADAD193002EE482 /* NNKEpubToChaptersConverter.m in Sources */,
 				75AD2E9D1ADAD1B3002EE482 /* DejalActivityView.m in Sources */,
+				75FF2FA91B224A22008EB9AA /* NNKMystieNode.m in Sources */,
 				75A125121AD0717800BDFB7F /* TransitionAnimationFromDownToUp.m in Sources */,
 				75A125101AD0717800BDFB7F /* TransitionAnimation.m in Sources */,
 				7530D6B31AD068D50063F124 /* ContributorsViewController.m in Sources */,
