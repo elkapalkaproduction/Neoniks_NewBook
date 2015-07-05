@@ -75,6 +75,11 @@
 		75C12A6E1A754B6C0075FD8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A6C1A754B6C0075FD8D /* Main.storyboard */; };
 		75C12A701A754B6C0075FD8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A6F1A754B6C0075FD8D /* Images.xcassets */; };
 		75C12A731A754B6C0075FD8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A711A754B6C0075FD8D /* LaunchScreen.xib */; };
+		75C83FF51B4879F3007122A9 /* GingersHouseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C83FF41B4879F3007122A9 /* GingersHouseViewController.m */; };
+		75C83FF81B497444007122A9 /* goblin_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75C83FF61B497444007122A9 /* goblin_anim.atlasc */; };
+		75C83FFB1B49746F007122A9 /* NNKGoblinNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C83FFA1B49746F007122A9 /* NNKGoblinNode.m */; };
+		75C83FFE1B49882C007122A9 /* sheep_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75C83FFC1B49882C007122A9 /* sheep_anim.atlasc */; };
+		75C840011B49883C007122A9 /* NNKSheepNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C840001B49883C007122A9 /* NNKSheepNode.m */; };
 		75C84D561ADBD868006359E9 /* ChaptersViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C84D551ADBD868006359E9 /* ChaptersViewModel.m */; };
 		75C84D591ADBD955006359E9 /* FontSelectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C84D581ADBD955006359E9 /* FontSelectViewModel.m */; };
 		75CC87E91AD0238D00F6C59E /* MainScreenViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */; };
@@ -262,6 +267,8 @@
 		75EDA1841A83FBCA002546E0 /* shadow_wrong_position.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75EDA1831A83FBCA002546E0 /* shadow_wrong_position.plist */; };
 		75EDA1871A83FE7E002546E0 /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDA1861A83FE7E002546E0 /* Storage.m */; };
 		75EDA1921A840F31002546E0 /* NNWVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDA18F1A840F31002546E0 /* NNWVideoViewController.m */; };
+		75EE39651B41D74100BF9A55 /* skelet_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75EE39631B41D74100BF9A55 /* skelet_anim.atlasc */; };
+		75EE39681B41D75900BF9A55 /* NNKSkeletNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EE39671B41D75900BF9A55 /* NNKSkeletNode.m */; };
 		75F1DB201A86D758005ACBA7 /* UIDevice+ScreenSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F1DB1F1A86D758005ACBA7 /* UIDevice+ScreenSize.m */; };
 		75FF2F111B22311D008EB9AA /* NNKJustacreepNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FF2F101B22311D008EB9AA /* NNKJustacreepNode.m */; };
 		75FF2F141B22312B008EB9AA /* justacreep_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75FF2F121B22312B008EB9AA /* justacreep_anim.atlasc */; };
@@ -409,6 +416,16 @@
 		75C12A721A754B6C0075FD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		75C12A781A754B6D0075FD8D /* WorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C12A7D1A754B6D0075FD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C83FF31B4879F3007122A9 /* GingersHouseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GingersHouseViewController.h; sourceTree = "<group>"; };
+		75C83FF41B4879F3007122A9 /* GingersHouseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GingersHouseViewController.m; sourceTree = "<group>"; };
+		75C83FF61B497444007122A9 /* goblin_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = goblin_anim.atlasc; sourceTree = "<group>"; };
+		75C83FF71B497444007122A9 /* goblin_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = goblin_anim.h; sourceTree = "<group>"; };
+		75C83FF91B49746F007122A9 /* NNKGoblinNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKGoblinNode.h; sourceTree = "<group>"; };
+		75C83FFA1B49746F007122A9 /* NNKGoblinNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKGoblinNode.m; sourceTree = "<group>"; };
+		75C83FFC1B49882C007122A9 /* sheep_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sheep_anim.atlasc; sourceTree = "<group>"; };
+		75C83FFD1B49882C007122A9 /* sheep_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sheep_anim.h; sourceTree = "<group>"; };
+		75C83FFF1B49883C007122A9 /* NNKSheepNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKSheepNode.h; sourceTree = "<group>"; };
+		75C840001B49883C007122A9 /* NNKSheepNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKSheepNode.m; sourceTree = "<group>"; };
 		75C84D531ADBD7BD006359E9 /* BookOptionsProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookOptionsProtocol.h; sourceTree = "<group>"; };
 		75C84D541ADBD868006359E9 /* ChaptersViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChaptersViewModel.h; sourceTree = "<group>"; };
 		75C84D551ADBD868006359E9 /* ChaptersViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaptersViewModel.m; sourceTree = "<group>"; };
@@ -617,6 +634,10 @@
 		75EDA1861A83FE7E002546E0 /* Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Storage.m; sourceTree = "<group>"; };
 		75EDA18E1A840F31002546E0 /* NNWVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNWVideoViewController.h; sourceTree = "<group>"; };
 		75EDA18F1A840F31002546E0 /* NNWVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNWVideoViewController.m; sourceTree = "<group>"; };
+		75EE39631B41D74100BF9A55 /* skelet_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skelet_anim.atlasc; sourceTree = "<group>"; };
+		75EE39641B41D74100BF9A55 /* skelet_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = skelet_anim.h; sourceTree = "<group>"; };
+		75EE39661B41D75900BF9A55 /* NNKSkeletNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKSkeletNode.h; sourceTree = "<group>"; };
+		75EE39671B41D75900BF9A55 /* NNKSkeletNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKSkeletNode.m; sourceTree = "<group>"; };
 		75F1DB1E1A86D758005ACBA7 /* UIDevice+ScreenSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ScreenSize.h"; sourceTree = "<group>"; };
 		75F1DB1F1A86D758005ACBA7 /* UIDevice+ScreenSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ScreenSize.m"; sourceTree = "<group>"; };
 		75FF2F0F1B22311D008EB9AA /* NNKJustacreepNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKJustacreepNode.h; sourceTree = "<group>"; };
@@ -695,7 +716,17 @@
 				75FF2F101B22311D008EB9AA /* NNKJustacreepNode.m */,
 				75FF2FA71B224A22008EB9AA /* NNKMystieNode.h */,
 				75FF2FA81B224A22008EB9AA /* NNKMystieNode.m */,
+				75EE39661B41D75900BF9A55 /* NNKSkeletNode.h */,
+				75EE39671B41D75900BF9A55 /* NNKSkeletNode.m */,
+				75C83FF91B49746F007122A9 /* NNKGoblinNode.h */,
+				75C83FFA1B49746F007122A9 /* NNKGoblinNode.m */,
+				75C83FFF1B49883C007122A9 /* NNKSheepNode.h */,
+				75C840001B49883C007122A9 /* NNKSheepNode.m */,
 				750380031B1A3B8900CB0B83 /* CustomNodeProtocol.h */,
+				75C83FF61B497444007122A9 /* goblin_anim.atlasc */,
+				75C83FF71B497444007122A9 /* goblin_anim.h */,
+				75EE39631B41D74100BF9A55 /* skelet_anim.atlasc */,
+				75EE39641B41D74100BF9A55 /* skelet_anim.h */,
 				75FF2F121B22312B008EB9AA /* justacreep_anim.atlasc */,
 				75FF2F131B22312B008EB9AA /* justacreep_anim.h */,
 				7505693A1B1E56BB008DE162 /* lantern_house.atlasc */,
@@ -724,6 +755,8 @@
 				750569251B1E5177008DE162 /* cafe_frames.h */,
 				750569261B1E5177008DE162 /* lighthouse_frames.atlasc */,
 				750569271B1E5177008DE162 /* lighthouse_frames.h */,
+				75C83FFC1B49882C007122A9 /* sheep_anim.atlasc */,
+				75C83FFD1B49882C007122A9 /* sheep_anim.h */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -833,6 +866,8 @@
 				75423AA21A7D8A4000D2C36E /* BaseViewController.m */,
 				75C12A691A754B6C0075FD8D /* ViewController.h */,
 				75C12A6A1A754B6C0075FD8D /* ViewController.m */,
+				75C83FF31B4879F3007122A9 /* GingersHouseViewController.h */,
+				75C83FF41B4879F3007122A9 /* GingersHouseViewController.m */,
 				75CC87E71AD0238D00F6C59E /* MainScreenViewModel.h */,
 				75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */,
 				75A1251A1AD078E300BDFB7F /* AboutViewController.h */,
@@ -1430,6 +1465,7 @@
 				75DC67F21A816AA100D6A553 /* shadow_character6_part15.png in Resources */,
 				75DC67F31A816AA100D6A553 /* shadow_character6_part2.png in Resources */,
 				75DC67AE1A816AA100D6A553 /* shadow_character2_part13.png in Resources */,
+				75C83FFE1B49882C007122A9 /* sheep_anim.atlasc in Resources */,
 				75DC67B81A816AA100D6A553 /* shadow_character3_part10.png in Resources */,
 				75DFE10A1A800CE500CE9E69 /* Shadow_portret_border_8.png in Resources */,
 				75DC680F1A816AA100D6A553 /* shadow_character8_part1.png in Resources */,
@@ -1502,8 +1538,10 @@
 				75DC67A11A816AA100D6A553 /* shadow_character1_part12.png in Resources */,
 				75DC68211A816AA100D6A553 /* shadow_character8_part3.png in Resources */,
 				75DC680D1A816AA100D6A553 /* shadow_character7_part8.png in Resources */,
+				75EE39651B41D74100BF9A55 /* skelet_anim.atlasc in Resources */,
 				75DC67E31A816AA100D6A553 /* shadow_character5_part14.png in Resources */,
 				75DC66E41A81520A00D6A553 /* full_portret_shadow_2.png in Resources */,
+				75C83FF81B497444007122A9 /* goblin_anim.atlasc in Resources */,
 				75DC67DD1A816AA100D6A553 /* shadow_character4_part9.png in Resources */,
 				75DC67F11A816AA100D6A553 /* shadow_character6_part14.png in Resources */,
 				75DC67E21A816AA100D6A553 /* shadow_character5_part13.png in Resources */,
@@ -1604,6 +1642,7 @@
 				75AD2E911ADAD193002EE482 /* BookOptionsViewController.m in Sources */,
 				75E86E231A82BE3F00419776 /* NNKShapedButton.m in Sources */,
 				75C84D561ADBD868006359E9 /* ChaptersViewModel.m in Sources */,
+				75C840011B49883C007122A9 /* NNKSheepNode.m in Sources */,
 				75C12A6B1A754B6C0075FD8D /* ViewController.m in Sources */,
 				75A1251F1AD08DC400BDFB7F /* NSURL+Helps.m in Sources */,
 				75EDA1871A83FE7E002546E0 /* Storage.m in Sources */,
@@ -1646,6 +1685,7 @@
 				75A125111AD0717800BDFB7F /* TransitionAnimationFromUpToDown.m in Sources */,
 				750380051B1A3B8900CB0B83 /* NNKMinerNode.m in Sources */,
 				75EC14161A7ECF460086803E /* MagicSchoolAnswersHandler.m in Sources */,
+				75C83FF51B4879F3007122A9 /* GingersHouseViewController.m in Sources */,
 				75F1DB201A86D758005ACBA7 /* UIDevice+ScreenSize.m in Sources */,
 				75DFE0C91A8009C800CE9E69 /* CharacterShadowViewController.m in Sources */,
 				75AD2E9A1ADAD193002EE482 /* UIWebView+CSSRule.m in Sources */,
@@ -1654,6 +1694,7 @@
 				75A1251C1AD078E300BDFB7F /* AboutViewController.m in Sources */,
 				75EDA1921A840F31002546E0 /* NNWVideoViewController.m in Sources */,
 				75E237661A85454B00BE6540 /* UIFont+CustomFonts.m in Sources */,
+				75C83FFB1B49746F007122A9 /* NNKGoblinNode.m in Sources */,
 				75E237741A8557CA00BE6540 /* NSBundle+Language.m in Sources */,
 				750569221B1E5168008DE162 /* NNKLighthouseNode.m in Sources */,
 				75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */,
@@ -1664,6 +1705,7 @@
 				7503800C1B1A3B8900CB0B83 /* NNKLanternHouseNode.m in Sources */,
 				75C12A681A754B6C0075FD8D /* AppDelegate.m in Sources */,
 				75C12A651A754B6C0075FD8D /* main.m in Sources */,
+				75EE39681B41D75900BF9A55 /* NNKSkeletNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,7 +25,9 @@
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:7];
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:8];
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:1];
-    
+    [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeWrench
+                                                   withFormat:InventaryIconShowingEmpty];
+
     return YES;
 }
 

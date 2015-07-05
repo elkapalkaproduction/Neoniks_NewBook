@@ -7,11 +7,16 @@
 //
 
 #import "NNKShapedButton.h"
+#import "SettingsBarIconViewController.h"
+
 @class DragableButton;
 
 @protocol DragableButtonDelegate <NSObject>
 
 - (BOOL)correctTargetPositionForButton:(DragableButton *)button;
+@optional
+- (void)putButtonOnRightPosition:(DragableButton *)button;
+- (void)didStartDragButton:(DragableButton *)button;
 
 @end
 
@@ -19,5 +24,7 @@
 
 @property (assign, nonatomic) CGRect correctRect;
 @property (weak, nonatomic) id <DragableButtonDelegate> delegate;
+@property (assign, nonatomic) InventaryBarIconType hiddenType;
+@property (assign, nonatomic) InventaryBarIconType fullType;
 
 @end

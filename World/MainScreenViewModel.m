@@ -12,7 +12,7 @@
 #import "AboutViewController.h"
 #import "AlertViewController.h"
 #import "Animator.h"
-
+#import "DragableButton.h"
 #import "ShadowPlayOpenedHandler.h"
 #import "MagicSchoolAnswersHandler.h"
 #import "IslandViewModel.h"
@@ -143,6 +143,15 @@ NSString *const AppID = @"899196882";
         default:
             break;
     }
+}
+
+
+- (void)settingBar:(SettingsBarIconViewController *)settings
+didSwipeIconWithType:(SettingsBarIconType)type
+            inRect:(CGRect)rect
+     relatedToView:(UIView *)view
+             image:(UIImage *)image {
+    [self.delegate didSwipeIconWithType:type inRect:rect relatedToView:view image:image];
 }
 
 @end

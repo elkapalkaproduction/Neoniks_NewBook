@@ -34,7 +34,7 @@
 
 + (instancetype)instantiateWithFrame:(CGRect)frame
                                 type:(SettingsBarIconType)type
-                           delegate:(id<SettingsBarIconDelegate>)delegate {
+                            delegate:(id<SettingsBarIconDelegate>)delegate {
     SettingsBarIconViewController *viewController = [self instantiateWithFrame:frame type:type];
     viewController.delegate = delegate;
     
@@ -81,8 +81,6 @@
         self.selector = @selector(selectIcon:);
     }
     [self.icon addTarget:self.target action:self.selector forControlEvents:UIControlEventTouchUpInside];
-
-    // Do any additional setup after loading the view.
 }
 
 
@@ -151,6 +149,22 @@
 
 - (IBAction)selectIcon:(id)sender {
     [self.delegate settingBar:self didPressIconWithType:self.type];
+    [self swipe:sender];
+}
+
+
+- (IBAction)swipe:(id)sender {
+    BOOL isNotSword = self.type != SettingsBarIconTypeSword;
+    BOOL isNotWrench = self.type != SettingsBarIconTypeWrench;
+    BOOL isNotSnail = self.type != SettingsBarIconTypeSnail;
+    BOOL isNotDandelion = self.type != SettingsBarIconTypeDandelion;
+    BOOL isNotExtinguisher = self.type != SettingsBarIconTypeExtinguisher;
+    BOOL isNotFull = self.format != InventaryIconShowingFull;
+    if (isNotSword && isNotSnail && isNotWrench && isNotDandelion && isNotExtinguisher) return;
+    if (isNotFull) return;
+    if ([self.delegate respondsToSelector:@selector(settingBar:didSwipeIconWithType:inRect:relatedToView:image:)]) {
+        [self.delegate settingBar:self didSwipeIconWithType:self.type inRect:self.view.frame relatedToView:self.view.superview image:[self.icon imageForState:UIControlStateNormal]];
+    }
 }
 
 @end

@@ -313,6 +313,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 
 - (void)loadLockedCharacter:(ShadowCharacter)character {
+    self.scene.node = nil;
     self.descriptionLabel.hidden = YES;
     self.fullPortret.image = [UIImage imageNamed:[NSString stringWithFormat:NSPImagePatternPortraitShadow, (long)character]];
     self.viewForElements.hidden = NO;

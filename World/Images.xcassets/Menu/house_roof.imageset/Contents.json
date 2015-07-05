@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "menu__0000s_0007-1_домик-кассы.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x",
-      "filename" : "menu__0000s_0010_Овца.png"
+      "scale" : "3x"
     }
   ],
   "info" : {

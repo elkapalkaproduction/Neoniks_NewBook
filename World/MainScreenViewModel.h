@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "SettingsBarIconViewController.h"
+
 typedef NS_ENUM(NSInteger, MainScreenTopBarViewType) {
     MainScreenTopBarViewTypeUndefinied,
     MainScreenTopBarViewTypeSettings,
@@ -20,6 +22,10 @@ typedef NS_ENUM(NSInteger, MainScreenTopBarViewType) {
 
 - (void)didChangeLanguageInMainScreenViewModel:(MainScreenViewModel *)viewModel;
 - (void)mainScreenViewModel:(MainScreenViewModel *)viewModel didWantToOpenViewController:(UIViewController *)viewController;
+- (void)didSwipeIconWithType:(SettingsBarIconType)type
+                      inRect:(CGRect)rect
+               relatedToView:(UIView *)view
+                       image:(UIImage *)image;
 
 @end
 

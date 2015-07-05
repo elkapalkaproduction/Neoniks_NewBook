@@ -60,6 +60,8 @@ typedef NS_ENUM(NSInteger, InventaryIconShowing) {
 @protocol SettingsBarIconDelegate <NSObject>
 
 - (void)settingBar:(SettingsBarIconViewController *)settings didPressIconWithType:(SettingsBarIconType)type;
+@optional
+- (void)settingBar:(SettingsBarIconViewController *)settings didSwipeIconWithType:(SettingsBarIconType)type inRect:(CGRect)rect relatedToView:(UIView *)view image:(UIImage *)image;
 
 @end
 

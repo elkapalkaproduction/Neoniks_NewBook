@@ -46,6 +46,9 @@
     if ([sender state] == UIGestureRecognizerStateBegan) {
         self.firstX = [self center].x;
         self.firstY = [self center].y;
+        if ([self.delegate respondsToSelector:@selector(didStartDragButton:)]) {
+            [self.delegate didStartDragButton:self];
+        }
     }
     translatedPoint = CGPointMake(self.firstX + translatedPoint.x, self.firstY + translatedPoint.y);
 
@@ -66,6 +69,9 @@
     BOOL correctPosition = [self.delegate correctTargetPositionForButton:self];
     if (correctPosition) {
         [self removeDragableProperty];
+        if ([self.delegate respondsToSelector:@selector(putButtonOnRightPosition:)]) {
+            [self.delegate putButtonOnRightPosition:self];
+        }
     } else {
         [UIView animateWithDuration:0.4 animations:^{
              self.center = CGPointMake(self.firstX, self.firstY);

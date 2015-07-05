@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsBarIconViewController">
@@ -18,12 +18,13 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyB-5A-avz">
                     <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+                    <gestureRecognizers/>
                     <state key="normal" image="top_bar_about_icon">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_bar_about_text_en" translatesAutoresizingMaskIntoConstraints="NO" id="v2G-Kw-s83">
-                    <rect key="frame" x="-14" y="32" width="82" height="22"/>
+                    <rect key="frame" x="-13.5" y="32" width="81" height="22"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -37,7 +38,15 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="g7P-l2-wWd" appends="YES" id="Ndz-l5-0zb"/>
+            </connections>
         </view>
+        <swipeGestureRecognizer direction="down" id="g7P-l2-wWd">
+            <connections>
+                <action selector="swipe:" destination="-1" id="fY6-5s-9HT"/>
+            </connections>
+        </swipeGestureRecognizer>
     </objects>
     <resources>
         <image name="top_bar_about_icon" width="54" height="54"/>

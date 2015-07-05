@@ -21,11 +21,11 @@
 @interface PopUpViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
-@property (weak, nonatomic) IBOutlet UIImageView *contentImage;
 @property (weak, nonatomic) IBOutlet UIImageView *topBanner;
 @property (weak, nonatomic) id<PopUpDelegate> delegate;
 @property (assign, nonatomic) PopUpType type;
 @property (strong, nonatomic) MyScene *scene;
+@property (strong, nonatomic) IBOutlet SKView *skView;
 
 @end
 
@@ -51,16 +51,6 @@
 }
 
 
-- (SKView *)skViewWithSize:(CGRect)frame node:(SKNode<CustomNodeProtocol> *)node {
-    SKView *skView = [[SKView alloc] initWithFrame:frame];
-    skView.allowsTransparency = YES;
-    self.scene = [self sceneWithFrame:frame node:node];
-    [skView presentScene:self.scene];
-    
-    return skView;
-}
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.label.font = [UIFont baseFontOfSize:16.f];
@@ -79,12 +69,19 @@
     [attributedString addAttribute:NSKernAttributeName value:@(1.4) range:NSMakeRange(0, [localizedText length])];
     self.label.attributedText = attributedString;
     self.topBanner.image = [UIImage imageNamed:NSLocalizedString(bannerImageName, nil)];
-    CGRect frame = self.contentImage.bounds;
-    SKView *skView = [self skViewWithSize:frame node:nil];
-    
-    [self.contentImage addSubview:skView];
+    self.skView.allowsTransparency = YES;
 
     [self setupContentImage];
+}
+
+
+- (MyScene *)scene {
+    if (!_scene) {
+        _scene = [self sceneWithFrame:self.skView.frame node:nil];
+        [self.skView presentScene:_scene];
+    }
+    
+    return _scene;
 }
 
 
@@ -101,9 +98,7 @@
 
 
 - (void)setupContentImage {
-    CGSize size = self.contentImage.bounds.size;
-    self.contentImage.image = nil;
-    self.contentImage.userInteractionEnabled = YES;
+    CGSize size = self.skView.bounds.size;
     switch (self.type) {
         case PopUpTypeMuseum:
             self.scene.node = [[NNKMuseumNode alloc] initWithSize:size];
