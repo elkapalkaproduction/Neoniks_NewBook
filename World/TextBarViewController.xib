@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="TextBarViewController">
+            <rect key="frame" x="0.0" y="0.0" width="1172" height="203"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text_panel_background" translatesAutoresizingMaskIntoConstraints="NO" id="JBU-0E-HgR">
+                    <rect key="frame" x="0.0" y="0.0" width="1172" height="203"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnZ-xZ-JiJ">
+                    <rect key="frame" x="565" y="91.5" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text_panel_teacher" translatesAutoresizingMaskIntoConstraints="NO" id="IUy-dn-D9y">
+                    <rect key="frame" x="1009" y="52" width="153" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="IUy-dn-D9y" secondAttribute="height" multiplier="153:100" id="5u0-Ac-0ec"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inventary_full_magic_wand_icon" translatesAutoresizingMaskIntoConstraints="NO" id="eS8-BH-VbR">
+                    <rect key="frame" x="10" y="33" width="137" height="137"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="eS8-BH-VbR" secondAttribute="height" multiplier="1:1" id="29J-Qm-bj1"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JBU-0E-HgR" secondAttribute="bottom" id="2dG-eh-YUj"/>
+                <constraint firstItem="IUy-dn-D9y" firstAttribute="height" secondItem="JBU-0E-HgR" secondAttribute="height" multiplier="100:203" id="FfL-hU-Rga"/>
+                <constraint firstItem="JBU-0E-HgR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="H8a-Dm-NWG"/>
+                <constraint firstAttribute="centerX" secondItem="TnZ-xZ-JiJ" secondAttribute="centerX" id="JaS-Wc-d7b"/>
+                <constraint firstAttribute="centerY" secondItem="eS8-BH-VbR" secondAttribute="centerY" id="PJ9-st-mib"/>
+                <constraint firstAttribute="trailing" secondItem="IUy-dn-D9y" secondAttribute="trailing" constant="10" id="REc-7r-7Lg"/>
+                <constraint firstAttribute="trailing" secondItem="JBU-0E-HgR" secondAttribute="trailing" id="SXx-kh-tuP"/>
+                <constraint firstAttribute="centerY" secondItem="IUy-dn-D9y" secondAttribute="centerY" id="csP-3L-4TB"/>
+                <constraint firstItem="eS8-BH-VbR" firstAttribute="height" secondItem="JBU-0E-HgR" secondAttribute="height" multiplier="137:203" id="l5U-u2-3lV"/>
+                <constraint firstAttribute="centerY" secondItem="TnZ-xZ-JiJ" secondAttribute="centerY" id="mI1-JH-qUk"/>
+                <constraint firstItem="eS8-BH-VbR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="qwF-Bw-Xek"/>
+                <constraint firstItem="JBU-0E-HgR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yzX-7X-bft"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="characterIcon" destination="IUy-dn-D9y" id="ht6-W0-Fey"/>
+                <outlet property="label" destination="TnZ-xZ-JiJ" id="0UT-Pg-vC5"/>
+                <outlet property="objectIcon" destination="eS8-BH-VbR" id="wkn-at-zGb"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="inventary_full_magic_wand_icon" width="91" height="91"/>
+        <image name="text_panel_background" width="586" height="101"/>
+        <image name="text_panel_teacher" width="153" height="100"/>
+    </resources>
+</document>

@@ -10,6 +10,7 @@
 #import "IslandViewModel.h"
 #import "PopUpViewController.h"
 #import "InventaryContentHandler.h"
+#import "TextBarViewController.h"
 
 @interface IslandViewController () <UIScrollViewDelegate, IslandViewModelDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
@@ -21,6 +22,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *currentToFindImage;
 @property (strong, nonatomic) NSLayoutConstraint *currentToFindViewConstraint;
 @property (weak, nonatomic) IBOutlet UIView *prizeView;
+@property (weak, nonatomic) IBOutlet UIView *textBarSuperView;
+@property (strong, nonatomic) TextBarViewController *textBar;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
 
 @end
 
@@ -90,11 +94,13 @@
     [self addOneTapGesture];
     self.mainScrollView.delegate = self;
     [self leftBarSetup];
+    self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
 }
 
 
 - (void)viewDidLayoutSubviews {
     [self setupScales];
+    self.textBar.frame = self.textBarSuperView.bounds;
     [super viewDidLayoutSubviews];
 }
 
@@ -177,6 +183,7 @@
         imageView.hidden = YES;
     }
     self.prizeView.hidden = NO;
+    [self prizeDidAppear];
 }
 
 
@@ -187,6 +194,75 @@
     self.prizeView.hidden = YES;
     [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeIslandMap
                                                    withFormat:InventaryIconShowingFull];
+}
+
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    if ([self shouldShowWelcomeAlert]) {
+        [self openTextBarWithIcon:[UIImage imageNamed:@"text_panel_ginger"]
+                             text:@"text_panel_island_initial"
+                         isObject:NO];
+        [self performSelector:@selector(closeTextBarWithCompletionBlock:) withObject:nil afterDelay:5.f];
+    }
+}
+
+
+- (TextBarViewController *)textBar {
+    if (!_textBar) {
+        _textBar = [[TextBarViewController alloc] init];
+        [self.textBarSuperView addSubview:_textBar];
+    }
+    
+    return _textBar;
+}
+
+
+- (void)openTextBarWithIcon:(UIImage *)image
+                       text:(NSString *)text
+                   isObject:(BOOL)isObject {
+    [self closeTextBarWithCompletionBlock:^{
+        self.textBar.image = image;
+        self.textBar.text = NSLocalizedString(text, nil);
+        self.textBar.object = isObject;
+        self.textBarBottomConstraint.constant = [self textBarOpenPosition];
+        [UIView animateWithDuration:0.3 animations:^{
+            [self.view layoutIfNeeded];
+        }];
+    }];
+}
+
+
+- (void)closeTextBarWithCompletionBlock:(void (^)(void))completion {
+    self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
+    [UIView animateWithDuration:0.3 animations:^{
+        [self.view layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        if (completion) completion();
+    }];
+}
+
+
+- (void)prizeDidAppear {
+    [self openTextBarWithIcon:[UIImage imageNamed:@"text_panel_ginger"]
+                         text:@"text_panel_island_final"
+                     isObject:NO];
+    [self performSelector:@selector(closeTextBarWithCompletionBlock:) withObject:nil afterDelay:5.f];
+}
+
+
+- (BOOL)shouldShowWelcomeAlert {
+    return !self.currentToFindView.hidden;
+}
+
+
+- (CGFloat)textBarHiddenPosition {
+    return -self.textBarSuperView.frame.size.height - 10;
+}
+
+
+- (CGFloat)textBarOpenPosition {
+    return 5;
 }
 
 @end

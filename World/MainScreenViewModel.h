@@ -27,6 +27,8 @@ typedef NS_ENUM(NSInteger, MainScreenTopBarViewType) {
                relatedToView:(UIView *)view
                        image:(UIImage *)image;
 
+- (void)didRequireToOpenTextBarWithIcon:(UIImage *)image text:(NSString *)text isObject:(BOOL)isObject;
+
 @end
 
 @interface MainScreenViewModel : NSObject

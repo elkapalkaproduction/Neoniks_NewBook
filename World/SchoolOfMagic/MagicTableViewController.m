@@ -213,6 +213,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
     self.questionText.hidden = YES;
     self.answerImage.hidden = YES;
     self.prizeView.hidden = NO;
+    [self.delegate prizeDidAppear];
 }
 
 

@@ -78,7 +78,7 @@ NSString *const AppID = @"899196882";
     UIViewController *viewController = [self viewControllerForIndex:index rect:rect];
     if (!viewController) return [UIView new];
     [parentViewController addChildViewController:viewController withSuperview:nil];
-
+    
     return viewController.view;
 }
 
@@ -87,10 +87,10 @@ NSString *const AppID = @"899196882";
     AlertViewController *alert = [AlertViewController initWithTitle:NSLocalizedString(@"alert_start_over", nil)
                                                    firstButtonTitle:NSLocalizedString(@"alert_yes", nil)
                                                   firstButtonAction:^{
-                                                       [[ShadowPlayOpenedHandler sharedHandler] resetOpenedCharacter];
-                                                       [[MagicSchoolAnswersHandler sharedHandler] deleteAllAnswers];
-                                                       [IslandViewModel deleteAnswers];
-                                                   }
+                                                      [[ShadowPlayOpenedHandler sharedHandler] resetOpenedCharacter];
+                                                      [[MagicSchoolAnswersHandler sharedHandler] deleteAllAnswers];
+                                                      [IslandViewModel deleteAnswers];
+                                                  }
                                                   secondButtonTitle:NSLocalizedString(@"alert_no", nil)
                                                  secondButtonAction:nil];
     [alert showInViewController:self.delegate];
@@ -140,6 +140,23 @@ NSString *const AppID = @"899196882";
             break;
         case SettingsBarIconTypeSound:
             break;
+        case SettingsBarIconTypeIslandMap:
+        case SettingsBarIconTypeMagicWand:
+        case SettingsBarIconTypeMagicBook:
+        case SettingsBarIconTypeMedal:
+        case SettingsBarIconTypeBottleOfMagic:
+        case SettingsBarIconTypeMagicBall:
+        case SettingsBarIconTypeExtinguisher:
+        case SettingsBarIconTypeDandelion:
+        case SettingsBarIconTypeSword:
+        case SettingsBarIconTypeWrench:
+        case SettingsBarIconTypeSnail:
+            if (settings.format == InventaryIconShowingEmpty) {
+                [self.delegate didRequireToOpenTextBarWithIcon:[UIImage imageNamed:[self imageNameFromSettingType:type]]
+                                                          text:NSLocalizedString([self textFromSettingsType:type], nil)
+                                                      isObject:YES];
+            }
+            break;
         default:
             break;
     }
@@ -152,6 +169,63 @@ didSwipeIconWithType:(SettingsBarIconType)type
      relatedToView:(UIView *)view
              image:(UIImage *)image {
     [self.delegate didSwipeIconWithType:type inRect:rect relatedToView:view image:image];
+}
+
+
+- (NSString *)imageNameFromSettingType:(SettingsBarIconType)type {
+    switch (type) {
+        case SettingsBarIconTypeIslandMap:
+            return @"inventary_full_island_map_icon";
+        case SettingsBarIconTypeMagicWand:
+            return @"inventary_full_magic_wand_icon";
+        case SettingsBarIconTypeMagicBook:
+            return @"inventary_full_book_icon";
+        case SettingsBarIconTypeMedal:
+            return @"inventary_full_medal_icon";
+        case SettingsBarIconTypeBottleOfMagic:
+            return @"inventary_full_bottle_icon";
+        case SettingsBarIconTypeMagicBall:
+            return @"inventary_full_ball_of_magic_icon";
+        case SettingsBarIconTypeExtinguisher:
+            return @"inventary_full_extinguisher_icon";
+        case SettingsBarIconTypeDandelion:
+            return @"inventary_full_dandelion_icon";
+        case SettingsBarIconTypeSword:
+            return @"inventary_full_sword_icon";
+        case SettingsBarIconTypeWrench:
+            return @"inventary_full_wrench_icon";
+        case SettingsBarIconTypeSnail:
+            return @"inventary_full_snail_icon";
+        default:
+            return @"";
+    }
+}
+
+
+- (NSString *)textFromSettingsType:(SettingsBarIconType)type {
+    switch (type) {
+        case SettingsBarIconTypeIslandMap:
+            return @"text_panel_island";
+        case SettingsBarIconTypeMagicWand:
+            return @"text_panel_wand";
+        case SettingsBarIconTypeMagicBook:
+            return @"text_panel_book";
+        case SettingsBarIconTypeMedal:
+            return @"text_panel_medal";
+        case SettingsBarIconTypeBottleOfMagic:
+            return @"text_panel_bottle";
+        case SettingsBarIconTypeMagicBall:
+            return @"text_panel_magic_ball";
+        case SettingsBarIconTypeExtinguisher:
+            return @"text_panel_extinguisher";
+        case SettingsBarIconTypeDandelion:
+        case SettingsBarIconTypeSword:
+        case SettingsBarIconTypeWrench:
+        case SettingsBarIconTypeSnail:
+            return @"text_panel_other";
+        default:
+            return @"";
+    }
 }
 
 @end

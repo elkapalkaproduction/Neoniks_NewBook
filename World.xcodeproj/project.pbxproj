@@ -80,6 +80,8 @@
 		75C83FFB1B49746F007122A9 /* NNKGoblinNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C83FFA1B49746F007122A9 /* NNKGoblinNode.m */; };
 		75C83FFE1B49882C007122A9 /* sheep_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75C83FFC1B49882C007122A9 /* sheep_anim.atlasc */; };
 		75C840011B49883C007122A9 /* NNKSheepNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C840001B49883C007122A9 /* NNKSheepNode.m */; };
+		75C840051B49A6F1007122A9 /* TextBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C840031B49A6F1007122A9 /* TextBarViewController.m */; };
+		75C840061B49A6F1007122A9 /* TextBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C840041B49A6F1007122A9 /* TextBarViewController.xib */; };
 		75C84D561ADBD868006359E9 /* ChaptersViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C84D551ADBD868006359E9 /* ChaptersViewModel.m */; };
 		75C84D591ADBD955006359E9 /* FontSelectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C84D581ADBD955006359E9 /* FontSelectViewModel.m */; };
 		75CC87E91AD0238D00F6C59E /* MainScreenViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */; };
@@ -426,6 +428,9 @@
 		75C83FFD1B49882C007122A9 /* sheep_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sheep_anim.h; sourceTree = "<group>"; };
 		75C83FFF1B49883C007122A9 /* NNKSheepNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKSheepNode.h; sourceTree = "<group>"; };
 		75C840001B49883C007122A9 /* NNKSheepNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKSheepNode.m; sourceTree = "<group>"; };
+		75C840021B49A6F1007122A9 /* TextBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBarViewController.h; sourceTree = "<group>"; };
+		75C840031B49A6F1007122A9 /* TextBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextBarViewController.m; sourceTree = "<group>"; };
+		75C840041B49A6F1007122A9 /* TextBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextBarViewController.xib; sourceTree = "<group>"; };
 		75C84D531ADBD7BD006359E9 /* BookOptionsProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookOptionsProtocol.h; sourceTree = "<group>"; };
 		75C84D541ADBD868006359E9 /* ChaptersViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChaptersViewModel.h; sourceTree = "<group>"; };
 		75C84D551ADBD868006359E9 /* ChaptersViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaptersViewModel.m; sourceTree = "<group>"; };
@@ -878,6 +883,9 @@
 				755CDE0F1AECE1BE0095B6DF /* InventaryContentHandler.m */,
 				755CDE131AECE3380095B6DF /* InventaryItemOption.h */,
 				755CDE141AECE3380095B6DF /* InventaryItemOption.m */,
+				75C840021B49A6F1007122A9 /* TextBarViewController.h */,
+				75C840031B49A6F1007122A9 /* TextBarViewController.m */,
+				75C840041B49A6F1007122A9 /* TextBarViewController.xib */,
 				75037F9B1B1A3B6800CB0B83 /* Animations */,
 				75AD2E7B1ADAD18D002EE482 /* Epub Book */,
 				7530D6B41AD068E60063F124 /* TopBar */,
@@ -1533,6 +1541,7 @@
 				75DFE1091A800CE500CE9E69 /* Shadow_portret_border_7.png in Resources */,
 				75DC67F41A816AA100D6A553 /* shadow_character6_part3.png in Resources */,
 				75DC67BE1A816AA100D6A553 /* shadow_character3_part2.png in Resources */,
+				75C840061B49A6F1007122A9 /* TextBarViewController.xib in Resources */,
 				75DC67B71A816AA100D6A553 /* shadow_character3_part1.png in Resources */,
 				75DC67B21A816AA100D6A553 /* shadow_character2_part5.png in Resources */,
 				75DC67A11A816AA100D6A553 /* shadow_character1_part12.png in Resources */,
@@ -1690,6 +1699,7 @@
 				75DFE0C91A8009C800CE9E69 /* CharacterShadowViewController.m in Sources */,
 				75AD2E9A1ADAD193002EE482 /* UIWebView+CSSRule.m in Sources */,
 				750380071B1A3B8900CB0B83 /* NNKWandaNode.m in Sources */,
+				75C840051B49A6F1007122A9 /* TextBarViewController.m in Sources */,
 				75A125181AD071B400BDFB7F /* TransitionAnimationDisolve.m in Sources */,
 				75A1251C1AD078E300BDFB7F /* AboutViewController.m in Sources */,
 				75EDA1921A840F31002546E0 /* NNWVideoViewController.m in Sources */,

@@ -20,6 +20,7 @@
 #import "NNKPhoebeNode.h"
 #import "NNKJustacreepNode.h"
 #import "NNKMystieNode.h"
+#import "TextBarViewController.h"
 
 NSString *const NSPSegueIdentifierPattern = @"character";
 
@@ -46,6 +47,10 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 @property (weak, nonatomic) IBOutlet UIView *prizeView;
 @property (strong, nonatomic) MyScene *scene;
 @property (strong, nonatomic) SKView *skView;
+
+@property (weak, nonatomic) IBOutlet UIView *textBarSuperView;
+@property (strong, nonatomic) TextBarViewController *textBar;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
 
 @end
 
@@ -89,6 +94,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     } else {
         self.prizeView.hidden = YES;
     }
+    self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
 }
 
 
@@ -103,6 +109,12 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     [super viewDidAppear:animated];
     [self prepareSkView];
     [self didPressCharacter:self.loadedCharacter];
+    if ([self shouldShowWelcomeAlert]) {
+        [self openTextBarWithIcon:[UIImage imageNamed:@"text_panel_ginger"]
+                             text:@"text_panel_shadow_initial"
+                         isObject:NO];
+        [self performSelector:@selector(closeTextBarWithCompletionBlock:) withObject:nil afterDelay:5.f];
+    }
 }
 
 
@@ -349,6 +361,71 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     self.descriptionLabel.hidden = YES;
     self.viewForElements.hidden = YES;
     self.prizeView.hidden = NO;
+    [self prizeDidAppear];
+}
+
+
+- (void)viewDidLayoutSubviews {
+    self.textBar.frame = self.textBarSuperView.bounds;
+    [super viewDidLayoutSubviews];
+}
+
+
+- (TextBarViewController *)textBar {
+    if (!_textBar) {
+        _textBar = [[TextBarViewController alloc] init];
+        [self.textBarSuperView addSubview:_textBar];
+    }
+    
+    return _textBar;
+}
+
+
+- (void)openTextBarWithIcon:(UIImage *)image
+                       text:(NSString *)text
+                   isObject:(BOOL)isObject {
+    [self closeTextBarWithCompletionBlock:^{
+        self.textBar.image = image;
+        self.textBar.text = NSLocalizedString(text, nil);
+        self.textBar.object = isObject;
+        self.textBarBottomConstraint.constant = [self textBarOpenPosition];
+        [UIView animateWithDuration:0.3 animations:^{
+            [self.view layoutIfNeeded];
+        }];
+    }];
+}
+
+
+- (void)closeTextBarWithCompletionBlock:(void (^)(void))completion {
+    self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
+    [UIView animateWithDuration:0.3 animations:^{
+        [self.view layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        if (completion) completion();
+    }];
+}
+
+
+- (void)prizeDidAppear {
+    [self openTextBarWithIcon:[UIImage imageNamed:@"text_panel_ginger"]
+                         text:@"text_panel_shadow_final"
+                     isObject:NO];
+    [self performSelector:@selector(closeTextBarWithCompletionBlock:) withObject:nil afterDelay:5.f];
+}
+
+
+- (BOOL)shouldShowWelcomeAlert {
+    return [[[ShadowPlayOpenedHandler sharedHandler] allOpenedCharacter] count] != 8;
+}
+
+
+- (CGFloat)textBarHiddenPosition {
+    return -self.textBarSuperView.frame.size.height - 10;
+}
+
+
+- (CGFloat)textBarOpenPosition {
+    return 5;
 }
 
 @end

@@ -101,6 +101,29 @@
 "about_page_text" = "The Neoniks project exists to turn little gamers into readers. Through a series of games and cartoons, we get children excited about following the adventures of young Neonik wizards, Phoebe and Jay, and then offer the kids a chance to find out what happens next by completing the book.\n\nThe main reason why children have not learned to read for pleasure is because they simply hadn’t found the right stories to capture their attention.\nWhether it's through interactive games or professional audio voice overs, our job is to introduce kids to the wonderful world of literature and make them come back to it over and over again throughout their lives.\n\nPlease visit our website: www.neoniks.com to get free bonuses and content and to learn about our latest releases.";
 
 
+//text panel objects
+"text_panel_island" = "Go to Cake Island and get the map.";
+"text_panel_wand" = "It is rumored that you can get a magic\nwand at the Shadow Theater.\nWhy don’t you check it out?";
+"text_panel_book" = "Find a book-loving\ndragon underground.";
+"text_panel_bottle" = "A naughty bat has stolen the bottle\nfor storing balls of magic.";
+"text_panel_other" = "Are you afraid of darkness? To bad!\nYou have to go underground.";
+"text_panel_medal" = "Pass the Wizard Test at the\nSchool of Magic\nand receive a gold medal.";
+"text_panel_magic_ball" = "It would take too long to\nexplain where you can get the\nballs of magic. Just ask around.";
+"text_panel_extinguisher" = "A fire-extinguisher can put out a fire\nin a building. Check out the little houses.";
+
+//text panel characters
+"text_panel_goblin_initial" = "Do you have any worms, slugs,\nor snails? No? Uh oh.";
+"text_panel_goblin_final" = "Food for me? Take my wrench.\nI can’t use it as a fork anyway.";
+"text_panel_dragon_initial" = "My throat is burning.\nCan you help?";
+"text_panel_dragon_final" = "Thanks! Good luck\nwith these magic spells!";
+"text_panel_teacher_initial" = "Pass a test in Magic Studies\nand get a gold graduation medal.";
+"text_panel_teacher_final" = "Congratulations! Now you have\na medal with a red bow.\nPretty cool, huh?";
+"text_panel_island_initial" = "Find all the places\nyou are going to visit and\nget a reward - a map of Cake Island.";
+"text_panel_island_final" = "Congratulations! Island, bla bla";
+"text_panel_shadow_initial" = "Assemble the shadows of\n8 fairy tale characters and\nget the magic wand.";
+"text_panel_shadow_final" = "Congratulations!\nYou received a magic wand for\nelementary school children.";
+
+
 "book_name_footer" = "Nenoniks and Mystie the Fox";
 "page_attribute" = "from";
 

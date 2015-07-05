@@ -8,6 +8,14 @@
 
 #import "BaseViewController.h"
 
+@protocol MagicTableDelegate <NSObject>
+
+- (void)prizeDidAppear;
+
+@end
+
 @interface MagicTableViewController : BaseViewController
+
+@property (weak, nonatomic) id<MagicTableDelegate> delegate;
 
 @end

@@ -20,6 +20,7 @@
 #import "NNKSkeletNode.h"
 #import "NNKGoblinNode.h"
 #import "NNKSheepNode.h"
+#import "TextBarViewController.h"
 
 @interface ViewController () <InfiniteTableViewDatasource, MainScreenViewModelDelegate, UIScrollViewDelegate, DragableButtonDelegate>
 
@@ -40,7 +41,11 @@
 @property (strong, nonatomic) NNKGoblinNode *goblinNode;
 @property (weak, nonatomic) IBOutlet SKView *sheepSKView;
 @property (strong, nonatomic) MyScene *sheepScene;
+@property (strong, nonatomic) NNKSheepNode *sheepNode;
 @property (weak, nonatomic) IBOutlet UIView *dragonView;
+@property (weak, nonatomic) IBOutlet UIView *textBarSuperView;
+@property (strong, nonatomic) TextBarViewController *textBar;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
 
 @end
 
@@ -52,7 +57,7 @@
     self.goblinSKView.allowsTransparency = YES;
     self.goblinScene.node = self.goblinNode;
     self.sheepSKView.allowsTransparency = YES;
-    self.sheepScene.node = [[NNKSheepNode alloc] initWithSize:self.sheepSKView.bounds.size];
+    self.sheepScene.node = self.sheepNode;
 }
 
 
@@ -60,6 +65,23 @@
     [super viewDidLoad];
     [self updateInterface];
     [self prepareScenes];
+    self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
+}
+
+
+- (TextBarViewController *)textBar {
+    if (!_textBar) {
+        _textBar = [[TextBarViewController alloc] init];
+        [self.textBarSuperView addSubview:_textBar];
+    }
+    
+    return _textBar;
+}
+
+
+- (void)viewDidLayoutSubviews {
+    self.textBar.frame = self.textBarSuperView.bounds;
+    [super viewDidLayoutSubviews];
 }
 
 
@@ -76,7 +98,7 @@
         BOOL swordIsOpen = [self isOpenIcon:InventaryBarIconTypeSword];
         _skeletNode = [[NNKSkeletNode alloc] initWithSize:self.skeletSKView.bounds.size
                                       showLastFrameOnLoad:swordIsOpen];
-         _skeletNode.disableAnimation = swordIsOpen;
+        _skeletNode.disableAnimation = swordIsOpen;
         _skeletNode.completionBlock = ^void(NNKSkeletNode *node) {
             [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeSword withFormat:InventaryIconShowingFull];
             node.disableAnimation = YES;
@@ -110,9 +132,34 @@
         BOOL isOpenWrench = [self isOpenIcon:InventaryBarIconTypeWrench];
         _goblinNode = [[NNKGoblinNode alloc] initWithSize:self.goblinSKView.bounds.size
                                          shouldHideWrench:isOpenWrench];
+        __weak typeof(self) weakSelf = self;
+        _goblinNode.completionBlock = ^void(NNKGoblinNode *node) {
+            if (![weakSelf isOpenIcon:InventaryBarIconTypeWrench]) {
+                [weakSelf didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_goblin"]
+                                                     text:@"text_panel_goblin_initial"
+                                                 isObject:NO];
+            }
+        };
     }
     
     return _goblinNode;
+}
+
+
+- (NNKSheepNode *)sheepNode {
+    if (!_sheepNode) {
+        _sheepNode = [[NNKSheepNode alloc] initWithSize:self.sheepSKView.bounds.size];
+        //        __weak typeof(self) weakSelf = self;
+        _sheepNode.completionBlock = ^void(NNKSheepNode *node) {
+            //            if (![weakSelf isOpenIcon:InventaryBarIconTypeWrench]) {
+            //                [weakSelf didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_goblin"]
+            //                                                     text:@"text_panel_goblin_initial"
+            //                                                 isObject:NO];
+            //            }
+        };
+    }
+    
+    return _sheepNode;
 }
 
 
@@ -125,16 +172,11 @@
 }
 
 
-- (BOOL)shouldHideItemWithType:(InventaryBarIconType)type {
-    return [[InventaryContentHandler sharedHandler] formatForItemType:type] == InventaryIconShowingFull;
-}
-
-
 - (void)updateInterface {
-    if ([self shouldHideItemWithType:InventaryBarIconTypeDandelion]) {
+    if ([self isOpenIcon:InventaryBarIconTypeDandelion]) {
         [self.dandelionImage removeFromSuperview];
     }
-    if ([self shouldHideItemWithType:InventaryBarIconTypeSnail]) {
+    if ([self isOpenIcon:InventaryBarIconTypeSnail]) {
         [self.snailImage removeFromSuperview];
     }
 }
@@ -177,8 +219,9 @@
 }
 
 
-- (void)closeTopBarWithCompletion:(void(^)())completion {
+- (void)closeTopAndTextBarWithCompletion:(void(^)())completion {
     self.topBarTopConstraint.constant = 0;
+    self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
     [UIView animateWithDuration:0.3 animations:^{
         [self.view layoutIfNeeded];
     }completion:^(BOOL finished) {
@@ -198,7 +241,7 @@
 
 - (void)operOrCloseTopBarForType:(MainScreenTopBarViewType)type {
     if ([self isShowingTopBar]) {
-        [self closeTopBarWithCompletion:^{
+        [self closeTopAndTextBarWithCompletion:^{
             if (self.viewModel.type != type) {
                 self.viewModel.type = type;
                 [self openTopBar];
@@ -223,7 +266,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [self.dragableObject removeFromSuperview];
-    [self closeTopBarWithCompletion:nil];
+    [self closeTopAndTextBarWithCompletion:nil];
 }
 
 
@@ -323,8 +366,15 @@ didWantToOpenViewController:(UIViewController *)viewController {
     [button removeFromSuperview];
     switch (button.fullType) {
         case InventaryBarIconTypeWrench:
+            [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_goblin"]
+                                             text:@"text_panel_goblin_final"
+                                         isObject:NO];
             [self.goblinNode removeWrench];
             break;
+        case InventaryBarIconTypeMagicBook:
+            [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_dragon"]
+                                             text:@"text_panel_dragon_final"
+                                         isObject:NO];
         default:
             break;
     }
@@ -332,7 +382,34 @@ didWantToOpenViewController:(UIViewController *)viewController {
 
 
 - (void)didStartDragButton:(DragableButton *)button {
-    [self closeTopBarWithCompletion:nil];
+    [self closeTopAndTextBarWithCompletion:nil];
+}
+
+
+- (IBAction)showDragonText:(id)sender {
+    if ([self isOpenIcon:InventaryBarIconTypeMagicBook]) return;
+    [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_dragon"]
+                                     text:@"text_panel_dragon_initial"
+                                 isObject:NO];
+    
+}
+
+
+- (void)didRequireToOpenTextBarWithIcon:(UIImage *)image
+                                   text:(NSString *)text
+                               isObject:(BOOL)isObject {
+    self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
+    [UIView animateWithDuration:0.3 animations:^{
+        [self.view layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        self.textBar.image = image;
+        self.textBar.text = NSLocalizedString(text, nil);
+        self.textBar.object = isObject;
+        self.textBarBottomConstraint.constant = [self textBarOpenPosition];
+        [UIView animateWithDuration:0.3 animations:^{
+            [self.view layoutIfNeeded];
+        }];
+    }];
 }
 
 
@@ -343,6 +420,16 @@ didWantToOpenViewController:(UIViewController *)viewController {
     [view presentScene:scene];
     
     return scene;
+}
+
+
+- (CGFloat)textBarHiddenPosition {
+    return -self.textBarSuperView.frame.size.height - 10;
+}
+
+
+- (CGFloat)textBarOpenPosition {
+    return 5;
 }
 
 @end

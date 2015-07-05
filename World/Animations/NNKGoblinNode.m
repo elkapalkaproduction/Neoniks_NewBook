@@ -46,8 +46,8 @@
 
 - (SKAction *)sequence {
     if (!_sequence) {
-        _sequence = [SKAction repeatActionForever:[SKAction animateWithTextures:GOBLIN_ANIM_ANIM_GOBLIN_FRAME
-                                                                   timePerFrame:1.f / 15.f]];
+        _sequence = [SKAction animateWithTextures:GOBLIN_ANIM_ANIM_GOBLIN_FRAME
+                                     timePerFrame:1.f / 15.f];
     }
     
     return _sequence;
@@ -64,7 +64,10 @@
 
 
 - (void)runAction {
-    [self.spriteNode runAction:self.sequence];
+    if (self.completionBlock) self.completionBlock(self);
+
+    [self.spriteNode runAction:self.sequence completion:^{
+    }];
 }
 
 

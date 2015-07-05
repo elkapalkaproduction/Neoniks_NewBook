@@ -9,6 +9,12 @@
 #import <SpriteKit/SpriteKit.h>
 #import "CustomNodeProtocol.h"
 
+@class NNKSheepNode;
+
+typedef void (^SheepCompletionBlock)(NNKSheepNode *node);
+
 @interface NNKSheepNode : SKNode <CustomNodeProtocol>
+
+@property (copy, nonatomic) SheepCompletionBlock completionBlock;
 
 @end
