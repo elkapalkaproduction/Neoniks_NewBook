@@ -41,6 +41,12 @@
 }
 
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.textBar stopStound];
+}
+
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     if ([self shouldShowWelcomeAlert]) {
@@ -54,7 +60,7 @@
 
 - (TextBarViewController *)textBar {
     if (!_textBar) {
-        _textBar = [[TextBarViewController alloc] init];
+        _textBar = [TextBarViewController instantiate];
         [self.textBarSuperView addSubview:_textBar];
     }
     
@@ -67,7 +73,7 @@
                    isObject:(BOOL)isObject {
     [self closeTextBarWithCompletionBlock:^{
         self.textBar.image = image;
-        self.textBar.text = NSLocalizedString(text, nil);
+        self.textBar.text = text;
         self.textBar.object = isObject;
         self.textBarBottomConstraint.constant = [self textBarOpenPosition];
         [UIView animateWithDuration:0.3 animations:^{

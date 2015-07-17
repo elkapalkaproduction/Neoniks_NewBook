@@ -43,16 +43,18 @@ NSString *const AnswersFileName = @"Answers.plist";
 }
 
 
-- (void)checkAnswer:(NSInteger)answer question:(NSInteger)questionNumber {
+- (BOOL)checkAnswer:(NSInteger)answer question:(NSInteger)questionNumber {
     if ([self rightAnswerToQuestion:questionNumber] == answer) {
         [Storage saveData:[self setForCorrectAnswer] forKey:[self keyForQuestion:questionNumber]];
-
-        return;
+        
+        return YES;
     }
     NSIndexSet *set = [self selectedAnswersForQuestion:questionNumber];
     NSMutableIndexSet *mutableSet = [[NSMutableIndexSet alloc] initWithIndexSet:set];
     [mutableSet addIndex:answer];
     [Storage saveData:mutableSet forKey:[self keyForQuestion:questionNumber]];
+    
+    return NO;
 }
 
 

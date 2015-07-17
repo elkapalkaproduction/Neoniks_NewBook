@@ -72,7 +72,7 @@
     }
     [actions insertObject:[SKAction waitForDuration:1] atIndex:actions.count - 1];
     
-    return [SKAction sequence:actions];
+    return [SKAction actionWithSoundName:@"school.mp3" action:[SKAction sequence:actions]];
 }
 
 

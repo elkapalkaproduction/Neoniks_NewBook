@@ -9,6 +9,7 @@
 #import "MagicTableViewController.h"
 #import "MagicSchoolAnswersHandler.h"
 #import "InventaryContentHandler.h"
+#import "SoundPlayer.h"
 
 NSString *const SOMSadImageName = @"school_sad";
 NSString *const SOMSadderImageName = @"school_sadder";
@@ -181,6 +182,8 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 
 
 - (IBAction)openQuestion:(UIButton *)sender {
+    [[SoundPlayer sharedPlayer] playClick];
+    
     self.questionNumber = [self.questionIndicators indexOfObject:sender];
     [self updateImages];
 }
@@ -188,7 +191,12 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 
 - (IBAction)selectAnswer:(UIButton *)sender {
     NSInteger answerNumber = [self.answers indexOfObject:sender];
-    [[MagicSchoolAnswersHandler sharedHandler] checkAnswer:answerNumber question:self.questionNumber];
+    BOOL answer = [[MagicSchoolAnswersHandler sharedHandler] checkAnswer:answerNumber question:self.questionNumber];
+    if (answer) {
+        [[SoundPlayer sharedPlayer] playCorrectAnswer];
+    } else {
+        [[SoundPlayer sharedPlayer] playWrongAnswer];
+    }
     [self updateImages];
 }
 

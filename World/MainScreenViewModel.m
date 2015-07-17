@@ -153,7 +153,7 @@ NSString *const AppID = @"899196882";
         case SettingsBarIconTypeSnail:
             if (settings.format == InventaryIconShowingEmpty) {
                 [self.delegate didRequireToOpenTextBarWithIcon:[UIImage imageNamed:[self imageNameFromSettingType:type]]
-                                                          text:NSLocalizedString([self textFromSettingsType:type], nil)
+                                                          text:[self textFromSettingsType:type]
                                                       isObject:YES];
             }
             break;

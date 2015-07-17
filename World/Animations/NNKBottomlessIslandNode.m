@@ -36,8 +36,7 @@
 
 - (SKAction *)sequence {
     if (!_sequence) {
-        _sequence = [SKAction repeatActionForever:[SKAction animateWithTextures:BOTTOM_ISLAND_ANIM_BOTTOM_ISLAND
-                                                                   timePerFrame:1.f / 15.f]];
+        _sequence = [SKAction actionWithSoundName:@"bottomless_island.mp3" textures:BOTTOM_ISLAND_ANIM_BOTTOM_ISLAND];
     }
     
     return _sequence;

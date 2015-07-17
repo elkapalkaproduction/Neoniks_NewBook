@@ -119,7 +119,6 @@
 "text_panel_teacher_initial" = "Пройди тест по\nприродоведению волшебного мира\nи получи золотую медаль.";
 "text_panel_teacher_final" = "Поздравляем!\nТы удостоен медали с бантиком!\nКруто, да?";
 "text_panel_island_initial" = "Найди все места,\nгде тебе предстоит побывать,\nи получи карту острова Торт!";
-"text_panel_island_final" = "Поздравляем! Island, bla bla";
 "text_panel_shadow_initial" = "Собери из кусочков\nтени сказочных героев и\nполучи волшебную палочку.";
 "text_panel_shadow_final" = "Поздравляем!\nТеперь у тебя есть волшебная\nпалочка для начальной школы.";
 
@@ -179,4 +178,27 @@
 "book_name" = "book_rus.epub";
 ///////////
 
+
+///////Sounds
+
+"text_panel_island_sound" = "text_panel_island_sound_ru";
+"text_panel_wand_sound" = "text_panel_wand_sound_ru";
+"text_panel_book_sound" = "text_panel_book_sound_ru";
+"text_panel_bottle_sound" = "text_panel_bottle_sound_ru";
+"text_panel_other_sound" = "text_panel_other_sound_ru";
+"text_panel_medal_sound" = "text_panel_medal_sound_ru";
+"text_panel_magic_ball_sound" = "text_panel_magic_ball_sound_ru";
+"text_panel_extinguisher_sound" = "text_panel_extinguisher_sound_ru";
+
+"text_panel_goblin_initial_sound" = "text_panel_goblin_initial_sound_ru";
+"text_panel_goblin_final_sound" = "text_panel_goblin_final_sound_ru";
+"text_panel_dragon_initial_sound" = "text_panel_dragon_initial_sound_ru";
+"text_panel_dragon_final_sound" = "text_panel_dragon_final_sound_ru";
+"text_panel_teacher_initial_sound" = "text_panel_teacher_initial_sound_ru";
+"text_panel_teacher_final_sound" = "text_panel_teacher_final_sound_ru";
+"text_panel_island_initial_sound" = "text_panel_island_initial_sound_ru";
+"text_panel_shadow_initial_sound" = "text_panel_shadow_initial_sound_ru";
+"text_panel_shadow_final_sound" = "text_panel_shadow_final_sound_ru";
+
+///////
 

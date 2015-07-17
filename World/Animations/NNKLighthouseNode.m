@@ -26,7 +26,7 @@
         _atlass = [SKTextureAtlas atlasNamed:LIGHTHOUSE_FRAMES_ATLAS_NAME];
         _nodeSize = size;
         self.selected = YES;
-        [self runAction];
+        [self runActionWithoutSound];
     }
     
     return self;
@@ -45,13 +45,19 @@
 }
 
 
-- (void)runAction {
+- (void)runActionWithoutSound {
     [self.mainNode removeFromParent];
     self.selected = !self.selected;
     self.mainNode = nil;
     [self addChild:self.mainNode];
     self.mainNode.size = self.nodeSize;
     self.mainNode.position = CGPointMake(self.nodeSize.width / 2, self.nodeSize.height / 2);
+}
+
+
+- (void)runAction {
+    [self runActionWithoutSound];
+    [self runAction:[SKAction playSoundFileNamed:@"lamp.mp3" waitForCompletion:NO]];
 }
 
 @end

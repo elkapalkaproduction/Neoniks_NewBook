@@ -105,6 +105,11 @@
 }
 
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.textBar stopStound];
+}
+
+
 - (IslandViewModel *)viewModel {
     if (!_viewModel) {
         _viewModel = [[IslandViewModel alloc] initWithDelegate:self];
@@ -183,7 +188,6 @@
         imageView.hidden = YES;
     }
     self.prizeView.hidden = NO;
-    [self prizeDidAppear];
 }
 
 
@@ -210,7 +214,7 @@
 
 - (TextBarViewController *)textBar {
     if (!_textBar) {
-        _textBar = [[TextBarViewController alloc] init];
+        _textBar = [TextBarViewController instantiate];
         [self.textBarSuperView addSubview:_textBar];
     }
     
@@ -223,7 +227,7 @@
                    isObject:(BOOL)isObject {
     [self closeTextBarWithCompletionBlock:^{
         self.textBar.image = image;
-        self.textBar.text = NSLocalizedString(text, nil);
+        self.textBar.text = text;
         self.textBar.object = isObject;
         self.textBarBottomConstraint.constant = [self textBarOpenPosition];
         [UIView animateWithDuration:0.3 animations:^{
@@ -240,14 +244,6 @@
     } completion:^(BOOL finished) {
         if (completion) completion();
     }];
-}
-
-
-- (void)prizeDidAppear {
-    [self openTextBarWithIcon:[UIImage imageNamed:@"text_panel_ginger"]
-                         text:@"text_panel_island_final"
-                     isObject:NO];
-    [self performSelector:@selector(closeTextBarWithCompletionBlock:) withObject:nil afterDelay:5.f];
 }
 
 

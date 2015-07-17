@@ -34,8 +34,7 @@
 
 - (SKAction *)sequence {
     if (!_sequence) {
-        _sequence = [SKAction repeatActionForever:[SKAction animateWithTextures:LANTERN_HOUSE_ANIM_LANTERN_HOUSE
-                                                                   timePerFrame:1.f / 15.f]];
+        _sequence = [SKAction actionWithSoundName:@"smoke.mp3" textures:LANTERN_HOUSE_ANIM_LANTERN_HOUSE];
     }
     
     return _sequence;

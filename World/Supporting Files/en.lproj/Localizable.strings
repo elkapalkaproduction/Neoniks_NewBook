@@ -119,7 +119,6 @@
 "text_panel_teacher_initial" = "Pass a test in Magic Studies\nand get a gold graduation medal.";
 "text_panel_teacher_final" = "Congratulations! Now you have\na medal with a red bow.\nPretty cool, huh?";
 "text_panel_island_initial" = "Find all the places\nyou are going to visit and\nget a reward - a map of Cake Island.";
-"text_panel_island_final" = "Congratulations! Island, bla bla";
 "text_panel_shadow_initial" = "Assemble the shadows of\n8 fairy tale characters and\nget the magic wand.";
 "text_panel_shadow_final" = "Congratulations!\nYou received a magic wand for\nelementary school children.";
 
@@ -179,4 +178,28 @@
 
 ///////////
 
+
+
+
+///////Sounds
+"text_panel_island_sound" = "text_panel_island_sound_en";
+"text_panel_wand_sound" = "text_panel_wand_sound_en";
+"text_panel_book_sound" = "text_panel_book_sound_en";
+"text_panel_bottle_sound" = "text_panel_bottle_sound_en";
+"text_panel_other_sound" = "text_panel_other_sound_en";
+"text_panel_medal_sound" = "text_panel_medal_sound_en";
+"text_panel_magic_ball_sound" = "text_panel_magic_ball_sound_en";
+"text_panel_extinguisher_sound" = "text_panel_extinguisher_sound_en";
+
+"text_panel_goblin_initial_sound" = "text_panel_goblin_initial_sound_en";
+"text_panel_goblin_final_sound" = "text_panel_goblin_final_sound_en";
+"text_panel_dragon_initial_sound" = "text_panel_dragon_initial_sound_en";
+"text_panel_dragon_final_sound" = "text_panel_dragon_final_sound_en";
+"text_panel_teacher_initial_sound" = "text_panel_teacher_initial_sound_en";
+"text_panel_teacher_final_sound" = "text_panel_teacher_final_sound_en";
+"text_panel_island_initial_sound" = "text_panel_island_initial_sound_en";
+"text_panel_shadow_initial_sound" = "text_panel_shadow_initial_sound_en";
+"text_panel_shadow_final_sound" = "text_panel_shadow_final_sound_en";
+
+///////
 

@@ -12,6 +12,7 @@
 
 @property (assign, nonatomic) CGSize nodeSize;
 @property (strong, nonatomic) SKEmitterNode *emitter;
+@property (strong, nonatomic) SKAction *soundAction;
 
 @end
 
@@ -47,10 +48,21 @@
 }
 
 
+- (SKAction *)soundAction {
+    if (!_soundAction) {
+        _soundAction = [SKAction playSoundFileNamed:@"mystie.mp3" waitForCompletion:NO];
+    }
+    
+    return _soundAction;
+}
+
+
 - (void)runAction {
     if (self.emitter.parent) {
+        [self removeAllActions];
         [self.emitter removeFromParent];
     } else {
+        [self runAction:self.soundAction];
         [self addChild:self.emitter];
     }
 }

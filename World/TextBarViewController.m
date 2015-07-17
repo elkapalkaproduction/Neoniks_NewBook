@@ -7,6 +7,7 @@
 //
 
 #import "TextBarViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface TextBarViewController ()
 
@@ -14,11 +15,14 @@
 @property (weak, nonatomic) IBOutlet UIImageView *objectIcon;
 @property (weak, nonatomic) IBOutlet UIImageView *characterIcon;
 
+@property (strong, nonatomic) NSString *soundName;
+@property (strong, nonatomic) AVAudioPlayer *player;
+
 @end
 
 @implementation TextBarViewController
 
-- (instancetype)init {
++ (instancetype)instantiate {
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([TextBarViewController class])
                                           owner:self
                                         options:nil] firstObject];
@@ -44,7 +48,37 @@
 
 
 - (void)setText:(NSString *)text {
-    self.label.text = text;
+    self.label.text = NSLocalizedString(text, nil);
+    self.soundName = [text stringByAppendingString:@"_sound"];
+}
+
+
+- (void)setSoundName:(NSString *)soundName {
+    _soundName = NSLocalizedString(soundName, nil);
+    [self.player stop];
+    self.player = nil;
+    [self.player play];
+}
+
+
+- (AVAudioPlayer *)player {
+    if (!_player) {
+        if (!self.soundName) return nil;
+        
+        NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:self.soundName ofType:@"mp3"];
+        if (!soundFilePath) return nil;
+        NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+        _player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL error:nil];
+        [_player prepareToPlay];
+    }
+    
+    return _player;
+}
+
+
+- (void)stopStound {
+    [self.player stop];
+    self.player = nil;
 }
 
 @end

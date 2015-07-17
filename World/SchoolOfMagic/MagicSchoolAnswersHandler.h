@@ -11,7 +11,7 @@
 @interface MagicSchoolAnswersHandler : NSObject
 
 + (instancetype)sharedHandler;
-- (void)checkAnswer:(NSInteger)answer question:(NSInteger)questionNumber;
+- (BOOL)checkAnswer:(NSInteger)answer question:(NSInteger)questionNumber;
 - (NSIndexSet *)selectedAnswersForQuestion:(NSInteger)questionNumber;
 - (NSInteger)rightAnswerToQuestion:(NSInteger)questionNumber;
 - (void)deleteAllAnswers;

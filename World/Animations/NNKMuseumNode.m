@@ -37,8 +37,7 @@
 
 - (SKAction *)sequence {
     if (!_sequence) {
-        _sequence = [SKAction repeatActionForever:[SKAction animateWithTextures:AnimName
-                                                                   timePerFrame:1.f / 15.f]];
+        _sequence = [SKAction actionWithSoundName:@"ghost.mp3" textures:AnimName];
     }
     
     return _sequence;

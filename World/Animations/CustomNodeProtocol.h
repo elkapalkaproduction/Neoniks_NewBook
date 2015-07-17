@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 CodeAndWeb. All rights reserved.
 //
 
+#import "SKAction+Groups.h"
+
 @protocol CustomNodeProtocol <NSObject>
 
 - (instancetype)initWithSize:(CGSize)size;

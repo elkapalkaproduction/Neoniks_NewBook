@@ -118,6 +118,13 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 }
 
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.textBar stopStound];
+}
+
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier rangeOfString:NSPSegueIdentifierPattern].location != NSNotFound) {
         if (self.arrayOfSegues) {
@@ -373,7 +380,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 - (TextBarViewController *)textBar {
     if (!_textBar) {
-        _textBar = [[TextBarViewController alloc] init];
+        _textBar = [TextBarViewController instantiate];
         [self.textBarSuperView addSubview:_textBar];
     }
     
@@ -386,7 +393,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
                    isObject:(BOOL)isObject {
     [self closeTextBarWithCompletionBlock:^{
         self.textBar.image = image;
-        self.textBar.text = NSLocalizedString(text, nil);
+        self.textBar.text = text;
         self.textBar.object = isObject;
         self.textBarBottomConstraint.constant = [self textBarOpenPosition];
         [UIView animateWithDuration:0.3 animations:^{

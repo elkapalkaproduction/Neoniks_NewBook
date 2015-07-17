@@ -69,6 +69,58 @@
 		75B627F51B1CFBBD000A3172 /* NNKSchoolNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B627F31B1CFBBD000A3172 /* NNKSchoolNode.m */; };
 		75B627FA1B1CFBD2000A3172 /* phoebe_frames.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75B627F61B1CFBD2000A3172 /* phoebe_frames.atlasc */; };
 		75B627FB1B1CFBD2000A3172 /* school_frames.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75B627F81B1CFBD2000A3172 /* school_frames.atlasc */; };
+		75B980551B58F2E300893462 /* harold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980541B58F2E300893462 /* harold.mp3 */; };
+		75B980571B58F3D700893462 /* jay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980561B58F3D700893462 /* jay.mp3 */; };
+		75B980591B58F3E700893462 /* mystie.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980581B58F3E700893462 /* mystie.mp3 */; };
+		75B9805B1B58F3F300893462 /* phoebe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9805A1B58F3F300893462 /* phoebe.mp3 */; };
+		75B9805D1B58F48400893462 /* miner.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9805C1B58F48400893462 /* miner.mp3 */; };
+		75B9805F1B58F48D00893462 /* justacreep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9805E1B58F48D00893462 /* justacreep.mp3 */; };
+		75B980611B58F49700893462 /* wanda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980601B58F49700893462 /* wanda.mp3 */; };
+		75B980631B58F4A400893462 /* furcoat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980621B58F4A400893462 /* furcoat.mp3 */; };
+		75B980661B58F55500893462 /* SKAction+Groups.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B980651B58F55500893462 /* SKAction+Groups.m */; };
+		75B980721B58FA4C00893462 /* bottomless_island.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9806B1B58FA4C00893462 /* bottomless_island.mp3 */; };
+		75B980731B58FA4C00893462 /* cafe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9806C1B58FA4C00893462 /* cafe.mp3 */; };
+		75B980741B58FA4C00893462 /* foam_castle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9806D1B58FA4C00893462 /* foam_castle.mp3 */; };
+		75B980751B58FA4C00893462 /* ghost.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9806E1B58FA4C00893462 /* ghost.mp3 */; };
+		75B980761B58FA4C00893462 /* lamp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9806F1B58FA4C00893462 /* lamp.mp3 */; };
+		75B980771B58FA4C00893462 /* school.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980701B58FA4C00893462 /* school.mp3 */; };
+		75B980781B58FA4C00893462 /* smoke.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980711B58FA4C00893462 /* smoke.mp3 */; };
+		75B9807F1B590FB800893462 /* text_panel_teacher_final_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9807B1B590FB800893462 /* text_panel_teacher_final_sound_en.mp3 */; };
+		75B980801B590FB800893462 /* text_panel_teacher_final_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9807C1B590FB800893462 /* text_panel_teacher_final_sound_ru.mp3 */; };
+		75B980811B590FB800893462 /* text_panel_teacher_initial_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9807D1B590FB800893462 /* text_panel_teacher_initial_sound_en.mp3 */; };
+		75B980821B590FB800893462 /* text_panel_teacher_initial_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9807E1B590FB800893462 /* text_panel_teacher_initial_sound_ru.mp3 */; };
+		75B980AE1B5916A400893462 /* text_panel_book_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980921B5916A400893462 /* text_panel_book_sound_en.mp3 */; };
+		75B980AF1B5916A400893462 /* text_panel_book_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980931B5916A400893462 /* text_panel_book_sound_ru.mp3 */; };
+		75B980B01B5916A400893462 /* text_panel_bottle_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980941B5916A400893462 /* text_panel_bottle_sound_en.mp3 */; };
+		75B980B11B5916A400893462 /* text_panel_bottle_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980951B5916A400893462 /* text_panel_bottle_sound_ru.mp3 */; };
+		75B980B21B5916A400893462 /* text_panel_dragon_final_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980961B5916A400893462 /* text_panel_dragon_final_sound_en.mp3 */; };
+		75B980B31B5916A400893462 /* text_panel_dragon_final_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980971B5916A400893462 /* text_panel_dragon_final_sound_ru.mp3 */; };
+		75B980B41B5916A400893462 /* text_panel_dragon_initial_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980981B5916A400893462 /* text_panel_dragon_initial_sound_en.mp3 */; };
+		75B980B51B5916A400893462 /* text_panel_dragon_initial_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980991B5916A400893462 /* text_panel_dragon_initial_sound_ru.mp3 */; };
+		75B980B61B5916A400893462 /* text_panel_goblin_final_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9809A1B5916A400893462 /* text_panel_goblin_final_sound_en.mp3 */; };
+		75B980B71B5916A400893462 /* text_panel_goblin_final_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9809B1B5916A400893462 /* text_panel_goblin_final_sound_ru.mp3 */; };
+		75B980B81B5916A400893462 /* text_panel_goblin_initial_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9809C1B5916A400893462 /* text_panel_goblin_initial_sound_en.mp3 */; };
+		75B980B91B5916A400893462 /* text_panel_goblin_initial_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9809D1B5916A400893462 /* text_panel_goblin_initial_sound_ru.mp3 */; };
+		75B980BA1B5916A400893462 /* text_panel_island_initial_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9809E1B5916A400893462 /* text_panel_island_initial_sound_en.mp3 */; };
+		75B980BB1B5916A400893462 /* text_panel_island_initial_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B9809F1B5916A400893462 /* text_panel_island_initial_sound_ru.mp3 */; };
+		75B980BC1B5916A400893462 /* text_panel_island_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980A01B5916A400893462 /* text_panel_island_sound_en.mp3 */; };
+		75B980BD1B5916A400893462 /* text_panel_island_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980A11B5916A400893462 /* text_panel_island_sound_ru.mp3 */; };
+		75B980BE1B5916A400893462 /* text_panel_magic_ball_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980A21B5916A400893462 /* text_panel_magic_ball_sound_en.mp3 */; };
+		75B980BF1B5916A400893462 /* text_panel_magic_ball_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980A31B5916A400893462 /* text_panel_magic_ball_sound_ru.mp3 */; };
+		75B980C01B5916A400893462 /* text_panel_medal_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980A41B5916A400893462 /* text_panel_medal_sound_en.mp3 */; };
+		75B980C11B5916A400893462 /* text_panel_medal_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980A51B5916A400893462 /* text_panel_medal_sound_ru.mp3 */; };
+		75B980C21B5916A400893462 /* text_panel_other_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980A61B5916A400893462 /* text_panel_other_sound_en.mp3 */; };
+		75B980C31B5916A400893462 /* text_panel_other_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980A71B5916A400893462 /* text_panel_other_sound_ru.mp3 */; };
+		75B980C41B5916A400893462 /* text_panel_shadow_final_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980A81B5916A400893462 /* text_panel_shadow_final_sound_en.mp3 */; };
+		75B980C51B5916A400893462 /* text_panel_shadow_final_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980A91B5916A400893462 /* text_panel_shadow_final_sound_ru.mp3 */; };
+		75B980C61B5916A400893462 /* text_panel_shadow_initial_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980AA1B5916A400893462 /* text_panel_shadow_initial_sound_en.mp3 */; };
+		75B980C71B5916A400893462 /* text_panel_shadow_initial_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980AB1B5916A400893462 /* text_panel_shadow_initial_sound_ru.mp3 */; };
+		75B980C81B5916A400893462 /* text_panel_wand_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980AC1B5916A400893462 /* text_panel_wand_sound_en.mp3 */; };
+		75B980C91B5916A400893462 /* text_panel_wand_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980AD1B5916A400893462 /* text_panel_wand_sound_ru.mp3 */; };
+		75B980CD1B591A8700893462 /* SoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B980CC1B591A8700893462 /* SoundPlayer.m */; };
+		75B980D21B591AAA00893462 /* button_click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980CF1B591AAA00893462 /* button_click.mp3 */; };
+		75B980D31B591AAA00893462 /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980D01B591AAA00893462 /* right.mp3 */; };
+		75B980D41B591AAA00893462 /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B980D11B591AAA00893462 /* wrong.mp3 */; };
 		75C12A651A754B6C0075FD8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A641A754B6C0075FD8D /* main.m */; };
 		75C12A681A754B6C0075FD8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A671A754B6C0075FD8D /* AppDelegate.m */; };
 		75C12A6B1A754B6C0075FD8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C12A6A1A754B6C0075FD8D /* ViewController.m */; };
@@ -406,6 +458,60 @@
 		75B627F71B1CFBD2000A3172 /* phoebe_frames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phoebe_frames.h; sourceTree = "<group>"; };
 		75B627F81B1CFBD2000A3172 /* school_frames.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = school_frames.atlasc; sourceTree = "<group>"; };
 		75B627F91B1CFBD2000A3172 /* school_frames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = school_frames.h; sourceTree = "<group>"; };
+		75B980541B58F2E300893462 /* harold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = harold.mp3; sourceTree = "<group>"; };
+		75B980561B58F3D700893462 /* jay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jay.mp3; sourceTree = "<group>"; };
+		75B980581B58F3E700893462 /* mystie.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mystie.mp3; sourceTree = "<group>"; };
+		75B9805A1B58F3F300893462 /* phoebe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = phoebe.mp3; sourceTree = "<group>"; };
+		75B9805C1B58F48400893462 /* miner.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = miner.mp3; sourceTree = "<group>"; };
+		75B9805E1B58F48D00893462 /* justacreep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = justacreep.mp3; sourceTree = "<group>"; };
+		75B980601B58F49700893462 /* wanda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wanda.mp3; sourceTree = "<group>"; };
+		75B980621B58F4A400893462 /* furcoat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = furcoat.mp3; sourceTree = "<group>"; };
+		75B980641B58F55500893462 /* SKAction+Groups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+Groups.h"; sourceTree = "<group>"; };
+		75B980651B58F55500893462 /* SKAction+Groups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+Groups.m"; sourceTree = "<group>"; };
+		75B9806B1B58FA4C00893462 /* bottomless_island.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bottomless_island.mp3; sourceTree = "<group>"; };
+		75B9806C1B58FA4C00893462 /* cafe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cafe.mp3; sourceTree = "<group>"; };
+		75B9806D1B58FA4C00893462 /* foam_castle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = foam_castle.mp3; sourceTree = "<group>"; };
+		75B9806E1B58FA4C00893462 /* ghost.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ghost.mp3; sourceTree = "<group>"; };
+		75B9806F1B58FA4C00893462 /* lamp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lamp.mp3; sourceTree = "<group>"; };
+		75B980701B58FA4C00893462 /* school.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = school.mp3; sourceTree = "<group>"; };
+		75B980711B58FA4C00893462 /* smoke.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = smoke.mp3; sourceTree = "<group>"; };
+		75B9807B1B590FB800893462 /* text_panel_teacher_final_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_teacher_final_sound_en.mp3; sourceTree = "<group>"; };
+		75B9807C1B590FB800893462 /* text_panel_teacher_final_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_teacher_final_sound_ru.mp3; sourceTree = "<group>"; };
+		75B9807D1B590FB800893462 /* text_panel_teacher_initial_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_teacher_initial_sound_en.mp3; sourceTree = "<group>"; };
+		75B9807E1B590FB800893462 /* text_panel_teacher_initial_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_teacher_initial_sound_ru.mp3; sourceTree = "<group>"; };
+		75B980921B5916A400893462 /* text_panel_book_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_book_sound_en.mp3; sourceTree = "<group>"; };
+		75B980931B5916A400893462 /* text_panel_book_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_book_sound_ru.mp3; sourceTree = "<group>"; };
+		75B980941B5916A400893462 /* text_panel_bottle_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_bottle_sound_en.mp3; sourceTree = "<group>"; };
+		75B980951B5916A400893462 /* text_panel_bottle_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_bottle_sound_ru.mp3; sourceTree = "<group>"; };
+		75B980961B5916A400893462 /* text_panel_dragon_final_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_dragon_final_sound_en.mp3; sourceTree = "<group>"; };
+		75B980971B5916A400893462 /* text_panel_dragon_final_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_dragon_final_sound_ru.mp3; sourceTree = "<group>"; };
+		75B980981B5916A400893462 /* text_panel_dragon_initial_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_dragon_initial_sound_en.mp3; sourceTree = "<group>"; };
+		75B980991B5916A400893462 /* text_panel_dragon_initial_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_dragon_initial_sound_ru.mp3; sourceTree = "<group>"; };
+		75B9809A1B5916A400893462 /* text_panel_goblin_final_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_goblin_final_sound_en.mp3; sourceTree = "<group>"; };
+		75B9809B1B5916A400893462 /* text_panel_goblin_final_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_goblin_final_sound_ru.mp3; sourceTree = "<group>"; };
+		75B9809C1B5916A400893462 /* text_panel_goblin_initial_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_goblin_initial_sound_en.mp3; sourceTree = "<group>"; };
+		75B9809D1B5916A400893462 /* text_panel_goblin_initial_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_goblin_initial_sound_ru.mp3; sourceTree = "<group>"; };
+		75B9809E1B5916A400893462 /* text_panel_island_initial_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_island_initial_sound_en.mp3; sourceTree = "<group>"; };
+		75B9809F1B5916A400893462 /* text_panel_island_initial_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_island_initial_sound_ru.mp3; sourceTree = "<group>"; };
+		75B980A01B5916A400893462 /* text_panel_island_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_island_sound_en.mp3; sourceTree = "<group>"; };
+		75B980A11B5916A400893462 /* text_panel_island_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_island_sound_ru.mp3; sourceTree = "<group>"; };
+		75B980A21B5916A400893462 /* text_panel_magic_ball_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_magic_ball_sound_en.mp3; sourceTree = "<group>"; };
+		75B980A31B5916A400893462 /* text_panel_magic_ball_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_magic_ball_sound_ru.mp3; sourceTree = "<group>"; };
+		75B980A41B5916A400893462 /* text_panel_medal_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_medal_sound_en.mp3; sourceTree = "<group>"; };
+		75B980A51B5916A400893462 /* text_panel_medal_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_medal_sound_ru.mp3; sourceTree = "<group>"; };
+		75B980A61B5916A400893462 /* text_panel_other_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_other_sound_en.mp3; sourceTree = "<group>"; };
+		75B980A71B5916A400893462 /* text_panel_other_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_other_sound_ru.mp3; sourceTree = "<group>"; };
+		75B980A81B5916A400893462 /* text_panel_shadow_final_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_shadow_final_sound_en.mp3; sourceTree = "<group>"; };
+		75B980A91B5916A400893462 /* text_panel_shadow_final_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_shadow_final_sound_ru.mp3; sourceTree = "<group>"; };
+		75B980AA1B5916A400893462 /* text_panel_shadow_initial_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_shadow_initial_sound_en.mp3; sourceTree = "<group>"; };
+		75B980AB1B5916A400893462 /* text_panel_shadow_initial_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_shadow_initial_sound_ru.mp3; sourceTree = "<group>"; };
+		75B980AC1B5916A400893462 /* text_panel_wand_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_wand_sound_en.mp3; sourceTree = "<group>"; };
+		75B980AD1B5916A400893462 /* text_panel_wand_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_wand_sound_ru.mp3; sourceTree = "<group>"; };
+		75B980CB1B591A8700893462 /* SoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPlayer.h; sourceTree = "<group>"; };
+		75B980CC1B591A8700893462 /* SoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPlayer.m; sourceTree = "<group>"; };
+		75B980CF1B591AAA00893462 /* button_click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button_click.mp3; sourceTree = "<group>"; };
+		75B980D01B591AAA00893462 /* right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = right.mp3; sourceTree = "<group>"; };
+		75B980D11B591AAA00893462 /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
 		75C12A5F1A754B6C0075FD8D /* World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = World.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C12A631A754B6C0075FD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75C12A641A754B6C0075FD8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -691,36 +797,10 @@
 				75FF2FA41B224A0C008EB9AA /* particleModel.png */,
 				75037FEF1B1A3B8900CB0B83 /* MyScene.h */,
 				75037FF01B1A3B8900CB0B83 /* MyScene.m */,
-				75037FF71B1A3B8900CB0B83 /* NNKHaroldNode.h */,
-				75037FF81B1A3B8900CB0B83 /* NNKHaroldNode.m */,
-				75037FF91B1A3B8900CB0B83 /* NNKFurcoatNode.h */,
-				75037FFA1B1A3B8900CB0B83 /* NNKFurcoatNode.m */,
-				75037FFB1B1A3B8900CB0B83 /* NNKMuseumNode.h */,
-				75037FFC1B1A3B8900CB0B83 /* NNKMuseumNode.m */,
-				75037FFD1B1A3B8900CB0B83 /* NNKFoamCastleNode.h */,
-				75037FFE1B1A3B8900CB0B83 /* NNKFoamCastleNode.m */,
-				75037FF31B1A3B8900CB0B83 /* NNKJayNode.h */,
-				75037FF41B1A3B8900CB0B83 /* NNKJayNode.m */,
-				75037FF11B1A3B8900CB0B83 /* NNKMinerNode.h */,
-				75037FF21B1A3B8900CB0B83 /* NNKMinerNode.m */,
-				75037FF51B1A3B8900CB0B83 /* NNKWandaNode.h */,
-				75037FF61B1A3B8900CB0B83 /* NNKWandaNode.m */,
-				75037FFF1B1A3B8900CB0B83 /* NNKLanternHouseNode.h */,
-				750380001B1A3B8900CB0B83 /* NNKLanternHouseNode.m */,
-				750380011B1A3B8900CB0B83 /* NNKBottomlessIslandNode.h */,
-				750380021B1A3B8900CB0B83 /* NNKBottomlessIslandNode.m */,
-				75B627F01B1CFBBD000A3172 /* NNKPhoebeNode.h */,
-				75B627F11B1CFBBD000A3172 /* NNKPhoebeNode.m */,
-				75B627F21B1CFBBD000A3172 /* NNKSchoolNode.h */,
-				75B627F31B1CFBBD000A3172 /* NNKSchoolNode.m */,
-				7505691E1B1E5168008DE162 /* NNKLighthouseNode.h */,
-				7505691F1B1E5168008DE162 /* NNKLighthouseNode.m */,
-				750569201B1E5168008DE162 /* NNKCafeNode.h */,
-				750569211B1E5168008DE162 /* NNKCafeNode.m */,
-				75FF2F0F1B22311D008EB9AA /* NNKJustacreepNode.h */,
-				75FF2F101B22311D008EB9AA /* NNKJustacreepNode.m */,
-				75FF2FA71B224A22008EB9AA /* NNKMystieNode.h */,
-				75FF2FA81B224A22008EB9AA /* NNKMystieNode.m */,
+				75B980641B58F55500893462 /* SKAction+Groups.h */,
+				75B980651B58F55500893462 /* SKAction+Groups.m */,
+				75B9806A1B58F9FD00893462 /* Island Animations */,
+				75B980671B58F7AB00893462 /* Shadow Play Animations */,
 				75EE39661B41D75900BF9A55 /* NNKSkeletNode.h */,
 				75EE39671B41D75900BF9A55 /* NNKSkeletNode.m */,
 				75C83FF91B49746F007122A9 /* NNKGoblinNode.h */,
@@ -728,40 +808,7 @@
 				75C83FFF1B49883C007122A9 /* NNKSheepNode.h */,
 				75C840001B49883C007122A9 /* NNKSheepNode.m */,
 				750380031B1A3B8900CB0B83 /* CustomNodeProtocol.h */,
-				75C83FF61B497444007122A9 /* goblin_anim.atlasc */,
-				75C83FF71B497444007122A9 /* goblin_anim.h */,
-				75EE39631B41D74100BF9A55 /* skelet_anim.atlasc */,
-				75EE39641B41D74100BF9A55 /* skelet_anim.h */,
-				75FF2F121B22312B008EB9AA /* justacreep_anim.atlasc */,
-				75FF2F131B22312B008EB9AA /* justacreep_anim.h */,
-				7505693A1B1E56BB008DE162 /* lantern_house.atlasc */,
-				7505693B1B1E56BB008DE162 /* lantern_house.h */,
-				750569371B1E5660008DE162 /* bottom_island.atlasc */,
-				750569381B1E5660008DE162 /* bottom_island.h */,
-				750569341B1E55B9008DE162 /* wanda_anim.atlasc */,
-				750569351B1E55B9008DE162 /* wanda_anim.h */,
-				7505692E1B1E555F008DE162 /* miner_anim.atlasc */,
-				7505692F1B1E555F008DE162 /* miner_anim.h */,
-				7505692B1B1E542C008DE162 /* jay_anim.atlasc */,
-				7505692C1B1E542C008DE162 /* jay_anim.h */,
-				75B627F61B1CFBD2000A3172 /* phoebe_frames.atlasc */,
-				75B627F71B1CFBD2000A3172 /* phoebe_frames.h */,
-				75B627F81B1CFBD2000A3172 /* school_frames.atlasc */,
-				75B627F91B1CFBD2000A3172 /* school_frames.h */,
-				75037FD61B1A3B7700CB0B83 /* foam_castle.atlasc */,
-				75037FD71B1A3B7700CB0B83 /* foam_castle.h */,
-				75037FD81B1A3B7700CB0B83 /* furcoat_anim.atlasc */,
-				75037FD91B1A3B7700CB0B83 /* furcoat_anim.h */,
-				75037FDA1B1A3B7700CB0B83 /* harold_anim.atlasc */,
-				75037FDB1B1A3B7700CB0B83 /* harold_anim.h */,
-				75037FE21B1A3B7700CB0B83 /* museum.atlasc */,
-				75037FE31B1A3B7700CB0B83 /* museum.h */,
-				750569241B1E5177008DE162 /* cafe_frames.atlasc */,
-				750569251B1E5177008DE162 /* cafe_frames.h */,
-				750569261B1E5177008DE162 /* lighthouse_frames.atlasc */,
-				750569271B1E5177008DE162 /* lighthouse_frames.h */,
-				75C83FFC1B49882C007122A9 /* sheep_anim.atlasc */,
-				75C83FFD1B49882C007122A9 /* sheep_anim.h */,
+				75B980691B58F9EF00893462 /* Atlases */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -838,6 +885,173 @@
 				75AD2E9E1ADAD424002EE482 /* Book.storyboard */,
 			);
 			path = "Epub Book";
+			sourceTree = "<group>";
+		};
+		75B980671B58F7AB00893462 /* Shadow Play Animations */ = {
+			isa = PBXGroup;
+			children = (
+				75037FF31B1A3B8900CB0B83 /* NNKJayNode.h */,
+				75037FF41B1A3B8900CB0B83 /* NNKJayNode.m */,
+				75037FF11B1A3B8900CB0B83 /* NNKMinerNode.h */,
+				75037FF21B1A3B8900CB0B83 /* NNKMinerNode.m */,
+				75037FF51B1A3B8900CB0B83 /* NNKWandaNode.h */,
+				75037FF61B1A3B8900CB0B83 /* NNKWandaNode.m */,
+				75037FF91B1A3B8900CB0B83 /* NNKFurcoatNode.h */,
+				75037FFA1B1A3B8900CB0B83 /* NNKFurcoatNode.m */,
+				75037FF71B1A3B8900CB0B83 /* NNKHaroldNode.h */,
+				75037FF81B1A3B8900CB0B83 /* NNKHaroldNode.m */,
+				75B627F01B1CFBBD000A3172 /* NNKPhoebeNode.h */,
+				75B627F11B1CFBBD000A3172 /* NNKPhoebeNode.m */,
+				75FF2F0F1B22311D008EB9AA /* NNKJustacreepNode.h */,
+				75FF2F101B22311D008EB9AA /* NNKJustacreepNode.m */,
+				75FF2FA71B224A22008EB9AA /* NNKMystieNode.h */,
+				75FF2FA81B224A22008EB9AA /* NNKMystieNode.m */,
+				75B980681B58F7C700893462 /* Shadow Play sounds */,
+			);
+			name = "Shadow Play Animations";
+			sourceTree = "<group>";
+		};
+		75B980681B58F7C700893462 /* Shadow Play sounds */ = {
+			isa = PBXGroup;
+			children = (
+				75B980541B58F2E300893462 /* harold.mp3 */,
+				75B980561B58F3D700893462 /* jay.mp3 */,
+				75B980581B58F3E700893462 /* mystie.mp3 */,
+				75B9805A1B58F3F300893462 /* phoebe.mp3 */,
+				75B9805C1B58F48400893462 /* miner.mp3 */,
+				75B9805E1B58F48D00893462 /* justacreep.mp3 */,
+				75B980601B58F49700893462 /* wanda.mp3 */,
+				75B980621B58F4A400893462 /* furcoat.mp3 */,
+			);
+			name = "Shadow Play sounds";
+			sourceTree = "<group>";
+		};
+		75B980691B58F9EF00893462 /* Atlases */ = {
+			isa = PBXGroup;
+			children = (
+				75C83FF61B497444007122A9 /* goblin_anim.atlasc */,
+				75C83FF71B497444007122A9 /* goblin_anim.h */,
+				75EE39631B41D74100BF9A55 /* skelet_anim.atlasc */,
+				75EE39641B41D74100BF9A55 /* skelet_anim.h */,
+				75FF2F121B22312B008EB9AA /* justacreep_anim.atlasc */,
+				75FF2F131B22312B008EB9AA /* justacreep_anim.h */,
+				7505693A1B1E56BB008DE162 /* lantern_house.atlasc */,
+				7505693B1B1E56BB008DE162 /* lantern_house.h */,
+				750569371B1E5660008DE162 /* bottom_island.atlasc */,
+				750569381B1E5660008DE162 /* bottom_island.h */,
+				750569341B1E55B9008DE162 /* wanda_anim.atlasc */,
+				750569351B1E55B9008DE162 /* wanda_anim.h */,
+				7505692E1B1E555F008DE162 /* miner_anim.atlasc */,
+				7505692F1B1E555F008DE162 /* miner_anim.h */,
+				7505692B1B1E542C008DE162 /* jay_anim.atlasc */,
+				7505692C1B1E542C008DE162 /* jay_anim.h */,
+				75B627F61B1CFBD2000A3172 /* phoebe_frames.atlasc */,
+				75B627F71B1CFBD2000A3172 /* phoebe_frames.h */,
+				75B627F81B1CFBD2000A3172 /* school_frames.atlasc */,
+				75B627F91B1CFBD2000A3172 /* school_frames.h */,
+				75037FD61B1A3B7700CB0B83 /* foam_castle.atlasc */,
+				75037FD71B1A3B7700CB0B83 /* foam_castle.h */,
+				75037FD81B1A3B7700CB0B83 /* furcoat_anim.atlasc */,
+				75037FD91B1A3B7700CB0B83 /* furcoat_anim.h */,
+				75037FDA1B1A3B7700CB0B83 /* harold_anim.atlasc */,
+				75037FDB1B1A3B7700CB0B83 /* harold_anim.h */,
+				75037FE21B1A3B7700CB0B83 /* museum.atlasc */,
+				75037FE31B1A3B7700CB0B83 /* museum.h */,
+				750569241B1E5177008DE162 /* cafe_frames.atlasc */,
+				750569251B1E5177008DE162 /* cafe_frames.h */,
+				750569261B1E5177008DE162 /* lighthouse_frames.atlasc */,
+				750569271B1E5177008DE162 /* lighthouse_frames.h */,
+				75C83FFC1B49882C007122A9 /* sheep_anim.atlasc */,
+				75C83FFD1B49882C007122A9 /* sheep_anim.h */,
+			);
+			name = Atlases;
+			sourceTree = "<group>";
+		};
+		75B9806A1B58F9FD00893462 /* Island Animations */ = {
+			isa = PBXGroup;
+			children = (
+				75037FFF1B1A3B8900CB0B83 /* NNKLanternHouseNode.h */,
+				750380001B1A3B8900CB0B83 /* NNKLanternHouseNode.m */,
+				750380011B1A3B8900CB0B83 /* NNKBottomlessIslandNode.h */,
+				750380021B1A3B8900CB0B83 /* NNKBottomlessIslandNode.m */,
+				75037FFB1B1A3B8900CB0B83 /* NNKMuseumNode.h */,
+				75037FFC1B1A3B8900CB0B83 /* NNKMuseumNode.m */,
+				75037FFD1B1A3B8900CB0B83 /* NNKFoamCastleNode.h */,
+				75037FFE1B1A3B8900CB0B83 /* NNKFoamCastleNode.m */,
+				75B627F21B1CFBBD000A3172 /* NNKSchoolNode.h */,
+				75B627F31B1CFBBD000A3172 /* NNKSchoolNode.m */,
+				7505691E1B1E5168008DE162 /* NNKLighthouseNode.h */,
+				7505691F1B1E5168008DE162 /* NNKLighthouseNode.m */,
+				750569201B1E5168008DE162 /* NNKCafeNode.h */,
+				750569211B1E5168008DE162 /* NNKCafeNode.m */,
+				75B980791B58FA5000893462 /* Islands Sounds */,
+			);
+			name = "Island Animations";
+			sourceTree = "<group>";
+		};
+		75B980791B58FA5000893462 /* Islands Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				75B9806B1B58FA4C00893462 /* bottomless_island.mp3 */,
+				75B9806C1B58FA4C00893462 /* cafe.mp3 */,
+				75B9806D1B58FA4C00893462 /* foam_castle.mp3 */,
+				75B9806E1B58FA4C00893462 /* ghost.mp3 */,
+				75B9806F1B58FA4C00893462 /* lamp.mp3 */,
+				75B980701B58FA4C00893462 /* school.mp3 */,
+				75B980711B58FA4C00893462 /* smoke.mp3 */,
+			);
+			name = "Islands Sounds";
+			sourceTree = "<group>";
+		};
+		75B980831B590FBD00893462 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				75B9807B1B590FB800893462 /* text_panel_teacher_final_sound_en.mp3 */,
+				75B9807C1B590FB800893462 /* text_panel_teacher_final_sound_ru.mp3 */,
+				75B9807D1B590FB800893462 /* text_panel_teacher_initial_sound_en.mp3 */,
+				75B9807E1B590FB800893462 /* text_panel_teacher_initial_sound_ru.mp3 */,
+				75B980921B5916A400893462 /* text_panel_book_sound_en.mp3 */,
+				75B980931B5916A400893462 /* text_panel_book_sound_ru.mp3 */,
+				75B980941B5916A400893462 /* text_panel_bottle_sound_en.mp3 */,
+				75B980951B5916A400893462 /* text_panel_bottle_sound_ru.mp3 */,
+				75B980961B5916A400893462 /* text_panel_dragon_final_sound_en.mp3 */,
+				75B980971B5916A400893462 /* text_panel_dragon_final_sound_ru.mp3 */,
+				75B980981B5916A400893462 /* text_panel_dragon_initial_sound_en.mp3 */,
+				75B980991B5916A400893462 /* text_panel_dragon_initial_sound_ru.mp3 */,
+				75B9809A1B5916A400893462 /* text_panel_goblin_final_sound_en.mp3 */,
+				75B9809B1B5916A400893462 /* text_panel_goblin_final_sound_ru.mp3 */,
+				75B9809C1B5916A400893462 /* text_panel_goblin_initial_sound_en.mp3 */,
+				75B9809D1B5916A400893462 /* text_panel_goblin_initial_sound_ru.mp3 */,
+				75B9809E1B5916A400893462 /* text_panel_island_initial_sound_en.mp3 */,
+				75B9809F1B5916A400893462 /* text_panel_island_initial_sound_ru.mp3 */,
+				75B980A01B5916A400893462 /* text_panel_island_sound_en.mp3 */,
+				75B980A11B5916A400893462 /* text_panel_island_sound_ru.mp3 */,
+				75B980A21B5916A400893462 /* text_panel_magic_ball_sound_en.mp3 */,
+				75B980A31B5916A400893462 /* text_panel_magic_ball_sound_ru.mp3 */,
+				75B980A41B5916A400893462 /* text_panel_medal_sound_en.mp3 */,
+				75B980A51B5916A400893462 /* text_panel_medal_sound_ru.mp3 */,
+				75B980A61B5916A400893462 /* text_panel_other_sound_en.mp3 */,
+				75B980A71B5916A400893462 /* text_panel_other_sound_ru.mp3 */,
+				75B980A81B5916A400893462 /* text_panel_shadow_final_sound_en.mp3 */,
+				75B980A91B5916A400893462 /* text_panel_shadow_final_sound_ru.mp3 */,
+				75B980AA1B5916A400893462 /* text_panel_shadow_initial_sound_en.mp3 */,
+				75B980AB1B5916A400893462 /* text_panel_shadow_initial_sound_ru.mp3 */,
+				75B980AC1B5916A400893462 /* text_panel_wand_sound_en.mp3 */,
+				75B980AD1B5916A400893462 /* text_panel_wand_sound_ru.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		75B980CE1B591A9200893462 /* SoundPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				75B980CB1B591A8700893462 /* SoundPlayer.h */,
+				75B980CC1B591A8700893462 /* SoundPlayer.m */,
+				75B980CF1B591AAA00893462 /* button_click.mp3 */,
+				75B980D01B591AAA00893462 /* right.mp3 */,
+				75B980D11B591AAA00893462 /* wrong.mp3 */,
+			);
+			name = SoundPlayer;
 			sourceTree = "<group>";
 		};
 		75C12A561A754B6C0075FD8D = {
@@ -1182,6 +1396,7 @@
 				757E93DA1A7E2DEE000B2537 /* MagicTableViewController.m */,
 				75EC14141A7ECF460086803E /* MagicSchoolAnswersHandler.h */,
 				75EC14151A7ECF460086803E /* MagicSchoolAnswersHandler.m */,
+				75B980831B590FBD00893462 /* Sounds */,
 			);
 			path = SchoolOfMagic;
 			sourceTree = "<group>";
@@ -1237,6 +1452,7 @@
 		75EDA18B1A840C4D002546E0 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				75B980CE1B591A9200893462 /* SoundPlayer */,
 				75A125151AD0717C00BDFB7F /* Animations */,
 				75EDA18C1A840C55002546E0 /* Categories */,
 				75EDA18D1A840C5E002546E0 /* Custom Classes */,
@@ -1390,17 +1606,24 @@
 				75037FE81B1A3B7700CB0B83 /* furcoat_anim.atlasc in Resources */,
 				75DC67E81A816AA100D6A553 /* shadow_character5_part6.png in Resources */,
 				75DC67A21A816AA100D6A553 /* shadow_character1_part2.png in Resources */,
+				75B980C11B5916A400893462 /* text_panel_medal_sound_ru.mp3 in Resources */,
+				75B980BA1B5916A400893462 /* text_panel_island_initial_sound_en.mp3 in Resources */,
 				75DC681E1A816AA100D6A553 /* shadow_character8_part23.png in Resources */,
 				75DC68151A816AA100D6A553 /* shadow_character8_part15.png in Resources */,
 				75DC67AD1A816AA100D6A553 /* shadow_character2_part12.png in Resources */,
+				75B980781B58FA4C00893462 /* smoke.mp3 in Resources */,
 				75DC66DD1A81520A00D6A553 /* full_portret_color_3.png in Resources */,
 				75DC680A1A816AA100D6A553 /* shadow_character7_part5.png in Resources */,
 				75DC67C81A816AA100D6A553 /* shadow_character4_part11.png in Resources */,
 				75DC67ED1A816AA100D6A553 /* shadow_character6_part10.png in Resources */,
 				75DC68111A816AA100D6A553 /* shadow_character8_part11.png in Resources */,
+				75B980741B58FA4C00893462 /* foam_castle.mp3 in Resources */,
+				75B980B51B5916A400893462 /* text_panel_dragon_initial_sound_ru.mp3 in Resources */,
+				75B980C51B5916A400893462 /* text_panel_shadow_final_sound_ru.mp3 in Resources */,
 				75DC67AA1A816AA100D6A553 /* shadow_character2_part1.png in Resources */,
 				75DC67D01A816AA100D6A553 /* shadow_character4_part19.png in Resources */,
 				75DC67B41A816AA100D6A553 /* shadow_character2_part7.png in Resources */,
+				75B980BD1B5916A400893462 /* text_panel_island_sound_ru.mp3 in Resources */,
 				75E2376E1A854D2900BE6540 /* Localizable.strings in Resources */,
 				750569361B1E55B9008DE162 /* wanda_anim.atlasc in Resources */,
 				75B627FA1B1CFBD2000A3172 /* phoebe_frames.atlasc in Resources */,
@@ -1409,21 +1632,27 @@
 				754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */,
 				75DC67CF1A816AA100D6A553 /* shadow_character4_part18.png in Resources */,
 				75DC67FC1A816AA100D6A553 /* shadow_character7_part10.png in Resources */,
+				75B980C91B5916A400893462 /* text_panel_wand_sound_ru.mp3 in Resources */,
 				75C12A6E1A754B6C0075FD8D /* Main.storyboard in Resources */,
+				75B980721B58FA4C00893462 /* bottomless_island.mp3 in Resources */,
 				75DC68081A816AA100D6A553 /* shadow_character7_part3.png in Resources */,
 				75DC68191A816AA100D6A553 /* shadow_character8_part19.png in Resources */,
 				75DC67AB1A816AA100D6A553 /* shadow_character2_part10.png in Resources */,
 				75DFE1071A800CE500CE9E69 /* Shadow_portret_border_5.png in Resources */,
 				75DFE0FE1A800CE500CE9E69 /* Shadow_portret_4.png in Resources */,
+				75B980761B58FA4C00893462 /* lamp.mp3 in Resources */,
 				75DFE1041A800CE500CE9E69 /* Shadow_portret_border_2.png in Resources */,
 				75DC68061A816AA100D6A553 /* shadow_character7_part2.png in Resources */,
 				75DC67FE1A816AA100D6A553 /* shadow_character7_part12.png in Resources */,
 				75EBF3601AAB7F5A005F5E8C /* answers_colors.plist in Resources */,
 				75DC67A41A816AA100D6A553 /* shadow_character1_part4.png in Resources */,
 				750569321B1E555F008DE162 /* miner_anim.atlasc in Resources */,
+				75B980D41B591AAA00893462 /* wrong.mp3 in Resources */,
 				75DC67D51A816AA100D6A553 /* shadow_character4_part23.png in Resources */,
+				75B980C81B5916A400893462 /* text_panel_wand_sound_en.mp3 in Resources */,
 				75DC67CB1A816AA100D6A553 /* shadow_character4_part14.png in Resources */,
 				75DC67F51A816AA100D6A553 /* shadow_character6_part4.png in Resources */,
+				75B9805B1B58F3F300893462 /* phoebe.mp3 in Resources */,
 				75DC67B61A816AA100D6A553 /* shadow_character2_part9.png in Resources */,
 				75DC68091A816AA100D6A553 /* shadow_character7_part4.png in Resources */,
 				75DC68251A816AA100D6A553 /* shadow_character8_part7.png in Resources */,
@@ -1431,9 +1660,12 @@
 				75DC67FB1A816AA100D6A553 /* shadow_character7_part1.png in Resources */,
 				75DC68001A816AA100D6A553 /* shadow_character7_part14.png in Resources */,
 				75C12A731A754B6C0075FD8D /* LaunchScreen.xib in Resources */,
+				75B9807F1B590FB800893462 /* text_panel_teacher_final_sound_en.mp3 in Resources */,
 				75DC680C1A816AA100D6A553 /* shadow_character7_part7.png in Resources */,
 				75DC67A81A816AA100D6A553 /* shadow_character1_part8.png in Resources */,
 				75DC67C71A816AA100D6A553 /* shadow_character4_part10.png in Resources */,
+				75B980811B590FB800893462 /* text_panel_teacher_initial_sound_en.mp3 in Resources */,
+				75B980C61B5916A400893462 /* text_panel_shadow_initial_sound_en.mp3 in Resources */,
 				75DC67B31A816AA100D6A553 /* shadow_character2_part6.png in Resources */,
 				75DC66E81A81520A00D6A553 /* full_portret_shadow_6.png in Resources */,
 				75DC67CA1A816AA100D6A553 /* shadow_character4_part13.png in Resources */,
@@ -1441,6 +1673,8 @@
 				75DC67F81A816AA100D6A553 /* shadow_character6_part7.png in Resources */,
 				75DC68241A816AA100D6A553 /* shadow_character8_part6.png in Resources */,
 				75DC67B51A816AA100D6A553 /* shadow_character2_part8.png in Resources */,
+				75B980BB1B5916A400893462 /* text_panel_island_initial_sound_ru.mp3 in Resources */,
+				75B980B61B5916A400893462 /* text_panel_goblin_final_sound_en.mp3 in Resources */,
 				75DC68161A816AA100D6A553 /* shadow_character8_part16.png in Resources */,
 				75DC680E1A816AA100D6A553 /* shadow_character7_part9.png in Resources */,
 				75037FE91B1A3B7700CB0B83 /* harold_anim.atlasc in Resources */,
@@ -1457,6 +1691,7 @@
 				75DC679E1A816AA100D6A553 /* shadow_character1_part1.png in Resources */,
 				75DC68051A816AA100D6A553 /* shadow_character7_part19.png in Resources */,
 				75DC67FF1A816AA100D6A553 /* shadow_character7_part13.png in Resources */,
+				75B980731B58FA4C00893462 /* cafe.mp3 in Resources */,
 				75DC681F1A816AA100D6A553 /* shadow_character8_part24.png in Resources */,
 				75DC68201A816AA100D6A553 /* shadow_character8_part25.png in Resources */,
 				75DC67E61A816AA100D6A553 /* shadow_character5_part4.png in Resources */,
@@ -1466,21 +1701,28 @@
 				75DC67DB1A816AA100D6A553 /* shadow_character4_part7.png in Resources */,
 				750569281B1E5177008DE162 /* cafe_frames.atlasc in Resources */,
 				75DC67DE1A816AA100D6A553 /* shadow_character5_part1.png in Resources */,
+				75B980BE1B5916A400893462 /* text_panel_magic_ball_sound_en.mp3 in Resources */,
 				75DC67EE1A816AA100D6A553 /* shadow_character6_part11.png in Resources */,
+				75B980631B58F4A400893462 /* furcoat.mp3 in Resources */,
+				75B980551B58F2E300893462 /* harold.mp3 in Resources */,
 				75FF2FA51B224A0C008EB9AA /* MystieParticles.sks in Resources */,
 				7597094E1AC8947900FFB11E /* SettingsBarIconViewController.xib in Resources */,
 				75AD2E9F1ADAD424002EE482 /* Book.storyboard in Resources */,
+				75B980C41B5916A400893462 /* text_panel_shadow_final_sound_en.mp3 in Resources */,
 				75DC67F21A816AA100D6A553 /* shadow_character6_part15.png in Resources */,
 				75DC67F31A816AA100D6A553 /* shadow_character6_part2.png in Resources */,
+				75B980B71B5916A400893462 /* text_panel_goblin_final_sound_ru.mp3 in Resources */,
 				75DC67AE1A816AA100D6A553 /* shadow_character2_part13.png in Resources */,
 				75C83FFE1B49882C007122A9 /* sheep_anim.atlasc in Resources */,
 				75DC67B81A816AA100D6A553 /* shadow_character3_part10.png in Resources */,
+				75B980B81B5916A400893462 /* text_panel_goblin_initial_sound_en.mp3 in Resources */,
 				75DFE10A1A800CE500CE9E69 /* Shadow_portret_border_8.png in Resources */,
 				75DC680F1A816AA100D6A553 /* shadow_character8_part1.png in Resources */,
 				75DFE1001A800CE500CE9E69 /* Shadow_portret_6.png in Resources */,
 				75DC67C61A816AA100D6A553 /* shadow_character4_part1.png in Resources */,
 				75FF2FA61B224A0C008EB9AA /* particleModel.png in Resources */,
 				75EDA1841A83FBCA002546E0 /* shadow_wrong_position.plist in Resources */,
+				75B980611B58F49700893462 /* wanda.mp3 in Resources */,
 				75DC67D21A816AA100D6A553 /* shadow_character4_part20.png in Resources */,
 				75DC67C31A816AA100D6A553 /* shadow_character3_part7.png in Resources */,
 				75DC67E91A816AA100D6A553 /* shadow_character5_part7.png in Resources */,
@@ -1493,8 +1735,10 @@
 				75DC68181A816AA100D6A553 /* shadow_character8_part18.png in Resources */,
 				750569291B1E5177008DE162 /* lighthouse_frames.atlasc in Resources */,
 				75DC67CD1A816AA100D6A553 /* shadow_character4_part16.png in Resources */,
+				75B9805D1B58F48400893462 /* miner.mp3 in Resources */,
 				75DC67FA1A816AA100D6A553 /* shadow_character6_part9.png in Resources */,
 				75DC67BC1A816AA100D6A553 /* shadow_character3_part14.png in Resources */,
+				75B980801B590FB800893462 /* text_panel_teacher_final_sound_ru.mp3 in Resources */,
 				75DC68031A816AA100D6A553 /* shadow_character7_part17.png in Resources */,
 				75DC67A31A816AA100D6A553 /* shadow_character1_part3.png in Resources */,
 				75DFE1061A800CE500CE9E69 /* Shadow_portret_border_4.png in Resources */,
@@ -1511,7 +1755,11 @@
 				75DC67C51A816AA100D6A553 /* shadow_character3_part9.png in Resources */,
 				75E237861A85645100BE6540 /* Answers.plist in Resources */,
 				75DFE1081A800CE500CE9E69 /* Shadow_portret_border_6.png in Resources */,
+				75B980AE1B5916A400893462 /* text_panel_book_sound_en.mp3 in Resources */,
+				75B980BF1B5916A400893462 /* text_panel_magic_ball_sound_ru.mp3 in Resources */,
 				75DC67C01A816AA100D6A553 /* shadow_character3_part4.png in Resources */,
+				75B980B21B5916A400893462 /* text_panel_dragon_final_sound_en.mp3 in Resources */,
+				75B980C01B5916A400893462 /* text_panel_medal_sound_en.mp3 in Resources */,
 				75DFE0FD1A800CE500CE9E69 /* Shadow_portret_3.png in Resources */,
 				75DC67EF1A816AA100D6A553 /* shadow_character6_part12.png in Resources */,
 				75DC67D31A816AA100D6A553 /* shadow_character4_part21.png in Resources */,
@@ -1530,13 +1778,16 @@
 				7505692D1B1E542C008DE162 /* jay_anim.atlasc in Resources */,
 				75DFE0FB1A800CE500CE9E69 /* Shadow_portret_1.png in Resources */,
 				75C12A701A754B6C0075FD8D /* Images.xcassets in Resources */,
+				75B980BC1B5916A400893462 /* text_panel_island_sound_en.mp3 in Resources */,
 				750569391B1E5660008DE162 /* bottom_island.atlasc in Resources */,
 				75DC67F91A816AA100D6A553 /* shadow_character6_part8.png in Resources */,
+				75B980751B58FA4C00893462 /* ghost.mp3 in Resources */,
 				75DC67EB1A816AA100D6A553 /* shadow_character5_part9.png in Resources */,
 				75DC67B01A816AA100D6A553 /* shadow_character2_part3.png in Resources */,
 				75DC67AF1A816AA100D6A553 /* shadow_character2_part2.png in Resources */,
 				75DC68131A816AA100D6A553 /* shadow_character8_part13.png in Resources */,
 				75037FE71B1A3B7700CB0B83 /* foam_castle.atlasc in Resources */,
+				75B980D21B591AAA00893462 /* button_click.mp3 in Resources */,
 				75DC679F1A816AA100D6A553 /* shadow_character1_part10.png in Resources */,
 				75DFE1091A800CE500CE9E69 /* Shadow_portret_border_7.png in Resources */,
 				75DC67F41A816AA100D6A553 /* shadow_character6_part3.png in Resources */,
@@ -1547,17 +1798,28 @@
 				75DC67A11A816AA100D6A553 /* shadow_character1_part12.png in Resources */,
 				75DC68211A816AA100D6A553 /* shadow_character8_part3.png in Resources */,
 				75DC680D1A816AA100D6A553 /* shadow_character7_part8.png in Resources */,
+				75B980591B58F3E700893462 /* mystie.mp3 in Resources */,
+				75B980AF1B5916A400893462 /* text_panel_book_sound_ru.mp3 in Resources */,
+				75B980821B590FB800893462 /* text_panel_teacher_initial_sound_ru.mp3 in Resources */,
 				75EE39651B41D74100BF9A55 /* skelet_anim.atlasc in Resources */,
 				75DC67E31A816AA100D6A553 /* shadow_character5_part14.png in Resources */,
+				75B980C21B5916A400893462 /* text_panel_other_sound_en.mp3 in Resources */,
+				75B980B31B5916A400893462 /* text_panel_dragon_final_sound_ru.mp3 in Resources */,
 				75DC66E41A81520A00D6A553 /* full_portret_shadow_2.png in Resources */,
 				75C83FF81B497444007122A9 /* goblin_anim.atlasc in Resources */,
 				75DC67DD1A816AA100D6A553 /* shadow_character4_part9.png in Resources */,
 				75DC67F11A816AA100D6A553 /* shadow_character6_part14.png in Resources */,
 				75DC67E21A816AA100D6A553 /* shadow_character5_part13.png in Resources */,
+				75B980B41B5916A400893462 /* text_panel_dragon_initial_sound_en.mp3 in Resources */,
 				75DFE1021A800CE500CE9E69 /* Shadow_portret_8.png in Resources */,
+				75B9805F1B58F48D00893462 /* justacreep.mp3 in Resources */,
 				75DC67D91A816AA100D6A553 /* shadow_character4_part5.png in Resources */,
+				75B980C31B5916A400893462 /* text_panel_other_sound_ru.mp3 in Resources */,
+				75B980B01B5916A400893462 /* text_panel_bottle_sound_en.mp3 in Resources */,
 				75DC67BD1A816AA100D6A553 /* shadow_character3_part15.png in Resources */,
+				75B980C71B5916A400893462 /* text_panel_shadow_initial_sound_ru.mp3 in Resources */,
 				75DC67E11A816AA100D6A553 /* shadow_character5_part12.png in Resources */,
+				75B980771B58FA4C00893462 /* school.mp3 in Resources */,
 				75DC67BB1A816AA100D6A553 /* shadow_character3_part13.png in Resources */,
 				75DC66E51A81520A00D6A553 /* full_portret_shadow_3.png in Resources */,
 				75DFE1031A800CE500CE9E69 /* Shadow_portret_border_1.png in Resources */,
@@ -1567,8 +1829,11 @@
 				75DC68101A816AA100D6A553 /* shadow_character8_part10.png in Resources */,
 				75DC67C11A816AA100D6A553 /* shadow_character3_part5.png in Resources */,
 				75DC67AC1A816AA100D6A553 /* shadow_character2_part11.png in Resources */,
+				75B980571B58F3D700893462 /* jay.mp3 in Resources */,
 				75DC68391A817E6500D6A553 /* shadow_correct_position.plist in Resources */,
+				75B980D31B591AAA00893462 /* right.mp3 in Resources */,
 				75DC67D41A816AA100D6A553 /* shadow_character4_part22.png in Resources */,
+				75B980B91B5916A400893462 /* text_panel_goblin_initial_sound_ru.mp3 in Resources */,
 				75DC68121A816AA100D6A553 /* shadow_character8_part12.png in Resources */,
 				75DC67A61A816AA100D6A553 /* shadow_character1_part6.png in Resources */,
 				75DC67E51A816AA100D6A553 /* shadow_character5_part3.png in Resources */,
@@ -1584,6 +1849,7 @@
 				75DC67EC1A816AA100D6A553 /* shadow_character6_part1.png in Resources */,
 				75DC67B91A816AA100D6A553 /* shadow_character3_part11.png in Resources */,
 				75DC67D61A816AA100D6A553 /* shadow_character4_part24.png in Resources */,
+				75B980B11B5916A400893462 /* text_panel_bottle_sound_ru.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1678,6 +1944,7 @@
 				7503800B1B1A3B8900CB0B83 /* NNKFoamCastleNode.m in Sources */,
 				75E86E321A82C06800419776 /* DragableButton.m in Sources */,
 				75FF2F111B22311D008EB9AA /* NNKJustacreepNode.m in Sources */,
+				75B980661B58F55500893462 /* SKAction+Groups.m in Sources */,
 				755CDE101AECE1BE0095B6DF /* InventaryContentHandler.m in Sources */,
 				755CDE151AECE3380095B6DF /* InventaryItemOption.m in Sources */,
 				750380041B1A3B8900CB0B83 /* MyScene.m in Sources */,
@@ -1695,6 +1962,7 @@
 				750380051B1A3B8900CB0B83 /* NNKMinerNode.m in Sources */,
 				75EC14161A7ECF460086803E /* MagicSchoolAnswersHandler.m in Sources */,
 				75C83FF51B4879F3007122A9 /* GingersHouseViewController.m in Sources */,
+				75B980CD1B591A8700893462 /* SoundPlayer.m in Sources */,
 				75F1DB201A86D758005ACBA7 /* UIDevice+ScreenSize.m in Sources */,
 				75DFE0C91A8009C800CE9E69 /* CharacterShadowViewController.m in Sources */,
 				75AD2E9A1ADAD193002EE482 /* UIWebView+CSSRule.m in Sources */,

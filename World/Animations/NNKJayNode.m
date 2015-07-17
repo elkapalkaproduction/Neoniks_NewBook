@@ -48,8 +48,7 @@
 
 - (SKAction *)blickSequence {
     if (!_blickSequence) {
-        _blickSequence = [SKAction repeatActionForever:[SKAction animateWithTextures:JAY_ANIM_ANIM_JAY_BLICK
-                                                                   timePerFrame:1.f / 15.f]];
+        _blickSequence = [SKAction repeatActionForever:[SKAction actionWithSoundName:@"jay.mp3" textures:JAY_ANIM_ANIM_JAY_BLICK]];
     }
     
     return _blickSequence;

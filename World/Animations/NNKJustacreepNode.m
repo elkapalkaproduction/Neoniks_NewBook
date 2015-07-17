@@ -59,6 +59,7 @@
 - (void)runAction {
     self.hatNode.physicsBody = [SKPhysicsBody bodyWithTexture:JUSTACREEP_ANIM_TEX_JUSTACREEP_HAT size:self.hatNode.size];
     self.hatNode.physicsBody.dynamic = YES;
+    [self runAction:[SKAction playSoundFileNamed:@"justacreep.mp3" waitForCompletion:NO]];
 }
 
 @end
