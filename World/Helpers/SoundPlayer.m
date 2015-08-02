@@ -7,7 +7,7 @@
 //
 
 #import "SoundPlayer.h"
-#import <AVFoundation/AVFoundation.h>
+#import "AVAudioPlayer+Creation.h"
 
 @interface SoundPlayer ()
 
@@ -30,19 +30,9 @@
 }
 
 
-- (AVAudioPlayer *)audioPlayerWithSoundName:(NSString *)soundName {
-    NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:soundName ofType:nil];
-    if (!soundFilePath) return nil;
-    NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
-    AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL error:nil];
-    
-    return audioPlayer;
-}
-
-
 - (AVAudioPlayer *)audioPlayer {
     if (!_audioPlayer) {
-        _audioPlayer = [self audioPlayerWithSoundName:@"button_click.mp3"];
+        _audioPlayer = [AVAudioPlayer audioPlayerWithSoundName:@"button_click.mp3"];
         [_audioPlayer prepareToPlay];
     }
     
@@ -52,7 +42,7 @@
 
 - (AVAudioPlayer *)correctAnswerPlayer {
     if (!_correctAnswerPlayer) {
-        _correctAnswerPlayer = [self audioPlayerWithSoundName:@"right.mp3"];
+        _correctAnswerPlayer = [AVAudioPlayer audioPlayerWithSoundName:@"right.mp3"];
     }
     
     return _correctAnswerPlayer;
@@ -61,7 +51,7 @@
 
 - (AVAudioPlayer *)wrongAnswerPlayer {
     if (!_wrongAnswerPlayer) {
-        _wrongAnswerPlayer = [self audioPlayerWithSoundName:@"wrong.mp3"];
+        _wrongAnswerPlayer = [AVAudioPlayer audioPlayerWithSoundName:@"wrong.mp3"];
     }
     
     return _wrongAnswerPlayer;

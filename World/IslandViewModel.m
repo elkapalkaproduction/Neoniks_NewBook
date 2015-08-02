@@ -8,6 +8,7 @@
 
 #import "IslandViewModel.h"
 #import "PopUpViewController.h"
+#import "SoundPlayer.h"
 
 NSString *const LastSolvedIsland = @"LastSolvedIsland";
 
@@ -53,14 +54,20 @@ NSString *const LastSolvedIsland = @"LastSolvedIsland";
     UIColor *pixelColor = [self.answersImage colorAtPixel:point];
     BOOL find = [pixelColor isEqual:[self correctColorForIndex:[self currentNeedToFind]]];
     if (find) {
+        [[SoundPlayer sharedPlayer] playCorrectAnswer];
         [self.delegate openPopUpViewController:[self popUpForIndex:[self currentNeedToFind]]];
         [self increaeCurrentAnswer];
     } else {
+        BOOL foundSomething = NO;
         for (NSInteger index = 0; index < [self currentNeedToFind]; index++) {
             BOOL openPopUp = [pixelColor isEqual:[self correctColorForIndex:index]];
             if (openPopUp) {
+                foundSomething = YES;
                 [self.delegate openPopUpViewController:[self popUpForIndex:index]];
             }
+        }
+        if (!foundSomething && [self currentNeedToFind] != IslandToFindSolvedAll) {
+            [[SoundPlayer sharedPlayer] playWrongAnswer];
         }
     }
 }

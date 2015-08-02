@@ -124,7 +124,6 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 }
 
 
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier rangeOfString:NSPSegueIdentifierPattern].location != NSNotFound) {
         if (self.arrayOfSegues) {

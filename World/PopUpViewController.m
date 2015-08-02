@@ -15,6 +15,7 @@
 #import "NNKCafeNode.h"
 #import "NNKLighthouseNode.h"
 #import "MyScene.h"
+#import "AVAudioPlayer+Creation.h"
 
 @import QuartzCore;
 
@@ -26,6 +27,7 @@
 @property (assign, nonatomic) PopUpType type;
 @property (strong, nonatomic) MyScene *scene;
 @property (strong, nonatomic) IBOutlet SKView *skView;
+@property (strong, nonatomic) AVAudioPlayer *player;
 
 @end
 
@@ -64,7 +66,7 @@
     NSString *text = [NSString stringWithFormat:@"island_popup_description_%ld", (long)self.type];
     NSString *localizedText = NSLocalizedString(text, nil);
     NSString *bannerImageName = [NSString stringWithFormat:@"pop_up_banner_%ld", (long)self.type];
-    
+
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:localizedText];
     [attributedString addAttribute:NSKernAttributeName value:@(1.4) range:NSMakeRange(0, [localizedText length])];
     self.label.attributedText = attributedString;
@@ -72,6 +74,29 @@
     self.skView.allowsTransparency = YES;
 
     [self setupContentImage];
+}
+
+
+- (AVAudioPlayer *)player {
+    if (!_player) {
+        NSString *text = [NSString stringWithFormat:@"island_sound_%ld", (long)self.type];
+        NSString *localizedText = NSLocalizedString(text, nil);
+        _player = [AVAudioPlayer audioPlayerWithSoundName:localizedText];
+    }
+    
+    return _player;
+}
+
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.player play];
+}
+
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.player stop];
 }
 
 

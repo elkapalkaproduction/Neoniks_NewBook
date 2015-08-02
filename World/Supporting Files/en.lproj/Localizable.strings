@@ -201,5 +201,13 @@
 "text_panel_shadow_initial_sound" = "text_panel_shadow_initial_sound_en";
 "text_panel_shadow_final_sound" = "text_panel_shadow_final_sound_en";
 
+"island_sound_0" = "island_sound_0_en";
+"island_sound_1" = "island_sound_1_en";
+"island_sound_2" = "island_sound_2_en";
+"island_sound_3" = "island_sound_3_en";
+"island_sound_4" = "island_sound_4_en";
+"island_sound_5" = "island_sound_5_en";
+"island_sound_6" = "island_sound_6_en";
+
 ///////
 

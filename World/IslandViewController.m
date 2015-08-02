@@ -179,6 +179,7 @@
 
 
 - (void)openPopUpViewController:(PopUpViewController *)controller {
+    [self.textBar stopStound];
     [controller addOnParentView:self];
 }
 

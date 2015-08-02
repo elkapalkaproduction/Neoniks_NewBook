@@ -138,6 +138,21 @@
 		75C84D591ADBD955006359E9 /* FontSelectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C84D581ADBD955006359E9 /* FontSelectViewModel.m */; };
 		75CC87E91AD0238D00F6C59E /* MainScreenViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */; };
 		75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D268FD1AC3448B00A17632 /* InfiniteTableView.m */; };
+		75D530F51B6E82D000E57D25 /* island_sound_0_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75D530E71B6E82D000E57D25 /* island_sound_0_en.mp3 */; };
+		75D530F61B6E82D000E57D25 /* island_sound_0_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75D530E81B6E82D000E57D25 /* island_sound_0_ru.mp3 */; };
+		75D530F71B6E82D000E57D25 /* island_sound_1_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75D530E91B6E82D000E57D25 /* island_sound_1_en.mp3 */; };
+		75D530F81B6E82D000E57D25 /* island_sound_1_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75D530EA1B6E82D000E57D25 /* island_sound_1_ru.mp3 */; };
+		75D530F91B6E82D000E57D25 /* island_sound_2_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75D530EB1B6E82D000E57D25 /* island_sound_2_en.mp3 */; };
+		75D530FA1B6E82D000E57D25 /* island_sound_2_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75D530EC1B6E82D000E57D25 /* island_sound_2_ru.mp3 */; };
+		75D530FB1B6E82D000E57D25 /* island_sound_3_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75D530ED1B6E82D000E57D25 /* island_sound_3_en.mp3 */; };
+		75D530FC1B6E82D000E57D25 /* island_sound_3_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75D530EE1B6E82D000E57D25 /* island_sound_3_ru.mp3 */; };
+		75D530FD1B6E82D000E57D25 /* island_sound_4_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75D530EF1B6E82D000E57D25 /* island_sound_4_en.mp3 */; };
+		75D530FE1B6E82D000E57D25 /* island_sound_4_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75D530F01B6E82D000E57D25 /* island_sound_4_ru.mp3 */; };
+		75D530FF1B6E82D000E57D25 /* island_sound_5_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75D530F11B6E82D000E57D25 /* island_sound_5_en.mp3 */; };
+		75D531001B6E82D000E57D25 /* island_sound_5_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75D530F21B6E82D000E57D25 /* island_sound_5_ru.mp3 */; };
+		75D531011B6E82D000E57D25 /* island_sound_6_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75D530F31B6E82D000E57D25 /* island_sound_6_en.mp3 */; };
+		75D531021B6E82D000E57D25 /* island_sound_6_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75D530F41B6E82D000E57D25 /* island_sound_6_ru.mp3 */; };
+		75D531051B6E82EB00E57D25 /* AVAudioPlayer+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D531041B6E82EB00E57D25 /* AVAudioPlayer+Creation.m */; };
 		75DC66C91A814F9300D6A553 /* ShadowPlayOpenedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DC66C81A814F9300D6A553 /* ShadowPlayOpenedHandler.m */; };
 		75DC66DD1A81520A00D6A553 /* full_portret_color_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66CD1A81520A00D6A553 /* full_portret_color_3.png */; };
 		75DC66E31A81520A00D6A553 /* full_portret_shadow_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75DC66D31A81520A00D6A553 /* full_portret_shadow_1.png */; };
@@ -546,6 +561,22 @@
 		75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScreenViewModel.m; sourceTree = "<group>"; };
 		75D268FC1AC3448B00A17632 /* InfiniteTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteTableView.h; sourceTree = "<group>"; };
 		75D268FD1AC3448B00A17632 /* InfiniteTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteTableView.m; sourceTree = "<group>"; };
+		75D530E71B6E82D000E57D25 /* island_sound_0_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = island_sound_0_en.mp3; sourceTree = "<group>"; };
+		75D530E81B6E82D000E57D25 /* island_sound_0_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = island_sound_0_ru.mp3; sourceTree = "<group>"; };
+		75D530E91B6E82D000E57D25 /* island_sound_1_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = island_sound_1_en.mp3; sourceTree = "<group>"; };
+		75D530EA1B6E82D000E57D25 /* island_sound_1_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = island_sound_1_ru.mp3; sourceTree = "<group>"; };
+		75D530EB1B6E82D000E57D25 /* island_sound_2_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = island_sound_2_en.mp3; sourceTree = "<group>"; };
+		75D530EC1B6E82D000E57D25 /* island_sound_2_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = island_sound_2_ru.mp3; sourceTree = "<group>"; };
+		75D530ED1B6E82D000E57D25 /* island_sound_3_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = island_sound_3_en.mp3; sourceTree = "<group>"; };
+		75D530EE1B6E82D000E57D25 /* island_sound_3_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = island_sound_3_ru.mp3; sourceTree = "<group>"; };
+		75D530EF1B6E82D000E57D25 /* island_sound_4_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = island_sound_4_en.mp3; sourceTree = "<group>"; };
+		75D530F01B6E82D000E57D25 /* island_sound_4_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = island_sound_4_ru.mp3; sourceTree = "<group>"; };
+		75D530F11B6E82D000E57D25 /* island_sound_5_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = island_sound_5_en.mp3; sourceTree = "<group>"; };
+		75D530F21B6E82D000E57D25 /* island_sound_5_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = island_sound_5_ru.mp3; sourceTree = "<group>"; };
+		75D530F31B6E82D000E57D25 /* island_sound_6_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = island_sound_6_en.mp3; sourceTree = "<group>"; };
+		75D530F41B6E82D000E57D25 /* island_sound_6_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = island_sound_6_ru.mp3; sourceTree = "<group>"; };
+		75D531031B6E82EB00E57D25 /* AVAudioPlayer+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioPlayer+Creation.h"; sourceTree = "<group>"; };
+		75D531041B6E82EB00E57D25 /* AVAudioPlayer+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioPlayer+Creation.m"; sourceTree = "<group>"; };
 		75DC66C71A814F9300D6A553 /* ShadowPlayOpenedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowPlayOpenedHandler.h; sourceTree = "<group>"; };
 		75DC66C81A814F9300D6A553 /* ShadowPlayOpenedHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowPlayOpenedHandler.m; sourceTree = "<group>"; };
 		75DC66CD1A81520A00D6A553 /* full_portret_color_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = full_portret_color_3.png; sourceTree = "<group>"; };
@@ -833,6 +864,7 @@
 				75635ADC1AABBEA9005BD4CB /* PopUpViewController.h */,
 				75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */,
 				75EBF35F1AAB7F5A005F5E8C /* answers_colors.plist */,
+				75D530E61B6E82D000E57D25 /* island */,
 			);
 			name = Island;
 			sourceTree = "<group>";
@@ -1047,6 +1079,8 @@
 			children = (
 				75B980CB1B591A8700893462 /* SoundPlayer.h */,
 				75B980CC1B591A8700893462 /* SoundPlayer.m */,
+				75D531031B6E82EB00E57D25 /* AVAudioPlayer+Creation.h */,
+				75D531041B6E82EB00E57D25 /* AVAudioPlayer+Creation.m */,
 				75B980CF1B591AAA00893462 /* button_click.mp3 */,
 				75B980D01B591AAA00893462 /* right.mp3 */,
 				75B980D11B591AAA00893462 /* wrong.mp3 */,
@@ -1158,6 +1192,27 @@
 				75C84D581ADBD955006359E9 /* FontSelectViewModel.m */,
 			);
 			name = "Book Options";
+			sourceTree = "<group>";
+		};
+		75D530E61B6E82D000E57D25 /* island */ = {
+			isa = PBXGroup;
+			children = (
+				75D530E71B6E82D000E57D25 /* island_sound_0_en.mp3 */,
+				75D530E81B6E82D000E57D25 /* island_sound_0_ru.mp3 */,
+				75D530E91B6E82D000E57D25 /* island_sound_1_en.mp3 */,
+				75D530EA1B6E82D000E57D25 /* island_sound_1_ru.mp3 */,
+				75D530EB1B6E82D000E57D25 /* island_sound_2_en.mp3 */,
+				75D530EC1B6E82D000E57D25 /* island_sound_2_ru.mp3 */,
+				75D530ED1B6E82D000E57D25 /* island_sound_3_en.mp3 */,
+				75D530EE1B6E82D000E57D25 /* island_sound_3_ru.mp3 */,
+				75D530EF1B6E82D000E57D25 /* island_sound_4_en.mp3 */,
+				75D530F01B6E82D000E57D25 /* island_sound_4_ru.mp3 */,
+				75D530F11B6E82D000E57D25 /* island_sound_5_en.mp3 */,
+				75D530F21B6E82D000E57D25 /* island_sound_5_ru.mp3 */,
+				75D530F31B6E82D000E57D25 /* island_sound_6_en.mp3 */,
+				75D530F41B6E82D000E57D25 /* island_sound_6_ru.mp3 */,
+			);
+			path = island;
 			sourceTree = "<group>";
 		};
 		75DC66CA1A81520A00D6A553 /* characters */ = {
@@ -1627,6 +1682,7 @@
 				75E2376E1A854D2900BE6540 /* Localizable.strings in Resources */,
 				750569361B1E55B9008DE162 /* wanda_anim.atlasc in Resources */,
 				75B627FA1B1CFBD2000A3172 /* phoebe_frames.atlasc in Resources */,
+				75D530FB1B6E82D000E57D25 /* island_sound_3_en.mp3 in Resources */,
 				75DC67F61A816AA100D6A553 /* shadow_character6_part5.png in Resources */,
 				75DC66E91A81520A00D6A553 /* full_portret_shadow_7.png in Resources */,
 				754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */,
@@ -1658,6 +1714,7 @@
 				75DC68251A816AA100D6A553 /* shadow_character8_part7.png in Resources */,
 				75E237681A85490800BE6540 /* doux.ttf in Resources */,
 				75DC67FB1A816AA100D6A553 /* shadow_character7_part1.png in Resources */,
+				75D530F61B6E82D000E57D25 /* island_sound_0_ru.mp3 in Resources */,
 				75DC68001A816AA100D6A553 /* shadow_character7_part14.png in Resources */,
 				75C12A731A754B6C0075FD8D /* LaunchScreen.xib in Resources */,
 				75B9807F1B590FB800893462 /* text_panel_teacher_final_sound_en.mp3 in Resources */,
@@ -1668,6 +1725,8 @@
 				75B980C61B5916A400893462 /* text_panel_shadow_initial_sound_en.mp3 in Resources */,
 				75DC67B31A816AA100D6A553 /* shadow_character2_part6.png in Resources */,
 				75DC66E81A81520A00D6A553 /* full_portret_shadow_6.png in Resources */,
+				75D530FD1B6E82D000E57D25 /* island_sound_4_en.mp3 in Resources */,
+				75D530F81B6E82D000E57D25 /* island_sound_1_ru.mp3 in Resources */,
 				75DC67CA1A816AA100D6A553 /* shadow_character4_part13.png in Resources */,
 				75FF2F141B22312B008EB9AA /* justacreep_anim.atlasc in Resources */,
 				75DC67F81A816AA100D6A553 /* shadow_character6_part7.png in Resources */,
@@ -1680,6 +1739,7 @@
 				75037FE91B1A3B7700CB0B83 /* harold_anim.atlasc in Resources */,
 				75DC67EA1A816AA100D6A553 /* shadow_character5_part8.png in Resources */,
 				75DC681D1A816AA100D6A553 /* shadow_character8_part22.png in Resources */,
+				75D530F51B6E82D000E57D25 /* island_sound_0_en.mp3 in Resources */,
 				75DC68221A816AA100D6A553 /* shadow_character8_part4.png in Resources */,
 				75DC681A1A816AA100D6A553 /* shadow_character8_part2.png in Resources */,
 				75DC680B1A816AA100D6A553 /* shadow_character7_part6.png in Resources */,
@@ -1688,17 +1748,20 @@
 				75DC68041A816AA100D6A553 /* shadow_character7_part18.png in Resources */,
 				75DC67F01A816AA100D6A553 /* shadow_character6_part13.png in Resources */,
 				75DC67C41A816AA100D6A553 /* shadow_character3_part8.png in Resources */,
+				75D530FA1B6E82D000E57D25 /* island_sound_2_ru.mp3 in Resources */,
 				75DC679E1A816AA100D6A553 /* shadow_character1_part1.png in Resources */,
 				75DC68051A816AA100D6A553 /* shadow_character7_part19.png in Resources */,
 				75DC67FF1A816AA100D6A553 /* shadow_character7_part13.png in Resources */,
 				75B980731B58FA4C00893462 /* cafe.mp3 in Resources */,
 				75DC681F1A816AA100D6A553 /* shadow_character8_part24.png in Resources */,
+				75D531001B6E82D000E57D25 /* island_sound_5_ru.mp3 in Resources */,
 				75DC68201A816AA100D6A553 /* shadow_character8_part25.png in Resources */,
 				75DC67E61A816AA100D6A553 /* shadow_character5_part4.png in Resources */,
 				75DC67E71A816AA100D6A553 /* shadow_character5_part5.png in Resources */,
 				7505693C1B1E56BB008DE162 /* lantern_house.atlasc in Resources */,
 				75DC67D81A816AA100D6A553 /* shadow_character4_part4.png in Resources */,
 				75DC67DB1A816AA100D6A553 /* shadow_character4_part7.png in Resources */,
+				75D530F71B6E82D000E57D25 /* island_sound_1_en.mp3 in Resources */,
 				750569281B1E5177008DE162 /* cafe_frames.atlasc in Resources */,
 				75DC67DE1A816AA100D6A553 /* shadow_character5_part1.png in Resources */,
 				75B980BE1B5916A400893462 /* text_panel_magic_ball_sound_en.mp3 in Resources */,
@@ -1706,8 +1769,10 @@
 				75B980631B58F4A400893462 /* furcoat.mp3 in Resources */,
 				75B980551B58F2E300893462 /* harold.mp3 in Resources */,
 				75FF2FA51B224A0C008EB9AA /* MystieParticles.sks in Resources */,
+				75D531011B6E82D000E57D25 /* island_sound_6_en.mp3 in Resources */,
 				7597094E1AC8947900FFB11E /* SettingsBarIconViewController.xib in Resources */,
 				75AD2E9F1ADAD424002EE482 /* Book.storyboard in Resources */,
+				75D531021B6E82D000E57D25 /* island_sound_6_ru.mp3 in Resources */,
 				75B980C41B5916A400893462 /* text_panel_shadow_final_sound_en.mp3 in Resources */,
 				75DC67F21A816AA100D6A553 /* shadow_character6_part15.png in Resources */,
 				75DC67F31A816AA100D6A553 /* shadow_character6_part2.png in Resources */,
@@ -1730,6 +1795,7 @@
 				75DC68231A816AA100D6A553 /* shadow_character8_part5.png in Resources */,
 				75DC681B1A816AA100D6A553 /* shadow_character8_part20.png in Resources */,
 				75DC67A91A816AA100D6A553 /* shadow_character1_part9.png in Resources */,
+				75D530F91B6E82D000E57D25 /* island_sound_2_en.mp3 in Resources */,
 				75DC68021A816AA100D6A553 /* shadow_character7_part16.png in Resources */,
 				75DC67D71A816AA100D6A553 /* shadow_character4_part3.png in Resources */,
 				75DC68181A816AA100D6A553 /* shadow_character8_part18.png in Resources */,
@@ -1741,6 +1807,7 @@
 				75B980801B590FB800893462 /* text_panel_teacher_final_sound_ru.mp3 in Resources */,
 				75DC68031A816AA100D6A553 /* shadow_character7_part17.png in Resources */,
 				75DC67A31A816AA100D6A553 /* shadow_character1_part3.png in Resources */,
+				75D530FF1B6E82D000E57D25 /* island_sound_5_en.mp3 in Resources */,
 				75DFE1061A800CE500CE9E69 /* Shadow_portret_border_4.png in Resources */,
 				75DC67C91A816AA100D6A553 /* shadow_character4_part12.png in Resources */,
 				75B627FB1B1CFBD2000A3172 /* school_frames.atlasc in Resources */,
@@ -1800,6 +1867,7 @@
 				75DC680D1A816AA100D6A553 /* shadow_character7_part8.png in Resources */,
 				75B980591B58F3E700893462 /* mystie.mp3 in Resources */,
 				75B980AF1B5916A400893462 /* text_panel_book_sound_ru.mp3 in Resources */,
+				75D530FC1B6E82D000E57D25 /* island_sound_3_ru.mp3 in Resources */,
 				75B980821B590FB800893462 /* text_panel_teacher_initial_sound_ru.mp3 in Resources */,
 				75EE39651B41D74100BF9A55 /* skelet_anim.atlasc in Resources */,
 				75DC67E31A816AA100D6A553 /* shadow_character5_part14.png in Resources */,
@@ -1824,6 +1892,7 @@
 				75DC66E51A81520A00D6A553 /* full_portret_shadow_3.png in Resources */,
 				75DFE1031A800CE500CE9E69 /* Shadow_portret_border_1.png in Resources */,
 				75DC68071A816AA100D6A553 /* shadow_character7_part20.png in Resources */,
+				75D530FE1B6E82D000E57D25 /* island_sound_4_ru.mp3 in Resources */,
 				75DC68011A816AA100D6A553 /* shadow_character7_part15.png in Resources */,
 				75DC66E31A81520A00D6A553 /* full_portret_shadow_1.png in Resources */,
 				75DC68101A816AA100D6A553 /* shadow_character8_part10.png in Resources */,
@@ -1966,6 +2035,7 @@
 				75F1DB201A86D758005ACBA7 /* UIDevice+ScreenSize.m in Sources */,
 				75DFE0C91A8009C800CE9E69 /* CharacterShadowViewController.m in Sources */,
 				75AD2E9A1ADAD193002EE482 /* UIWebView+CSSRule.m in Sources */,
+				75D531051B6E82EB00E57D25 /* AVAudioPlayer+Creation.m in Sources */,
 				750380071B1A3B8900CB0B83 /* NNKWandaNode.m in Sources */,
 				75C840051B49A6F1007122A9 /* TextBarViewController.m in Sources */,
 				75A125181AD071B400BDFB7F /* TransitionAnimationDisolve.m in Sources */,
