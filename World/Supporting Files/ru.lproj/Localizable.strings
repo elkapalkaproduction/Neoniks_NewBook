@@ -208,5 +208,25 @@
 "island_sound_5" = "island_sound_5_ru";
 "island_sound_6" = "island_sound_6_ru";
 
+"q0_sound" = "q0_sound_ru";
+"q1_sound" = "q1_sound_ru";
+"q2_sound" = "q2_sound_ru";
+"q3_sound" = "q3_sound_ru";
+"q4_sound" = "q4_sound_ru";
+"q5_sound" = "q5_sound_ru";
+"q6_sound" = "q6_sound_ru";
+"q7_sound" = "q7_sound_ru";
+"q8_sound" = "q8_sound_ru";
+"q9_sound" = "q9_sound_ru";
+
+"shadow_sound_1" = "shadow_sound_1_ru";
+"shadow_sound_2" = "shadow_sound_2_ru";
+"shadow_sound_3" = "shadow_sound_3_ru";
+"shadow_sound_4" = "shadow_sound_4_ru";
+"shadow_sound_5" = "shadow_sound_5_ru";
+"shadow_sound_6" = "shadow_sound_6_ru";
+"shadow_sound_7" = "shadow_sound_7_ru";
+"shadow_sound_8" = "shadow_sound_8_ru";
+
 ///////
 

@@ -22,6 +22,42 @@
 		7503800B1B1A3B8900CB0B83 /* NNKFoamCastleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75037FFE1B1A3B8900CB0B83 /* NNKFoamCastleNode.m */; };
 		7503800C1B1A3B8900CB0B83 /* NNKLanternHouseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 750380001B1A3B8900CB0B83 /* NNKLanternHouseNode.m */; };
 		7503800D1B1A3B8900CB0B83 /* NNKBottomlessIslandNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 750380021B1A3B8900CB0B83 /* NNKBottomlessIslandNode.m */; };
+		75041C171B6E9ED300B28F3F /* q0_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C031B6E9ED300B28F3F /* q0_sound_en.mp3 */; };
+		75041C181B6E9ED300B28F3F /* q0_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C041B6E9ED300B28F3F /* q0_sound_ru.mp3 */; };
+		75041C191B6E9ED300B28F3F /* q1_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C051B6E9ED300B28F3F /* q1_sound_en.mp3 */; };
+		75041C1A1B6E9ED300B28F3F /* q1_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C061B6E9ED300B28F3F /* q1_sound_ru.mp3 */; };
+		75041C1B1B6E9ED300B28F3F /* q2_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C071B6E9ED300B28F3F /* q2_sound_en.mp3 */; };
+		75041C1C1B6E9ED300B28F3F /* q2_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C081B6E9ED300B28F3F /* q2_sound_ru.mp3 */; };
+		75041C1D1B6E9ED300B28F3F /* q3_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C091B6E9ED300B28F3F /* q3_sound_en.mp3 */; };
+		75041C1E1B6E9ED300B28F3F /* q3_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C0A1B6E9ED300B28F3F /* q3_sound_ru.mp3 */; };
+		75041C1F1B6E9ED300B28F3F /* q4_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C0B1B6E9ED300B28F3F /* q4_sound_en.mp3 */; };
+		75041C201B6E9ED300B28F3F /* q4_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C0C1B6E9ED300B28F3F /* q4_sound_ru.mp3 */; };
+		75041C211B6E9ED300B28F3F /* q5_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C0D1B6E9ED300B28F3F /* q5_sound_en.mp3 */; };
+		75041C221B6E9ED300B28F3F /* q5_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C0E1B6E9ED300B28F3F /* q5_sound_ru.mp3 */; };
+		75041C231B6E9ED300B28F3F /* q6_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C0F1B6E9ED300B28F3F /* q6_sound_en.mp3 */; };
+		75041C241B6E9ED300B28F3F /* q6_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C101B6E9ED300B28F3F /* q6_sound_ru.mp3 */; };
+		75041C251B6E9ED300B28F3F /* q7_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C111B6E9ED300B28F3F /* q7_sound_en.mp3 */; };
+		75041C261B6E9ED300B28F3F /* q7_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C121B6E9ED300B28F3F /* q7_sound_ru.mp3 */; };
+		75041C271B6E9ED300B28F3F /* q8_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C131B6E9ED300B28F3F /* q8_sound_en.mp3 */; };
+		75041C281B6E9ED300B28F3F /* q8_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C141B6E9ED300B28F3F /* q8_sound_ru.mp3 */; };
+		75041C291B6E9ED300B28F3F /* q9_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C151B6E9ED300B28F3F /* q9_sound_en.mp3 */; };
+		75041C2A1B6E9ED300B28F3F /* q9_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C161B6E9ED300B28F3F /* q9_sound_ru.mp3 */; };
+		75041C3C1B6EAD7F00B28F3F /* shadow_sound_1_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C2C1B6EAD7F00B28F3F /* shadow_sound_1_en.mp3 */; };
+		75041C3D1B6EAD7F00B28F3F /* shadow_sound_1_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C2D1B6EAD7F00B28F3F /* shadow_sound_1_ru.mp3 */; };
+		75041C3E1B6EAD7F00B28F3F /* shadow_sound_2_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C2E1B6EAD7F00B28F3F /* shadow_sound_2_en.mp3 */; };
+		75041C3F1B6EAD7F00B28F3F /* shadow_sound_2_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C2F1B6EAD7F00B28F3F /* shadow_sound_2_ru.mp3 */; };
+		75041C401B6EAD7F00B28F3F /* shadow_sound_3_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C301B6EAD7F00B28F3F /* shadow_sound_3_en.mp3 */; };
+		75041C411B6EAD7F00B28F3F /* shadow_sound_3_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C311B6EAD7F00B28F3F /* shadow_sound_3_ru.mp3 */; };
+		75041C421B6EAD7F00B28F3F /* shadow_sound_4_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C321B6EAD7F00B28F3F /* shadow_sound_4_en.mp3 */; };
+		75041C431B6EAD7F00B28F3F /* shadow_sound_4_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C331B6EAD7F00B28F3F /* shadow_sound_4_ru.mp3 */; };
+		75041C441B6EAD7F00B28F3F /* shadow_sound_5_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C341B6EAD7F00B28F3F /* shadow_sound_5_en.mp3 */; };
+		75041C451B6EAD7F00B28F3F /* shadow_sound_5_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C351B6EAD7F00B28F3F /* shadow_sound_5_ru.mp3 */; };
+		75041C461B6EAD7F00B28F3F /* shadow_sound_6_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C361B6EAD7F00B28F3F /* shadow_sound_6_en.mp3 */; };
+		75041C471B6EAD7F00B28F3F /* shadow_sound_6_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C371B6EAD7F00B28F3F /* shadow_sound_6_ru.mp3 */; };
+		75041C481B6EAD7F00B28F3F /* shadow_sound_7_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C381B6EAD7F00B28F3F /* shadow_sound_7_en.mp3 */; };
+		75041C491B6EAD7F00B28F3F /* shadow_sound_7_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C391B6EAD7F00B28F3F /* shadow_sound_7_ru.mp3 */; };
+		75041C4A1B6EAD7F00B28F3F /* shadow_sound_8_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C3A1B6EAD7F00B28F3F /* shadow_sound_8_en.mp3 */; };
+		75041C4B1B6EAD7F00B28F3F /* shadow_sound_8_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75041C3B1B6EAD7F00B28F3F /* shadow_sound_8_ru.mp3 */; };
 		750569221B1E5168008DE162 /* NNKLighthouseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7505691F1B1E5168008DE162 /* NNKLighthouseNode.m */; };
 		750569231B1E5168008DE162 /* NNKCafeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 750569211B1E5168008DE162 /* NNKCafeNode.m */; };
 		750569281B1E5177008DE162 /* cafe_frames.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 750569241B1E5177008DE162 /* cafe_frames.atlasc */; };
@@ -388,6 +424,42 @@
 		750380011B1A3B8900CB0B83 /* NNKBottomlessIslandNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKBottomlessIslandNode.h; sourceTree = "<group>"; };
 		750380021B1A3B8900CB0B83 /* NNKBottomlessIslandNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKBottomlessIslandNode.m; sourceTree = "<group>"; };
 		750380031B1A3B8900CB0B83 /* CustomNodeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNodeProtocol.h; sourceTree = "<group>"; };
+		75041C031B6E9ED300B28F3F /* q0_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q0_sound_en.mp3; sourceTree = "<group>"; };
+		75041C041B6E9ED300B28F3F /* q0_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q0_sound_ru.mp3; sourceTree = "<group>"; };
+		75041C051B6E9ED300B28F3F /* q1_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q1_sound_en.mp3; sourceTree = "<group>"; };
+		75041C061B6E9ED300B28F3F /* q1_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q1_sound_ru.mp3; sourceTree = "<group>"; };
+		75041C071B6E9ED300B28F3F /* q2_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q2_sound_en.mp3; sourceTree = "<group>"; };
+		75041C081B6E9ED300B28F3F /* q2_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q2_sound_ru.mp3; sourceTree = "<group>"; };
+		75041C091B6E9ED300B28F3F /* q3_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q3_sound_en.mp3; sourceTree = "<group>"; };
+		75041C0A1B6E9ED300B28F3F /* q3_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q3_sound_ru.mp3; sourceTree = "<group>"; };
+		75041C0B1B6E9ED300B28F3F /* q4_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q4_sound_en.mp3; sourceTree = "<group>"; };
+		75041C0C1B6E9ED300B28F3F /* q4_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q4_sound_ru.mp3; sourceTree = "<group>"; };
+		75041C0D1B6E9ED300B28F3F /* q5_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q5_sound_en.mp3; sourceTree = "<group>"; };
+		75041C0E1B6E9ED300B28F3F /* q5_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q5_sound_ru.mp3; sourceTree = "<group>"; };
+		75041C0F1B6E9ED300B28F3F /* q6_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q6_sound_en.mp3; sourceTree = "<group>"; };
+		75041C101B6E9ED300B28F3F /* q6_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q6_sound_ru.mp3; sourceTree = "<group>"; };
+		75041C111B6E9ED300B28F3F /* q7_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q7_sound_en.mp3; sourceTree = "<group>"; };
+		75041C121B6E9ED300B28F3F /* q7_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q7_sound_ru.mp3; sourceTree = "<group>"; };
+		75041C131B6E9ED300B28F3F /* q8_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q8_sound_en.mp3; sourceTree = "<group>"; };
+		75041C141B6E9ED300B28F3F /* q8_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q8_sound_ru.mp3; sourceTree = "<group>"; };
+		75041C151B6E9ED300B28F3F /* q9_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q9_sound_en.mp3; sourceTree = "<group>"; };
+		75041C161B6E9ED300B28F3F /* q9_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q9_sound_ru.mp3; sourceTree = "<group>"; };
+		75041C2C1B6EAD7F00B28F3F /* shadow_sound_1_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_1_en.mp3; sourceTree = "<group>"; };
+		75041C2D1B6EAD7F00B28F3F /* shadow_sound_1_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_1_ru.mp3; sourceTree = "<group>"; };
+		75041C2E1B6EAD7F00B28F3F /* shadow_sound_2_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_2_en.mp3; sourceTree = "<group>"; };
+		75041C2F1B6EAD7F00B28F3F /* shadow_sound_2_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_2_ru.mp3; sourceTree = "<group>"; };
+		75041C301B6EAD7F00B28F3F /* shadow_sound_3_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_3_en.mp3; sourceTree = "<group>"; };
+		75041C311B6EAD7F00B28F3F /* shadow_sound_3_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_3_ru.mp3; sourceTree = "<group>"; };
+		75041C321B6EAD7F00B28F3F /* shadow_sound_4_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_4_en.mp3; sourceTree = "<group>"; };
+		75041C331B6EAD7F00B28F3F /* shadow_sound_4_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_4_ru.mp3; sourceTree = "<group>"; };
+		75041C341B6EAD7F00B28F3F /* shadow_sound_5_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_5_en.mp3; sourceTree = "<group>"; };
+		75041C351B6EAD7F00B28F3F /* shadow_sound_5_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_5_ru.mp3; sourceTree = "<group>"; };
+		75041C361B6EAD7F00B28F3F /* shadow_sound_6_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_6_en.mp3; sourceTree = "<group>"; };
+		75041C371B6EAD7F00B28F3F /* shadow_sound_6_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_6_ru.mp3; sourceTree = "<group>"; };
+		75041C381B6EAD7F00B28F3F /* shadow_sound_7_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_7_en.mp3; sourceTree = "<group>"; };
+		75041C391B6EAD7F00B28F3F /* shadow_sound_7_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_7_ru.mp3; sourceTree = "<group>"; };
+		75041C3A1B6EAD7F00B28F3F /* shadow_sound_8_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_8_en.mp3; sourceTree = "<group>"; };
+		75041C3B1B6EAD7F00B28F3F /* shadow_sound_8_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shadow_sound_8_ru.mp3; sourceTree = "<group>"; };
 		7505691E1B1E5168008DE162 /* NNKLighthouseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKLighthouseNode.h; sourceTree = "<group>"; };
 		7505691F1B1E5168008DE162 /* NNKLighthouseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKLighthouseNode.m; sourceTree = "<group>"; };
 		750569201B1E5168008DE162 /* NNKCafeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKCafeNode.h; sourceTree = "<group>"; };
@@ -844,6 +916,57 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		75041C021B6E9ED300B28F3F /* school */ = {
+			isa = PBXGroup;
+			children = (
+				75041C031B6E9ED300B28F3F /* q0_sound_en.mp3 */,
+				75041C041B6E9ED300B28F3F /* q0_sound_ru.mp3 */,
+				75041C051B6E9ED300B28F3F /* q1_sound_en.mp3 */,
+				75041C061B6E9ED300B28F3F /* q1_sound_ru.mp3 */,
+				75041C071B6E9ED300B28F3F /* q2_sound_en.mp3 */,
+				75041C081B6E9ED300B28F3F /* q2_sound_ru.mp3 */,
+				75041C091B6E9ED300B28F3F /* q3_sound_en.mp3 */,
+				75041C0A1B6E9ED300B28F3F /* q3_sound_ru.mp3 */,
+				75041C0B1B6E9ED300B28F3F /* q4_sound_en.mp3 */,
+				75041C0C1B6E9ED300B28F3F /* q4_sound_ru.mp3 */,
+				75041C0D1B6E9ED300B28F3F /* q5_sound_en.mp3 */,
+				75041C0E1B6E9ED300B28F3F /* q5_sound_ru.mp3 */,
+				75041C0F1B6E9ED300B28F3F /* q6_sound_en.mp3 */,
+				75041C101B6E9ED300B28F3F /* q6_sound_ru.mp3 */,
+				75041C111B6E9ED300B28F3F /* q7_sound_en.mp3 */,
+				75041C121B6E9ED300B28F3F /* q7_sound_ru.mp3 */,
+				75041C131B6E9ED300B28F3F /* q8_sound_en.mp3 */,
+				75041C141B6E9ED300B28F3F /* q8_sound_ru.mp3 */,
+				75041C151B6E9ED300B28F3F /* q9_sound_en.mp3 */,
+				75041C161B6E9ED300B28F3F /* q9_sound_ru.mp3 */,
+			);
+			name = school;
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		75041C2B1B6EAD7F00B28F3F /* shadow play */ = {
+			isa = PBXGroup;
+			children = (
+				75041C2C1B6EAD7F00B28F3F /* shadow_sound_1_en.mp3 */,
+				75041C2D1B6EAD7F00B28F3F /* shadow_sound_1_ru.mp3 */,
+				75041C2E1B6EAD7F00B28F3F /* shadow_sound_2_en.mp3 */,
+				75041C2F1B6EAD7F00B28F3F /* shadow_sound_2_ru.mp3 */,
+				75041C301B6EAD7F00B28F3F /* shadow_sound_3_en.mp3 */,
+				75041C311B6EAD7F00B28F3F /* shadow_sound_3_ru.mp3 */,
+				75041C321B6EAD7F00B28F3F /* shadow_sound_4_en.mp3 */,
+				75041C331B6EAD7F00B28F3F /* shadow_sound_4_ru.mp3 */,
+				75041C341B6EAD7F00B28F3F /* shadow_sound_5_en.mp3 */,
+				75041C351B6EAD7F00B28F3F /* shadow_sound_5_ru.mp3 */,
+				75041C361B6EAD7F00B28F3F /* shadow_sound_6_en.mp3 */,
+				75041C371B6EAD7F00B28F3F /* shadow_sound_6_ru.mp3 */,
+				75041C381B6EAD7F00B28F3F /* shadow_sound_7_en.mp3 */,
+				75041C391B6EAD7F00B28F3F /* shadow_sound_7_ru.mp3 */,
+				75041C3A1B6EAD7F00B28F3F /* shadow_sound_8_en.mp3 */,
+				75041C3B1B6EAD7F00B28F3F /* shadow_sound_8_ru.mp3 */,
+			);
+			path = "shadow play";
+			sourceTree = "<group>";
+		};
 		7530D6B41AD068E60063F124 /* TopBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -864,7 +987,6 @@
 				75635ADC1AABBEA9005BD4CB /* PopUpViewController.h */,
 				75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */,
 				75EBF35F1AAB7F5A005F5E8C /* answers_colors.plist */,
-				75D530E61B6E82D000E57D25 /* island */,
 			);
 			name = Island;
 			sourceTree = "<group>";
@@ -1038,6 +1160,9 @@
 		75B980831B590FBD00893462 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				75041C2B1B6EAD7F00B28F3F /* shadow play */,
+				75D530E61B6E82D000E57D25 /* island */,
+				75041C021B6E9ED300B28F3F /* school */,
 				75B9807B1B590FB800893462 /* text_panel_teacher_final_sound_en.mp3 */,
 				75B9807C1B590FB800893462 /* text_panel_teacher_final_sound_ru.mp3 */,
 				75B9807D1B590FB800893462 /* text_panel_teacher_initial_sound_en.mp3 */,
@@ -1212,7 +1337,8 @@
 				75D530F31B6E82D000E57D25 /* island_sound_6_en.mp3 */,
 				75D530F41B6E82D000E57D25 /* island_sound_6_ru.mp3 */,
 			);
-			path = island;
+			name = island;
+			path = ../island;
 			sourceTree = "<group>";
 		};
 		75DC66CA1A81520A00D6A553 /* characters */ = {
@@ -1663,10 +1789,12 @@
 				75DC67A21A816AA100D6A553 /* shadow_character1_part2.png in Resources */,
 				75B980C11B5916A400893462 /* text_panel_medal_sound_ru.mp3 in Resources */,
 				75B980BA1B5916A400893462 /* text_panel_island_initial_sound_en.mp3 in Resources */,
+				75041C1D1B6E9ED300B28F3F /* q3_sound_en.mp3 in Resources */,
 				75DC681E1A816AA100D6A553 /* shadow_character8_part23.png in Resources */,
 				75DC68151A816AA100D6A553 /* shadow_character8_part15.png in Resources */,
 				75DC67AD1A816AA100D6A553 /* shadow_character2_part12.png in Resources */,
 				75B980781B58FA4C00893462 /* smoke.mp3 in Resources */,
+				75041C431B6EAD7F00B28F3F /* shadow_sound_4_ru.mp3 in Resources */,
 				75DC66DD1A81520A00D6A553 /* full_portret_color_3.png in Resources */,
 				75DC680A1A816AA100D6A553 /* shadow_character7_part5.png in Resources */,
 				75DC67C81A816AA100D6A553 /* shadow_character4_part11.png in Resources */,
@@ -1682,10 +1810,13 @@
 				75E2376E1A854D2900BE6540 /* Localizable.strings in Resources */,
 				750569361B1E55B9008DE162 /* wanda_anim.atlasc in Resources */,
 				75B627FA1B1CFBD2000A3172 /* phoebe_frames.atlasc in Resources */,
+				75041C4A1B6EAD7F00B28F3F /* shadow_sound_8_en.mp3 in Resources */,
 				75D530FB1B6E82D000E57D25 /* island_sound_3_en.mp3 in Resources */,
 				75DC67F61A816AA100D6A553 /* shadow_character6_part5.png in Resources */,
 				75DC66E91A81520A00D6A553 /* full_portret_shadow_7.png in Resources */,
+				75041C191B6E9ED300B28F3F /* q1_sound_en.mp3 in Resources */,
 				754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */,
+				75041C2A1B6E9ED300B28F3F /* q9_sound_ru.mp3 in Resources */,
 				75DC67CF1A816AA100D6A553 /* shadow_character4_part18.png in Resources */,
 				75DC67FC1A816AA100D6A553 /* shadow_character7_part10.png in Resources */,
 				75B980C91B5916A400893462 /* text_panel_wand_sound_ru.mp3 in Resources */,
@@ -1709,9 +1840,11 @@
 				75DC67CB1A816AA100D6A553 /* shadow_character4_part14.png in Resources */,
 				75DC67F51A816AA100D6A553 /* shadow_character6_part4.png in Resources */,
 				75B9805B1B58F3F300893462 /* phoebe.mp3 in Resources */,
+				75041C1B1B6E9ED300B28F3F /* q2_sound_en.mp3 in Resources */,
 				75DC67B61A816AA100D6A553 /* shadow_character2_part9.png in Resources */,
 				75DC68091A816AA100D6A553 /* shadow_character7_part4.png in Resources */,
 				75DC68251A816AA100D6A553 /* shadow_character8_part7.png in Resources */,
+				75041C171B6E9ED300B28F3F /* q0_sound_en.mp3 in Resources */,
 				75E237681A85490800BE6540 /* doux.ttf in Resources */,
 				75DC67FB1A816AA100D6A553 /* shadow_character7_part1.png in Resources */,
 				75D530F61B6E82D000E57D25 /* island_sound_0_ru.mp3 in Resources */,
@@ -1739,6 +1872,7 @@
 				75037FE91B1A3B7700CB0B83 /* harold_anim.atlasc in Resources */,
 				75DC67EA1A816AA100D6A553 /* shadow_character5_part8.png in Resources */,
 				75DC681D1A816AA100D6A553 /* shadow_character8_part22.png in Resources */,
+				75041C481B6EAD7F00B28F3F /* shadow_sound_7_en.mp3 in Resources */,
 				75D530F51B6E82D000E57D25 /* island_sound_0_en.mp3 in Resources */,
 				75DC68221A816AA100D6A553 /* shadow_character8_part4.png in Resources */,
 				75DC681A1A816AA100D6A553 /* shadow_character8_part2.png in Resources */,
@@ -1752,8 +1886,11 @@
 				75DC679E1A816AA100D6A553 /* shadow_character1_part1.png in Resources */,
 				75DC68051A816AA100D6A553 /* shadow_character7_part19.png in Resources */,
 				75DC67FF1A816AA100D6A553 /* shadow_character7_part13.png in Resources */,
+				75041C411B6EAD7F00B28F3F /* shadow_sound_3_ru.mp3 in Resources */,
+				75041C491B6EAD7F00B28F3F /* shadow_sound_7_ru.mp3 in Resources */,
 				75B980731B58FA4C00893462 /* cafe.mp3 in Resources */,
 				75DC681F1A816AA100D6A553 /* shadow_character8_part24.png in Resources */,
+				75041C1E1B6E9ED300B28F3F /* q3_sound_ru.mp3 in Resources */,
 				75D531001B6E82D000E57D25 /* island_sound_5_ru.mp3 in Resources */,
 				75DC68201A816AA100D6A553 /* shadow_character8_part25.png in Resources */,
 				75DC67E61A816AA100D6A553 /* shadow_character5_part4.png in Resources */,
@@ -1767,12 +1904,16 @@
 				75B980BE1B5916A400893462 /* text_panel_magic_ball_sound_en.mp3 in Resources */,
 				75DC67EE1A816AA100D6A553 /* shadow_character6_part11.png in Resources */,
 				75B980631B58F4A400893462 /* furcoat.mp3 in Resources */,
+				75041C421B6EAD7F00B28F3F /* shadow_sound_4_en.mp3 in Resources */,
+				75041C221B6E9ED300B28F3F /* q5_sound_ru.mp3 in Resources */,
 				75B980551B58F2E300893462 /* harold.mp3 in Resources */,
 				75FF2FA51B224A0C008EB9AA /* MystieParticles.sks in Resources */,
 				75D531011B6E82D000E57D25 /* island_sound_6_en.mp3 in Resources */,
 				7597094E1AC8947900FFB11E /* SettingsBarIconViewController.xib in Resources */,
+				75041C3E1B6EAD7F00B28F3F /* shadow_sound_2_en.mp3 in Resources */,
 				75AD2E9F1ADAD424002EE482 /* Book.storyboard in Resources */,
 				75D531021B6E82D000E57D25 /* island_sound_6_ru.mp3 in Resources */,
+				75041C241B6E9ED300B28F3F /* q6_sound_ru.mp3 in Resources */,
 				75B980C41B5916A400893462 /* text_panel_shadow_final_sound_en.mp3 in Resources */,
 				75DC67F21A816AA100D6A553 /* shadow_character6_part15.png in Resources */,
 				75DC67F31A816AA100D6A553 /* shadow_character6_part2.png in Resources */,
@@ -1780,6 +1921,7 @@
 				75DC67AE1A816AA100D6A553 /* shadow_character2_part13.png in Resources */,
 				75C83FFE1B49882C007122A9 /* sheep_anim.atlasc in Resources */,
 				75DC67B81A816AA100D6A553 /* shadow_character3_part10.png in Resources */,
+				75041C401B6EAD7F00B28F3F /* shadow_sound_3_en.mp3 in Resources */,
 				75B980B81B5916A400893462 /* text_panel_goblin_initial_sound_en.mp3 in Resources */,
 				75DFE10A1A800CE500CE9E69 /* Shadow_portret_border_8.png in Resources */,
 				75DC680F1A816AA100D6A553 /* shadow_character8_part1.png in Resources */,
@@ -1787,7 +1929,9 @@
 				75DC67C61A816AA100D6A553 /* shadow_character4_part1.png in Resources */,
 				75FF2FA61B224A0C008EB9AA /* particleModel.png in Resources */,
 				75EDA1841A83FBCA002546E0 /* shadow_wrong_position.plist in Resources */,
+				75041C201B6E9ED300B28F3F /* q4_sound_ru.mp3 in Resources */,
 				75B980611B58F49700893462 /* wanda.mp3 in Resources */,
+				75041C4B1B6EAD7F00B28F3F /* shadow_sound_8_ru.mp3 in Resources */,
 				75DC67D21A816AA100D6A553 /* shadow_character4_part20.png in Resources */,
 				75DC67C31A816AA100D6A553 /* shadow_character3_part7.png in Resources */,
 				75DC67E91A816AA100D6A553 /* shadow_character5_part7.png in Resources */,
@@ -1801,6 +1945,7 @@
 				75DC68181A816AA100D6A553 /* shadow_character8_part18.png in Resources */,
 				750569291B1E5177008DE162 /* lighthouse_frames.atlasc in Resources */,
 				75DC67CD1A816AA100D6A553 /* shadow_character4_part16.png in Resources */,
+				75041C1A1B6E9ED300B28F3F /* q1_sound_ru.mp3 in Resources */,
 				75B9805D1B58F48400893462 /* miner.mp3 in Resources */,
 				75DC67FA1A816AA100D6A553 /* shadow_character6_part9.png in Resources */,
 				75DC67BC1A816AA100D6A553 /* shadow_character3_part14.png in Resources */,
@@ -1815,6 +1960,7 @@
 				75DC67D11A816AA100D6A553 /* shadow_character4_part2.png in Resources */,
 				75DC68171A816AA100D6A553 /* shadow_character8_part17.png in Resources */,
 				75DC67C21A816AA100D6A553 /* shadow_character3_part6.png in Resources */,
+				75041C461B6EAD7F00B28F3F /* shadow_sound_6_en.mp3 in Resources */,
 				75DC67A71A816AA100D6A553 /* shadow_character1_part7.png in Resources */,
 				75DC68261A816AA100D6A553 /* shadow_character8_part8.png in Resources */,
 				75DC67DC1A816AA100D6A553 /* shadow_character4_part8.png in Resources */,
@@ -1836,6 +1982,9 @@
 				75DC66E61A81520A00D6A553 /* full_portret_shadow_4.png in Resources */,
 				75DC67BF1A816AA100D6A553 /* shadow_character3_part3.png in Resources */,
 				75DC68141A816AA100D6A553 /* shadow_character8_part14.png in Resources */,
+				75041C3F1B6EAD7F00B28F3F /* shadow_sound_2_ru.mp3 in Resources */,
+				75041C3D1B6EAD7F00B28F3F /* shadow_sound_1_ru.mp3 in Resources */,
+				75041C261B6E9ED300B28F3F /* q7_sound_ru.mp3 in Resources */,
 				75DC66EA1A81520A00D6A553 /* full_portret_shadow_8.png in Resources */,
 				75A125051AD06F5700BDFB7F /* ContributorsViewController~ipad.xib in Resources */,
 				75DC67F71A816AA100D6A553 /* shadow_character6_part6.png in Resources */,
@@ -1854,30 +2003,39 @@
 				75DC67AF1A816AA100D6A553 /* shadow_character2_part2.png in Resources */,
 				75DC68131A816AA100D6A553 /* shadow_character8_part13.png in Resources */,
 				75037FE71B1A3B7700CB0B83 /* foam_castle.atlasc in Resources */,
+				75041C1F1B6E9ED300B28F3F /* q4_sound_en.mp3 in Resources */,
 				75B980D21B591AAA00893462 /* button_click.mp3 in Resources */,
 				75DC679F1A816AA100D6A553 /* shadow_character1_part10.png in Resources */,
 				75DFE1091A800CE500CE9E69 /* Shadow_portret_border_7.png in Resources */,
+				75041C211B6E9ED300B28F3F /* q5_sound_en.mp3 in Resources */,
 				75DC67F41A816AA100D6A553 /* shadow_character6_part3.png in Resources */,
 				75DC67BE1A816AA100D6A553 /* shadow_character3_part2.png in Resources */,
 				75C840061B49A6F1007122A9 /* TextBarViewController.xib in Resources */,
+				75041C281B6E9ED300B28F3F /* q8_sound_ru.mp3 in Resources */,
 				75DC67B71A816AA100D6A553 /* shadow_character3_part1.png in Resources */,
 				75DC67B21A816AA100D6A553 /* shadow_character2_part5.png in Resources */,
+				75041C441B6EAD7F00B28F3F /* shadow_sound_5_en.mp3 in Resources */,
 				75DC67A11A816AA100D6A553 /* shadow_character1_part12.png in Resources */,
 				75DC68211A816AA100D6A553 /* shadow_character8_part3.png in Resources */,
 				75DC680D1A816AA100D6A553 /* shadow_character7_part8.png in Resources */,
 				75B980591B58F3E700893462 /* mystie.mp3 in Resources */,
 				75B980AF1B5916A400893462 /* text_panel_book_sound_ru.mp3 in Resources */,
 				75D530FC1B6E82D000E57D25 /* island_sound_3_ru.mp3 in Resources */,
+				75041C271B6E9ED300B28F3F /* q8_sound_en.mp3 in Resources */,
 				75B980821B590FB800893462 /* text_panel_teacher_initial_sound_ru.mp3 in Resources */,
 				75EE39651B41D74100BF9A55 /* skelet_anim.atlasc in Resources */,
 				75DC67E31A816AA100D6A553 /* shadow_character5_part14.png in Resources */,
 				75B980C21B5916A400893462 /* text_panel_other_sound_en.mp3 in Resources */,
 				75B980B31B5916A400893462 /* text_panel_dragon_final_sound_ru.mp3 in Resources */,
+				75041C291B6E9ED300B28F3F /* q9_sound_en.mp3 in Resources */,
 				75DC66E41A81520A00D6A553 /* full_portret_shadow_2.png in Resources */,
 				75C83FF81B497444007122A9 /* goblin_anim.atlasc in Resources */,
 				75DC67DD1A816AA100D6A553 /* shadow_character4_part9.png in Resources */,
+				75041C231B6E9ED300B28F3F /* q6_sound_en.mp3 in Resources */,
 				75DC67F11A816AA100D6A553 /* shadow_character6_part14.png in Resources */,
 				75DC67E21A816AA100D6A553 /* shadow_character5_part13.png in Resources */,
+				75041C471B6EAD7F00B28F3F /* shadow_sound_6_ru.mp3 in Resources */,
+				75041C451B6EAD7F00B28F3F /* shadow_sound_5_ru.mp3 in Resources */,
 				75B980B41B5916A400893462 /* text_panel_dragon_initial_sound_en.mp3 in Resources */,
 				75DFE1021A800CE500CE9E69 /* Shadow_portret_8.png in Resources */,
 				75B9805F1B58F48D00893462 /* justacreep.mp3 in Resources */,
@@ -1889,6 +2047,7 @@
 				75DC67E11A816AA100D6A553 /* shadow_character5_part12.png in Resources */,
 				75B980771B58FA4C00893462 /* school.mp3 in Resources */,
 				75DC67BB1A816AA100D6A553 /* shadow_character3_part13.png in Resources */,
+				75041C1C1B6E9ED300B28F3F /* q2_sound_ru.mp3 in Resources */,
 				75DC66E51A81520A00D6A553 /* full_portret_shadow_3.png in Resources */,
 				75DFE1031A800CE500CE9E69 /* Shadow_portret_border_1.png in Resources */,
 				75DC68071A816AA100D6A553 /* shadow_character7_part20.png in Resources */,
@@ -1905,6 +2064,7 @@
 				75B980B91B5916A400893462 /* text_panel_goblin_initial_sound_ru.mp3 in Resources */,
 				75DC68121A816AA100D6A553 /* shadow_character8_part12.png in Resources */,
 				75DC67A61A816AA100D6A553 /* shadow_character1_part6.png in Resources */,
+				75041C3C1B6EAD7F00B28F3F /* shadow_sound_1_en.mp3 in Resources */,
 				75DC67E51A816AA100D6A553 /* shadow_character5_part3.png in Resources */,
 				75DC67DA1A816AA100D6A553 /* shadow_character4_part6.png in Resources */,
 				75DC66E71A81520A00D6A553 /* full_portret_shadow_5.png in Resources */,
@@ -1913,6 +2073,8 @@
 				75DC67CE1A816AA100D6A553 /* shadow_character4_part17.png in Resources */,
 				75DC67A51A816AA100D6A553 /* shadow_character1_part5.png in Resources */,
 				75DC67DF1A816AA100D6A553 /* shadow_character5_part10.png in Resources */,
+				75041C181B6E9ED300B28F3F /* q0_sound_ru.mp3 in Resources */,
+				75041C251B6E9ED300B28F3F /* q7_sound_en.mp3 in Resources */,
 				75AD2E901ADAD193002EE482 /* book_rus.epub in Resources */,
 				75DC67B11A816AA100D6A553 /* shadow_character2_part4.png in Resources */,
 				75DC67EC1A816AA100D6A553 /* shadow_character6_part1.png in Resources */,

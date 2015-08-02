@@ -102,4 +102,17 @@ NSString *const AnswersFileName = @"Answers.plist";
     return [[self answeredQuestions] count] == numberOfQuestion;
 }
 
+
+- (NSInteger)nextUnansweredQuestion {
+    NSIndexSet *indexSet = [self answeredQuestions];
+    for (NSInteger i = 0; i < numberOfQuestion; i++) {
+        if (![indexSet containsIndex:i]) {
+            
+            return i;
+        }
+    }
+    
+    return NSNotFound;
+}
+
 @end

@@ -20,11 +20,11 @@
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:ShadowCharacterWanda];
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:ShadowCharacterJustacreep];
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:3];
-    [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:5];
+//    [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:5];
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:6];
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:7];
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:8];
-//    [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:1];
+    [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:1];
  
     return YES;
 }

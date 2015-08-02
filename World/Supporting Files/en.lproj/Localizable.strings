@@ -84,7 +84,7 @@
 "shadow_description_2" = "Wanda is a magic wand. She flunked out of the Magic Wand College, so her skills are not as impressive as her looks.";
 "shadow_description_3" = "Mystie is a magic talking fox. She is so tiny she can wrap herself around your wrist like a bracelet.";
 "shadow_description_4" = "Justacreep used to be a promising actor but he committed a horrible crime and was stripped of his magic powers. Since then, no theater wants anything to do with him.";
-"shadow_description_5" = "Justacreep wears a fur coat with a talking lion head on its collar. But it’s  urcoat who is really in charge.";
+"shadow_description_5" = "Furcoat can’t stand being a piece of garment. He dreams of getting a new body and becoming a mighty beast.";
 "shadow_description_6" = "Phoebe is a 12-year-old who dreams of becoming a muse. Muses are magic beauties who inspire poets and artists to new works of art.";
 "shadow_description_7" = "Greedy Miner found enormous reserves of magic hidden underground. His greed exhausted him so much that his body shriveled up and he turned into a skeleton.";
 "shadow_description_8" = "Young dragon named Harold works as a billposter. He doesn't know how to fly but he can run very fast, even up and down walls.";
@@ -208,6 +208,26 @@
 "island_sound_4" = "island_sound_4_en";
 "island_sound_5" = "island_sound_5_en";
 "island_sound_6" = "island_sound_6_en";
+
+"q0_sound" = "q0_sound_en";
+"q1_sound" = "q1_sound_en";
+"q2_sound" = "q2_sound_en";
+"q3_sound" = "q3_sound_en";
+"q4_sound" = "q4_sound_en";
+"q5_sound" = "q5_sound_en";
+"q6_sound" = "q6_sound_en";
+"q7_sound" = "q7_sound_en";
+"q8_sound" = "q8_sound_en";
+"q9_sound" = "q9_sound_en";
+
+"shadow_sound_1" = "shadow_sound_1_en";
+"shadow_sound_2" = "shadow_sound_2_en";
+"shadow_sound_3" = "shadow_sound_3_en";
+"shadow_sound_4" = "shadow_sound_4_en";
+"shadow_sound_5" = "shadow_sound_5_en";
+"shadow_sound_6" = "shadow_sound_6_en";
+"shadow_sound_7" = "shadow_sound_7_en";
+"shadow_sound_8" = "shadow_sound_8_en";
 
 ///////
 

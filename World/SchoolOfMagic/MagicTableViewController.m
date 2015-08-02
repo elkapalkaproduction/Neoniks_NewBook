@@ -10,6 +10,7 @@
 #import "MagicSchoolAnswersHandler.h"
 #import "InventaryContentHandler.h"
 #import "SoundPlayer.h"
+#import "AVAudioPlayer+Creation.h"
 
 NSString *const SOMSadImageName = @"school_sad";
 NSString *const SOMSadderImageName = @"school_sadder";
@@ -41,6 +42,8 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 @property (assign, nonatomic) NSUInteger questionNumber;
 @property (weak, nonatomic) IBOutlet UIView *answerView;
 @property (weak, nonatomic) IBOutlet UIView *prizeView;
+@property (strong, nonatomic) AVAudioPlayer *player;
+@property (strong, nonatomic) NSTimer *timer;
 
 @end
 
@@ -49,7 +52,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self basicVisualSetup];
-    [self updateImages];
+    [self showNextUnAnsweredQuestion];
 }
 
 
@@ -76,13 +79,17 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 }
 
 
-- (void)updateImages {
+- (BOOL)updateImages {
     self.questionNumberTitle.text = NSLocalizedString([self questionNameWithString:SOMImagePatternTitle], nil);
     self.questionText.text = NSLocalizedString([self questionNameWithString:SOMTextPatternQuestion], nil);
+    NSString *soundName = NSLocalizedString([self questionNameWithString:@"sound"], nil);
+    [self.player stop];
+    self.player = [AVAudioPlayer audioPlayerWithSoundName:soundName];
     for (NSInteger index = 0; index < [self.answers count]; index++) {
         [self.answers[index] setTitle:[self answerTitleForQuestionNumber:index] forState:UIControlStateNormal];
     }
-    [self updateAnswerImage];
+    
+    return [self updateAnswerImage];
 }
 
 
@@ -119,7 +126,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 }
 
 
-- (void)updateAnswerImage {
+- (BOOL)updateAnswerImage {
     NSIndexSet *set = [[MagicSchoolAnswersHandler sharedHandler] selectedAnswersForQuestion:self.questionNumber];
     NSArray *imagesNames = @[SOMAskImageName, SOMSadImageName, SOMSadderImageName, SOMSadestImageName,
                              NSLocalizedString([self questionNameWithString:SOMImagePatternAnswer], nil)];
@@ -127,6 +134,8 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
     self.answerImage.image = [UIImage imageNamed:imagesNames[index]];
     [self updateBorder:set];
     [self updateQuestionsIndicator];
+    
+    return index == 4;
 }
 
 
@@ -181,11 +190,21 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 }
 
 
+- (void)showQuestion:(NSInteger)question {
+    self.questionNumber = question;
+    if ([self updateImages]) {
+        [self.player stop];
+    } else {
+        [self.player play];
+    }
+}
+
+
 - (IBAction)openQuestion:(UIButton *)sender {
     [[SoundPlayer sharedPlayer] playClick];
-    
-    self.questionNumber = [self.questionIndicators indexOfObject:sender];
-    [self updateImages];
+    [self.timer invalidate];
+    NSInteger index = [self.questionIndicators indexOfObject:sender];
+    [self showQuestion:index];
 }
 
 
@@ -193,11 +212,16 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
     NSInteger answerNumber = [self.answers indexOfObject:sender];
     BOOL answer = [[MagicSchoolAnswersHandler sharedHandler] checkAnswer:answerNumber question:self.questionNumber];
     if (answer) {
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:3.f
+                                                      target:self
+                                                    selector:@selector(showNextUnAnsweredQuestion)
+                                                    userInfo:nil
+                                                     repeats:NO];
         [[SoundPlayer sharedPlayer] playCorrectAnswer];
     } else {
         [[SoundPlayer sharedPlayer] playWrongAnswer];
     }
-    [self updateImages];
+    [self updateAnswerImage];
 }
 
 
@@ -233,6 +257,13 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
     self.prizeView.hidden = YES;
     [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeMedal
                                                    withFormat:InventaryIconShowingFull];
+}
+
+
+- (void)showNextUnAnsweredQuestion {
+    NSInteger index = [[MagicSchoolAnswersHandler sharedHandler] nextUnansweredQuestion];
+    if (index == NSNotFound) return;
+    [self showQuestion:index];
 }
 
 @end

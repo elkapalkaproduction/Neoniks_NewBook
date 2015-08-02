@@ -17,5 +17,6 @@
 - (void)deleteAllAnswers;
 - (NSIndexSet *)answeredQuestions;
 - (BOOL)answeredToAllQuestion;
+- (NSInteger)nextUnansweredQuestion;
 
 @end

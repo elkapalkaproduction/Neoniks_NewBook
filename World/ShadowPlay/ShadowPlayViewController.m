@@ -21,6 +21,8 @@
 #import "NNKJustacreepNode.h"
 #import "NNKMystieNode.h"
 #import "TextBarViewController.h"
+#import "AVAudioPlayer+Creation.h"
+#import "SoundPlayer.h"
 
 NSString *const NSPSegueIdentifierPattern = @"character";
 
@@ -51,6 +53,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 @property (weak, nonatomic) IBOutlet UIView *textBarSuperView;
 @property (strong, nonatomic) TextBarViewController *textBar;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
+@property (strong, nonatomic) AVAudioPlayer *player;
 
 @end
 
@@ -121,6 +124,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.textBar stopStound];
+    [self.player stop];
 }
 
 
@@ -158,11 +162,18 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 - (void)didPressCharacter:(ShadowCharacter)character {
     if (!self.prizeView.hidden) return;
     self.loadedCharacter = character;
+    NSString *audioName = [NSString stringWithFormat:@"shadow_sound_%ld", self.loadedCharacter];
+    self.player = [AVAudioPlayer audioPlayerWithSoundName:NSLocalizedString(audioName, nil)];
     if ([[ShadowPlayOpenedHandler sharedHandler] isOpenedCharacter:character]) {
         [self loadUnlockedCharacter:character];
+        [self.player play];
     } else {
         [self loadLockedCharacter:character];
+        [self.player stop];
     }
+    
+
+    
 }
 
 
@@ -223,6 +234,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
             if ([self shouldShowPrize]) {
                 [self showMagicWand];
             } else {
+                [self.player play];
                 [self loadUnlockedCharacter:self.loadedCharacter];
             }
         }];
@@ -356,9 +368,11 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 
 - (IBAction)getPrize:(id)sender {
+    [[SoundPlayer sharedPlayer] playCorrectAnswer];
     self.fullPortret.hidden = NO;
     [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeMagicWand withFormat:InventaryIconShowingFull];
     [self loadUnlockedCharacter:self.loadedCharacter];
+    [self.player play];
 }
 
 
@@ -395,6 +409,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
         self.textBar.text = text;
         self.textBar.object = isObject;
         self.textBarBottomConstraint.constant = [self textBarOpenPosition];
+        [self.textBar stopStound];
         [UIView animateWithDuration:0.3 animations:^{
             [self.view layoutIfNeeded];
         }];

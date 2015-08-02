@@ -54,6 +54,7 @@
                              text:@"text_panel_teacher_initial"
                          isObject:NO];
         [self performSelector:@selector(closeTextBarWithCompletionBlock:) withObject:nil afterDelay:5.f];
+        [self.textBar stopStound];
     }
 }
 
@@ -76,6 +77,7 @@
         self.textBar.text = text;
         self.textBar.object = isObject;
         self.textBarBottomConstraint.constant = [self textBarOpenPosition];
+        [self.textBar stopStound];
         [UIView animateWithDuration:0.3 animations:^{
             [self.view layoutIfNeeded];
         }];
