@@ -1,27 +1,27 @@
 
 //Answers Question1
 "q0_title" = "Question # 1";
-"q0_question" = "Magic wand is a good instrument";
-"q0_answer_0" = "to scratch your back";
-"q0_answer_1" = "to beat the dust out\nof the carpet";
-"q0_answer_2" = "to eat sushi with";
-"q0_answer_3" = "to increase magic force";
+"q0_question" = "Magic wand is a good instrument to";
+"q0_answer_0" = "scratch your back";
+"q0_answer_1" = "beat the dust out\nof the carpet";
+"q0_answer_2" = "eat sushi with";
+"q0_answer_3" = "increase magic force";
 
 //Answers Question2
 "q1_title" = "Question # 2";
 "q1_question" = "A dragon is";
-"q1_answer_0" = "a powerful insecticide";
-"q1_answer_1" = "a fire-breathing reptile";
-"q1_answer_2" = "a fireproof brick";
-"q1_answer_3" = "a bully in kindergarten";
+"q1_answer_0" = "powerful insecticide";
+"q1_answer_1" = "fire-breathing reptile";
+"q1_answer_2" = "fireproof brick";
+"q1_answer_3" = "bully in kindergarten";
 
 //Answers Question3
 "q2_title" = "Question # 3";
-"q2_question" = "Will Power helps a wizard";
-"q2_answer_0" = "to wiggle his or her ears";
-"q2_answer_1" = "to open a fridge";
-"q2_answer_2" = "to control magic";
-"q2_answer_3" = "to lift a barbell";
+"q2_question" = "Will Power helps a wizard to";
+"q2_answer_0" = "wiggle his or her ears";
+"q2_answer_1" = "open a fridge";
+"q2_answer_2" = "control magic";
+"q2_answer_3" = "lift a heavy weight";
 
 //Answers Question4
 "q3_title" = "Question # 4";
@@ -50,7 +50,7 @@
 //Answers Question7
 "q6_title" = "Question # 7";
 "q6_question" = "Muses do the following";
-"q6_answer_0" = "study at musical classes";
+"q6_answer_0" = "study in musical classes";
 "q6_answer_1" = "inspire poets and artists\nto new works of art";
 "q6_answer_2" = "work as guards at the\nUnnatural History Museum";
 "q6_answer_3" = "cause blisters\non dragons’ wings";
@@ -68,7 +68,7 @@
 "q8_question" = "Kids go to the Magic School to learn how to";
 "q8_answer_0" = "become a professional\nvillain";
 "q8_answer_1" = "graffiti a school wall\nin 5 minutes";
-"q8_answer_2" = "knit socks using\nyour magic force";
+"q8_answer_2" = "use magic force\nand magic devices";
 "q8_answer_3" = "tickle passersby and\nget away with it";
 
 //Answers Question10
