@@ -34,7 +34,7 @@
 
 - (SKAction *)sequence {
     if (!_sequence) {
-        _sequence = [SKAction repeatActionForever:[SKAction actionWithSoundName:@"miner.mp3" textures:MINER_ANIM_ANIM_MINER_ANIM]];
+        _sequence = [SKAction actionWithSoundName:@"miner.mp3" textures:MINER_ANIM_ANIM_MINER_ANIM];
     }
     
     return _sequence;

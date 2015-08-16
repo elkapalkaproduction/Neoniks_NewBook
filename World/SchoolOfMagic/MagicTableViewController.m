@@ -53,6 +53,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
     [super viewDidLoad];
     [self basicVisualSetup];
     [self showNextUnAnsweredQuestion];
+    [self.player stop];
 }
 
 
@@ -179,7 +180,9 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
     [self resetAllQuestionIndicatorsToNoAnswer];
     [self changeCurrentQuestionIndicatorImage];
     [self changeIndicatorToAnsweredQuestion];
-    [self showSuccesMessage];
+    if (![self shouldShowPrize]) {
+        self.prizeView.hidden = YES;
+    }
 }
 
 
@@ -192,11 +195,9 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 
 - (void)showQuestion:(NSInteger)question {
     self.questionNumber = question;
-    if ([self updateImages]) {
-        [self.player stop];
-    } else {
-        [self.player play];
-    }
+    [self updateImages];
+    [self.player play];
+    [self.delegate stopPlayerIfIsPlaying];
 }
 
 
@@ -240,6 +241,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 
 
 - (void)showPrize {
+    [self.player stop];
     self.answerView.hidden = YES;
     self.questionNumberTitle.hidden = YES;
     self.questionText.hidden = YES;
@@ -262,8 +264,22 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 
 - (void)showNextUnAnsweredQuestion {
     NSInteger index = [[MagicSchoolAnswersHandler sharedHandler] nextUnansweredQuestion];
-    if (index == NSNotFound) return;
+    if (index == NSNotFound) {
+        if ([self shouldShowPrize]) {
+            [self showPrize];
+        } else {
+            self.prizeView.hidden = YES;
+            [self showQuestion:0];
+        }
+        return;
+    }
     [self showQuestion:index];
+}
+
+
+- (IBAction)didPressOnQuestion:(id)sender {
+    [self.timer invalidate];
+    [self showQuestion:self.questionNumber];
 }
 
 @end

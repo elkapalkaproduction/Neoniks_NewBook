@@ -11,6 +11,7 @@
 @protocol MagicTableDelegate <NSObject>
 
 - (void)prizeDidAppear;
+- (void)stopPlayerIfIsPlaying;
 
 @end
 

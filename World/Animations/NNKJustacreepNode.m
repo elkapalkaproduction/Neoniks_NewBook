@@ -15,6 +15,7 @@
 @property (strong, nonatomic) SKSpriteNode *mainNode;
 @property (strong, nonatomic) SKSpriteNode *hatNode;
 @property (assign, nonatomic) CGSize nodeSize;
+@property (assign, nonatomic) CGRect rect;
 
 @end
 
@@ -29,19 +30,24 @@
         _hatNode = [SKSpriteNode spriteNodeWithTexture:JUSTACREEP_ANIM_TEX_JUSTACREEP_HAT];
         _mainNode.position = CGPointMake(self.nodeSize.width / 2, self.nodeSize.height / 2);
         _mainNode.size = self.nodeSize;
-        CGFloat x = (302.5f / 814.f) * self.nodeSize.width;;
-        CGFloat y = (1007.5f / 1126.f) * self.nodeSize.height;
-        CGFloat width = (147.f / 814.f) * self.nodeSize.width;
-        CGFloat height = (129.f / 1126.f) * self.nodeSize.height;
-        CGRect rect = CGRectMake(x, y, width, height);
-        _hatNode.position = rect.origin;
-        _hatNode.size = rect.size;
+        _hatNode.position = self.rect.origin;
+        _hatNode.size = self.rect.size;
         [self addChild:_mainNode];
         [self addChild:_hatNode];
         [self addGround];
     }
     
     return self;
+}
+
+
+- (CGRect)rect {
+    CGFloat x = (302.5f / 814.f) * self.nodeSize.width;;
+    CGFloat y = (1007.5f / 1126.f) * self.nodeSize.height;
+    CGFloat width = (147.f / 814.f) * self.nodeSize.width;
+    CGFloat height = (129.f / 1126.f) * self.nodeSize.height;
+    
+    return CGRectMake(x, y, width, height);
 }
 
 
@@ -57,9 +63,22 @@
 
 
 - (void)runAction {
-    self.hatNode.physicsBody = [SKPhysicsBody bodyWithTexture:JUSTACREEP_ANIM_TEX_JUSTACREEP_HAT size:self.hatNode.size];
-    self.hatNode.physicsBody.dynamic = YES;
-    [self runAction:[SKAction playSoundFileNamed:@"justacreep.mp3" waitForCompletion:NO]];
+    if (self.hatNode.physicsBody) {
+        self.hatNode.physicsBody = nil;
+        
+        SKAction *move = [SKAction moveTo:self.rect.origin duration:0.2];
+        SKAction *rotation = [SKAction customActionWithDuration:0.2
+                                                    actionBlock:^(SKNode *node, CGFloat elapsedTime) {
+                                                        node.zRotation = 0.f;
+                                                    }];
+        
+        SKAction *action = [SKAction group:@[move, rotation]];
+        [self.hatNode runAction:action];
+    } else {
+        self.hatNode.physicsBody = [SKPhysicsBody bodyWithTexture:JUSTACREEP_ANIM_TEX_JUSTACREEP_HAT size:self.hatNode.size];
+        self.hatNode.physicsBody.dynamic = YES;
+        [self runAction:[SKAction playSoundFileNamed:@"justacreep.mp3" waitForCompletion:NO]];
+    }
 }
 
 @end

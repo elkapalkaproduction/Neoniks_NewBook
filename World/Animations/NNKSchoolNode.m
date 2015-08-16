@@ -70,9 +70,10 @@
                                     duration:[dict[@"duration"] floatValue] / 30.f];
         [actions addObject:action];
     }
+    [actions insertObject:[SKAction playSoundFileNamed:@"school.mp3" waitForCompletion:NO] atIndex:actions.count - 2];
     [actions insertObject:[SKAction waitForDuration:1] atIndex:actions.count - 1];
     
-    return [SKAction actionWithSoundName:@"school.mp3" action:[SKAction sequence:actions]];
+    return [SKAction sequence:actions];
 }
 
 

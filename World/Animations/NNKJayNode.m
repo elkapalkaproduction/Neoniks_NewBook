@@ -38,8 +38,8 @@
 
 - (SKAction *)pendantSequence {
     if (!_pendantSequence) {
-        _pendantSequence = [SKAction repeatActionForever:[SKAction animateWithTextures:JAY_ANIM_ANIM_JAY_PENDANT
-                                                                   timePerFrame:1.f / 15.f]];
+        _pendantSequence = [SKAction animateWithTextures:JAY_ANIM_ANIM_JAY_PENDANT
+                                            timePerFrame:1.f / 15.f];
     }
     
     return _pendantSequence;
@@ -48,7 +48,7 @@
 
 - (SKAction *)blickSequence {
     if (!_blickSequence) {
-        _blickSequence = [SKAction repeatActionForever:[SKAction actionWithSoundName:@"jay.mp3" textures:JAY_ANIM_ANIM_JAY_BLICK]];
+        _blickSequence = [SKAction actionWithSoundName:@"jay.mp3" textures:JAY_ANIM_ANIM_JAY_BLICK];
     }
     
     return _blickSequence;

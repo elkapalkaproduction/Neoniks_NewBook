@@ -8,6 +8,7 @@
 
 #import "NNKCafeNode.h"
 #import "cafe_frames.h"
+#import "AVAudioPlayer+Creation.h"
 
 @interface NNKCafeNode ()
 
@@ -15,6 +16,8 @@
 @property (assign, nonatomic) BOOL selected;
 @property (strong, nonatomic) SKSpriteNode *mainNode;
 @property (assign, nonatomic) CGSize nodeSize;
+@property (strong, nonatomic) NSTimer *timer;
+@property (strong, nonatomic) AVAudioPlayer *player;
 
 @end
 
@@ -45,6 +48,15 @@
 }
 
 
+- (AVAudioPlayer *)player {
+    if (!_player) {
+        _player = [AVAudioPlayer audioPlayerWithSoundName:@"cafe.mp3"];
+    }
+    
+    return _player;
+}
+
+
 - (void)runActionWithoutSound {
     [self.mainNode removeFromParent];
     self.selected = !self.selected;
@@ -57,7 +69,18 @@
 
 - (void)runAction {
     [self runActionWithoutSound];
-    [self runAction:[SKAction playSoundFileNamed:@"cafe.mp3" waitForCompletion:NO]];
+    if (self.selected) {
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:self.player.duration
+                                                      target:self
+                                                    selector:@selector(runActionWithoutSound)
+                                                    userInfo:nil
+                                                     repeats:NO];
+        self.player.currentTime = 0.f;
+        [self.player play];
+    } else {
+        [self.player stop];
+        [self.timer invalidate];
+    }
 }
 
 @end

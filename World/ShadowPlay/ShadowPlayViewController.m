@@ -298,6 +298,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 
 - (void)loadUnlockedCharacter:(ShadowCharacter)character {
+    [self removeAllShadowsFromTheScreen];
     self.viewForElements.hidden = YES;
     self.descriptionLabel.hidden = NO;
     self.prizeView.hidden = YES;
@@ -369,10 +370,10 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 - (IBAction)getPrize:(id)sender {
     [[SoundPlayer sharedPlayer] playCorrectAnswer];
-    self.fullPortret.hidden = NO;
     [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeMagicWand withFormat:InventaryIconShowingFull];
-    [self loadUnlockedCharacter:self.loadedCharacter];
-    [self.player play];
+    self.prizeView.hidden = YES;
+    [self didPressCharacter:self.loadedCharacter];
+    [self.textBar stopStound];
 }
 
 
@@ -409,7 +410,6 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
         self.textBar.text = text;
         self.textBar.object = isObject;
         self.textBarBottomConstraint.constant = [self textBarOpenPosition];
-        [self.textBar stopStound];
         [UIView animateWithDuration:0.3 animations:^{
             [self.view layoutIfNeeded];
         }];

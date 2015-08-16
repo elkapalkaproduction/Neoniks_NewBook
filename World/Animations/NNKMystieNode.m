@@ -7,12 +7,14 @@
 //
 
 #import "NNKMystieNode.h"
+#import "AVAudioPlayer+Creation.h"
 
 @interface NNKMystieNode ()
 
 @property (assign, nonatomic) CGSize nodeSize;
 @property (strong, nonatomic) SKEmitterNode *emitter;
-@property (strong, nonatomic) SKAction *soundAction;
+@property (strong, nonatomic) NSTimer *timer;
+@property (strong, nonatomic) AVAudioPlayer *player;
 
 @end
 
@@ -48,21 +50,29 @@
 }
 
 
-- (SKAction *)soundAction {
-    if (!_soundAction) {
-        _soundAction = [SKAction playSoundFileNamed:@"mystie.mp3" waitForCompletion:NO];
+- (AVAudioPlayer *)player {
+    if (!_player) {
+        _player = [AVAudioPlayer audioPlayerWithSoundName:@"mystie.mp3"];
     }
     
-    return _soundAction;
+    return _player;
 }
 
 
 - (void)runAction {
     if (self.emitter.parent) {
+        [self.timer invalidate];
         [self removeAllActions];
         [self.emitter removeFromParent];
+        [self.player stop];
     } else {
-        [self runAction:self.soundAction];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:self.player.duration
+                                                      target:self.emitter
+                                                    selector:@selector(removeFromParent)
+                                                    userInfo:nil
+                                                     repeats:NO];
+        self.player.currentTime = 0.f;
+        [self.player play];
         [self addChild:self.emitter];
     }
 }

@@ -77,7 +77,6 @@
         self.textBar.text = text;
         self.textBar.object = isObject;
         self.textBarBottomConstraint.constant = [self textBarOpenPosition];
-        [self.textBar stopStound];
         [UIView animateWithDuration:0.3 animations:^{
             [self.view layoutIfNeeded];
         }];
@@ -115,6 +114,11 @@
 
 - (CGFloat)textBarOpenPosition {
     return 5;
+}
+
+
+- (void)stopPlayerIfIsPlaying {
+    [self.textBar stopStound];
 }
 
 @end

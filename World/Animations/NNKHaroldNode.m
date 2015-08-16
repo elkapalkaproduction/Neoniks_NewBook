@@ -38,7 +38,7 @@
 - (SKAction *)sequence {
     if (!_sequence) {
         
-        _sequence = [SKAction repeatActionForever:[SKAction actionWithSoundName:@"harold.mp3" textures:AnimName]];
+        _sequence = [SKAction actionWithSoundName:@"harold.mp3" textures:AnimName];
     }
     
     return _sequence;
