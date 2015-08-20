@@ -11,11 +11,12 @@
 #import "MagicSchoolAnswersHandler.h"
 #import "TextBarViewController.h"
 
-@interface SchoolOfMagicViewController () <MagicTableDelegate>
+@interface SchoolOfMagicViewController () <MagicTableDelegate, TextBarDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *textBarSuperView;
 @property (strong, nonatomic) TextBarViewController *textBar;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
+@property (weak, nonatomic) MagicTableViewController *table;
 
 @end
 
@@ -25,6 +26,7 @@
     if ([[segue destinationViewController] isKindOfClass:[MagicTableViewController class]]) {
         MagicTableViewController *table = segue.destinationViewController;
         table.delegate = self;
+        self.table = table;
     }
 }
 
@@ -62,6 +64,7 @@
 - (TextBarViewController *)textBar {
     if (!_textBar) {
         _textBar = [TextBarViewController instantiate];
+        _textBar.delegate = self;
         [self.textBarSuperView addSubview:_textBar];
     }
     
@@ -119,6 +122,12 @@
 
 - (void)stopPlayerIfIsPlaying {
     [self.textBar stopStound];
+}
+
+
+- (void)soundDidFinish {
+    [self closeTextBarWithCompletionBlock:nil];
+    [self.table showNextUnAnsweredQuestion];
 }
 
 @end

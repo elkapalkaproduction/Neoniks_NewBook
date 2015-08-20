@@ -9,7 +9,7 @@
 #import "TextBarViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
-@interface TextBarViewController ()
+@interface TextBarViewController () <AVAudioPlayerDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UIImageView *objectIcon;
@@ -70,9 +70,17 @@
         NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
         _player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL error:nil];
         [_player prepareToPlay];
+        _player.delegate = self;
     }
     
     return _player;
+}
+
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
+    if ([self.delegate respondsToSelector:@selector(soundDidFinish)]) {
+        [self.delegate soundDidFinish];
+    }
 }
 
 

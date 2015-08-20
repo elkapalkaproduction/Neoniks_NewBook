@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TextBarDelegate <NSObject>
+
+@optional
+- (void)soundDidFinish;
+
+@end
+
 @interface TextBarViewController : UIView
 
 + (instancetype)instantiate;
+@property (weak, nonatomic) id<TextBarDelegate> delegate;
 
 @property (strong, nonatomic) NSString *text;
 @property (strong, nonatomic) UIImage *image;

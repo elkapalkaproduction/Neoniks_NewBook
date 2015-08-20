@@ -18,5 +18,6 @@
 @interface MagicTableViewController : BaseViewController
 
 @property (weak, nonatomic) id<MagicTableDelegate> delegate;
+- (void)showNextUnAnsweredQuestion;
 
 @end
