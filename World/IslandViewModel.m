@@ -178,6 +178,7 @@ NSString *const LastSolvedIsland = @"LastSolvedIsland";
 
 - (void)resetAnswers {
     [[self class] deleteAnswers];
+    self.answersColor = nil;
     [self.delegate updateInterface];
 }
 

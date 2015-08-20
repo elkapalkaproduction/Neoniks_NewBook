@@ -18,8 +18,8 @@
 @property (strong, nonatomic) NSString *firstButtonText;
 @property (strong, nonatomic) NSString *secondButtonText;
 
-@property (assign, nonatomic) AlertButtonAction firstAction;
-@property (assign, nonatomic) AlertButtonAction secondAction;
+@property (copy, nonatomic) AlertButtonAction firstAction;
+@property (copy, nonatomic) AlertButtonAction secondAction;
 
 @end
 

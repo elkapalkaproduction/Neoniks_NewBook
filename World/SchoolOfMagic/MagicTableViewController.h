@@ -19,5 +19,6 @@
 
 @property (weak, nonatomic) id<MagicTableDelegate> delegate;
 - (void)showNextUnAnsweredQuestion;
+- (void)reset;
 
 @end

@@ -11,6 +11,7 @@
 #import "PopUpViewController.h"
 #import "InventaryContentHandler.h"
 #import "TextBarViewController.h"
+#import "AlertViewController.h"
 
 @interface IslandViewController () <UIScrollViewDelegate, IslandViewModelDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
@@ -260,6 +261,18 @@
 
 - (CGFloat)textBarOpenPosition {
     return 5;
+}
+
+
+- (IBAction)reset:(id)sender {
+    AlertViewController *alert = [AlertViewController initWithTitle:NSLocalizedString(@"alert_start_over", nil)
+                                                   firstButtonTitle:NSLocalizedString(@"alert_yes", nil)
+                                                  firstButtonAction:^{
+                                                      [self.viewModel resetAnswers];
+                                                  }
+                                                  secondButtonTitle:NSLocalizedString(@"alert_no", nil)
+                                                 secondButtonAction:nil];
+    [alert showInViewController:self];
 }
 
 @end

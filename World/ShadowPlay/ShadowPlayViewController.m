@@ -23,6 +23,7 @@
 #import "TextBarViewController.h"
 #import "AVAudioPlayer+Creation.h"
 #import "SoundPlayer.h"
+#import "AlertViewController.h"
 
 NSString *const NSPSegueIdentifierPattern = @"character";
 
@@ -455,6 +456,19 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     } else {
         [super backButton:sender];
     }
+}
+
+
+- (IBAction)reset:(id)sender {
+    AlertViewController *alert = [AlertViewController initWithTitle:NSLocalizedString(@"alert_start_over", nil)
+                                                   firstButtonTitle:NSLocalizedString(@"alert_yes", nil)
+                                                  firstButtonAction:^{
+                                                      [[ShadowPlayOpenedHandler sharedHandler] resetOpenedCharacter];
+                                                      [self didPressCharacter:self.loadedCharacter];
+                                                  }
+                                                  secondButtonTitle:NSLocalizedString(@"alert_no", nil)
+                                                 secondButtonAction:nil];
+    [alert showInViewController:self];
 }
 
 @end

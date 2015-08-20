@@ -282,4 +282,10 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
     [self showQuestion:self.questionNumber];
 }
 
+
+- (void)reset {
+    [[MagicSchoolAnswersHandler sharedHandler] deleteAllAnswers];
+    [self showQuestion:self.questionNumber];
+}
+
 @end

@@ -10,6 +10,7 @@
 #import "MagicTableViewController.h"
 #import "MagicSchoolAnswersHandler.h"
 #import "TextBarViewController.h"
+#import "AlertViewController.h"
 
 @interface SchoolOfMagicViewController () <MagicTableDelegate, TextBarDelegate>
 
@@ -128,6 +129,18 @@
 - (void)soundDidFinish {
     [self closeTextBarWithCompletionBlock:nil];
     [self.table showNextUnAnsweredQuestion];
+}
+
+
+- (IBAction)reset:(id)sender {
+    AlertViewController *alert = [AlertViewController initWithTitle:NSLocalizedString(@"alert_start_over", nil)
+                                                   firstButtonTitle:NSLocalizedString(@"alert_yes", nil)
+                                                  firstButtonAction:^{
+                                                      [self.table reset];
+                                                  }
+                                                  secondButtonTitle:NSLocalizedString(@"alert_no", nil)
+                                                 secondButtonAction:nil];
+    [alert showInViewController:self];
 }
 
 @end
