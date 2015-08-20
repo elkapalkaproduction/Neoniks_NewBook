@@ -10,6 +10,39 @@
 #import "PopUpViewController.h"
 #import "SoundPlayer.h"
 
+@interface NSMutableArray (ArchUtils_Shuffle)
+- (void)shuffle;
+
+@end
+
+
+static NSUInteger random_below(NSUInteger n) {
+    NSUInteger m = 1;
+    
+    do {
+        m <<= 1;
+    } while(m < n);
+    
+    NSUInteger ret;
+    
+    do {
+        ret = random() % m;
+    } while(ret >= n);
+    
+    return ret;
+}
+
+@implementation NSMutableArray (ArchUtils_Shuffle)
+
+- (void)shuffle {
+    for (NSUInteger i = [self count]; i > 1; i--) {
+        NSUInteger j = random_below(i);
+        [self exchangeObjectAtIndex:i-1 withObjectAtIndex:j];
+    }
+}
+
+@end
+
 NSString *const LastSolvedIsland = @"LastSolvedIsland";
 
 @interface IslandViewModel () <PopUpDelegate>
@@ -34,10 +67,29 @@ NSString *const LastSolvedIsland = @"LastSolvedIsland";
 
 - (NSArray *)answersColor {
     if (!_answersColor) {
-        _answersColor = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"answers_colors.plist" ofType:nil]];
+        _answersColor = [NSArray arrayWithArray:[self array]];
     }
     
     return _answersColor;
+}
+
+
+- (NSMutableArray *)array {
+    NSString *fileName = @"answers_colors.plist";
+    NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:fileName];
+    
+    NSMutableArray *answersColor = [[NSMutableArray alloc] initWithContentsOfFile:path];
+    if (!answersColor) {
+        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:fileName ofType:nil];
+        answersColor = [[NSMutableArray alloc] initWithContentsOfFile:bundlePath];
+    }
+    if ([self maxSolved] == 0) {
+        [answersColor shuffle];
+    }
+    
+    [answersColor writeToFile:path atomically:YES];
+    
+    return answersColor;
 }
 
 
@@ -52,7 +104,7 @@ NSString *const LastSolvedIsland = @"LastSolvedIsland";
 
 - (void)didTapOnPoint:(CGPoint)point {
     UIColor *pixelColor = [self.answersImage colorAtPixel:point];
-    BOOL find = [pixelColor isEqual:[self correctColorForIndex:[self currentNeedToFind]]];
+    BOOL find = [pixelColor isEqual:[self correctColorForIndex:[self maxSolved]]];
     if (find) {
         [[SoundPlayer sharedPlayer] playCorrectAnswer];
         [self.delegate openPopUpViewController:[self popUpForIndex:[self currentNeedToFind]]];
@@ -87,12 +139,24 @@ NSString *const LastSolvedIsland = @"LastSolvedIsland";
 
 
 - (IslandToFind)currentNeedToFind {
+    IslandToFind maxSolved = [self maxSolved];
+    if (maxSolved >= [self.answersColor count]) {
+        return IslandToFindSolvedAll;
+    }
+    
+    return [self.answersColor[maxSolved][@"idx"] integerValue];
+    
+}
+
+
+- (IslandToFind)maxSolved {
     return [[NSUserDefaults standardUserDefaults] integerForKey:LastSolvedIsland];
+    
 }
 
 
 - (void)increaeCurrentAnswer {
-    IslandToFind current = [self currentNeedToFind];
+    IslandToFind current = [self maxSolved];
     if (current != IslandToFindSolvedAll) {
         current++;
     }
@@ -102,7 +166,7 @@ NSString *const LastSolvedIsland = @"LastSolvedIsland";
 
 - (PopUpViewController *)popUpForIndex:(NSInteger)index {
     PopUpViewController *popUp = [PopUpViewController instantiateWithType:index delegate:self];
-
+    
     return popUp;
 }
 
@@ -120,7 +184,6 @@ NSString *const LastSolvedIsland = @"LastSolvedIsland";
 
 + (void)deleteAnswers {
     [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:LastSolvedIsland];
-
 }
 
 @end

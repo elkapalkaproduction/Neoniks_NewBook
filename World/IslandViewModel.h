@@ -34,8 +34,8 @@ typedef NS_ENUM(NSInteger, IslandToFind) {
 
 - (void)didTapOnPoint:(CGPoint)point;
 - (IslandToFind)currentNeedToFind;
+- (IslandToFind)maxSolved;
 - (void)resetAnswers;
-
 
 + (void)deleteAnswers;
 

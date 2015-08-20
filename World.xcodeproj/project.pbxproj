@@ -74,6 +74,7 @@
 		754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 754ED0BC1AF4110F00697F9E /* StyleSettings.plist */; };
 		755CDE101AECE1BE0095B6DF /* InventaryContentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 755CDE0F1AECE1BE0095B6DF /* InventaryContentHandler.m */; };
 		755CDE151AECE3380095B6DF /* InventaryItemOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 755CDE141AECE3380095B6DF /* InventaryItemOption.m */; };
+		755DB2921B865B4600722E0C /* answers_colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 755DB2911B865B4600722E0C /* answers_colors.plist */; };
 		75635ADE1AABBEAA005BD4CB /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */; };
 		757DBBD11ADB199500517632 /* UIViewController+Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 757DBBD01ADB199500517632 /* UIViewController+Child.m */; };
 		757E93DB1A7E2DEE000B2537 /* MagicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757E93DA1A7E2DEE000B2537 /* MagicTableViewController.m */; };
@@ -367,7 +368,6 @@
 		75EBF3241AAB6948005F5E8C /* IslandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBF3231AAB6948005F5E8C /* IslandViewController.m */; };
 		75EBF3271AAB7BB4005F5E8C /* UIImage+Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBF3261AAB7BB4005F5E8C /* UIImage+Colors.m */; };
 		75EBF32A1AAB7D29005F5E8C /* IslandViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBF3291AAB7D29005F5E8C /* IslandViewModel.m */; };
-		75EBF3601AAB7F5A005F5E8C /* answers_colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75EBF35F1AAB7F5A005F5E8C /* answers_colors.plist */; };
 		75EC14161A7ECF460086803E /* MagicSchoolAnswersHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EC14151A7ECF460086803E /* MagicSchoolAnswersHandler.m */; };
 		75EDA1841A83FBCA002546E0 /* shadow_wrong_position.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75EDA1831A83FBCA002546E0 /* shadow_wrong_position.plist */; };
 		75EDA1871A83FE7E002546E0 /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDA1861A83FE7E002546E0 /* Storage.m */; };
@@ -490,6 +490,7 @@
 		755CDE0F1AECE1BE0095B6DF /* InventaryContentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventaryContentHandler.m; sourceTree = "<group>"; };
 		755CDE131AECE3380095B6DF /* InventaryItemOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventaryItemOption.h; sourceTree = "<group>"; };
 		755CDE141AECE3380095B6DF /* InventaryItemOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventaryItemOption.m; sourceTree = "<group>"; };
+		755DB2911B865B4600722E0C /* answers_colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = answers_colors.plist; sourceTree = "<group>"; };
 		75635ADC1AABBEA9005BD4CB /* PopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpViewController.h; sourceTree = "<group>"; };
 		75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpViewController.m; sourceTree = "<group>"; };
 		757DBBCF1ADB199500517632 /* UIViewController+Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Child.h"; sourceTree = "<group>"; };
@@ -840,7 +841,6 @@
 		75EBF3261AAB7BB4005F5E8C /* UIImage+Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Colors.m"; sourceTree = "<group>"; };
 		75EBF3281AAB7D29005F5E8C /* IslandViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IslandViewModel.h; sourceTree = "<group>"; };
 		75EBF3291AAB7D29005F5E8C /* IslandViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IslandViewModel.m; sourceTree = "<group>"; };
-		75EBF35F1AAB7F5A005F5E8C /* answers_colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = answers_colors.plist; sourceTree = "<group>"; };
 		75EC14141A7ECF460086803E /* MagicSchoolAnswersHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicSchoolAnswersHandler.h; sourceTree = "<group>"; };
 		75EC14151A7ECF460086803E /* MagicSchoolAnswersHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicSchoolAnswersHandler.m; sourceTree = "<group>"; };
 		75EDA1831A83FBCA002546E0 /* shadow_wrong_position.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shadow_wrong_position.plist; sourceTree = "<group>"; };
@@ -986,7 +986,7 @@
 				75EBF3291AAB7D29005F5E8C /* IslandViewModel.m */,
 				75635ADC1AABBEA9005BD4CB /* PopUpViewController.h */,
 				75635ADD1AABBEAA005BD4CB /* PopUpViewController.m */,
-				75EBF35F1AAB7F5A005F5E8C /* answers_colors.plist */,
+				755DB2911B865B4600722E0C /* answers_colors.plist */,
 			);
 			name = Island;
 			sourceTree = "<group>";
@@ -1831,7 +1831,6 @@
 				75DFE1041A800CE500CE9E69 /* Shadow_portret_border_2.png in Resources */,
 				75DC68061A816AA100D6A553 /* shadow_character7_part2.png in Resources */,
 				75DC67FE1A816AA100D6A553 /* shadow_character7_part12.png in Resources */,
-				75EBF3601AAB7F5A005F5E8C /* answers_colors.plist in Resources */,
 				75DC67A41A816AA100D6A553 /* shadow_character1_part4.png in Resources */,
 				750569321B1E555F008DE162 /* miner_anim.atlasc in Resources */,
 				75B980D41B591AAA00893462 /* wrong.mp3 in Resources */,
@@ -1958,6 +1957,7 @@
 				75B627FB1B1CFBD2000A3172 /* school_frames.atlasc in Resources */,
 				75AD2E8F1ADAD193002EE482 /* book_eng.epub in Resources */,
 				75DC67D11A816AA100D6A553 /* shadow_character4_part2.png in Resources */,
+				755DB2921B865B4600722E0C /* answers_colors.plist in Resources */,
 				75DC68171A816AA100D6A553 /* shadow_character8_part17.png in Resources */,
 				75DC67C21A816AA100D6A553 /* shadow_character3_part6.png in Resources */,
 				75041C461B6EAD7F00B28F3F /* shadow_sound_6_en.mp3 in Resources */,
