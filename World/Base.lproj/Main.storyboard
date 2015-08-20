@@ -1467,7 +1467,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A dragon is " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Djl-Vx-JiY">
-                                <rect key="frame" x="62" y="57.5" width="169" height="28.5"/>
+                                <rect key="frame" x="62" y="57" width="169" height="28.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1500,12 +1500,30 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0NG-m1-ntn">
-                                <rect key="frame" x="62" y="57.5" width="169" height="28.5"/>
+                                <rect key="frame" x="62" y="57" width="169" height="28.5"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="didPressOnQuestion:" destination="fZI-h9-LJ4" eventType="touchUpInside" id="1aG-He-pax"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfL-vp-ojh">
+                                <rect key="frame" x="392" y="115" width="32" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="fZI-h9-LJ4" eventType="touchUpInside" id="zL7-kT-Ydg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gup-CI-Qe2">
+                                <rect key="frame" x="0.0" y="115.5" width="31" height="30"/>
+                                <state key="normal" title="Prev">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPrevQuestion:" destination="fZI-h9-LJ4" eventType="touchUpInside" id="qzm-rV-afp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1519,6 +1537,7 @@
                             <constraint firstItem="MY6-jr-2P7" firstAttribute="top" secondItem="p9e-tf-PMx" secondAttribute="top" id="5LB-DD-sNQ"/>
                             <constraint firstAttribute="trailing" secondItem="MY6-jr-2P7" secondAttribute="trailing" constant="50" id="5nR-S8-dkf"/>
                             <constraint firstAttribute="centerX" secondItem="iSr-LC-B0X" secondAttribute="centerX" id="5wg-fk-Prx"/>
+                            <constraint firstAttribute="centerY" secondItem="TfL-vp-ojh" secondAttribute="centerY" id="6dG-nY-8vT"/>
                             <constraint firstItem="Djl-Vx-JiY" firstAttribute="leading" relation="lessThanOrEqual" secondItem="MuR-Ka-ngI" secondAttribute="leading" constant="5" id="7BU-7N-QYh"/>
                             <constraint firstAttribute="trailing" secondItem="W0P-CM-9Kh" secondAttribute="trailing" id="88t-3P-Vqp"/>
                             <constraint firstItem="MY6-jr-2P7" firstAttribute="leading" secondItem="MuR-Ka-ngI" secondAttribute="trailing" constant="5" id="DrG-Rj-ueo"/>
@@ -1528,6 +1547,7 @@
                             <constraint firstItem="MuR-Ka-ngI" firstAttribute="width" secondItem="W0P-CM-9Kh" secondAttribute="width" multiplier="11:26" id="LRC-iW-oDi"/>
                             <constraint firstItem="p9e-tf-PMx" firstAttribute="centerX" secondItem="MuR-Ka-ngI" secondAttribute="centerX" id="Qqu-2O-wDR"/>
                             <constraint firstItem="iSr-LC-B0X" firstAttribute="height" secondItem="W0P-CM-9Kh" secondAttribute="height" multiplier="11:160" id="S0G-uf-TuO"/>
+                            <constraint firstAttribute="trailing" secondItem="TfL-vp-ojh" secondAttribute="trailing" id="SRJ-B5-a6X"/>
                             <constraint firstItem="p9e-tf-PMx" firstAttribute="top" secondItem="iSr-LC-B0X" secondAttribute="bottom" constant="10" id="SoX-pm-oia"/>
                             <constraint firstItem="MuR-Ka-ngI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="p9e-tf-PMx" secondAttribute="trailing" constant="20" id="VMt-L3-91j"/>
                             <constraint firstItem="W0P-CM-9Kh" firstAttribute="leading" secondItem="pIm-YJ-9oh" secondAttribute="leading" id="Wvd-5Z-bt8"/>
@@ -1535,8 +1555,10 @@
                             <constraint firstItem="Djl-Vx-JiY" firstAttribute="bottom" secondItem="0NG-m1-ntn" secondAttribute="bottom" id="lXi-hO-1Z5"/>
                             <constraint firstAttribute="centerX" secondItem="U0G-6F-0bU" secondAttribute="centerX" id="oNn-TP-QNC"/>
                             <constraint firstItem="MuR-Ka-ngI" firstAttribute="centerX" secondItem="Djl-Vx-JiY" secondAttribute="centerX" id="ocf-jS-QuS"/>
+                            <constraint firstAttribute="centerY" secondItem="Gup-CI-Qe2" secondAttribute="centerY" id="sVi-Kj-zWY"/>
                             <constraint firstItem="Djl-Vx-JiY" firstAttribute="top" secondItem="0NG-m1-ntn" secondAttribute="top" id="shn-71-NYk"/>
                             <constraint firstItem="iSr-LC-B0X" firstAttribute="top" secondItem="Vim-rk-iRz" secondAttribute="bottom" constant="4" id="u5x-1R-Vtd"/>
+                            <constraint firstItem="Gup-CI-Qe2" firstAttribute="leading" secondItem="pIm-YJ-9oh" secondAttribute="leading" id="vgc-KD-hv4"/>
                             <constraint firstItem="W0P-CM-9Kh" firstAttribute="top" secondItem="Vim-rk-iRz" secondAttribute="bottom" id="yyC-Z3-tZ8"/>
                             <constraint firstItem="Djl-Vx-JiY" firstAttribute="leading" secondItem="0NG-m1-ntn" secondAttribute="leading" id="zAz-no-ESh"/>
                             <constraint firstItem="p9e-tf-PMx" firstAttribute="leading" relation="lessThanOrEqual" secondItem="MuR-Ka-ngI" secondAttribute="leading" constant="20" id="zLN-eN-tET"/>

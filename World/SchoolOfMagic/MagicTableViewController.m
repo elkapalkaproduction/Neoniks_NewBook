@@ -288,4 +288,25 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
     [self showQuestion:self.questionNumber];
 }
 
+
+- (IBAction)showNextQuestion:(id)sender {
+    if (self.questionNumber == 9) {
+        self.questionNumber = 0;
+    } else {
+        self.questionNumber++;
+    }
+    [self showQuestion:self.questionNumber];
+}
+
+
+- (IBAction)showPrevQuestion:(id)sender {
+    if (self.questionNumber == 0) {
+        self.questionNumber = 9;
+    } else {
+        self.questionNumber--;
+    }
+    [self showQuestion:self.questionNumber];
+    
+}
+
 @end
