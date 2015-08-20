@@ -16,6 +16,7 @@
 @property (strong, nonatomic) SKSpriteNode *hatNode;
 @property (assign, nonatomic) CGSize nodeSize;
 @property (assign, nonatomic) CGRect rect;
+@property (strong, nonatomic) NSTimer *timer;
 
 @end
 
@@ -77,6 +78,15 @@
     } else {
         self.hatNode.physicsBody = [SKPhysicsBody bodyWithTexture:JUSTACREEP_ANIM_TEX_JUSTACREEP_HAT size:self.hatNode.size];
         self.hatNode.physicsBody.dynamic = YES;
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(checkSound) userInfo:nil repeats:YES];
+    }
+}
+
+
+- (void)checkSound {
+    NSInteger count = [self.hatNode.physicsBody.allContactedBodies count];
+    if (count > 0) {
+        [self.timer invalidate];
         [self runAction:[SKAction playSoundFileNamed:@"justacreep.mp3" waitForCompletion:NO]];
     }
 }

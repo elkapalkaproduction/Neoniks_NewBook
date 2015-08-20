@@ -92,11 +92,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     self.descriptionLabel.font = [UIFont baseFontOfSize:[UIDevice isIpad] ? 30 : 18];
     self.bannerImage.image = [UIImage imageNamed:NSLocalizedString(NSPImageNameTitle, nil)];
     self.loadedCharacter = ShadowCharacterJay;
-    if ([self shouldShowPrize]) {
-        [self showMagicWand];
-    } else {
-        self.prizeView.hidden = YES;
-    }
+    self.prizeView.hidden = YES;
     self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
 }
 
@@ -104,6 +100,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self didPressCharacter:self.loadedCharacter];
+    [self.player stop];
     self.viewForElements.hidden = YES;
 }
 
@@ -117,6 +114,8 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
                              text:@"text_panel_shadow_initial"
                          isObject:NO];
         [self performSelector:@selector(closeTextBarWithCompletionBlock:) withObject:nil afterDelay:5.f];
+        [self.player stop];
+    } else {
     }
 }
 
@@ -166,13 +165,14 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     self.player = [AVAudioPlayer audioPlayerWithSoundName:NSLocalizedString(audioName, nil)];
     if ([[ShadowPlayOpenedHandler sharedHandler] isOpenedCharacter:character]) {
         [self loadUnlockedCharacter:character];
+        [self.textBar stopStound];
         [self.player play];
     } else {
         [self loadLockedCharacter:character];
         [self.player stop];
     }
     
-
+    
     
 }
 
@@ -193,8 +193,8 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     NSArray *allKeys = [wrongCharacterPositions allKeys];
     for (NSString *currentKey in allKeys) {
         [self createShadowElement:[UIImage imageNamed:currentKey]
-              wrongCharacterPositions:CGPointFromString(wrongCharacterPositions[currentKey])
-            correctCharacterPositions:CGRectFromString(correctCharacterPositions[currentKey])];
+          wrongCharacterPositions:CGPointFromString(wrongCharacterPositions[currentKey])
+        correctCharacterPositions:CGRectFromString(correctCharacterPositions[currentKey])];
     }
 }
 
@@ -224,19 +224,15 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 - (void)hideShadowsAndMarksAsSolved {
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:self.loadedCharacter];
-
+    
     [self updateCharactersMenuInformation];
     [self.shadowElements enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
         [UIView animateWithDuration:0.3 animations:^{
             [obj setAlpha:0.f];
         } completion:^(BOOL finished) {
             [obj removeFromSuperview];
-            if ([self shouldShowPrize]) {
-                [self showMagicWand];
-            } else {
-                [self.player play];
-                [self loadUnlockedCharacter:self.loadedCharacter];
-            }
+            [self.player play];
+            [self loadUnlockedCharacter:self.loadedCharacter];
         }];
     }];
 }
@@ -371,9 +367,10 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 - (IBAction)getPrize:(id)sender {
     [[SoundPlayer sharedPlayer] playCorrectAnswer];
     [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeMagicWand withFormat:InventaryIconShowingFull];
-    self.prizeView.hidden = YES;
-    [self didPressCharacter:self.loadedCharacter];
-    [self.textBar stopStound];
+    [self closeTextBarWithCompletionBlock:^{
+        [self.textBar stopStound];
+        [self backButton:nil];
+    }];
 }
 
 
@@ -382,6 +379,8 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     self.descriptionLabel.hidden = YES;
     self.viewForElements.hidden = YES;
     self.prizeView.hidden = NO;
+    self.scene.node = nil;
+    [self.player stop];
     [self prizeDidAppear];
 }
 
@@ -447,6 +446,15 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 - (CGFloat)textBarOpenPosition {
     return 5;
+}
+
+
+- (void)backButton:(id)sender {
+    if ([self shouldShowPrize]) {
+        [self showMagicWand];
+    } else {
+        [super backButton:sender];
+    }
 }
 
 @end

@@ -37,7 +37,8 @@
 
 - (SKAction *)sequence {
     if (!_sequence) {
-        _sequence = [SKAction actionWithSoundName:@"furcoat.mp3" textures:AnimName];
+        SKAction *action = [SKAction animateWithTextures:AnimName timePerFrame:1.f / 15.f];
+        _sequence = [SKAction actionWithSoundName:@"furcoat.mp3" action:[SKAction repeatAction:action count:5]];
     }
     
     return _sequence;

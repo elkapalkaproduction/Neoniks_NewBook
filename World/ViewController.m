@@ -65,7 +65,7 @@
     [super viewDidLoad];
     [self updateInterface];
     [self prepareScenes];
-    self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
+    self.textBarBottomConstraint.constant = -1000;
 }
 
 
