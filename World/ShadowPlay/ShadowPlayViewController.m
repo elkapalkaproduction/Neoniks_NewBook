@@ -354,9 +354,31 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     wrongCharacterPositions:(CGPoint)wrongCharacterPositions
   correctCharacterPositions:(CGRect)correctCharacterPositions {
     CGRect frame;
-    frame.origin = wrongCharacterPositions;
     frame.size = correctCharacterPositions.size;
-    DragableButton *shadow = [[DragableButton alloc] initWithFrame:[self scaledRectFromRect:frame]];
+    
+    CGFloat viewWidth = self.viewForElements.frame.size.width;
+    CGFloat viewHeigth = self.viewForElements.frame.size.height;
+    
+    const CGFloat X = arc4random() % (int)viewWidth - viewWidth / 2;
+    const CGFloat Y = arc4random() % (int)viewHeigth - viewHeigth / 2;
+    
+    frame.origin = wrongCharacterPositions;
+    frame.origin.x += X;
+    frame.origin.y += Y;
+    frame = [self scaledRectFromRect:frame];
+    if (frame.origin.x < 0) {
+        frame.origin.x = 0;
+    }
+    if (frame.origin.x + frame.size.width > viewWidth) {
+        frame.origin.x = viewWidth - frame.size.width;
+    }
+    if (frame.origin.y < 0) {
+        frame.origin.y = 0;
+    }
+    if (frame.origin.y + frame.size.height > viewHeigth) {
+        frame.origin.y = viewHeigth - frame.size.height;
+    }
+    DragableButton *shadow = [[DragableButton alloc] initWithFrame:frame];
     shadow.correctRect = [self scaledRectFromRect:correctCharacterPositions];
     shadow.delegate = self;
     [shadow setImage:image forState:UIControlStateNormal];

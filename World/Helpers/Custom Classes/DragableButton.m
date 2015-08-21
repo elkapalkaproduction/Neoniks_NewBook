@@ -73,8 +73,24 @@
             [self.delegate putButtonOnRightPosition:self];
         }
     } else {
+        CGFloat viewWidth = self.superview.frame.size.width;
+        CGFloat viewHeight = self.superview.frame.size.height;
+        CGRect frame = self.frame;
+        if (frame.origin.x < 0) {
+            frame.origin.x = 0;
+        }
+        if (frame.origin.x + frame.size.width > viewWidth) {
+            frame.origin.x = viewWidth - frame.size.width;
+        }
+        if (frame.origin.y < 0) {
+            frame.origin.y = 0;
+        }
+        if (frame.origin.y + frame.size.height > viewHeight) {
+            frame.origin.y = viewHeight - frame.size.height;
+        }
+
         [UIView animateWithDuration:0.4 animations:^{
-             self.center = CGPointMake(self.firstX, self.firstY);
+             self.center = CGPointMake(CGRectGetMidX(frame), CGRectGetMidY(frame));
          }];
     }
 }
