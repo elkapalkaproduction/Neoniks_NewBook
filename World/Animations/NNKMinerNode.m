@@ -14,6 +14,7 @@
 @property (strong, nonatomic) SKTextureAtlas *atlass;
 @property (strong, nonatomic) SKAction *sequence;
 @property (strong, nonatomic) SKSpriteNode *spriteNode;
+@property (assign, nonatomic) BOOL unablePlayAnimation;
 
 @end
 
@@ -51,7 +52,15 @@
 
 
 - (void)runAction {
+    if (self.unablePlayAnimation) return;
+    self.unablePlayAnimation = YES;
+    [self performSelector:@selector(allowAnimationPlay) withObject:nil afterDelay:1.f];
     [self.spriteNode runAction:self.sequence];
+}
+
+
+- (void)allowAnimationPlay {
+    self.unablePlayAnimation = NO;
 }
 
 

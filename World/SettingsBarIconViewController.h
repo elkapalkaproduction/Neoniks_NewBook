@@ -48,6 +48,9 @@ typedef NS_ENUM(NSInteger, InventaryBarIconType) {
     InventaryBarIconTypeSword,
     InventaryBarIconTypeWrench,
     InventaryBarIconTypeSnail,
+    InventaryBarIconTypeMagicBallCat,
+    InventaryBarIconTypeMagicBallSheep,
+    InventaryBarIconTypeMagicBallNinja,
 };
 
 typedef NS_ENUM(NSInteger, InventaryIconShowing) {
@@ -81,6 +84,8 @@ typedef NS_ENUM(NSInteger, InventaryIconShowing) {
                               format:(InventaryIconShowing)format
                             delegate:(id<SettingsBarIconDelegate>)delegate;
 
-@property (assign, nonatomic, readonly) InventaryIconShowing format;
+- (void)displayTextOnMainLabel:(NSString *)mainLabel detailLabel:(NSString *)detailLabel;
+
+@property (assign, nonatomic) InventaryIconShowing format;
 
 @end

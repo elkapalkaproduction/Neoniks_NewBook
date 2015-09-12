@@ -78,4 +78,9 @@
     return [Storage loadIntegerForKey:[self keyFromType:type]];
 }
 
+
+- (NSInteger)numberOfBallOfMagic {
+    return [self formatItemForType:InventaryBarIconTypeMagicBallCat] + [self formatItemForType:InventaryBarIconTypeMagicBallSheep] + [self formatItemForType:InventaryBarIconTypeMagicBallNinja];
+}
+
 @end

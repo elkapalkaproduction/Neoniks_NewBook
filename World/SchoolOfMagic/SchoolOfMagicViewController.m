@@ -18,6 +18,7 @@
 @property (strong, nonatomic) TextBarViewController *textBar;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
 @property (weak, nonatomic) MagicTableViewController *table;
+@property (assign, nonatomic) BOOL prizeAlreadyShowed;
 
 @end
 
@@ -99,6 +100,8 @@
 
 
 - (void)prizeDidAppear {
+    if (self.prizeAlreadyShowed) return;
+    self.prizeAlreadyShowed = YES;
     [self openTextBarWithIcon:[UIImage imageNamed:@"text_panel_teacher"]
                          text:@"text_panel_teacher_final"
                      isObject:NO];

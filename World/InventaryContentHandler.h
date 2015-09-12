@@ -20,4 +20,6 @@
 
 - (InventaryIconShowing)formatForItemType:(InventaryBarIconType)type;
 
+- (NSInteger)numberOfBallOfMagic;
+
 @end

@@ -69,6 +69,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
     self.questionNumberTitle.textColor = [UIColor questionTitleColor];
     self.questionNumberTitle.font = [UIFont baseFontOfSize:15];
     self.questionText.font = [UIFont baseFontOfSize:15];
+    [self changeIndicatorToAnsweredQuestion];
 }
 
 
@@ -202,6 +203,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 
 
 - (IBAction)openQuestion:(UIButton *)sender {
+    if ([self shouldShowPrize]) return;
     [[SoundPlayer sharedPlayer] playClick];
     [self.timer invalidate];
     NSInteger index = [self.questionIndicators indexOfObject:sender];
@@ -259,6 +261,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
     self.prizeView.hidden = YES;
     [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeMedal
                                                    withFormat:InventaryIconShowingFull];
+    [self showQuestion:self.questionNumber];
 }
 
 

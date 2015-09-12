@@ -296,6 +296,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 - (void)loadUnlockedCharacter:(ShadowCharacter)character {
     [self removeAllShadowsFromTheScreen];
+    [self.scene.node removeAllActions];
     self.viewForElements.hidden = YES;
     self.descriptionLabel.hidden = NO;
     self.prizeView.hidden = YES;
@@ -359,13 +360,13 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     CGFloat viewWidth = self.viewForElements.frame.size.width;
     CGFloat viewHeigth = self.viewForElements.frame.size.height;
     
-    const CGFloat X = arc4random() % (int)viewWidth - viewWidth / 2;
-    const CGFloat Y = arc4random() % (int)viewHeigth - viewHeigth / 2;
+    const CGFloat X = arc4random() % (int)viewWidth;
+    const CGFloat Y = arc4random() % (int)viewHeigth;
     
-    frame.origin = wrongCharacterPositions;
-    frame.origin.x += X;
-    frame.origin.y += Y;
     frame = [self scaledRectFromRect:frame];
+    frame.origin.x = X;
+    frame.origin.y = Y;
+    NSLog(@"%@", NSStringFromCGRect(frame));
     if (frame.origin.x < 0) {
         frame.origin.x = 0;
     }

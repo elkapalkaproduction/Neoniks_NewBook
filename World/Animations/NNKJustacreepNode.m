@@ -78,6 +78,7 @@
     } else {
         self.hatNode.physicsBody = [SKPhysicsBody bodyWithTexture:JUSTACREEP_ANIM_TEX_JUSTACREEP_HAT size:self.hatNode.size];
         self.hatNode.physicsBody.dynamic = YES;
+        [self.timer invalidate];
         self.timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(checkSound) userInfo:nil repeats:YES];
     }
 }

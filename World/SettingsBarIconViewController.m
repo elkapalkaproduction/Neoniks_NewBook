@@ -17,7 +17,10 @@
 @property (assign, nonatomic) CGRect frame;
 @property (weak, nonatomic) id target;
 @property (assign, nonatomic) SEL selector;
-@property (assign, nonatomic) InventaryIconShowing format;
+@property (weak, nonatomic) IBOutlet UILabel *labelMain;
+@property (weak, nonatomic) IBOutlet UILabel *labelDetail;
+@property (copy, nonatomic) NSString *labelMainText;
+@property (copy, nonatomic) NSString *labelDetailText;
 
 @end
 
@@ -68,6 +71,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.labelMain.font = [UIFont baseFontOfSize:12.f];
+    self.labelDetail.font = [UIFont baseFontOfSize:14.f];
     self.view.frame = self.frame;
     NSString *prefix = @"inventary_";
     NSString *prefixWithFormat = [self addFormatToPrefix:prefix];
@@ -81,6 +86,22 @@
         self.selector = @selector(selectIcon:);
     }
     [self.icon addTarget:self.target action:self.selector forControlEvents:UIControlEventTouchUpInside];
+    [self setLabelMainText:self.labelMainText detailLabel:self.labelDetailText];
+}
+
+
+- (void)displayTextOnMainLabel:(NSString *)mainLabel detailLabel:(NSString *)detailLabel {
+    self.labelMainText = mainLabel;
+    self.labelDetailText = detailLabel;
+    [self setLabelMainText:mainLabel detailLabel:detailLabel];
+}
+
+
+- (void)setLabelMainText:(NSString *)mainLabel detailLabel:(NSString *)detailLabel {
+    self.labelMain.text = mainLabel;
+    self.labelDetail.text = detailLabel;
+    self.labelDetail.hidden = !detailLabel;
+    self.labelMain.hidden = !mainLabel;
 }
 
 

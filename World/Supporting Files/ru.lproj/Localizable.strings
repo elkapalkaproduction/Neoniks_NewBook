@@ -121,7 +121,12 @@
 "text_panel_island_initial" = "Найди все места,\nгде тебе предстоит побывать,\nи получи карту острова Торт!";
 "text_panel_shadow_initial" = "Собери из кусочков\nтени сказочных героев и\nполучи волшебную палочку.";
 "text_panel_shadow_final" = "Поздравляем!\nТеперь у тебя есть волшебная\nпалочка для начальной школы.";
-
+"text_panel_cat_initial" = "Мотор барахлит – нужен гаечный ключ.";
+"text_panel_cat_final" = "Спасибо! На-ка, заправься магией.";
+"text_panel_sheep_initial" = "Мне бы чего-нибудь\nволшебного пожевать.";
+"text_panel_sheep_final" = "Спасибо! Хочешь магии?\nТолько она несъедобная.";
+"text_panel_ninja_initial" = "Я меч потерял.\nТебе он не попадался?";
+"text_panel_ninja_final" = "Спасибо! Держи шарик магии.";
 
 "book_name_footer" = "Неоники и лисичка Наруке";
 "page_attribute" = "из";
@@ -194,6 +199,12 @@
 "text_panel_goblin_final_sound" = "text_panel_goblin_final_sound_ru";
 "text_panel_dragon_initial_sound" = "text_panel_dragon_initial_sound_ru";
 "text_panel_dragon_final_sound" = "text_panel_dragon_final_sound_ru";
+"text_panel_cat_initial_sound" = "text_panel_cat_initial_sound_ru";
+"text_panel_cat_final_sound" = "text_panel_cat_final_sound_ru";
+"text_panel_sheep_initial_sound" = "text_panel_sheep_initial_sound_ru";
+"text_panel_sheep_final_sound" = "text_panel_sheep_final_sound_ru";
+"text_panel_ninja_initial_sound" = "text_panel_ninja_initial_sound_ru";
+"text_panel_ninja_final_sound" = "text_panel_ninja_final_sound_ru";
 "text_panel_teacher_initial_sound" = "text_panel_teacher_initial_sound_ru";
 "text_panel_teacher_final_sound" = "text_panel_teacher_final_sound_ru";
 "text_panel_island_initial_sound" = "text_panel_island_initial_sound_ru";

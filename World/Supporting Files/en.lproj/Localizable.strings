@@ -121,6 +121,12 @@
 "text_panel_island_initial" = "Find all the places\nyou are going to visit and\nget a reward - a map of Cake Island.";
 "text_panel_shadow_initial" = "Assemble the shadows of\n8 fairy tale characters and\nget the magic wand.";
 "text_panel_shadow_final" = "Congratulations!\nYou received a magic wand for\nelementary school children.";
+"text_panel_cat_initial" = "My engine is sputtering. I need a wrench.";
+"text_panel_cat_final" = "Thanks! Let me fuel you up with magic.";
+"text_panel_sheep_initial" = "I'm hungry for something\nmagical to chew on.";
+"text_panel_sheep_final" = "Thanks! Want some magic?\nBut you can’t eat it, though.";
+"text_panel_ninja_initial" = "I lost my sword. Have you seen it?";
+"text_panel_ninja_final" = "Thanks! Here is your ball of magic.";
 
 
 "book_name_footer" = "Nenoniks and Mystie the Fox";
@@ -195,11 +201,18 @@
 "text_panel_goblin_final_sound" = "text_panel_goblin_final_sound_en";
 "text_panel_dragon_initial_sound" = "text_panel_dragon_initial_sound_en";
 "text_panel_dragon_final_sound" = "text_panel_dragon_final_sound_en";
+"text_panel_cat_initial_sound" = "text_panel_cat_initial_sound_en";
+"text_panel_cat_final_sound" = "text_panel_cat_final_sound_en";
+"text_panel_sheep_initial_sound" = "text_panel_sheep_initial_sound_en";
+"text_panel_sheep_final_sound" = "text_panel_sheep_final_sound_en";
+"text_panel_ninja_initial_sound" = "text_panel_ninja_initial_sound_en";
+"text_panel_ninja_final_sound" = "text_panel_ninja_final_sound_en";
 "text_panel_teacher_initial_sound" = "text_panel_teacher_initial_sound_en";
 "text_panel_teacher_final_sound" = "text_panel_teacher_final_sound_en";
 "text_panel_island_initial_sound" = "text_panel_island_initial_sound_en";
 "text_panel_shadow_initial_sound" = "text_panel_shadow_initial_sound_en";
 "text_panel_shadow_final_sound" = "text_panel_shadow_final_sound_en";
+
 
 "island_sound_0" = "island_sound_0_en";
 "island_sound_1" = "island_sound_1_en";

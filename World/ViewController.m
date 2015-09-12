@@ -20,11 +20,15 @@
 #import "NNKSkeletNode.h"
 #import "NNKGoblinNode.h"
 #import "NNKSheepNode.h"
+#import "NNKCatNode.h"
+#import "NNKDragonNode.h"
+#import "NNKNinjaNode.h"
 #import "TextBarViewController.h"
 
 @interface ViewController () <InfiniteTableViewDatasource, MainScreenViewModelDelegate, UIScrollViewDelegate, DragableButtonDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topBarTopConstraint;
 @property (weak, nonatomic) IBOutlet InfiniteTableView *infiniteTableView;
 @property (weak, nonatomic) IBOutlet UIView *topBarView;
@@ -33,16 +37,31 @@
 @property (weak, nonatomic) IBOutlet UIButton *snailImage;
 @property (weak, nonatomic) IBOutlet UIButton *dandelionImage;
 @property (strong, nonatomic) DragableButton *dragableObject;
+
+@property (weak, nonatomic) IBOutlet SKView *catSKView;
+@property (strong, nonatomic) MyScene *catScene;
+@property (strong, nonatomic) NNKCatNode *catNode;
+
 @property (weak, nonatomic) IBOutlet SKView *skeletSKView;
 @property (strong, nonatomic) MyScene *skeletScene;
 @property (strong, nonatomic) NNKSkeletNode *skeletNode;
+
 @property (weak, nonatomic) IBOutlet SKView *goblinSKView;
 @property (strong, nonatomic) MyScene *goblinScene;
 @property (strong, nonatomic) NNKGoblinNode *goblinNode;
+
+@property (weak, nonatomic) IBOutlet SKView *ninjaSKView;
+@property (strong, nonatomic) MyScene *ninjaScene;
+@property (strong, nonatomic) NNKNinjaNode *ninjaNode;
+
 @property (weak, nonatomic) IBOutlet SKView *sheepSKView;
 @property (strong, nonatomic) MyScene *sheepScene;
 @property (strong, nonatomic) NNKSheepNode *sheepNode;
-@property (weak, nonatomic) IBOutlet UIView *dragonView;
+
+@property (weak, nonatomic) IBOutlet SKView *dragonSKView;
+@property (strong, nonatomic) MyScene *dragonScene;
+@property (strong, nonatomic) NNKDragonNode *dragonNode;
+
 @property (weak, nonatomic) IBOutlet UIView *textBarSuperView;
 @property (strong, nonatomic) TextBarViewController *textBar;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
@@ -58,14 +77,36 @@
     self.goblinScene.node = self.goblinNode;
     self.sheepSKView.allowsTransparency = YES;
     self.sheepScene.node = self.sheepNode;
+    self.dragonSKView.allowsTransparency = YES;
+    self.dragonScene.node = self.dragonNode;
+    self.ninjaSKView.allowsTransparency = YES;
+    self.ninjaScene.node = self.ninjaNode;
+    self.catSKView.allowsTransparency = YES;
+    self.catScene.node = self.catNode;
+    [self.catNode runBackgrounAction];
 }
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self updateInterface];
-    [self prepareScenes];
     self.textBarBottomConstraint.constant = -1000;
+    [self prepareScenes];
+    [self setupScales];
+}
+
+
+- (void)setupScales {
+    self.scrollView.contentSize = self.backgroundImage.image.size;
+    CGSize scrollViewFrame = self.scrollView.frame.size;
+    CGSize scrollViewSize = self.backgroundImage.image.size;
+    CGFloat scaleWidth = scrollViewFrame.width / scrollViewSize.width;
+    CGFloat scaleHeight = scrollViewFrame.height / scrollViewSize.height;
+    CGFloat minScale = MAX(scaleWidth, scaleHeight);
+    
+    self.scrollView.minimumZoomScale = minScale;
+    self.scrollView.maximumZoomScale = 1.5f;
+    self.scrollView.zoomScale = minScale;
 }
 
 
@@ -152,20 +193,29 @@
 }
 
 
-- (NNKSheepNode *)sheepNode {
-    if (!_sheepNode) {
-        _sheepNode = [[NNKSheepNode alloc] initWithSize:self.sheepSKView.bounds.size];
-        //        __weak typeof(self) weakSelf = self;
-        _sheepNode.completionBlock = ^void(NNKSheepNode *node) {
-            //            if (![weakSelf isOpenIcon:InventaryBarIconTypeWrench]) {
-            //                [weakSelf didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_goblin"]
-            //                                                     text:@"text_panel_goblin_initial"
-            //                                                 isObject:NO];
-            //            }
+- (MyScene *)catScene {
+    if (!_catScene) {
+        _catScene = [self sceneFromSkView:self.catSKView];
+    }
+    
+    return _catScene;
+}
+
+
+- (NNKCatNode *)catNode {
+    if (!_catNode) {
+        _catNode = [[NNKCatNode alloc] initWithSize:self.catSKView.bounds.size];
+        __weak typeof(self) weakSelf = self;
+        _catNode.completionBlock = ^void() {
+            if (![weakSelf isOpenIcon:InventaryBarIconTypeMagicBallCat]) {
+                [weakSelf didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_cat"]
+                                                     text:@"text_panel_cat_initial"
+                                                 isObject:NO];
+            }
         };
     }
     
-    return _sheepNode;
+    return _catNode;
 }
 
 
@@ -175,6 +225,77 @@
     }
     
     return _sheepScene;
+}
+
+
+- (NNKSheepNode *)sheepNode {
+    if (!_sheepNode) {
+        _sheepNode = [[NNKSheepNode alloc] initWithSize:self.sheepSKView.bounds.size];
+        __weak typeof(self) weakSelf = self;
+        _sheepNode.completionBlock = ^void(NNKSheepNode *node) {
+            if (![weakSelf isOpenIcon:InventaryBarIconTypeMagicBallSheep]) {
+                [weakSelf didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_sheep"]
+                                                     text:@"text_panel_sheep_initial"
+                                                 isObject:NO];
+            }
+        };
+    }
+    
+    return _sheepNode;
+}
+
+
+- (NNKDragonNode *)dragonNode {
+    if (!_dragonNode) {
+        BOOL isOpenWrench = [self isOpenIcon:InventaryBarIconTypeMagicBook];
+        _dragonNode = [[NNKDragonNode alloc] initWithSize:self.dragonSKView.bounds.size
+                                           shouldHideBook:isOpenWrench];
+        __weak typeof(self) weakSelf = self;
+        _dragonNode.completionBlock = ^void(NNKDragonNode *node) {
+            if (![weakSelf isOpenIcon:InventaryBarIconTypeMagicBook]) {
+                [weakSelf didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_dragon"]
+                                                     text:@"text_panel_dragon_initial"
+                                                 isObject:NO];
+            }
+        };
+    }
+    
+    return _dragonNode;
+}
+
+
+- (MyScene *)dragonScene {
+    if (!_dragonScene) {
+        _dragonScene = [self sceneFromSkView:self.dragonSKView];
+    }
+    
+    return _dragonScene;
+}
+
+
+- (NNKNinjaNode *)ninjaNode {
+    if (!_ninjaNode) {
+        _ninjaNode = [[NNKNinjaNode alloc] initWithSize:self.ninjaSKView.bounds.size];
+        __weak typeof(self) weakSelf = self;
+        _ninjaNode.completionBlock = ^void() {
+            if (![weakSelf isOpenIcon:InventaryBarIconTypeMagicBallNinja]) {
+                [weakSelf didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_ninja"]
+                                                     text:@"text_panel_ninja_initial"
+                                                 isObject:NO];
+            }
+        };
+    }
+    
+    return _ninjaNode;
+}
+
+
+- (MyScene *)ninjaScene {
+    if (!_ninjaScene) {
+        _ninjaScene = [self sceneFromSkView:self.ninjaSKView];
+    }
+    
+    return _ninjaScene;
 }
 
 
@@ -305,8 +426,14 @@ didWantToOpenViewController:(UIViewController *)viewController {
     DragableButton *button = [[DragableButton alloc] initWithFrame:startPosition];
     switch (type) {
         case SettingsBarIconTypeSword:
+            button.correctRect = self.ninjaSKView.frame;
+            button.fullType = InventaryBarIconTypeMagicBallNinja;
+            button.hiddenType = InventaryBarIconTypeSword;
             break;
         case SettingsBarIconTypeWrench:
+            button.correctRect = self.catSKView.frame;
+            button.fullType = InventaryBarIconTypeMagicBallCat;
+            button.hiddenType = InventaryBarIconTypeWrench;
             break;
         case SettingsBarIconTypeSnail:
             button.correctRect = self.goblinSKView.frame;
@@ -315,11 +442,11 @@ didWantToOpenViewController:(UIViewController *)viewController {
             break;
         case SettingsBarIconTypeDandelion:
             button.correctRect = self.sheepSKView.frame;
-            button.fullType = InventaryBarIconTypeMagicBall;
+            button.fullType = InventaryBarIconTypeMagicBallSheep;
             button.hiddenType = InventaryBarIconTypeDandelion;
             break;
         case SettingsBarIconTypeExtinguisher:
-            button.correctRect = self.dragonView.frame;
+            button.correctRect = self.dragonSKView.frame;
             button.fullType = InventaryBarIconTypeMagicBook;
             button.hiddenType = InventaryBarIconTypeExtinguisher;
             break;
@@ -381,23 +508,41 @@ didWantToOpenViewController:(UIViewController *)viewController {
             [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_dragon"]
                                              text:@"text_panel_dragon_final"
                                          isObject:NO];
+            [self.dragonNode removeBook];
+            break;
+        case InventaryBarIconTypeMagicBallCat:
+            [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_cat"]
+                                             text:@"text_panel_cat_final"
+                                         isObject:NO];
+        case InventaryBarIconTypeMagicBallNinja:
+            [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_ninja"]
+                                             text:@"text_panel_ninja_final"
+                                         isObject:NO];
+            break;
+        case InventaryBarIconTypeMagicBallSheep:
+            [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_sheep"]
+                                             text:@"text_panel_sheep_final"
+                                         isObject:NO];
+            break;
         default:
             break;
     }
 }
 
 
-- (void)didStartDragButton:(DragableButton *)button {
-    [self closeTopAndTextBarWithCompletion:nil];
+- (void)putMagicBallButtonOnRightPosition:(DragableButton *)button {
+    switch (button.hiddenType) {
+        case InventaryBarIconTypeWrench:
+            break;
+        default: {
+            break;
+        }
+    }
 }
 
 
-- (IBAction)showDragonText:(id)sender {
-    if ([self isOpenIcon:InventaryBarIconTypeMagicBook]) return;
-    [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_dragon"]
-                                     text:@"text_panel_dragon_initial"
-                                 isObject:NO];
-    
+- (void)didStartDragButton:(DragableButton *)button {
+    [self closeTopAndTextBarWithCompletion:nil];
 }
 
 

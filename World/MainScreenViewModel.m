@@ -69,6 +69,18 @@ NSString *const AppID = @"899196882";
                                                                                                type:option.type
                                                                                              format:option.format
                                                                                            delegate:self];
+    if (InventaryBarIconTypeMagicBall == option.type) {
+        NSInteger numberOfBallOfMagic = [InventaryContentHandler sharedHandler].numberOfBallOfMagic;
+        NSString *mainLabel;
+        if (numberOfBallOfMagic > 0) {
+            controller.format = InventaryIconShowingFull;
+            if (numberOfBallOfMagic < 3) {
+                mainLabel = [NSString stringWithFormat:@"%ld", 3 - numberOfBallOfMagic];
+            }
+        }
+        [controller displayTextOnMainLabel:mainLabel
+                               detailLabel:[NSString stringWithFormat:@"%ld", numberOfBallOfMagic]];
+    }
     
     return controller;
 }
