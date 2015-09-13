@@ -23,9 +23,11 @@
 #import "NNKCatNode.h"
 #import "NNKDragonNode.h"
 #import "NNKNinjaNode.h"
+#import "BlueHouseScene.h"
+#import "NNWVideoViewController.h"
 #import "TextBarViewController.h"
 
-@interface ViewController () <InfiniteTableViewDatasource, MainScreenViewModelDelegate, UIScrollViewDelegate, DragableButtonDelegate>
+@interface ViewController () <InfiniteTableViewDatasource, MainScreenViewModelDelegate, UIScrollViewDelegate, DragableButtonDelegate, BlueHouseProtocol>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
@@ -62,6 +64,9 @@
 @property (strong, nonatomic) MyScene *dragonScene;
 @property (strong, nonatomic) NNKDragonNode *dragonNode;
 
+@property (weak, nonatomic) IBOutlet SKView *blueHouseSKView;
+@property (strong, nonatomic) BlueHouseScene *blueHouseScene;
+
 @property (weak, nonatomic) IBOutlet UIView *textBarSuperView;
 @property (strong, nonatomic) TextBarViewController *textBar;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
@@ -83,6 +88,8 @@
     self.ninjaScene.node = self.ninjaNode;
     self.catSKView.allowsTransparency = YES;
     self.catScene.node = self.catNode;
+    self.blueHouseSKView.allowsTransparency = YES;
+    [self.blueHouseSKView presentScene:self.blueHouseScene];
     [self.catNode runBackgrounAction];
 }
 
@@ -299,6 +306,19 @@
 }
 
 
+- (BlueHouseScene *)blueHouseScene {
+    if (!_blueHouseScene) {
+        _blueHouseScene = [BlueHouseScene sceneWithSize:self.blueHouseSKView.bounds.size];
+        _blueHouseScene.blueHouseDelegate = self;
+        _blueHouseScene.hideExtinguisher = [self isExtinguisherOpen];
+        _blueHouseScene.language = [NSBundle isRussian] ? BlueHouseLanguageRussian : BlueHouseLanguageEnglish;
+
+    }
+    
+    return _blueHouseScene;
+}
+
+
 - (void)updateInterface {
     if ([self isOpenIcon:InventaryBarIconTypeDandelion]) {
         [self.dandelionImage removeFromSuperview];
@@ -382,11 +402,13 @@
 
 
 - (IBAction)showSettings:(id)sender {
+    [self.blueHouseScene closeDoor];
     [self operOrCloseTopBarForType:MainScreenTopBarViewTypeSettings];
 }
 
 
 - (IBAction)showInventary:(id)sender {
+    [self.blueHouseScene closeDoor];
     [self operOrCloseTopBarForType:MainScreenTopBarViewTypeInventary];
 }
 
@@ -394,6 +416,7 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [self.dragableObject removeFromSuperview];
     [self closeTopAndTextBarWithCompletion:nil];
+    [self.blueHouseScene closeDoor];
 }
 
 
@@ -405,6 +428,7 @@
 
 
 - (void)didChangeLanguageInMainScreenViewModel:(MainScreenViewModel *)viewModel {
+    self.blueHouseScene.language = [NSBundle isRussian] ? BlueHouseLanguageRussian : BlueHouseLanguageEnglish;
     [self.infiniteTableView reloadData];
 }
 
@@ -581,6 +605,34 @@ didWantToOpenViewController:(UIViewController *)viewController {
 
 - (CGFloat)textBarOpenPosition {
     return 5;
+}
+
+
+- (BOOL)isExtinguisherOpen {
+    InventaryContentHandler *handler = [InventaryContentHandler sharedHandler];
+    InventaryIconShowing iconShowing = [handler formatForItemType:InventaryBarIconTypeExtinguisher];
+    
+    return iconShowing != InventaryIconShowingEmpty;
+}
+
+
+- (void)setExtinguisherOpen:(BOOL)extinguisherOpen {
+    if (extinguisherOpen) {
+        InventaryContentHandler *handler = [InventaryContentHandler sharedHandler];
+        [handler markItemWithType:InventaryBarIconTypeExtinguisher withFormat:InventaryIconShowingFull];
+    }
+}
+
+
+- (void)didTouchExtinguisher {
+    [self setExtinguisherOpen:YES];
+    self.blueHouseScene.hideExtinguisher = YES;
+}
+
+
+- (void)didTouchPlayer {
+    NNWVideoViewController *viewController = [NNWVideoViewController instantiate];
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 @end

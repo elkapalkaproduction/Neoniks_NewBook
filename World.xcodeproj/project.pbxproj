@@ -81,6 +81,9 @@
 		753D72851BA4D56C006DC74A /* dragon_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 753D72831BA4D56C006DC74A /* dragon_anim.atlasc */; };
 		753D72931BA4E310006DC74A /* NNKNinjaNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 753D72901BA4E310006DC74A /* NNKNinjaNode.m */; };
 		753D72941BA4E310006DC74A /* ninja_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 753D72911BA4E310006DC74A /* ninja_anim.atlasc */; };
+		753D72DE1BA577EC006DC74A /* BlueHouseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 753D72D91BA577EC006DC74A /* BlueHouseScene.m */; };
+		753D72DF1BA577EC006DC74A /* NNKBlueHouseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 753D72DB1BA577EC006DC74A /* NNKBlueHouseNode.m */; };
+		753D72E01BA577EC006DC74A /* blue_house_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 753D72DC1BA577EC006DC74A /* blue_house_anim.atlasc */; };
 		75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */; };
 		75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423AA21A7D8A4000D2C36E /* BaseViewController.m */; };
 		754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 754ED0BC1AF4110F00697F9E /* StyleSettings.plist */; };
@@ -184,7 +187,6 @@
 		75C12A6E1A754B6C0075FD8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A6C1A754B6C0075FD8D /* Main.storyboard */; };
 		75C12A701A754B6C0075FD8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A6F1A754B6C0075FD8D /* Images.xcassets */; };
 		75C12A731A754B6C0075FD8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C12A711A754B6C0075FD8D /* LaunchScreen.xib */; };
-		75C83FF51B4879F3007122A9 /* GingersHouseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C83FF41B4879F3007122A9 /* GingersHouseViewController.m */; };
 		75C83FF81B497444007122A9 /* goblin_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75C83FF61B497444007122A9 /* goblin_anim.atlasc */; };
 		75C83FFB1B49746F007122A9 /* NNKGoblinNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C83FFA1B49746F007122A9 /* NNKGoblinNode.m */; };
 		75C83FFE1B49882C007122A9 /* sheep_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75C83FFC1B49882C007122A9 /* sheep_anim.atlasc */; };
@@ -517,6 +519,12 @@
 		753D72901BA4E310006DC74A /* NNKNinjaNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKNinjaNode.m; sourceTree = "<group>"; };
 		753D72911BA4E310006DC74A /* ninja_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ninja_anim.atlasc; sourceTree = "<group>"; };
 		753D72921BA4E310006DC74A /* ninja_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ninja_anim.h; sourceTree = "<group>"; };
+		753D72D81BA577EB006DC74A /* BlueHouseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueHouseScene.h; sourceTree = "<group>"; };
+		753D72D91BA577EC006DC74A /* BlueHouseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueHouseScene.m; sourceTree = "<group>"; };
+		753D72DA1BA577EC006DC74A /* NNKBlueHouseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKBlueHouseNode.h; sourceTree = "<group>"; };
+		753D72DB1BA577EC006DC74A /* NNKBlueHouseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKBlueHouseNode.m; sourceTree = "<group>"; };
+		753D72DC1BA577EC006DC74A /* blue_house_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = blue_house_anim.atlasc; sourceTree = "<group>"; };
+		753D72DD1BA577EC006DC74A /* blue_house_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blue_house_anim.h; sourceTree = "<group>"; };
 		75423A9C1A7D826A00D2C36E /* SchoolOfMagicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolOfMagicViewController.h; sourceTree = "<group>"; };
 		75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolOfMagicViewController.m; sourceTree = "<group>"; };
 		75423AA11A7D8A4000D2C36E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -660,8 +668,6 @@
 		75C12A721A754B6C0075FD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		75C12A781A754B6D0075FD8D /* WorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C12A7D1A754B6D0075FD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75C83FF31B4879F3007122A9 /* GingersHouseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GingersHouseViewController.h; sourceTree = "<group>"; };
-		75C83FF41B4879F3007122A9 /* GingersHouseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GingersHouseViewController.m; sourceTree = "<group>"; };
 		75C83FF61B497444007122A9 /* goblin_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = goblin_anim.atlasc; sourceTree = "<group>"; };
 		75C83FF71B497444007122A9 /* goblin_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = goblin_anim.h; sourceTree = "<group>"; };
 		75C83FF91B49746F007122A9 /* NNKGoblinNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKGoblinNode.h; sourceTree = "<group>"; };
@@ -950,6 +956,10 @@
 				75037FF01B1A3B8900CB0B83 /* MyScene.m */,
 				75B980641B58F55500893462 /* SKAction+Groups.h */,
 				75B980651B58F55500893462 /* SKAction+Groups.m */,
+				753D72D81BA577EB006DC74A /* BlueHouseScene.h */,
+				753D72D91BA577EC006DC74A /* BlueHouseScene.m */,
+				753D72DA1BA577EC006DC74A /* NNKBlueHouseNode.h */,
+				753D72DB1BA577EC006DC74A /* NNKBlueHouseNode.m */,
 				75B9806A1B58F9FD00893462 /* Island Animations */,
 				75B980671B58F7AB00893462 /* Shadow Play Animations */,
 				75EE39661B41D75900BF9A55 /* NNKSkeletNode.h */,
@@ -1141,6 +1151,8 @@
 		75B980691B58F9EF00893462 /* Atlases */ = {
 			isa = PBXGroup;
 			children = (
+				753D72DC1BA577EC006DC74A /* blue_house_anim.atlasc */,
+				753D72DD1BA577EC006DC74A /* blue_house_anim.h */,
 				753D72911BA4E310006DC74A /* ninja_anim.atlasc */,
 				753D72921BA4E310006DC74A /* ninja_anim.h */,
 				753D72831BA4D56C006DC74A /* dragon_anim.atlasc */,
@@ -1320,8 +1332,6 @@
 				75423AA21A7D8A4000D2C36E /* BaseViewController.m */,
 				75C12A691A754B6C0075FD8D /* ViewController.h */,
 				75C12A6A1A754B6C0075FD8D /* ViewController.m */,
-				75C83FF31B4879F3007122A9 /* GingersHouseViewController.h */,
-				75C83FF41B4879F3007122A9 /* GingersHouseViewController.m */,
 				75CC87E71AD0238D00F6C59E /* MainScreenViewModel.h */,
 				75CC87E81AD0238D00F6C59E /* MainScreenViewModel.m */,
 				75A1251A1AD078E300BDFB7F /* AboutViewController.h */,
@@ -2054,6 +2064,7 @@
 				75DFE1081A800CE500CE9E69 /* Shadow_portret_border_6.png in Resources */,
 				75B980AE1B5916A400893462 /* text_panel_book_sound_en.mp3 in Resources */,
 				75B980BF1B5916A400893462 /* text_panel_magic_ball_sound_ru.mp3 in Resources */,
+				753D72E01BA577EC006DC74A /* blue_house_anim.atlasc in Resources */,
 				75DC67C01A816AA100D6A553 /* shadow_character3_part4.png in Resources */,
 				75B980B21B5916A400893462 /* text_panel_dragon_final_sound_en.mp3 in Resources */,
 				75B980C01B5916A400893462 /* text_panel_medal_sound_en.mp3 in Resources */,
@@ -2244,9 +2255,11 @@
 				75A1251F1AD08DC400BDFB7F /* NSURL+Helps.m in Sources */,
 				75EDA1871A83FE7E002546E0 /* Storage.m in Sources */,
 				757E93DB1A7E2DEE000B2537 /* MagicTableViewController.m in Sources */,
+				753D72DE1BA577EC006DC74A /* BlueHouseScene.m in Sources */,
 				75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */,
 				7597094C1AC8901000FFB11E /* SettingsBarIconViewController.m in Sources */,
 				750380081B1A3B8900CB0B83 /* NNKHaroldNode.m in Sources */,
+				753D72DF1BA577EC006DC74A /* NNKBlueHouseNode.m in Sources */,
 				75AD2E981ADAD193002EE482 /* NNKEpubToChaptersConverter.m in Sources */,
 				75AD2E9D1ADAD1B3002EE482 /* DejalActivityView.m in Sources */,
 				75FF2FA91B224A22008EB9AA /* NNKMystieNode.m in Sources */,
@@ -2285,7 +2298,6 @@
 				75A125111AD0717800BDFB7F /* TransitionAnimationFromUpToDown.m in Sources */,
 				750380051B1A3B8900CB0B83 /* NNKMinerNode.m in Sources */,
 				75EC14161A7ECF460086803E /* MagicSchoolAnswersHandler.m in Sources */,
-				75C83FF51B4879F3007122A9 /* GingersHouseViewController.m in Sources */,
 				75B980CD1B591A8700893462 /* SoundPlayer.m in Sources */,
 				75518FA51B91083E006A6ED8 /* VelocityCreation.m in Sources */,
 				75F1DB201A86D758005ACBA7 /* UIDevice+ScreenSize.m in Sources */,

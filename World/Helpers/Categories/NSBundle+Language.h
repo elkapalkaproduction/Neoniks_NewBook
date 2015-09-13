@@ -12,4 +12,6 @@
 
 + (void)setLanguage:(NSString *)language;
 
++ (BOOL)isRussian;
+
 @end

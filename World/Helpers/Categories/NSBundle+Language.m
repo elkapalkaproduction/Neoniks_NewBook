@@ -40,4 +40,9 @@ static const char _bundle = 0;
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
+
++ (BOOL)isRussian {
+    return [NSLocalizedString(@"opposite_language", nil) isEqualToString:@"en"];
+}
+
 @end
