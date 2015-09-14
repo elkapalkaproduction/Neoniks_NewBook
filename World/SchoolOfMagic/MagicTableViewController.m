@@ -221,6 +221,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
                                                     userInfo:nil
                                                      repeats:NO];
         [[SoundPlayer sharedPlayer] playCorrectAnswer];
+        [self.player stop];
     } else {
         [[SoundPlayer sharedPlayer] playWrongAnswer];
     }
@@ -298,6 +299,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
     } else {
         self.questionNumber++;
     }
+    [[SoundPlayer sharedPlayer] playClick];
     [self showQuestion:self.questionNumber];
 }
 
@@ -308,6 +310,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
     } else {
         self.questionNumber--;
     }
+    [[SoundPlayer sharedPlayer] playClick];
     [self showQuestion:self.questionNumber];
     
 }

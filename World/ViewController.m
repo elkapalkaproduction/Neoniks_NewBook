@@ -70,6 +70,8 @@
 @property (weak, nonatomic) IBOutlet UIView *textBarSuperView;
 @property (strong, nonatomic) TextBarViewController *textBar;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
+@property (weak, nonatomic) IBOutlet UIButton *shadowPlayButton;
+@property (weak, nonatomic) IBOutlet UIButton *schoolOfMagic;
 
 @end
 
@@ -326,6 +328,7 @@
     if ([self isOpenIcon:InventaryBarIconTypeSnail]) {
         [self.snailImage removeFromSuperview];
     }
+    [self didChangeLanguageInMainScreenViewModel:nil];
 }
 
 
@@ -430,6 +433,8 @@
 - (void)didChangeLanguageInMainScreenViewModel:(MainScreenViewModel *)viewModel {
     self.blueHouseScene.language = [NSBundle isRussian] ? BlueHouseLanguageRussian : BlueHouseLanguageEnglish;
     [self.infiniteTableView reloadData];
+    [self.shadowPlayButton setImage:[UIImage imageNamed:NSLocalizedString(@"shadow_play_image", nil)] forState:UIControlStateNormal];
+    [self.schoolOfMagic setImage:[UIImage imageNamed:NSLocalizedString(@"school_of_magic_image", nil)] forState:UIControlStateNormal];
 }
 
 

@@ -84,6 +84,7 @@
 		753D72DE1BA577EC006DC74A /* BlueHouseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 753D72D91BA577EC006DC74A /* BlueHouseScene.m */; };
 		753D72DF1BA577EC006DC74A /* NNKBlueHouseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 753D72DB1BA577EC006DC74A /* NNKBlueHouseNode.m */; };
 		753D72E01BA577EC006DC74A /* blue_house_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 753D72DC1BA577EC006DC74A /* blue_house_anim.atlasc */; };
+		753D72E21BA76C61006DC74A /* a-piece-of-wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 753D72E11BA76C61006DC74A /* a-piece-of-wood.png */; };
 		75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */; };
 		75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423AA21A7D8A4000D2C36E /* BaseViewController.m */; };
 		754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 754ED0BC1AF4110F00697F9E /* StyleSettings.plist */; };
@@ -525,6 +526,7 @@
 		753D72DB1BA577EC006DC74A /* NNKBlueHouseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKBlueHouseNode.m; sourceTree = "<group>"; };
 		753D72DC1BA577EC006DC74A /* blue_house_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = blue_house_anim.atlasc; sourceTree = "<group>"; };
 		753D72DD1BA577EC006DC74A /* blue_house_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blue_house_anim.h; sourceTree = "<group>"; };
+		753D72E11BA76C61006DC74A /* a-piece-of-wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a-piece-of-wood.png"; sourceTree = "<group>"; };
 		75423A9C1A7D826A00D2C36E /* SchoolOfMagicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolOfMagicViewController.h; sourceTree = "<group>"; };
 		75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolOfMagicViewController.m; sourceTree = "<group>"; };
 		75423AA11A7D8A4000D2C36E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -1082,6 +1084,7 @@
 		75A125191AD0741100BDFB7F /* Contributors */ = {
 			isa = PBXGroup;
 			children = (
+				753D72E11BA76C61006DC74A /* a-piece-of-wood.png */,
 				7530D6B11AD068D50063F124 /* ContributorsViewController.h */,
 				7530D6B21AD068D50063F124 /* ContributorsViewController.m */,
 				7530D6B51AD069960063F124 /* ContributorsViewController.xib */,
@@ -1906,6 +1909,7 @@
 				754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */,
 				75041C2A1B6E9ED300B28F3F /* q9_sound_ru.mp3 in Resources */,
 				75DC67CF1A816AA100D6A553 /* shadow_character4_part18.png in Resources */,
+				753D72E21BA76C61006DC74A /* a-piece-of-wood.png in Resources */,
 				75DC67FC1A816AA100D6A553 /* shadow_character7_part10.png in Resources */,
 				75B980C91B5916A400893462 /* text_panel_wand_sound_ru.mp3 in Resources */,
 				75C12A6E1A754B6C0075FD8D /* Main.storyboard in Resources */,

@@ -13,6 +13,7 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.node runAction];
+    NSLog(@"%@", NSStringFromCGSize(self.size));
 }
 
 

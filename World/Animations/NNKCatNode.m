@@ -29,20 +29,9 @@ static const CGFloat shouldWaitBeforeNewAnimation = 1.f;
 
 - (CGSize)newSizeFromSize:(CGSize)size {
     CGSize newSize = size;
-    newSize.width /= 1.5;
-    newSize.height /= 1.5;
-    CGFloat imageWidth = 425;
-    CGFloat imageHeigth = 760;
-    CGFloat widthHeigth = imageWidth / imageHeigth;
-    CGFloat heigthWidth = imageHeigth / imageWidth;
-    
-    if (newSize.height * widthHeigth < newSize.width) {
-        newSize.width = newSize.height * widthHeigth;
-    } else if (newSize.width * heigthWidth < newSize.height) {
-        newSize.height = newSize.width * heigthWidth;
-    } else {
-        return [self newSizeFromSize:newSize];
-    }
+
+    newSize.height /= 1.6;
+    newSize.width = newSize.height * 425 / 760;
 
     return newSize;
 }

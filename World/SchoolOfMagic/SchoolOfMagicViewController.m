@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
 @property (weak, nonatomic) MagicTableViewController *table;
 @property (assign, nonatomic) BOOL prizeAlreadyShowed;
+@property (assign, nonatomic, getter=isViewAppear) BOOL viewAppear;
 
 @end
 
@@ -48,6 +49,14 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.textBar stopStound];
+    self.viewAppear = NO;
+}
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.viewAppear = YES;
+    self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
 }
 
 
@@ -100,6 +109,7 @@
 
 
 - (void)prizeDidAppear {
+    if (!self.isViewAppear) return;
     if (self.prizeAlreadyShowed) return;
     self.prizeAlreadyShowed = YES;
     [self openTextBarWithIcon:[UIImage imageNamed:@"text_panel_teacher"]
@@ -115,7 +125,7 @@
 
 
 - (CGFloat)textBarHiddenPosition {
-    return -self.textBarSuperView.frame.size.height - 10;
+    return -self.textBarSuperView.frame.size.height - 100;
 }
 
 
@@ -129,7 +139,7 @@
 }
 
 
-- (void)soundDidFinish {
+- (void)textBarSoundDidFinish:(TextBarViewController *)textBar {
     [self closeTextBarWithCompletionBlock:nil];
     [self.table showNextUnAnsweredQuestion];
 }

@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class TextBarViewController;
 
 @protocol TextBarDelegate <NSObject>
 
 @optional
-- (void)soundDidFinish;
+- (void)textBarSoundDidFinish:(TextBarViewController *)textBar;
 
 @end
 

@@ -55,8 +55,7 @@
 
 - (void)setSoundName:(NSString *)soundName {
     _soundName = NSLocalizedString(soundName, nil);
-    [self.player stop];
-    self.player = nil;
+    [self stopStound];
     [self.player play];
 }
 
@@ -78,8 +77,8 @@
 
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
-    if ([self.delegate respondsToSelector:@selector(soundDidFinish)]) {
-        [self.delegate soundDidFinish];
+    if ([self.delegate respondsToSelector:@selector(textBarSoundDidFinish:)]) {
+        [self.delegate textBarSoundDidFinish:self];
     }
 }
 
