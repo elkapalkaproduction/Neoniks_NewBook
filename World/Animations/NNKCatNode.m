@@ -19,7 +19,7 @@ static const CGFloat shouldWaitBeforeNewAnimation = 1.f;
 @property (strong, nonatomic) SKTextureAtlas *atlass;
 @property (strong, nonatomic) SKAction *sequence;
 @property (strong, nonatomic) SKSpriteNode *spriteNode;
-@property (assign, nonatomic) CGSize size;
+@property (assign, nonatomic) CGSize catSize;
 @property (assign, nonatomic) CGSize initialSize;
 @property (assign, nonatomic) BOOL disableNewAction;
 
@@ -40,11 +40,12 @@ static const CGFloat shouldWaitBeforeNewAnimation = 1.f;
 - (instancetype)initWithSize:(CGSize)size {
     self = [super init];
     if (self) {
+        self.size = size;
         _initialSize = size;
-        _size = [self newSizeFromSize:_initialSize];
-        [self addChild:[SKSpriteNode nodeWithSize:_size texture:CAT_ANIM_TEX_CAT_ANIM_LIVE]];
+        _catSize = [self newSizeFromSize:_initialSize];
+        [self addChild:[SKSpriteNode nodeWithSize:_catSize texture:CAT_ANIM_TEX_CAT_ANIM_LIVE]];
         _atlass = [SKTextureAtlas atlasNamed:CAT_ANIM_ATLAS_NAME];
-        _spriteNode = [SKSpriteNode nodeWithSize:_size texture:CAT_ANIM_TEX_CAT_ANIM_PROPELLER_1];
+        _spriteNode = [SKSpriteNode nodeWithSize:_catSize texture:CAT_ANIM_TEX_CAT_ANIM_PROPELLER_1];
         [self addChild:_spriteNode];
     }
 
@@ -57,16 +58,23 @@ static const CGFloat shouldWaitBeforeNewAnimation = 1.f;
     scene.physicsWorld.contactDelegate = self;
     scene.physicsWorld.gravity = CGVectorMake(0, 0);
     scene.backgroundColor = [SKColor clearColor];
+    self.parent.physicsBody = [VelocityCreation createBackgroundPhysicsBodyForWithFrame:self.physicBorderFrame];
+}
 
-    scene.physicsBody = [VelocityCreation createBackgroundPhysicsBodyForWithFrame:scene.frame];
+
+- (CGRect)physicBorderFrame {
+    CGFloat width = self.size.width * self.parent.frame.size.width / 3000;
+    CGFloat height = width * self.size.height / self.size.width;
+    
+    return  CGRectMake(self.parent.frame.size.width - width, self.parent.frame.size.height - height, width, height);
 }
 
 
 - (CGRect)physicsBodyFrame {
-    return CGRectMake(self.size.width / 2,
-                      self.size.height / 2,
-                      self.size.width,
-                      self.size.height);
+    return CGRectMake(self.catSize.width / 2,
+                      self.catSize.height / 2,
+                      self.catSize.width,
+                      self.catSize.height);
 }
 
 
@@ -104,33 +112,25 @@ static const CGFloat shouldWaitBeforeNewAnimation = 1.f;
 }
 
 
-- (void)removeTopBorderAndChangeVelocity {
-    CGRect frame = self.scene.frame;
-    frame.size.height += self.size.height;
-    self.scene.physicsBody = [VelocityCreation createBackgroundPhysicsBodyForWithFrame:frame];
-    self.physicsBody.velocity = CGVectorMake(0, velocityOnAnimation);
-}
-
-
 - (void)runAction {
     if (self.disableNewAction) return;
     if (self.completionBlock) self.completionBlock();
     self.disableNewAction = YES;
-    CGRect frame = self.scene.frame;
-    frame.size.height += self.size.height * 1.1;
-    self.scene.physicsBody = [VelocityCreation createBackgroundPhysicsBodyForWithFrame:frame];
+    CGRect frame = self.physicBorderFrame;
+    frame.size.height += (self.catSize.height * 1.1) * self.parent.frame.size.height / 3600;
+    self.parent.physicsBody = [VelocityCreation createBackgroundPhysicsBodyForWithFrame:frame];
     self.physicsBody.velocity = CGVectorMake(0, velocityOnAnimation);
 }
 
 
 - (void)didBeginContact:(SKPhysicsContact *)contact {
     if (!self.disableNewAction) return;
-    if (self.position.y >= self.size.height / 2) {
+    if (contact.contactNormal.dy < 0) {
         self.physicsBody.velocity = CGVectorMake(0, 0);
         [self performSelector:@selector(enableAnimationVelocity)
                    withObject:nil
                    afterDelay:shouldWaitBeforeNewAnimation];
-    } else if (self.position.y <= self.size.height / 2) {
+    } else if (contact.contactNormal.dy > 0) {
         [self initialize];
     }
 }

@@ -13,7 +13,7 @@
 
 typedef void (^GoblinCompletionBlock)(NNKGoblinNode *node);
 
-@interface NNKGoblinNode : SKNode <CustomNodeProtocol>
+@interface NNKGoblinNode : SKSpriteNode <CustomNodeProtocol>
 
 - (instancetype)initWithSize:(CGSize)size shouldHideWrench:(BOOL)shouldHideWrench;
 - (void)removeWrench;

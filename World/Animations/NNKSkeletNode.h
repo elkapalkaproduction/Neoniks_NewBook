@@ -13,10 +13,11 @@
 
 typedef void (^SkeletCompletionBlock)(NNKSkeletNode *node);
 
-@interface NNKSkeletNode : SKNode <CustomNodeProtocol>
+@interface NNKSkeletNode : SKSpriteNode <CustomNodeProtocol>
 
 - (instancetype)initWithSize:(CGSize)size showLastFrameOnLoad:(BOOL)showLastFrameOnLoad;
 
+- (void)showLastFrame;
 @property (copy, nonatomic) SkeletCompletionBlock completionBlock;
 @property (assign, nonatomic) BOOL disableAnimation;
 

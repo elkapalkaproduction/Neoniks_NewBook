@@ -21,20 +21,20 @@
 @implementation NNKGoblinNode
 
 - (instancetype)initWithSize:(CGSize)size {
+    return [self initWithSize:size shouldHideWrench:NO];
+}
+
+
+- (instancetype)initWithSize:(CGSize)size shouldHideWrench:(BOOL)shouldHideWrench {
     self = [super init];
     if (self) {
+        self.size = size;
         [self addChild:[self backgroundNodeWithSize:size texture:GOBLIN_ANIM_TEX_GOBLIN_BACKGROUND]];
         _atlass = [SKTextureAtlas atlasNamed:GOBLIN_ANIM_ATLAS_NAME];
         _spriteNode = [self mainNodeWithSize:size];
         [self addChild:_spriteNode];
     }
     
-    return self;
-}
-
-
-- (instancetype)initWithSize:(CGSize)size shouldHideWrench:(BOOL)shouldHideWrench {
-    self = [self initWithSize:size];
     if (shouldHideWrench) return self;
     
     _wrenchNode = [self backgroundNodeWithSize:size texture:GOBLIN_ANIM_TEX_GOBLIN_WRENCH];
@@ -65,7 +65,7 @@
 
 - (void)runAction {
     if (self.completionBlock) self.completionBlock(self);
-
+    
     [self.spriteNode runAction:self.sequence completion:^{
     }];
 }

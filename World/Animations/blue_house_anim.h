@@ -1,6 +1,6 @@
 // ---------------------------------------
 // Sprite definitions for blue_house_anim
-// Generated with TexturePacker 3.9.2
+// Generated with TexturePacker 4.0.1
 //
 // http://www.codeandweb.com/texturepacker
 // ---------------------------------------

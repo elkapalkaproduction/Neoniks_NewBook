@@ -170,7 +170,6 @@
 
 - (IBAction)selectIcon:(id)sender {
     [self.delegate settingBar:self didPressIconWithType:self.type];
-    [self swipe:sender];
 }
 
 

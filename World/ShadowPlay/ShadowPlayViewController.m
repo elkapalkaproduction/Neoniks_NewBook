@@ -60,6 +60,13 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 @implementation ShadowPlayViewController
 
++ (instancetype)instantiate {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    return [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(self)];
+}
+
+
 - (MyScene *)sceneWithFrame:(CGRect)frame node:(SKNode<CustomNodeProtocol> *)node {
     MyScene *scene = [MyScene sceneWithSize:frame.size];
     scene.node = node;

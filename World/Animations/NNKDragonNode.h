@@ -13,7 +13,7 @@
 
 typedef void (^DragonCompletionBlock)(NNKDragonNode *node);
 
-@interface NNKDragonNode : SKNode <CustomNodeProtocol>
+@interface NNKDragonNode : SKSpriteNode <CustomNodeProtocol>
 
 - (instancetype)initWithSize:(CGSize)size shouldHideBook:(BOOL)shouldHideBook;
 - (void)removeBook;

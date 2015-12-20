@@ -48,7 +48,7 @@
 - (SKSpriteNode *)mainNodeWithSize:(CGSize)size {
     SKSpriteNode *spriteNode = [SKSpriteNode spriteNodeWithTexture:FirstFrameName];
     spriteNode.size = size;
-    spriteNode.position = CGPointMake(size.width / 2, size.height / 2);
+    spriteNode.position = CGPointMake(spriteNode.size.width / 2, spriteNode.size.height / 2);
     
     return spriteNode;
 }
@@ -56,7 +56,7 @@
 
 - (void)runAction {
     if (self.completionBlock) self.completionBlock(self);
-
+    
     [self.spriteNode runAction:self.sequence];
 }
 

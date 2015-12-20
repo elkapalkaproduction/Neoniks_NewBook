@@ -13,7 +13,7 @@
 
 typedef void (^CatCompletionBlock)();
 
-@interface NNKCatNode : SKNode <CustomNodeProtocol>
+@interface NNKCatNode : SKSpriteNode <CustomNodeProtocol>
 
 - (void)runBackgrounAction;
 @property (copy, nonatomic) CatCompletionBlock completionBlock;

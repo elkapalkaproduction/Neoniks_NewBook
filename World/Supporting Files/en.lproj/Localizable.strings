@@ -150,8 +150,8 @@
 "shadow_title" = "shadow_title_en";
 "start_video_path" = "https://www.dropbox.com/sm/playlist/0smioq97vbrcx50/Neoniks.eng.mp4?secure_hash=";
 
-"shadow_play_image" = "shadow_play_eng";
-"school_of_magic_image" = "school_of_magic_eng";
+"shadow_play_image" = "shadow_play_eng.png";
+"school_of_magic_image" = "school_of_magic_eng.png";
 
 "pop_up_banner_0" = "pop_up_banner_0_en";
 "pop_up_banner_1" = "pop_up_banner_1_en";

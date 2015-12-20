@@ -13,7 +13,7 @@
 
 typedef void (^SheepCompletionBlock)(NNKSheepNode *node);
 
-@interface NNKSheepNode : SKNode <CustomNodeProtocol>
+@interface NNKSheepNode : SKSpriteNode <CustomNodeProtocol>
 
 @property (copy, nonatomic) SheepCompletionBlock completionBlock;
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsBarIconViewController">
@@ -14,7 +15,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="DwC-R7-6Tc">
+        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="DwC-R7-6Tc">
             <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -24,6 +25,9 @@
                     <state key="normal" image="top_bar_about_icon">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="swipe:" destination="-1" eventType="touchDown" id="hhL-1T-Hv7"/>
+                    </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_bar_about_text_en" translatesAutoresizingMaskIntoConstraints="NO" id="v2G-Kw-s83">
                     <rect key="frame" x="-13.5" y="32" width="81" height="22"/>
@@ -55,15 +59,7 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outletCollection property="gestureRecognizers" destination="g7P-l2-wWd" appends="YES" id="Ndz-l5-0zb"/>
-            </connections>
         </view>
-        <swipeGestureRecognizer direction="down" id="g7P-l2-wWd">
-            <connections>
-                <action selector="swipe:" destination="-1" id="fY6-5s-9HT"/>
-            </connections>
-        </swipeGestureRecognizer>
     </objects>
     <resources>
         <image name="top_bar_about_icon" width="54" height="54"/>

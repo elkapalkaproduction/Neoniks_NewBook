@@ -25,7 +25,8 @@
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:7];
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:8];
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:1];
- 
+    [UIApplication sharedApplication].statusBarOrientation = UIInterfaceOrientationPortrait;
+
     return YES;
 }
 

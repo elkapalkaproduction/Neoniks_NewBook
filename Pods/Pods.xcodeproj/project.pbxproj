@@ -7,429 +7,536 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00F81BEE83BE12E8986AFAA1 /* CXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE7C30B152E2429013B06BC /* CXMLElement.h */; };
-		049BA2ED42EDD81EC9D13D11 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844C5F192C6FFD32FB6288 /* CTidy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		14A13E23C6F7C81B84907258 /* Pods-TouchXML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC895FE8E2F6A7F4863291DD /* Pods-TouchXML-dummy.m */; };
-		1A6DBDC56A47AC99791FEBE5 /* CXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = DF28D7DF1B5CBA8FC1CDA3AA /* CXMLDocument.h */; };
-		1EA47E57E07191FD4B67B1EA /* CXMLDocument_PrivateExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D84393C27F8BEE4825BE58F /* CXMLDocument_PrivateExtensions.h */; };
-		2068185158F3331C43F0486B /* CXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 60946CD6CAA34D48823F5F29 /* CXMLNode.h */; };
-		20D5B36D0902AC3AD51DEA3E /* WYPopoverController.h in Headers */ = {isa = PBXBuildFile; fileRef = E6A40DD64B24F50060FA9C75 /* WYPopoverController.h */; };
-		28B2857B06F92B90A56934B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5369D1AA64CBE66B749FDF58 /* CoreGraphics.framework */; };
-		2EA9ABCBF00B6D4492662C82 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B533C5C60223343340F32A2 /* CXMLDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		32FCA6BB1EE71627D09EF19D /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = E70CC0F42B9D5E203715AA5B /* zip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		3776E029D9013724051AA05E /* CTidy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCB7900BBD1E66DAA75E98E /* CTidy.h */; };
-		42FCED5303083D73B1171B81 /* Pods-ZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5417127F801132CC510B58A /* Pods-ZipArchive-dummy.m */; };
-		4D653F4F5C3A38592A92E25B /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = F827A4B516508F0FCE6E3B11 /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		58BD2A9D6CF490BF72698CB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98ED502E5DE455364F98A817 /* Foundation.framework */; };
-		5A98BA7355FB2734E4DAA02C /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C5BF4A47BD1E705878F35 /* CXHTMLDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		676CB3C2EADFE17E9B2F28CB /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E3069E21F2B480BD09189E /* CXMLNode_XPathExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		67731EDA2EC676E211618399 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2788BDA98CBAB50AD6DF6 /* unzip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		691FFFD30026FBF159BEF316 /* CXMLElement_ElementTreeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B5D3E85B38E23EE5362E83 /* CXMLElement_ElementTreeExtensions.h */; };
-		6EA0E01CD06EC5F32259BACA /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C760EC646829DB6461CF585 /* ioapi.h */; };
-		7967A30FB8F7F9826B58EF86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98ED502E5DE455364F98A817 /* Foundation.framework */; };
-		7D9B321579052FFCDD7EB44D /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B2A734155FAFB88790406DA /* ZipArchive.h */; };
-		893F252BD696C32F763D43DA /* CXMLNamespaceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA3B2899E573CCBF94A0760 /* CXMLNamespaceNode.h */; };
-		8DB20CB97297B6477D0F26D4 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AA326C1091BDCB39218703F9 /* CXMLDocument_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		8F58109F7CFF7069888C21EA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2A987CC7B5B872121223AA /* QuartzCore.framework */; };
-		94DF8C5228D5E07373467669 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6023301DF116F7D13B9D3C5 /* Pods-dummy.m */; };
-		99CD6870EFE98A95BE9C383F /* CXMLNode_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 014F057A2FAA58D1E0F39B7E /* CXMLNode_CreationExtensions.h */; };
-		9B5FE10ECCFF9FEB6332CA39 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 546C6E423A91FBD185B15C19 /* crypt.h */; };
-		A037D018AD2E0DC722728F99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98ED502E5DE455364F98A817 /* Foundation.framework */; };
-		A2096CB20735375E61358852 /* TouchXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 10977B49CA032889D57B2614 /* TouchXML.h */; };
-		A34605F727F768C4C4C97057 /* Pods-WYPopoverController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1B2D9E46AD78A7ECB25D49 /* Pods-WYPopoverController-dummy.m */; };
-		A5FFA4D787A29A38BFA6AA52 /* CXMLDocument_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A02AF9C09583A520B748C9A /* CXMLDocument_CreationExtensions.h */; };
-		A6254AB41882D9E8C20D6E07 /* CXHTMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 34AFC32F16D20A2DDB591D1E /* CXHTMLDocument.h */; };
-		A628238648CCDF22FCCFB4BA /* WYStoryboardPopoverSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF0949D2CF28E775F6F37C5 /* WYStoryboardPopoverSegue.h */; };
-		A71B4A3095A48B49CADF0894 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF086C902A73B05C445469C2 /* WYPopoverController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		AEEC823E0D1E6BE01AB9A4E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291843432121AC9BEA5CDE2D /* UIKit.framework */; };
-		B08067D65E479F8748543188 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8A80CF6521C5BA692129CF /* CXMLNode_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		B5120CE32B0CC3FC12388C77 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 142456DD0B507D361BD4A415 /* CXMLNode_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		B59B76288655E71ECA4F9CC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98ED502E5DE455364F98A817 /* Foundation.framework */; };
-		B87A8824788804D79882A832 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 21B294E41054375EE930A15B /* mztools.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		B88E55DE4FA03DD3859084FC /* CXMLElement_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = C2BC9CB0EB3897DDF6E19319 /* CXMLElement_CreationExtensions.h */; };
-		C546B6FDEBB3D29C593E5834 /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7D60D0508311CDE2C0BC0C /* CXMLElement_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		CE357A585323C1B754C99871 /* CXMLNode_PrivateExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 418C51431C793A1331A882FD /* CXMLNode_PrivateExtensions.h */; };
-		D68194B1BCC6493051B58440 /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F9E7EFA2CE83B7A7D8E586 /* CXMLNamespaceNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		DA80507330B6B873FC134814 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A8D3CE839BD0D0C8792F57D4 /* ioapi.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		E013BA64146323F5E59B967F /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E806EDA81DA60356A6F1530 /* unzip.h */; };
-		E2549D7D899A83541AD9216B /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 326AE6489AC6DEC2F315D0DA /* CXMLElement_ElementTreeExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		E69CA954F60264D8F01B7A59 /* CXMLNode_XPathExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 44E4578E2ADEF5C14967FD21 /* CXMLNode_XPathExtensions.h */; };
-		EC7C8A27DA9C55DC8EA60D91 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F53C49479C978C8FF39CF5F /* zip.h */; };
-		ED1CDC38C9F3A093B73BAECE /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FED0C6F8E7109E3B89411FC2 /* CXMLNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		F1B8C6CC3A621BF256439F8E /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E6BA37F064A3C0E8313337 /* mztools.h */; };
-		F4B6DDB4D9BE9DCDB659A913 /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 995ED804BDBA71A57AB285A0 /* WYStoryboardPopoverSegue.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		F4D9F1E107A2AC33C0D37DCC /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4025FA4FDFDD93949C9E4CA /* CXMLDocument_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
-		F9186934CFC7EDB7D70A98D3 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F4C8CD689BDF000DBCBB9D /* CXMLElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		053AE44B8DB01388DD456233 /* PIOScrollScene.h in Headers */ = {isa = PBXBuildFile; fileRef = 986D174865B24E8207E21F23 /* PIOScrollScene.h */; };
+		062730526B0953E94540B83D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCD42F5822AC754D03BF7C7 /* Foundation.framework */; };
+		08090D6212923335D96571B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCD42F5822AC754D03BF7C7 /* Foundation.framework */; };
+		14D19C75151C4D7D75F726EE /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = D01DA1E85842A14DF500982E /* WYPopoverController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		17DF549F502D95910CB081A6 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 753058D51A5E3D0F91A8226E /* ioapi.h */; };
+		1B4DD1821CE383460100F176 /* Pods-ZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D1639BD08D1ABD58518077 /* Pods-ZipArchive-dummy.m */; };
+		1B83FCD537C092C7EE96C78F /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B488B2A31D667507967D758F /* CXMLNamespaceNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		1CDE005EFEA9F08CB3144923 /* Pods-WYPopoverController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 329B5E0B7D14A9E8B4C9F029 /* Pods-WYPopoverController-dummy.m */; };
+		1DE8A0E552EBDE0561EFE1E1 /* WYPopoverController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0070D6A71A8FC4221496BF02 /* WYPopoverController.h */; };
+		1E970AEA2FF2E843248E7155 /* CXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 531BED23A472B476CCC2E157 /* CXMLElement.h */; };
+		2291952ED6CF0918EB09C387 /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E3C8B1E148A5623E31EEBB /* CXMLElement_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		235321EA1B5A09FEE6C4A780 /* PIOTiledNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 28D8DD5C83BD5456F6B6ABFD /* PIOTiledNode.h */; };
+		249116B0FE11B1E8F431F00E /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC683D3BF67A959C6E2C514F /* CTidy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		24C67AF5D0FEF78E9E65BAE2 /* PIOSpriteKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3F44E8C37094AA169299ED /* PIOSpriteKit.h */; };
+		2B1A22C4CBC3C1F8176118E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24CDE0F3426C477C0553F75 /* UIKit.framework */; };
+		2D7D84E6AB889D4B066D0A05 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2047851AC4699E4AB3BCCA /* CXMLElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		2D83AD0017076330E29EE0AF /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08859457480EE05F65292F12 /* SpriteKit.framework */; };
+		3878C031268DFF5F5FD92034 /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D8A4F6F65380F31B37D88C /* CXHTMLDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		3FC4CE87B32D628B082660B0 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = B6DEEB4B38DB79A85A9757ED /* zip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		450F0D6B2DA1995413E85F2E /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF24FC5BCECCA6D8F4C4CA /* mztools.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		468B7914577475EE91D6E7D0 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 39397D82945D7DBC97D6C0D9 /* CXMLDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		46F25490852267EFC7F29AA2 /* PIOScrollSceneViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6B6738D726DB125271E3FB /* PIOScrollSceneViewController.h */; };
+		48158315002E59CA4E914AD2 /* WYStoryboardPopoverSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = F912F96250ACC395F11B82F0 /* WYStoryboardPopoverSegue.h */; };
+		4E4EF9BAED4C98AAADEB2FDE /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0CE4FA72399730A99BDED9 /* CXMLNode_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		5247DDA1EB124BDCB737EF30 /* CXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = BB332B76501C31DF7126C8AA /* CXMLNode.h */; };
+		548CCFE4EF5045D6E4AD7784 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 24351402CFBB5F1C0C90D8E7 /* unzip.h */; };
+		55EDB614768BB80005860A32 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 42D8A8B138A5DA2FCC3C67BF /* mztools.h */; };
+		572FCE83F17EF128F40F1723 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 801832485890C219A1038939 /* unzip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		59C2149174331AD0FB6F1F28 /* PIOStaticNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D20169393001C6B4D282E7 /* PIOStaticNode.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		61482CD7DDE9A0BDDF8B0BAC /* CXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC66D4039029500D0A83053 /* CXMLDocument.h */; };
+		6540A075BCD0990918980E84 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9986AFACEC88AC0E87849A2B /* CXMLNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		65A59758871EDE77D76F3D2F /* PIOScrollSceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F71DE6670A535978B0402F /* PIOScrollSceneViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		67B61351D4549C7CA0B4A751 /* CXHTMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7521ECFC4E365EE7FF96FB /* CXHTMLDocument.h */; };
+		6DBFE651756C956629E45FD1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3723BEE864899D0B6E68973D /* CoreGraphics.framework */; };
+		79A03E8ED912239CAFD36ED7 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = CE22241FBF433F9FB7B24347 /* ioapi.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		7DD0DE4866121AB944BCE840 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 26ECBE61FF55E41518A2A597 /* zip.h */; };
+		7E7E27C0BB7D78C22223A1AE /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A4188DC58AD89646835D5B /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		81337F36EE98B94B9CC067F0 /* CXMLNamespaceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = A424D6152CAF37F0C121CF86 /* CXMLNamespaceNode.h */; };
+		85D92DE5A356A1493D559269 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A20175CEC6324A009F80023 /* crypt.h */; };
+		86AB40E8EC17A18FBEDA41B0 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04485C4E2E95BC78B9E5BE12 /* Pods-dummy.m */; };
+		8B14CFC27082EF5DC0371396 /* CXMLNode_XPathExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 33FF49BB185B5951D382EF2D /* CXMLNode_XPathExtensions.h */; };
+		90D4FFA58F913B0236F24EC8 /* CXMLElement_ElementTreeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = D49A791A00379B76BBB37C67 /* CXMLElement_ElementTreeExtensions.h */; };
+		9786E11E4261D70EE6557EED /* Pods-TouchXML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CD3313E50224E5AF5B194A /* Pods-TouchXML-dummy.m */; };
+		98B1A37292E34E390C1BDD28 /* CTidy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ECD87F6F5903AF73AFE74FA /* CTidy.h */; };
+		9E3EF363C54EFCDE1AF0CEC7 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8196CC4F2A029DCC3BC5BE35 /* CXMLDocument_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		A51600050D16AF463BA472C2 /* PIOScrollScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A3554578C0289795C6EBFC /* PIOScrollScene.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		ADC0F8835B08F8A38847B732 /* Pods-PIOSpriteKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92819EA7ECB9233684D5A096 /* Pods-PIOSpriteKit-dummy.m */; };
+		AED2FC8E23B8B8E9BE711362 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCD42F5822AC754D03BF7C7 /* Foundation.framework */; };
+		AFCBA5C8A27831D1C72CF010 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B1304C1E486C9BB21FB709 /* CXMLDocument_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		B246A0701A2D5E020F85EC22 /* CXMLNode_PrivateExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9886A2F9BF8EC460B7DC90FB /* CXMLNode_PrivateExtensions.h */; };
+		B3160438E4D1F7199CC2BD34 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7678C2CB4D1DE0123C27D4D9 /* CXMLNode_XPathExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		B444C77C29ED3FEF7F04E7CA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41011DCBB7E38EDA2D28614F /* QuartzCore.framework */; };
+		B475CFCACC7497F204BAA9C0 /* PIOStaticNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B39E321E04600C8E1B60110 /* PIOStaticNode.h */; };
+		C02940DDB97FE57303DFBAD6 /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E9D1058DC1F0450228AE27 /* CXMLElement_ElementTreeExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		CC26E93CFF8A07EB1BBE94E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCD42F5822AC754D03BF7C7 /* Foundation.framework */; };
+		D9BCAC4A62A50515A5666C7E /* PIOTiledNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C43BCEE10004ECD7813DC6D /* PIOTiledNode.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		E9EC7D4D8CCB8D102EC830D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCD42F5822AC754D03BF7C7 /* Foundation.framework */; };
+		EF090706C6656CCF234BFBA6 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3ECD112741C24EECFE22A2 /* ZipArchive.h */; };
+		F0C3171867000190A7731BDC /* TouchXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 01630D46F36036B35EF9D4DE /* TouchXML.h */; };
+		F1381DC6FD265E4CD05D91D3 /* CXMLDocument_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A10B41D0F8EBBABC5B480A0A /* CXMLDocument_CreationExtensions.h */; };
+		F2441351B6629F73F90E0034 /* CXMLElement_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 44714B80BEE02F2D6B60C0CD /* CXMLElement_CreationExtensions.h */; };
+		F3DD88338E26AAE2A358A7A0 /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE8BEC4542F8F1B5BA8FFD4 /* WYStoryboardPopoverSegue.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		F55E246CF11FB0B67107FA1E /* CXMLDocument_PrivateExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = C3212401C08B9205C626BE23 /* CXMLDocument_PrivateExtensions.h */; };
+		F5BF82CEEF495CD30769F411 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 728EF548561A7A11B99874D9 /* CXMLNode_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		FB8549E9A5D4C868E6F5599B /* CXMLNode_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = C292AE7FF67819FBDD8F6F4A /* CXMLNode_CreationExtensions.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		95BFCA1C293BD40C07F81F9E /* PBXContainerItemProxy */ = {
+		5310EECF971EEF48A9377E6E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7F4128E56F7D46E4BC750448 /* Project object */;
+			containerPortal = B732FD5107AB5BC7657D9DBF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 66CA18AD6AFE308E7B2EBD52;
-			remoteInfo = "Pods-ZipArchive";
+			remoteGlobalIDString = 665F4B7311F796AED592DFD5;
+			remoteInfo = "Pods-PIOSpriteKit";
 		};
-		98298A61126CF6553C46591F /* PBXContainerItemProxy */ = {
+		B6212C298F6C0C381EA57B74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7F4128E56F7D46E4BC750448 /* Project object */;
+			containerPortal = B732FD5107AB5BC7657D9DBF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 47AC7CA3503400A95504E1F4;
+			remoteGlobalIDString = 83AD7C0104354EEA9B403C03;
+			remoteInfo = "Pods-TouchXML";
+		};
+		DD925763AE3D511A17F5602A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B732FD5107AB5BC7657D9DBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DE0550860BD4EE2354C8CD7;
 			remoteInfo = "Pods-WYPopoverController";
 		};
-		A358DAEC81E6D1334C888E30 /* PBXContainerItemProxy */ = {
+		E1214B071047A834E308A307 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7F4128E56F7D46E4BC750448 /* Project object */;
+			containerPortal = B732FD5107AB5BC7657D9DBF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D8E643E0CB25A3B7D8A9A0F7;
-			remoteInfo = "Pods-TouchXML";
+			remoteGlobalIDString = 3B36523F4F20C3218B2CC9B6;
+			remoteInfo = "Pods-ZipArchive";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		014F057A2FAA58D1E0F39B7E /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode_CreationExtensions.h; path = Source/Creation/CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
-		0489AFA38F1B5D4615BA6712 /* libPods-WYPopoverController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WYPopoverController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CB2788BDA98CBAB50AD6DF6 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = minizip/unzip.c; sourceTree = "<group>"; };
-		0D7848A38D49ED134F3A4DA4 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		0E3D4E6FCA05BE67ABCE3352 /* Pods-WYPopoverController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WYPopoverController-Private.xcconfig"; sourceTree = "<group>"; };
-		0E806EDA81DA60356A6F1530 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/unzip.h; sourceTree = "<group>"; };
-		10977B49CA032889D57B2614 /* TouchXML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TouchXML.h; path = Source/TouchXML.h; sourceTree = "<group>"; };
-		142456DD0B507D361BD4A415 /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_CreationExtensions.m; path = Source/Creation/CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
-		14E6BA37F064A3C0E8313337 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = minizip/mztools.h; sourceTree = "<group>"; };
-		16B5D3E85B38E23EE5362E83 /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLElement_ElementTreeExtensions.h; path = Source/CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
-		1A02AF9C09583A520B748C9A /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLDocument_CreationExtensions.h; path = Source/Creation/CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
-		1D2A987CC7B5B872121223AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		1FDEF5E2E48CAEB2F41219ED /* Pods-TouchXML-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TouchXML-prefix.pch"; sourceTree = "<group>"; };
-		21B294E41054375EE930A15B /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = minizip/mztools.c; sourceTree = "<group>"; };
-		291843432121AC9BEA5CDE2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		2B2A734155FAFB88790406DA /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
-		2E8A80CF6521C5BA692129CF /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_PrivateExtensions.m; path = Source/CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
-		326AE6489AC6DEC2F315D0DA /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLElement_ElementTreeExtensions.m; path = Source/CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
-		34AFC32F16D20A2DDB591D1E /* CXHTMLDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXHTMLDocument.h; path = Source/CXHTMLDocument.h; sourceTree = "<group>"; };
-		37F9E7EFA2CE83B7A7D8E586 /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNamespaceNode.m; path = Source/CXMLNamespaceNode.m; sourceTree = "<group>"; };
-		3B33D43FC62D7EA109E2F886 /* Pods-TouchXML-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TouchXML-Private.xcconfig"; sourceTree = "<group>"; };
-		418C51431C793A1331A882FD /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode_PrivateExtensions.h; path = Source/CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
-		44E4578E2ADEF5C14967FD21 /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode_XPathExtensions.h; path = Source/CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
-		4802B667C209D379084A0C66 /* Pods-WYPopoverController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WYPopoverController-prefix.pch"; sourceTree = "<group>"; };
-		4BA01E74B230E51DD1B2E91D /* Pods-ZipArchive-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZipArchive-Private.xcconfig"; sourceTree = "<group>"; };
-		4F53C49479C978C8FF39CF5F /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/zip.h; sourceTree = "<group>"; };
-		5369D1AA64CBE66B749FDF58 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		546C6E423A91FBD185B15C19 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/crypt.h; sourceTree = "<group>"; };
-		5DA3B2899E573CCBF94A0760 /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNamespaceNode.h; path = Source/CXMLNamespaceNode.h; sourceTree = "<group>"; };
-		6021AE8F1A9AAFEF3267C37D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		60946CD6CAA34D48823F5F29 /* CXMLNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode.h; path = Source/CXMLNode.h; sourceTree = "<group>"; };
-		63C865B6822C210F9BD288FD /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		651E6F69292F302FA173E030 /* Pods-TouchXML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TouchXML.xcconfig"; sourceTree = "<group>"; };
-		6C760EC646829DB6461CF585 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = minizip/ioapi.h; sourceTree = "<group>"; };
-		6CB266487DA1425EC0EAC256 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		6D76E122230E6BE9745BC611 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		7672C87CDBBAC0CDB2755BE8 /* libPods-ZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZipArchive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D84393C27F8BEE4825BE58F /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLDocument_PrivateExtensions.h; path = Source/CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
-		7FCB7900BBD1E66DAA75E98E /* CTidy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTidy.h; path = Source/Tidy/CTidy.h; sourceTree = "<group>"; };
-		88192DDD65204466EB0DE14C /* Pods-WYPopoverController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WYPopoverController.xcconfig"; sourceTree = "<group>"; };
-		8B533C5C60223343340F32A2 /* CXMLDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument.m; path = Source/CXMLDocument.m; sourceTree = "<group>"; };
-		98ED502E5DE455364F98A817 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		995ED804BDBA71A57AB285A0 /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WYStoryboardPopoverSegue.m; path = WYPopoverController/WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
-		99E4868B5F2B60819B591183 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		A8D3CE839BD0D0C8792F57D4 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = minizip/ioapi.c; sourceTree = "<group>"; };
-		AA326C1091BDCB39218703F9 /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument_PrivateExtensions.m; path = Source/CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
-		B11E2596E31A41603A946D85 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		B4025FA4FDFDD93949C9E4CA /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument_CreationExtensions.m; path = Source/Creation/CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
-		B7F4C8CD689BDF000DBCBB9D /* CXMLElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLElement.m; path = Source/CXMLElement.m; sourceTree = "<group>"; };
-		C1844C5F192C6FFD32FB6288 /* CTidy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTidy.m; path = Source/Tidy/CTidy.m; sourceTree = "<group>"; };
-		C2BC9CB0EB3897DDF6E19319 /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLElement_CreationExtensions.h; path = Source/CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
-		C4EE2DC4BEBE33159162B859 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C5F677A7B4D9BD54B48C7E7E /* Pods-ZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZipArchive-prefix.pch"; sourceTree = "<group>"; };
-		C99C5BF4A47BD1E705878F35 /* CXHTMLDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXHTMLDocument.m; path = Source/CXHTMLDocument.m; sourceTree = "<group>"; };
-		CC7D60D0508311CDE2C0BC0C /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLElement_CreationExtensions.m; path = Source/CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
-		D1ADD6DACD08DC95950CB826 /* Pods-ZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZipArchive.xcconfig"; sourceTree = "<group>"; };
-		DC895FE8E2F6A7F4863291DD /* Pods-TouchXML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TouchXML-dummy.m"; sourceTree = "<group>"; };
-		DD1B2D9E46AD78A7ECB25D49 /* Pods-WYPopoverController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WYPopoverController-dummy.m"; sourceTree = "<group>"; };
-		DF28D7DF1B5CBA8FC1CDA3AA /* CXMLDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLDocument.h; path = Source/CXMLDocument.h; sourceTree = "<group>"; };
-		E6A40DD64B24F50060FA9C75 /* WYPopoverController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WYPopoverController.h; path = WYPopoverController/WYPopoverController.h; sourceTree = "<group>"; };
-		E70CC0F42B9D5E203715AA5B /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = minizip/zip.c; sourceTree = "<group>"; };
-		EDD42A0598B9A27FB23F2EE6 /* libPods-TouchXML.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TouchXML.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5417127F801132CC510B58A /* Pods-ZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZipArchive-dummy.m"; sourceTree = "<group>"; };
-		F6023301DF116F7D13B9D3C5 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		F6E3069E21F2B480BD09189E /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_XPathExtensions.m; path = Source/CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
-		F827A4B516508F0FCE6E3B11 /* ZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
-		FED0C6F8E7109E3B89411FC2 /* CXMLNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode.m; path = Source/CXMLNode.m; sourceTree = "<group>"; };
-		FEE7C30B152E2429013B06BC /* CXMLElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLElement.h; path = Source/CXMLElement.h; sourceTree = "<group>"; };
-		FEF0949D2CF28E775F6F37C5 /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WYStoryboardPopoverSegue.h; path = WYPopoverController/WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
-		FF086C902A73B05C445469C2 /* WYPopoverController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WYPopoverController.m; path = WYPopoverController/WYPopoverController.m; sourceTree = "<group>"; };
+		0070D6A71A8FC4221496BF02 /* WYPopoverController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WYPopoverController.h; path = WYPopoverController/WYPopoverController.h; sourceTree = "<group>"; };
+		01630D46F36036B35EF9D4DE /* TouchXML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TouchXML.h; path = Source/TouchXML.h; sourceTree = "<group>"; };
+		04485C4E2E95BC78B9E5BE12 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		0547F72BD6CF27415CEFEE5C /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		05A4188DC58AD89646835D5B /* ZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
+		07D8A4F6F65380F31B37D88C /* CXHTMLDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXHTMLDocument.m; path = Source/CXHTMLDocument.m; sourceTree = "<group>"; };
+		08859457480EE05F65292F12 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SpriteKit.framework; sourceTree = DEVELOPER_DIR; };
+		0BBF24FC5BCECCA6D8F4C4CA /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = minizip/mztools.c; sourceTree = "<group>"; };
+		0F2D5E8F0256EE421C90064C /* libPods-ZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZipArchive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D1639BD08D1ABD58518077 /* Pods-ZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZipArchive-dummy.m"; sourceTree = "<group>"; };
+		1A20175CEC6324A009F80023 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/crypt.h; sourceTree = "<group>"; };
+		1B39E321E04600C8E1B60110 /* PIOStaticNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PIOStaticNode.h; path = PIOSpriteKit/Classes/PIOStaticNode.h; sourceTree = "<group>"; };
+		1ECD87F6F5903AF73AFE74FA /* CTidy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTidy.h; path = Source/Tidy/CTidy.h; sourceTree = "<group>"; };
+		236C7FB1223A330B1519B58E /* Pods-PIOSpriteKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PIOSpriteKit.xcconfig"; sourceTree = "<group>"; };
+		24351402CFBB5F1C0C90D8E7 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/unzip.h; sourceTree = "<group>"; };
+		24A3554578C0289795C6EBFC /* PIOScrollScene.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PIOScrollScene.m; path = PIOSpriteKit/Classes/PIOScrollScene.m; sourceTree = "<group>"; };
+		26ECBE61FF55E41518A2A597 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/zip.h; sourceTree = "<group>"; };
+		28D8DD5C83BD5456F6B6ABFD /* PIOTiledNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PIOTiledNode.h; path = PIOSpriteKit/Classes/PIOTiledNode.h; sourceTree = "<group>"; };
+		329B5E0B7D14A9E8B4C9F029 /* Pods-WYPopoverController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WYPopoverController-dummy.m"; sourceTree = "<group>"; };
+		33FF49BB185B5951D382EF2D /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode_XPathExtensions.h; path = Source/CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		3723BEE864899D0B6E68973D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		39397D82945D7DBC97D6C0D9 /* CXMLDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument.m; path = Source/CXMLDocument.m; sourceTree = "<group>"; };
+		3EDE679848B89FC862D6520C /* Pods-PIOSpriteKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PIOSpriteKit-prefix.pch"; sourceTree = "<group>"; };
+		3FFD95FB56C488D70E2B5230 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		41011DCBB7E38EDA2D28614F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		42D8A8B138A5DA2FCC3C67BF /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = minizip/mztools.h; sourceTree = "<group>"; };
+		42E3C8B1E148A5623E31EEBB /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLElement_CreationExtensions.m; path = Source/CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
+		44714B80BEE02F2D6B60C0CD /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLElement_CreationExtensions.h; path = Source/CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
+		46058663DA4A59DC73B79430 /* Pods-WYPopoverController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WYPopoverController.xcconfig"; sourceTree = "<group>"; };
+		460F4CEA7B2AFE31290EA0B6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		48E9D1058DC1F0450228AE27 /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLElement_ElementTreeExtensions.m; path = Source/CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
+		4A0CE4FA72399730A99BDED9 /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_PrivateExtensions.m; path = Source/CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		4C43BCEE10004ECD7813DC6D /* PIOTiledNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PIOTiledNode.m; path = PIOSpriteKit/Classes/PIOTiledNode.m; sourceTree = "<group>"; };
+		4C6B6738D726DB125271E3FB /* PIOScrollSceneViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PIOScrollSceneViewController.h; path = PIOSpriteKit/Classes/PIOScrollSceneViewController.h; sourceTree = "<group>"; };
+		521FA91F4CB2E2282BCEDC9F /* Pods-PIOSpriteKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PIOSpriteKit-Private.xcconfig"; sourceTree = "<group>"; };
+		531BED23A472B476CCC2E157 /* CXMLElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLElement.h; path = Source/CXMLElement.h; sourceTree = "<group>"; };
+		62F71DE6670A535978B0402F /* PIOScrollSceneViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PIOScrollSceneViewController.m; path = PIOSpriteKit/Classes/PIOScrollSceneViewController.m; sourceTree = "<group>"; };
+		6AB4DC786DD3ADA4EC5E06DE /* Pods-TouchXML-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TouchXML-Private.xcconfig"; sourceTree = "<group>"; };
+		728EF548561A7A11B99874D9 /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_CreationExtensions.m; path = Source/Creation/CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
+		74B1304C1E486C9BB21FB709 /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument_CreationExtensions.m; path = Source/Creation/CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
+		753058D51A5E3D0F91A8226E /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = minizip/ioapi.h; sourceTree = "<group>"; };
+		7678C2CB4D1DE0123C27D4D9 /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode_XPathExtensions.m; path = Source/CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		7AA810C065B8C93FBACE46AB /* Pods-ZipArchive-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZipArchive-Private.xcconfig"; sourceTree = "<group>"; };
+		801832485890C219A1038939 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = minizip/unzip.c; sourceTree = "<group>"; };
+		8196CC4F2A029DCC3BC5BE35 /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLDocument_PrivateExtensions.m; path = Source/CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		8A2047851AC4699E4AB3BCCA /* CXMLElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLElement.m; path = Source/CXMLElement.m; sourceTree = "<group>"; };
+		8CF29385C77AFD1564BB3A43 /* libPods-PIOSpriteKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PIOSpriteKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92819EA7ECB9233684D5A096 /* Pods-PIOSpriteKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PIOSpriteKit-dummy.m"; sourceTree = "<group>"; };
+		986D174865B24E8207E21F23 /* PIOScrollScene.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PIOScrollScene.h; path = PIOSpriteKit/Classes/PIOScrollScene.h; sourceTree = "<group>"; };
+		9886A2F9BF8EC460B7DC90FB /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode_PrivateExtensions.h; path = Source/CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		9986AFACEC88AC0E87849A2B /* CXMLNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNode.m; path = Source/CXMLNode.m; sourceTree = "<group>"; };
+		9AC26B7077861EB68BF00DD3 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A10B41D0F8EBBABC5B480A0A /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLDocument_CreationExtensions.h; path = Source/Creation/CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
+		A208B48DE57390C4C1A9B973 /* libPods-TouchXML.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TouchXML.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A24CDE0F3426C477C0553F75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A424D6152CAF37F0C121CF86 /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNamespaceNode.h; path = Source/CXMLNamespaceNode.h; sourceTree = "<group>"; };
+		A92D82790A0EE86C83629C49 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A9505BB9691B9CB5AF482D59 /* Pods-TouchXML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TouchXML.xcconfig"; sourceTree = "<group>"; };
+		AA3ECD112741C24EECFE22A2 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		AE50DC9BB629411D595AEB32 /* Pods-WYPopoverController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WYPopoverController-Private.xcconfig"; sourceTree = "<group>"; };
+		B488B2A31D667507967D758F /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXMLNamespaceNode.m; path = Source/CXMLNamespaceNode.m; sourceTree = "<group>"; };
+		B6DEEB4B38DB79A85A9757ED /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = minizip/zip.c; sourceTree = "<group>"; };
+		B8CD3313E50224E5AF5B194A /* Pods-TouchXML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TouchXML-dummy.m"; sourceTree = "<group>"; };
+		BB332B76501C31DF7126C8AA /* CXMLNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode.h; path = Source/CXMLNode.h; sourceTree = "<group>"; };
+		BC9A9BCDB37F7AED91ABE1D6 /* Pods-ZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZipArchive.xcconfig"; sourceTree = "<group>"; };
+		BCE8BEC4542F8F1B5BA8FFD4 /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WYStoryboardPopoverSegue.m; path = WYPopoverController/WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
+		BEEA36FDCE0183E145940DE0 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		BF691B4C62D49D863FF9525C /* Pods-WYPopoverController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WYPopoverController-prefix.pch"; sourceTree = "<group>"; };
+		BFC66D4039029500D0A83053 /* CXMLDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLDocument.h; path = Source/CXMLDocument.h; sourceTree = "<group>"; };
+		BFCD42F5822AC754D03BF7C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BFFE1226292209A6E8CBA81D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C292AE7FF67819FBDD8F6F4A /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLNode_CreationExtensions.h; path = Source/Creation/CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
+		C3212401C08B9205C626BE23 /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLDocument_PrivateExtensions.h; path = Source/CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		CE22241FBF433F9FB7B24347 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = minizip/ioapi.c; sourceTree = "<group>"; };
+		D01DA1E85842A14DF500982E /* WYPopoverController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WYPopoverController.m; path = WYPopoverController/WYPopoverController.m; sourceTree = "<group>"; };
+		D49A791A00379B76BBB37C67 /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXMLElement_ElementTreeExtensions.h; path = Source/CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
+		DD3F44E8C37094AA169299ED /* PIOSpriteKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PIOSpriteKit.h; path = PIOSpriteKit/Classes/PIOSpriteKit.h; sourceTree = "<group>"; };
+		DDF39F2399ABA4E0AE41512B /* libPods-WYPopoverController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WYPopoverController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0D20169393001C6B4D282E7 /* PIOStaticNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PIOStaticNode.m; path = PIOSpriteKit/Classes/PIOStaticNode.m; sourceTree = "<group>"; };
+		EE1D4BE1097333B3BFC354D4 /* Pods-ZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		F16920DA9EC4DD45E047AB46 /* Pods-TouchXML-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TouchXML-prefix.pch"; sourceTree = "<group>"; };
+		F912F96250ACC395F11B82F0 /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WYStoryboardPopoverSegue.h; path = WYPopoverController/WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
+		FC683D3BF67A959C6E2C514F /* CTidy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTidy.m; path = Source/Tidy/CTidy.m; sourceTree = "<group>"; };
+		FD0730CE3E700FE1C20DDEB3 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		FE7521ECFC4E365EE7FF96FB /* CXHTMLDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXHTMLDocument.h; path = Source/CXHTMLDocument.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3BE5805A58FC08064361A47B /* Frameworks */ = {
+		1AEACDC6D40FE0032FEAD9DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A037D018AD2E0DC722728F99 /* Foundation.framework in Frameworks */,
+				AED2FC8E23B8B8E9BE711362 /* Foundation.framework in Frameworks */,
+				2D83AD0017076330E29EE0AF /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4725478C513094434FFDF07F /* Frameworks */ = {
+		92587C86BCEE4B20FAC7BAC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28B2857B06F92B90A56934B5 /* CoreGraphics.framework in Frameworks */,
-				58BD2A9D6CF490BF72698CB3 /* Foundation.framework in Frameworks */,
-				8F58109F7CFF7069888C21EA /* QuartzCore.framework in Frameworks */,
-				AEEC823E0D1E6BE01AB9A4E9 /* UIKit.framework in Frameworks */,
+				08090D6212923335D96571B6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		829CB416493593AD9A35BF98 /* Frameworks */ = {
+		A7B9BD9A4EC22675171317F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B59B76288655E71ECA4F9CC9 /* Foundation.framework in Frameworks */,
+				CC26E93CFF8A07EB1BBE94E0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5CCC10E0ABA8FDFE2F9F834 /* Frameworks */ = {
+		E2D38342CE57B29EFB06CFA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7967A30FB8F7F9826B58EF86 /* Foundation.framework in Frameworks */,
+				6DBFE651756C956629E45FD1 /* CoreGraphics.framework in Frameworks */,
+				062730526B0953E94540B83D /* Foundation.framework in Frameworks */,
+				B444C77C29ED3FEF7F04E7CA /* QuartzCore.framework in Frameworks */,
+				2B1A22C4CBC3C1F8176118E9 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7BCFF6684C8C45FACDDD2E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9EC7D4D8CCB8D102EC830D0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14A1F2B07A5226CCEF684B61 /* Products */ = {
+		262A9A3125DC7E1BE99E4495 /* PIOSpriteKit */ = {
 			isa = PBXGroup;
 			children = (
-				6021AE8F1A9AAFEF3267C37D /* libPods.a */,
-				EDD42A0598B9A27FB23F2EE6 /* libPods-TouchXML.a */,
-				0489AFA38F1B5D4615BA6712 /* libPods-WYPopoverController.a */,
-				7672C87CDBBAC0CDB2755BE8 /* libPods-ZipArchive.a */,
+				986D174865B24E8207E21F23 /* PIOScrollScene.h */,
+				24A3554578C0289795C6EBFC /* PIOScrollScene.m */,
+				4C6B6738D726DB125271E3FB /* PIOScrollSceneViewController.h */,
+				62F71DE6670A535978B0402F /* PIOScrollSceneViewController.m */,
+				DD3F44E8C37094AA169299ED /* PIOSpriteKit.h */,
+				1B39E321E04600C8E1B60110 /* PIOStaticNode.h */,
+				E0D20169393001C6B4D282E7 /* PIOStaticNode.m */,
+				28D8DD5C83BD5456F6B6ABFD /* PIOTiledNode.h */,
+				4C43BCEE10004ECD7813DC6D /* PIOTiledNode.m */,
+				5EDA4F804C674AC572E89EC1 /* Support Files */,
 			);
-			name = Products;
+			path = PIOSpriteKit;
 			sourceTree = "<group>";
 		};
-		298150D2D6F83DE1C65844F0 /* Pods */ = {
+		378E35FBFD19B846934A6E03 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				97FA82ACCFD10E1BD244B450 /* TouchXML */,
-				63D0F29D11AE09BC49757105 /* WYPopoverController */,
-				44FFD0C754BCB211D763223F /* ZipArchive */,
+				BE18E3AE784D45D21D0B7D0A /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5EDA4F804C674AC572E89EC1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				236C7FB1223A330B1519B58E /* Pods-PIOSpriteKit.xcconfig */,
+				521FA91F4CB2E2282BCEDC9F /* Pods-PIOSpriteKit-Private.xcconfig */,
+				92819EA7ECB9233684D5A096 /* Pods-PIOSpriteKit-dummy.m */,
+				3EDE679848B89FC862D6520C /* Pods-PIOSpriteKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-PIOSpriteKit";
+			sourceTree = "<group>";
+		};
+		826176CA530C30E4B3FC4973 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				262A9A3125DC7E1BE99E4495 /* PIOSpriteKit */,
+				8CA16E341A168535BAB325D9 /* TouchXML */,
+				8E104FFC44B94AADCB862B86 /* WYPopoverController */,
+				E68151D8A88536F6E8BD2498 /* ZipArchive */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3384140DF8AB5B677DFBE88A /* Support Files */ = {
+		8CA16E341A168535BAB325D9 /* TouchXML */ = {
 			isa = PBXGroup;
 			children = (
-				88192DDD65204466EB0DE14C /* Pods-WYPopoverController.xcconfig */,
-				0E3D4E6FCA05BE67ABCE3352 /* Pods-WYPopoverController-Private.xcconfig */,
-				DD1B2D9E46AD78A7ECB25D49 /* Pods-WYPopoverController-dummy.m */,
-				4802B667C209D379084A0C66 /* Pods-WYPopoverController-prefix.pch */,
+				1ECD87F6F5903AF73AFE74FA /* CTidy.h */,
+				FC683D3BF67A959C6E2C514F /* CTidy.m */,
+				FE7521ECFC4E365EE7FF96FB /* CXHTMLDocument.h */,
+				07D8A4F6F65380F31B37D88C /* CXHTMLDocument.m */,
+				BFC66D4039029500D0A83053 /* CXMLDocument.h */,
+				39397D82945D7DBC97D6C0D9 /* CXMLDocument.m */,
+				A10B41D0F8EBBABC5B480A0A /* CXMLDocument_CreationExtensions.h */,
+				74B1304C1E486C9BB21FB709 /* CXMLDocument_CreationExtensions.m */,
+				C3212401C08B9205C626BE23 /* CXMLDocument_PrivateExtensions.h */,
+				8196CC4F2A029DCC3BC5BE35 /* CXMLDocument_PrivateExtensions.m */,
+				531BED23A472B476CCC2E157 /* CXMLElement.h */,
+				8A2047851AC4699E4AB3BCCA /* CXMLElement.m */,
+				44714B80BEE02F2D6B60C0CD /* CXMLElement_CreationExtensions.h */,
+				42E3C8B1E148A5623E31EEBB /* CXMLElement_CreationExtensions.m */,
+				D49A791A00379B76BBB37C67 /* CXMLElement_ElementTreeExtensions.h */,
+				48E9D1058DC1F0450228AE27 /* CXMLElement_ElementTreeExtensions.m */,
+				A424D6152CAF37F0C121CF86 /* CXMLNamespaceNode.h */,
+				B488B2A31D667507967D758F /* CXMLNamespaceNode.m */,
+				BB332B76501C31DF7126C8AA /* CXMLNode.h */,
+				9986AFACEC88AC0E87849A2B /* CXMLNode.m */,
+				C292AE7FF67819FBDD8F6F4A /* CXMLNode_CreationExtensions.h */,
+				728EF548561A7A11B99874D9 /* CXMLNode_CreationExtensions.m */,
+				9886A2F9BF8EC460B7DC90FB /* CXMLNode_PrivateExtensions.h */,
+				4A0CE4FA72399730A99BDED9 /* CXMLNode_PrivateExtensions.m */,
+				33FF49BB185B5951D382EF2D /* CXMLNode_XPathExtensions.h */,
+				7678C2CB4D1DE0123C27D4D9 /* CXMLNode_XPathExtensions.m */,
+				01630D46F36036B35EF9D4DE /* TouchXML.h */,
+				D54CA134B8EEF1E46C3412B5 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-WYPopoverController";
+			path = TouchXML;
 			sourceTree = "<group>";
 		};
-		44FFD0C754BCB211D763223F /* ZipArchive */ = {
+		8E104FFC44B94AADCB862B86 /* WYPopoverController */ = {
 			isa = PBXGroup;
 			children = (
-				2B2A734155FAFB88790406DA /* ZipArchive.h */,
-				F827A4B516508F0FCE6E3B11 /* ZipArchive.m */,
-				546C6E423A91FBD185B15C19 /* crypt.h */,
-				A8D3CE839BD0D0C8792F57D4 /* ioapi.c */,
-				6C760EC646829DB6461CF585 /* ioapi.h */,
-				21B294E41054375EE930A15B /* mztools.c */,
-				14E6BA37F064A3C0E8313337 /* mztools.h */,
-				0CB2788BDA98CBAB50AD6DF6 /* unzip.c */,
-				0E806EDA81DA60356A6F1530 /* unzip.h */,
-				E70CC0F42B9D5E203715AA5B /* zip.c */,
-				4F53C49479C978C8FF39CF5F /* zip.h */,
-				DF1099D50CB69E7A3FB15665 /* Support Files */,
+				0070D6A71A8FC4221496BF02 /* WYPopoverController.h */,
+				D01DA1E85842A14DF500982E /* WYPopoverController.m */,
+				F912F96250ACC395F11B82F0 /* WYStoryboardPopoverSegue.h */,
+				BCE8BEC4542F8F1B5BA8FFD4 /* WYStoryboardPopoverSegue.m */,
+				EA947362A6A70C29F5CA4306 /* Support Files */,
 			);
-			path = ZipArchive;
+			path = WYPopoverController;
 			sourceTree = "<group>";
 		};
-		5A1FACD8BFCBC01E253819FF /* Pods */ = {
+		906A93E2C5548978F939C7A6 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				63C865B6822C210F9BD288FD /* Pods-acknowledgements.markdown */,
-				99E4868B5F2B60819B591183 /* Pods-acknowledgements.plist */,
-				F6023301DF116F7D13B9D3C5 /* Pods-dummy.m */,
-				B11E2596E31A41603A946D85 /* Pods-environment.h */,
-				0D7848A38D49ED134F3A4DA4 /* Pods-resources.sh */,
-				6CB266487DA1425EC0EAC256 /* Pods.debug.xcconfig */,
-				6D76E122230E6BE9745BC611 /* Pods.release.xcconfig */,
+				3723BEE864899D0B6E68973D /* CoreGraphics.framework */,
+				BFCD42F5822AC754D03BF7C7 /* Foundation.framework */,
+				41011DCBB7E38EDA2D28614F /* QuartzCore.framework */,
+				08859457480EE05F65292F12 /* SpriteKit.framework */,
+				A24CDE0F3426C477C0553F75 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AAF9E8DE95DD0FD66D7287E9 = {
+			isa = PBXGroup;
+			children = (
+				9AC26B7077861EB68BF00DD3 /* Podfile */,
+				C97462F378A9B5FB6B905009 /* Frameworks */,
+				826176CA530C30E4B3FC4973 /* Pods */,
+				D0B67489851A59754249CB2E /* Products */,
+				378E35FBFD19B846934A6E03 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BE18E3AE784D45D21D0B7D0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A92D82790A0EE86C83629C49 /* Pods-acknowledgements.markdown */,
+				0547F72BD6CF27415CEFEE5C /* Pods-acknowledgements.plist */,
+				04485C4E2E95BC78B9E5BE12 /* Pods-dummy.m */,
+				BEEA36FDCE0183E145940DE0 /* Pods-environment.h */,
+				FD0730CE3E700FE1C20DDEB3 /* Pods-resources.sh */,
+				3FFD95FB56C488D70E2B5230 /* Pods.debug.xcconfig */,
+				460F4CEA7B2AFE31290EA0B6 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		63D0F29D11AE09BC49757105 /* WYPopoverController */ = {
+		C97462F378A9B5FB6B905009 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E6A40DD64B24F50060FA9C75 /* WYPopoverController.h */,
-				FF086C902A73B05C445469C2 /* WYPopoverController.m */,
-				FEF0949D2CF28E775F6F37C5 /* WYStoryboardPopoverSegue.h */,
-				995ED804BDBA71A57AB285A0 /* WYStoryboardPopoverSegue.m */,
-				3384140DF8AB5B677DFBE88A /* Support Files */,
+				906A93E2C5548978F939C7A6 /* iOS */,
 			);
-			path = WYPopoverController;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8613E780E3A3DB79A3B0F681 = {
+		D0B67489851A59754249CB2E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4EE2DC4BEBE33159162B859 /* Podfile */,
-				C87308E43356004EDAD5A471 /* Frameworks */,
-				298150D2D6F83DE1C65844F0 /* Pods */,
-				14A1F2B07A5226CCEF684B61 /* Products */,
-				C4A93FBDA9BBE851A5CA3E72 /* Targets Support Files */,
+				BFFE1226292209A6E8CBA81D /* libPods.a */,
+				8CF29385C77AFD1564BB3A43 /* libPods-PIOSpriteKit.a */,
+				A208B48DE57390C4C1A9B973 /* libPods-TouchXML.a */,
+				DDF39F2399ABA4E0AE41512B /* libPods-WYPopoverController.a */,
+				0F2D5E8F0256EE421C90064C /* libPods-ZipArchive.a */,
 			);
+			name = Products;
 			sourceTree = "<group>";
 		};
-		97FA82ACCFD10E1BD244B450 /* TouchXML */ = {
+		D54CA134B8EEF1E46C3412B5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7FCB7900BBD1E66DAA75E98E /* CTidy.h */,
-				C1844C5F192C6FFD32FB6288 /* CTidy.m */,
-				34AFC32F16D20A2DDB591D1E /* CXHTMLDocument.h */,
-				C99C5BF4A47BD1E705878F35 /* CXHTMLDocument.m */,
-				DF28D7DF1B5CBA8FC1CDA3AA /* CXMLDocument.h */,
-				8B533C5C60223343340F32A2 /* CXMLDocument.m */,
-				1A02AF9C09583A520B748C9A /* CXMLDocument_CreationExtensions.h */,
-				B4025FA4FDFDD93949C9E4CA /* CXMLDocument_CreationExtensions.m */,
-				7D84393C27F8BEE4825BE58F /* CXMLDocument_PrivateExtensions.h */,
-				AA326C1091BDCB39218703F9 /* CXMLDocument_PrivateExtensions.m */,
-				FEE7C30B152E2429013B06BC /* CXMLElement.h */,
-				B7F4C8CD689BDF000DBCBB9D /* CXMLElement.m */,
-				C2BC9CB0EB3897DDF6E19319 /* CXMLElement_CreationExtensions.h */,
-				CC7D60D0508311CDE2C0BC0C /* CXMLElement_CreationExtensions.m */,
-				16B5D3E85B38E23EE5362E83 /* CXMLElement_ElementTreeExtensions.h */,
-				326AE6489AC6DEC2F315D0DA /* CXMLElement_ElementTreeExtensions.m */,
-				5DA3B2899E573CCBF94A0760 /* CXMLNamespaceNode.h */,
-				37F9E7EFA2CE83B7A7D8E586 /* CXMLNamespaceNode.m */,
-				60946CD6CAA34D48823F5F29 /* CXMLNode.h */,
-				FED0C6F8E7109E3B89411FC2 /* CXMLNode.m */,
-				014F057A2FAA58D1E0F39B7E /* CXMLNode_CreationExtensions.h */,
-				142456DD0B507D361BD4A415 /* CXMLNode_CreationExtensions.m */,
-				418C51431C793A1331A882FD /* CXMLNode_PrivateExtensions.h */,
-				2E8A80CF6521C5BA692129CF /* CXMLNode_PrivateExtensions.m */,
-				44E4578E2ADEF5C14967FD21 /* CXMLNode_XPathExtensions.h */,
-				F6E3069E21F2B480BD09189E /* CXMLNode_XPathExtensions.m */,
-				10977B49CA032889D57B2614 /* TouchXML.h */,
-				B9187974F8A0ED39095F3B53 /* Support Files */,
-			);
-			path = TouchXML;
-			sourceTree = "<group>";
-		};
-		AF92C9F14911CE3E2D4C4E54 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				5369D1AA64CBE66B749FDF58 /* CoreGraphics.framework */,
-				98ED502E5DE455364F98A817 /* Foundation.framework */,
-				1D2A987CC7B5B872121223AA /* QuartzCore.framework */,
-				291843432121AC9BEA5CDE2D /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		B9187974F8A0ED39095F3B53 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				651E6F69292F302FA173E030 /* Pods-TouchXML.xcconfig */,
-				3B33D43FC62D7EA109E2F886 /* Pods-TouchXML-Private.xcconfig */,
-				DC895FE8E2F6A7F4863291DD /* Pods-TouchXML-dummy.m */,
-				1FDEF5E2E48CAEB2F41219ED /* Pods-TouchXML-prefix.pch */,
+				A9505BB9691B9CB5AF482D59 /* Pods-TouchXML.xcconfig */,
+				6AB4DC786DD3ADA4EC5E06DE /* Pods-TouchXML-Private.xcconfig */,
+				B8CD3313E50224E5AF5B194A /* Pods-TouchXML-dummy.m */,
+				F16920DA9EC4DD45E047AB46 /* Pods-TouchXML-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-TouchXML";
 			sourceTree = "<group>";
 		};
-		C4A93FBDA9BBE851A5CA3E72 /* Targets Support Files */ = {
+		D747BBFA5DD611751B8F6D29 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5A1FACD8BFCBC01E253819FF /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		C87308E43356004EDAD5A471 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AF92C9F14911CE3E2D4C4E54 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DF1099D50CB69E7A3FB15665 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D1ADD6DACD08DC95950CB826 /* Pods-ZipArchive.xcconfig */,
-				4BA01E74B230E51DD1B2E91D /* Pods-ZipArchive-Private.xcconfig */,
-				F5417127F801132CC510B58A /* Pods-ZipArchive-dummy.m */,
-				C5F677A7B4D9BD54B48C7E7E /* Pods-ZipArchive-prefix.pch */,
+				BC9A9BCDB37F7AED91ABE1D6 /* Pods-ZipArchive.xcconfig */,
+				7AA810C065B8C93FBACE46AB /* Pods-ZipArchive-Private.xcconfig */,
+				19D1639BD08D1ABD58518077 /* Pods-ZipArchive-dummy.m */,
+				EE1D4BE1097333B3BFC354D4 /* Pods-ZipArchive-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-ZipArchive";
 			sourceTree = "<group>";
 		};
+		E68151D8A88536F6E8BD2498 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				AA3ECD112741C24EECFE22A2 /* ZipArchive.h */,
+				05A4188DC58AD89646835D5B /* ZipArchive.m */,
+				1A20175CEC6324A009F80023 /* crypt.h */,
+				CE22241FBF433F9FB7B24347 /* ioapi.c */,
+				753058D51A5E3D0F91A8226E /* ioapi.h */,
+				0BBF24FC5BCECCA6D8F4C4CA /* mztools.c */,
+				42D8A8B138A5DA2FCC3C67BF /* mztools.h */,
+				801832485890C219A1038939 /* unzip.c */,
+				24351402CFBB5F1C0C90D8E7 /* unzip.h */,
+				B6DEEB4B38DB79A85A9757ED /* zip.c */,
+				26ECBE61FF55E41518A2A597 /* zip.h */,
+				D747BBFA5DD611751B8F6D29 /* Support Files */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		EA947362A6A70C29F5CA4306 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				46058663DA4A59DC73B79430 /* Pods-WYPopoverController.xcconfig */,
+				AE50DC9BB629411D595AEB32 /* Pods-WYPopoverController-Private.xcconfig */,
+				329B5E0B7D14A9E8B4C9F029 /* Pods-WYPopoverController-dummy.m */,
+				BF691B4C62D49D863FF9525C /* Pods-WYPopoverController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-WYPopoverController";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		033B3880FE7C9AF0FBB540A6 /* Headers */ = {
+		1B1605E29CE52D6F8133D9A3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20D5B36D0902AC3AD51DEA3E /* WYPopoverController.h in Headers */,
-				A628238648CCDF22FCCFB4BA /* WYStoryboardPopoverSegue.h in Headers */,
+				EF090706C6656CCF234BFBA6 /* ZipArchive.h in Headers */,
+				85D92DE5A356A1493D559269 /* crypt.h in Headers */,
+				17DF549F502D95910CB081A6 /* ioapi.h in Headers */,
+				55EDB614768BB80005860A32 /* mztools.h in Headers */,
+				548CCFE4EF5045D6E4AD7784 /* unzip.h in Headers */,
+				7DD0DE4866121AB944BCE840 /* zip.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3653C290C0E5770232CC4547 /* Headers */ = {
+		58E5900D45AF9FAF432891E8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D9B321579052FFCDD7EB44D /* ZipArchive.h in Headers */,
-				9B5FE10ECCFF9FEB6332CA39 /* crypt.h in Headers */,
-				6EA0E01CD06EC5F32259BACA /* ioapi.h in Headers */,
-				F1B8C6CC3A621BF256439F8E /* mztools.h in Headers */,
-				E013BA64146323F5E59B967F /* unzip.h in Headers */,
-				EC7C8A27DA9C55DC8EA60D91 /* zip.h in Headers */,
+				053AE44B8DB01388DD456233 /* PIOScrollScene.h in Headers */,
+				46F25490852267EFC7F29AA2 /* PIOScrollSceneViewController.h in Headers */,
+				24C67AF5D0FEF78E9E65BAE2 /* PIOSpriteKit.h in Headers */,
+				B475CFCACC7497F204BAA9C0 /* PIOStaticNode.h in Headers */,
+				235321EA1B5A09FEE6C4A780 /* PIOTiledNode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52C06A878BE061E828D9436C /* Headers */ = {
+		E29FBCE03E4EE42CD3A2F3C0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3776E029D9013724051AA05E /* CTidy.h in Headers */,
-				A6254AB41882D9E8C20D6E07 /* CXHTMLDocument.h in Headers */,
-				1A6DBDC56A47AC99791FEBE5 /* CXMLDocument.h in Headers */,
-				A5FFA4D787A29A38BFA6AA52 /* CXMLDocument_CreationExtensions.h in Headers */,
-				1EA47E57E07191FD4B67B1EA /* CXMLDocument_PrivateExtensions.h in Headers */,
-				00F81BEE83BE12E8986AFAA1 /* CXMLElement.h in Headers */,
-				B88E55DE4FA03DD3859084FC /* CXMLElement_CreationExtensions.h in Headers */,
-				691FFFD30026FBF159BEF316 /* CXMLElement_ElementTreeExtensions.h in Headers */,
-				893F252BD696C32F763D43DA /* CXMLNamespaceNode.h in Headers */,
-				2068185158F3331C43F0486B /* CXMLNode.h in Headers */,
-				99CD6870EFE98A95BE9C383F /* CXMLNode_CreationExtensions.h in Headers */,
-				CE357A585323C1B754C99871 /* CXMLNode_PrivateExtensions.h in Headers */,
-				E69CA954F60264D8F01B7A59 /* CXMLNode_XPathExtensions.h in Headers */,
-				A2096CB20735375E61358852 /* TouchXML.h in Headers */,
+				1DE8A0E552EBDE0561EFE1E1 /* WYPopoverController.h in Headers */,
+				48158315002E59CA4E914AD2 /* WYStoryboardPopoverSegue.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF302EBE239784FBCD7FD28B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B1A37292E34E390C1BDD28 /* CTidy.h in Headers */,
+				67B61351D4549C7CA0B4A751 /* CXHTMLDocument.h in Headers */,
+				61482CD7DDE9A0BDDF8B0BAC /* CXMLDocument.h in Headers */,
+				F1381DC6FD265E4CD05D91D3 /* CXMLDocument_CreationExtensions.h in Headers */,
+				F55E246CF11FB0B67107FA1E /* CXMLDocument_PrivateExtensions.h in Headers */,
+				1E970AEA2FF2E843248E7155 /* CXMLElement.h in Headers */,
+				F2441351B6629F73F90E0034 /* CXMLElement_CreationExtensions.h in Headers */,
+				90D4FFA58F913B0236F24EC8 /* CXMLElement_ElementTreeExtensions.h in Headers */,
+				81337F36EE98B94B9CC067F0 /* CXMLNamespaceNode.h in Headers */,
+				5247DDA1EB124BDCB737EF30 /* CXMLNode.h in Headers */,
+				FB8549E9A5D4C868E6F5599B /* CXMLNode_CreationExtensions.h in Headers */,
+				B246A0701A2D5E020F85EC22 /* CXMLNode_PrivateExtensions.h in Headers */,
+				8B14CFC27082EF5DC0371396 /* CXMLNode_XPathExtensions.h in Headers */,
+				F0C3171867000190A7731BDC /* TouchXML.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		47AC7CA3503400A95504E1F4 /* Pods-WYPopoverController */ = {
+		0CB15FE748318FBC1DEA7314 /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7228EFBF722978FB4A20C417 /* Build configuration list for PBXNativeTarget "Pods-WYPopoverController" */;
+			buildConfigurationList = 4FA550E02218DB741C1E3350 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				F5A1732C62350A118CFF3627 /* Sources */,
-				4725478C513094434FFDF07F /* Frameworks */,
-				033B3880FE7C9AF0FBB540A6 /* Headers */,
+				7DEE52E226448FD30BA41F71 /* Sources */,
+				F7BCFF6684C8C45FACDDD2E9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26FFA57459437FF0BA1F2D00 /* PBXTargetDependency */,
+				42D5A12695751D95D4FC3149 /* PBXTargetDependency */,
+				3B40CF0A49E808666F4035CA /* PBXTargetDependency */,
+				1220038261D387C67CF28D58 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = BFFE1226292209A6E8CBA81D /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0DE0550860BD4EE2354C8CD7 /* Pods-WYPopoverController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC29774A8C42FB1B790F062 /* Build configuration list for PBXNativeTarget "Pods-WYPopoverController" */;
+			buildPhases = (
+				A41C94EA3954437F81A9927F /* Sources */,
+				E2D38342CE57B29EFB06CFA2 /* Frameworks */,
+				E29FBCE03E4EE42CD3A2F3C0 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -437,16 +544,16 @@
 			);
 			name = "Pods-WYPopoverController";
 			productName = "Pods-WYPopoverController";
-			productReference = 0489AFA38F1B5D4615BA6712 /* libPods-WYPopoverController.a */;
+			productReference = DDF39F2399ABA4E0AE41512B /* libPods-WYPopoverController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		66CA18AD6AFE308E7B2EBD52 /* Pods-ZipArchive */ = {
+		3B36523F4F20C3218B2CC9B6 /* Pods-ZipArchive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2AC7B213EFA66E3FF41C604 /* Build configuration list for PBXNativeTarget "Pods-ZipArchive" */;
+			buildConfigurationList = 632DBA03AE8A61A85719C02E /* Build configuration list for PBXNativeTarget "Pods-ZipArchive" */;
 			buildPhases = (
-				37611A55467A0FCB5F0E168F /* Sources */,
-				C5CCC10E0ABA8FDFE2F9F834 /* Frameworks */,
-				3653C290C0E5770232CC4547 /* Headers */,
+				8154C55544534B75FE7E4730 /* Sources */,
+				A7B9BD9A4EC22675171317F0 /* Frameworks */,
+				1B1605E29CE52D6F8133D9A3 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -454,35 +561,33 @@
 			);
 			name = "Pods-ZipArchive";
 			productName = "Pods-ZipArchive";
-			productReference = 7672C87CDBBAC0CDB2755BE8 /* libPods-ZipArchive.a */;
+			productReference = 0F2D5E8F0256EE421C90064C /* libPods-ZipArchive.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		99C856CF174C3B726D7BBC2F /* Pods */ = {
+		665F4B7311F796AED592DFD5 /* Pods-PIOSpriteKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A69C054177D01A5CD16FF0F /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 01E3CBF6A53B4F20479A7C61 /* Build configuration list for PBXNativeTarget "Pods-PIOSpriteKit" */;
 			buildPhases = (
-				4317E00DD34B3491CBF41683 /* Sources */,
-				3BE5805A58FC08064361A47B /* Frameworks */,
+				EFC42AFC62F4403534904402 /* Sources */,
+				1AEACDC6D40FE0032FEAD9DE /* Frameworks */,
+				58E5900D45AF9FAF432891E8 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B3F2C6E6F764539649A3AF9D /* PBXTargetDependency */,
-				78B1FAE00472465C0941ACAE /* PBXTargetDependency */,
-				EFE1A68E2797C68CEE9FD225 /* PBXTargetDependency */,
 			);
-			name = Pods;
-			productName = Pods;
-			productReference = 6021AE8F1A9AAFEF3267C37D /* libPods.a */;
+			name = "Pods-PIOSpriteKit";
+			productName = "Pods-PIOSpriteKit";
+			productReference = 8CF29385C77AFD1564BB3A43 /* libPods-PIOSpriteKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D8E643E0CB25A3B7D8A9A0F7 /* Pods-TouchXML */ = {
+		83AD7C0104354EEA9B403C03 /* Pods-TouchXML */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07A46C0CFD690A5DAC6E10D2 /* Build configuration list for PBXNativeTarget "Pods-TouchXML" */;
+			buildConfigurationList = DA951D3EB1AA072736E596DF /* Build configuration list for PBXNativeTarget "Pods-TouchXML" */;
 			buildPhases = (
-				3BFEF2C83B2ABF593BEAE6C0 /* Sources */,
-				829CB416493593AD9A35BF98 /* Frameworks */,
-				52C06A878BE061E828D9436C /* Headers */,
+				E828681407F0C49C2008C2DA /* Sources */,
+				92587C86BCEE4B20FAC7BAC3 /* Frameworks */,
+				EF302EBE239784FBCD7FD28B /* Headers */,
 			);
 			buildRules = (
 			);
@@ -490,117 +595,218 @@
 			);
 			name = "Pods-TouchXML";
 			productName = "Pods-TouchXML";
-			productReference = EDD42A0598B9A27FB23F2EE6 /* libPods-TouchXML.a */;
+			productReference = A208B48DE57390C4C1A9B973 /* libPods-TouchXML.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7F4128E56F7D46E4BC750448 /* Project object */ = {
+		B732FD5107AB5BC7657D9DBF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = A86C862A81953D0C532B8029 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = C292A793676FB4F3D7E28516 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8613E780E3A3DB79A3B0F681;
-			productRefGroup = 14A1F2B07A5226CCEF684B61 /* Products */;
+			mainGroup = AAF9E8DE95DD0FD66D7287E9;
+			productRefGroup = D0B67489851A59754249CB2E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				99C856CF174C3B726D7BBC2F /* Pods */,
-				D8E643E0CB25A3B7D8A9A0F7 /* Pods-TouchXML */,
-				47AC7CA3503400A95504E1F4 /* Pods-WYPopoverController */,
-				66CA18AD6AFE308E7B2EBD52 /* Pods-ZipArchive */,
+				0CB15FE748318FBC1DEA7314 /* Pods */,
+				665F4B7311F796AED592DFD5 /* Pods-PIOSpriteKit */,
+				83AD7C0104354EEA9B403C03 /* Pods-TouchXML */,
+				0DE0550860BD4EE2354C8CD7 /* Pods-WYPopoverController */,
+				3B36523F4F20C3218B2CC9B6 /* Pods-ZipArchive */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		37611A55467A0FCB5F0E168F /* Sources */ = {
+		7DEE52E226448FD30BA41F71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42FCED5303083D73B1171B81 /* Pods-ZipArchive-dummy.m in Sources */,
-				4D653F4F5C3A38592A92E25B /* ZipArchive.m in Sources */,
-				DA80507330B6B873FC134814 /* ioapi.c in Sources */,
-				B87A8824788804D79882A832 /* mztools.c in Sources */,
-				67731EDA2EC676E211618399 /* unzip.c in Sources */,
-				32FCA6BB1EE71627D09EF19D /* zip.c in Sources */,
+				86AB40E8EC17A18FBEDA41B0 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BFEF2C83B2ABF593BEAE6C0 /* Sources */ = {
+		8154C55544534B75FE7E4730 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049BA2ED42EDD81EC9D13D11 /* CTidy.m in Sources */,
-				5A98BA7355FB2734E4DAA02C /* CXHTMLDocument.m in Sources */,
-				2EA9ABCBF00B6D4492662C82 /* CXMLDocument.m in Sources */,
-				F4D9F1E107A2AC33C0D37DCC /* CXMLDocument_CreationExtensions.m in Sources */,
-				8DB20CB97297B6477D0F26D4 /* CXMLDocument_PrivateExtensions.m in Sources */,
-				F9186934CFC7EDB7D70A98D3 /* CXMLElement.m in Sources */,
-				C546B6FDEBB3D29C593E5834 /* CXMLElement_CreationExtensions.m in Sources */,
-				E2549D7D899A83541AD9216B /* CXMLElement_ElementTreeExtensions.m in Sources */,
-				D68194B1BCC6493051B58440 /* CXMLNamespaceNode.m in Sources */,
-				ED1CDC38C9F3A093B73BAECE /* CXMLNode.m in Sources */,
-				B5120CE32B0CC3FC12388C77 /* CXMLNode_CreationExtensions.m in Sources */,
-				B08067D65E479F8748543188 /* CXMLNode_PrivateExtensions.m in Sources */,
-				676CB3C2EADFE17E9B2F28CB /* CXMLNode_XPathExtensions.m in Sources */,
-				14A13E23C6F7C81B84907258 /* Pods-TouchXML-dummy.m in Sources */,
+				1B4DD1821CE383460100F176 /* Pods-ZipArchive-dummy.m in Sources */,
+				7E7E27C0BB7D78C22223A1AE /* ZipArchive.m in Sources */,
+				79A03E8ED912239CAFD36ED7 /* ioapi.c in Sources */,
+				450F0D6B2DA1995413E85F2E /* mztools.c in Sources */,
+				572FCE83F17EF128F40F1723 /* unzip.c in Sources */,
+				3FC4CE87B32D628B082660B0 /* zip.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4317E00DD34B3491CBF41683 /* Sources */ = {
+		A41C94EA3954437F81A9927F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94DF8C5228D5E07373467669 /* Pods-dummy.m in Sources */,
+				1CDE005EFEA9F08CB3144923 /* Pods-WYPopoverController-dummy.m in Sources */,
+				14D19C75151C4D7D75F726EE /* WYPopoverController.m in Sources */,
+				F3DD88338E26AAE2A358A7A0 /* WYStoryboardPopoverSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5A1732C62350A118CFF3627 /* Sources */ = {
+		E828681407F0C49C2008C2DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A34605F727F768C4C4C97057 /* Pods-WYPopoverController-dummy.m in Sources */,
-				A71B4A3095A48B49CADF0894 /* WYPopoverController.m in Sources */,
-				F4B6DDB4D9BE9DCDB659A913 /* WYStoryboardPopoverSegue.m in Sources */,
+				249116B0FE11B1E8F431F00E /* CTidy.m in Sources */,
+				3878C031268DFF5F5FD92034 /* CXHTMLDocument.m in Sources */,
+				468B7914577475EE91D6E7D0 /* CXMLDocument.m in Sources */,
+				AFCBA5C8A27831D1C72CF010 /* CXMLDocument_CreationExtensions.m in Sources */,
+				9E3EF363C54EFCDE1AF0CEC7 /* CXMLDocument_PrivateExtensions.m in Sources */,
+				2D7D84E6AB889D4B066D0A05 /* CXMLElement.m in Sources */,
+				2291952ED6CF0918EB09C387 /* CXMLElement_CreationExtensions.m in Sources */,
+				C02940DDB97FE57303DFBAD6 /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				1B83FCD537C092C7EE96C78F /* CXMLNamespaceNode.m in Sources */,
+				6540A075BCD0990918980E84 /* CXMLNode.m in Sources */,
+				F5BF82CEEF495CD30769F411 /* CXMLNode_CreationExtensions.m in Sources */,
+				4E4EF9BAED4C98AAADEB2FDE /* CXMLNode_PrivateExtensions.m in Sources */,
+				B3160438E4D1F7199CC2BD34 /* CXMLNode_XPathExtensions.m in Sources */,
+				9786E11E4261D70EE6557EED /* Pods-TouchXML-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC42AFC62F4403534904402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51600050D16AF463BA472C2 /* PIOScrollScene.m in Sources */,
+				65A59758871EDE77D76F3D2F /* PIOScrollSceneViewController.m in Sources */,
+				59C2149174331AD0FB6F1F28 /* PIOStaticNode.m in Sources */,
+				D9BCAC4A62A50515A5666C7E /* PIOTiledNode.m in Sources */,
+				ADC0F8835B08F8A38847B732 /* Pods-PIOSpriteKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		78B1FAE00472465C0941ACAE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-WYPopoverController";
-			target = 47AC7CA3503400A95504E1F4 /* Pods-WYPopoverController */;
-			targetProxy = 98298A61126CF6553C46591F /* PBXContainerItemProxy */;
-		};
-		B3F2C6E6F764539649A3AF9D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-TouchXML";
-			target = D8E643E0CB25A3B7D8A9A0F7 /* Pods-TouchXML */;
-			targetProxy = A358DAEC81E6D1334C888E30 /* PBXContainerItemProxy */;
-		};
-		EFE1A68E2797C68CEE9FD225 /* PBXTargetDependency */ = {
+		1220038261D387C67CF28D58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ZipArchive";
-			target = 66CA18AD6AFE308E7B2EBD52 /* Pods-ZipArchive */;
-			targetProxy = 95BFCA1C293BD40C07F81F9E /* PBXContainerItemProxy */;
+			target = 3B36523F4F20C3218B2CC9B6 /* Pods-ZipArchive */;
+			targetProxy = E1214B071047A834E308A307 /* PBXContainerItemProxy */;
+		};
+		26FFA57459437FF0BA1F2D00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PIOSpriteKit";
+			target = 665F4B7311F796AED592DFD5 /* Pods-PIOSpriteKit */;
+			targetProxy = 5310EECF971EEF48A9377E6E /* PBXContainerItemProxy */;
+		};
+		3B40CF0A49E808666F4035CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WYPopoverController";
+			target = 0DE0550860BD4EE2354C8CD7 /* Pods-WYPopoverController */;
+			targetProxy = DD925763AE3D511A17F5602A /* PBXContainerItemProxy */;
+		};
+		42D5A12695751D95D4FC3149 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TouchXML";
+			target = 83AD7C0104354EEA9B403C03 /* Pods-TouchXML */;
+			targetProxy = B6212C298F6C0C381EA57B74 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		162FF914F2398ABC01DDF994 /* Debug */ = {
+		08B3E6A37CF27396B71C08FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B33D43FC62D7EA109E2F886 /* Pods-TouchXML-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		355FFEB0D7460C7BF91DB4E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE50DC9BB629411D595AEB32 /* Pods-WYPopoverController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-WYPopoverController/Pods-WYPopoverController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6FCD2F718DCC2C7095EB2BAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA810C065B8C93FBACE46AB /* Pods-ZipArchive-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZipArchive/Pods-ZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BD4E4B228C3B8F4F1F0C6549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FFD95FB56C488D70E2B5230 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C10799A2B81BD26CAFFCEF39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB4DC786DD3ADA4EC5E06DE /* Pods-TouchXML-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-TouchXML/Pods-TouchXML-prefix.pch";
@@ -614,7 +820,103 @@
 			};
 			name = Debug;
 		};
-		173894C1D1160F9CC25D5E2A /* Debug */ = {
+		CC0E161211C86E7D528C8821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE50DC9BB629411D595AEB32 /* Pods-WYPopoverController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-WYPopoverController/Pods-WYPopoverController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D70535E6CB64754DE6ED0A9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB4DC786DD3ADA4EC5E06DE /* Pods-TouchXML-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TouchXML/Pods-TouchXML-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DA22751530EF0028150686EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521FA91F4CB2E2282BCEDC9F /* Pods-PIOSpriteKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PIOSpriteKit/Pods-PIOSpriteKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DB91F65A1F7AE2935720965D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA810C065B8C93FBACE46AB /* Pods-ZipArchive-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZipArchive/Pods-ZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EE0A4FCFEC117670BBC3E4DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521FA91F4CB2E2282BCEDC9F /* Pods-PIOSpriteKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PIOSpriteKit/Pods-PIOSpriteKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F949C13A9AA8A1B088AB299F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 460F4CEA7B2AFE31290EA0B6 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FB285C03E17544B42E06276F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -653,201 +955,64 @@
 			};
 			name = Debug;
 		};
-		1AD32C40ED866D4D989D7C8C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E3D4E6FCA05BE67ABCE3352 /* Pods-WYPopoverController-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-WYPopoverController/Pods-WYPopoverController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		3AE0BDE8FF8CBBDC422A2ED2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E3D4E6FCA05BE67ABCE3352 /* Pods-WYPopoverController-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-WYPopoverController/Pods-WYPopoverController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		451C4CCDFB0F82A13AD18E0B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CB266487DA1425EC0EAC256 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		4AEEDF2F4694042ED35FF3EE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BA01E74B230E51DD1B2E91D /* Pods-ZipArchive-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZipArchive/Pods-ZipArchive-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		86ABD31FBE0FFD17FCAF11EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D76E122230E6BE9745BC611 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		8F24580AA138F6B64FA40F87 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		99225CE59E338AB3828A092B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BA01E74B230E51DD1B2E91D /* Pods-ZipArchive-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZipArchive/Pods-ZipArchive-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C7979FC6FE40D9789B0D2B90 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B33D43FC62D7EA109E2F886 /* Pods-TouchXML-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-TouchXML/Pods-TouchXML-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07A46C0CFD690A5DAC6E10D2 /* Build configuration list for PBXNativeTarget "Pods-TouchXML" */ = {
+		01E3CBF6A53B4F20479A7C61 /* Build configuration list for PBXNativeTarget "Pods-PIOSpriteKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				162FF914F2398ABC01DDF994 /* Debug */,
-				C7979FC6FE40D9789B0D2B90 /* Release */,
+				DA22751530EF0028150686EE /* Debug */,
+				EE0A4FCFEC117670BBC3E4DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7228EFBF722978FB4A20C417 /* Build configuration list for PBXNativeTarget "Pods-WYPopoverController" */ = {
+		4DC29774A8C42FB1B790F062 /* Build configuration list for PBXNativeTarget "Pods-WYPopoverController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AD32C40ED866D4D989D7C8C /* Debug */,
-				3AE0BDE8FF8CBBDC422A2ED2 /* Release */,
+				355FFEB0D7460C7BF91DB4E6 /* Debug */,
+				CC0E161211C86E7D528C8821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7A69C054177D01A5CD16FF0F /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		4FA550E02218DB741C1E3350 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				451C4CCDFB0F82A13AD18E0B /* Debug */,
-				86ABD31FBE0FFD17FCAF11EE /* Release */,
+				BD4E4B228C3B8F4F1F0C6549 /* Debug */,
+				F949C13A9AA8A1B088AB299F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A86C862A81953D0C532B8029 /* Build configuration list for PBXProject "Pods" */ = {
+		632DBA03AE8A61A85719C02E /* Build configuration list for PBXNativeTarget "Pods-ZipArchive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				173894C1D1160F9CC25D5E2A /* Debug */,
-				8F24580AA138F6B64FA40F87 /* Release */,
+				6FCD2F718DCC2C7095EB2BAB /* Debug */,
+				DB91F65A1F7AE2935720965D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2AC7B213EFA66E3FF41C604 /* Build configuration list for PBXNativeTarget "Pods-ZipArchive" */ = {
+		C292A793676FB4F3D7E28516 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AEEDF2F4694042ED35FF3EE /* Debug */,
-				99225CE59E338AB3828A092B /* Release */,
+				FB285C03E17544B42E06276F /* Debug */,
+				08B3E6A37CF27396B71C08FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA951D3EB1AA072736E596DF /* Build configuration list for PBXNativeTarget "Pods-TouchXML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10799A2B81BD26CAFFCEF39 /* Debug */,
+				D70535E6CB64754DE6ED0A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7F4128E56F7D46E4BC750448 /* Project object */;
+	rootObject = B732FD5107AB5BC7657D9DBF /* Project object */;
 }

@@ -16,106 +16,76 @@
 #import "NewBookViewController.h"
 #import "InventaryContentHandler.h"
 #import "MyScene.h"
-#import "DragableButton.h"
-#import "NNKSkeletNode.h"
-#import "NNKGoblinNode.h"
-#import "NNKSheepNode.h"
-#import "NNKCatNode.h"
-#import "NNKDragonNode.h"
-#import "NNKNinjaNode.h"
-#import "BlueHouseScene.h"
 #import "NNWVideoViewController.h"
 #import "TextBarViewController.h"
+#import "GameScene.h"
+#import "IslandViewController.h"
+#import "ShadowPlayViewController.h"
+#import "SchoolOfMagicViewController.h"
+#import "SideMenu.h"
 
-@interface ViewController () <InfiniteTableViewDatasource, MainScreenViewModelDelegate, UIScrollViewDelegate, DragableButtonDelegate, BlueHouseProtocol>
+@interface ViewController () <InfiniteTableViewDatasource, MainScreenViewModelDelegate, GameSceneDelegate>
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topBarTopConstraint;
 @property (weak, nonatomic) IBOutlet InfiniteTableView *infiniteTableView;
 @property (weak, nonatomic) IBOutlet UIView *topBarView;
 @property (strong, nonatomic) MainScreenViewModel *viewModel;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *topBarNavigationsButtons;
-@property (weak, nonatomic) IBOutlet UIButton *snailImage;
-@property (weak, nonatomic) IBOutlet UIButton *dandelionImage;
-@property (strong, nonatomic) DragableButton *dragableObject;
-
-@property (weak, nonatomic) IBOutlet SKView *catSKView;
-@property (strong, nonatomic) MyScene *catScene;
-@property (strong, nonatomic) NNKCatNode *catNode;
-
-@property (weak, nonatomic) IBOutlet SKView *skeletSKView;
-@property (strong, nonatomic) MyScene *skeletScene;
-@property (strong, nonatomic) NNKSkeletNode *skeletNode;
-
-@property (weak, nonatomic) IBOutlet SKView *goblinSKView;
-@property (strong, nonatomic) MyScene *goblinScene;
-@property (strong, nonatomic) NNKGoblinNode *goblinNode;
-
-@property (weak, nonatomic) IBOutlet SKView *ninjaSKView;
-@property (strong, nonatomic) MyScene *ninjaScene;
-@property (strong, nonatomic) NNKNinjaNode *ninjaNode;
-
-@property (weak, nonatomic) IBOutlet SKView *sheepSKView;
-@property (strong, nonatomic) MyScene *sheepScene;
-@property (strong, nonatomic) NNKSheepNode *sheepNode;
-
-@property (weak, nonatomic) IBOutlet SKView *dragonSKView;
-@property (strong, nonatomic) MyScene *dragonScene;
-@property (strong, nonatomic) NNKDragonNode *dragonNode;
-
-@property (weak, nonatomic) IBOutlet SKView *blueHouseSKView;
-@property (strong, nonatomic) BlueHouseScene *blueHouseScene;
 
 @property (weak, nonatomic) IBOutlet UIView *textBarSuperView;
 @property (strong, nonatomic) TextBarViewController *textBar;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
-@property (weak, nonatomic) IBOutlet UIButton *shadowPlayButton;
-@property (weak, nonatomic) IBOutlet UIButton *schoolOfMagic;
+
+@property (nonatomic, strong) GameScene *sampleScene;
+@property (nonatomic, strong) UIView *scrollContentView;
+@property (weak, nonatomic) IBOutlet UIView *leftMenu;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftMenuLeadingConstraint;
+@property (assign, nonatomic) BOOL isOpenLeftMenu;
+@property (strong, nonatomic) SideMenu *inventary;
 
 @end
 
 @implementation ViewController
 
-- (void)prepareScenes {
-    self.skeletSKView.allowsTransparency = YES;
-    self.skeletScene.node = self.skeletNode;
-    self.goblinSKView.allowsTransparency = YES;
-    self.goblinScene.node = self.goblinNode;
-    self.sheepSKView.allowsTransparency = YES;
-    self.sheepScene.node = self.sheepNode;
-    self.dragonSKView.allowsTransparency = YES;
-    self.dragonScene.node = self.dragonNode;
-    self.ninjaSKView.allowsTransparency = YES;
-    self.ninjaScene.node = self.ninjaNode;
-    self.catSKView.allowsTransparency = YES;
-    self.catScene.node = self.catNode;
-    self.blueHouseSKView.allowsTransparency = YES;
-    [self.blueHouseSKView presentScene:self.blueHouseScene];
-    [self.catNode runBackgrounAction];
-}
-
-
 - (void)viewDidLoad {
-    [super viewDidLoad];
     [self updateInterface];
-    self.textBarBottomConstraint.constant = -1000;
-    [self prepareScenes];
-    [self setupScales];
+    [self configureSideMenu];
+    self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
 }
 
 
-- (void)setupScales {
-    self.scrollView.contentSize = self.backgroundImage.image.size;
-    CGSize scrollViewFrame = self.scrollView.frame.size;
-    CGSize scrollViewSize = self.backgroundImage.image.size;
-    CGFloat scaleWidth = scrollViewFrame.width / scrollViewSize.width;
-    CGFloat scaleHeight = scrollViewFrame.height / scrollViewSize.height;
-    CGFloat minScale = MAX(scaleWidth, scaleHeight);
-    
-    self.scrollView.minimumZoomScale = minScale;
-    self.scrollView.maximumZoomScale = 1.5f;
-    self.scrollView.zoomScale = minScale;
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    if (self.sampleScene) return;
+    self.sampleScene = [[GameScene alloc] initWithSize:self.spriteKitView.frame.size];
+    self.sampleScene.gameSceneDelegate = self;
+    self.sampleScene.contentView = self.scrollContentView;
+    [self presentScene:self.sampleScene];
+    [self.scrollView setContentOffset:CGPointMake(0, 0) animated:NO];
+}
+
+
+- (void)didPressIslandInGameScene {
+    IslandViewController *island = [IslandViewController instantiate];
+    [self presentViewController:island animated:YES completion:nil];
+}
+
+
+- (void)didPressShadowInGameScene {
+    ShadowPlayViewController *shadow = [ShadowPlayViewController instantiate];
+    [self presentViewController:shadow animated:YES completion:nil];
+}
+
+
+- (void)didPressSchoolInGameScene {
+    SchoolOfMagicViewController *school = [SchoolOfMagicViewController instantiate];
+    [self presentViewController:school animated:YES completion:nil];
+}
+
+
+- (void)didPressPlayerInGameScene {
+    NNWVideoViewController *video = [NNWVideoViewController instantiate];
+    [self presentViewController:video animated:YES completion:nil];
 }
 
 
@@ -138,6 +108,8 @@
 - (void)viewDidLayoutSubviews {
     self.textBar.frame = self.textBarSuperView.bounds;
     [super viewDidLayoutSubviews];
+    [self.view sendSubviewToBack:self.scrollView];
+    [self hideObjectsOnInit];
 }
 
 
@@ -149,185 +121,122 @@
 }
 
 
-- (NNKSkeletNode *)skeletNode {
-    if (!_skeletNode) {
-        BOOL swordIsOpen = [self isOpenIcon:InventaryBarIconTypeSword];
-        _skeletNode = [[NNKSkeletNode alloc] initWithSize:self.skeletSKView.bounds.size
-                                      showLastFrameOnLoad:swordIsOpen];
-        _skeletNode.disableAnimation = swordIsOpen;
-        _skeletNode.completionBlock = ^void(NNKSkeletNode *node) {
-            [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeSword withFormat:InventaryIconShowingFull];
-            node.disableAnimation = YES;
-        };
+- (void)hideObjectsOnInit {
+    if ([self isOpenIcon:InventaryBarIconTypeSword]) {
+        [self.sampleScene hideSword];
     }
-    
-    return _skeletNode;
+    if ([self isOpenIcon:InventaryBarIconTypeWrench]) {
+        [self.sampleScene hideWrench];
+    }
+    if ([self isOpenIcon:InventaryBarIconTypeMagicBook]) {
+        [self.sampleScene hideBook];
+    }
+    if ([self isOpenIcon:InventaryBarIconTypeExtinguisher]) {
+        [self.sampleScene hideExtinguisher];
+    }
+    if ([self isOpenIcon:InventaryBarIconTypeDandelion]) {
+        [self.sampleScene hideDandelion];
+    }
+    if ([self isOpenIcon:InventaryBarIconTypeSnail]) {
+        [self.sampleScene hideSnail];
+    }
 }
 
 
-- (MyScene *)skeletScene {
-    if (!_skeletScene) {
-        _skeletScene = [self sceneFromSkView:self.skeletSKView];
+- (void)didPressSkeletInGameScene {
+    BOOL swordIsOpen = [self isOpenIcon:InventaryBarIconTypeSword];
+    if (!swordIsOpen) {
+        [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeSword
+                                                       withFormat:InventaryIconShowingFull];
+        [self addViewOfType:InventaryBarIconTypeSword inView:self.inventary.sword];
+        [self.sampleScene hideSword];
     }
-    
-    return _skeletScene;
 }
 
 
-- (MyScene *)goblinScene {
-    if (!_goblinScene) {
-        _goblinScene = [self sceneFromSkView:self.goblinSKView];
+- (void)didPressGoblinInGameScene {
+    BOOL isOpenWrench = [self isOpenIcon:InventaryBarIconTypeWrench];
+    if (!isOpenWrench) {
+        [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_goblin"]
+                                         text:@"text_panel_goblin_initial"
+                                     isObject:NO];
     }
-    
-    return _goblinScene;
 }
 
 
-- (NNKGoblinNode *)goblinNode {
-    if (!_goblinNode) {
-        BOOL isOpenWrench = [self isOpenIcon:InventaryBarIconTypeWrench];
-        _goblinNode = [[NNKGoblinNode alloc] initWithSize:self.goblinSKView.bounds.size
-                                         shouldHideWrench:isOpenWrench];
-        __weak typeof(self) weakSelf = self;
-        _goblinNode.completionBlock = ^void(NNKGoblinNode *node) {
-            if (![weakSelf isOpenIcon:InventaryBarIconTypeWrench]) {
-                [weakSelf didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_goblin"]
-                                                     text:@"text_panel_goblin_initial"
-                                                 isObject:NO];
-            }
-        };
+- (void)didPressCatInGameScene {
+    if (![self isOpenIcon:InventaryBarIconTypeMagicBallCat]) {
+        [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_cat"]
+                                         text:@"text_panel_cat_initial"
+                                     isObject:NO];
     }
     
-    return _goblinNode;
 }
 
 
-- (MyScene *)catScene {
-    if (!_catScene) {
-        _catScene = [self sceneFromSkView:self.catSKView];
+- (void)didPressSheepInGameScene {
+    if (![self isOpenIcon:InventaryBarIconTypeMagicBallSheep]) {
+        [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_sheep"]
+                                         text:@"text_panel_sheep_initial"
+                                     isObject:NO];
     }
-    
-    return _catScene;
 }
 
 
-- (NNKCatNode *)catNode {
-    if (!_catNode) {
-        _catNode = [[NNKCatNode alloc] initWithSize:self.catSKView.bounds.size];
-        __weak typeof(self) weakSelf = self;
-        _catNode.completionBlock = ^void() {
-            if (![weakSelf isOpenIcon:InventaryBarIconTypeMagicBallCat]) {
-                [weakSelf didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_cat"]
-                                                     text:@"text_panel_cat_initial"
-                                                 isObject:NO];
-            }
-        };
+- (void)didPressDragonInGameScene {
+    if (![self isOpenIcon:InventaryBarIconTypeMagicBook]) {
+        [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_dragon"]
+                                         text:@"text_panel_dragon_initial"
+                                     isObject:NO];
     }
-    
-    return _catNode;
 }
 
 
-- (MyScene *)sheepScene {
-    if (!_sheepScene) {
-        _sheepScene = [self sceneFromSkView:self.sheepSKView];
+- (void)didPressNinjaInGameScene {
+    if (![self isOpenIcon:InventaryBarIconTypeMagicBallNinja]) {
+        [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_ninja"]
+                                         text:@"text_panel_ninja_initial"
+                                     isObject:NO];
     }
-    
-    return _sheepScene;
 }
 
 
-- (NNKSheepNode *)sheepNode {
-    if (!_sheepNode) {
-        _sheepNode = [[NNKSheepNode alloc] initWithSize:self.sheepSKView.bounds.size];
-        __weak typeof(self) weakSelf = self;
-        _sheepNode.completionBlock = ^void(NNKSheepNode *node) {
-            if (![weakSelf isOpenIcon:InventaryBarIconTypeMagicBallSheep]) {
-                [weakSelf didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_sheep"]
-                                                     text:@"text_panel_sheep_initial"
-                                                 isObject:NO];
-            }
-        };
+- (void)didPressExtinguisherInGameScene {
+    BOOL isOpen = [self isOpenIcon:InventaryBarIconTypeExtinguisher];
+    if (!isOpen) {
+        [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeExtinguisher
+                                                       withFormat:InventaryIconShowingFull];
+        [self addViewOfType:InventaryBarIconTypeExtinguisher inView:self.inventary.extinguisher];
+        [self.sampleScene hideExtinguisher];
     }
-    
-    return _sheepNode;
 }
 
 
-- (NNKDragonNode *)dragonNode {
-    if (!_dragonNode) {
-        BOOL isOpenWrench = [self isOpenIcon:InventaryBarIconTypeMagicBook];
-        _dragonNode = [[NNKDragonNode alloc] initWithSize:self.dragonSKView.bounds.size
-                                           shouldHideBook:isOpenWrench];
-        __weak typeof(self) weakSelf = self;
-        _dragonNode.completionBlock = ^void(NNKDragonNode *node) {
-            if (![weakSelf isOpenIcon:InventaryBarIconTypeMagicBook]) {
-                [weakSelf didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_dragon"]
-                                                     text:@"text_panel_dragon_initial"
-                                                 isObject:NO];
-            }
-        };
-    }
-    
-    return _dragonNode;
+- (void)didPressDandelionInGameScene {
+    [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeDandelion
+                                                   withFormat:InventaryIconShowingFull];
+    [self addViewOfType:InventaryBarIconTypeDandelion inView:self.inventary.dandelion];
+
+    [self.sampleScene hideDandelion];
 }
 
 
-- (MyScene *)dragonScene {
-    if (!_dragonScene) {
-        _dragonScene = [self sceneFromSkView:self.dragonSKView];
-    }
-    
-    return _dragonScene;
+- (void)didPressSnailInGameScene {
+    [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeSnail
+                                                   withFormat:InventaryIconShowingFull];
+    [self addViewOfType:InventaryBarIconTypeSnail inView:self.inventary.snail];
+
+    [self.sampleScene hideSnail];
 }
 
 
-- (NNKNinjaNode *)ninjaNode {
-    if (!_ninjaNode) {
-        _ninjaNode = [[NNKNinjaNode alloc] initWithSize:self.ninjaSKView.bounds.size];
-        __weak typeof(self) weakSelf = self;
-        _ninjaNode.completionBlock = ^void() {
-            if (![weakSelf isOpenIcon:InventaryBarIconTypeMagicBallNinja]) {
-                [weakSelf didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_ninja"]
-                                                     text:@"text_panel_ninja_initial"
-                                                 isObject:NO];
-            }
-        };
-    }
-    
-    return _ninjaNode;
-}
-
-
-- (MyScene *)ninjaScene {
-    if (!_ninjaScene) {
-        _ninjaScene = [self sceneFromSkView:self.ninjaSKView];
-    }
-    
-    return _ninjaScene;
-}
-
-
-- (BlueHouseScene *)blueHouseScene {
-    if (!_blueHouseScene) {
-        _blueHouseScene = [BlueHouseScene sceneWithSize:self.blueHouseSKView.bounds.size];
-        _blueHouseScene.blueHouseDelegate = self;
-        _blueHouseScene.hideExtinguisher = [self isExtinguisherOpen];
-        _blueHouseScene.language = [NSBundle isRussian] ? BlueHouseLanguageRussian : BlueHouseLanguageEnglish;
-
-    }
-    
-    return _blueHouseScene;
+- (void)didPressBlueHouseInGameScene {
+    //    [self.sampleScene ]
 }
 
 
 - (void)updateInterface {
-    if ([self isOpenIcon:InventaryBarIconTypeDandelion]) {
-        [self.dandelionImage removeFromSuperview];
-    }
-    if ([self isOpenIcon:InventaryBarIconTypeSnail]) {
-        [self.snailImage removeFromSuperview];
-    }
+    [self hideObjectsOnInit];
     [self didChangeLanguageInMainScreenViewModel:nil];
 }
 
@@ -369,12 +278,12 @@
 }
 
 
-- (void)closeTopAndTextBarWithCompletion:(void(^)())completion {
+- (void)closeTopAndTextBarWithCompletion:(void (^)())completion {
     self.topBarTopConstraint.constant = 0;
     self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
     [UIView animateWithDuration:0.3 animations:^{
         [self.view layoutIfNeeded];
-    }completion:^(BOOL finished) {
+    } completion:^(BOOL finished) {
         if (completion) completion();
     }];
 }
@@ -405,21 +314,40 @@
 
 
 - (IBAction)showSettings:(id)sender {
-    [self.blueHouseScene closeDoor];
+    [self.sampleScene closeDoor];
     [self operOrCloseTopBarForType:MainScreenTopBarViewTypeSettings];
 }
 
 
 - (IBAction)showInventary:(id)sender {
-    [self.blueHouseScene closeDoor];
-    [self operOrCloseTopBarForType:MainScreenTopBarViewTypeInventary];
+    [self.sampleScene closeDoor];
+    self.isOpenLeftMenu = !self.isOpenLeftMenu;
+    if (self.isOpenLeftMenu) {
+        [self addContentToSideMenu];
+        self.leftMenuLeadingConstraint.constant = 0;
+    } else {
+        self.leftMenuLeadingConstraint.constant = - self.leftMenu.frame.size.width;
+    }
+    [UIView animateWithDuration:0.3 animations:^{
+        if (self.isOpenLeftMenu) {
+            self.scrollView.contentInset = UIEdgeInsetsMake(0, 0.9 * self.leftMenu.frame.size.width, 0, 0);
+        } else {
+            self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+        }
+        [self.view layoutIfNeeded];
+    } completion:^(BOOL finished) {
+            [self.scrollView setContentOffset:CGPointMake(0, self.scrollView.contentOffset.y) animated:YES];
+    }];
+
+//    [self operOrCloseTopBarForType:MainScreenTopBarViewTypeInventary];
 }
 
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    [self.dragableObject removeFromSuperview];
+    [super scrollViewDidScroll:scrollView];
+    [self.sampleScene removeDragableObject];
     [self closeTopAndTextBarWithCompletion:nil];
-    [self.blueHouseScene closeDoor];
+    [self.sampleScene closeDoor];
 }
 
 
@@ -431,10 +359,8 @@
 
 
 - (void)didChangeLanguageInMainScreenViewModel:(MainScreenViewModel *)viewModel {
-    self.blueHouseScene.language = [NSBundle isRussian] ? BlueHouseLanguageRussian : BlueHouseLanguageEnglish;
     [self.infiniteTableView reloadData];
-    [self.shadowPlayButton setImage:[UIImage imageNamed:NSLocalizedString(@"shadow_play_image", nil)] forState:UIControlStateNormal];
-    [self.schoolOfMagic setImage:[UIImage imageNamed:NSLocalizedString(@"school_of_magic_image", nil)] forState:UIControlStateNormal];
+    [self.sampleScene changeLanguage];
 }
 
 
@@ -444,48 +370,58 @@ didWantToOpenViewController:(UIViewController *)viewController {
 }
 
 
+- (UIView *)contentView {
+    UIScrollView *scrollView;
+    for (UIScrollView *view in self.view.subviews) {
+        if ([view isKindOfClass:[UIScrollView class]]) {
+            scrollView = view;
+        }
+    }
+    
+    return [scrollView.subviews firstObject];
+}
+
+
 - (void)didSwipeIconWithType:(SettingsBarIconType)type
                       inRect:(CGRect)rect
                relatedToView:(UIView *)view
                        image:(UIImage *)image {
-    [self.dragableObject removeFromSuperview];
-    CGRect startPosition = [self.view convertRect:rect fromView:view];
-    startPosition.origin.x += 5;
-    startPosition.origin.y += 5;
-    DragableButton *button = [[DragableButton alloc] initWithFrame:startPosition];
-    switch (type) {
-        case SettingsBarIconTypeSword:
-            button.correctRect = self.ninjaSKView.frame;
-            button.fullType = InventaryBarIconTypeMagicBallNinja;
-            button.hiddenType = InventaryBarIconTypeSword;
-            break;
-        case SettingsBarIconTypeWrench:
-            button.correctRect = self.catSKView.frame;
-            button.fullType = InventaryBarIconTypeMagicBallCat;
-            button.hiddenType = InventaryBarIconTypeWrench;
-            break;
-        case SettingsBarIconTypeSnail:
-            button.correctRect = self.goblinSKView.frame;
-            button.fullType = InventaryBarIconTypeWrench;
-            button.hiddenType = InventaryBarIconTypeSnail;
-            break;
-        case SettingsBarIconTypeDandelion:
-            button.correctRect = self.sheepSKView.frame;
-            button.fullType = InventaryBarIconTypeMagicBallSheep;
-            button.hiddenType = InventaryBarIconTypeDandelion;
-            break;
-        case SettingsBarIconTypeExtinguisher:
-            button.correctRect = self.dragonSKView.frame;
-            button.fullType = InventaryBarIconTypeMagicBook;
-            button.hiddenType = InventaryBarIconTypeExtinguisher;
-            break;
-        default:
-            break;
-    }
-    button.delegate = self;
-    [button setImage:image forState:UIControlStateNormal];
-    [self.view addSubview:button];
-    self.dragableObject = button;
+    CGRect newRect = [[self contentView] convertRect:rect fromView:view];
+    NSLog(@"%@", NSStringFromCGRect(newRect));
+        switch (type) {
+            case SettingsBarIconTypeSword:
+                [self.sampleScene createObjectWithImage:image
+                                                 ofType:InventaryBarIconTypeMagicBallNinja
+                                             hiddenType:InventaryBarIconTypeSword
+                                               position:newRect.origin];
+                break;
+            case SettingsBarIconTypeWrench:
+                [self.sampleScene createObjectWithImage:image
+                                                 ofType:InventaryBarIconTypeMagicBallCat
+                                             hiddenType:InventaryBarIconTypeWrench
+                                               position:newRect.origin];
+                break;
+            case SettingsBarIconTypeSnail:
+                [self.sampleScene createObjectWithImage:image
+                                                 ofType:InventaryBarIconTypeWrench
+                                             hiddenType:InventaryBarIconTypeSnail
+                                               position:newRect.origin];
+                break;
+            case SettingsBarIconTypeDandelion:
+                [self.sampleScene createObjectWithImage:image
+                                                 ofType:InventaryBarIconTypeMagicBallSheep
+                                             hiddenType:InventaryBarIconTypeDandelion
+                                               position:newRect.origin];
+                break;
+            case SettingsBarIconTypeExtinguisher:
+                [self.sampleScene createObjectWithImage:image
+                                                 ofType:InventaryBarIconTypeMagicBook
+                                             hiddenType:InventaryBarIconTypeExtinguisher
+                                               position:newRect.origin];
+                break;
+            default:
+                break;
+        }
 }
 
 
@@ -495,74 +431,63 @@ didWantToOpenViewController:(UIViewController *)viewController {
 }
 
 
-- (void)dandelionPress {
-    [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeDandelion
+- (void)putButtonOnRightPositionWithType:(InventaryBarIconType)fullType
+                              hiddenType:(InventaryBarIconType)hiddenType {
+    if (fullType == InventaryBarIconTypeUnknown) return;
+    [[InventaryContentHandler sharedHandler] markItemWithType:fullType
                                                    withFormat:InventaryIconShowingFull];
-    [self.dandelionImage removeFromSuperview];
-}
-
-
-- (void)snailPress {
-    [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeSnail
-                                                   withFormat:InventaryIconShowingFull];
-    [self.snailImage removeFromSuperview];
-}
-
-
-- (BOOL)correctTargetPositionForButton:(DragableButton *)button {
-    BOOL correctPosition = CGRectIntersectsRect([self.scrollView convertRect:button.frame fromView:self.view], button.correctRect);
-    if (!correctPosition) {
-        [button removeFromSuperview];
-    }
-    
-    return correctPosition;
-}
-
-
-- (void)putButtonOnRightPosition:(DragableButton *)button {
-    if (button.fullType == InventaryBarIconTypeUnknown) return;
-    [[InventaryContentHandler sharedHandler] markItemWithType:button.fullType
-                                                   withFormat:InventaryIconShowingFull];
-    [[InventaryContentHandler sharedHandler] markItemWithType:button.hiddenType
+    [[InventaryContentHandler sharedHandler] markItemWithType:hiddenType
                                                    withFormat:InventaryIconShowingHidden];
-    [button removeFromSuperview];
-    switch (button.fullType) {
-        case InventaryBarIconTypeWrench:
+    [self.sampleScene removeDragableObject];
+    switch (fullType) {
+        case InventaryBarIconTypeWrench: {
             [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_goblin"]
                                              text:@"text_panel_goblin_final"
                                          isObject:NO];
-            [self.goblinNode removeWrench];
+            [self addViewOfType:InventaryBarIconTypeWrench inView:self.inventary.wrench];
+            [self addViewOfType:InventaryBarIconTypeSnail inView:self.inventary.snail];
+
+            [self.sampleScene hideWrench];
             break;
-        case InventaryBarIconTypeMagicBook:
+        }
+            
+        case InventaryBarIconTypeMagicBook: {
             [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_dragon"]
                                              text:@"text_panel_dragon_final"
                                          isObject:NO];
-            [self.dragonNode removeBook];
+            [self addViewOfType:InventaryBarIconTypeMagicBook inView:self.inventary.book];
+            [self addViewOfType:InventaryBarIconTypeExtinguisher inView:self.inventary.extinguisher];
+            [self.sampleScene hideBook];
             break;
-        case InventaryBarIconTypeMagicBallCat:
+        }
+            
+        case InventaryBarIconTypeMagicBallCat: {
             [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_cat"]
                                              text:@"text_panel_cat_final"
                                          isObject:NO];
-        case InventaryBarIconTypeMagicBallNinja:
+            [self addViewOfType:InventaryBarIconTypeMagicBall inView:self.inventary.magicBalls];
+            [self addViewOfType:InventaryBarIconTypeWrench inView:self.inventary.wrench];
+            break;
+        }
+            
+        case InventaryBarIconTypeMagicBallNinja: {
             [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_ninja"]
                                              text:@"text_panel_ninja_final"
                                          isObject:NO];
+            [self addViewOfType:InventaryBarIconTypeMagicBall inView:self.inventary.magicBalls];
+            [self addViewOfType:InventaryBarIconTypeSword inView:self.inventary.sword];
             break;
-        case InventaryBarIconTypeMagicBallSheep:
+        }
+            
+        case InventaryBarIconTypeMagicBallSheep: {
             [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_sheep"]
                                              text:@"text_panel_sheep_final"
                                          isObject:NO];
+            [self addViewOfType:InventaryBarIconTypeMagicBall inView:self.inventary.magicBalls];
+            [self addViewOfType:InventaryBarIconTypeDandelion inView:self.inventary.dandelion];
             break;
-        default:
-            break;
-    }
-}
-
-
-- (void)putMagicBallButtonOnRightPosition:(DragableButton *)button {
-    switch (button.hiddenType) {
-        case InventaryBarIconTypeWrench:
-            break;
+        }
+            
         default: {
             break;
         }
@@ -570,7 +495,7 @@ didWantToOpenViewController:(UIViewController *)viewController {
 }
 
 
-- (void)didStartDragButton:(DragableButton *)button {
+- (void)didStartMoveDragableNode {
     [self closeTopAndTextBarWithCompletion:nil];
 }
 
@@ -593,18 +518,8 @@ didWantToOpenViewController:(UIViewController *)viewController {
 }
 
 
-- (MyScene *)sceneFromSkView:(SKView *)view {
-    MyScene *scene = [MyScene sceneWithSize:view.frame.size];
-    scene.backgroundColor = [UIColor clearColor];
-    
-    [view presentScene:scene];
-    
-    return scene;
-}
-
-
 - (CGFloat)textBarHiddenPosition {
-    return -self.textBarSuperView.frame.size.height - 10;
+    return -self.textBarSuperView.frame.size.height - 100;
 }
 
 
@@ -613,31 +528,84 @@ didWantToOpenViewController:(UIViewController *)viewController {
 }
 
 
-- (BOOL)isExtinguisherOpen {
-    InventaryContentHandler *handler = [InventaryContentHandler sharedHandler];
-    InventaryIconShowing iconShowing = [handler formatForItemType:InventaryBarIconTypeExtinguisher];
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskLandscape;
+}
+
+
+- (void)configureSideMenu {
+    self.inventary = [SideMenu sideMenu];
+    self.inventary.frame = CGRectMake(0, 0, self.leftMenu.frame.size.width, self.leftMenu.frame.size.height);
+    [self.leftMenu addSubview:self.inventary];
+    [self.leftMenu addConstraints:[self constraintsFromSide:self.leftMenu toSide:self.inventary]];
+    [self.leftMenu layoutIfNeeded];
+}
+
+
+- (NSArray *)constraintsFromSide:(UIView *)first toSide:(UIView *)second {
+    NSLayoutConstraint *top = [NSLayoutConstraint constraintWithItem:first
+                                                           attribute:NSLayoutAttributeTop
+                                                           relatedBy:NSLayoutRelationEqual
+                                                              toItem:second
+                                                           attribute:NSLayoutAttributeTop
+                                                          multiplier:1
+                                                            constant:0];
+    NSLayoutConstraint *leading = [NSLayoutConstraint constraintWithItem:first
+                                                               attribute:NSLayoutAttributeLeading
+                                                               relatedBy:NSLayoutRelationEqual
+                                                                  toItem:second
+                                                               attribute:NSLayoutAttributeLeading
+                                                              multiplier:1
+                                                                constant:0];
     
-    return iconShowing != InventaryIconShowingEmpty;
+    NSLayoutConstraint *bottom = [NSLayoutConstraint constraintWithItem:first
+                                                              attribute:NSLayoutAttributeBottom
+                                                              relatedBy:NSLayoutRelationEqual
+                                                                 toItem:second
+                                                              attribute:NSLayoutAttributeBottom
+                                                             multiplier:1
+                                                               constant:0];
+    
+    NSLayoutConstraint *trailing = [NSLayoutConstraint constraintWithItem:first
+                                                                attribute:NSLayoutAttributeTrailing
+                                                                relatedBy:NSLayoutRelationEqual
+                                                                   toItem:second
+                                                                attribute:NSLayoutAttributeTrailing
+                                                               multiplier:1
+                                                                 constant:0];
+    
+    return @[top, leading, bottom, trailing];
 }
 
 
-- (void)setExtinguisherOpen:(BOOL)extinguisherOpen {
-    if (extinguisherOpen) {
-        InventaryContentHandler *handler = [InventaryContentHandler sharedHandler];
-        [handler markItemWithType:InventaryBarIconTypeExtinguisher withFormat:InventaryIconShowingFull];
+- (void)addContentToSideMenu {
+    self.viewModel.type = MainScreenTopBarViewTypeInventary;
+    SideMenu *inventary = self.inventary;
+    [self addViewOfType:InventaryBarIconTypeIslandMap inView:inventary.island];
+    [self addViewOfType:InventaryBarIconTypeMagicWand inView:inventary.magicWand];
+    [self addViewOfType:InventaryBarIconTypeBottleOfMagic inView:inventary.bottleOfMagic];
+    [self addViewOfType:InventaryBarIconTypeDandelion inView:inventary.dandelion];
+    [self addViewOfType:InventaryBarIconTypeExtinguisher inView:inventary.extinguisher];
+    [self addViewOfType:InventaryBarIconTypeMagicBall inView:inventary.magicBalls];
+    [self addViewOfType:InventaryBarIconTypeMagicBook inView:inventary.book];
+    [self addViewOfType:InventaryBarIconTypeMedal inView:inventary.medal];
+    [self addViewOfType:InventaryBarIconTypeSnail inView:inventary.snail];
+    [self addViewOfType:InventaryBarIconTypeSword inView:inventary.sword];
+    [self addViewOfType:InventaryBarIconTypeWrench inView:inventary.wrench];
+}
+
+
+- (void)addViewOfType:(InventaryBarIconType)type inView:(UIView *)view {
+    for (UIView *subview in view.subviews) {
+        [subview removeFromSuperview];
     }
-}
-
-
-- (void)didTouchExtinguisher {
-    [self setExtinguisherOpen:YES];
-    self.blueHouseScene.hideExtinguisher = YES;
-}
-
-
-- (void)didTouchPlayer {
-    NNWVideoViewController *viewController = [NNWVideoViewController instantiate];
-    [self presentViewController:viewController animated:YES completion:nil];
+    self.viewModel.type = MainScreenTopBarViewTypeInventary;
+    view.backgroundColor = [UIColor clearColor];
+    UIView *childView = [self.viewModel viewForIndex:type inRect:view.frame parentViewController:self];
+    childView.translatesAutoresizingMaskIntoConstraints = NO;
+    [view addSubview:childView];
+    [view addConstraints:[self constraintsFromSide:view toSide:childView]];
+    [view layoutIfNeeded];
 }
 
 @end

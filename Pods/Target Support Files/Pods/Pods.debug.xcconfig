@@ -1,6 +1,6 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/TouchXML" "${PODS_ROOT}/Headers/Public/WYPopoverController" "${PODS_ROOT}/Headers/Public/ZipArchive" $(SDKROOT)/usr/include/libxml2
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/TouchXML" -isystem "${PODS_ROOT}/Headers/Public/WYPopoverController" -isystem "${PODS_ROOT}/Headers/Public/ZipArchive"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-TouchXML" -l"Pods-WYPopoverController" -l"Pods-ZipArchive" -l"xml2" -l"z" -framework "CoreGraphics" -framework "QuartzCore" -framework "UIKit"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/PIOSpriteKit" "${PODS_ROOT}/Headers/Public/TouchXML" "${PODS_ROOT}/Headers/Public/WYPopoverController" "${PODS_ROOT}/Headers/Public/ZipArchive" $(SDKROOT)/usr/include/libxml2
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/PIOSpriteKit" -isystem "${PODS_ROOT}/Headers/Public/TouchXML" -isystem "${PODS_ROOT}/Headers/Public/WYPopoverController" -isystem "${PODS_ROOT}/Headers/Public/ZipArchive"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-PIOSpriteKit" -l"Pods-TouchXML" -l"Pods-WYPopoverController" -l"Pods-ZipArchive" -l"xml2" -l"z" -framework "CoreGraphics" -framework "QuartzCore" -framework "SpriteKit" -framework "UIKit"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods

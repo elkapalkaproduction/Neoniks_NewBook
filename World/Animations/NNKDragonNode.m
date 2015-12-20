@@ -21,20 +21,20 @@
 @implementation NNKDragonNode
 
 - (instancetype)initWithSize:(CGSize)size {
+    return [self initWithSize:size shouldHideBook:NO];
+}
+
+
+- (instancetype)initWithSize:(CGSize)size shouldHideBook:(BOOL)shouldHideBook {
     self = [super init];
     if (self) {
+        self.size = size;
         [self addChild:[self backgroundNodeWithSize:size texture:DRAGON_ANIM_TEX_DRAGON_BACKGROUND]];
         _atlass = [SKTextureAtlas atlasNamed:DRAGON_ANIM_ATLAS_NAME];
         _spriteNode = [self mainNodeWithSize:size];
         [self addChild:_spriteNode];
     }
     
-    return self;
-}
-
-
-- (instancetype)initWithSize:(CGSize)size shouldHideBook:(BOOL)shouldHideBook {
-    self = [self initWithSize:size];
     if (shouldHideBook) return self;
     
     _bookNode = [self backgroundNodeWithSize:size texture:DRAGON_ANIM_TEX_DRAGON_BOOK];

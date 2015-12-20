@@ -34,7 +34,11 @@
 
 
 - (InventaryItemOption *)inventaryOptionForType:(InventaryBarIconType)type {
-    return self.items[type];
+    if (type < self.items.count) {
+        return self.items[type];
+    } else {
+        return nil;
+    }
 }
 
 

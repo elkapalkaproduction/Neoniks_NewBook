@@ -25,6 +25,13 @@
 
 @implementation SchoolOfMagicViewController
 
++ (instancetype)instantiate {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    return [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(self)];
+}
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue destinationViewController] isKindOfClass:[MagicTableViewController class]]) {
         MagicTableViewController *table = segue.destinationViewController;

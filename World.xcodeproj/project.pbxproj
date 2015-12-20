@@ -81,9 +81,7 @@
 		753D72851BA4D56C006DC74A /* dragon_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 753D72831BA4D56C006DC74A /* dragon_anim.atlasc */; };
 		753D72931BA4E310006DC74A /* NNKNinjaNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 753D72901BA4E310006DC74A /* NNKNinjaNode.m */; };
 		753D72941BA4E310006DC74A /* ninja_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 753D72911BA4E310006DC74A /* ninja_anim.atlasc */; };
-		753D72DE1BA577EC006DC74A /* BlueHouseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 753D72D91BA577EC006DC74A /* BlueHouseScene.m */; };
 		753D72DF1BA577EC006DC74A /* NNKBlueHouseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 753D72DB1BA577EC006DC74A /* NNKBlueHouseNode.m */; };
-		753D72E01BA577EC006DC74A /* blue_house_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 753D72DC1BA577EC006DC74A /* blue_house_anim.atlasc */; };
 		753D72E21BA76C61006DC74A /* a-piece-of-wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 753D72E11BA76C61006DC74A /* a-piece-of-wood.png */; };
 		75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */; };
 		75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423AA21A7D8A4000D2C36E /* BaseViewController.m */; };
@@ -126,6 +124,68 @@
 		75AD2E9F1ADAD424002EE482 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AD2E9E1ADAD424002EE482 /* Book.storyboard */; };
 		75AD2EA11ADAD65B002EE482 /* NewBookViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2EA01ADAD65B002EE482 /* NewBookViewControllerTests.m */; };
 		75AD2EA31ADAD710002EE482 /* ChaptersViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2EA21ADAD710002EE482 /* ChaptersViewControllerTests.m */; };
+		75AE57EC1BA9634E00DDD552 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AE57EB1BA9634E00DDD552 /* GameScene.m */; };
+		75AE57F21BA9639E00DDD552 /* ExampleTiledNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AE57F01BA9639E00DDD552 /* ExampleTiledNode.m */; };
+		75AE57FD1BA963A500DDD552 /* dandelion.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE57F31BA963A500DDD552 /* dandelion.png */; };
+		75AE57FE1BA963A500DDD552 /* island.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE57F41BA963A500DDD552 /* island.png */; };
+		75AE57FF1BA963A500DDD552 /* lamp_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE57F51BA963A500DDD552 /* lamp_off.png */; };
+		75AE58001BA963A500DDD552 /* school_of_magic_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE57F61BA963A500DDD552 /* school_of_magic_eng.png */; };
+		75AE58011BA963A500DDD552 /* school_of_magic_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE57F71BA963A500DDD552 /* school_of_magic_rus.png */; };
+		75AE58021BA963A500DDD552 /* shadow_play_eng.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE57F81BA963A500DDD552 /* shadow_play_eng.png */; };
+		75AE58031BA963A500DDD552 /* shadow_play_rus.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE57F91BA963A500DDD552 /* shadow_play_rus.png */; };
+		75AE58041BA963A500DDD552 /* snail.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE57FA1BA963A500DDD552 /* snail.png */; };
+		75AE58051BA963A500DDD552 /* tree_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE57FB1BA963A500DDD552 /* tree_left.png */; };
+		75AE58061BA963A500DDD552 /* tree_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE57FC1BA963A500DDD552 /* tree_right.png */; };
+		75AE58381BA963B200DDD552 /* menu_512x512_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58081BA963B200DDD552 /* menu_512x512_0.png */; };
+		75AE58391BA963B200DDD552 /* menu_512x512_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58091BA963B200DDD552 /* menu_512x512_1.png */; };
+		75AE583A1BA963B200DDD552 /* menu_512x512_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE580A1BA963B200DDD552 /* menu_512x512_10.png */; };
+		75AE583B1BA963B200DDD552 /* menu_512x512_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE580B1BA963B200DDD552 /* menu_512x512_11.png */; };
+		75AE583C1BA963B200DDD552 /* menu_512x512_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE580C1BA963B200DDD552 /* menu_512x512_12.png */; };
+		75AE583D1BA963B300DDD552 /* menu_512x512_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE580D1BA963B200DDD552 /* menu_512x512_13.png */; };
+		75AE583E1BA963B300DDD552 /* menu_512x512_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE580E1BA963B200DDD552 /* menu_512x512_14.png */; };
+		75AE583F1BA963B300DDD552 /* menu_512x512_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE580F1BA963B200DDD552 /* menu_512x512_15.png */; };
+		75AE58401BA963B300DDD552 /* menu_512x512_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58101BA963B200DDD552 /* menu_512x512_16.png */; };
+		75AE58411BA963B300DDD552 /* menu_512x512_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58111BA963B200DDD552 /* menu_512x512_17.png */; };
+		75AE58421BA963B300DDD552 /* menu_512x512_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58121BA963B200DDD552 /* menu_512x512_18.png */; };
+		75AE58431BA963B300DDD552 /* menu_512x512_19.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58131BA963B200DDD552 /* menu_512x512_19.png */; };
+		75AE58441BA963B300DDD552 /* menu_512x512_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58141BA963B200DDD552 /* menu_512x512_2.png */; };
+		75AE58451BA963B300DDD552 /* menu_512x512_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58151BA963B200DDD552 /* menu_512x512_20.png */; };
+		75AE58461BA963B300DDD552 /* menu_512x512_21.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58161BA963B200DDD552 /* menu_512x512_21.png */; };
+		75AE58471BA963B300DDD552 /* menu_512x512_22.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58171BA963B200DDD552 /* menu_512x512_22.png */; };
+		75AE58481BA963B300DDD552 /* menu_512x512_23.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58181BA963B200DDD552 /* menu_512x512_23.png */; };
+		75AE58491BA963B300DDD552 /* menu_512x512_24.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58191BA963B200DDD552 /* menu_512x512_24.png */; };
+		75AE584A1BA963B300DDD552 /* menu_512x512_25.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE581A1BA963B200DDD552 /* menu_512x512_25.png */; };
+		75AE584B1BA963B300DDD552 /* menu_512x512_26.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE581B1BA963B200DDD552 /* menu_512x512_26.png */; };
+		75AE584C1BA963B300DDD552 /* menu_512x512_27.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE581C1BA963B200DDD552 /* menu_512x512_27.png */; };
+		75AE584D1BA963B300DDD552 /* menu_512x512_28.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE581D1BA963B200DDD552 /* menu_512x512_28.png */; };
+		75AE584E1BA963B300DDD552 /* menu_512x512_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE581E1BA963B200DDD552 /* menu_512x512_29.png */; };
+		75AE584F1BA963B300DDD552 /* menu_512x512_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE581F1BA963B200DDD552 /* menu_512x512_3.png */; };
+		75AE58501BA963B300DDD552 /* menu_512x512_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58201BA963B200DDD552 /* menu_512x512_30.png */; };
+		75AE58511BA963B300DDD552 /* menu_512x512_31.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58211BA963B200DDD552 /* menu_512x512_31.png */; };
+		75AE58521BA963B300DDD552 /* menu_512x512_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58221BA963B200DDD552 /* menu_512x512_32.png */; };
+		75AE58531BA963B300DDD552 /* menu_512x512_33.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58231BA963B200DDD552 /* menu_512x512_33.png */; };
+		75AE58541BA963B300DDD552 /* menu_512x512_34.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58241BA963B200DDD552 /* menu_512x512_34.png */; };
+		75AE58551BA963B300DDD552 /* menu_512x512_35.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58251BA963B200DDD552 /* menu_512x512_35.png */; };
+		75AE58561BA963B300DDD552 /* menu_512x512_36.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58261BA963B200DDD552 /* menu_512x512_36.png */; };
+		75AE58571BA963B300DDD552 /* menu_512x512_37.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58271BA963B200DDD552 /* menu_512x512_37.png */; };
+		75AE58581BA963B300DDD552 /* menu_512x512_38.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58281BA963B200DDD552 /* menu_512x512_38.png */; };
+		75AE58591BA963B300DDD552 /* menu_512x512_39.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58291BA963B200DDD552 /* menu_512x512_39.png */; };
+		75AE585A1BA963B300DDD552 /* menu_512x512_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE582A1BA963B200DDD552 /* menu_512x512_4.png */; };
+		75AE585B1BA963B300DDD552 /* menu_512x512_40.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE582B1BA963B200DDD552 /* menu_512x512_40.png */; };
+		75AE585C1BA963B300DDD552 /* menu_512x512_41.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE582C1BA963B200DDD552 /* menu_512x512_41.png */; };
+		75AE585D1BA963B300DDD552 /* menu_512x512_42.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE582D1BA963B200DDD552 /* menu_512x512_42.png */; };
+		75AE585E1BA963B300DDD552 /* menu_512x512_43.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE582E1BA963B200DDD552 /* menu_512x512_43.png */; };
+		75AE585F1BA963B300DDD552 /* menu_512x512_44.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE582F1BA963B200DDD552 /* menu_512x512_44.png */; };
+		75AE58601BA963B300DDD552 /* menu_512x512_45.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58301BA963B200DDD552 /* menu_512x512_45.png */; };
+		75AE58611BA963B300DDD552 /* menu_512x512_46.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58311BA963B200DDD552 /* menu_512x512_46.png */; };
+		75AE58621BA963B300DDD552 /* menu_512x512_47.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58321BA963B200DDD552 /* menu_512x512_47.png */; };
+		75AE58631BA963B300DDD552 /* menu_512x512_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58331BA963B200DDD552 /* menu_512x512_5.png */; };
+		75AE58641BA963B300DDD552 /* menu_512x512_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58341BA963B200DDD552 /* menu_512x512_6.png */; };
+		75AE58651BA963B300DDD552 /* menu_512x512_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58351BA963B200DDD552 /* menu_512x512_7.png */; };
+		75AE58661BA963B300DDD552 /* menu_512x512_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58361BA963B200DDD552 /* menu_512x512_8.png */; };
+		75AE58671BA963B300DDD552 /* menu_512x512_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58371BA963B200DDD552 /* menu_512x512_9.png */; };
+		75AE586D1BA9B4D900DDD552 /* DragableSpriteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AE586C1BA9B4D900DDD552 /* DragableSpriteNode.m */; };
+		75B357D71C1D7414000DFC4E /* blue_house_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75B357D51C1D7414000DFC4E /* blue_house_anim.atlasc */; };
 		75B627F41B1CFBBD000A3172 /* NNKPhoebeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B627F11B1CFBBD000A3172 /* NNKPhoebeNode.m */; };
 		75B627F51B1CFBBD000A3172 /* NNKSchoolNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B627F31B1CFBBD000A3172 /* NNKSchoolNode.m */; };
 		75B627FA1B1CFBD2000A3172 /* phoebe_frames.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75B627F61B1CFBD2000A3172 /* phoebe_frames.atlasc */; };
@@ -392,6 +452,9 @@
 		75EBF3271AAB7BB4005F5E8C /* UIImage+Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBF3261AAB7BB4005F5E8C /* UIImage+Colors.m */; };
 		75EBF32A1AAB7D29005F5E8C /* IslandViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EBF3291AAB7D29005F5E8C /* IslandViewModel.m */; };
 		75EC14161A7ECF460086803E /* MagicSchoolAnswersHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EC14151A7ECF460086803E /* MagicSchoolAnswersHandler.m */; };
+		75EC74841C25EB6600CE0E25 /* SideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EC74831C25EB6600CE0E25 /* SideMenu.m */; };
+		75EC74861C25EB7000CE0E25 /* SideMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75EC74851C25EB7000CE0E25 /* SideMenu.xib */; };
+		75EC74881C25EBA600CE0E25 /* backing2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EC74871C25EBA600CE0E25 /* backing2.png */; };
 		75EDA1841A83FBCA002546E0 /* shadow_wrong_position.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75EDA1831A83FBCA002546E0 /* shadow_wrong_position.plist */; };
 		75EDA1871A83FE7E002546E0 /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDA1861A83FE7E002546E0 /* Storage.m */; };
 		75EDA1921A840F31002546E0 /* NNWVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDA18F1A840F31002546E0 /* NNWVideoViewController.m */; };
@@ -520,12 +583,8 @@
 		753D72901BA4E310006DC74A /* NNKNinjaNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKNinjaNode.m; sourceTree = "<group>"; };
 		753D72911BA4E310006DC74A /* ninja_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ninja_anim.atlasc; sourceTree = "<group>"; };
 		753D72921BA4E310006DC74A /* ninja_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ninja_anim.h; sourceTree = "<group>"; };
-		753D72D81BA577EB006DC74A /* BlueHouseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueHouseScene.h; sourceTree = "<group>"; };
-		753D72D91BA577EC006DC74A /* BlueHouseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueHouseScene.m; sourceTree = "<group>"; };
 		753D72DA1BA577EC006DC74A /* NNKBlueHouseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKBlueHouseNode.h; sourceTree = "<group>"; };
 		753D72DB1BA577EC006DC74A /* NNKBlueHouseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKBlueHouseNode.m; sourceTree = "<group>"; };
-		753D72DC1BA577EC006DC74A /* blue_house_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = blue_house_anim.atlasc; sourceTree = "<group>"; };
-		753D72DD1BA577EC006DC74A /* blue_house_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blue_house_anim.h; sourceTree = "<group>"; };
 		753D72E11BA76C61006DC74A /* a-piece-of-wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a-piece-of-wood.png"; sourceTree = "<group>"; };
 		75423A9C1A7D826A00D2C36E /* SchoolOfMagicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolOfMagicViewController.h; sourceTree = "<group>"; };
 		75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolOfMagicViewController.m; sourceTree = "<group>"; };
@@ -596,6 +655,72 @@
 		75AD2E9E1ADAD424002EE482 /* Book.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Book.storyboard; sourceTree = "<group>"; };
 		75AD2EA01ADAD65B002EE482 /* NewBookViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBookViewControllerTests.m; sourceTree = "<group>"; };
 		75AD2EA21ADAD710002EE482 /* ChaptersViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaptersViewControllerTests.m; sourceTree = "<group>"; };
+		75AE57EA1BA9634E00DDD552 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		75AE57EB1BA9634E00DDD552 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		75AE57EF1BA9639E00DDD552 /* ExampleTiledNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTiledNode.h; sourceTree = "<group>"; };
+		75AE57F01BA9639E00DDD552 /* ExampleTiledNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTiledNode.m; sourceTree = "<group>"; };
+		75AE57F31BA963A500DDD552 /* dandelion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dandelion.png; sourceTree = "<group>"; };
+		75AE57F41BA963A500DDD552 /* island.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = island.png; sourceTree = "<group>"; };
+		75AE57F51BA963A500DDD552 /* lamp_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_off.png; sourceTree = "<group>"; };
+		75AE57F61BA963A500DDD552 /* school_of_magic_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school_of_magic_eng.png; sourceTree = "<group>"; };
+		75AE57F71BA963A500DDD552 /* school_of_magic_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school_of_magic_rus.png; sourceTree = "<group>"; };
+		75AE57F81BA963A500DDD552 /* shadow_play_eng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow_play_eng.png; sourceTree = "<group>"; };
+		75AE57F91BA963A500DDD552 /* shadow_play_rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow_play_rus.png; sourceTree = "<group>"; };
+		75AE57FA1BA963A500DDD552 /* snail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snail.png; sourceTree = "<group>"; };
+		75AE57FB1BA963A500DDD552 /* tree_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree_left.png; sourceTree = "<group>"; };
+		75AE57FC1BA963A500DDD552 /* tree_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree_right.png; sourceTree = "<group>"; };
+		75AE58081BA963B200DDD552 /* menu_512x512_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_0.png; sourceTree = "<group>"; };
+		75AE58091BA963B200DDD552 /* menu_512x512_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_1.png; sourceTree = "<group>"; };
+		75AE580A1BA963B200DDD552 /* menu_512x512_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_10.png; sourceTree = "<group>"; };
+		75AE580B1BA963B200DDD552 /* menu_512x512_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_11.png; sourceTree = "<group>"; };
+		75AE580C1BA963B200DDD552 /* menu_512x512_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_12.png; sourceTree = "<group>"; };
+		75AE580D1BA963B200DDD552 /* menu_512x512_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_13.png; sourceTree = "<group>"; };
+		75AE580E1BA963B200DDD552 /* menu_512x512_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_14.png; sourceTree = "<group>"; };
+		75AE580F1BA963B200DDD552 /* menu_512x512_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_15.png; sourceTree = "<group>"; };
+		75AE58101BA963B200DDD552 /* menu_512x512_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_16.png; sourceTree = "<group>"; };
+		75AE58111BA963B200DDD552 /* menu_512x512_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_17.png; sourceTree = "<group>"; };
+		75AE58121BA963B200DDD552 /* menu_512x512_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_18.png; sourceTree = "<group>"; };
+		75AE58131BA963B200DDD552 /* menu_512x512_19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_19.png; sourceTree = "<group>"; };
+		75AE58141BA963B200DDD552 /* menu_512x512_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_2.png; sourceTree = "<group>"; };
+		75AE58151BA963B200DDD552 /* menu_512x512_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_20.png; sourceTree = "<group>"; };
+		75AE58161BA963B200DDD552 /* menu_512x512_21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_21.png; sourceTree = "<group>"; };
+		75AE58171BA963B200DDD552 /* menu_512x512_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_22.png; sourceTree = "<group>"; };
+		75AE58181BA963B200DDD552 /* menu_512x512_23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_23.png; sourceTree = "<group>"; };
+		75AE58191BA963B200DDD552 /* menu_512x512_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_24.png; sourceTree = "<group>"; };
+		75AE581A1BA963B200DDD552 /* menu_512x512_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_25.png; sourceTree = "<group>"; };
+		75AE581B1BA963B200DDD552 /* menu_512x512_26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_26.png; sourceTree = "<group>"; };
+		75AE581C1BA963B200DDD552 /* menu_512x512_27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_27.png; sourceTree = "<group>"; };
+		75AE581D1BA963B200DDD552 /* menu_512x512_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_28.png; sourceTree = "<group>"; };
+		75AE581E1BA963B200DDD552 /* menu_512x512_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_29.png; sourceTree = "<group>"; };
+		75AE581F1BA963B200DDD552 /* menu_512x512_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_3.png; sourceTree = "<group>"; };
+		75AE58201BA963B200DDD552 /* menu_512x512_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_30.png; sourceTree = "<group>"; };
+		75AE58211BA963B200DDD552 /* menu_512x512_31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_31.png; sourceTree = "<group>"; };
+		75AE58221BA963B200DDD552 /* menu_512x512_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_32.png; sourceTree = "<group>"; };
+		75AE58231BA963B200DDD552 /* menu_512x512_33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_33.png; sourceTree = "<group>"; };
+		75AE58241BA963B200DDD552 /* menu_512x512_34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_34.png; sourceTree = "<group>"; };
+		75AE58251BA963B200DDD552 /* menu_512x512_35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_35.png; sourceTree = "<group>"; };
+		75AE58261BA963B200DDD552 /* menu_512x512_36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_36.png; sourceTree = "<group>"; };
+		75AE58271BA963B200DDD552 /* menu_512x512_37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_37.png; sourceTree = "<group>"; };
+		75AE58281BA963B200DDD552 /* menu_512x512_38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_38.png; sourceTree = "<group>"; };
+		75AE58291BA963B200DDD552 /* menu_512x512_39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_39.png; sourceTree = "<group>"; };
+		75AE582A1BA963B200DDD552 /* menu_512x512_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_4.png; sourceTree = "<group>"; };
+		75AE582B1BA963B200DDD552 /* menu_512x512_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_40.png; sourceTree = "<group>"; };
+		75AE582C1BA963B200DDD552 /* menu_512x512_41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_41.png; sourceTree = "<group>"; };
+		75AE582D1BA963B200DDD552 /* menu_512x512_42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_42.png; sourceTree = "<group>"; };
+		75AE582E1BA963B200DDD552 /* menu_512x512_43.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_43.png; sourceTree = "<group>"; };
+		75AE582F1BA963B200DDD552 /* menu_512x512_44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_44.png; sourceTree = "<group>"; };
+		75AE58301BA963B200DDD552 /* menu_512x512_45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_45.png; sourceTree = "<group>"; };
+		75AE58311BA963B200DDD552 /* menu_512x512_46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_46.png; sourceTree = "<group>"; };
+		75AE58321BA963B200DDD552 /* menu_512x512_47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_47.png; sourceTree = "<group>"; };
+		75AE58331BA963B200DDD552 /* menu_512x512_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_5.png; sourceTree = "<group>"; };
+		75AE58341BA963B200DDD552 /* menu_512x512_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_6.png; sourceTree = "<group>"; };
+		75AE58351BA963B200DDD552 /* menu_512x512_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_7.png; sourceTree = "<group>"; };
+		75AE58361BA963B200DDD552 /* menu_512x512_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_8.png; sourceTree = "<group>"; };
+		75AE58371BA963B200DDD552 /* menu_512x512_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_9.png; sourceTree = "<group>"; };
+		75AE586B1BA9B4D900DDD552 /* DragableSpriteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragableSpriteNode.h; sourceTree = "<group>"; };
+		75AE586C1BA9B4D900DDD552 /* DragableSpriteNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragableSpriteNode.m; sourceTree = "<group>"; };
+		75B357D51C1D7414000DFC4E /* blue_house_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = blue_house_anim.atlasc; sourceTree = "<group>"; };
+		75B357D61C1D7414000DFC4E /* blue_house_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blue_house_anim.h; sourceTree = "<group>"; };
 		75B627F01B1CFBBD000A3172 /* NNKPhoebeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKPhoebeNode.h; sourceTree = "<group>"; };
 		75B627F11B1CFBBD000A3172 /* NNKPhoebeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKPhoebeNode.m; sourceTree = "<group>"; };
 		75B627F21B1CFBBD000A3172 /* NNKSchoolNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKSchoolNode.h; sourceTree = "<group>"; };
@@ -899,6 +1024,10 @@
 		75EBF3291AAB7D29005F5E8C /* IslandViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IslandViewModel.m; sourceTree = "<group>"; };
 		75EC14141A7ECF460086803E /* MagicSchoolAnswersHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicSchoolAnswersHandler.h; sourceTree = "<group>"; };
 		75EC14151A7ECF460086803E /* MagicSchoolAnswersHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicSchoolAnswersHandler.m; sourceTree = "<group>"; };
+		75EC74821C25EB6600CE0E25 /* SideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenu.h; sourceTree = "<group>"; };
+		75EC74831C25EB6600CE0E25 /* SideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenu.m; sourceTree = "<group>"; };
+		75EC74851C25EB7000CE0E25 /* SideMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenu.xib; sourceTree = "<group>"; };
+		75EC74871C25EBA600CE0E25 /* backing2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backing2.png; sourceTree = "<group>"; };
 		75EDA1831A83FBCA002546E0 /* shadow_wrong_position.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shadow_wrong_position.plist; sourceTree = "<group>"; };
 		75EDA1851A83FE7E002546E0 /* Storage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Storage.h; sourceTree = "<group>"; };
 		75EDA1861A83FE7E002546E0 /* Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Storage.m; sourceTree = "<group>"; };
@@ -958,8 +1087,6 @@
 				75037FF01B1A3B8900CB0B83 /* MyScene.m */,
 				75B980641B58F55500893462 /* SKAction+Groups.h */,
 				75B980651B58F55500893462 /* SKAction+Groups.m */,
-				753D72D81BA577EB006DC74A /* BlueHouseScene.h */,
-				753D72D91BA577EC006DC74A /* BlueHouseScene.m */,
 				753D72DA1BA577EC006DC74A /* NNKBlueHouseNode.h */,
 				753D72DB1BA577EC006DC74A /* NNKBlueHouseNode.m */,
 				75B9806A1B58F9FD00893462 /* Island Animations */,
@@ -1112,6 +1239,61 @@
 			path = "Epub Book";
 			sourceTree = "<group>";
 		};
+		75AE58071BA963B200DDD552 /* menus */ = {
+			isa = PBXGroup;
+			children = (
+				75AE58081BA963B200DDD552 /* menu_512x512_0.png */,
+				75AE58091BA963B200DDD552 /* menu_512x512_1.png */,
+				75AE580A1BA963B200DDD552 /* menu_512x512_10.png */,
+				75AE580B1BA963B200DDD552 /* menu_512x512_11.png */,
+				75AE580C1BA963B200DDD552 /* menu_512x512_12.png */,
+				75AE580D1BA963B200DDD552 /* menu_512x512_13.png */,
+				75AE580E1BA963B200DDD552 /* menu_512x512_14.png */,
+				75AE580F1BA963B200DDD552 /* menu_512x512_15.png */,
+				75AE58101BA963B200DDD552 /* menu_512x512_16.png */,
+				75AE58111BA963B200DDD552 /* menu_512x512_17.png */,
+				75AE58121BA963B200DDD552 /* menu_512x512_18.png */,
+				75AE58131BA963B200DDD552 /* menu_512x512_19.png */,
+				75AE58141BA963B200DDD552 /* menu_512x512_2.png */,
+				75AE58151BA963B200DDD552 /* menu_512x512_20.png */,
+				75AE58161BA963B200DDD552 /* menu_512x512_21.png */,
+				75AE58171BA963B200DDD552 /* menu_512x512_22.png */,
+				75AE58181BA963B200DDD552 /* menu_512x512_23.png */,
+				75AE58191BA963B200DDD552 /* menu_512x512_24.png */,
+				75AE581A1BA963B200DDD552 /* menu_512x512_25.png */,
+				75AE581B1BA963B200DDD552 /* menu_512x512_26.png */,
+				75AE581C1BA963B200DDD552 /* menu_512x512_27.png */,
+				75AE581D1BA963B200DDD552 /* menu_512x512_28.png */,
+				75AE581E1BA963B200DDD552 /* menu_512x512_29.png */,
+				75AE581F1BA963B200DDD552 /* menu_512x512_3.png */,
+				75AE58201BA963B200DDD552 /* menu_512x512_30.png */,
+				75AE58211BA963B200DDD552 /* menu_512x512_31.png */,
+				75AE58221BA963B200DDD552 /* menu_512x512_32.png */,
+				75AE58231BA963B200DDD552 /* menu_512x512_33.png */,
+				75AE58241BA963B200DDD552 /* menu_512x512_34.png */,
+				75AE58251BA963B200DDD552 /* menu_512x512_35.png */,
+				75AE58261BA963B200DDD552 /* menu_512x512_36.png */,
+				75AE58271BA963B200DDD552 /* menu_512x512_37.png */,
+				75AE58281BA963B200DDD552 /* menu_512x512_38.png */,
+				75AE58291BA963B200DDD552 /* menu_512x512_39.png */,
+				75AE582A1BA963B200DDD552 /* menu_512x512_4.png */,
+				75AE582B1BA963B200DDD552 /* menu_512x512_40.png */,
+				75AE582C1BA963B200DDD552 /* menu_512x512_41.png */,
+				75AE582D1BA963B200DDD552 /* menu_512x512_42.png */,
+				75AE582E1BA963B200DDD552 /* menu_512x512_43.png */,
+				75AE582F1BA963B200DDD552 /* menu_512x512_44.png */,
+				75AE58301BA963B200DDD552 /* menu_512x512_45.png */,
+				75AE58311BA963B200DDD552 /* menu_512x512_46.png */,
+				75AE58321BA963B200DDD552 /* menu_512x512_47.png */,
+				75AE58331BA963B200DDD552 /* menu_512x512_5.png */,
+				75AE58341BA963B200DDD552 /* menu_512x512_6.png */,
+				75AE58351BA963B200DDD552 /* menu_512x512_7.png */,
+				75AE58361BA963B200DDD552 /* menu_512x512_8.png */,
+				75AE58371BA963B200DDD552 /* menu_512x512_9.png */,
+			);
+			path = menus;
+			sourceTree = "<group>";
+		};
 		75B980671B58F7AB00893462 /* Shadow Play Animations */ = {
 			isa = PBXGroup;
 			children = (
@@ -1154,8 +1336,8 @@
 		75B980691B58F9EF00893462 /* Atlases */ = {
 			isa = PBXGroup;
 			children = (
-				753D72DC1BA577EC006DC74A /* blue_house_anim.atlasc */,
-				753D72DD1BA577EC006DC74A /* blue_house_anim.h */,
+				75B357D51C1D7414000DFC4E /* blue_house_anim.atlasc */,
+				75B357D61C1D7414000DFC4E /* blue_house_anim.h */,
 				753D72911BA4E310006DC74A /* ninja_anim.atlasc */,
 				753D72921BA4E310006DC74A /* ninja_anim.h */,
 				753D72831BA4D56C006DC74A /* dragon_anim.atlasc */,
@@ -1333,6 +1515,23 @@
 				75C12A671A754B6C0075FD8D /* AppDelegate.m */,
 				75423AA11A7D8A4000D2C36E /* BaseViewController.h */,
 				75423AA21A7D8A4000D2C36E /* BaseViewController.m */,
+				75AE57EA1BA9634E00DDD552 /* GameScene.h */,
+				75AE57EB1BA9634E00DDD552 /* GameScene.m */,
+				75AE586B1BA9B4D900DDD552 /* DragableSpriteNode.h */,
+				75AE586C1BA9B4D900DDD552 /* DragableSpriteNode.m */,
+				75AE57EF1BA9639E00DDD552 /* ExampleTiledNode.h */,
+				75AE57F01BA9639E00DDD552 /* ExampleTiledNode.m */,
+				75AE57F31BA963A500DDD552 /* dandelion.png */,
+				75AE57F41BA963A500DDD552 /* island.png */,
+				75AE57F51BA963A500DDD552 /* lamp_off.png */,
+				75AE57F61BA963A500DDD552 /* school_of_magic_eng.png */,
+				75AE57F71BA963A500DDD552 /* school_of_magic_rus.png */,
+				75AE57F81BA963A500DDD552 /* shadow_play_eng.png */,
+				75AE57F91BA963A500DDD552 /* shadow_play_rus.png */,
+				75AE57FA1BA963A500DDD552 /* snail.png */,
+				75AE57FB1BA963A500DDD552 /* tree_left.png */,
+				75AE57FC1BA963A500DDD552 /* tree_right.png */,
+				75AE58071BA963B200DDD552 /* menus */,
 				75C12A691A754B6C0075FD8D /* ViewController.h */,
 				75C12A6A1A754B6C0075FD8D /* ViewController.m */,
 				75CC87E71AD0238D00F6C59E /* MainScreenViewModel.h */,
@@ -1348,6 +1547,10 @@
 				75C840021B49A6F1007122A9 /* TextBarViewController.h */,
 				75C840031B49A6F1007122A9 /* TextBarViewController.m */,
 				75C840041B49A6F1007122A9 /* TextBarViewController.xib */,
+				75EC74821C25EB6600CE0E25 /* SideMenu.h */,
+				75EC74831C25EB6600CE0E25 /* SideMenu.m */,
+				75EC74851C25EB7000CE0E25 /* SideMenu.xib */,
+				75EC74871C25EBA600CE0E25 /* backing2.png */,
 				75037F9B1B1A3B6800CB0B83 /* Animations */,
 				75AD2E7B1ADAD18D002EE482 /* Epub Book */,
 				7530D6B41AD068E60063F124 /* TopBar */,
@@ -1878,6 +2081,8 @@
 				75DC67A21A816AA100D6A553 /* shadow_character1_part2.png in Resources */,
 				75B980C11B5916A400893462 /* text_panel_medal_sound_ru.mp3 in Resources */,
 				75B980BA1B5916A400893462 /* text_panel_island_initial_sound_en.mp3 in Resources */,
+				75AE585D1BA963B300DDD552 /* menu_512x512_42.png in Resources */,
+				75AE58451BA963B300DDD552 /* menu_512x512_20.png in Resources */,
 				75041C1D1B6E9ED300B28F3F /* q3_sound_en.mp3 in Resources */,
 				75DC681E1A816AA100D6A553 /* shadow_character8_part23.png in Resources */,
 				75DC68151A816AA100D6A553 /* shadow_character8_part15.png in Resources */,
@@ -1896,6 +2101,7 @@
 				75B980C51B5916A400893462 /* text_panel_shadow_final_sound_ru.mp3 in Resources */,
 				75DC67AA1A816AA100D6A553 /* shadow_character2_part1.png in Resources */,
 				75DC67D01A816AA100D6A553 /* shadow_character4_part19.png in Resources */,
+				75AE58611BA963B300DDD552 /* menu_512x512_46.png in Resources */,
 				75DC67B41A816AA100D6A553 /* shadow_character2_part7.png in Resources */,
 				75B980BD1B5916A400893462 /* text_panel_island_sound_ru.mp3 in Resources */,
 				75E2376E1A854D2900BE6540 /* Localizable.strings in Resources */,
@@ -1905,7 +2111,9 @@
 				75D530FB1B6E82D000E57D25 /* island_sound_3_en.mp3 in Resources */,
 				75DC67F61A816AA100D6A553 /* shadow_character6_part5.png in Resources */,
 				75DC66E91A81520A00D6A553 /* full_portret_shadow_7.png in Resources */,
+				75AE58061BA963A500DDD552 /* tree_right.png in Resources */,
 				75041C191B6E9ED300B28F3F /* q1_sound_en.mp3 in Resources */,
+				75AE58511BA963B300DDD552 /* menu_512x512_31.png in Resources */,
 				754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */,
 				75041C2A1B6E9ED300B28F3F /* q9_sound_ru.mp3 in Resources */,
 				75DC67CF1A816AA100D6A553 /* shadow_character4_part18.png in Resources */,
@@ -1914,17 +2122,21 @@
 				75B980C91B5916A400893462 /* text_panel_wand_sound_ru.mp3 in Resources */,
 				75C12A6E1A754B6C0075FD8D /* Main.storyboard in Resources */,
 				75B980721B58FA4C00893462 /* bottomless_island.mp3 in Resources */,
+				75EC74881C25EBA600CE0E25 /* backing2.png in Resources */,
 				75DC68081A816AA100D6A553 /* shadow_character7_part3.png in Resources */,
 				75DC68191A816AA100D6A553 /* shadow_character8_part19.png in Resources */,
 				75DC67AB1A816AA100D6A553 /* shadow_character2_part10.png in Resources */,
 				75DFE1071A800CE500CE9E69 /* Shadow_portret_border_5.png in Resources */,
 				75DFE0FE1A800CE500CE9E69 /* Shadow_portret_4.png in Resources */,
+				75AE57FE1BA963A500DDD552 /* island.png in Resources */,
 				75B980761B58FA4C00893462 /* lamp.mp3 in Resources */,
 				75DFE1041A800CE500CE9E69 /* Shadow_portret_border_2.png in Resources */,
 				75DC68061A816AA100D6A553 /* shadow_character7_part2.png in Resources */,
+				75AE58601BA963B300DDD552 /* menu_512x512_45.png in Resources */,
 				75DC67FE1A816AA100D6A553 /* shadow_character7_part12.png in Resources */,
 				75DC67A41A816AA100D6A553 /* shadow_character1_part4.png in Resources */,
 				750569321B1E555F008DE162 /* miner_anim.atlasc in Resources */,
+				75AE58051BA963A500DDD552 /* tree_left.png in Resources */,
 				75B980D41B591AAA00893462 /* wrong.mp3 in Resources */,
 				75DC67D51A816AA100D6A553 /* shadow_character4_part23.png in Resources */,
 				75B980C81B5916A400893462 /* text_panel_wand_sound_en.mp3 in Resources */,
@@ -1941,19 +2153,24 @@
 				75D530F61B6E82D000E57D25 /* island_sound_0_ru.mp3 in Resources */,
 				75DC68001A816AA100D6A553 /* shadow_character7_part14.png in Resources */,
 				75C12A731A754B6C0075FD8D /* LaunchScreen.xib in Resources */,
+				75AE58411BA963B300DDD552 /* menu_512x512_17.png in Resources */,
 				75B9807F1B590FB800893462 /* text_panel_teacher_final_sound_en.mp3 in Resources */,
 				75DC680C1A816AA100D6A553 /* shadow_character7_part7.png in Resources */,
 				75DC67A81A816AA100D6A553 /* shadow_character1_part8.png in Resources */,
+				75AE585E1BA963B300DDD552 /* menu_512x512_43.png in Resources */,
 				75DC67C71A816AA100D6A553 /* shadow_character4_part10.png in Resources */,
 				75B980811B590FB800893462 /* text_panel_teacher_initial_sound_en.mp3 in Resources */,
 				75B980C61B5916A400893462 /* text_panel_shadow_initial_sound_en.mp3 in Resources */,
 				75DC67B31A816AA100D6A553 /* shadow_character2_part6.png in Resources */,
+				75AE583A1BA963B200DDD552 /* menu_512x512_10.png in Resources */,
 				75DC66E81A81520A00D6A553 /* full_portret_shadow_6.png in Resources */,
 				75D530FD1B6E82D000E57D25 /* island_sound_4_en.mp3 in Resources */,
 				75D530F81B6E82D000E57D25 /* island_sound_1_ru.mp3 in Resources */,
 				75DC67CA1A816AA100D6A553 /* shadow_character4_part13.png in Resources */,
 				75FF2F141B22312B008EB9AA /* justacreep_anim.atlasc in Resources */,
 				75DC67F81A816AA100D6A553 /* shadow_character6_part7.png in Resources */,
+				75AE58441BA963B300DDD552 /* menu_512x512_2.png in Resources */,
+				75AE58531BA963B300DDD552 /* menu_512x512_33.png in Resources */,
 				753D72851BA4D56C006DC74A /* dragon_anim.atlasc in Resources */,
 				75DC68241A816AA100D6A553 /* shadow_character8_part6.png in Resources */,
 				75DC67B51A816AA100D6A553 /* shadow_character2_part8.png in Resources */,
@@ -1961,15 +2178,18 @@
 				75B980B61B5916A400893462 /* text_panel_goblin_final_sound_en.mp3 in Resources */,
 				75DC68161A816AA100D6A553 /* shadow_character8_part16.png in Resources */,
 				75DC680E1A816AA100D6A553 /* shadow_character7_part9.png in Resources */,
+				75AE58641BA963B300DDD552 /* menu_512x512_6.png in Resources */,
 				75037FE91B1A3B7700CB0B83 /* harold_anim.atlasc in Resources */,
 				75DC67EA1A816AA100D6A553 /* shadow_character5_part8.png in Resources */,
 				75DC681D1A816AA100D6A553 /* shadow_character8_part22.png in Resources */,
 				75041C481B6EAD7F00B28F3F /* shadow_sound_7_en.mp3 in Resources */,
 				75D530F51B6E82D000E57D25 /* island_sound_0_en.mp3 in Resources */,
 				75DC68221A816AA100D6A553 /* shadow_character8_part4.png in Resources */,
+				75AE585B1BA963B300DDD552 /* menu_512x512_40.png in Resources */,
 				75DC681A1A816AA100D6A553 /* shadow_character8_part2.png in Resources */,
 				75DC680B1A816AA100D6A553 /* shadow_character7_part6.png in Resources */,
 				75DC67E01A816AA100D6A553 /* shadow_character5_part11.png in Resources */,
+				75AE583E1BA963B300DDD552 /* menu_512x512_14.png in Resources */,
 				75DC67A01A816AA100D6A553 /* shadow_character1_part11.png in Resources */,
 				75DC68041A816AA100D6A553 /* shadow_character7_part18.png in Resources */,
 				75DC67F01A816AA100D6A553 /* shadow_character6_part13.png in Resources */,
@@ -1982,14 +2202,19 @@
 				75041C411B6EAD7F00B28F3F /* shadow_sound_3_ru.mp3 in Resources */,
 				75041C491B6EAD7F00B28F3F /* shadow_sound_7_ru.mp3 in Resources */,
 				753D72941BA4E310006DC74A /* ninja_anim.atlasc in Resources */,
+				75AE584F1BA963B300DDD552 /* menu_512x512_3.png in Resources */,
 				75B980731B58FA4C00893462 /* cafe.mp3 in Resources */,
+				75AE58501BA963B300DDD552 /* menu_512x512_30.png in Resources */,
 				75DC681F1A816AA100D6A553 /* shadow_character8_part24.png in Resources */,
+				75AE58401BA963B300DDD552 /* menu_512x512_16.png in Resources */,
 				75041C1E1B6E9ED300B28F3F /* q3_sound_ru.mp3 in Resources */,
 				75D531001B6E82D000E57D25 /* island_sound_5_ru.mp3 in Resources */,
 				75DC68201A816AA100D6A553 /* shadow_character8_part25.png in Resources */,
+				75AE57FD1BA963A500DDD552 /* dandelion.png in Resources */,
 				75DC67E61A816AA100D6A553 /* shadow_character5_part4.png in Resources */,
 				75DC67E71A816AA100D6A553 /* shadow_character5_part5.png in Resources */,
 				7505693C1B1E56BB008DE162 /* lantern_house.atlasc in Resources */,
+				75AE584B1BA963B300DDD552 /* menu_512x512_26.png in Resources */,
 				75518FA61B91083E006A6ED8 /* cat_anim.atlasc in Resources */,
 				75DC67D81A816AA100D6A553 /* shadow_character4_part4.png in Resources */,
 				75DC67DB1A816AA100D6A553 /* shadow_character4_part7.png in Resources */,
@@ -1999,7 +2224,10 @@
 				75B980BE1B5916A400893462 /* text_panel_magic_ball_sound_en.mp3 in Resources */,
 				75DC67EE1A816AA100D6A553 /* shadow_character6_part11.png in Resources */,
 				75B980631B58F4A400893462 /* furcoat.mp3 in Resources */,
+				75AE583B1BA963B200DDD552 /* menu_512x512_11.png in Resources */,
 				75041C421B6EAD7F00B28F3F /* shadow_sound_4_en.mp3 in Resources */,
+				75AE585A1BA963B300DDD552 /* menu_512x512_4.png in Resources */,
+				75AE58661BA963B300DDD552 /* menu_512x512_8.png in Resources */,
 				75041C221B6E9ED300B28F3F /* q5_sound_ru.mp3 in Resources */,
 				75B980551B58F2E300893462 /* harold.mp3 in Resources */,
 				75FF2FA51B224A0C008EB9AA /* MystieParticles.sks in Resources */,
@@ -2032,30 +2260,37 @@
 				75DC67E91A816AA100D6A553 /* shadow_character5_part7.png in Resources */,
 				75DFE1011A800CE500CE9E69 /* Shadow_portret_7.png in Resources */,
 				75DC68231A816AA100D6A553 /* shadow_character8_part5.png in Resources */,
+				75AE584A1BA963B300DDD552 /* menu_512x512_25.png in Resources */,
 				75DC681B1A816AA100D6A553 /* shadow_character8_part20.png in Resources */,
 				75DC67A91A816AA100D6A553 /* shadow_character1_part9.png in Resources */,
 				75D530F91B6E82D000E57D25 /* island_sound_2_en.mp3 in Resources */,
 				75DC68021A816AA100D6A553 /* shadow_character7_part16.png in Resources */,
 				75DC67D71A816AA100D6A553 /* shadow_character4_part3.png in Resources */,
 				75DC68181A816AA100D6A553 /* shadow_character8_part18.png in Resources */,
+				75AE584E1BA963B300DDD552 /* menu_512x512_29.png in Resources */,
 				750569291B1E5177008DE162 /* lighthouse_frames.atlasc in Resources */,
 				75DC67CD1A816AA100D6A553 /* shadow_character4_part16.png in Resources */,
 				75041C1A1B6E9ED300B28F3F /* q1_sound_ru.mp3 in Resources */,
 				75518FAE1B9110A8006A6ED8 /* text_panel_cat_initial_sound_ru.mp3 in Resources */,
 				75B9805D1B58F48400893462 /* miner.mp3 in Resources */,
+				75AE58561BA963B300DDD552 /* menu_512x512_36.png in Resources */,
 				75DC67FA1A816AA100D6A553 /* shadow_character6_part9.png in Resources */,
 				75DC67BC1A816AA100D6A553 /* shadow_character3_part14.png in Resources */,
 				753D72391BA4CBF8006DC74A /* text_panel_sheep_initial_sound_ru.mp3 in Resources */,
 				75B980801B590FB800893462 /* text_panel_teacher_final_sound_ru.mp3 in Resources */,
 				75DC68031A816AA100D6A553 /* shadow_character7_part17.png in Resources */,
+				75AE58651BA963B300DDD552 /* menu_512x512_7.png in Resources */,
 				75DC67A31A816AA100D6A553 /* shadow_character1_part3.png in Resources */,
+				75AE583F1BA963B300DDD552 /* menu_512x512_15.png in Resources */,
 				75D530FF1B6E82D000E57D25 /* island_sound_5_en.mp3 in Resources */,
 				75DFE1061A800CE500CE9E69 /* Shadow_portret_border_4.png in Resources */,
 				75DC67C91A816AA100D6A553 /* shadow_character4_part12.png in Resources */,
+				75AE58471BA963B300DDD552 /* menu_512x512_22.png in Resources */,
 				75B627FB1B1CFBD2000A3172 /* school_frames.atlasc in Resources */,
 				75AD2E8F1ADAD193002EE482 /* book_eng.epub in Resources */,
 				75DC67D11A816AA100D6A553 /* shadow_character4_part2.png in Resources */,
 				755DB2921B865B4600722E0C /* answers_colors.plist in Resources */,
+				75AE58381BA963B200DDD552 /* menu_512x512_0.png in Resources */,
 				75DC68171A816AA100D6A553 /* shadow_character8_part17.png in Resources */,
 				75DC67C21A816AA100D6A553 /* shadow_character3_part6.png in Resources */,
 				75041C461B6EAD7F00B28F3F /* shadow_sound_6_en.mp3 in Resources */,
@@ -2068,25 +2303,28 @@
 				75DFE1081A800CE500CE9E69 /* Shadow_portret_border_6.png in Resources */,
 				75B980AE1B5916A400893462 /* text_panel_book_sound_en.mp3 in Resources */,
 				75B980BF1B5916A400893462 /* text_panel_magic_ball_sound_ru.mp3 in Resources */,
-				753D72E01BA577EC006DC74A /* blue_house_anim.atlasc in Resources */,
 				75DC67C01A816AA100D6A553 /* shadow_character3_part4.png in Resources */,
 				75B980B21B5916A400893462 /* text_panel_dragon_final_sound_en.mp3 in Resources */,
 				75B980C01B5916A400893462 /* text_panel_medal_sound_en.mp3 in Resources */,
 				75DFE0FD1A800CE500CE9E69 /* Shadow_portret_3.png in Resources */,
 				75DC67EF1A816AA100D6A553 /* shadow_character6_part12.png in Resources */,
+				75AE58011BA963A500DDD552 /* school_of_magic_rus.png in Resources */,
 				75DC67D31A816AA100D6A553 /* shadow_character4_part21.png in Resources */,
 				7530D6B61AD069960063F124 /* ContributorsViewController.xib in Resources */,
 				75DC67CC1A816AA100D6A553 /* shadow_character4_part15.png in Resources */,
 				75DC67E41A816AA100D6A553 /* shadow_character5_part2.png in Resources */,
+				75AE58431BA963B300DDD552 /* menu_512x512_19.png in Resources */,
 				75DC66E61A81520A00D6A553 /* full_portret_shadow_4.png in Resources */,
 				75DC67BF1A816AA100D6A553 /* shadow_character3_part3.png in Resources */,
 				75DC68141A816AA100D6A553 /* shadow_character8_part14.png in Resources */,
+				75AE58481BA963B300DDD552 /* menu_512x512_23.png in Resources */,
 				75041C3F1B6EAD7F00B28F3F /* shadow_sound_2_ru.mp3 in Resources */,
 				75041C3D1B6EAD7F00B28F3F /* shadow_sound_1_ru.mp3 in Resources */,
 				75041C261B6E9ED300B28F3F /* q7_sound_ru.mp3 in Resources */,
 				75DC66EA1A81520A00D6A553 /* full_portret_shadow_8.png in Resources */,
 				75A125051AD06F5700BDFB7F /* ContributorsViewController~ipad.xib in Resources */,
 				75DC67F71A816AA100D6A553 /* shadow_character6_part6.png in Resources */,
+				75AE584D1BA963B300DDD552 /* menu_512x512_28.png in Resources */,
 				75DC67FD1A816AA100D6A553 /* shadow_character7_part11.png in Resources */,
 				75DC67BA1A816AA100D6A553 /* shadow_character3_part12.png in Resources */,
 				75DFE0FC1A800CE500CE9E69 /* Shadow_portret_2.png in Resources */,
@@ -2094,35 +2332,50 @@
 				75DFE0FB1A800CE500CE9E69 /* Shadow_portret_1.png in Resources */,
 				75C12A701A754B6C0075FD8D /* Images.xcassets in Resources */,
 				75B980BC1B5916A400893462 /* text_panel_island_sound_en.mp3 in Resources */,
+				75AE58021BA963A500DDD552 /* shadow_play_eng.png in Resources */,
 				750569391B1E5660008DE162 /* bottom_island.atlasc in Resources */,
 				753D72401BA4CE25006DC74A /* text_panel_ninja_initial_sound_en.mp3 in Resources */,
 				75DC67F91A816AA100D6A553 /* shadow_character6_part8.png in Resources */,
 				75B980751B58FA4C00893462 /* ghost.mp3 in Resources */,
 				75DC67EB1A816AA100D6A553 /* shadow_character5_part9.png in Resources */,
+				75AE585F1BA963B300DDD552 /* menu_512x512_44.png in Resources */,
 				75DC67B01A816AA100D6A553 /* shadow_character2_part3.png in Resources */,
 				75DC67AF1A816AA100D6A553 /* shadow_character2_part2.png in Resources */,
 				75DC68131A816AA100D6A553 /* shadow_character8_part13.png in Resources */,
+				75AE58041BA963A500DDD552 /* snail.png in Resources */,
 				75037FE71B1A3B7700CB0B83 /* foam_castle.atlasc in Resources */,
 				75041C1F1B6E9ED300B28F3F /* q4_sound_en.mp3 in Resources */,
 				75B980D21B591AAA00893462 /* button_click.mp3 in Resources */,
+				75AE58631BA963B300DDD552 /* menu_512x512_5.png in Resources */,
 				75DC679F1A816AA100D6A553 /* shadow_character1_part10.png in Resources */,
 				75DFE1091A800CE500CE9E69 /* Shadow_portret_border_7.png in Resources */,
+				75AE58671BA963B300DDD552 /* menu_512x512_9.png in Resources */,
 				75041C211B6E9ED300B28F3F /* q5_sound_en.mp3 in Resources */,
 				75DC67F41A816AA100D6A553 /* shadow_character6_part3.png in Resources */,
 				75DC67BE1A816AA100D6A553 /* shadow_character3_part2.png in Resources */,
 				75C840061B49A6F1007122A9 /* TextBarViewController.xib in Resources */,
+				75AE57FF1BA963A500DDD552 /* lamp_off.png in Resources */,
+				75AE58031BA963A500DDD552 /* shadow_play_rus.png in Resources */,
 				75518FAB1B9110A8006A6ED8 /* text_panel_cat_final_sound_en.mp3 in Resources */,
+				75AE58421BA963B300DDD552 /* menu_512x512_18.png in Resources */,
 				75041C281B6E9ED300B28F3F /* q8_sound_ru.mp3 in Resources */,
 				75DC67B71A816AA100D6A553 /* shadow_character3_part1.png in Resources */,
 				75DC67B21A816AA100D6A553 /* shadow_character2_part5.png in Resources */,
 				75041C441B6EAD7F00B28F3F /* shadow_sound_5_en.mp3 in Resources */,
 				75DC67A11A816AA100D6A553 /* shadow_character1_part12.png in Resources */,
+				75AE58541BA963B300DDD552 /* menu_512x512_34.png in Resources */,
+				75AE58551BA963B300DDD552 /* menu_512x512_35.png in Resources */,
 				75DC68211A816AA100D6A553 /* shadow_character8_part3.png in Resources */,
 				75DC680D1A816AA100D6A553 /* shadow_character7_part8.png in Resources */,
 				75B980591B58F3E700893462 /* mystie.mp3 in Resources */,
 				75B980AF1B5916A400893462 /* text_panel_book_sound_ru.mp3 in Resources */,
+				75EC74861C25EB7000CE0E25 /* SideMenu.xib in Resources */,
+				75AE58581BA963B300DDD552 /* menu_512x512_38.png in Resources */,
+				75AE585C1BA963B300DDD552 /* menu_512x512_41.png in Resources */,
 				75D530FC1B6E82D000E57D25 /* island_sound_3_ru.mp3 in Resources */,
 				75041C271B6E9ED300B28F3F /* q8_sound_en.mp3 in Resources */,
+				75AE58461BA963B300DDD552 /* menu_512x512_21.png in Resources */,
+				75AE58001BA963A500DDD552 /* school_of_magic_eng.png in Resources */,
 				75B980821B590FB800893462 /* text_panel_teacher_initial_sound_ru.mp3 in Resources */,
 				75EE39651B41D74100BF9A55 /* skelet_anim.atlasc in Resources */,
 				75DC67E31A816AA100D6A553 /* shadow_character5_part14.png in Resources */,
@@ -2133,27 +2386,33 @@
 				75C83FF81B497444007122A9 /* goblin_anim.atlasc in Resources */,
 				75DC67DD1A816AA100D6A553 /* shadow_character4_part9.png in Resources */,
 				75041C231B6E9ED300B28F3F /* q6_sound_en.mp3 in Resources */,
+				75AE58391BA963B200DDD552 /* menu_512x512_1.png in Resources */,
 				75DC67F11A816AA100D6A553 /* shadow_character6_part14.png in Resources */,
 				75DC67E21A816AA100D6A553 /* shadow_character5_part13.png in Resources */,
+				75AE58591BA963B300DDD552 /* menu_512x512_39.png in Resources */,
 				75041C471B6EAD7F00B28F3F /* shadow_sound_6_ru.mp3 in Resources */,
 				75041C451B6EAD7F00B28F3F /* shadow_sound_5_ru.mp3 in Resources */,
+				75AE58521BA963B300DDD552 /* menu_512x512_32.png in Resources */,
 				75B980B41B5916A400893462 /* text_panel_dragon_initial_sound_en.mp3 in Resources */,
 				75DFE1021A800CE500CE9E69 /* Shadow_portret_8.png in Resources */,
 				75B9805F1B58F48D00893462 /* justacreep.mp3 in Resources */,
 				75DC67D91A816AA100D6A553 /* shadow_character4_part5.png in Resources */,
 				75B980C31B5916A400893462 /* text_panel_other_sound_ru.mp3 in Resources */,
 				753D723F1BA4CE25006DC74A /* text_panel_ninja_final_sound_ru.mp3 in Resources */,
+				75AE58621BA963B300DDD552 /* menu_512x512_47.png in Resources */,
 				75B980B01B5916A400893462 /* text_panel_bottle_sound_en.mp3 in Resources */,
 				75DC67BD1A816AA100D6A553 /* shadow_character3_part15.png in Resources */,
 				753D723E1BA4CE25006DC74A /* text_panel_ninja_final_sound_en.mp3 in Resources */,
 				75B980C71B5916A400893462 /* text_panel_shadow_initial_sound_ru.mp3 in Resources */,
 				75DC67E11A816AA100D6A553 /* shadow_character5_part12.png in Resources */,
 				75B980771B58FA4C00893462 /* school.mp3 in Resources */,
+				75AE583C1BA963B200DDD552 /* menu_512x512_12.png in Resources */,
 				75DC67BB1A816AA100D6A553 /* shadow_character3_part13.png in Resources */,
 				75041C1C1B6E9ED300B28F3F /* q2_sound_ru.mp3 in Resources */,
 				75DC66E51A81520A00D6A553 /* full_portret_shadow_3.png in Resources */,
 				75DFE1031A800CE500CE9E69 /* Shadow_portret_border_1.png in Resources */,
 				75DC68071A816AA100D6A553 /* shadow_character7_part20.png in Resources */,
+				75AE584C1BA963B300DDD552 /* menu_512x512_27.png in Resources */,
 				753D72371BA4CBF8006DC74A /* text_panel_sheep_final_sound_ru.mp3 in Resources */,
 				75D530FE1B6E82D000E57D25 /* island_sound_4_ru.mp3 in Resources */,
 				75DC68011A816AA100D6A553 /* shadow_character7_part15.png in Resources */,
@@ -2174,9 +2433,11 @@
 				75DC67DA1A816AA100D6A553 /* shadow_character4_part6.png in Resources */,
 				75DC66E71A81520A00D6A553 /* full_portret_shadow_5.png in Resources */,
 				753D72381BA4CBF8006DC74A /* text_panel_sheep_initial_sound_en.mp3 in Resources */,
+				75B357D71C1D7414000DFC4E /* blue_house_anim.atlasc in Resources */,
 				75DC68271A816AA100D6A553 /* shadow_character8_part9.png in Resources */,
 				75DFE1051A800CE500CE9E69 /* Shadow_portret_border_3.png in Resources */,
 				75DC67CE1A816AA100D6A553 /* shadow_character4_part17.png in Resources */,
+				75AE583D1BA963B300DDD552 /* menu_512x512_13.png in Resources */,
 				75DC67A51A816AA100D6A553 /* shadow_character1_part5.png in Resources */,
 				75DC67DF1A816AA100D6A553 /* shadow_character5_part10.png in Resources */,
 				75041C181B6E9ED300B28F3F /* q0_sound_ru.mp3 in Resources */,
@@ -2187,6 +2448,8 @@
 				75DC67B91A816AA100D6A553 /* shadow_character3_part11.png in Resources */,
 				75DC67D61A816AA100D6A553 /* shadow_character4_part24.png in Resources */,
 				75B980B11B5916A400893462 /* text_panel_bottle_sound_ru.mp3 in Resources */,
+				75AE58491BA963B300DDD552 /* menu_512x512_24.png in Resources */,
+				75AE58571BA963B300DDD552 /* menu_512x512_37.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2252,6 +2515,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75AD2E911ADAD193002EE482 /* BookOptionsViewController.m in Sources */,
+				75AE57F21BA9639E00DDD552 /* ExampleTiledNode.m in Sources */,
 				75E86E231A82BE3F00419776 /* NNKShapedButton.m in Sources */,
 				75C84D561ADBD868006359E9 /* ChaptersViewModel.m in Sources */,
 				75C840011B49883C007122A9 /* NNKSheepNode.m in Sources */,
@@ -2259,10 +2523,11 @@
 				75A1251F1AD08DC400BDFB7F /* NSURL+Helps.m in Sources */,
 				75EDA1871A83FE7E002546E0 /* Storage.m in Sources */,
 				757E93DB1A7E2DEE000B2537 /* MagicTableViewController.m in Sources */,
-				753D72DE1BA577EC006DC74A /* BlueHouseScene.m in Sources */,
 				75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */,
+				75AE57EC1BA9634E00DDD552 /* GameScene.m in Sources */,
 				7597094C1AC8901000FFB11E /* SettingsBarIconViewController.m in Sources */,
 				750380081B1A3B8900CB0B83 /* NNKHaroldNode.m in Sources */,
+				75AE586D1BA9B4D900DDD552 /* DragableSpriteNode.m in Sources */,
 				753D72DF1BA577EC006DC74A /* NNKBlueHouseNode.m in Sources */,
 				75AD2E981ADAD193002EE482 /* NNKEpubToChaptersConverter.m in Sources */,
 				75AD2E9D1ADAD1B3002EE482 /* DejalActivityView.m in Sources */,
@@ -2296,6 +2561,7 @@
 				75EBF32A1AAB7D29005F5E8C /* IslandViewModel.m in Sources */,
 				753D72821BA4D55C006DC74A /* NNKDragonNode.m in Sources */,
 				75B627F41B1CFBBD000A3172 /* NNKPhoebeNode.m in Sources */,
+				75EC74841C25EB6600CE0E25 /* SideMenu.m in Sources */,
 				75EBF3271AAB7BB4005F5E8C /* UIImage+Colors.m in Sources */,
 				75C84D591ADBD955006359E9 /* FontSelectViewModel.m in Sources */,
 				75EBF3241AAB6948005F5E8C /* IslandViewController.m in Sources */,

@@ -26,8 +26,9 @@
 @implementation NNKSkeletNode
 
 - (instancetype)initWithSize:(CGSize)size showLastFrameOnLoad:(BOOL)showLastFrameOnLoad {
-    self = [self initWithSize:size];
+    self = [super init];
     if (self) {
+        self.size = size;
         _showLastFrameOnLoad = showLastFrameOnLoad;
         _atlass = [SKTextureAtlas atlasNamed:AtlasName];
         _spriteNode = [self mainNodeWithSize:size];
@@ -39,7 +40,7 @@
 
 
 - (instancetype)initWithSize:(CGSize)size {
-    return [super init];
+    return [self initWithSize:size showLastFrameOnLoad:NO];
 }
 
 
@@ -60,6 +61,14 @@
     spriteNode.position = CGPointMake(size.width / 2, size.height / 2);
     
     return spriteNode;
+}
+
+
+- (void)showLastFrame {
+    [self.spriteNode removeFromParent];
+    [self setShowLastFrameOnLoad:YES];
+    [self addChild:self.spriteNode];
+    self.disableAnimation = YES;
 }
 
 

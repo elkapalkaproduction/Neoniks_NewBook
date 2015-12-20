@@ -64,7 +64,13 @@ NSString *const AppID = @"899196882";
 
 - (UIViewController *)inventaryControllerForIndex:(NSInteger)index rect:(CGRect)rect {
     InventaryContentHandler *handler = [InventaryContentHandler sharedHandler];
-    InventaryItemOption *option = [handler inventaryOptionForType:index];
+    InventaryItemOption *option = [[InventaryItemOption alloc] init];
+    option.type = index;
+    option.format = [handler formatForItemType:option.type];
+    if (option.format == InventaryIconShowingHidden) {
+        return nil;
+    }
+    
     SettingsBarIconViewController *controller = [SettingsBarIconViewController instantiateWithFrame:rect
                                                                                                type:option.type
                                                                                              format:option.format

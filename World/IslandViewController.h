@@ -10,4 +10,6 @@
 
 @interface IslandViewController : BaseViewController
 
++ (instancetype)instantiate;
+
 @end

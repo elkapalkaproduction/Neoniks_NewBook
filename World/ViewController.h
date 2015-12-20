@@ -7,8 +7,9 @@
 //
 
 #import "BaseViewController.h"
+#import <PIOSpriteKit.h>
 
-@interface ViewController : BaseViewController
+@interface ViewController : PIOScrollSceneViewController
 
 @end
 

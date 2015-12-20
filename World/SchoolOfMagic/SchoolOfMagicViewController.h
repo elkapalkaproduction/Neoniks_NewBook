@@ -10,4 +10,6 @@
 
 @interface SchoolOfMagicViewController : BaseViewController
 
++ (instancetype)instantiate;
+
 @end
