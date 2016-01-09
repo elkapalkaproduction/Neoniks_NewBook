@@ -7,17 +7,15 @@
 //
 
 #import "MyScene.h"
-#import "CustomNodeProtocol.h"
 
 @implementation MyScene
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.node runAction];
-    NSLog(@"%@", NSStringFromCGSize(self.size));
 }
 
 
-- (void)setNode:(SKNode<CustomNodeProtocol> *)node {
+- (void)setNode:(NNKSpriteNode *)node {
     if (_node) {
         [_node removeFromParent];
     }

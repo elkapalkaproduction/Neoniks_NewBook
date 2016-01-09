@@ -102,14 +102,14 @@ NSString *const AppID = @"899196882";
 
 
 - (void)didPressStartOver {
-    AlertViewController *alert = [AlertViewController initWithTitle:NSLocalizedString(@"alert_start_over", nil)
-                                                   firstButtonTitle:NSLocalizedString(@"alert_yes", nil)
+    AlertViewController *alert = [AlertViewController initWithTitle:@"alert_start_over"
+                                                   firstButtonTitle:@"alert_yes"
                                                   firstButtonAction:^{
                                                       [[ShadowPlayOpenedHandler sharedHandler] resetOpenedCharacter];
                                                       [[MagicSchoolAnswersHandler sharedHandler] deleteAllAnswers];
                                                       [IslandViewModel deleteAnswers];
                                                   }
-                                                  secondButtonTitle:NSLocalizedString(@"alert_no", nil)
+                                                  secondButtonTitle:@"alert_no"
                                                  secondButtonAction:nil];
     [alert showInViewController:self.delegate];
 }

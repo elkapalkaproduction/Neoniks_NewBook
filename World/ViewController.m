@@ -54,6 +54,11 @@
 }
 
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     if (self.sampleScene) return;
@@ -61,6 +66,7 @@
     self.sampleScene.gameSceneDelegate = self;
     self.sampleScene.contentView = self.scrollContentView;
     [self presentScene:self.sampleScene];
+    [self hideObjectsOnInit];
     [self.scrollView setContentOffset:CGPointMake(0, 0) animated:NO];
 }
 
@@ -109,7 +115,6 @@
     self.textBar.frame = self.textBarSuperView.bounds;
     [super viewDidLayoutSubviews];
     [self.view sendSubviewToBack:self.scrollView];
-    [self hideObjectsOnInit];
 }
 
 
@@ -149,7 +154,6 @@
         [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeSword
                                                        withFormat:InventaryIconShowingFull];
         [self addViewOfType:InventaryBarIconTypeSword inView:self.inventary.sword];
-        [self.sampleScene hideSword];
     }
 }
 
@@ -216,7 +220,7 @@
     [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeDandelion
                                                    withFormat:InventaryIconShowingFull];
     [self addViewOfType:InventaryBarIconTypeDandelion inView:self.inventary.dandelion];
-
+    
     [self.sampleScene hideDandelion];
 }
 
@@ -225,13 +229,26 @@
     [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeSnail
                                                    withFormat:InventaryIconShowingFull];
     [self addViewOfType:InventaryBarIconTypeSnail inView:self.inventary.snail];
-
+    
     [self.sampleScene hideSnail];
 }
 
 
 - (void)didPressBlueHouseInGameScene {
-    //    [self.sampleScene ]
+    typeof(self) welf = self;
+    [self presentGingerWithText:@"text_panel_ginger_1" completion:^{
+       [welf presentGingerWithText:@"text_panel_ginger_2" completion:^{
+           [welf presentGingerWithText:@"text_panel_ginger_3" completion:nil];
+       }];
+    }];
+}
+
+
+- (void)presentGingerWithText:(NSString *)text completion:(void (^)())completion {
+    [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_ginger"]
+                                     text:text
+                                 isObject:NO
+                               completion:completion];
 }
 
 
@@ -315,6 +332,7 @@
 
 - (IBAction)showSettings:(id)sender {
     [self.sampleScene closeDoor];
+    [self closeLeftMenu];
     [self operOrCloseTopBarForType:MainScreenTopBarViewTypeSettings];
 }
 
@@ -336,10 +354,24 @@
         }
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
-            [self.scrollView setContentOffset:CGPointMake(0, self.scrollView.contentOffset.y) animated:YES];
+        [self.scrollView setContentOffset:CGPointMake(0, self.scrollView.contentOffset.y) animated:YES];
     }];
+    [self closeTopAndTextBarWithCompletion:nil];
+    //    [self operOrCloseTopBarForType:MainScreenTopBarViewTypeInventary];
+}
 
-//    [self operOrCloseTopBarForType:MainScreenTopBarViewTypeInventary];
+
+- (void)closeLeftMenu {
+    if (!self.isOpenLeftMenu) return;
+    self.isOpenLeftMenu = NO;
+    self.leftMenuLeadingConstraint.constant = - self.leftMenu.frame.size.width;
+    [UIView animateWithDuration:0.3 animations:^{
+        self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+        [self.view layoutIfNeeded];
+    } completion:^(BOOL finished) {
+        [self.scrollView setContentOffset:CGPointMake(0, self.scrollView.contentOffset.y) animated:YES];
+    }];
+    
 }
 
 
@@ -387,41 +419,40 @@ didWantToOpenViewController:(UIViewController *)viewController {
                relatedToView:(UIView *)view
                        image:(UIImage *)image {
     CGRect newRect = [[self contentView] convertRect:rect fromView:view];
-    NSLog(@"%@", NSStringFromCGRect(newRect));
-        switch (type) {
-            case SettingsBarIconTypeSword:
-                [self.sampleScene createObjectWithImage:image
-                                                 ofType:InventaryBarIconTypeMagicBallNinja
-                                             hiddenType:InventaryBarIconTypeSword
-                                               position:newRect.origin];
-                break;
-            case SettingsBarIconTypeWrench:
-                [self.sampleScene createObjectWithImage:image
-                                                 ofType:InventaryBarIconTypeMagicBallCat
-                                             hiddenType:InventaryBarIconTypeWrench
-                                               position:newRect.origin];
-                break;
-            case SettingsBarIconTypeSnail:
-                [self.sampleScene createObjectWithImage:image
-                                                 ofType:InventaryBarIconTypeWrench
-                                             hiddenType:InventaryBarIconTypeSnail
-                                               position:newRect.origin];
-                break;
-            case SettingsBarIconTypeDandelion:
-                [self.sampleScene createObjectWithImage:image
-                                                 ofType:InventaryBarIconTypeMagicBallSheep
-                                             hiddenType:InventaryBarIconTypeDandelion
-                                               position:newRect.origin];
-                break;
-            case SettingsBarIconTypeExtinguisher:
-                [self.sampleScene createObjectWithImage:image
-                                                 ofType:InventaryBarIconTypeMagicBook
-                                             hiddenType:InventaryBarIconTypeExtinguisher
-                                               position:newRect.origin];
-                break;
-            default:
-                break;
-        }
+    switch (type) {
+        case SettingsBarIconTypeSword:
+            [self.sampleScene createObjectWithImage:image
+                                             ofType:InventaryBarIconTypeMagicBallNinja
+                                         hiddenType:InventaryBarIconTypeSword
+                                           position:newRect.origin];
+            break;
+        case SettingsBarIconTypeWrench:
+            [self.sampleScene createObjectWithImage:image
+                                             ofType:InventaryBarIconTypeMagicBallCat
+                                         hiddenType:InventaryBarIconTypeWrench
+                                           position:newRect.origin];
+            break;
+        case SettingsBarIconTypeSnail:
+            [self.sampleScene createObjectWithImage:image
+                                             ofType:InventaryBarIconTypeWrench
+                                         hiddenType:InventaryBarIconTypeSnail
+                                           position:newRect.origin];
+            break;
+        case SettingsBarIconTypeDandelion:
+            [self.sampleScene createObjectWithImage:image
+                                             ofType:InventaryBarIconTypeMagicBallSheep
+                                         hiddenType:InventaryBarIconTypeDandelion
+                                           position:newRect.origin];
+            break;
+        case SettingsBarIconTypeExtinguisher:
+            [self.sampleScene createObjectWithImage:image
+                                             ofType:InventaryBarIconTypeMagicBook
+                                         hiddenType:InventaryBarIconTypeExtinguisher
+                                           position:newRect.origin];
+            break;
+        default:
+            break;
+    }
 }
 
 
@@ -446,7 +477,7 @@ didWantToOpenViewController:(UIViewController *)viewController {
                                          isObject:NO];
             [self addViewOfType:InventaryBarIconTypeWrench inView:self.inventary.wrench];
             [self addViewOfType:InventaryBarIconTypeSnail inView:self.inventary.snail];
-
+            
             [self.sampleScene hideWrench];
             break;
         }
@@ -503,11 +534,20 @@ didWantToOpenViewController:(UIViewController *)viewController {
 - (void)didRequireToOpenTextBarWithIcon:(UIImage *)image
                                    text:(NSString *)text
                                isObject:(BOOL)isObject {
+    [self didRequireToOpenTextBarWithIcon:image text:text isObject:isObject completion:nil];
+}
+
+
+- (void)didRequireToOpenTextBarWithIcon:(UIImage *)image
+                                   text:(NSString *)text
+                               isObject:(BOOL)isObject
+                             completion:(void (^)())completion {
     self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
     [UIView animateWithDuration:0.3 animations:^{
         [self.view layoutIfNeeded];
     } completion:^(BOOL finished) {
         self.textBar.image = image;
+        self.textBar.block = completion;
         self.textBar.text = text;
         self.textBar.object = isObject;
         self.textBarBottomConstraint.constant = [self textBarOpenPosition];

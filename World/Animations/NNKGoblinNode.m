@@ -66,8 +66,7 @@
 - (void)runAction {
     if (self.completionBlock) self.completionBlock(self);
     
-    [self.spriteNode runAction:self.sequence completion:^{
-    }];
+    [self.sequence runActionOnNode:self.spriteNode];
 }
 
 

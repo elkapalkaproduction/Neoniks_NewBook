@@ -6,7 +6,6 @@
 
 #import "ExampleTiledNode.h"
 
-
 @implementation ExampleTiledNode
 
 #pragma mark -
@@ -16,6 +15,7 @@
 
 	return 8;
 }
+
 
 - (uint)columnsCount {
 

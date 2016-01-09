@@ -24,6 +24,7 @@
 @property (strong, nonatomic) NSString *text;
 @property (strong, nonatomic) UIImage *image;
 @property (assign, nonatomic) BOOL object;
+@property (copy, nonatomic) void (^block)();
 
 - (void)stopStound;
 

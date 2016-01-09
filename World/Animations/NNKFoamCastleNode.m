@@ -54,7 +54,7 @@
 
 
 - (void)runAction {
-    [self.spriteNode runAction:self.sequence];
+    [self.sequence runActionOnNode:self.spriteNode];
 }
 
 @end

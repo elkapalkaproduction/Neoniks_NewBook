@@ -153,8 +153,8 @@
 
 
 - (IBAction)reset:(id)sender {
-    AlertViewController *alert = [AlertViewController initWithTitle:NSLocalizedString(@"alert_start_over", nil)
-                                                   firstButtonTitle:NSLocalizedString(@"alert_yes", nil)
+    AlertViewController *alert = [AlertViewController initWithTitle:@"alert_start_over"
+                                                   firstButtonTitle:@"alert_yes"
                                                   firstButtonAction:^{
                                                       [self.table reset];
                                                   }

@@ -80,7 +80,7 @@
 - (void)runAction {
     [self.house removeAllActions];
     self.house.position = CGPointMake(self.house.size.width / 2, self.house.size.height / 2);
-    [self.house runAction:self.houseAction];
+    [self.houseAction runActionOnNode:self.house];
 }
 
 @end

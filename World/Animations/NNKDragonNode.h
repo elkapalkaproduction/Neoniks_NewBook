@@ -7,13 +7,12 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-#import "CustomNodeProtocol.h"
 
 @class NNKDragonNode;
 
 typedef void (^DragonCompletionBlock)(NNKDragonNode *node);
 
-@interface NNKDragonNode : SKSpriteNode <CustomNodeProtocol>
+@interface NNKDragonNode : NNKSpriteNode
 
 - (instancetype)initWithSize:(CGSize)size shouldHideBook:(BOOL)shouldHideBook;
 - (void)removeBook;

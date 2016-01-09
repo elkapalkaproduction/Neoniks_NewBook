@@ -26,10 +26,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *titleImageName = NSLocalizedString(@"contributions_title", nil);
-    self.titleImage.image = [UIImage imageNamed:titleImageName];
-    NSString *mainImageName = NSLocalizedString(@"contributions_main_image", nil);
-    self.mainImage.image = [UIImage imageNamed:mainImageName];
+    self.titleImage.image = [UIImage imageLocalizableNamed:@"contributions_title"];
+    self.mainImage.image = [UIImage imageLocalizableNamed:@"contributions_main_image"];
 }
 
 

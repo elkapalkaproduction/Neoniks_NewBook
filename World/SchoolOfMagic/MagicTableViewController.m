@@ -44,6 +44,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 @property (weak, nonatomic) IBOutlet UIView *prizeView;
 @property (strong, nonatomic) AVAudioPlayer *player;
 @property (strong, nonatomic) NSTimer *timer;
+@property (weak, nonatomic) IBOutlet UIImageView *takeMeImage;
 
 @end
 
@@ -66,6 +67,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
         answer.titleLabel.adjustsFontSizeToFitWidth = YES;
         [answer setTitleColor:[UIColor baseYellowColor] forState:UIControlStateNormal];
     }
+    self.takeMeImage.image = [UIImage imageLocalizableNamed:@"take_me_white"];
     self.questionNumberTitle.textColor = [UIColor questionTitleColor];
     self.questionNumberTitle.font = [UIFont baseFontOfSize:15];
     self.questionText.font = [UIFont baseFontOfSize:15];

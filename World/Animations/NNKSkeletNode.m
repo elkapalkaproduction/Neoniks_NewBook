@@ -19,19 +19,18 @@
 @property (strong, nonatomic) SKTextureAtlas *atlass;
 @property (strong, nonatomic) SKAction *sequence;
 @property (strong, nonatomic) SKSpriteNode *spriteNode;
-@property (assign, nonatomic) BOOL showLastFrameOnLoad;
+@property (assign, nonatomic) BOOL disableAnimation;
 
 @end
 
 @implementation NNKSkeletNode
 
-- (instancetype)initWithSize:(CGSize)size showLastFrameOnLoad:(BOOL)showLastFrameOnLoad {
+- (instancetype)initWithSize:(CGSize)size {
     self = [super init];
     if (self) {
         self.size = size;
-        _showLastFrameOnLoad = showLastFrameOnLoad;
         _atlass = [SKTextureAtlas atlasNamed:AtlasName];
-        _spriteNode = [self mainNodeWithSize:size];
+        _spriteNode = [self mainNodeWithSize:size last:NO];
         [self addChild:_spriteNode];
     }
     
@@ -39,23 +38,17 @@
 }
 
 
-- (instancetype)initWithSize:(CGSize)size {
-    return [self initWithSize:size showLastFrameOnLoad:NO];
-}
-
-
 - (SKAction *)sequence {
     if (!_sequence) {
-        _sequence = [SKAction animateWithTextures:AnimName
-                                     timePerFrame:1.f / 15.f];
+        _sequence =  [SKAction actionWithSoundName:@"skeleton" textures:AnimName];
     }
     
     return _sequence;
 }
 
 
-- (SKSpriteNode *)mainNodeWithSize:(CGSize)size {
-    SKTexture *texture = self.showLastFrameOnLoad ? LastFrameName : FirstFrameName;
+- (SKSpriteNode *)mainNodeWithSize:(CGSize)size last:(BOOL)last {
+    SKTexture *texture = last ? LastFrameName : FirstFrameName;
     SKSpriteNode *spriteNode = [SKSpriteNode spriteNodeWithTexture:texture];
     spriteNode.size = size;
     spriteNode.position = CGPointMake(size.width / 2, size.height / 2);
@@ -66,27 +59,16 @@
 
 - (void)showLastFrame {
     [self.spriteNode removeFromParent];
-    [self setShowLastFrameOnLoad:YES];
+    self.spriteNode = [self mainNodeWithSize:self.spriteNode.size last:YES];
     [self addChild:self.spriteNode];
     self.disableAnimation = YES;
 }
 
 
-- (void)setShowLastFrameOnLoad:(BOOL)showLastFrameOnLoad {
-    _showLastFrameOnLoad = showLastFrameOnLoad;
-    if (showLastFrameOnLoad) {
-        _spriteNode = [self mainNodeWithSize:_spriteNode.size];
-    }
-    
-}
-
-
 - (void)runAction {
     if (self.disableAnimation) return;
-    __weak typeof(self) weakSelf = self;
-    [self.spriteNode runAction:self.sequence completion:^{
-        if (weakSelf.completionBlock) weakSelf.completionBlock(weakSelf);
-    }];
+    self.disableAnimation = YES;
+    [self.sequence runActionOnNode:self.spriteNode];
 }
 
 @end

@@ -7,13 +7,12 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-#import "CustomNodeProtocol.h"
 
 @class NNKGoblinNode;
 
 typedef void (^GoblinCompletionBlock)(NNKGoblinNode *node);
 
-@interface NNKGoblinNode : SKSpriteNode <CustomNodeProtocol>
+@interface NNKGoblinNode : NNKSpriteNode
 
 - (instancetype)initWithSize:(CGSize)size shouldHideWrench:(BOOL)shouldHideWrench;
 - (void)removeWrench;

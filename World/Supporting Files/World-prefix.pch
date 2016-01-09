@@ -23,5 +23,7 @@
 #import "UIImage+Colors.h"
 #import "NSURL+Helps.h"
 #import "UIViewController+Child.h"
+#import "NNKSpriteNode.h"
+#import "SKAction+Groups.h"
 
 #endif

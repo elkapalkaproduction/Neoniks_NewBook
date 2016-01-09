@@ -7,13 +7,12 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-#import "CustomNodeProtocol.h"
 
 @class NNKCatNode;
 
 typedef void (^CatCompletionBlock)();
 
-@interface NNKCatNode : SKSpriteNode <CustomNodeProtocol>
+@interface NNKCatNode : NNKSpriteNode
 
 - (void)runBackgrounAction;
 @property (copy, nonatomic) CatCompletionBlock completionBlock;

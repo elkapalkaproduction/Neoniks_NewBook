@@ -55,6 +55,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 @property (strong, nonatomic) TextBarViewController *textBar;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
 @property (strong, nonatomic) AVAudioPlayer *player;
+@property (weak, nonatomic) IBOutlet UIImageView *takeMeImage;
 
 @end
 
@@ -67,7 +68,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 }
 
 
-- (MyScene *)sceneWithFrame:(CGRect)frame node:(SKNode<CustomNodeProtocol> *)node {
+- (MyScene *)sceneWithFrame:(CGRect)frame node:(NNKSpriteNode *)node {
     MyScene *scene = [MyScene sceneWithSize:frame.size];
     scene.node = node;
     scene.backgroundColor = [UIColor clearColor];
@@ -76,7 +77,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 }
 
 
-- (SKView *)skViewWithSize:(CGRect)frame node:(SKNode<CustomNodeProtocol> *)node {
+- (SKView *)skViewWithSize:(CGRect)frame node:(NNKSpriteNode *)node {
     SKView *skView = [[SKView alloc] initWithFrame:frame];
     skView.allowsTransparency = YES;
     self.scene = [self sceneWithFrame:frame node:node];
@@ -87,7 +88,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 
 - (void)prepareSkView {
-    CGRect frame = self.viewForResults.bounds;
+    CGRect frame = self.viewForResults.bounds; 
     self.skView = [self skViewWithSize:frame node:nil];
     
     [self.viewForResults addSubview:self.skView];
@@ -98,7 +99,8 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     [super viewDidLoad];
     self.shadowElements = [[NSMutableArray alloc] init];
     self.descriptionLabel.font = [UIFont baseFontOfSize:[UIDevice isIpad] ? 30 : 18];
-    self.bannerImage.image = [UIImage imageNamed:NSLocalizedString(NSPImageNameTitle, nil)];
+    self.bannerImage.image = [UIImage imageLocalizableNamed:NSPImageNameTitle];
+    self.takeMeImage.image = [UIImage imageLocalizableNamed:@"take_me_black"];
     self.loadedCharacter = ShadowCharacterJay;
     self.prizeView.hidden = YES;
     self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
@@ -310,41 +312,36 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     NSString *string = [NSString stringWithFormat:NSPTextPatternDescription, (long)character];
     self.descriptionLabel.text = NSLocalizedString(string, nil);
     
-    CGSize size = self.viewForResults.bounds.size;
-    SKNode<CustomNodeProtocol> *node;
+    self.fullPortret.image = nil;
+    self.scene.node = [self nodeForCharacter:character];
     
+}
+
+
+- (NNKSpriteNode *)nodeForCharacter:(ShadowCharacter)character {
+    CGSize size = self.viewForResults.bounds.size;
     switch (character) {
         case ShadowCharacterJay:
-            node = [[NNKJayNode alloc] initWithSize:size];
-            break;
+            return [[NNKJayNode alloc] initWithSize:size];
         case ShadowCharacterWanda:
-            node = [[NNKWandaNode alloc] initWithSize:size];
-            break;
+            return [[NNKWandaNode alloc] initWithSize:size];
         case ShadowCharacterFurcoat:
-            node = [[NNKFurcoatNode alloc] initWithSize:size];
-            break;
+            return [[NNKFurcoatNode alloc] initWithSize:size];
         case ShadowCharacterMiner:
-            node = [[NNKMinerNode alloc] initWithSize:size];
-            break;
+            return [[NNKMinerNode alloc] initWithSize:size];
         case ShadowCharacterHarold:
-            node = [[NNKHaroldNode alloc] initWithSize:size];
-            break;
+            return [[NNKHaroldNode alloc] initWithSize:size];
         case ShadowCharacterPhoebe:
-            node = [[NNKPhoebeNode alloc] initWithSize:size];
-            break;
+            return [[NNKPhoebeNode alloc] initWithSize:size];
         case ShadowCharacterJustacreep:
-            node = [[NNKJustacreepNode alloc] initWithSize:size];
-            break;
+            return [[NNKJustacreepNode alloc] initWithSize:size];
         case ShadowCharacterMystie:
-            node = [[NNKMystieNode alloc] initWithSize:size];
-            break;
+            return [[NNKMystieNode alloc] initWithSize:size];
         default: {
-            break;
+            return nil;
         }
     }
-    self.fullPortret.image = nil;
-    self.scene.node = node;
-    
+
 }
 
 
@@ -373,7 +370,6 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     frame = [self scaledRectFromRect:frame];
     frame.origin.x = X;
     frame.origin.y = Y;
-    NSLog(@"%@", NSStringFromCGRect(frame));
     if (frame.origin.x < 0) {
         frame.origin.x = 0;
     }
@@ -490,13 +486,13 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 
 - (IBAction)reset:(id)sender {
-    AlertViewController *alert = [AlertViewController initWithTitle:NSLocalizedString(@"alert_start_over", nil)
-                                                   firstButtonTitle:NSLocalizedString(@"alert_yes", nil)
+    AlertViewController *alert = [AlertViewController initWithTitle:@"alert_start_over"
+                                                   firstButtonTitle:@"alert_yes"
                                                   firstButtonAction:^{
                                                       [[ShadowPlayOpenedHandler sharedHandler] resetOpenedCharacter];
                                                       [self didPressCharacter:self.loadedCharacter];
                                                   }
-                                                  secondButtonTitle:NSLocalizedString(@"alert_no", nil)
+                                                  secondButtonTitle:@"alert_no"
                                                  secondButtonAction:nil];
     [alert showInViewController:self];
 }

@@ -7,10 +7,9 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-#import "CustomNodeProtocol.h"
 
 @interface MyScene : SKScene
 
-@property (strong, nonatomic) SKNode<CustomNodeProtocol> *node;
+@property (strong, nonatomic) NNKSpriteNode *node;
 
 @end

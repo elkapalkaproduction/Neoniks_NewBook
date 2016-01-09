@@ -10,17 +10,6 @@
 
 @class PopUpViewController;
 
-typedef NS_ENUM(NSInteger, IslandToFind) {
-    IslandToFindSchool,
-    IslandToFindHouse,
-    IslandToFindCafe,
-    IslandToFindLighthouse,
-    IslandToFindMuseum,
-    IslandToFindCastle,
-    IslandToFindBottomles,
-    IslandToFindSolvedAll,
-};
-
 @protocol IslandViewModelDelegate <NSObject>
 
 - (void)openPopUpViewController:(PopUpViewController *)controller;
@@ -33,10 +22,10 @@ typedef NS_ENUM(NSInteger, IslandToFind) {
 - (instancetype)initWithDelegate:(id<IslandViewModelDelegate>)delegate;
 
 - (void)didTapOnPoint:(CGPoint)point;
-- (IslandToFind)currentNeedToFind;
-- (IslandToFind)maxSolved;
+- (NSInteger)currentNeedToFind;
+- (NSInteger)maxSolved;
 - (void)resetAnswers;
-
+- (BOOL)foundAll;
 + (void)deleteAnswers;
 
 @end

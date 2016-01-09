@@ -57,7 +57,7 @@
 
 - (void)runAction {
     [self runActionWithoutSound];
-    [self runAction:[SKAction playSoundFileNamed:@"lamp.mp3" waitForCompletion:NO]];
+    [[SKAction playSoundFileNamed:@"lamp.mp3" waitForCompletion:NO] runActionOnNode:self];
 }
 
 @end

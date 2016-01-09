@@ -12,4 +12,6 @@
 
 - (UIColor *)colorAtPixel:(CGPoint)point;
 
++ (UIImage *)imageLocalizableNamed:(NSString *)name;
+
 @end

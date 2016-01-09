@@ -83,4 +83,11 @@
     }
 }
 
+
+- (void)stopAction {
+    [super stopAction];
+    [self.player stop];
+    [self.timer invalidate];
+}
+
 @end

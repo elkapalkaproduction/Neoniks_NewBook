@@ -65,8 +65,8 @@
 
 
 - (void)runAction {
-    [self.blick runAction:self.blickSequence];
-    [self.pendant runAction:self.pendantSequence];
+    [self.blickSequence runActionOnNode:self.blick];
+    [self.pendantSequence runActionOnNode:self.pendant];
 }
 
 

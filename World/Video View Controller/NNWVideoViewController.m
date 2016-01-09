@@ -35,7 +35,7 @@ NSString *const SVPVideoPath = @"start_video_path";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.titleImage.image = [UIImage imageNamed:NSLocalizedString(SVPVideoTitleImageName, nil)];
+    self.titleImage.image = [UIImage imageLocalizableNamed:SVPVideoTitleImageName];
     [self.playerSuperview addSubview:self.videoPlayer.view];
     [self.videoPlayer play];
 }
@@ -52,6 +52,7 @@ NSString *const SVPVideoPath = @"start_video_path";
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+    [self.videoPlayer stop];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 

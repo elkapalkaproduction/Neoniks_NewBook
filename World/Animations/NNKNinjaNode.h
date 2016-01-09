@@ -7,11 +7,10 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-#import "CustomNodeProtocol.h"
 
 typedef void (^NinjaCompletionBlock)();
 
-@interface NNKNinjaNode : SKNode <CustomNodeProtocol>
+@interface NNKNinjaNode : NNKSpriteNode
 
 @property (copy, nonatomic) NinjaCompletionBlock completionBlock;
 

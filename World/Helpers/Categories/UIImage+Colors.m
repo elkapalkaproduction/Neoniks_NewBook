@@ -48,4 +48,9 @@
     return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
 
+
++ (UIImage *)imageLocalizableNamed:(NSString *)name {
+    return [UIImage imageNamed:NSLocalizedString(name, nil)];
+}
+
 @end

@@ -108,7 +108,7 @@ static const CGFloat shouldWaitBeforeNewAnimation = 1.f;
 - (void)runBackgrounAction {
     [self removeAllActions];
     [self initialize];
-    [self.spriteNode runAction:self.sequence];
+    [self.sequence runActionOnNode:self.spriteNode];
 }
 
 

@@ -32,6 +32,12 @@
 }
 
 
+- (void)removeFromParent {
+    [super removeFromParent];
+    [self.spriteNode removeAllActions];
+}
+
+
 - (SKAction *)sequence {
     if (!_sequence) {
         _sequence = [SKAction actionWithSoundName:@"wanda.mp3" textures:WANDA_ANIM_ANIM_WANDA_ANIM];
@@ -51,7 +57,7 @@
 
 
 - (void)runAction {
-    [self.spriteNode runAction:self.sequence];
+    [self.sequence runActionOnNode:self.spriteNode];
 }
 
 

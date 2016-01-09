@@ -7,13 +7,12 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-#import "CustomNodeProtocol.h"
 
 @class NNKSheepNode;
 
 typedef void (^SheepCompletionBlock)(NNKSheepNode *node);
 
-@interface NNKSheepNode : SKSpriteNode <CustomNodeProtocol>
+@interface NNKSheepNode : NNKSpriteNode
 
 @property (copy, nonatomic) SheepCompletionBlock completionBlock;
 

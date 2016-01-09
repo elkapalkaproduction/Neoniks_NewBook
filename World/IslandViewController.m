@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UIView *textBarSuperView;
 @property (strong, nonatomic) TextBarViewController *textBar;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
+@property (weak, nonatomic) IBOutlet UIImageView *takeMeImage;
 
 @end
 
@@ -50,6 +51,7 @@
     self.islandImageView = [[UIImageView alloc] init];
     UIImage *turnImage = [UIImage imageNamed:@"Island_Main"];
     [self.islandImageView setImage:turnImage];
+    self.takeMeImage.image = [UIImage imageLocalizableNamed:@"take_me_white"];
     [self.mainScrollView addSubview:self.islandImageView];
     self.mainScrollView.translatesAutoresizingMaskIntoConstraints = NO;
     self.islandImageView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -63,13 +65,13 @@
     if (self.currentToFindViewConstraint) {
         [self.currentToFindView.superview removeConstraint:self.currentToFindViewConstraint];
     }
-    IslandToFind maxSolved = [self.viewModel maxSolved];
+    NSInteger maxSolved = [self.viewModel maxSolved];
     self.currentToFindImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"puzzle_cake_%ld", (long)[self.viewModel currentNeedToFind]]];
-    for (NSInteger index = 0; index < IslandToFindSolvedAll; index++) {
+    for (NSInteger index = 0; index < self.stars.count; index++) {
         [self.stars[index] setHidden:index >= maxSolved];
     }
     
-    self.currentToFindView.hidden = maxSolved == IslandToFindSolvedAll;
+    self.currentToFindView.hidden = [self.viewModel foundAll];
     if (!self.currentToFindView.hidden) {
         self.currentToFindViewConstraint = [NSLayoutConstraint constraintWithItem:self.currentToFindView
                                                                         attribute:NSLayoutAttributeBottom
@@ -272,12 +274,12 @@
 
 
 - (IBAction)reset:(id)sender {
-    AlertViewController *alert = [AlertViewController initWithTitle:NSLocalizedString(@"alert_start_over", nil)
-                                                   firstButtonTitle:NSLocalizedString(@"alert_yes", nil)
+    AlertViewController *alert = [AlertViewController initWithTitle:@"alert_start_over"
+                                                   firstButtonTitle:@"alert_yes"
                                                   firstButtonAction:^{
                                                       [self.viewModel resetAnswers];
                                                   }
-                                                  secondButtonTitle:NSLocalizedString(@"alert_no", nil)
+                                                  secondButtonTitle:@"alert_no"
                                                  secondButtonAction:nil];
     [alert showInViewController:self];
 }

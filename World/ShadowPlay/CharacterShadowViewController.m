@@ -68,7 +68,7 @@ NSString *const NSPImagePatterName = @"shadow_name_%ld";
 
 - (void)updateInterface {
     NSString *key = [NSString stringWithFormat:NSPImagePatterName, (long)self.loadedCharacter];
-    self.characterName.image = [UIImage imageNamed:NSLocalizedString(key, nil)];
+    self.characterName.image = [UIImage imageLocalizableNamed:key];
     switch (self.characterInteraction) {
         case CharactersInteractionClosed: {
             [self changeToCharacterClosedState];

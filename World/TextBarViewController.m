@@ -80,6 +80,7 @@
     if ([self.delegate respondsToSelector:@selector(textBarSoundDidFinish:)]) {
         [self.delegate textBarSoundDidFinish:self];
     }
+    if (self.block) self.block();
 }
 
 

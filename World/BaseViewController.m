@@ -45,6 +45,11 @@ const NSInteger storyboardScreenWidth = 600;
 }
 
 
+- (void)dealloc {
+    NSLog(@"%@", [[self class] storyboardID]);
+}
+
+
 + (NSString *)storyboardID {
     return NSStringFromClass([self class]);
 }

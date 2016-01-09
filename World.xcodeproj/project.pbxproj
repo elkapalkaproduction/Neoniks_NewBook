@@ -67,6 +67,9 @@
 		750569361B1E55B9008DE162 /* wanda_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 750569341B1E55B9008DE162 /* wanda_anim.atlasc */; };
 		750569391B1E5660008DE162 /* bottom_island.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 750569371B1E5660008DE162 /* bottom_island.atlasc */; };
 		7505693C1B1E56BB008DE162 /* lantern_house.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 7505693A1B1E56BB008DE162 /* lantern_house.atlasc */; };
+		75127BD21C413C82003762A2 /* NNKSpriteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75127BD11C413C82003762A2 /* NNKSpriteNode.m */; };
+		75127BD41C418AB7003762A2 /* skeleton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75127BD31C418AB7003762A2 /* skeleton.mp3 */; };
+		75127BDD1C418B96003762A2 /* skelet_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75127BDB1C418B96003762A2 /* skelet_anim.atlasc */; };
 		7530D6B31AD068D50063F124 /* ContributorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7530D6B21AD068D50063F124 /* ContributorsViewController.m */; };
 		7530D6B61AD069960063F124 /* ContributorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7530D6B51AD069960063F124 /* ContributorsViewController.xib */; };
 		753D72361BA4CBF8006DC74A /* text_panel_sheep_final_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 753D72321BA4CBF8006DC74A /* text_panel_sheep_final_sound_en.mp3 */; };
@@ -185,6 +188,16 @@
 		75AE58661BA963B300DDD552 /* menu_512x512_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58361BA963B200DDD552 /* menu_512x512_8.png */; };
 		75AE58671BA963B300DDD552 /* menu_512x512_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AE58371BA963B200DDD552 /* menu_512x512_9.png */; };
 		75AE586D1BA9B4D900DDD552 /* DragableSpriteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AE586C1BA9B4D900DDD552 /* DragableSpriteNode.m */; };
+		75B19A2A1C411CE2002803CC /* text_panel_ginger_1_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B19A201C411CE2002803CC /* text_panel_ginger_1_sound_en.mp3 */; };
+		75B19A2B1C411CE2002803CC /* text_panel_ginger_1_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B19A211C411CE2002803CC /* text_panel_ginger_1_sound_ru.mp3 */; };
+		75B19A2C1C411CE2002803CC /* text_panel_ginger_2_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B19A221C411CE2002803CC /* text_panel_ginger_2_sound_en.mp3 */; };
+		75B19A2D1C411CE2002803CC /* text_panel_ginger_2_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B19A231C411CE2002803CC /* text_panel_ginger_2_sound_ru.mp3 */; };
+		75B19A2E1C411CE2002803CC /* text_panel_ginger_3_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B19A241C411CE2002803CC /* text_panel_ginger_3_sound_en.mp3 */; };
+		75B19A2F1C411CE2002803CC /* text_panel_ginger_3_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B19A251C411CE2002803CC /* text_panel_ginger_3_sound_ru.mp3 */; };
+		75B19A301C411CE2002803CC /* text_panel_ginger_4_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B19A261C411CE2002803CC /* text_panel_ginger_4_sound_en.mp3 */; };
+		75B19A311C411CE2002803CC /* text_panel_ginger_4_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B19A271C411CE2002803CC /* text_panel_ginger_4_sound_ru.mp3 */; };
+		75B19A321C411CE2002803CC /* text_panel_ginger_5_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B19A281C411CE2002803CC /* text_panel_ginger_5_sound_en.mp3 */; };
+		75B19A331C411CE2002803CC /* text_panel_ginger_5_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75B19A291C411CE2002803CC /* text_panel_ginger_5_sound_ru.mp3 */; };
 		75B357D71C1D7414000DFC4E /* blue_house_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75B357D51C1D7414000DFC4E /* blue_house_anim.atlasc */; };
 		75B627F41B1CFBBD000A3172 /* NNKPhoebeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B627F11B1CFBBD000A3172 /* NNKPhoebeNode.m */; };
 		75B627F51B1CFBBD000A3172 /* NNKSchoolNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B627F31B1CFBBD000A3172 /* NNKSchoolNode.m */; };
@@ -454,11 +467,9 @@
 		75EC14161A7ECF460086803E /* MagicSchoolAnswersHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EC14151A7ECF460086803E /* MagicSchoolAnswersHandler.m */; };
 		75EC74841C25EB6600CE0E25 /* SideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EC74831C25EB6600CE0E25 /* SideMenu.m */; };
 		75EC74861C25EB7000CE0E25 /* SideMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75EC74851C25EB7000CE0E25 /* SideMenu.xib */; };
-		75EC74881C25EBA600CE0E25 /* backing2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75EC74871C25EBA600CE0E25 /* backing2.png */; };
 		75EDA1841A83FBCA002546E0 /* shadow_wrong_position.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75EDA1831A83FBCA002546E0 /* shadow_wrong_position.plist */; };
 		75EDA1871A83FE7E002546E0 /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDA1861A83FE7E002546E0 /* Storage.m */; };
 		75EDA1921A840F31002546E0 /* NNWVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDA18F1A840F31002546E0 /* NNWVideoViewController.m */; };
-		75EE39651B41D74100BF9A55 /* skelet_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75EE39631B41D74100BF9A55 /* skelet_anim.atlasc */; };
 		75EE39681B41D75900BF9A55 /* NNKSkeletNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EE39671B41D75900BF9A55 /* NNKSkeletNode.m */; };
 		75F1DB201A86D758005ACBA7 /* UIDevice+ScreenSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F1DB1F1A86D758005ACBA7 /* UIDevice+ScreenSize.m */; };
 		75FF2F111B22311D008EB9AA /* NNKJustacreepNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FF2F101B22311D008EB9AA /* NNKJustacreepNode.m */; };
@@ -509,7 +520,6 @@
 		750380001B1A3B8900CB0B83 /* NNKLanternHouseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKLanternHouseNode.m; sourceTree = "<group>"; };
 		750380011B1A3B8900CB0B83 /* NNKBottomlessIslandNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKBottomlessIslandNode.h; sourceTree = "<group>"; };
 		750380021B1A3B8900CB0B83 /* NNKBottomlessIslandNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKBottomlessIslandNode.m; sourceTree = "<group>"; };
-		750380031B1A3B8900CB0B83 /* CustomNodeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNodeProtocol.h; sourceTree = "<group>"; };
 		75041C031B6E9ED300B28F3F /* q0_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q0_sound_en.mp3; sourceTree = "<group>"; };
 		75041C041B6E9ED300B28F3F /* q0_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q0_sound_ru.mp3; sourceTree = "<group>"; };
 		75041C051B6E9ED300B28F3F /* q1_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = q1_sound_en.mp3; sourceTree = "<group>"; };
@@ -564,6 +574,11 @@
 		750569381B1E5660008DE162 /* bottom_island.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bottom_island.h; sourceTree = "<group>"; };
 		7505693A1B1E56BB008DE162 /* lantern_house.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lantern_house.atlasc; sourceTree = "<group>"; };
 		7505693B1B1E56BB008DE162 /* lantern_house.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lantern_house.h; sourceTree = "<group>"; };
+		75127BD01C413C82003762A2 /* NNKSpriteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKSpriteNode.h; sourceTree = "<group>"; };
+		75127BD11C413C82003762A2 /* NNKSpriteNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKSpriteNode.m; sourceTree = "<group>"; };
+		75127BD31C418AB7003762A2 /* skeleton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = skeleton.mp3; sourceTree = "<group>"; };
+		75127BDB1C418B96003762A2 /* skelet_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skelet_anim.atlasc; sourceTree = "<group>"; };
+		75127BDC1C418B96003762A2 /* skelet_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = skelet_anim.h; sourceTree = "<group>"; };
 		7530D6B11AD068D50063F124 /* ContributorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContributorsViewController.h; sourceTree = "<group>"; };
 		7530D6B21AD068D50063F124 /* ContributorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsViewController.m; sourceTree = "<group>"; };
 		7530D6B51AD069960063F124 /* ContributorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContributorsViewController.xib; sourceTree = "<group>"; };
@@ -719,6 +734,16 @@
 		75AE58371BA963B200DDD552 /* menu_512x512_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_512x512_9.png; sourceTree = "<group>"; };
 		75AE586B1BA9B4D900DDD552 /* DragableSpriteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragableSpriteNode.h; sourceTree = "<group>"; };
 		75AE586C1BA9B4D900DDD552 /* DragableSpriteNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragableSpriteNode.m; sourceTree = "<group>"; };
+		75B19A201C411CE2002803CC /* text_panel_ginger_1_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_ginger_1_sound_en.mp3; sourceTree = "<group>"; };
+		75B19A211C411CE2002803CC /* text_panel_ginger_1_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_ginger_1_sound_ru.mp3; sourceTree = "<group>"; };
+		75B19A221C411CE2002803CC /* text_panel_ginger_2_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_ginger_2_sound_en.mp3; sourceTree = "<group>"; };
+		75B19A231C411CE2002803CC /* text_panel_ginger_2_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_ginger_2_sound_ru.mp3; sourceTree = "<group>"; };
+		75B19A241C411CE2002803CC /* text_panel_ginger_3_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_ginger_3_sound_en.mp3; sourceTree = "<group>"; };
+		75B19A251C411CE2002803CC /* text_panel_ginger_3_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_ginger_3_sound_ru.mp3; sourceTree = "<group>"; };
+		75B19A261C411CE2002803CC /* text_panel_ginger_4_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_ginger_4_sound_en.mp3; sourceTree = "<group>"; };
+		75B19A271C411CE2002803CC /* text_panel_ginger_4_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_ginger_4_sound_ru.mp3; sourceTree = "<group>"; };
+		75B19A281C411CE2002803CC /* text_panel_ginger_5_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_ginger_5_sound_en.mp3; sourceTree = "<group>"; };
+		75B19A291C411CE2002803CC /* text_panel_ginger_5_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_ginger_5_sound_ru.mp3; sourceTree = "<group>"; };
 		75B357D51C1D7414000DFC4E /* blue_house_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = blue_house_anim.atlasc; sourceTree = "<group>"; };
 		75B357D61C1D7414000DFC4E /* blue_house_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blue_house_anim.h; sourceTree = "<group>"; };
 		75B627F01B1CFBBD000A3172 /* NNKPhoebeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKPhoebeNode.h; sourceTree = "<group>"; };
@@ -1027,14 +1052,11 @@
 		75EC74821C25EB6600CE0E25 /* SideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenu.h; sourceTree = "<group>"; };
 		75EC74831C25EB6600CE0E25 /* SideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenu.m; sourceTree = "<group>"; };
 		75EC74851C25EB7000CE0E25 /* SideMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenu.xib; sourceTree = "<group>"; };
-		75EC74871C25EBA600CE0E25 /* backing2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backing2.png; sourceTree = "<group>"; };
 		75EDA1831A83FBCA002546E0 /* shadow_wrong_position.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shadow_wrong_position.plist; sourceTree = "<group>"; };
 		75EDA1851A83FE7E002546E0 /* Storage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Storage.h; sourceTree = "<group>"; };
 		75EDA1861A83FE7E002546E0 /* Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Storage.m; sourceTree = "<group>"; };
 		75EDA18E1A840F31002546E0 /* NNWVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNWVideoViewController.h; sourceTree = "<group>"; };
 		75EDA18F1A840F31002546E0 /* NNWVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNWVideoViewController.m; sourceTree = "<group>"; };
-		75EE39631B41D74100BF9A55 /* skelet_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skelet_anim.atlasc; sourceTree = "<group>"; };
-		75EE39641B41D74100BF9A55 /* skelet_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = skelet_anim.h; sourceTree = "<group>"; };
 		75EE39661B41D75900BF9A55 /* NNKSkeletNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKSkeletNode.h; sourceTree = "<group>"; };
 		75EE39671B41D75900BF9A55 /* NNKSkeletNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKSkeletNode.m; sourceTree = "<group>"; };
 		75F1DB1E1A86D758005ACBA7 /* UIDevice+ScreenSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ScreenSize.h"; sourceTree = "<group>"; };
@@ -1107,7 +1129,8 @@
 				75518F9E1B91083E006A6ED8 /* SKSpriteNode+TextureCreation.m */,
 				75518F9F1B91083E006A6ED8 /* VelocityCreation.h */,
 				75518FA01B91083E006A6ED8 /* VelocityCreation.m */,
-				750380031B1A3B8900CB0B83 /* CustomNodeProtocol.h */,
+				75127BD01C413C82003762A2 /* NNKSpriteNode.h */,
+				75127BD11C413C82003762A2 /* NNKSpriteNode.m */,
 				75B980691B58F9EF00893462 /* Atlases */,
 			);
 			path = Animations;
@@ -1336,6 +1359,8 @@
 		75B980691B58F9EF00893462 /* Atlases */ = {
 			isa = PBXGroup;
 			children = (
+				75127BDB1C418B96003762A2 /* skelet_anim.atlasc */,
+				75127BDC1C418B96003762A2 /* skelet_anim.h */,
 				75B357D51C1D7414000DFC4E /* blue_house_anim.atlasc */,
 				75B357D61C1D7414000DFC4E /* blue_house_anim.h */,
 				753D72911BA4E310006DC74A /* ninja_anim.atlasc */,
@@ -1346,8 +1371,6 @@
 				75518FA21B91083E006A6ED8 /* cat_anim.h */,
 				75C83FF61B497444007122A9 /* goblin_anim.atlasc */,
 				75C83FF71B497444007122A9 /* goblin_anim.h */,
-				75EE39631B41D74100BF9A55 /* skelet_anim.atlasc */,
-				75EE39641B41D74100BF9A55 /* skelet_anim.h */,
 				75FF2F121B22312B008EB9AA /* justacreep_anim.atlasc */,
 				75FF2F131B22312B008EB9AA /* justacreep_anim.h */,
 				7505693A1B1E56BB008DE162 /* lantern_house.atlasc */,
@@ -1468,6 +1491,17 @@
 				753D723B1BA4CE25006DC74A /* text_panel_ninja_final_sound_ru.mp3 */,
 				753D723C1BA4CE25006DC74A /* text_panel_ninja_initial_sound_en.mp3 */,
 				753D723D1BA4CE25006DC74A /* text_panel_ninja_initial_sound_ru.mp3 */,
+				75B19A201C411CE2002803CC /* text_panel_ginger_1_sound_en.mp3 */,
+				75B19A211C411CE2002803CC /* text_panel_ginger_1_sound_ru.mp3 */,
+				75B19A221C411CE2002803CC /* text_panel_ginger_2_sound_en.mp3 */,
+				75B19A231C411CE2002803CC /* text_panel_ginger_2_sound_ru.mp3 */,
+				75B19A241C411CE2002803CC /* text_panel_ginger_3_sound_en.mp3 */,
+				75B19A251C411CE2002803CC /* text_panel_ginger_3_sound_ru.mp3 */,
+				75B19A261C411CE2002803CC /* text_panel_ginger_4_sound_en.mp3 */,
+				75B19A271C411CE2002803CC /* text_panel_ginger_4_sound_ru.mp3 */,
+				75B19A281C411CE2002803CC /* text_panel_ginger_5_sound_en.mp3 */,
+				75B19A291C411CE2002803CC /* text_panel_ginger_5_sound_ru.mp3 */,
+				75127BD31C418AB7003762A2 /* skeleton.mp3 */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -1550,7 +1584,6 @@
 				75EC74821C25EB6600CE0E25 /* SideMenu.h */,
 				75EC74831C25EB6600CE0E25 /* SideMenu.m */,
 				75EC74851C25EB7000CE0E25 /* SideMenu.xib */,
-				75EC74871C25EBA600CE0E25 /* backing2.png */,
 				75037F9B1B1A3B6800CB0B83 /* Animations */,
 				75AD2E7B1ADAD18D002EE482 /* Epub Book */,
 				7530D6B41AD068E60063F124 /* TopBar */,
@@ -2037,7 +2070,7 @@
 		75C12A571A754B6C0075FD8D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Andrei Vidrasco";
 				TargetAttributes = {
 					75C12A5E1A754B6C0075FD8D = {
@@ -2079,6 +2112,7 @@
 				75037FE81B1A3B7700CB0B83 /* furcoat_anim.atlasc in Resources */,
 				75DC67E81A816AA100D6A553 /* shadow_character5_part6.png in Resources */,
 				75DC67A21A816AA100D6A553 /* shadow_character1_part2.png in Resources */,
+				75127BD41C418AB7003762A2 /* skeleton.mp3 in Resources */,
 				75B980C11B5916A400893462 /* text_panel_medal_sound_ru.mp3 in Resources */,
 				75B980BA1B5916A400893462 /* text_panel_island_initial_sound_en.mp3 in Resources */,
 				75AE585D1BA963B300DDD552 /* menu_512x512_42.png in Resources */,
@@ -2097,6 +2131,7 @@
 				75DC68111A816AA100D6A553 /* shadow_character8_part11.png in Resources */,
 				75B980741B58FA4C00893462 /* foam_castle.mp3 in Resources */,
 				75B980B51B5916A400893462 /* text_panel_dragon_initial_sound_ru.mp3 in Resources */,
+				75127BDD1C418B96003762A2 /* skelet_anim.atlasc in Resources */,
 				753D72411BA4CE25006DC74A /* text_panel_ninja_initial_sound_ru.mp3 in Resources */,
 				75B980C51B5916A400893462 /* text_panel_shadow_final_sound_ru.mp3 in Resources */,
 				75DC67AA1A816AA100D6A553 /* shadow_character2_part1.png in Resources */,
@@ -2122,11 +2157,11 @@
 				75B980C91B5916A400893462 /* text_panel_wand_sound_ru.mp3 in Resources */,
 				75C12A6E1A754B6C0075FD8D /* Main.storyboard in Resources */,
 				75B980721B58FA4C00893462 /* bottomless_island.mp3 in Resources */,
-				75EC74881C25EBA600CE0E25 /* backing2.png in Resources */,
 				75DC68081A816AA100D6A553 /* shadow_character7_part3.png in Resources */,
 				75DC68191A816AA100D6A553 /* shadow_character8_part19.png in Resources */,
 				75DC67AB1A816AA100D6A553 /* shadow_character2_part10.png in Resources */,
 				75DFE1071A800CE500CE9E69 /* Shadow_portret_border_5.png in Resources */,
+				75B19A2C1C411CE2002803CC /* text_panel_ginger_2_sound_en.mp3 in Resources */,
 				75DFE0FE1A800CE500CE9E69 /* Shadow_portret_4.png in Resources */,
 				75AE57FE1BA963A500DDD552 /* island.png in Resources */,
 				75B980761B58FA4C00893462 /* lamp.mp3 in Resources */,
@@ -2164,6 +2199,8 @@
 				75DC67B31A816AA100D6A553 /* shadow_character2_part6.png in Resources */,
 				75AE583A1BA963B200DDD552 /* menu_512x512_10.png in Resources */,
 				75DC66E81A81520A00D6A553 /* full_portret_shadow_6.png in Resources */,
+				75B19A2E1C411CE2002803CC /* text_panel_ginger_3_sound_en.mp3 in Resources */,
+				75B19A311C411CE2002803CC /* text_panel_ginger_4_sound_ru.mp3 in Resources */,
 				75D530FD1B6E82D000E57D25 /* island_sound_4_en.mp3 in Resources */,
 				75D530F81B6E82D000E57D25 /* island_sound_1_ru.mp3 in Resources */,
 				75DC67CA1A816AA100D6A553 /* shadow_character4_part13.png in Resources */,
@@ -2188,6 +2225,7 @@
 				75AE585B1BA963B300DDD552 /* menu_512x512_40.png in Resources */,
 				75DC681A1A816AA100D6A553 /* shadow_character8_part2.png in Resources */,
 				75DC680B1A816AA100D6A553 /* shadow_character7_part6.png in Resources */,
+				75B19A2B1C411CE2002803CC /* text_panel_ginger_1_sound_ru.mp3 in Resources */,
 				75DC67E01A816AA100D6A553 /* shadow_character5_part11.png in Resources */,
 				75AE583E1BA963B300DDD552 /* menu_512x512_14.png in Resources */,
 				75DC67A01A816AA100D6A553 /* shadow_character1_part11.png in Resources */,
@@ -2225,6 +2263,7 @@
 				75DC67EE1A816AA100D6A553 /* shadow_character6_part11.png in Resources */,
 				75B980631B58F4A400893462 /* furcoat.mp3 in Resources */,
 				75AE583B1BA963B200DDD552 /* menu_512x512_11.png in Resources */,
+				75B19A2A1C411CE2002803CC /* text_panel_ginger_1_sound_en.mp3 in Resources */,
 				75041C421B6EAD7F00B28F3F /* shadow_sound_4_en.mp3 in Resources */,
 				75AE585A1BA963B300DDD552 /* menu_512x512_4.png in Resources */,
 				75AE58661BA963B300DDD552 /* menu_512x512_8.png in Resources */,
@@ -2240,6 +2279,7 @@
 				75B980C41B5916A400893462 /* text_panel_shadow_final_sound_en.mp3 in Resources */,
 				75DC67F21A816AA100D6A553 /* shadow_character6_part15.png in Resources */,
 				75DC67F31A816AA100D6A553 /* shadow_character6_part2.png in Resources */,
+				75B19A2D1C411CE2002803CC /* text_panel_ginger_2_sound_ru.mp3 in Resources */,
 				75B980B71B5916A400893462 /* text_panel_goblin_final_sound_ru.mp3 in Resources */,
 				75DC67AE1A816AA100D6A553 /* shadow_character2_part13.png in Resources */,
 				75C83FFE1B49882C007122A9 /* sheep_anim.atlasc in Resources */,
@@ -2254,6 +2294,7 @@
 				75EDA1841A83FBCA002546E0 /* shadow_wrong_position.plist in Resources */,
 				75041C201B6E9ED300B28F3F /* q4_sound_ru.mp3 in Resources */,
 				75B980611B58F49700893462 /* wanda.mp3 in Resources */,
+				75B19A331C411CE2002803CC /* text_panel_ginger_5_sound_ru.mp3 in Resources */,
 				75041C4B1B6EAD7F00B28F3F /* shadow_sound_8_ru.mp3 in Resources */,
 				75DC67D21A816AA100D6A553 /* shadow_character4_part20.png in Resources */,
 				75DC67C31A816AA100D6A553 /* shadow_character3_part7.png in Resources */,
@@ -2312,6 +2353,7 @@
 				75DC67D31A816AA100D6A553 /* shadow_character4_part21.png in Resources */,
 				7530D6B61AD069960063F124 /* ContributorsViewController.xib in Resources */,
 				75DC67CC1A816AA100D6A553 /* shadow_character4_part15.png in Resources */,
+				75B19A301C411CE2002803CC /* text_panel_ginger_4_sound_en.mp3 in Resources */,
 				75DC67E41A816AA100D6A553 /* shadow_character5_part2.png in Resources */,
 				75AE58431BA963B300DDD552 /* menu_512x512_19.png in Resources */,
 				75DC66E61A81520A00D6A553 /* full_portret_shadow_4.png in Resources */,
@@ -2373,11 +2415,11 @@
 				75AE58581BA963B300DDD552 /* menu_512x512_38.png in Resources */,
 				75AE585C1BA963B300DDD552 /* menu_512x512_41.png in Resources */,
 				75D530FC1B6E82D000E57D25 /* island_sound_3_ru.mp3 in Resources */,
+				75B19A2F1C411CE2002803CC /* text_panel_ginger_3_sound_ru.mp3 in Resources */,
 				75041C271B6E9ED300B28F3F /* q8_sound_en.mp3 in Resources */,
 				75AE58461BA963B300DDD552 /* menu_512x512_21.png in Resources */,
 				75AE58001BA963A500DDD552 /* school_of_magic_eng.png in Resources */,
 				75B980821B590FB800893462 /* text_panel_teacher_initial_sound_ru.mp3 in Resources */,
-				75EE39651B41D74100BF9A55 /* skelet_anim.atlasc in Resources */,
 				75DC67E31A816AA100D6A553 /* shadow_character5_part14.png in Resources */,
 				75B980C21B5916A400893462 /* text_panel_other_sound_en.mp3 in Resources */,
 				75B980B31B5916A400893462 /* text_panel_dragon_final_sound_ru.mp3 in Resources */,
@@ -2441,6 +2483,7 @@
 				75DC67A51A816AA100D6A553 /* shadow_character1_part5.png in Resources */,
 				75DC67DF1A816AA100D6A553 /* shadow_character5_part10.png in Resources */,
 				75041C181B6E9ED300B28F3F /* q0_sound_ru.mp3 in Resources */,
+				75B19A321C411CE2002803CC /* text_panel_ginger_5_sound_en.mp3 in Resources */,
 				75041C251B6E9ED300B28F3F /* q7_sound_en.mp3 in Resources */,
 				75AD2E901ADAD193002EE482 /* book_rus.epub in Resources */,
 				75DC67B11A816AA100D6A553 /* shadow_character2_part4.png in Resources */,
@@ -2542,6 +2585,7 @@
 				75DFE1101A800D6200CE9E69 /* ShadowPlayViewController.m in Sources */,
 				753D72931BA4E310006DC74A /* NNKNinjaNode.m in Sources */,
 				75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */,
+				75127BD21C413C82003762A2 /* NNKSpriteNode.m in Sources */,
 				75CC87E91AD0238D00F6C59E /* MainScreenViewModel.m in Sources */,
 				75AD2E991ADAD193002EE482 /* NNKEpubView.m in Sources */,
 				75B627F51B1CFBBD000A3172 /* NNKSchoolNode.m in Sources */,
@@ -2667,6 +2711,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2743,6 +2788,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neoniks.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -2765,6 +2811,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neoniks.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -2784,6 +2831,7 @@
 				);
 				INFOPLIST_FILE = "WorldTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neoniks.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/World.app/World";
 			};
@@ -2799,6 +2847,7 @@
 				);
 				INFOPLIST_FILE = "WorldTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neoniks.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/World.app/World";
 			};

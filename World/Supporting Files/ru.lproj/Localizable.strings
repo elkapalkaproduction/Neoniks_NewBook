@@ -128,6 +128,14 @@
 "text_panel_ninja_initial" = "Я меч потерял.\nТебе он не попадался?";
 "text_panel_ninja_final" = "Спасибо! Держи шарик магии.";
 
+//ginger
+"text_panel_ginger_1" = "Привет! Меня зовут Апельсина Фисташкова.\nХочешь попасть в мир магии и узнать,\nчто случилось с маленькой лисичкой?";
+"text_panel_ginger_2" = "Тогда тебе надо доказать,\nчто ты настоящий волшебник.";
+"text_panel_ginger_3" = "Раздобудь карту острова Торт, волшебную\nпалочку, книгу заклинаний, золотую\nмедаль и флакон с тремя шариками магии.";
+"text_panel_ginger_4" = "Поздра...\nНет, я так не играю.\nУ тебя еще не все собрано!";
+"text_panel_ginger_5" = "Неужели все собрано? Да ты просто\nволшебник! Поехали скорее в сказку -\nтебя там заждались!";
+
+
 "book_name_footer" = "Неоники и лисичка Наруке";
 "page_attribute" = "из";
 
@@ -184,6 +192,10 @@
 "site_address" = "www.neoniki.com";
 
 "book_name" = "book_rus.epub";
+
+"take_me_black" = "Take-me-rus-black";
+"take_me_white" = "Take-me-rus-white";
+
 ///////////
 
 
@@ -213,6 +225,13 @@
 "text_panel_island_initial_sound" = "text_panel_island_initial_sound_ru";
 "text_panel_shadow_initial_sound" = "text_panel_shadow_initial_sound_ru";
 "text_panel_shadow_final_sound" = "text_panel_shadow_final_sound_ru";
+
+"text_panel_ginger_1_sound" = "text_panel_ginger_1_sound_ru";
+"text_panel_ginger_2_sound" = "text_panel_ginger_2_sound_ru";
+"text_panel_ginger_3_sound" = "text_panel_ginger_3_sound_ru";
+"text_panel_ginger_4_sound" = "text_panel_ginger_4_sound_ru";
+"text_panel_ginger_5_sound" = "text_panel_ginger_5_sound_ru";
+
 
 "island_sound_0" = "island_sound_0_ru";
 "island_sound_1" = "island_sound_1_ru";

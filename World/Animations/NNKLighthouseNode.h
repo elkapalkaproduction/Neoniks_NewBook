@@ -7,8 +7,7 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-#import "CustomNodeProtocol.h"
 
-@interface NNKLighthouseNode : SKNode <CustomNodeProtocol>
+@interface NNKLighthouseNode : NNKSpriteNode
 
 @end

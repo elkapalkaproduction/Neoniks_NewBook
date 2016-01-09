@@ -11,5 +11,6 @@
 @interface UIViewController (Child)
 
 - (void)addChildViewController:(UIViewController *)child withSuperview:(UIView *)view;
+- (void)removeFromParent;
 
 @end

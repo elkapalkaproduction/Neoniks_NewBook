@@ -44,7 +44,7 @@
 }
 
 
-- (MyScene *)sceneWithFrame:(CGRect)frame node:(SKNode<CustomNodeProtocol> *)node {
+- (MyScene *)sceneWithFrame:(CGRect)frame node:(NNKSpriteNode *)node {
     MyScene *scene = [MyScene sceneWithSize:frame.size];
     scene.node = node;
     scene.backgroundColor = [UIColor clearColor];
@@ -70,7 +70,7 @@
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:localizedText];
     [attributedString addAttribute:NSKernAttributeName value:@(1.4) range:NSMakeRange(0, [localizedText length])];
     self.label.attributedText = attributedString;
-    self.topBanner.image = [UIImage imageNamed:NSLocalizedString(bannerImageName, nil)];
+    self.topBanner.image = [UIImage imageLocalizableNamed:bannerImageName];
     self.skView.allowsTransparency = YES;
 
     [self setupContentImage];
@@ -94,9 +94,9 @@
 }
 
 
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    [self.player stop];
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [self.scene removeAllChildren];
 }
 
 
@@ -111,11 +111,13 @@
 
 
 - (IBAction)close:(id)sender {
+    [self.scene.node stopAction];
+    [self.player stop];
     __weak typeof(self) weakSelf = self;
     [UIView animateWithDuration:0.5 animations:^{
         self.view.alpha = 0.f;
     } completion:^(BOOL finished) {
-        [self.view removeFromSuperview];
+        [weakSelf removeFromParent];
         [weakSelf.delegate didClosePopUp];
     }];
 

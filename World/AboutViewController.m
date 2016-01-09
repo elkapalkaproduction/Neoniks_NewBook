@@ -26,8 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *titleImageName = NSLocalizedString(@"about_page_title", nil);
-    self.titleImage.image = [UIImage imageNamed:titleImageName];
+    self.titleImage.image = [UIImage imageLocalizableNamed:@"about_page_title"];
     NSString *text = NSLocalizedString(@"about_page_text", nil);
     NSDictionary *attributes = @{NSFontAttributeName : [UIFont baseFontOfSize:22],
                                  NSForegroundColorAttributeName : [UIColor whiteColor]};

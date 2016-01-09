@@ -74,7 +74,7 @@
                                                     }];
         
         SKAction *action = [SKAction group:@[move, rotation]];
-        [self.hatNode runAction:action];
+        [action runActionOnNode:self.hatNode];
     } else {
         self.hatNode.physicsBody = [SKPhysicsBody bodyWithTexture:JUSTACREEP_ANIM_TEX_JUSTACREEP_HAT size:self.hatNode.size];
         self.hatNode.physicsBody.dynamic = YES;
@@ -88,7 +88,7 @@
     NSInteger count = [self.hatNode.physicsBody.allContactedBodies count];
     if (count > 0) {
         [self.timer invalidate];
-        [self runAction:[SKAction playSoundFileNamed:@"justacreep.mp3" waitForCompletion:NO]];
+        [[SKAction playSoundFileNamed:@"justacreep.mp3" waitForCompletion:NO] runActionOnNode:self];
     }
 }
 

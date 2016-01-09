@@ -14,7 +14,6 @@
 @property (strong, nonatomic) SKTextureAtlas *atlass;
 @property (strong, nonatomic) SKSpriteNode *ninjaNode;
 @property (strong, nonatomic) SKSpriteNode *wingsNode;
-@property (assign, nonatomic) CGSize size;
 
 @end
 
@@ -23,7 +22,7 @@
 - (instancetype)initWithSize:(CGSize)size {
     self = [super init];
     if (self) {
-        _size = size;
+        self.size = size;
         _atlass = [SKTextureAtlas atlasNamed:NINJA_ANIM_ATLAS_NAME];
         [self addChild:self.ninjaNode];
         [self addChild:[self woodNodeWithSize:CGSizeMake(size.width, size.width * 339. / 203.)
@@ -57,9 +56,9 @@
 - (void)runAction {
     if (self.completionBlock) self.completionBlock();
     [self.ninjaNode removeAllActions];
-    [self.ninjaNode runAction:[SKAction sequence:@[[SKAction moveToY:self.ninjaNode.size.height / 2 duration:0.5],
-                                                   [SKAction waitForDuration:3],
-                                                   [SKAction moveToY:self.size.height - self.ninjaNode.size.height / 2 duration:0.5]]]];
+    [[SKAction sequence:@[[SKAction moveToY:self.ninjaNode.size.height / 2 duration:0.5],
+                          [SKAction waitForDuration:3],
+                          [SKAction moveToY:self.size.height - self.ninjaNode.size.height / 2 duration:0.5]]] runActionOnNode:self.ninjaNode];
 }
 
 @end

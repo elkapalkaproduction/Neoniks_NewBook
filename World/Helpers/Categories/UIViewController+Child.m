@@ -18,4 +18,11 @@
     [superview addSubview:child.view];
 }
 
+
+- (void)removeFromParent {
+    [self willMoveToParentViewController:nil];
+    [self.view removeFromSuperview];
+    [self removeFromParentViewController];
+}
+
 @end

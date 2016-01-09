@@ -7,8 +7,6 @@
 #import <Foundation/Foundation.h>
 #import "PIOTiledNode.h"
 
-
 @interface ExampleTiledNode : PIOTiledNode
-
 
 @end

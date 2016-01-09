@@ -128,6 +128,13 @@
 "text_panel_ninja_initial" = "I lost my sword. Have you seen it?";
 "text_panel_ninja_final" = "Thanks! Here is your ball of magic.";
 
+//ginger
+"text_panel_ginger_1" = "Hi! My name is Ginger Pistachio.\nDo you want to travel to the Magical World and\nlearn about what happened to the little fox?";
+"text_panel_ginger_2" = "Then you have to prove you are a real wizard.\nCome back when you have...";
+"text_panel_ginger_3" = "...the Cake Island map, a magic wand,\na book of spells, a medal, and a bottle with\nthree balls of magic.";
+"text_panel_ginger_4" = "Congra...— Hey, it seems you\ndidn’t finish your quest yet!";
+"text_panel_ginger_5" = "You made it! I knew you were a real wizard.\nNow let’s go to the magical\nworld of the Neoniks.";
+
 
 "book_name_footer" = "Nenoniks and Mystie the Fox";
 "page_attribute" = "from";
@@ -184,6 +191,9 @@
 "site_address" = "www.neoniks.com";
 "book_name" = "book_eng.epub";
 
+"take_me_black" = "Take-me-black";
+"take_me_white" = "Take-me-white";
+
 ///////////
 
 
@@ -215,6 +225,11 @@
 "text_panel_shadow_initial_sound" = "text_panel_shadow_initial_sound_en";
 "text_panel_shadow_final_sound" = "text_panel_shadow_final_sound_en";
 
+"text_panel_ginger_1_sound" = "text_panel_ginger_1_sound_en";
+"text_panel_ginger_2_sound" = "text_panel_ginger_2_sound_en";
+"text_panel_ginger_3_sound" = "text_panel_ginger_3_sound_en";
+"text_panel_ginger_4_sound" = "text_panel_ginger_4_sound_en";
+"text_panel_ginger_5_sound" = "text_panel_ginger_5_sound_en";
 
 "island_sound_0" = "island_sound_0_en";
 "island_sound_1" = "island_sound_1_en";

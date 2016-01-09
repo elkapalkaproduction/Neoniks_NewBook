@@ -1,6 +1,6 @@
 // ---------------------------------------
 // Sprite definitions for skelet_anim
-// Generated with TexturePacker 3.9.1
+// Generated with TexturePacker 4.0.1
 //
 // http://www.codeandweb.com/texturepacker
 // ---------------------------------------

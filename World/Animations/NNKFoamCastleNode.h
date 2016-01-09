@@ -7,8 +7,7 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-#import "CustomNodeProtocol.h"
 
-@interface NNKFoamCastleNode : SKNode <CustomNodeProtocol>
+@interface NNKFoamCastleNode : NNKSpriteNode
 
 @end

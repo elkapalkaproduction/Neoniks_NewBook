@@ -7,18 +7,13 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-#import "CustomNodeProtocol.h"
 
 @class NNKSkeletNode;
 
 typedef void (^SkeletCompletionBlock)(NNKSkeletNode *node);
 
-@interface NNKSkeletNode : SKSpriteNode <CustomNodeProtocol>
-
-- (instancetype)initWithSize:(CGSize)size showLastFrameOnLoad:(BOOL)showLastFrameOnLoad;
+@interface NNKSkeletNode : NNKSpriteNode
 
 - (void)showLastFrame;
-@property (copy, nonatomic) SkeletCompletionBlock completionBlock;
-@property (assign, nonatomic) BOOL disableAnimation;
 
 @end

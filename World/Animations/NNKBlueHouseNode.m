@@ -97,14 +97,14 @@
 
     if (self.completion) self.completion();
     SKAction *action = [SKAction moveToY:self.size.height / 2 duration:0.2];
-    [self.door runAction:action completion:^{
-        [self.witch runAction:self.sequence];
+    [action runActionOnNode:self.door completion:^{
+        [self.sequence runActionOnNode:self.witch];
     }];
 }
 
 
 - (void)closeDoor {
-    [self.door runAction:[SKAction moveToY:self.originalDoorPosition.y duration:0.2]];
+    [[SKAction moveToY:self.originalDoorPosition.y duration:0.2] runActionOnNode:self.door];
 }
 
 

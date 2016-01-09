@@ -59,7 +59,7 @@
     if (self.unablePlayAnimation) return;
     self.unablePlayAnimation = YES;
     [self performSelector:@selector(allowAnimationPlay) withObject:nil afterDelay:3.f];
-    [self.spriteNode runAction:self.sequence];
+    [self.sequence runActionOnNode:self.spriteNode];
 }
 
 

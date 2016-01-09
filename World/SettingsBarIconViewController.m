@@ -77,10 +77,10 @@
     NSString *prefix = @"inventary_";
     NSString *prefixWithFormat = [self addFormatToPrefix:prefix];
     NSString *baseText = [self addIconNameToPrefix:prefixWithFormat];
-    NSString *iconName = NSLocalizedString([baseText stringByAppendingString:@"_icon"], nil);
-    NSString *textImageName = NSLocalizedString([baseText stringByAppendingString:@"_text"], nil);
-    [self.icon setImage:[UIImage imageNamed:iconName] forState:UIControlStateNormal];
-    [self.titleImage setImage:[UIImage imageNamed:textImageName]];
+    NSString *iconName = [baseText stringByAppendingString:@"_icon"];
+    NSString *textImageName = [baseText stringByAppendingString:@"_text"];
+    [self.icon setImage:[UIImage imageLocalizableNamed:iconName] forState:UIControlStateNormal];
+    [self.titleImage setImage:[UIImage imageLocalizableNamed:textImageName]];
     if (!self.target) {
         self.target = self;
         self.selector = @selector(selectIcon:);

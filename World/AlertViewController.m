@@ -32,9 +32,9 @@
            secondButtonAction:(AlertButtonAction)secondAction {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     AlertViewController *alertView = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(self)];
-    alertView.titleText = title;
-    alertView.firstButtonText = firstButtonTitle;
-    alertView.secondButtonText = secondButtonTitle;
+    alertView.titleText = NSLocalizedString(title, nil);
+    alertView.firstButtonText = NSLocalizedString(firstButtonTitle, nil);
+    alertView.secondButtonText = NSLocalizedString(secondButtonTitle, nil);
     alertView.firstAction = firstAction;
     alertView.secondAction = secondAction;
 

@@ -5,9 +5,9 @@
         <key>codeandweb</key>
         <dict>
             <key>generator</key>
-            <string>TexturePacker 3.9.1 - http://www.codeandweb.com/texturepacker</string>
+            <string>TexturePacker 4.0.1 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:8dcd3825c0196554ae9b2043233e5c0a:d9c6ed2b4b0a3f3c0973ef510de4f38a:ee93b048dc580abf1c96c013ecdd00db$</string>
+            <string>$TexturePacker:SmartUpdate:f04d4b820717d7d427bf6d2754285ae2:d9c6ed2b4b0a3f3c0973ef510de4f38a:ee93b048dc580abf1c96c013ecdd00db$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -17,7 +17,7 @@
                 <key>path</key>
                 <string>skelet_anim.1.png</string>
                 <key>size</key>
-                <string>{1893,432}</string>
+                <string>{1926,433}</string>
                 <key>subimages</key>
                 <array>
                     <dict>
@@ -32,7 +32,7 @@
                         <key>spriteSourceSize</key>
                         <string>{527,443}</string>
                         <key>textureRect</key>
-                        <string>{{1,1},{499,430}}</string>
+                        <string>{{1,1},{500,431}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -44,11 +44,11 @@
                         <key>name</key>
                         <string>skelet_02.png</string>
                         <key>spriteOffset</key>
-                        <string>{269,0}</string>
+                        <string>{268,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{527,443}</string>
                         <key>textureRect</key>
-                        <string>{{502,1},{230,430}}</string>
+                        <string>{{503,1},{232,431}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -60,11 +60,11 @@
                         <key>name</key>
                         <string>skelet_03.png</string>
                         <key>spriteOffset</key>
-                        <string>{268,0}</string>
+                        <string>{267,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{527,443}</string>
                         <key>textureRect</key>
-                        <string>{{734,1},{248,382}}</string>
+                        <string>{{737,1},{250,383}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -76,11 +76,11 @@
                         <key>name</key>
                         <string>skelet_04.png</string>
                         <key>spriteOffset</key>
-                        <string>{268,0}</string>
+                        <string>{267,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{527,443}</string>
                         <key>textureRect</key>
-                        <string>{{984,1},{248,334}}</string>
+                        <string>{{989,1},{250,335}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -92,11 +92,11 @@
                         <key>name</key>
                         <string>skelet_05.png</string>
                         <key>spriteOffset</key>
-                        <string>{268,0}</string>
+                        <string>{267,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{527,443}</string>
                         <key>textureRect</key>
-                        <string>{{1234,1},{248,286}}</string>
+                        <string>{{1241,1},{250,287}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>
@@ -108,27 +108,11 @@
                         <key>name</key>
                         <string>skelet_06.png</string>
                         <key>spriteOffset</key>
-                        <string>{268,0}</string>
+                        <string>{267,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{527,443}</string>
                         <key>textureRect</key>
-                        <string>{{1484,1},{248,238}}</string>
-                        <key>textureRotated</key>
-                        <false/>
-                    </dict>
-                    <dict>
-                        <key>aliases</key>
-                        <array/>
-                        <key>isFullyOpaque</key>
-                        <false/>
-                        <key>name</key>
-                        <string>skelet_08.png</string>
-                        <key>spriteOffset</key>
-                        <string>{255,0}</string>
-                        <key>spriteSourceSize</key>
-                        <string>{527,443}</string>
-                        <key>textureRect</key>
-                        <string>{{1734,1},{158,263}}</string>
+                        <string>{{1493,1},{239,250}}</string>
                         <key>textureRotated</key>
                         <true/>
                     </dict>
@@ -140,11 +124,27 @@
                         <key>name</key>
                         <string>skelet_07.png</string>
                         <key>spriteOffset</key>
-                        <string>{268,0}</string>
+                        <string>{267,0}</string>
                         <key>spriteSourceSize</key>
                         <string>{527,443}</string>
                         <key>textureRect</key>
-                        <string>{{1484,241},{248,190}}</string>
+                        <string>{{1734,1},{191,250}}</string>
+                        <key>textureRotated</key>
+                        <true/>
+                    </dict>
+                    <dict>
+                        <key>aliases</key>
+                        <array/>
+                        <key>isFullyOpaque</key>
+                        <false/>
+                        <key>name</key>
+                        <string>skelet_08.png</string>
+                        <key>spriteOffset</key>
+                        <string>{254,0}</string>
+                        <key>spriteSourceSize</key>
+                        <string>{527,443}</string>
+                        <key>textureRect</key>
+                        <string>{{1493,253},{265,159}}</string>
                         <key>textureRotated</key>
                         <false/>
                     </dict>

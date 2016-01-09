@@ -7,7 +7,6 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-#import "CustomNodeProtocol.h"
 
 typedef NS_ENUM(NSInteger, BlueHouseLanguage) {
     BlueHouseLanguageEnglish,
@@ -16,7 +15,7 @@ typedef NS_ENUM(NSInteger, BlueHouseLanguage) {
 
 typedef void (^BlueHouseCompletion)();
 
-@interface NNKBlueHouseNode : SKSpriteNode <CustomNodeProtocol>
+@interface NNKBlueHouseNode : NNKSpriteNode
 
 - (instancetype)initWithSize:(CGSize)size showExtinguisher:(BOOL)showExtinguisher;
 
