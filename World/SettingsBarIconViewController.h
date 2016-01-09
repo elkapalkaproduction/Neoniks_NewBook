@@ -56,6 +56,7 @@ typedef NS_ENUM(NSInteger, InventaryBarIconType) {
 typedef NS_ENUM(NSInteger, InventaryIconShowing) {
     InventaryIconShowingEmpty,
     InventaryIconShowingFull,
+    InventaryIconShowingGet,
     InventaryIconShowingHidden,
 };
 

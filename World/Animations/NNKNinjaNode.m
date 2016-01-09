@@ -20,9 +20,8 @@
 @implementation NNKNinjaNode
 
 - (instancetype)initWithSize:(CGSize)size {
-    self = [super init];
+    self = [super initWithSize:size];
     if (self) {
-        self.size = size;
         _atlass = [SKTextureAtlas atlasNamed:NINJA_ANIM_ATLAS_NAME];
         [self addChild:self.ninjaNode];
         [self addChild:[self woodNodeWithSize:CGSizeMake(size.width, size.width * 339. / 203.)

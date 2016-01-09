@@ -16,6 +16,7 @@
 #import "NNKBlueHouseNode.h"
 #import "NNKCatNode.h"
 #import "DragableSpriteNode.h"
+#import "NNKGetableObject.h"
 
 @interface GameScene () <DragableSpriteDelegate, UIGestureRecognizerDelegate>
 
@@ -37,6 +38,7 @@
 @property (strong, nonatomic) NNKCatNode *catNode;
 @property (strong, nonatomic) UITapGestureRecognizer *touch;
 @property (nonatomic, strong) DragableSpriteNode *selectedNode;
+@property (nonatomic, strong) NSMutableArray *getableObjects;
 
 @end
 
@@ -90,7 +92,14 @@
     CGPoint gesturePoint = [tapGestureRecognizer locationInView:view];
     CGPoint point = CGPointMake(gesturePoint.x, 3600 - gesturePoint.y);
     NSArray *nodes = [self.rootNode nodesAtPoint:point];
-    if ([nodes containsObject:self.islandNode]) {
+    NSMutableSet *set1 = [NSMutableSet setWithArray:nodes];
+    NSSet *set2 = [NSSet setWithArray:self.getableObjects];
+    [set1 intersectSet: set2];
+    NSArray *resultArray = [set1 allObjects];
+    if ([resultArray count] > 0) {
+        NNKGetableObject *obj = resultArray.firstObject;
+        [self.gameSceneDelegate didPressGetableObjectWithType:obj.type];
+    } else if ([nodes containsObject:self.islandNode]) {
         [self.gameSceneDelegate didPressIslandInGameScene];
     } else if ([nodes containsObject:self.shadowPlay]) {
         [self.gameSceneDelegate didPressShadowInGameScene];
@@ -144,7 +153,7 @@
     self.rightTree = [self nodeWithImageName:@"tree_right" position:CGPointMake(2295, 335)];
     self.dandelion = [self nodeWithImageName:@"dandelion" position:CGPointMake(415, 2546)];
     self.snail = [self nodeWithImageName:@"snail" position:CGPointMake(1115, 2237)];
-    self.sheepNode = [self nodeWithClass:[NNKSheepNode class] rect:CGRectMake(850, 1248, 300, 300)];
+    self.sheepNode = [self nodeWithClass:[NNKSheepNode class] rect:CGRectMake(718, 1116, 300, 300)];
     self.ninjaNode = [self nodeWithClass:[NNKNinjaNode class] rect:CGRectMake(307, 580, 203, 678)];
     self.skeletNode = [self nodeWithClass:[NNKSkeletNode class] rect:CGRectMake(1075, 2691, 400, 330)];
     self.dragonNode = [self nodeWithClass:[NNKDragonNode class] rect:CGRectMake(-784, 3333, 1640, 556)];
@@ -330,6 +339,65 @@
     dragable.position = CGPointMake(position.x, 3600 - position.y);
     self.selectedNode = dragable;
     [self.rootNode addChild:self.selectedNode];
+}
+
+
+- (void)showGetableObjectOfType:(GetableObjectType)type {
+    SKSpriteNode *node = [[NNKGetableObject alloc] initWithSize:CGSizeMake(274, 274)
+                                                           type:type];
+    [self hideObjectOfType:type];
+    SKSpriteNode *nearObject;
+    CGFloat factorX = 1;
+    CGFloat factorY = 0;
+    switch (type) {
+        case GetableObjectTypeBottleOfMagic:
+            break;
+        case GetableObjectTypeMagicBook:
+            nearObject = self.dragonNode;
+            factorX = 0;
+            factorY = 1;
+            break;
+        case GetableObjectTypeMagicBallCat:
+            nearObject = self.catNode;
+            factorX = -1;
+            factorY = -0.85;
+            break;
+        case GetableObjectTypeMagicBallNinja:
+            nearObject = self.ninjaNode;
+            break;
+        case GetableObjectTypeMagicBallSheep:
+            nearObject = self.sheepNode;
+            break;
+        case GetableObjectTypeWrench:
+            nearObject = self.goblinNode;
+            factorX = -1;
+            break;
+        default: break;
+    }
+    node.position = CGPointMake(nearObject.position.x + factorX * (nearObject.size.width + node.size.width) / 2,
+                                nearObject.position.y + factorY * (nearObject.size.height + node.size.height) / 2);
+    [self.rootNode addChild:node];
+    [self.getableObjects addObject:node];
+}
+
+
+- (void)hideObjectOfType:(GetableObjectType)type {
+    NSIndexSet *indexSet = [self.getableObjects indexesOfObjectsPassingTest:^BOOL(NNKGetableObject *obj, NSUInteger idx, BOOL *stop) {
+        return obj.type == type;
+    }];
+    for (NNKGetableObject *obj in [self.getableObjects objectsAtIndexes:indexSet]) {
+        [obj removeFromParent];
+    }
+    [self.getableObjects removeObjectsAtIndexes:indexSet];
+}
+
+
+- (NSMutableArray *)getableObjects {
+    if (!_getableObjects) {
+        _getableObjects = [[NSMutableArray alloc] init];
+    }
+    
+    return _getableObjects;
 }
 
 @end

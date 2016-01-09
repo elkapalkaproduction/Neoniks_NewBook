@@ -21,7 +21,7 @@
 
 
 - (instancetype)initWithSize:(CGSize)size {
-    self = [super init];
+    self = [super initWithSize:size];
     if (self) {
         [self addChild:[self backgroundNodeWithSize:size texture:BOTTOM_ISLAND_TEX_BOTTOM_ISLAND_BACK]];
         _atlass = [SKTextureAtlas atlasNamed:BOTTOM_ISLAND_ATLAS_NAME];

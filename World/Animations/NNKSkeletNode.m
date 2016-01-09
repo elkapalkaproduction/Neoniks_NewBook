@@ -26,9 +26,8 @@
 @implementation NNKSkeletNode
 
 - (instancetype)initWithSize:(CGSize)size {
-    self = [super init];
+    self = [super initWithSize:size];
     if (self) {
-        self.size = size;
         _atlass = [SKTextureAtlas atlasNamed:AtlasName];
         _spriteNode = [self mainNodeWithSize:size last:NO];
         [self addChild:_spriteNode];

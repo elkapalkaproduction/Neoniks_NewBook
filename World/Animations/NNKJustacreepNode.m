@@ -23,7 +23,7 @@
 @implementation NNKJustacreepNode
 
 - (instancetype)initWithSize:(CGSize)size {
-    self = [super init];
+    self = [super initWithSize:size];
     if (self) {
         _nodeSize = size;
         _atlass = [SKTextureAtlas atlasNamed:JUSTACREEP_ANIM_ATLAS_NAME];

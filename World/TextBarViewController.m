@@ -17,6 +17,7 @@
 
 @property (strong, nonatomic) NSString *soundName;
 @property (strong, nonatomic) AVAudioPlayer *player;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *centerXLabel;
 
 @end
 
@@ -43,6 +44,7 @@
 
 - (void)setObject:(BOOL)object {
     self.objectIcon.hidden = !object;
+    self.centerXLabel.constant = (object ? -self.objectIcon.frame.size.width : self.characterIcon.frame.size.width) / 2;
     self.characterIcon.hidden = object;
 }
 

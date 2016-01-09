@@ -23,7 +23,7 @@
 @implementation NNKSchoolNode
 
 - (instancetype)initWithSize:(CGSize)size {
-    self = [super init];
+    self = [super initWithSize:size];
     if (self) {
         _atlass = [SKTextureAtlas atlasNamed:SCHOOL_FRAMES_ATLAS_NAME];
         _tree = [SKSpriteNode spriteNodeWithTexture:SCHOOL_FRAMES_TEX_SCHOOL_TREE];

@@ -296,6 +296,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 
 
 - (IBAction)showNextQuestion:(id)sender {
+    [self.timer invalidate];
     if (self.questionNumber == 9) {
         self.questionNumber = 0;
     } else {
@@ -307,6 +308,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 
 
 - (IBAction)showPrevQuestion:(id)sender {
+    [self.timer invalidate];
     if (self.questionNumber == 0) {
         self.questionNumber = 9;
     } else {

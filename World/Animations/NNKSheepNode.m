@@ -24,7 +24,7 @@
 @implementation NNKSheepNode
 
 - (instancetype)initWithSize:(CGSize)size {
-    self = [super init];
+    self = [super initWithSize:size];
     if (self) {
         _atlass = [SKTextureAtlas atlasNamed:AtlasName];
         _spriteNode = [self mainNodeWithSize:size];

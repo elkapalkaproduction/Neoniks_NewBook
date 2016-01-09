@@ -108,6 +108,7 @@
 - (NSString *)addFormatToPrefix:(NSString *)prefix {
     switch (self.format) {
         case InventaryIconShowingEmpty:
+        case InventaryIconShowingGet:
             return [prefix stringByAppendingString:@"empty_"];
         case InventaryIconShowingFull:
             return [prefix stringByAppendingString:@"full_"];

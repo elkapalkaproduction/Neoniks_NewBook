@@ -26,9 +26,8 @@
 
 
 - (instancetype)initWithSize:(CGSize)size shouldHideBook:(BOOL)shouldHideBook {
-    self = [super init];
+    self = [super initWithSize:size];
     if (self) {
-        self.size = size;
         [self addChild:[self backgroundNodeWithSize:size texture:DRAGON_ANIM_TEX_DRAGON_BACKGROUND]];
         _atlass = [SKTextureAtlas atlasNamed:DRAGON_ANIM_ATLAS_NAME];
         _spriteNode = [self mainNodeWithSize:size];

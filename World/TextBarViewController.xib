@@ -51,6 +51,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="centerXLabel" destination="JaS-Wc-d7b" id="NPe-6l-BEP"/>
                 <outlet property="characterIcon" destination="IUy-dn-D9y" id="ht6-W0-Fey"/>
                 <outlet property="label" destination="TnZ-xZ-JiJ" id="0UT-Pg-vC5"/>
                 <outlet property="objectIcon" destination="eS8-BH-VbR" id="wkn-at-zGb"/>

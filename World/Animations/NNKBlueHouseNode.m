@@ -30,9 +30,8 @@
 
 
 - (instancetype)initWithSize:(CGSize)size showExtinguisher:(BOOL)showExtinguisher {
-    self = [super init];
+    self = [super initWithSize:size];
     if (self) {
-        self.size = size;
         _atlass = [SKTextureAtlas atlasNamed:BLUE_HOUSE_ANIM_ATLAS_NAME];
         [self addChild:[self nodeWithRect:CGRectMake(218, 620, 180, 253) sprite:BLUE_HOUSE_ANIM_TEX_BLUE_HOUSE_YELLOW_WALL]];
         if (showExtinguisher) {

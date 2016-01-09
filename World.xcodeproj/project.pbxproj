@@ -70,6 +70,7 @@
 		75127BD21C413C82003762A2 /* NNKSpriteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75127BD11C413C82003762A2 /* NNKSpriteNode.m */; };
 		75127BD41C418AB7003762A2 /* skeleton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75127BD31C418AB7003762A2 /* skeleton.mp3 */; };
 		75127BDD1C418B96003762A2 /* skelet_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75127BDB1C418B96003762A2 /* skelet_anim.atlasc */; };
+		75127BE01C41A524003762A2 /* NNKGetableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 75127BDF1C41A524003762A2 /* NNKGetableObject.m */; };
 		7530D6B31AD068D50063F124 /* ContributorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7530D6B21AD068D50063F124 /* ContributorsViewController.m */; };
 		7530D6B61AD069960063F124 /* ContributorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7530D6B51AD069960063F124 /* ContributorsViewController.xib */; };
 		753D72361BA4CBF8006DC74A /* text_panel_sheep_final_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 753D72321BA4CBF8006DC74A /* text_panel_sheep_final_sound_en.mp3 */; };
@@ -579,6 +580,8 @@
 		75127BD31C418AB7003762A2 /* skeleton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = skeleton.mp3; sourceTree = "<group>"; };
 		75127BDB1C418B96003762A2 /* skelet_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skelet_anim.atlasc; sourceTree = "<group>"; };
 		75127BDC1C418B96003762A2 /* skelet_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = skelet_anim.h; sourceTree = "<group>"; };
+		75127BDE1C41A524003762A2 /* NNKGetableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKGetableObject.h; sourceTree = "<group>"; };
+		75127BDF1C41A524003762A2 /* NNKGetableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKGetableObject.m; sourceTree = "<group>"; };
 		7530D6B11AD068D50063F124 /* ContributorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContributorsViewController.h; sourceTree = "<group>"; };
 		7530D6B21AD068D50063F124 /* ContributorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContributorsViewController.m; sourceTree = "<group>"; };
 		7530D6B51AD069960063F124 /* ContributorsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContributorsViewController.xib; sourceTree = "<group>"; };
@@ -1129,6 +1132,8 @@
 				75518F9E1B91083E006A6ED8 /* SKSpriteNode+TextureCreation.m */,
 				75518F9F1B91083E006A6ED8 /* VelocityCreation.h */,
 				75518FA01B91083E006A6ED8 /* VelocityCreation.m */,
+				75127BDE1C41A524003762A2 /* NNKGetableObject.h */,
+				75127BDF1C41A524003762A2 /* NNKGetableObject.m */,
 				75127BD01C413C82003762A2 /* NNKSpriteNode.h */,
 				75127BD11C413C82003762A2 /* NNKSpriteNode.m */,
 				75B980691B58F9EF00893462 /* Atlases */,
@@ -2574,6 +2579,7 @@
 				753D72DF1BA577EC006DC74A /* NNKBlueHouseNode.m in Sources */,
 				75AD2E981ADAD193002EE482 /* NNKEpubToChaptersConverter.m in Sources */,
 				75AD2E9D1ADAD1B3002EE482 /* DejalActivityView.m in Sources */,
+				75127BE01C41A524003762A2 /* NNKGetableObject.m in Sources */,
 				75FF2FA91B224A22008EB9AA /* NNKMystieNode.m in Sources */,
 				75A125121AD0717800BDFB7F /* TransitionAnimationFromDownToUp.m in Sources */,
 				75A125101AD0717800BDFB7F /* TransitionAnimation.m in Sources */,

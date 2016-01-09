@@ -18,5 +18,6 @@
 - (void)runActionOnNode:(SKNode *)node;
 - (void)runActionOnNode:(SKNode *)node
              completion:(void (^)())completionBlock;
+- (void)stopActionFromNode:(SKNode *)node;
 
 @end

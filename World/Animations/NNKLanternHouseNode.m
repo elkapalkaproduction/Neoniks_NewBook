@@ -20,7 +20,7 @@
 @implementation NNKLanternHouseNode
 
 - (instancetype)initWithSize:(CGSize)size {
-    self = [super init];
+    self = [super initWithSize:size];
     if (self) {
         [self addChild:[self backgroundNodeWithSize:size]];
         _atlass = [SKTextureAtlas atlasNamed:LANTERN_HOUSE_ATLAS_NAME];

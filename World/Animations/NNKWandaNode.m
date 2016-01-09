@@ -20,7 +20,7 @@
 @implementation NNKWandaNode
 
 - (instancetype)initWithSize:(CGSize)size {
-    self = [super init];
+    self = [super initWithSize:size];
     if (self) {
         [self addChild:[self backgroundNodeWithSize:size]];
         _atlass = [SKTextureAtlas atlasNamed:WANDA_ANIM_ATLAS_NAME];

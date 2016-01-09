@@ -119,10 +119,13 @@
 
 
 - (BOOL)isOpenIcon:(InventaryBarIconType)icon {
-    InventaryContentHandler *handler = [InventaryContentHandler sharedHandler];
-    InventaryIconShowing iconShowing = [handler formatForItemType:icon];
-    
-    return iconShowing != InventaryIconShowingEmpty;
+    return [InventaryContentHandler.sharedHandler formatForItemType:icon] != InventaryIconShowingEmpty;
+}
+
+
+- (BOOL)isGetableIcon:(InventaryBarIconType)icon {
+    return [InventaryContentHandler.sharedHandler formatForItemType:icon] == InventaryIconShowingGet;
+
 }
 
 
@@ -145,6 +148,59 @@
     if ([self isOpenIcon:InventaryBarIconTypeSnail]) {
         [self.sampleScene hideSnail];
     }
+    if ([self isGetableIcon:InventaryBarIconTypeMagicBallNinja]) {
+        [self.sampleScene showGetableObjectOfType:GetableObjectTypeMagicBallNinja];
+    }
+    if ([self isGetableIcon:InventaryBarIconTypeMagicBallSheep]) {
+        [self.sampleScene showGetableObjectOfType:GetableObjectTypeMagicBallSheep];
+    }
+    if ([self isGetableIcon:InventaryBarIconTypeMagicBook]) {
+        [self.sampleScene showGetableObjectOfType:GetableObjectTypeMagicBook];
+    }
+    if ([self isGetableIcon:InventaryBarIconTypeWrench]) {
+        [self.sampleScene showGetableObjectOfType:GetableObjectTypeWrench];
+    }
+    if ([self isGetableIcon:InventaryBarIconTypeMagicBallCat]) {
+        [self.sampleScene showGetableObjectOfType:GetableObjectTypeMagicBallCat];
+    }
+}
+
+
+- (void)didPressGetableObjectWithType:(GetableObjectType)type {
+    switch (type) {
+        case GetableObjectTypeBottleOfMagic:
+            [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeBottleOfMagic
+                                                           withFormat:InventaryIconShowingFull];
+            [self addViewOfType:InventaryBarIconTypeBottleOfMagic inView:self.inventary.bottleOfMagic];
+            break;
+        case GetableObjectTypeMagicBook:
+            [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeMagicBook
+                                                           withFormat:InventaryIconShowingFull];
+            [self addViewOfType:InventaryBarIconTypeMagicBook inView:self.inventary.book];
+            break;
+        case GetableObjectTypeWrench:
+            [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeWrench
+                                                           withFormat:InventaryIconShowingFull];
+            [self addViewOfType:InventaryBarIconTypeWrench inView:self.inventary.wrench];
+            break;
+        case GetableObjectTypeMagicBallCat:
+            [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeMagicBallCat
+                                                           withFormat:InventaryIconShowingFull];
+            [self addViewOfType:InventaryBarIconTypeMagicBallCat inView:self.inventary.magicBalls];
+            break;
+        case GetableObjectTypeMagicBallNinja:
+            [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeMagicBallNinja
+                                                           withFormat:InventaryIconShowingFull];
+            [self addViewOfType:InventaryBarIconTypeMagicBallNinja inView:self.inventary.magicBalls];
+            break;
+        case GetableObjectTypeMagicBallSheep:
+            [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeMagicBallSheep
+                                                           withFormat:InventaryIconShowingFull];
+            [self addViewOfType:InventaryBarIconTypeMagicBallSheep inView:self.inventary.magicBalls];
+            break;
+        default: break;
+    }
+    [self.sampleScene hideObjectOfType:type];
 }
 
 
@@ -363,6 +419,7 @@
 
 - (void)closeLeftMenu {
     if (!self.isOpenLeftMenu) return;
+    [self.scrollView setContentOffset:CGPointMake(0, self.scrollView.contentOffset.y) animated:NO];
     self.isOpenLeftMenu = NO;
     self.leftMenuLeadingConstraint.constant = - self.leftMenu.frame.size.width;
     [UIView animateWithDuration:0.3 animations:^{
@@ -418,6 +475,7 @@ didWantToOpenViewController:(UIViewController *)viewController {
                       inRect:(CGRect)rect
                relatedToView:(UIView *)view
                        image:(UIImage *)image {
+    [self.scrollView setContentOffset:CGPointMake(0, self.scrollView.contentOffset.y) animated:NO];
     CGRect newRect = [[self contentView] convertRect:rect fromView:view];
     switch (type) {
         case SettingsBarIconTypeSword:
@@ -451,8 +509,9 @@ didWantToOpenViewController:(UIViewController *)viewController {
                                            position:newRect.origin];
             break;
         default:
-            break;
+            return;
     }
+    [self closeLeftMenu];
 }
 
 
@@ -466,7 +525,7 @@ didWantToOpenViewController:(UIViewController *)viewController {
                               hiddenType:(InventaryBarIconType)hiddenType {
     if (fullType == InventaryBarIconTypeUnknown) return;
     [[InventaryContentHandler sharedHandler] markItemWithType:fullType
-                                                   withFormat:InventaryIconShowingFull];
+                                                   withFormat:InventaryIconShowingGet];
     [[InventaryContentHandler sharedHandler] markItemWithType:hiddenType
                                                    withFormat:InventaryIconShowingHidden];
     [self.sampleScene removeDragableObject];
@@ -475,7 +534,7 @@ didWantToOpenViewController:(UIViewController *)viewController {
             [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_goblin"]
                                              text:@"text_panel_goblin_final"
                                          isObject:NO];
-            [self addViewOfType:InventaryBarIconTypeWrench inView:self.inventary.wrench];
+            [self.sampleScene showGetableObjectOfType:GetableObjectTypeWrench];
             [self addViewOfType:InventaryBarIconTypeSnail inView:self.inventary.snail];
             
             [self.sampleScene hideWrench];
@@ -486,7 +545,7 @@ didWantToOpenViewController:(UIViewController *)viewController {
             [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_dragon"]
                                              text:@"text_panel_dragon_final"
                                          isObject:NO];
-            [self addViewOfType:InventaryBarIconTypeMagicBook inView:self.inventary.book];
+            [self.sampleScene showGetableObjectOfType:GetableObjectTypeMagicBook];
             [self addViewOfType:InventaryBarIconTypeExtinguisher inView:self.inventary.extinguisher];
             [self.sampleScene hideBook];
             break;
@@ -496,7 +555,7 @@ didWantToOpenViewController:(UIViewController *)viewController {
             [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_cat"]
                                              text:@"text_panel_cat_final"
                                          isObject:NO];
-            [self addViewOfType:InventaryBarIconTypeMagicBall inView:self.inventary.magicBalls];
+            [self.sampleScene showGetableObjectOfType:GetableObjectTypeMagicBallCat];
             [self addViewOfType:InventaryBarIconTypeWrench inView:self.inventary.wrench];
             break;
         }
@@ -505,7 +564,7 @@ didWantToOpenViewController:(UIViewController *)viewController {
             [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_ninja"]
                                              text:@"text_panel_ninja_final"
                                          isObject:NO];
-            [self addViewOfType:InventaryBarIconTypeMagicBall inView:self.inventary.magicBalls];
+            [self.sampleScene showGetableObjectOfType:GetableObjectTypeMagicBallNinja];
             [self addViewOfType:InventaryBarIconTypeSword inView:self.inventary.sword];
             break;
         }
@@ -514,7 +573,7 @@ didWantToOpenViewController:(UIViewController *)viewController {
             [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_sheep"]
                                              text:@"text_panel_sheep_final"
                                          isObject:NO];
-            [self addViewOfType:InventaryBarIconTypeMagicBall inView:self.inventary.magicBalls];
+            [self.sampleScene showGetableObjectOfType:GetableObjectTypeMagicBallSheep];
             [self addViewOfType:InventaryBarIconTypeDandelion inView:self.inventary.dandelion];
             break;
         }

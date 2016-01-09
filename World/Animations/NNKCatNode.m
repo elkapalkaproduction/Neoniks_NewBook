@@ -38,9 +38,8 @@ static const CGFloat shouldWaitBeforeNewAnimation = 1.f;
 
 
 - (instancetype)initWithSize:(CGSize)size {
-    self = [super init];
+    self = [super initWithSize:size];
     if (self) {
-        self.size = size;
         _initialSize = size;
         _catSize = [self newSizeFromSize:_initialSize];
         [self addChild:[SKSpriteNode nodeWithSize:_catSize texture:CAT_ANIM_TEX_CAT_ANIM_LIVE]];

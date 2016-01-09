@@ -26,9 +26,8 @@
 
 
 - (instancetype)initWithSize:(CGSize)size shouldHideWrench:(BOOL)shouldHideWrench {
-    self = [super init];
+    self = [super initWithSize:size];
     if (self) {
-        self.size = size;
         [self addChild:[self backgroundNodeWithSize:size texture:GOBLIN_ANIM_TEX_GOBLIN_BACKGROUND]];
         _atlass = [SKTextureAtlas atlasNamed:GOBLIN_ANIM_ATLAS_NAME];
         _spriteNode = [self mainNodeWithSize:size];

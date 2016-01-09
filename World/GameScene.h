@@ -9,6 +9,7 @@
 #import <SpriteKit/SpriteKit.h>
 #import <PIOSpriteKit.h>
 #import "SettingsBarIconViewController.h"
+#import "NNKGetableObject.h"
 
 @protocol GameSceneDelegate <NSObject>
 
@@ -29,6 +30,7 @@
 - (void)putButtonOnRightPositionWithType:(InventaryBarIconType)fullType
                               hiddenType:(InventaryBarIconType)hiddenType;
 - (void)didStartMoveDragableNode;
+- (void)didPressGetableObjectWithType:(GetableObjectType)type;
 
 @end
 
@@ -52,5 +54,8 @@
                    hiddenType:(InventaryBarIconType)hiddenType
                      position:(CGPoint)position;
 - (void)removeDragableObject;
+
+- (void)showGetableObjectOfType:(GetableObjectType)type;
+- (void)hideObjectOfType:(GetableObjectType)type;
 
 @end

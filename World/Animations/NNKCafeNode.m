@@ -24,7 +24,7 @@
 @implementation NNKCafeNode
 
 - (instancetype)initWithSize:(CGSize)size {
-    self = [super init];
+    self = [super initWithSize:size];
     if (self) {
         _atlass = [SKTextureAtlas atlasNamed:CAFE_FRAMES_ATLAS_NAME];
         _nodeSize = size;
