@@ -50,6 +50,7 @@ static char kAssociatedPlayerObjectKey;
     }];
     SKAction *sequence = [SKAction sequence:@[self, completion]];
     if (self.player) {
+        self.player.volume = SoundStatus.volume;
         [self.player play];
     }
 

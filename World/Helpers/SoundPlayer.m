@@ -59,16 +59,19 @@
 
 
 - (void)playClick {
+    self.audioPlayer.volume = SoundStatus.volume;
     [self.audioPlayer play];
 }
 
 
 - (void)playCorrectAnswer {
+    self.correctAnswerPlayer.volume = SoundStatus.volume;
     [self.correctAnswerPlayer play];
 }
 
 
 - (void)playWrongAnswer {
+    self.wrongAnswerPlayer.volume = SoundStatus.volume;
     [self.wrongAnswerPlayer play];
 }
 

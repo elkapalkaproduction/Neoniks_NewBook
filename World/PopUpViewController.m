@@ -90,6 +90,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    self.player.volume = SoundStatus.volume;
     [self.player play];
 }
 

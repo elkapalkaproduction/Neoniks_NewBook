@@ -58,6 +58,7 @@
 - (void)setSoundName:(NSString *)soundName {
     _soundName = NSLocalizedString(soundName, nil);
     [self stopStound];
+    self.player.volume = SoundStatus.volume;
     [self.player play];
 }
 
@@ -83,6 +84,11 @@
         [self.delegate textBarSoundDidFinish:self];
     }
     if (self.block) self.block();
+}
+
+
+- (void)updateVolume {
+    self.player.volume = SoundStatus.volume;
 }
 
 

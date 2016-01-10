@@ -94,7 +94,7 @@
     NSArray *nodes = [self.rootNode nodesAtPoint:point];
     NSMutableSet *set1 = [NSMutableSet setWithArray:nodes];
     NSSet *set2 = [NSSet setWithArray:self.getableObjects];
-    [set1 intersectSet: set2];
+    [set1 intersectSet:set2];
     NSArray *resultArray = [set1 allObjects];
     if ([resultArray count] > 0) {
         NNKGetableObject *obj = resultArray.firstObject;

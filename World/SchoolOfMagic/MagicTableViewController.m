@@ -199,6 +199,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 - (void)showQuestion:(NSInteger)question {
     self.questionNumber = question;
     [self updateImages];
+    self.player.volume = SoundStatus.volume;
     [self.player play];
     [self.delegate stopPlayerIfIsPlaying];
 }

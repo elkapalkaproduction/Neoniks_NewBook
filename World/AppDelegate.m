@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "ShadowPlayOpenedHandler.h"
 #import "InventaryContentHandler.h"
+#import "AVAudioPlayer+Creation.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface AppDelegate ()
 
@@ -25,7 +27,6 @@
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:7];
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:8];
     [[ShadowPlayOpenedHandler sharedHandler] markAsOpenedCharacter:1];
-    [UIApplication sharedApplication].statusBarOrientation = UIInterfaceOrientationPortrait;
 
     return YES;
 }

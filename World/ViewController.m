@@ -54,14 +54,10 @@
 }
 
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-
-
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     if (self.sampleScene) return;
+
     self.sampleScene = [[GameScene alloc] initWithSize:self.spriteKitView.frame.size];
     self.sampleScene.gameSceneDelegate = self;
     self.sampleScene.contentView = self.scrollContentView;
@@ -705,6 +701,11 @@ didWantToOpenViewController:(UIViewController *)viewController {
     [view addSubview:childView];
     [view addConstraints:[self constraintsFromSide:view toSide:childView]];
     [view layoutIfNeeded];
+}
+
+
+- (void)updateVolume {
+    [self.textBar updateVolume];
 }
 
 @end

@@ -176,6 +176,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     if ([[ShadowPlayOpenedHandler sharedHandler] isOpenedCharacter:character]) {
         [self loadUnlockedCharacter:character];
         [self.textBar stopStound];
+        self.player.volume = SoundStatus.volume;
         [self.player play];
     } else {
         [self loadLockedCharacter:character];
@@ -241,6 +242,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
             [obj setAlpha:0.f];
         } completion:^(BOOL finished) {
             [obj removeFromSuperview];
+            self.player.volume = SoundStatus.volume;
             [self.player play];
             [self loadUnlockedCharacter:self.loadedCharacter];
         }];

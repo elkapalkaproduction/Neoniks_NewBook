@@ -157,6 +157,8 @@ NSString *const AppID = @"899196882";
             [self didPressRateUs];
             break;
         case SettingsBarIconTypeSound:
+            [SoundStatus setEnabled:!SoundStatus.isEnabled];
+            [self.delegate updateVolume];
             break;
         case SettingsBarIconTypeIslandMap:
         case SettingsBarIconTypeMagicWand:

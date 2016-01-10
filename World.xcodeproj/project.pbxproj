@@ -89,6 +89,7 @@
 		753D72E21BA76C61006DC74A /* a-piece-of-wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 753D72E11BA76C61006DC74A /* a-piece-of-wood.png */; };
 		75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */; };
 		75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423AA21A7D8A4000D2C36E /* BaseViewController.m */; };
+		754D6E6F1C41D61D00C70AC1 /* SoundStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 754D6E6E1C41D61D00C70AC1 /* SoundStatus.m */; };
 		754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 754ED0BC1AF4110F00697F9E /* StyleSettings.plist */; };
 		75518FA31B91083E006A6ED8 /* NNKCatNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75518F9C1B91083E006A6ED8 /* NNKCatNode.m */; };
 		75518FA41B91083E006A6ED8 /* SKSpriteNode+TextureCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75518F9E1B91083E006A6ED8 /* SKSpriteNode+TextureCreation.m */; };
@@ -608,6 +609,8 @@
 		75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolOfMagicViewController.m; sourceTree = "<group>"; };
 		75423AA11A7D8A4000D2C36E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		75423AA21A7D8A4000D2C36E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		754D6E6D1C41D61D00C70AC1 /* SoundStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundStatus.h; sourceTree = "<group>"; };
+		754D6E6E1C41D61D00C70AC1 /* SoundStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundStatus.m; sourceTree = "<group>"; };
 		754ED0BC1AF4110F00697F9E /* StyleSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StyleSettings.plist; sourceTree = "<group>"; };
 		75518F9B1B91083E006A6ED8 /* NNKCatNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKCatNode.h; sourceTree = "<group>"; };
 		75518F9C1B91083E006A6ED8 /* NNKCatNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKCatNode.m; sourceTree = "<group>"; };
@@ -1518,6 +1521,8 @@
 				75B980CC1B591A8700893462 /* SoundPlayer.m */,
 				75D531031B6E82EB00E57D25 /* AVAudioPlayer+Creation.h */,
 				75D531041B6E82EB00E57D25 /* AVAudioPlayer+Creation.m */,
+				754D6E6D1C41D61D00C70AC1 /* SoundStatus.h */,
+				754D6E6E1C41D61D00C70AC1 /* SoundStatus.m */,
 				75B980CF1B591AAA00893462 /* button_click.mp3 */,
 				75B980D01B591AAA00893462 /* right.mp3 */,
 				75B980D11B591AAA00893462 /* wrong.mp3 */,
@@ -2581,6 +2586,7 @@
 				75AD2E9D1ADAD1B3002EE482 /* DejalActivityView.m in Sources */,
 				75127BE01C41A524003762A2 /* NNKGetableObject.m in Sources */,
 				75FF2FA91B224A22008EB9AA /* NNKMystieNode.m in Sources */,
+				754D6E6F1C41D61D00C70AC1 /* SoundStatus.m in Sources */,
 				75A125121AD0717800BDFB7F /* TransitionAnimationFromDownToUp.m in Sources */,
 				75A125101AD0717800BDFB7F /* TransitionAnimation.m in Sources */,
 				7530D6B31AD068D50063F124 /* ContributorsViewController.m in Sources */,

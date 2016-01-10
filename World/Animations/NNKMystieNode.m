@@ -72,6 +72,7 @@
                                                     userInfo:nil
                                                      repeats:NO];
         self.player.currentTime = 0.f;
+        self.player.volume = SoundStatus.volume;
         [self.player play];
         [self addChild:self.emitter];
     }

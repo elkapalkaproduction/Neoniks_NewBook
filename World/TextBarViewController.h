@@ -27,5 +27,6 @@
 @property (copy, nonatomic) void (^block)();
 
 - (void)stopStound;
+- (void)updateVolume;
 
 @end
