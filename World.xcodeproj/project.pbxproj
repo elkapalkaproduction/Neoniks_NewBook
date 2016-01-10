@@ -94,6 +94,7 @@
 		754D6E751C42689E00C70AC1 /* NNKBatNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 754D6E741C42689E00C70AC1 /* NNKBatNode.m */; };
 		754D6E771C426D2B00C70AC1 /* lamp_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 754D6E761C426D2B00C70AC1 /* lamp_on.png */; };
 		754D6E7A1C426D3E00C70AC1 /* NNKLampNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 754D6E791C426D3E00C70AC1 /* NNKLampNode.m */; };
+		754D6E7D1C42768A00C70AC1 /* NSArray+Intersection.m in Sources */ = {isa = PBXBuildFile; fileRef = 754D6E7C1C42768A00C70AC1 /* NSArray+Intersection.m */; };
 		754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 754ED0BC1AF4110F00697F9E /* StyleSettings.plist */; };
 		75518FA31B91083E006A6ED8 /* NNKCatNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75518F9C1B91083E006A6ED8 /* NNKCatNode.m */; };
 		75518FA41B91083E006A6ED8 /* SKSpriteNode+TextureCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75518F9E1B91083E006A6ED8 /* SKSpriteNode+TextureCreation.m */; };
@@ -622,6 +623,8 @@
 		754D6E761C426D2B00C70AC1 /* lamp_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_on.png; sourceTree = "<group>"; };
 		754D6E781C426D3E00C70AC1 /* NNKLampNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKLampNode.h; sourceTree = "<group>"; };
 		754D6E791C426D3E00C70AC1 /* NNKLampNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKLampNode.m; sourceTree = "<group>"; };
+		754D6E7B1C42768A00C70AC1 /* NSArray+Intersection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Intersection.h"; sourceTree = "<group>"; };
+		754D6E7C1C42768A00C70AC1 /* NSArray+Intersection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Intersection.m"; sourceTree = "<group>"; };
 		754ED0BC1AF4110F00697F9E /* StyleSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StyleSettings.plist; sourceTree = "<group>"; };
 		75518F9B1B91083E006A6ED8 /* NNKCatNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKCatNode.h; sourceTree = "<group>"; };
 		75518F9C1B91083E006A6ED8 /* NNKCatNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKCatNode.m; sourceTree = "<group>"; };
@@ -2013,6 +2016,8 @@
 				75AD2E8E1ADAD193002EE482 /* UIWebView+CSSRule.m */,
 				757DBBCF1ADB199500517632 /* UIViewController+Child.h */,
 				757DBBD01ADB199500517632 /* UIViewController+Child.m */,
+				754D6E7B1C42768A00C70AC1 /* NSArray+Intersection.h */,
+				754D6E7C1C42768A00C70AC1 /* NSArray+Intersection.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -2666,6 +2671,7 @@
 				75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */,
 				750380091B1A3B8900CB0B83 /* NNKFurcoatNode.m in Sources */,
 				757DBBD11ADB199500517632 /* UIViewController+Child.m in Sources */,
+				754D6E7D1C42768A00C70AC1 /* NSArray+Intersection.m in Sources */,
 				750380061B1A3B8900CB0B83 /* NNKJayNode.m in Sources */,
 				75635ADE1AABBEAA005BD4CB /* PopUpViewController.m in Sources */,
 				7503800C1B1A3B8900CB0B83 /* NNKLanternHouseNode.m in Sources */,

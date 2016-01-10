@@ -87,4 +87,11 @@
     return [self formatItemForType:InventaryBarIconTypeMagicBallCat] + [self formatItemForType:InventaryBarIconTypeMagicBallSheep] + [self formatItemForType:InventaryBarIconTypeMagicBallNinja];
 }
 
+
+- (void)deleteAll {
+    for (InventaryBarIconType type = InventaryBarIconTypeUnknown; type <= InventaryBarIconTypeMagicBallNinja; type++) {
+        [self markItemWithType:type withFormat:InventaryIconShowingEmpty];
+    }
+}
+
 @end

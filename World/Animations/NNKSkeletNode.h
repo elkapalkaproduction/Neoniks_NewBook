@@ -14,6 +14,7 @@ typedef void (^SkeletCompletionBlock)(NNKSkeletNode *node);
 
 @interface NNKSkeletNode : NNKSpriteNode
 
+- (void)showFirstFrame;
 - (void)showLastFrame;
 
 @end

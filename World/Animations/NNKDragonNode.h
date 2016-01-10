@@ -16,6 +16,7 @@ typedef void (^DragonCompletionBlock)(NNKDragonNode *node);
 
 - (instancetype)initWithSize:(CGSize)size shouldHideBook:(BOOL)shouldHideBook;
 - (void)removeBook;
+- (void)showBook;
 @property (copy, nonatomic) DragonCompletionBlock completionBlock;
 
 @end

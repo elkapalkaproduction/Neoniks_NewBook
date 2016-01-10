@@ -34,9 +34,9 @@
         [self addChild:_spriteNode];
     }
     
+    _wrenchNode = [self backgroundNodeWithSize:size texture:GOBLIN_ANIM_TEX_GOBLIN_WRENCH];
     if (shouldHideWrench) return self;
     
-    _wrenchNode = [self backgroundNodeWithSize:size texture:GOBLIN_ANIM_TEX_GOBLIN_WRENCH];
     [self addChild:_wrenchNode];
     
     return self;
@@ -79,9 +79,13 @@
 
 
 - (void)removeWrench {
-    if (self.wrenchNode) {
-        [self.wrenchNode removeFromParent];
-    }
+    [self.wrenchNode removeFromParent];
+}
+
+
+- (void)showWrench {
+    [self removeWrench];
+    [self addChild:self.wrenchNode];
 }
 
 @end

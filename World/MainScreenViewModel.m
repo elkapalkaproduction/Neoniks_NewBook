@@ -17,7 +17,9 @@
 #import "MagicSchoolAnswersHandler.h"
 #import "IslandViewModel.h"
 #import "InventaryContentHandler.h"
+#import "Storage.h"
 
+NSString *const ListenedToGinger = @"ListenedToGinger";
 NSString *const AppID = @"899196882";
 
 @interface MainScreenViewModel () <SettingsBarIconDelegate>
@@ -108,6 +110,9 @@ NSString *const AppID = @"899196882";
                                                       [[ShadowPlayOpenedHandler sharedHandler] resetOpenedCharacter];
                                                       [[MagicSchoolAnswersHandler sharedHandler] deleteAllAnswers];
                                                       [IslandViewModel deleteAnswers];
+                                                      [[InventaryContentHandler sharedHandler] deleteAll];
+                                                      self.listenedToGinger = NO;
+                                                      [self.delegate reset];
                                                   }
                                                   secondButtonTitle:@"alert_no"
                                                  secondButtonAction:nil];
@@ -246,6 +251,16 @@ didSwipeIconWithType:(SettingsBarIconType)type
         default:
             return @"";
     }
+}
+
+
+- (BOOL)listenedToGinger {
+    return [Storage loadIntegerForKey:ListenedToGinger];
+}
+
+
+- (void)setListenedToGinger:(BOOL)listenedToGinger {
+    [Storage saveInteger:listenedToGinger forKey:ListenedToGinger];
 }
 
 @end

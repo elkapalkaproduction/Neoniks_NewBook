@@ -22,4 +22,6 @@
 
 - (NSInteger)numberOfBallOfMagic;
 
+- (void)deleteAll;
+
 @end

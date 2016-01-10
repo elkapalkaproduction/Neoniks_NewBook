@@ -97,4 +97,10 @@
     self.player = nil;
 }
 
+
+- (void)stop {
+    self.block = nil;
+    [self stopStound];
+}
+
 @end

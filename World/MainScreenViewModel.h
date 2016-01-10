@@ -29,6 +29,7 @@ typedef NS_ENUM(NSInteger, MainScreenTopBarViewType) {
 
 - (void)didRequireToOpenTextBarWithIcon:(UIImage *)image text:(NSString *)text isObject:(BOOL)isObject;
 - (void)updateVolume;
+- (void)reset;
 
 @end
 
@@ -40,5 +41,6 @@ typedef NS_ENUM(NSInteger, MainScreenTopBarViewType) {
 - (UIView *)viewForIndex:(NSInteger)index inRect:(CGRect)rect parentViewController:(UIViewController *)parentViewController;
 
 @property (assign, nonatomic) MainScreenTopBarViewType type;
+@property BOOL listenedToGinger;
 
 @end

@@ -64,6 +64,14 @@
 }
 
 
+- (void)showFirstFrame {
+    [self.spriteNode removeFromParent];
+    self.spriteNode = [self mainNodeWithSize:self.spriteNode.size last:NO];
+    [self addChild:self.spriteNode];
+    self.disableAnimation = NO;
+}
+
+
 - (void)runAction {
     if (self.disableAnimation) return;
     self.disableAnimation = YES;

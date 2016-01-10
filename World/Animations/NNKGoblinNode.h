@@ -16,6 +16,7 @@ typedef void (^GoblinCompletionBlock)(NNKGoblinNode *node);
 
 - (instancetype)initWithSize:(CGSize)size shouldHideWrench:(BOOL)shouldHideWrench;
 - (void)removeWrench;
+- (void)showWrench;
 @property (copy, nonatomic) GoblinCompletionBlock completionBlock;
 
 @end

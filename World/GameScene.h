@@ -33,6 +33,8 @@
 - (void)didPressGetableObjectWithType:(GetableObjectType)type;
 - (void)didPressLampInGameScene;
 
+- (BOOL)canTapAnything;
+
 @end
 
 @interface GameScene : PIOScrollScene
@@ -47,6 +49,14 @@
 - (void)hideDandelion;
 - (void)hideSnail;
 - (void)hideExtinguisher;
+
+- (void)showWrench;
+- (void)showBook;
+- (void)showSword;
+- (void)showDandelion;
+- (void)showSnail;
+- (void)showExtinguisher;
+
 - (void)closeDoor;
 - (void)changeLanguage;
 

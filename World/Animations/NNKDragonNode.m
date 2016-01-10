@@ -34,9 +34,9 @@
         [self addChild:_spriteNode];
     }
     
+    _bookNode = [self backgroundNodeWithSize:size texture:DRAGON_ANIM_TEX_DRAGON_BOOK];
     if (shouldHideBook) return self;
     
-    _bookNode = [self backgroundNodeWithSize:size texture:DRAGON_ANIM_TEX_DRAGON_BOOK];
     [self addChild:_bookNode];
     
     return self;
@@ -78,9 +78,13 @@
 
 
 - (void)removeBook {
-    if (self.bookNode) {
-        [self.bookNode removeFromParent];
-    }
+    [self.bookNode removeFromParent];
+}
+
+
+- (void)showBook {
+    [self removeBook];
+    [self addChild:self.bookNode];
 }
 
 @end

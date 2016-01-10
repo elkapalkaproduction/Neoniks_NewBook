@@ -19,6 +19,7 @@
 #import "NNKGetableObject.h"
 #import "NNKBatNode.h"
 #import "NNKLampNode.h"
+#import "NSArray+Intersection.h"
 
 @interface GameScene () <DragableSpriteDelegate, UIGestureRecognizerDelegate>
 
@@ -88,7 +89,7 @@
 }
 
 
-- (void)handleTouch:(UITapGestureRecognizer *)tapGestureRecognizer {
+- (NSArray *)nodesAtTap:(UITapGestureRecognizer *)tapGestureRecognizer {
     UIScrollView *scrollView;
     for (UIScrollView *view in self.view.subviews) {
         if ([view isKindOfClass:[UIScrollView class]]) {
@@ -98,11 +99,21 @@
     UIView *view =  [scrollView.subviews firstObject];
     CGPoint gesturePoint = [tapGestureRecognizer locationInView:view];
     CGPoint point = CGPointMake(gesturePoint.x, 3600 - gesturePoint.y);
-    NSArray *nodes = [self.rootNode nodesAtPoint:point];
-    NSMutableSet *set1 = [NSMutableSet setWithArray:nodes];
-    NSSet *set2 = [NSSet setWithArray:self.getableObjects];
-    [set1 intersectSet:set2];
-    NSArray *resultArray = [set1 allObjects];
+    
+    return [self.rootNode nodesAtPoint:point];
+}
+
+
+- (void)handleTouch:(UITapGestureRecognizer *)tapGestureRecognizer {
+    NSArray *nodes = [self nodesAtTap:tapGestureRecognizer];
+    if (![self.gameSceneDelegate canTapAnything]) {
+        if ([nodes containsObject:self.blueHouseNode.door]) {
+            [self.blueHouseNode runAction];
+            [self.gameSceneDelegate didPressBlueHouseInGameScene];
+        }
+        return;
+    }
+    NSArray *resultArray = [nodes intersectWithArray:self.getableObjects];
     if ([resultArray count] > 0) {
         NNKGetableObject *obj = resultArray.firstObject;
         [self.gameSceneDelegate didPressGetableObjectWithType:obj.type];
@@ -265,6 +276,37 @@
     [self.blueHouseNode hideExtinguisher];
 }
 
+
+- (void)showBook {
+    [self.dragonNode showBook];
+}
+
+
+- (void)showSnail {
+    [self.snail removeFromParent];
+    [self.rootNode addChild:self.snail];
+}
+
+
+- (void)showSword {
+    [self.skeletNode showFirstFrame];
+}
+
+
+- (void)showWrench {
+    [self.goblinNode showWrench];
+}
+
+
+- (void)showDandelion {
+    [self.dandelion removeFromParent];
+    [self.rootNode addChild:self.dandelion];
+}
+
+
+- (void)showExtinguisher {
+    [self.blueHouseNode showExtinguisher];
+}
 
 - (void)closeDoor {
     [self.blueHouseNode closeDoor];

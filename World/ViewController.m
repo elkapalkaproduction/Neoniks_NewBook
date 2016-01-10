@@ -57,7 +57,7 @@
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     if (self.sampleScene) return;
-
+    
     self.sampleScene = [[GameScene alloc] initWithSize:self.spriteKitView.frame.size];
     self.sampleScene.gameSceneDelegate = self;
     self.sampleScene.contentView = self.scrollContentView;
@@ -121,46 +121,81 @@
 
 - (BOOL)isGetableIcon:(InventaryBarIconType)icon {
     return [InventaryContentHandler.sharedHandler formatForItemType:icon] == InventaryIconShowingGet;
+    
+}
 
+
+- (void)reset {
+    self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
+    [UIView animateWithDuration:0.3 animations:^{
+        [self.view layoutIfNeeded];
+    }];
+    [self.textBar stop];
+    [self hideObjectsOnInit];
 }
 
 
 - (void)hideObjectsOnInit {
     if ([self isOpenIcon:InventaryBarIconTypeSword]) {
         [self.sampleScene hideSword];
+    } else {
+        [self.sampleScene showSword];
     }
     if ([self isOpenIcon:InventaryBarIconTypeWrench]) {
         [self.sampleScene hideWrench];
+    } else {
+        [self.sampleScene showWrench];
     }
     if ([self isOpenIcon:InventaryBarIconTypeMagicBook]) {
         [self.sampleScene hideBook];
+    } else {
+        [self.sampleScene showBook];
     }
     if ([self isOpenIcon:InventaryBarIconTypeExtinguisher]) {
         [self.sampleScene hideExtinguisher];
+    } else {
+        [self.sampleScene showExtinguisher];
     }
     if ([self isOpenIcon:InventaryBarIconTypeDandelion]) {
         [self.sampleScene hideDandelion];
+    } else {
+        [self.sampleScene showDandelion];
     }
     if ([self isOpenIcon:InventaryBarIconTypeSnail]) {
         [self.sampleScene hideSnail];
+    } else {
+        [self.sampleScene showSnail];
     }
+    
     if ([self isGetableIcon:InventaryBarIconTypeMagicBallNinja]) {
         [self.sampleScene showGetableObjectOfType:GetableObjectTypeMagicBallNinja];
+    } else {
+        [self.sampleScene hideObjectOfType:GetableObjectTypeMagicBallNinja];
     }
     if ([self isGetableIcon:InventaryBarIconTypeMagicBallSheep]) {
         [self.sampleScene showGetableObjectOfType:GetableObjectTypeMagicBallSheep];
+    } else {
+        [self.sampleScene hideObjectOfType:GetableObjectTypeMagicBallSheep];
     }
     if ([self isGetableIcon:InventaryBarIconTypeMagicBook]) {
         [self.sampleScene showGetableObjectOfType:GetableObjectTypeMagicBook];
+    } else {
+        [self.sampleScene hideObjectOfType:GetableObjectTypeMagicBook];
     }
     if ([self isGetableIcon:InventaryBarIconTypeWrench]) {
         [self.sampleScene showGetableObjectOfType:GetableObjectTypeWrench];
+    } else {
+        [self.sampleScene hideObjectOfType:GetableObjectTypeWrench];
     }
     if ([self isGetableIcon:InventaryBarIconTypeMagicBallCat]) {
         [self.sampleScene showGetableObjectOfType:GetableObjectTypeMagicBallCat];
+    } else {
+        [self.sampleScene hideObjectOfType:GetableObjectTypeMagicBallCat];
     }
     if ([self isGetableIcon:InventaryBarIconTypeBottleOfMagic]) {
         [self.sampleScene showGetableObjectOfType:GetableObjectTypeBottleOfMagic];
+    } else {
+        [self.sampleScene hideObjectOfType:GetableObjectTypeBottleOfMagic];
     }
 }
 
@@ -291,10 +326,11 @@
 
 - (void)didPressBlueHouseInGameScene {
     typeof(self) welf = self;
+    self.viewModel.listenedToGinger = YES;
     [self presentGingerWithText:@"text_panel_ginger_1" completion:^{
-       [welf presentGingerWithText:@"text_panel_ginger_2" completion:^{
-           [welf presentGingerWithText:@"text_panel_ginger_3" completion:nil];
-       }];
+        [welf presentGingerWithText:@"text_panel_ginger_2" completion:^{
+            [welf presentGingerWithText:@"text_panel_ginger_3" completion:nil];
+        }];
     }];
 }
 
@@ -305,6 +341,11 @@
                                                        withFormat:InventaryIconShowingGet];
         [self.sampleScene showGetableObjectOfType:GetableObjectTypeBottleOfMagic];
     }
+}
+
+
+- (BOOL)canTapAnything {
+    return self.viewModel.listenedToGinger;
 }
 
 
