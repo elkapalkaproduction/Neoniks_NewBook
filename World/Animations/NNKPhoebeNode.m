@@ -66,7 +66,9 @@
     self.wingsNode.size = self.nodeSize;
     self.wingsNode.position = CGPointMake(self.nodeSize.width / 2, self.nodeSize.height / 2);
     self.wingsShown = YES;
-    [[SKAction playSoundFileNamed:@"phoebe.mp3" waitForCompletion:NO] runActionOnNode:self];
+    if (SoundStatus.isEnabled) {
+        [[SKAction playSoundFileNamed:@"phoebe.mp3" waitForCompletion:NO] runActionOnNode:self];
+    }
 }
 
 @end

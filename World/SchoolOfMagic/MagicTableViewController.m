@@ -9,7 +9,6 @@
 #import "MagicTableViewController.h"
 #import "MagicSchoolAnswersHandler.h"
 #import "InventaryContentHandler.h"
-#import "SoundPlayer.h"
 #import "AVAudioPlayer+Creation.h"
 
 NSString *const SOMSadImageName = @"school_sad";

@@ -28,6 +28,10 @@ NSString *const SoundsKey = @"SoundsKey";
 
 
 + (BOOL)isEnabled {
+    if (![Storage existsValueForKey:SoundsKey]) {
+        [self setEnabled:YES];
+    }
+    
     return [Storage loadIntegerForKey:SoundsKey];
 }
 

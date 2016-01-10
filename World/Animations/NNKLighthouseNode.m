@@ -57,7 +57,9 @@
 
 - (void)runAction {
     [self runActionWithoutSound];
-    [[SKAction playSoundFileNamed:@"lamp.mp3" waitForCompletion:NO] runActionOnNode:self];
+    if (SoundStatus.isEnabled) {
+        [[SKAction playSoundFileNamed:@"lamp.mp3" waitForCompletion:NO] runActionOnNode:self];
+    }
 }
 
 @end

@@ -84,7 +84,12 @@
 
 
 - (NSInteger)numberOfBallOfMagic {
-    return [self formatItemForType:InventaryBarIconTypeMagicBallCat] + [self formatItemForType:InventaryBarIconTypeMagicBallSheep] + [self formatItemForType:InventaryBarIconTypeMagicBallNinja];
+    NSInteger count = 0;
+    if ([self formatItemForType:InventaryBarIconTypeMagicBallCat] == InventaryIconShowingFull) count++;
+    if ([self formatItemForType:InventaryBarIconTypeMagicBallSheep] == InventaryIconShowingFull) count++;
+    if ([self formatItemForType:InventaryBarIconTypeMagicBallNinja] == InventaryIconShowingFull) count++;
+    
+    return count;
 }
 
 

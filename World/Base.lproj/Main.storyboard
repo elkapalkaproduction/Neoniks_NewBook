@@ -514,6 +514,7 @@
                     <connections>
                         <outlet property="currentToFindImage" destination="z0t-x4-jT5" id="Xmh-xe-5NX"/>
                         <outlet property="currentToFindView" destination="kFX-rM-zsa" id="xpa-YF-yXE"/>
+                        <outlet property="findMeLabel" destination="jIM-tT-VFj" id="RfZ-CQ-SF6"/>
                         <outlet property="leftBarView" destination="aCH-Xb-yL3" id="Pm0-Od-MZK"/>
                         <outlet property="mainScrollView" destination="SPL-gj-QRU" id="a6E-6a-rAP"/>
                         <outlet property="prizeView" destination="hAq-dG-4L5" id="0U0-WO-rKf"/>

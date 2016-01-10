@@ -14,6 +14,7 @@
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 @property (strong, nonatomic) AVAudioPlayer *correctAnswerPlayer;
 @property (strong, nonatomic) AVAudioPlayer *wrongAnswerPlayer;
+@property (strong, nonatomic) AVAudioPlayer *dsynPlayer;
 
 @end
 
@@ -58,6 +59,15 @@
 }
 
 
+- (AVAudioPlayer *)dsynPlayer {
+    if (!_dsynPlayer) {
+        _dsynPlayer = [AVAudioPlayer audioPlayerWithSoundName:@"dsyn.mp3"];
+    }
+    
+    return _dsynPlayer;
+}
+
+
 - (void)playClick {
     self.audioPlayer.volume = SoundStatus.volume;
     [self.audioPlayer play];
@@ -73,6 +83,12 @@
 - (void)playWrongAnswer {
     self.wrongAnswerPlayer.volume = SoundStatus.volume;
     [self.wrongAnswerPlayer play];
+}
+
+
+- (void)playDsyn {
+    self.dsynPlayer.volume = SoundStatus.volume;
+    [self.dsynPlayer play];
 }
 
 @end

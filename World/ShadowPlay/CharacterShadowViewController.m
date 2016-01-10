@@ -39,6 +39,7 @@ NSString *const NSPImagePatterName = @"shadow_name_%ld";
 
 
 - (IBAction)sendDelegateMessageWithCharacterSelected {
+    [[SoundPlayer sharedPlayer] playClick];
     if ([self.delegate respondsToSelector:@selector(didPressCharacter:)]) {
         [self.delegate didPressCharacter:self.loadedCharacter];
     }

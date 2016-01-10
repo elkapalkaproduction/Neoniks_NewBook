@@ -198,6 +198,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 - (void)loadShadowsForCharacter:(ShadowCharacter)character {
     [self removeAllShadowsFromTheScreen];
+    [[SoundPlayer sharedPlayer] playClick];
     NSString *key = [NSString stringWithFormat:@"character%ld", (long)character];
     NSDictionary *wrongCharacterPositions = self.wrongAnswers[key];
     NSDictionary *correctCharacterPositions = self.correctAnswers[key];

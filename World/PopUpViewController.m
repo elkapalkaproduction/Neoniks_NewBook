@@ -112,6 +112,7 @@
 
 
 - (IBAction)close:(id)sender {
+    [[SoundPlayer sharedPlayer] playClick];
     [self.scene.node stopAction];
     [self.player stop];
     __weak typeof(self) weakSelf = self;

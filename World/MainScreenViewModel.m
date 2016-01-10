@@ -176,15 +176,17 @@ NSString *const AppID = @"899196882";
         case SettingsBarIconTypeSword:
         case SettingsBarIconTypeWrench:
         case SettingsBarIconTypeSnail:
-            if (settings.format == InventaryIconShowingEmpty) {
+            if (settings.format != InventaryIconShowingFull) {
                 [self.delegate didRequireToOpenTextBarWithIcon:[UIImage imageNamed:[self imageNameFromSettingType:type]]
                                                           text:[self textFromSettingsType:type]
                                                       isObject:YES];
             }
+            return;
             break;
         default:
             break;
     }
+    [[SoundPlayer sharedPlayer] playClick];
 }
 
 

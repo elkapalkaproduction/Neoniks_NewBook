@@ -16,6 +16,7 @@
 @property (strong, nonatomic) SKAction *sequence;
 @property (strong, nonatomic) SKSpriteNode *language;
 @property (assign, nonatomic) CGPoint originalDoorPosition;
+@property (strong, nonatomic) SKAction *doorAction;
 
 @end
 
@@ -34,10 +35,10 @@
     if (self) {
         _atlass = [SKTextureAtlas atlasNamed:BLUE_HOUSE_ANIM_ATLAS_NAME];
         SKNode *node = [self nodeWithRect:CGRectMake(218, 620, 180, 253) sprite:BLUE_HOUSE_ANIM_TEX_BLUE_HOUSE_YELLOW_WALL];
-        node.zPosition = -2;
+//        node.zPosition = -2;
         [self addChild:node];
         _extinguisher = [self nodeWithRect:CGRectMake(1, 671, 198, 180) sprite:BLUE_HOUSE_ANIM_TEX_BLUE_HOUSE_EXTINGUISHER];
-        _extinguisher.zPosition = -1;
+//        _extinguisher.zPosition = -1;
         if (showExtinguisher) {
             [self addChild:_extinguisher];
         }
@@ -95,11 +96,19 @@
 }
 
 
+- (SKAction *)doorAction {
+    if (!_doorAction) {
+        _doorAction = [SKAction actionWithSoundName:@"iron_clank.mp3" action:[SKAction moveToY:self.size.height / 2 duration:0.6]];
+    }
+    
+    return _doorAction;
+}
+
+
 - (void)runAction {
 
     if (self.completion) self.completion();
-    SKAction *action = [SKAction moveToY:self.size.height / 2 duration:0.2];
-    [action runActionOnNode:self.door completion:^{
+    [self.doorAction runActionOnNode:self.door completion:^{
         [self.sequence runActionOnNode:self.witch];
     }];
 }
@@ -131,7 +140,7 @@
 
 - (void)showExtinguisher {
     [self hideExtinguisher];
-    [self addChild:self.extinguisher];
+    [self insertChild:self.extinguisher atIndex:0];
 }
 
 @end

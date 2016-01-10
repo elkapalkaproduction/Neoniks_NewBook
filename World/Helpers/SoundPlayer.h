@@ -14,5 +14,6 @@
 - (void)playClick;
 - (void)playWrongAnswer;
 - (void)playCorrectAnswer;
+- (void)playDsyn;
 
 @end

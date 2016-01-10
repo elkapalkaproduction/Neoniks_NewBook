@@ -42,4 +42,9 @@
     return [[NSUserDefaults standardUserDefaults] integerForKey:key];
 }
 
+
++ (BOOL)existsValueForKey:(NSString *)key {
+    return [[NSUserDefaults standardUserDefaults] objectForKey:key];
+}
+
 @end

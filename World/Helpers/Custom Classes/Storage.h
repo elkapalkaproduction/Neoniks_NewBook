@@ -17,4 +17,6 @@
 + (void)saveInteger:(NSInteger)integer forKey:(NSString *)key;
 + (NSInteger)loadIntegerForKey:(NSString *)key;
 
++ (BOOL)existsValueForKey:(NSString *)key;
+
 @end

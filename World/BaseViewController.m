@@ -42,6 +42,7 @@ const NSInteger storyboardScreenWidth = 600;
 
 - (IBAction)backButton:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+    [[SoundPlayer sharedPlayer] playClick];
 }
 
 

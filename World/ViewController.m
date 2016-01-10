@@ -69,24 +69,28 @@
 
 - (void)didPressIslandInGameScene {
     IslandViewController *island = [IslandViewController instantiate];
+    [[SoundPlayer sharedPlayer] playClick];
     [self presentViewController:island animated:YES completion:nil];
 }
 
 
 - (void)didPressShadowInGameScene {
     ShadowPlayViewController *shadow = [ShadowPlayViewController instantiate];
+    [[SoundPlayer sharedPlayer] playClick];
     [self presentViewController:shadow animated:YES completion:nil];
 }
 
 
 - (void)didPressSchoolInGameScene {
     SchoolOfMagicViewController *school = [SchoolOfMagicViewController instantiate];
+    [[SoundPlayer sharedPlayer] playClick];
     [self presentViewController:school animated:YES completion:nil];
 }
 
 
 - (void)didPressPlayerInGameScene {
     NNWVideoViewController *video = [NNWVideoViewController instantiate];
+    [[SoundPlayer sharedPlayer] playClick];
     [self presentViewController:video animated:YES completion:nil];
 }
 
@@ -234,6 +238,7 @@
             break;
         default: break;
     }
+    [[SoundPlayer sharedPlayer] playDsyn];
     [self.sampleScene hideObjectOfType:type];
 }
 
@@ -302,6 +307,7 @@
                                                        withFormat:InventaryIconShowingFull];
         [self addViewOfType:InventaryBarIconTypeExtinguisher inView:self.inventary.extinguisher];
         [self.sampleScene hideExtinguisher];
+        [[SoundPlayer sharedPlayer] playDsyn];
     }
 }
 
@@ -312,6 +318,7 @@
     [self addViewOfType:InventaryBarIconTypeDandelion inView:self.inventary.dandelion];
     
     [self.sampleScene hideDandelion];
+    [[SoundPlayer sharedPlayer] playDsyn];
 }
 
 
@@ -321,17 +328,22 @@
     [self addViewOfType:InventaryBarIconTypeSnail inView:self.inventary.snail];
     
     [self.sampleScene hideSnail];
+    [[SoundPlayer sharedPlayer] playDsyn];
 }
 
 
 - (void)didPressBlueHouseInGameScene {
     typeof(self) welf = self;
-    self.viewModel.listenedToGinger = YES;
-    [self presentGingerWithText:@"text_panel_ginger_1" completion:^{
-        [welf presentGingerWithText:@"text_panel_ginger_2" completion:^{
-            [welf presentGingerWithText:@"text_panel_ginger_3" completion:nil];
+    if (self.viewModel.listenedToGinger) {
+        [self presentGingerWithText:@"text_panel_ginger_4" completion:nil];
+    } else {
+        self.viewModel.listenedToGinger = YES;
+        [self presentGingerWithText:@"text_panel_ginger_1" completion:^{
+            [welf presentGingerWithText:@"text_panel_ginger_2" completion:^{
+                [welf presentGingerWithText:@"text_panel_ginger_3" completion:nil];
+            }];
         }];
-    }];
+    }
 }
 
 
@@ -436,6 +448,7 @@
 
 
 - (IBAction)showSettings:(id)sender {
+    [[SoundPlayer sharedPlayer] playClick];
     [self.sampleScene closeDoor];
     [self closeLeftMenu];
     [self operOrCloseTopBarForType:MainScreenTopBarViewTypeSettings];
@@ -443,6 +456,7 @@
 
 
 - (IBAction)showInventary:(id)sender {
+    [[SoundPlayer sharedPlayer] playClick];
     [self.sampleScene closeDoor];
     self.isOpenLeftMenu = !self.isOpenLeftMenu;
     if (self.isOpenLeftMenu) {
@@ -566,6 +580,7 @@ didWantToOpenViewController:(UIViewController *)viewController {
 
 - (IBAction)openBook {
     NewBookViewController *newBook = [NewBookViewController instantiate];
+    [[SoundPlayer sharedPlayer] playClick];
     [self presentViewController:newBook animated:YES completion:nil];
 }
 

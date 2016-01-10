@@ -308,6 +308,7 @@
     [self.blueHouseNode showExtinguisher];
 }
 
+
 - (void)closeDoor {
     [self.blueHouseNode closeDoor];
 }
@@ -429,6 +430,7 @@
         case GetableObjectTypeWrench:
             nearObject = self.goblinNode;
             factorX = -1;
+            factorY = 0.5;
             break;
         default: break;
     }

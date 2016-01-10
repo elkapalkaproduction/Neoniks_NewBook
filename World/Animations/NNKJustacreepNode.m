@@ -88,7 +88,9 @@
     NSInteger count = [self.hatNode.physicsBody.allContactedBodies count];
     if (count > 0) {
         [self.timer invalidate];
-        [[SKAction playSoundFileNamed:@"justacreep.mp3" waitForCompletion:NO] runActionOnNode:self];
+        if (SoundStatus.isEnabled) {
+            [[SKAction playSoundFileNamed:@"justacreep.mp3" waitForCompletion:NO] runActionOnNode:self];
+        }
     }
 }
 

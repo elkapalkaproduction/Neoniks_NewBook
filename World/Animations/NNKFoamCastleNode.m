@@ -37,7 +37,8 @@
 
 - (SKAction *)sequence {
     if (!_sequence) {
-        _sequence = [SKAction actionWithSoundName:@"foam_castle.mp3" textures:AnimName];
+        _sequence = [SKAction actionWithSoundName:@"foam_castle.mp3" action:[SKAction animateWithTextures:AnimName
+                                                                                       timePerFrame:0.15]];
     }
     
     return _sequence;

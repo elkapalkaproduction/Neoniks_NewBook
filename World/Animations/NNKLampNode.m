@@ -21,8 +21,10 @@
     self = [super initWithSize:size];
     if (self) {
         _nodeSize = size;
-        self.selected = YES;
-        [self runAction];
+        _selected = NO;
+        [self addChild:self.mainNode];
+        self.mainNode.size = size;
+        self.mainNode.position = CGPointMake(size.width / 2, size.height / 2);
     }
     
     return self;
@@ -48,6 +50,9 @@
     [self addChild:self.mainNode];
     self.mainNode.size = self.nodeSize;
     self.mainNode.position = CGPointMake(self.nodeSize.width / 2, self.nodeSize.height / 2);
+    if (SoundStatus.isEnabled) {
+        [[SKAction playSoundFileNamed:@"lamp.mp3" waitForCompletion:NO] runActionOnNode:self];
+    }
 }
 
 @end

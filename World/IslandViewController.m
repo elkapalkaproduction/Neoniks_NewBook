@@ -27,6 +27,7 @@
 @property (strong, nonatomic) TextBarViewController *textBar;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
 @property (weak, nonatomic) IBOutlet UIImageView *takeMeImage;
+@property (weak, nonatomic) IBOutlet UIImageView *findMeLabel;
 
 @end
 
@@ -68,6 +69,9 @@
     NSInteger maxSolved = [self.viewModel maxSolved];
     self.currentToFindImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"puzzle_cake_%ld", (long)[self.viewModel currentNeedToFind]]];
     for (NSInteger index = 0; index < self.stars.count; index++) {
+        if ([self.stars[index] isHidden] && index < maxSolved) {
+            [[SoundPlayer sharedPlayer] playDsyn];
+        }
         [self.stars[index] setHidden:index >= maxSolved];
     }
     
@@ -104,6 +108,7 @@
     [self addOneTapGesture];
     self.mainScrollView.delegate = self;
     [self leftBarSetup];
+    self.findMeLabel.image = [UIImage imageLocalizableNamed:@"find_me"];
     self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
 }
 

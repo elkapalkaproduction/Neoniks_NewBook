@@ -37,7 +37,8 @@
 
 - (SKAction *)sequence {
     if (!_sequence) {
-        _sequence = [SKAction actionWithSoundName:@"ghost.mp3" textures:AnimName];
+        _sequence = [SKAction actionWithSoundName:@"ghost.mp3" action:[SKAction animateWithTextures:AnimName
+                                                                                       timePerFrame:0.13]];
     }
     
     return _sequence;

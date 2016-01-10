@@ -95,6 +95,12 @@
 		754D6E771C426D2B00C70AC1 /* lamp_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 754D6E761C426D2B00C70AC1 /* lamp_on.png */; };
 		754D6E7A1C426D3E00C70AC1 /* NNKLampNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 754D6E791C426D3E00C70AC1 /* NNKLampNode.m */; };
 		754D6E7D1C42768A00C70AC1 /* NSArray+Intersection.m in Sources */ = {isa = PBXBuildFile; fileRef = 754D6E7C1C42768A00C70AC1 /* NSArray+Intersection.m */; };
+		754D6E841C43032C00C70AC1 /* bat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 754D6E7E1C43032C00C70AC1 /* bat.mp3 */; };
+		754D6E851C43032C00C70AC1 /* dragon_puff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 754D6E7F1C43032C00C70AC1 /* dragon_puff.mp3 */; };
+		754D6E861C43032C00C70AC1 /* dsyn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 754D6E801C43032C00C70AC1 /* dsyn.mp3 */; };
+		754D6E871C43032C00C70AC1 /* flower.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 754D6E811C43032C00C70AC1 /* flower.mp3 */; };
+		754D6E881C43032C00C70AC1 /* iron_clank.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 754D6E821C43032C00C70AC1 /* iron_clank.mp3 */; };
+		754D6E891C43032C00C70AC1 /* ninja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 754D6E831C43032C00C70AC1 /* ninja.mp3 */; };
 		754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 754ED0BC1AF4110F00697F9E /* StyleSettings.plist */; };
 		75518FA31B91083E006A6ED8 /* NNKCatNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75518F9C1B91083E006A6ED8 /* NNKCatNode.m */; };
 		75518FA41B91083E006A6ED8 /* SKSpriteNode+TextureCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75518F9E1B91083E006A6ED8 /* SKSpriteNode+TextureCreation.m */; };
@@ -625,6 +631,12 @@
 		754D6E791C426D3E00C70AC1 /* NNKLampNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKLampNode.m; sourceTree = "<group>"; };
 		754D6E7B1C42768A00C70AC1 /* NSArray+Intersection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Intersection.h"; sourceTree = "<group>"; };
 		754D6E7C1C42768A00C70AC1 /* NSArray+Intersection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Intersection.m"; sourceTree = "<group>"; };
+		754D6E7E1C43032C00C70AC1 /* bat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bat.mp3; sourceTree = "<group>"; };
+		754D6E7F1C43032C00C70AC1 /* dragon_puff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dragon_puff.mp3; sourceTree = "<group>"; };
+		754D6E801C43032C00C70AC1 /* dsyn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dsyn.mp3; sourceTree = "<group>"; };
+		754D6E811C43032C00C70AC1 /* flower.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flower.mp3; sourceTree = "<group>"; };
+		754D6E821C43032C00C70AC1 /* iron_clank.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = iron_clank.mp3; sourceTree = "<group>"; };
+		754D6E831C43032C00C70AC1 /* ninja.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ninja.mp3; sourceTree = "<group>"; };
 		754ED0BC1AF4110F00697F9E /* StyleSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StyleSettings.plist; sourceTree = "<group>"; };
 		75518F9B1B91083E006A6ED8 /* NNKCatNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKCatNode.h; sourceTree = "<group>"; };
 		75518F9C1B91083E006A6ED8 /* NNKCatNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKCatNode.m; sourceTree = "<group>"; };
@@ -1546,6 +1558,12 @@
 				75B980CF1B591AAA00893462 /* button_click.mp3 */,
 				75B980D01B591AAA00893462 /* right.mp3 */,
 				75B980D11B591AAA00893462 /* wrong.mp3 */,
+				754D6E7E1C43032C00C70AC1 /* bat.mp3 */,
+				754D6E7F1C43032C00C70AC1 /* dragon_puff.mp3 */,
+				754D6E801C43032C00C70AC1 /* dsyn.mp3 */,
+				754D6E811C43032C00C70AC1 /* flower.mp3 */,
+				754D6E821C43032C00C70AC1 /* iron_clank.mp3 */,
+				754D6E831C43032C00C70AC1 /* ninja.mp3 */,
 			);
 			name = SoundPlayer;
 			sourceTree = "<group>";
@@ -2162,6 +2180,7 @@
 				75DC67C81A816AA100D6A553 /* shadow_character4_part11.png in Resources */,
 				75DC67ED1A816AA100D6A553 /* shadow_character6_part10.png in Resources */,
 				75DC68111A816AA100D6A553 /* shadow_character8_part11.png in Resources */,
+				754D6E841C43032C00C70AC1 /* bat.mp3 in Resources */,
 				75B980741B58FA4C00893462 /* foam_castle.mp3 in Resources */,
 				75B980B51B5916A400893462 /* text_panel_dragon_initial_sound_ru.mp3 in Resources */,
 				754D6E771C426D2B00C70AC1 /* lamp_on.png in Resources */,
@@ -2280,6 +2299,7 @@
 				75DC681F1A816AA100D6A553 /* shadow_character8_part24.png in Resources */,
 				75AE58401BA963B300DDD552 /* menu_512x512_16.png in Resources */,
 				75041C1E1B6E9ED300B28F3F /* q3_sound_ru.mp3 in Resources */,
+				754D6E861C43032C00C70AC1 /* dsyn.mp3 in Resources */,
 				75D531001B6E82D000E57D25 /* island_sound_5_ru.mp3 in Resources */,
 				75DC68201A816AA100D6A553 /* shadow_character8_part25.png in Resources */,
 				75AE57FD1BA963A500DDD552 /* dandelion.png in Resources */,
@@ -2385,6 +2405,7 @@
 				75DFE0FD1A800CE500CE9E69 /* Shadow_portret_3.png in Resources */,
 				75DC67EF1A816AA100D6A553 /* shadow_character6_part12.png in Resources */,
 				75AE58011BA963A500DDD552 /* school_of_magic_rus.png in Resources */,
+				754D6E871C43032C00C70AC1 /* flower.mp3 in Resources */,
 				75DC67D31A816AA100D6A553 /* shadow_character4_part21.png in Resources */,
 				7530D6B61AD069960063F124 /* ContributorsViewController.xib in Resources */,
 				75DC67CC1A816AA100D6A553 /* shadow_character4_part15.png in Resources */,
@@ -2475,6 +2496,7 @@
 				75B9805F1B58F48D00893462 /* justacreep.mp3 in Resources */,
 				75DC67D91A816AA100D6A553 /* shadow_character4_part5.png in Resources */,
 				75B980C31B5916A400893462 /* text_panel_other_sound_ru.mp3 in Resources */,
+				754D6E851C43032C00C70AC1 /* dragon_puff.mp3 in Resources */,
 				753D723F1BA4CE25006DC74A /* text_panel_ninja_final_sound_ru.mp3 in Resources */,
 				75AE58621BA963B300DDD552 /* menu_512x512_47.png in Resources */,
 				75B980B01B5916A400893462 /* text_panel_bottle_sound_en.mp3 in Resources */,
@@ -2483,6 +2505,7 @@
 				75B980C71B5916A400893462 /* text_panel_shadow_initial_sound_ru.mp3 in Resources */,
 				75DC67E11A816AA100D6A553 /* shadow_character5_part12.png in Resources */,
 				75B980771B58FA4C00893462 /* school.mp3 in Resources */,
+				754D6E891C43032C00C70AC1 /* ninja.mp3 in Resources */,
 				75AE583C1BA963B200DDD552 /* menu_512x512_12.png in Resources */,
 				75DC67BB1A816AA100D6A553 /* shadow_character3_part13.png in Resources */,
 				75041C1C1B6E9ED300B28F3F /* q2_sound_ru.mp3 in Resources */,
@@ -2498,6 +2521,7 @@
 				75DC68101A816AA100D6A553 /* shadow_character8_part10.png in Resources */,
 				75DC67C11A816AA100D6A553 /* shadow_character3_part5.png in Resources */,
 				75DC67AC1A816AA100D6A553 /* shadow_character2_part11.png in Resources */,
+				754D6E881C43032C00C70AC1 /* iron_clank.mp3 in Resources */,
 				75B980571B58F3D700893462 /* jay.mp3 in Resources */,
 				75DC68391A817E6500D6A553 /* shadow_correct_position.plist in Resources */,
 				75B980D31B591AAA00893462 /* right.mp3 in Resources */,

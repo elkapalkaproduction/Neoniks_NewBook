@@ -18,6 +18,7 @@
 @property (strong, nonatomic) SKTextureAtlas *atlass;
 @property (strong, nonatomic) SKAction *sequence;
 @property (strong, nonatomic) SKSpriteNode *spriteNode;
+@property (strong, nonatomic) SKAction *secondAction;
 
 @end
 
@@ -45,6 +46,18 @@
 }
 
 
+- (SKAction *)secondAction {
+    if (!_secondAction) {
+        NSTimeInterval duration = 0.3;
+        SKAction *scale = [SKAction scaleTo:0.05 duration:duration];
+        SKAction *rotation = [SKAction rotateToAngle:-M_PI duration:duration];
+        _secondAction = [SKAction actionWithSoundName:@"bat" action:[SKAction group:@[scale, rotation]]];
+    }
+    
+    return _secondAction;
+}
+
+
 - (SKSpriteNode *)mainNodeWithSize:(CGSize)size {
     SKSpriteNode *spriteNode = [SKSpriteNode spriteNodeWithTexture:FirstFrameName];
     spriteNode.size = size;
@@ -61,12 +74,10 @@
 
 - (void)squeeze:(BOOL)squeeze {
     [self.spriteNode removeAllActions];
-    NSTimeInterval duration = 0.3;
     if (squeeze) {
-        SKAction *scale = [SKAction scaleTo:0.05 duration:duration];
-        SKAction *rotation = [SKAction rotateToAngle:-M_PI duration:duration];
-        [[SKAction group:@[scale, rotation]] runActionOnNode:self.spriteNode];
+        [self.secondAction runActionOnNode:self.spriteNode];
     } else {
+        NSTimeInterval duration = 0.3;
         SKAction *scale = [SKAction scaleTo:1 duration:duration];
         SKAction *rotation = [SKAction rotateToAngle:0 duration:duration];
         [[SKAction group:@[scale, rotation]] runActionOnNode:self.spriteNode completion:^{

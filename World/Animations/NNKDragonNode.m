@@ -45,8 +45,7 @@
 
 - (SKAction *)sequence {
     if (!_sequence) {
-        _sequence = [SKAction animateWithTextures:DRAGON_ANIM_ANIM_FIRE
-                                     timePerFrame:1.f / 15.f];
+        _sequence = [SKAction actionWithSoundName:@"dragon_puff" textures:DRAGON_ANIM_ANIM_FIRE];
     }
     
     return _sequence;

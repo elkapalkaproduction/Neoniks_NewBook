@@ -14,6 +14,7 @@
 @property (strong, nonatomic) SKTextureAtlas *atlass;
 @property (strong, nonatomic) SKSpriteNode *ninjaNode;
 @property (strong, nonatomic) SKSpriteNode *wingsNode;
+@property (strong, nonatomic) SKAction *sequence;
 
 @end
 
@@ -43,6 +44,18 @@
 }
 
 
+- (SKAction *)sequence {
+    if (!_sequence) {
+        SKAction *sequence = [SKAction sequence:@[[SKAction moveToY:self.ninjaNode.size.height / 2 duration:0.5],
+                                                 [SKAction waitForDuration:3],
+                                                 [SKAction moveToY:self.size.height - self.ninjaNode.size.height / 2 duration:0.5]]];
+        _sequence = [SKAction actionWithSoundName:@"ninja.mp3" action:sequence];
+    }
+    
+    return _sequence;
+}
+
+
 - (SKSpriteNode *)woodNodeWithSize:(CGSize)size sprite:(SKTexture *)sprite {
     SKSpriteNode *spriteNode = [SKSpriteNode spriteNodeWithTexture:sprite];
     spriteNode.size = size;
@@ -55,9 +68,7 @@
 - (void)runAction {
     if (self.completionBlock) self.completionBlock();
     [self.ninjaNode removeAllActions];
-    [[SKAction sequence:@[[SKAction moveToY:self.ninjaNode.size.height / 2 duration:0.5],
-                          [SKAction waitForDuration:3],
-                          [SKAction moveToY:self.size.height - self.ninjaNode.size.height / 2 duration:0.5]]] runActionOnNode:self.ninjaNode];
+    [self.sequence runActionOnNode:self.ninjaNode];
 }
 
 @end
