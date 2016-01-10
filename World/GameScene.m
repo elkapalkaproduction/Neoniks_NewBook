@@ -17,6 +17,8 @@
 #import "NNKCatNode.h"
 #import "DragableSpriteNode.h"
 #import "NNKGetableObject.h"
+#import "NNKBatNode.h"
+#import "NNKLampNode.h"
 
 @interface GameScene () <DragableSpriteDelegate, UIGestureRecognizerDelegate>
 
@@ -30,6 +32,8 @@
 @property (strong, nonatomic) SKSpriteNode *dandelion;
 @property (strong, nonatomic) SKSpriteNode *snail;
 @property (strong, nonatomic) NNKSheepNode *sheepNode;
+@property (strong, nonatomic) NNKLampNode *lampNode;
+@property (strong, nonatomic) NNKBatNode *batNode;
 @property (strong, nonatomic) NNKNinjaNode *ninjaNode;
 @property (strong, nonatomic) NNKSkeletNode *skeletNode;
 @property (strong, nonatomic) NNKDragonNode *dragonNode;
@@ -66,6 +70,8 @@
         [self.rootNode addChild:self.leftTree];
         [self.rootNode addChild:self.rightTree];
         [self.rootNode addChild:self.sheepNode];
+        [self.rootNode addChild:self.lampNode];
+        [self.rootNode addChild:self.batNode];
         [self.rootNode addChild:self.ninjaNode];
         [self.rootNode addChild:self.skeletNode];
         [self.rootNode addChild:self.dragonNode];
@@ -75,6 +81,7 @@
         [self.rootNode addChild:self.blueHouseNode];
         [self.rootNode addChild:self.catNode];
         [self.catNode runBackgrounAction];
+        [self.batNode runAction];
     }
 
     return self;
@@ -112,6 +119,10 @@
     } else if ([nodes containsObject:self.sheepNode]) {
         [self.sheepNode runAction];
         [self.gameSceneDelegate didPressSheepInGameScene];
+    } else if ([nodes containsObject:self.lampNode]) {
+        [self.lampNode runAction];
+        [self.batNode squeeze:self.lampNode.selected];
+        [self.gameSceneDelegate didPressLampInGameScene];
     } else if ([nodes containsObject:self.ninjaNode]) {
         [self.ninjaNode runAction];
         [self.gameSceneDelegate didPressNinjaInGameScene];
@@ -154,6 +165,8 @@
     self.dandelion = [self nodeWithImageName:@"dandelion" position:CGPointMake(415, 2546)];
     self.snail = [self nodeWithImageName:@"snail" position:CGPointMake(1115, 2237)];
     self.sheepNode = [self nodeWithClass:[NNKSheepNode class] rect:CGRectMake(718, 1116, 300, 300)];
+    self.batNode = [self nodeWithClass:[NNKBatNode class] rect:CGRectMake(1650, 2200, 300, 300)];
+    self.lampNode = [self nodeWithClass:[NNKLampNode class] rect:CGRectMake(2100, 2250, 140, 210)];
     self.ninjaNode = [self nodeWithClass:[NNKNinjaNode class] rect:CGRectMake(307, 580, 203, 678)];
     self.skeletNode = [self nodeWithClass:[NNKSkeletNode class] rect:CGRectMake(1075, 2691, 400, 330)];
     self.dragonNode = [self nodeWithClass:[NNKDragonNode class] rect:CGRectMake(-784, 3333, 1640, 556)];
@@ -189,12 +202,12 @@
 
 - (id)nodeWithClass:(Class)className
                rect:(CGRect)rect {
-    SKSpriteNode *sheepNode = [[className alloc] initWithSize:rect.size];
-    sheepNode.position = [self positionFromPositon:rect.origin
-                                          nodeSize:sheepNode.size
+    SKSpriteNode *node = [[className alloc] initWithSize:rect.size];
+    node.position = [self positionFromPositon:rect.origin
+                                          nodeSize:node.size
                                       rootNodeSize:self.rootNode.size];
 
-    return sheepNode;
+    return node;
 }
 
 
@@ -343,14 +356,17 @@
 
 
 - (void)showGetableObjectOfType:(GetableObjectType)type {
-    SKSpriteNode *node = [[NNKGetableObject alloc] initWithSize:CGSizeMake(274, 274)
-                                                           type:type];
     [self hideObjectOfType:type];
     SKSpriteNode *nearObject;
     CGFloat factorX = 1;
     CGFloat factorY = 0;
+    CGFloat size = 274;
     switch (type) {
         case GetableObjectTypeBottleOfMagic:
+            nearObject = self.batNode;
+            factorX = 0.55;
+            factorY = -0.25;
+            size = 140;
             break;
         case GetableObjectTypeMagicBook:
             nearObject = self.dragonNode;
@@ -374,6 +390,8 @@
             break;
         default: break;
     }
+    SKSpriteNode *node = [[NNKGetableObject alloc] initWithSize:CGSizeMake(size, size)
+                                                           type:type];
     node.position = CGPointMake(nearObject.position.x + factorX * (nearObject.size.width + node.size.width) / 2,
                                 nearObject.position.y + factorY * (nearObject.size.height + node.size.height) / 2);
     [self.rootNode addChild:node];

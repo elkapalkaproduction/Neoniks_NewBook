@@ -31,6 +31,7 @@
                               hiddenType:(InventaryBarIconType)hiddenType;
 - (void)didStartMoveDragableNode;
 - (void)didPressGetableObjectWithType:(GetableObjectType)type;
+- (void)didPressLampInGameScene;
 
 @end
 

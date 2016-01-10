@@ -159,6 +159,9 @@
     if ([self isGetableIcon:InventaryBarIconTypeMagicBallCat]) {
         [self.sampleScene showGetableObjectOfType:GetableObjectTypeMagicBallCat];
     }
+    if ([self isGetableIcon:InventaryBarIconTypeBottleOfMagic]) {
+        [self.sampleScene showGetableObjectOfType:GetableObjectTypeBottleOfMagic];
+    }
 }
 
 
@@ -293,6 +296,15 @@
            [welf presentGingerWithText:@"text_panel_ginger_3" completion:nil];
        }];
     }];
+}
+
+
+- (void)didPressLampInGameScene {
+    if (![self isOpenIcon:InventaryBarIconTypeBottleOfMagic]) {
+        [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeBottleOfMagic
+                                                       withFormat:InventaryIconShowingGet];
+        [self.sampleScene showGetableObjectOfType:GetableObjectTypeBottleOfMagic];
+    }
 }
 
 

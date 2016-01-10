@@ -90,6 +90,10 @@
 		75423A9E1A7D826A00D2C36E /* SchoolOfMagicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423A9D1A7D826A00D2C36E /* SchoolOfMagicViewController.m */; };
 		75423AA31A7D8A4000D2C36E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75423AA21A7D8A4000D2C36E /* BaseViewController.m */; };
 		754D6E6F1C41D61D00C70AC1 /* SoundStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 754D6E6E1C41D61D00C70AC1 /* SoundStatus.m */; };
+		754D6E721C42680E00C70AC1 /* bat_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 754D6E701C42680E00C70AC1 /* bat_anim.atlasc */; };
+		754D6E751C42689E00C70AC1 /* NNKBatNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 754D6E741C42689E00C70AC1 /* NNKBatNode.m */; };
+		754D6E771C426D2B00C70AC1 /* lamp_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 754D6E761C426D2B00C70AC1 /* lamp_on.png */; };
+		754D6E7A1C426D3E00C70AC1 /* NNKLampNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 754D6E791C426D3E00C70AC1 /* NNKLampNode.m */; };
 		754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 754ED0BC1AF4110F00697F9E /* StyleSettings.plist */; };
 		75518FA31B91083E006A6ED8 /* NNKCatNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75518F9C1B91083E006A6ED8 /* NNKCatNode.m */; };
 		75518FA41B91083E006A6ED8 /* SKSpriteNode+TextureCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75518F9E1B91083E006A6ED8 /* SKSpriteNode+TextureCreation.m */; };
@@ -611,6 +615,13 @@
 		75423AA21A7D8A4000D2C36E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		754D6E6D1C41D61D00C70AC1 /* SoundStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundStatus.h; sourceTree = "<group>"; };
 		754D6E6E1C41D61D00C70AC1 /* SoundStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundStatus.m; sourceTree = "<group>"; };
+		754D6E701C42680E00C70AC1 /* bat_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bat_anim.atlasc; sourceTree = "<group>"; };
+		754D6E711C42680E00C70AC1 /* bat_anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bat_anim.h; sourceTree = "<group>"; };
+		754D6E731C42689E00C70AC1 /* NNKBatNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKBatNode.h; sourceTree = "<group>"; };
+		754D6E741C42689E00C70AC1 /* NNKBatNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKBatNode.m; sourceTree = "<group>"; };
+		754D6E761C426D2B00C70AC1 /* lamp_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_on.png; sourceTree = "<group>"; };
+		754D6E781C426D3E00C70AC1 /* NNKLampNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKLampNode.h; sourceTree = "<group>"; };
+		754D6E791C426D3E00C70AC1 /* NNKLampNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKLampNode.m; sourceTree = "<group>"; };
 		754ED0BC1AF4110F00697F9E /* StyleSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StyleSettings.plist; sourceTree = "<group>"; };
 		75518F9B1B91083E006A6ED8 /* NNKCatNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKCatNode.h; sourceTree = "<group>"; };
 		75518F9C1B91083E006A6ED8 /* NNKCatNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKCatNode.m; sourceTree = "<group>"; };
@@ -1139,6 +1150,10 @@
 				75127BDF1C41A524003762A2 /* NNKGetableObject.m */,
 				75127BD01C413C82003762A2 /* NNKSpriteNode.h */,
 				75127BD11C413C82003762A2 /* NNKSpriteNode.m */,
+				754D6E731C42689E00C70AC1 /* NNKBatNode.h */,
+				754D6E741C42689E00C70AC1 /* NNKBatNode.m */,
+				754D6E781C426D3E00C70AC1 /* NNKLampNode.h */,
+				754D6E791C426D3E00C70AC1 /* NNKLampNode.m */,
 				75B980691B58F9EF00893462 /* Atlases */,
 			);
 			path = Animations;
@@ -1367,6 +1382,8 @@
 		75B980691B58F9EF00893462 /* Atlases */ = {
 			isa = PBXGroup;
 			children = (
+				754D6E701C42680E00C70AC1 /* bat_anim.atlasc */,
+				754D6E711C42680E00C70AC1 /* bat_anim.h */,
 				75127BDB1C418B96003762A2 /* skelet_anim.atlasc */,
 				75127BDC1C418B96003762A2 /* skelet_anim.h */,
 				75B357D51C1D7414000DFC4E /* blue_house_anim.atlasc */,
@@ -1568,6 +1585,7 @@
 				75AE57F31BA963A500DDD552 /* dandelion.png */,
 				75AE57F41BA963A500DDD552 /* island.png */,
 				75AE57F51BA963A500DDD552 /* lamp_off.png */,
+				754D6E761C426D2B00C70AC1 /* lamp_on.png */,
 				75AE57F61BA963A500DDD552 /* school_of_magic_eng.png */,
 				75AE57F71BA963A500DDD552 /* school_of_magic_rus.png */,
 				75AE57F81BA963A500DDD552 /* shadow_play_eng.png */,
@@ -2141,6 +2159,7 @@
 				75DC68111A816AA100D6A553 /* shadow_character8_part11.png in Resources */,
 				75B980741B58FA4C00893462 /* foam_castle.mp3 in Resources */,
 				75B980B51B5916A400893462 /* text_panel_dragon_initial_sound_ru.mp3 in Resources */,
+				754D6E771C426D2B00C70AC1 /* lamp_on.png in Resources */,
 				75127BDD1C418B96003762A2 /* skelet_anim.atlasc in Resources */,
 				753D72411BA4CE25006DC74A /* text_panel_ninja_initial_sound_ru.mp3 in Resources */,
 				75B980C51B5916A400893462 /* text_panel_shadow_final_sound_ru.mp3 in Resources */,
@@ -2260,6 +2279,7 @@
 				75DC68201A816AA100D6A553 /* shadow_character8_part25.png in Resources */,
 				75AE57FD1BA963A500DDD552 /* dandelion.png in Resources */,
 				75DC67E61A816AA100D6A553 /* shadow_character5_part4.png in Resources */,
+				754D6E721C42680E00C70AC1 /* bat_anim.atlasc in Resources */,
 				75DC67E71A816AA100D6A553 /* shadow_character5_part5.png in Resources */,
 				7505693C1B1E56BB008DE162 /* lantern_house.atlasc in Resources */,
 				75AE584B1BA963B300DDD552 /* menu_512x512_26.png in Resources */,
@@ -2574,6 +2594,7 @@
 				75C840011B49883C007122A9 /* NNKSheepNode.m in Sources */,
 				75C12A6B1A754B6C0075FD8D /* ViewController.m in Sources */,
 				75A1251F1AD08DC400BDFB7F /* NSURL+Helps.m in Sources */,
+				754D6E751C42689E00C70AC1 /* NNKBatNode.m in Sources */,
 				75EDA1871A83FE7E002546E0 /* Storage.m in Sources */,
 				757E93DB1A7E2DEE000B2537 /* MagicTableViewController.m in Sources */,
 				75D268FE1AC3448B00A17632 /* InfiniteTableView.m in Sources */,
@@ -2620,6 +2641,7 @@
 				75EC74841C25EB6600CE0E25 /* SideMenu.m in Sources */,
 				75EBF3271AAB7BB4005F5E8C /* UIImage+Colors.m in Sources */,
 				75C84D591ADBD955006359E9 /* FontSelectViewModel.m in Sources */,
+				754D6E7A1C426D3E00C70AC1 /* NNKLampNode.m in Sources */,
 				75EBF3241AAB6948005F5E8C /* IslandViewController.m in Sources */,
 				75A125111AD0717800BDFB7F /* TransitionAnimationFromUpToDown.m in Sources */,
 				750380051B1A3B8900CB0B83 /* NNKMinerNode.m in Sources */,
