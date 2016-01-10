@@ -70,12 +70,14 @@
 
 - (IBAction)firstButtonPressed:(id)sender {
     if (self.firstAction) self.firstAction();
+    [[SoundPlayer sharedPlayer] playClick];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
 - (IBAction)secondButtonPressed:(id)sender {
     if (self.secondAction) self.secondAction();
+    [[SoundPlayer sharedPlayer] playClick];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

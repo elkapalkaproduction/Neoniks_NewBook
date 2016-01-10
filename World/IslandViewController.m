@@ -214,6 +214,7 @@
     self.prizeView.hidden = YES;
     [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeIslandMap
                                                    withFormat:InventaryIconShowingFull];
+    [self backButton:nil];
 }
 
 

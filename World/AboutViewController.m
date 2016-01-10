@@ -9,8 +9,9 @@
 #import "AboutViewController.h"
 
 @interface AboutViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *mainLabel;
+@property (weak, nonatomic) IBOutlet UITextView *mainLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *titleImage;
+@property (assign, nonatomic) BOOL updated;
 
 @end
 
@@ -32,11 +33,22 @@
                                  NSForegroundColorAttributeName : [UIColor whiteColor]};
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text attributes:attributes];
     NSString *site = NSLocalizedString(@"site_address", nil);
+    NSString *siteAddress = [@"http://" stringByAppendingString:site];
+
     NSRange range = [text rangeOfString:site];
-    [attributedString addAttribute:NSForegroundColorAttributeName
-                             value:[UIColor yellowColor]
+    [attributedString addAttribute:NSLinkAttributeName value:[NSURL URLWithString:siteAddress]
                              range:range];
+    self.mainLabel.linkTextAttributes = @{NSForegroundColorAttributeName:[UIColor yellowColor]};
     self.mainLabel.attributedText = attributedString;
+}
+
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    if (!self.updated) {
+        self.updated = YES;
+        self.mainLabel.contentOffset = CGPointZero;
+    }
 }
 
 @end

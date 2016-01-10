@@ -36,26 +36,25 @@ NSString *const NSPFileNameWrongPosition = @"shadow_wrong_position.plist";
 NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 @interface ShadowPlayViewController () <CharacterShadowDelegate, DragableButtonDelegate>
+
 @property (weak, nonatomic) IBOutlet UIImageView *bannerImage;
 @property (weak, nonatomic) IBOutlet UIView *viewForElements;
 @property (weak, nonatomic) IBOutlet UIView *viewForResults;
 @property (weak, nonatomic) IBOutlet UIImageView *fullPortret;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
+@property (weak, nonatomic) IBOutlet UIView *prizeView;
+@property (weak, nonatomic) IBOutlet UIView *textBarSuperView;
+@property (weak, nonatomic) IBOutlet UIImageView *takeMeImage;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
+
 @property (assign, nonatomic) ShadowCharacter loadedCharacter;
 @property (strong, nonatomic) NSMutableArray *shadowElements;
 @property (strong, nonatomic) NSMutableSet *arrayOfSegues;
-@property (weak, nonatomic, readonly) NSDictionary *wrongAnswers;
-@property (weak, nonatomic, readonly) NSDictionary *correctAnswers;
-@property (assign, nonatomic, readonly) CGFloat imageRatio;
-@property (weak, nonatomic) IBOutlet UIView *prizeView;
 @property (strong, nonatomic) MyScene *scene;
 @property (strong, nonatomic) SKView *skView;
 
-@property (weak, nonatomic) IBOutlet UIView *textBarSuperView;
 @property (strong, nonatomic) TextBarViewController *textBar;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *textBarBottomConstraint;
 @property (strong, nonatomic) AVAudioPlayer *player;
-@property (weak, nonatomic) IBOutlet UIImageView *takeMeImage;
 
 @end
 
@@ -88,7 +87,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 
 - (void)prepareSkView {
-    CGRect frame = self.viewForResults.bounds; 
+    CGRect frame = self.viewForResults.bounds;
     self.skView = [self skViewWithSize:frame node:nil];
     
     [self.viewForResults addSubview:self.skView];
@@ -104,6 +103,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     self.loadedCharacter = ShadowCharacterJay;
     self.prizeView.hidden = YES;
     self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
+    NSLog(@"%@", self);
 }
 
 
@@ -112,6 +112,19 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     [self didPressCharacter:self.loadedCharacter];
     [self.player stop];
     self.viewForElements.hidden = YES;
+}
+
+
+- (void)backButton:(id)sender {
+    if ([self shouldShowPrize]) {
+        [self showMagicWand];
+    } else {
+        self.arrayOfSegues = nil;
+        [super backButton:sender];
+        [self.textBar stopStound];
+        [self.player stop];
+        self.scene = nil;
+    }
 }
 
 
@@ -127,13 +140,6 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
         [self.player stop];
     } else {
     }
-}
-
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    [self.textBar stopStound];
-    [self.player stop];
 }
 
 
@@ -182,9 +188,6 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
         [self loadLockedCharacter:character];
         [self.player stop];
     }
-    
-    
-    
 }
 
 
@@ -198,7 +201,6 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 - (void)loadShadowsForCharacter:(ShadowCharacter)character {
     [self removeAllShadowsFromTheScreen];
-    [[SoundPlayer sharedPlayer] playClick];
     NSString *key = [NSString stringWithFormat:@"character%ld", (long)character];
     NSDictionary *wrongCharacterPositions = self.wrongAnswers[key];
     NSDictionary *correctCharacterPositions = self.correctAnswers[key];
@@ -344,7 +346,7 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
             return nil;
         }
     }
-
+    
 }
 
 
@@ -476,15 +478,6 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 - (CGFloat)textBarOpenPosition {
     return 5;
-}
-
-
-- (void)backButton:(id)sender {
-    if ([self shouldShowPrize]) {
-        [self showMagicWand];
-    } else {
-        [super backButton:sender];
-    }
 }
 
 

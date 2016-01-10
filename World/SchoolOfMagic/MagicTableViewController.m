@@ -256,12 +256,17 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 }
 
 
-- (IBAction)getPrize:(id)sender {
+- (void)hidePrize {
     self.answerView.hidden = NO;
     self.questionNumberTitle.hidden = NO;
     self.questionText.hidden = NO;
     self.answerImage.hidden = NO;
     self.prizeView.hidden = YES;
+}
+
+
+- (IBAction)getPrize:(id)sender {
+    [self hidePrize];
     [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeMedal
                                                    withFormat:InventaryIconShowingFull];
     [self showQuestion:self.questionNumber];
@@ -291,6 +296,7 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 
 - (void)reset {
     [[MagicSchoolAnswersHandler sharedHandler] deleteAllAnswers];
+    [self hidePrize];
     [self showQuestion:self.questionNumber];
 }
 
