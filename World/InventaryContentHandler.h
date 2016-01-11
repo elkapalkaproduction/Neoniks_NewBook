@@ -21,6 +21,7 @@
 - (InventaryIconShowing)formatForItemType:(InventaryBarIconType)type;
 
 - (NSInteger)numberOfBallOfMagic;
+- (BOOL)isOpenedAll;
 
 - (void)deleteAll;
 

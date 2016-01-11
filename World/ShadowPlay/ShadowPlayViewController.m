@@ -60,13 +60,6 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
 
 @implementation ShadowPlayViewController
 
-+ (instancetype)instantiate {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    return [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(self)];
-}
-
-
 - (MyScene *)sceneWithFrame:(CGRect)frame node:(NNKSpriteNode *)node {
     MyScene *scene = [MyScene sceneWithSize:frame.size];
     scene.node = node;
@@ -103,7 +96,6 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     self.loadedCharacter = ShadowCharacterJay;
     self.prizeView.hidden = YES;
     self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
-    NSLog(@"%@", self);
 }
 
 

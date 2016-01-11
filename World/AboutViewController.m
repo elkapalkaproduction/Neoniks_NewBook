@@ -17,14 +17,6 @@
 
 @implementation AboutViewController
 
-+ (instancetype)instantiate {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    AboutViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(self)];
-    
-    return viewController;
-}
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.titleImage.image = [UIImage imageLocalizableNamed:@"about_page_title"];

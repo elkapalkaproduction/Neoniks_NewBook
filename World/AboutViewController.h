@@ -10,6 +10,4 @@
 
 @interface AboutViewController : BaseViewController
 
-+ (instancetype)instantiate;
-
 @end

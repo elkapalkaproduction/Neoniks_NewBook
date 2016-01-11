@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TUV-GE-XlK">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -9,10 +9,46 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
+        <!--Logo View Controller-->
+        <scene sceneID="zqt-AO-xRO">
+            <objects>
+                <viewController id="TUV-GE-XlK" customClass="LogoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gmG-Mv-7EA"/>
+                        <viewControllerLayoutGuide type="bottom" id="aPA-Jx-XZv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9JJ-A8-9ux">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qI2-Mb-xrX">
+                                <rect key="frame" x="175" y="204" width="250" height="191"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="2Fx-t3-6ir">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" secondItem="qI2-Mb-xrX" secondAttribute="height" multiplier="250:191" id="eaN-ro-VQb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qI2-Mb-xrX" firstAttribute="centerY" secondItem="9JJ-A8-9ux" secondAttribute="centerY" id="CZr-kC-mn5"/>
+                            <constraint firstItem="qI2-Mb-xrX" firstAttribute="centerX" secondItem="9JJ-A8-9ux" secondAttribute="centerX" id="aLg-kZ-RSU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logoImage" destination="qI2-Mb-xrX" id="tKa-lh-Kzv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rP9-hS-gRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-369" y="244"/>
+        </scene>
         <!--Data Source-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -1620,7 +1656,7 @@ bottom.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPz-to-bry" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2818" y="163"/>
+            <point key="canvasLocation" x="419" y="-294"/>
         </scene>
         <!--Alert View Controller-->
         <scene sceneID="6Ib-00-Owb">
@@ -1798,7 +1834,7 @@ bottom.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uE-LI-jBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3066" y="851"/>
+            <point key="canvasLocation" x="2502" y="291"/>
         </scene>
     </scenes>
     <resources>

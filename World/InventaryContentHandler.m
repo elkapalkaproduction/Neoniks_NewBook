@@ -42,7 +42,7 @@
 }
 
 
-- (InventaryIconShowing)formatItemForType:(InventaryBarIconType)type {
+- (InventaryIconShowing)formatForItemType:(InventaryBarIconType)type {
     NSString *key = [self keyFromType:type];
     
     return [Storage loadIntegerForKey:key];
@@ -64,7 +64,7 @@
     if (_items) return _items;
     NSMutableArray *array = [[NSMutableArray alloc] init];
     for (InventaryBarIconType type = InventaryBarIconTypeIslandMap; type <= InventaryBarIconTypeSnail; type++) {
-        InventaryIconShowing format = [self formatItemForType:type];
+        InventaryIconShowing format = [self formatForItemType:type];
         if (format == InventaryIconShowingHidden) continue;
         InventaryItemOption *option = [[InventaryItemOption alloc] init];
         option.type = type;
@@ -78,16 +78,11 @@
 }
 
 
-- (InventaryIconShowing)formatForItemType:(InventaryBarIconType)type {
-    return [Storage loadIntegerForKey:[self keyFromType:type]];
-}
-
-
 - (NSInteger)numberOfBallOfMagic {
     NSInteger count = 0;
-    if ([self formatItemForType:InventaryBarIconTypeMagicBallCat] == InventaryIconShowingFull) count++;
-    if ([self formatItemForType:InventaryBarIconTypeMagicBallSheep] == InventaryIconShowingFull) count++;
-    if ([self formatItemForType:InventaryBarIconTypeMagicBallNinja] == InventaryIconShowingFull) count++;
+    if ([self formatForItemType:InventaryBarIconTypeMagicBallCat] == InventaryIconShowingFull) count++;
+    if ([self formatForItemType:InventaryBarIconTypeMagicBallSheep] == InventaryIconShowingFull) count++;
+    if ([self formatForItemType:InventaryBarIconTypeMagicBallNinja] == InventaryIconShowingFull) count++;
     
     return count;
 }
@@ -97,6 +92,18 @@
     for (InventaryBarIconType type = InventaryBarIconTypeUnknown; type <= InventaryBarIconTypeMagicBallNinja; type++) {
         [self markItemWithType:type withFormat:InventaryIconShowingEmpty];
     }
+}
+
+
+- (BOOL)isOpenedAll {
+    if ([self numberOfBallOfMagic] != 3) return NO;
+    for (InventaryBarIconType type = InventaryBarIconTypeIslandMap; type <= InventaryBarIconTypeBottleOfMagic; type++) {
+        if ([self formatForItemType:type] != InventaryIconShowingFull) {
+            return NO;
+        }
+    }
+    
+    return YES;
 }
 
 @end

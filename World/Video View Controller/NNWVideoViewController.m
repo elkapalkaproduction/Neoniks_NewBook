@@ -26,13 +26,6 @@ NSString *const SVPVideoPath = @"start_video_path";
 
 @implementation NNWVideoViewController
 
-+ (instancetype)instantiate {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    return [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(self)];
-}
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.titleImage.image = [UIImage imageLocalizableNamed:SVPVideoTitleImageName];

@@ -10,7 +10,5 @@
 
 @interface NNWVideoViewController : BaseViewController
 
-+ (instancetype)instantiate;
-
 @end
 

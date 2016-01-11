@@ -34,8 +34,7 @@
 @implementation PopUpViewController
 
 + (instancetype)instantiateWithType:(PopUpType)type delegate:(id<PopUpDelegate>)delegate {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    PopUpViewController *popUpViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(self)];
+    PopUpViewController *popUpViewController = [PopUpViewController instantiate];
     
     popUpViewController.delegate = delegate;
     popUpViewController.type = type;

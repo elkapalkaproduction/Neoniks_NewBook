@@ -10,6 +10,8 @@
 
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *constraintsToUpdate;
 
++ (instancetype)instantiate;
+
 + (NSString *)storyboardID;
 - (IBAction)backButton:(id)sender;
 

@@ -101,6 +101,7 @@
 		754D6E871C43032C00C70AC1 /* flower.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 754D6E811C43032C00C70AC1 /* flower.mp3 */; };
 		754D6E881C43032C00C70AC1 /* iron_clank.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 754D6E821C43032C00C70AC1 /* iron_clank.mp3 */; };
 		754D6E891C43032C00C70AC1 /* ninja.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 754D6E831C43032C00C70AC1 /* ninja.mp3 */; };
+		754D6E951C4325F200C70AC1 /* LogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754D6E901C4325F200C70AC1 /* LogoViewController.m */; };
 		754ED0BD1AF4110F00697F9E /* StyleSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 754ED0BC1AF4110F00697F9E /* StyleSettings.plist */; };
 		75518FA31B91083E006A6ED8 /* NNKCatNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75518F9C1B91083E006A6ED8 /* NNKCatNode.m */; };
 		75518FA41B91083E006A6ED8 /* SKSpriteNode+TextureCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75518F9E1B91083E006A6ED8 /* SKSpriteNode+TextureCreation.m */; };
@@ -637,6 +638,8 @@
 		754D6E811C43032C00C70AC1 /* flower.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flower.mp3; sourceTree = "<group>"; };
 		754D6E821C43032C00C70AC1 /* iron_clank.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = iron_clank.mp3; sourceTree = "<group>"; };
 		754D6E831C43032C00C70AC1 /* ninja.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ninja.mp3; sourceTree = "<group>"; };
+		754D6E8F1C4325F200C70AC1 /* LogoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoViewController.h; sourceTree = "<group>"; };
+		754D6E901C4325F200C70AC1 /* LogoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoViewController.m; sourceTree = "<group>"; };
 		754ED0BC1AF4110F00697F9E /* StyleSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StyleSettings.plist; sourceTree = "<group>"; };
 		75518F9B1B91083E006A6ED8 /* NNKCatNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKCatNode.h; sourceTree = "<group>"; };
 		75518F9C1B91083E006A6ED8 /* NNKCatNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKCatNode.m; sourceTree = "<group>"; };
@@ -1235,6 +1238,15 @@
 			name = TopBar;
 			sourceTree = "<group>";
 		};
+		754D6E8C1C4325F200C70AC1 /* LogoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				754D6E8F1C4325F200C70AC1 /* LogoViewController.h */,
+				754D6E901C4325F200C70AC1 /* LogoViewController.m */,
+			);
+			path = LogoViewController;
+			sourceTree = "<group>";
+		};
 		759320F21AAC8D6E009E75E0 /* Island */ = {
 			isa = PBXGroup;
 			children = (
@@ -1615,6 +1627,7 @@
 				75AE57FB1BA963A500DDD552 /* tree_left.png */,
 				75AE57FC1BA963A500DDD552 /* tree_right.png */,
 				75AE58071BA963B200DDD552 /* menus */,
+				754D6E8C1C4325F200C70AC1 /* LogoViewController */,
 				75C12A691A754B6C0075FD8D /* ViewController.h */,
 				75C12A6A1A754B6C0075FD8D /* ViewController.m */,
 				75CC87E71AD0238D00F6C59E /* MainScreenViewModel.h */,
@@ -2699,6 +2712,7 @@
 				750380061B1A3B8900CB0B83 /* NNKJayNode.m in Sources */,
 				75635ADE1AABBEAA005BD4CB /* PopUpViewController.m in Sources */,
 				7503800C1B1A3B8900CB0B83 /* NNKLanternHouseNode.m in Sources */,
+				754D6E951C4325F200C70AC1 /* LogoViewController.m in Sources */,
 				75C12A681A754B6C0075FD8D /* AppDelegate.m in Sources */,
 				75C12A651A754B6C0075FD8D /* main.m in Sources */,
 				75EE39681B41D75900BF9A55 /* NNKSkeletNode.m in Sources */,

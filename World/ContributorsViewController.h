@@ -10,6 +10,4 @@
 
 @interface ContributorsViewController : BaseViewController
 
-+ (instancetype)instantiate;
-
 @end

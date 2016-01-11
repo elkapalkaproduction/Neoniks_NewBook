@@ -10,6 +10,4 @@
 
 @interface ShadowPlayViewController : BaseViewController
 
-+ (instancetype)instantiate;
-
 @end

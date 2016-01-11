@@ -18,6 +18,12 @@ const NSInteger storyboardScreenWidth = 600;
 
 @implementation BaseViewController
 
++ (instancetype)instantiate {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    return [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(self)];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.constants = [[NSMutableArray alloc] init];

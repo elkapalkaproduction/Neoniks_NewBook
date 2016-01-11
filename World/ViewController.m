@@ -47,6 +47,12 @@
 
 @implementation ViewController
 
++ (instancetype)instantiate {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    return [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(self)];
+}
+
+
 - (void)viewDidLoad {
     [self updateInterface];
     [self configureSideMenu];
@@ -335,7 +341,13 @@
 - (void)didPressBlueHouseInGameScene {
     typeof(self) welf = self;
     if (self.viewModel.listenedToGinger) {
-        [self presentGingerWithText:@"text_panel_ginger_4" completion:nil];
+        if ([[InventaryContentHandler sharedHandler] isOpenedAll]) {
+            [self presentGingerWithText:@"text_panel_ginger_5" completion:^{
+#warning indicator to book
+            }];
+        } else {
+            [self presentGingerWithText:@"text_panel_ginger_4" completion:nil];
+        }
     } else {
         self.viewModel.listenedToGinger = YES;
         [self presentGingerWithText:@"text_panel_ginger_1" completion:^{
