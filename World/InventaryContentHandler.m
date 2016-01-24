@@ -9,6 +9,8 @@
 #import "InventaryContentHandler.h"
 #import "Storage.h"
 
+NSString *const NSNotificationInventaryContentHandlerMarkItem = @"NSNotificationInventaryContentHandlerMarkItem";
+
 @interface InventaryContentHandler ()
 
 @property (strong, nonatomic) NSArray *items;
@@ -57,6 +59,7 @@
 - (void)markItemWithType:(InventaryBarIconType)type withFormat:(InventaryIconShowing)format {
     self.items = nil;
     [Storage saveInteger:format forKey:[self keyFromType:type]];
+    [[NSNotificationCenter defaultCenter] postNotificationName:NSNotificationInventaryContentHandlerMarkItem object:nil];
 }
 
 

@@ -49,6 +49,7 @@
 - (void)hideDandelion;
 - (void)hideSnail;
 - (void)hideExtinguisher;
+- (void)hideStar;
 
 - (void)showWrench;
 - (void)showBook;
@@ -56,6 +57,7 @@
 - (void)showDandelion;
 - (void)showSnail;
 - (void)showExtinguisher;
+- (void)showStar;
 
 - (void)closeDoor;
 - (void)changeLanguage;

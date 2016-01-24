@@ -58,6 +58,7 @@
     [self updateInterface];
     [self configureSideMenu];
     self.textBarBottomConstraint.constant = [self textBarHiddenPosition];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateStar) name:NSNotificationInventaryContentHandlerMarkItem object:nil];
 }
 
 
@@ -208,6 +209,7 @@
     } else {
         [self.sampleScene hideObjectOfType:GetableObjectTypeBottleOfMagic];
     }
+    [self updateStar];
 }
 
 
@@ -345,6 +347,7 @@
         if ([[InventaryContentHandler sharedHandler] isOpenedAll]) {
             self.viewModel.openBook = YES;
             [self updateBook];
+            [self.sampleScene hideStar];
             [self presentGingerWithText:@"text_panel_ginger_5" completion:^{
 #warning indicator to book
             }];
@@ -353,6 +356,7 @@
         }
     } else {
         self.viewModel.listenedToGinger = YES;
+        [self.sampleScene hideStar];
         [self presentGingerWithText:@"text_panel_ginger_1" completion:^{
             [welf presentGingerWithText:@"text_panel_ginger_2" completion:^{
                 [welf presentGingerWithText:@"text_panel_ginger_3" completion:nil];
@@ -372,7 +376,11 @@
 
 
 - (BOOL)canTapAnything {
-    return self.viewModel.listenedToGinger;
+    BOOL listenedToGinger = self.viewModel.listenedToGinger;
+    BOOL openBook = self.viewModel.openBook;
+    BOOL bookCloseAndNotAllObjectsLoaded = (![[InventaryContentHandler sharedHandler] isOpenedAll] && !self.viewModel.openBook);
+    
+    return (listenedToGinger && bookCloseAndNotAllObjectsLoaded) || openBook;
 }
 
 
@@ -806,6 +814,15 @@ didWantToOpenViewController:(UIViewController *)viewController {
         [self.bookIcon setImage:[UIImage imageNamed:@"top_bar_book"] forState:UIControlStateNormal];
     } else {
         [self.bookIcon setImage:[UIImage imageNamed:@"top_bar_empty_book"] forState:UIControlStateNormal];
+    }
+}
+
+
+- (void)updateStar {
+    if (self.canTapAnything) {
+        [self.sampleScene hideStar];
+    } else {
+        [self.sampleScene showStar];
     }
 }
 

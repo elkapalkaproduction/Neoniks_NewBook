@@ -17,6 +17,7 @@
 @property (strong, nonatomic) SKSpriteNode *language;
 @property (assign, nonatomic) CGPoint originalDoorPosition;
 @property (strong, nonatomic) SKAction *doorAction;
+@property (strong, nonatomic) SKNode *starNode;
 
 @end
 
@@ -35,10 +36,8 @@
     if (self) {
         _atlass = [SKTextureAtlas atlasNamed:BLUE_HOUSE_ANIM_ATLAS_NAME];
         SKNode *node = [self nodeWithRect:CGRectMake(218, 620, 180, 253) sprite:BLUE_HOUSE_ANIM_TEX_BLUE_HOUSE_YELLOW_WALL];
-//        node.zPosition = -2;
         [self addChild:node];
         _extinguisher = [self nodeWithRect:CGRectMake(1, 671, 198, 180) sprite:BLUE_HOUSE_ANIM_TEX_BLUE_HOUSE_EXTINGUISHER];
-//        _extinguisher.zPosition = -1;
         if (showExtinguisher) {
             [self addChild:_extinguisher];
         }
@@ -141,6 +140,29 @@
 - (void)showExtinguisher {
     [self hideExtinguisher];
     [self insertChild:self.extinguisher atIndex:0];
+}
+
+
+- (SKNode *)starNode {
+    if (!_starNode) {
+        _starNode = [self nodeWithRect:CGRectMake(249, 710, 153, 149) sprite:[SKTexture textureWithImageNamed:@"IslandStar"]];
+    }
+    
+    return _starNode;
+}
+
+
+- (void)showStar {
+    [self hideStar];
+    [self addChild:self.starNode];
+    SKAction *fadeIn = [SKAction fadeInWithDuration:1.0];
+    SKAction *fadeOut = [SKAction fadeOutWithDuration:1.0];
+    [self.starNode runAction:[SKAction repeatActionForever:[SKAction sequence:@[fadeOut, fadeIn]]]];
+}
+
+
+- (void)hideStar {
+    [self.starNode removeFromParent];
 }
 
 @end

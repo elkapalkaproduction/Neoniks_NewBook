@@ -22,6 +22,10 @@ typedef void (^BlueHouseCompletion)();
 @property (copy, nonatomic) BlueHouseCompletion completion;
 - (void)hideExtinguisher;
 - (void)showExtinguisher;
+
+- (void)showStar;
+- (void)hideStar;
+
 - (void)changeLanguage:(BlueHouseLanguage)language;
 - (void)closeDoor;
 

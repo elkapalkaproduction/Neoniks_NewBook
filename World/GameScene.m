@@ -277,6 +277,16 @@
 }
 
 
+- (void)hideStar {
+    [self.blueHouseNode hideStar];
+}
+
+
+- (void)showStar {
+    [self.blueHouseNode showStar];
+}
+
+
 - (void)showBook {
     [self.dragonNode showBook];
 }

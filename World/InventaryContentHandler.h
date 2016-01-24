@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "InventaryItemOption.h"
 
+NSString *const NSNotificationInventaryContentHandlerMarkItem;
+
 @interface InventaryContentHandler : NSObject
 
 + (instancetype)sharedHandler;
