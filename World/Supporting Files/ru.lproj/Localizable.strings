@@ -109,6 +109,7 @@
 "text_panel_medal" = "Тем, кто хорошо учится в школе магии,\nобеспечены медаль, почет и уважение.";
 "text_panel_magic_ball" = "Где найти шарики магии -\nслишком долго объяснять.\nСпроси у первого встречного.";
 "text_panel_extinguisher" = "Огнетушитель нужен, чтобы\nуберечь дом от пожара.\nПосмотри внимательно на домики.";
+"text_panel_empty_book" = "Сначала найди все сокровища!";
 
 
 //text panel characters
@@ -119,6 +120,7 @@
 "text_panel_teacher_initial" = "Пройди тест по\nприродоведению волшебного мира\nи получи золотую медаль.";
 "text_panel_teacher_final" = "Поздравляем!\nТы удостоен медали с бантиком!\nКруто, да?";
 "text_panel_island_initial" = "Найди все места,\nгде тебе предстоит побывать,\nи получи карту острова Торт!";
+"text_panel_island_final" = "Поздравляем! Возьми карту!";
 "text_panel_shadow_initial" = "Собери из кусочков\nтени сказочных героев и\nполучи волшебную палочку.";
 "text_panel_shadow_final" = "Поздравляем!\nТеперь у тебя есть волшебная\nпалочка для начальной школы.";
 "text_panel_cat_initial" = "Мотор барахлит – нужен гаечный ключ.";
@@ -198,6 +200,7 @@
 
 "find_me" = "find-me_rus";
 "start_logo" = "logo_rus";
+"player_wait" = "player_wait_ru";
 
 ///////////
 
@@ -212,6 +215,7 @@
 "text_panel_medal_sound" = "text_panel_medal_sound_ru";
 "text_panel_magic_ball_sound" = "text_panel_magic_ball_sound_ru";
 "text_panel_extinguisher_sound" = "text_panel_extinguisher_sound_ru";
+"text_panel_empty_book_sound" = "text_panel_empty_book_sound_ru";
 
 "text_panel_goblin_initial_sound" = "text_panel_goblin_initial_sound_ru";
 "text_panel_goblin_final_sound" = "text_panel_goblin_final_sound_ru";
@@ -226,6 +230,7 @@
 "text_panel_teacher_initial_sound" = "text_panel_teacher_initial_sound_ru";
 "text_panel_teacher_final_sound" = "text_panel_teacher_final_sound_ru";
 "text_panel_island_initial_sound" = "text_panel_island_initial_sound_ru";
+"text_panel_island_final_sound" = "text_panel_island_final_sound_ru";
 "text_panel_shadow_initial_sound" = "text_panel_shadow_initial_sound_ru";
 "text_panel_shadow_final_sound" = "text_panel_shadow_final_sound_ru";
 

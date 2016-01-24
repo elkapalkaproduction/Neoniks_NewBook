@@ -65,7 +65,8 @@
     SettingsBarIconViewController *contentIcon = [SettingsBarIconViewController instantiateWithFrame:view.bounds
                                                                                                 type:type
                                                                                               target:self
-                                                                                            selector:selector];
+                                                                                            selector:selector
+                                                  sideMenu:YES];
     [self addChildViewController:contentIcon withSuperview:view];
 }
 

@@ -125,11 +125,11 @@ NSString *const NSPFileNameCorrectPosition = @"shadow_correct_position.plist";
     [self prepareSkView];
     [self didPressCharacter:self.loadedCharacter];
     if ([self shouldShowWelcomeAlert]) {
+        [self.player stop];
         [self openTextBarWithIcon:[UIImage imageNamed:@"text_panel_ginger"]
                              text:@"text_panel_shadow_initial"
                          isObject:NO];
         [self performSelector:@selector(closeTextBarWithCompletionBlock:) withObject:nil afterDelay:5.f];
-        [self.player stop];
     } else {
     }
 }

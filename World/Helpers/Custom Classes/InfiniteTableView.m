@@ -95,7 +95,7 @@
         return [self.dataSource columnHeightInInfiniteTableView:self];
     }
     
-    return self.superview.frame.size.height;
+    return self.frame.size.height;
 }
 
 

@@ -266,10 +266,9 @@ NSString *const SOMNoBorder = @"school_not_selected_border";
 
 
 - (IBAction)getPrize:(id)sender {
-    [self hidePrize];
     [[InventaryContentHandler sharedHandler] markItemWithType:InventaryBarIconTypeMedal
                                                    withFormat:InventaryIconShowingFull];
-    [self showQuestion:self.questionNumber];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 

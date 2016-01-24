@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsBarIconViewController">
+            <connections>
+                <outlet property="icon" destination="CyB-5A-avz" id="9TW-oL-pZZ"/>
+                <outlet property="labelDetail" destination="xGS-Tu-kVG" id="8dV-c4-lqS"/>
+                <outlet property="labelMain" destination="Eoi-RL-qET" id="ICT-Vu-V8b"/>
+                <outlet property="titleImage" destination="v2G-Kw-s83" id="at5-zl-DIe"/>
+                <outlet property="view" destination="DwC-R7-6Tc" id="igG-jB-JUa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="DwC-R7-6Tc">
+            <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyB-5A-avz">
+                    <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+                    <gestureRecognizers/>
+                    <state key="normal" image="top_bar_about_icon">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="swipe:" destination="-1" eventType="touchDown" id="hhL-1T-Hv7"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_bar_about_text_en" translatesAutoresizingMaskIntoConstraints="NO" id="v2G-Kw-s83">
+                    <rect key="frame" x="-13.5" y="32" width="81" height="22"/>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGS-Tu-kVG">
+                    <rect key="frame" x="16" y="27" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eoi-RL-qET">
+                    <rect key="frame" x="6" y="17" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CyB-5A-avz" secondAttribute="trailing" id="BLV-ep-LUh"/>
+                <constraint firstAttribute="centerX" secondItem="xGS-Tu-kVG" secondAttribute="centerX" constant="-10" id="Op2-uV-Zqc"/>
+                <constraint firstAttribute="centerY" secondItem="Eoi-RL-qET" secondAttribute="centerY" id="UJ7-RJ-ob4"/>
+                <constraint firstAttribute="bottom" secondItem="v2G-Kw-s83" secondAttribute="bottom" id="bik-X2-H8J"/>
+                <constraint firstAttribute="centerY" secondItem="xGS-Tu-kVG" secondAttribute="centerY" constant="-10" id="gYQ-Wh-ZgU"/>
+                <constraint firstItem="CyB-5A-avz" firstAttribute="leading" secondItem="DwC-R7-6Tc" secondAttribute="leading" id="gZI-xf-GqV"/>
+                <constraint firstItem="CyB-5A-avz" firstAttribute="centerY" secondItem="DwC-R7-6Tc" secondAttribute="centerY" id="vBV-c9-nj8"/>
+                <constraint firstAttribute="centerX" secondItem="v2G-Kw-s83" secondAttribute="centerX" id="war-Wl-3ZL"/>
+                <constraint firstAttribute="centerX" secondItem="Eoi-RL-qET" secondAttribute="centerX" id="y34-0t-q56"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="top_bar_about_icon" width="54" height="54"/>
+        <image name="top_bar_about_text_en" width="81" height="22"/>
+    </resources>
+</document>

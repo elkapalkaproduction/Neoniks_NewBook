@@ -31,6 +31,7 @@
 @property (weak, nonatomic) IBOutlet UIView *topBarView;
 @property (strong, nonatomic) MainScreenViewModel *viewModel;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *topBarNavigationsButtons;
+@property (weak, nonatomic) IBOutlet UIButton *bookIcon;
 
 @property (weak, nonatomic) IBOutlet UIView *textBarSuperView;
 @property (strong, nonatomic) TextBarViewController *textBar;
@@ -342,6 +343,8 @@
     typeof(self) welf = self;
     if (self.viewModel.listenedToGinger) {
         if ([[InventaryContentHandler sharedHandler] isOpenedAll]) {
+            self.viewModel.openBook = YES;
+            [self updateBook];
             [self presentGingerWithText:@"text_panel_ginger_5" completion:^{
 #warning indicator to book
             }];
@@ -384,6 +387,7 @@
 - (void)updateInterface {
     [self hideObjectsOnInit];
     [self didChangeLanguageInMainScreenViewModel:nil];
+    [self updateBook];
 }
 
 
@@ -591,9 +595,16 @@ didWantToOpenViewController:(UIViewController *)viewController {
 
 
 - (IBAction)openBook {
-    NewBookViewController *newBook = [NewBookViewController instantiate];
-    [[SoundPlayer sharedPlayer] playClick];
-    [self presentViewController:newBook animated:YES completion:nil];
+    if (self.viewModel.openBook) {
+        NewBookViewController *newBook = [NewBookViewController instantiate];
+        [[SoundPlayer sharedPlayer] playClick];
+        [self presentViewController:newBook animated:YES completion:nil];
+    } else {
+        [self didRequireToOpenTextBarWithIcon:[UIImage imageNamed:@"text_panel_ginger"]
+                                         text:@"text_panel_empty_book"
+                                     isObject:NO
+                                   completion:nil];
+    }
 }
 
 
@@ -786,6 +797,16 @@ didWantToOpenViewController:(UIViewController *)viewController {
 
 - (void)updateVolume {
     [self.textBar updateVolume];
+    [self.infiniteTableView reloadData];
+}
+
+
+- (void)updateBook {
+    if (self.viewModel.openBook) {
+        [self.bookIcon setImage:[UIImage imageNamed:@"top_bar_book"] forState:UIControlStateNormal];
+    } else {
+        [self.bookIcon setImage:[UIImage imageNamed:@"top_bar_empty_book"] forState:UIControlStateNormal];
+    }
 }
 
 @end

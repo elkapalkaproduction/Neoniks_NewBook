@@ -7,6 +7,7 @@
 //
 
 #import "NNWVideoViewController.h"
+#import <AVKit/AVKit.h>
 
 NSString *const SVPVideoTitleImageName = @"video_title";
 NSString *const SVPVideoPlayImageName = @"video_play";
@@ -21,6 +22,7 @@ NSString *const SVPVideoPath = @"start_video_path";
 @property (weak, nonatomic) IBOutlet UIButton *mediaControlButton;
 @property (strong, nonatomic) MPMoviePlayerController *videoPlayer;
 @property (weak, nonatomic) IBOutlet UIImageView *titleImage;
+@property (weak, nonatomic) IBOutlet UIImageView *waitLabel;
 
 @end
 
@@ -31,6 +33,7 @@ NSString *const SVPVideoPath = @"start_video_path";
     self.titleImage.image = [UIImage imageLocalizableNamed:SVPVideoTitleImageName];
     [self.playerSuperview addSubview:self.videoPlayer.view];
     [self.videoPlayer play];
+    self.waitLabel.image = [UIImage imageLocalizableNamed:@"player_wait"];
 }
 
 
@@ -39,6 +42,10 @@ NSString *const SVPVideoPath = @"start_video_path";
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(playbackFinishedNotification:)
                                                  name:MPMoviePlayerPlaybackDidFinishNotification
+                                               object:self.videoPlayer];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(loadingStateDidChange:)
+                                                 name:MPMoviePlayerLoadStateDidChangeNotification
                                                object:self.videoPlayer];
 }
 
@@ -85,6 +92,13 @@ NSString *const SVPVideoPath = @"start_video_path";
     } else {
         [self.videoPlayer play];
         [self changeButtonImageToPlayState];
+    }
+}
+
+
+- (void)loadingStateDidChange:(NSNotification *)notification {
+    if(self.videoPlayer.playbackState == MPMoviePlaybackStatePlaying) {
+        self.waitLabel.hidden = YES;
     }
 }
 

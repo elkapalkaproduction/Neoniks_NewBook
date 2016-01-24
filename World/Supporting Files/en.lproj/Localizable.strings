@@ -110,6 +110,7 @@
 "text_panel_medal" = "Pass the Wizard Test at the\nSchool of Magic\nand receive a gold medal.";
 "text_panel_magic_ball" = "It would take too long to\nexplain where you can get the\nballs of magic. Just ask around.";
 "text_panel_extinguisher" = "A fire-extinguisher can put out a fire\nin a building. Check out the little houses.";
+"text_panel_empty_book" = "First, you have to find all the magic ingredients.";
 
 //text panel characters
 "text_panel_goblin_initial" = "Do you have any worms, slugs,\nor snails? No? Uh oh.";
@@ -119,6 +120,7 @@
 "text_panel_teacher_initial" = "Pass a test in Magic Studies\nand get a gold graduation medal.";
 "text_panel_teacher_final" = "Congratulations! Now you have\na medal with a red bow.\nPretty cool, huh?";
 "text_panel_island_initial" = "Find all the places\nyou are going to visit and\nget a reward - a map of Cake Island.";
+"text_panel_island_final" = "Congratulations! Here’s the map!";
 "text_panel_shadow_initial" = "Assemble the shadows of\n8 fairy tale characters and\nget the magic wand.";
 "text_panel_shadow_final" = "Congratulations!\nYou received a magic wand for\nelementary school children.";
 "text_panel_cat_initial" = "My engine is sputtering. I need a wrench.";
@@ -195,6 +197,7 @@
 "take_me_white" = "Take-me-white";
 "find_me" = "find-me_eng";
 "start_logo" = "logo_eng";
+"player_wait" = "player_wait_en";
 
 ///////////
 
@@ -210,6 +213,7 @@
 "text_panel_medal_sound" = "text_panel_medal_sound_en";
 "text_panel_magic_ball_sound" = "text_panel_magic_ball_sound_en";
 "text_panel_extinguisher_sound" = "text_panel_extinguisher_sound_en";
+"text_panel_empty_book_sound" = "text_panel_empty_book_sound_en";
 
 "text_panel_goblin_initial_sound" = "text_panel_goblin_initial_sound_en";
 "text_panel_goblin_final_sound" = "text_panel_goblin_final_sound_en";
@@ -224,6 +228,7 @@
 "text_panel_teacher_initial_sound" = "text_panel_teacher_initial_sound_en";
 "text_panel_teacher_final_sound" = "text_panel_teacher_final_sound_en";
 "text_panel_island_initial_sound" = "text_panel_island_initial_sound_en";
+"text_panel_island_final_sound" = "text_panel_island_final_sound_en";
 "text_panel_shadow_initial_sound" = "text_panel_shadow_initial_sound_en";
 "text_panel_shadow_final_sound" = "text_panel_shadow_final_sound_en";
 

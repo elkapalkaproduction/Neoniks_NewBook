@@ -42,5 +42,6 @@ typedef NS_ENUM(NSInteger, MainScreenTopBarViewType) {
 
 @property (assign, nonatomic) MainScreenTopBarViewType type;
 @property BOOL listenedToGinger;
+@property BOOL openBook;
 
 @end

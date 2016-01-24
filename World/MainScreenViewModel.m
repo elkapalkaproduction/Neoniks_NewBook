@@ -20,6 +20,7 @@
 #import "Storage.h"
 
 NSString *const ListenedToGinger = @"ListenedToGinger";
+NSString *const OpenBook = @"OpenBook";
 NSString *const AppID = @"899196882";
 
 @interface MainScreenViewModel () <SettingsBarIconDelegate>
@@ -55,7 +56,7 @@ NSString *const AppID = @"899196882";
         case MainScreenTopBarViewTypeUndefinied:
             return nil;
         case MainScreenTopBarViewTypeSettings:
-            return [SettingsBarIconViewController instantiateWithFrame:rect type:index + 1 delegate:self];
+            return [SettingsBarIconViewController instantiateWithFrame:rect type:index + 1 delegate:self sideMenu:NO];
         case MainScreenTopBarViewTypeInventary:
             return [self inventaryControllerForIndex:index rect:rect];
         default:
@@ -76,7 +77,8 @@ NSString *const AppID = @"899196882";
     SettingsBarIconViewController *controller = [SettingsBarIconViewController instantiateWithFrame:rect
                                                                                                type:option.type
                                                                                              format:option.format
-                                                                                           delegate:self];
+                                                                                           delegate:self
+                                                 sideMenu:YES];
     if (InventaryBarIconTypeMagicBall == option.type) {
         NSInteger numberOfBallOfMagic = [InventaryContentHandler sharedHandler].numberOfBallOfMagic;
         NSString *mainLabel;
@@ -263,6 +265,16 @@ didSwipeIconWithType:(SettingsBarIconType)type
 
 - (void)setListenedToGinger:(BOOL)listenedToGinger {
     [Storage saveInteger:listenedToGinger forKey:ListenedToGinger];
+}
+
+
+- (BOOL)openBook {
+    return [Storage loadIntegerForKey:OpenBook];
+}
+
+
+- (void)setOpenBook:(BOOL)openBook {
+    [Storage saveInteger:openBook forKey:OpenBook];
 }
 
 @end

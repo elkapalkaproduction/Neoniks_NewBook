@@ -73,17 +73,20 @@ typedef NS_ENUM(NSInteger, InventaryIconShowing) {
 
 + (instancetype)instantiateWithFrame:(CGRect)frame
                                 type:(SettingsBarIconType)type
-                            delegate:(id<SettingsBarIconDelegate>)delegate;
+                            delegate:(id<SettingsBarIconDelegate>)delegate
+                            sideMenu:(BOOL)sideMenu;
 
 + (instancetype)instantiateWithFrame:(CGRect)frame
                                 type:(SettingsBarIconType)type
                               target:(id)target
-                            selector:(SEL)selector;
+                            selector:(SEL)selector
+                            sideMenu:(BOOL)sideMenu;
 
 + (instancetype)instantiateWithFrame:(CGRect)frame
                                 type:(InventaryBarIconType)type
                               format:(InventaryIconShowing)format
-                            delegate:(id<SettingsBarIconDelegate>)delegate;
+                            delegate:(id<SettingsBarIconDelegate>)delegate
+                            sideMenu:(BOOL)sideMenu;
 
 - (void)displayTextOnMainLabel:(NSString *)mainLabel detailLabel:(NSString *)detailLabel;
 

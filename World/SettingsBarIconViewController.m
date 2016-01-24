@@ -26,8 +26,10 @@
 
 @implementation SettingsBarIconViewController
 
-+ (SettingsBarIconViewController *)instantiateWithFrame:(CGRect)frame type:(SettingsBarIconType)type {
-    SettingsBarIconViewController *viewController = [[SettingsBarIconViewController alloc] initWithNibName:nil bundle:nil];
++ (SettingsBarIconViewController *)instantiateWithFrame:(CGRect)frame type:(SettingsBarIconType)type sideMenu:(BOOL)sideMenu {
+    NSString *nibName = NSStringFromClass(self);
+    if (!sideMenu) { nibName = [nibName stringByAppendingString:@"2"]; }
+    SettingsBarIconViewController *viewController = [[SettingsBarIconViewController alloc] initWithNibName:nibName bundle:nil];
     viewController.frame = frame;
     viewController.type = type;
     
@@ -37,8 +39,9 @@
 
 + (instancetype)instantiateWithFrame:(CGRect)frame
                                 type:(SettingsBarIconType)type
-                            delegate:(id<SettingsBarIconDelegate>)delegate {
-    SettingsBarIconViewController *viewController = [self instantiateWithFrame:frame type:type];
+                            delegate:(id<SettingsBarIconDelegate>)delegate
+                            sideMenu:(BOOL)sideMenu {
+    SettingsBarIconViewController *viewController = [self instantiateWithFrame:frame type:type sideMenu:sideMenu];
     viewController.delegate = delegate;
     
     return viewController;
@@ -48,8 +51,9 @@
 + (instancetype)instantiateWithFrame:(CGRect)frame
                                 type:(SettingsBarIconType)type
                               target:(id)target
-                            selector:(SEL)selector {
-    SettingsBarIconViewController *viewController = [self instantiateWithFrame:frame type:type];
+                            selector:(SEL)selector
+                            sideMenu:(BOOL)sideMenu {
+    SettingsBarIconViewController *viewController = [self instantiateWithFrame:frame type:type sideMenu:sideMenu];
     viewController.target = target;
     viewController.selector = selector;
     
@@ -60,9 +64,10 @@
 + (instancetype)instantiateWithFrame:(CGRect)frame
                                 type:(InventaryBarIconType)type
                               format:(InventaryIconShowing)format
-                            delegate:(id<SettingsBarIconDelegate>)delegate {
+                            delegate:(id<SettingsBarIconDelegate>)delegate
+                            sideMenu:(BOOL)sideMenu {
     SettingsBarIconType settingsType = type + SettingsBarIconTypeBookFontSize;
-    SettingsBarIconViewController *settings = [self instantiateWithFrame:frame type:settingsType delegate:delegate];
+    SettingsBarIconViewController *settings = [self instantiateWithFrame:frame type:settingsType delegate:delegate sideMenu:sideMenu];
     settings.format = format;
     
     return settings;
@@ -77,7 +82,7 @@
     NSString *prefix = @"inventary_";
     NSString *prefixWithFormat = [self addFormatToPrefix:prefix];
     NSString *baseText = [self addIconNameToPrefix:prefixWithFormat];
-    NSString *iconName = [baseText stringByAppendingString:@"_icon"];
+    NSString *iconName = [self iconNameFromBaseText:baseText];
     NSString *textImageName = [baseText stringByAppendingString:@"_text"];
     [self.icon setImage:[UIImage imageLocalizableNamed:iconName] forState:UIControlStateNormal];
     [self.titleImage setImage:[UIImage imageLocalizableNamed:textImageName]];
@@ -115,6 +120,14 @@
         default:
             return nil;
     }
+}
+
+
+- (NSString *)iconNameFromBaseText:(NSString *)baseText {
+    if (!SoundStatus.isEnabled && self.type == SettingsBarIconTypeSound) {
+        baseText = [baseText stringByAppendingString:@"_disable"];
+    }
+    return [baseText stringByAppendingString:@"_icon"];
 }
 
 

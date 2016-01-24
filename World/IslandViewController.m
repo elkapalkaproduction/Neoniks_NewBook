@@ -197,6 +197,10 @@
         imageView.hidden = YES;
     }
     self.prizeView.hidden = NO;
+    [self openTextBarWithIcon:[UIImage imageNamed:@"text_panel_ginger"]
+                         text:@"text_panel_island_final"
+                     isObject:NO];
+    [self performSelector:@selector(closeTextBarWithCompletionBlock:) withObject:nil afterDelay:5.f];
 }
 
 

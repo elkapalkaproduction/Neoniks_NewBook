@@ -118,7 +118,6 @@
 		757DBBD11ADB199500517632 /* UIViewController+Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 757DBBD01ADB199500517632 /* UIViewController+Child.m */; };
 		757E93DB1A7E2DEE000B2537 /* MagicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757E93DA1A7E2DEE000B2537 /* MagicTableViewController.m */; };
 		7597094C1AC8901000FFB11E /* SettingsBarIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7597094B1AC8901000FFB11E /* SettingsBarIconViewController.m */; };
-		7597094E1AC8947900FFB11E /* SettingsBarIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7597094D1AC8947900FFB11E /* SettingsBarIconViewController.xib */; };
 		75A125051AD06F5700BDFB7F /* ContributorsViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75A125041AD06F5700BDFB7F /* ContributorsViewController~ipad.xib */; };
 		75A125101AD0717800BDFB7F /* TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A125071AD0717700BDFB7F /* TransitionAnimation.m */; };
 		75A125111AD0717800BDFB7F /* TransitionAnimationFromUpToDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A125091AD0717700BDFB7F /* TransitionAnimationFromUpToDown.m */; };
@@ -129,6 +128,8 @@
 		75A1251C1AD078E300BDFB7F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A1251B1AD078E300BDFB7F /* AboutViewController.m */; };
 		75A1251F1AD08DC400BDFB7F /* NSURL+Helps.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A1251E1AD08DC400BDFB7F /* NSURL+Helps.m */; };
 		75A125231AD08FE500BDFB7F /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A125221AD08FE500BDFB7F /* AlertViewController.m */; };
+		75A4500B1C54CD0C00682631 /* SettingsBarIconViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75A4500A1C54CD0C00682631 /* SettingsBarIconViewController2.xib */; };
+		75A4500D1C54CD1B00682631 /* SettingsBarIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75A4500C1C54CD1B00682631 /* SettingsBarIconViewController.xib */; };
 		75AD2E8F1ADAD193002EE482 /* book_eng.epub in Resources */ = {isa = PBXBuildFile; fileRef = 75AD2E7C1ADAD193002EE482 /* book_eng.epub */; };
 		75AD2E901ADAD193002EE482 /* book_rus.epub in Resources */ = {isa = PBXBuildFile; fileRef = 75AD2E7D1ADAD193002EE482 /* book_rus.epub */; };
 		75AD2E911ADAD193002EE482 /* BookOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AD2E7F1ADAD193002EE482 /* BookOptionsViewController.m */; };
@@ -486,6 +487,12 @@
 		75EDA1921A840F31002546E0 /* NNWVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDA18F1A840F31002546E0 /* NNWVideoViewController.m */; };
 		75EE39681B41D75900BF9A55 /* NNKSkeletNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EE39671B41D75900BF9A55 /* NNKSkeletNode.m */; };
 		75F1DB201A86D758005ACBA7 /* UIDevice+ScreenSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F1DB1F1A86D758005ACBA7 /* UIDevice+ScreenSize.m */; };
+		75FE58BB1C54E19300274C53 /* text_panel_empty_book_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75FE58B91C54E19300274C53 /* text_panel_empty_book_sound_en.mp3 */; };
+		75FE58BC1C54E19300274C53 /* text_panel_empty_book_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75FE58BA1C54E19300274C53 /* text_panel_empty_book_sound_ru.mp3 */; };
+		75FE58BF1C54E32200274C53 /* text_panel_island_final_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75FE58BD1C54E32200274C53 /* text_panel_island_final_sound_en.mp3 */; };
+		75FE58C01C54E32200274C53 /* text_panel_island_final_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75FE58BE1C54E32200274C53 /* text_panel_island_final_sound_ru.mp3 */; };
+		75FE58C31C54E33400274C53 /* text_panel_extinguisher_sound_en.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75FE58C11C54E33400274C53 /* text_panel_extinguisher_sound_en.mp3 */; };
+		75FE58C41C54E33400274C53 /* text_panel_extinguisher_sound_ru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75FE58C21C54E33400274C53 /* text_panel_extinguisher_sound_ru.mp3 */; };
 		75FF2F111B22311D008EB9AA /* NNKJustacreepNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FF2F101B22311D008EB9AA /* NNKJustacreepNode.m */; };
 		75FF2F141B22312B008EB9AA /* justacreep_anim.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 75FF2F121B22312B008EB9AA /* justacreep_anim.atlasc */; };
 		75FF2FA51B224A0C008EB9AA /* MystieParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 75FF2FA31B224A0C008EB9AA /* MystieParticles.sks */; };
@@ -666,7 +673,6 @@
 		757E93DA1A7E2DEE000B2537 /* MagicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicTableViewController.m; sourceTree = "<group>"; };
 		7597094A1AC8901000FFB11E /* SettingsBarIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsBarIconViewController.h; sourceTree = "<group>"; };
 		7597094B1AC8901000FFB11E /* SettingsBarIconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsBarIconViewController.m; sourceTree = "<group>"; };
-		7597094D1AC8947900FFB11E /* SettingsBarIconViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsBarIconViewController.xib; sourceTree = "<group>"; };
 		75A125041AD06F5700BDFB7F /* ContributorsViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ContributorsViewController~ipad.xib"; sourceTree = "<group>"; };
 		75A125061AD0717700BDFB7F /* TransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimation.h; sourceTree = "<group>"; };
 		75A125071AD0717700BDFB7F /* TransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimation.m; sourceTree = "<group>"; };
@@ -686,6 +692,8 @@
 		75A1251E1AD08DC400BDFB7F /* NSURL+Helps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Helps.m"; sourceTree = "<group>"; };
 		75A125211AD08FE500BDFB7F /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
 		75A125221AD08FE500BDFB7F /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
+		75A4500A1C54CD0C00682631 /* SettingsBarIconViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsBarIconViewController2.xib; sourceTree = "<group>"; };
+		75A4500C1C54CD1B00682631 /* SettingsBarIconViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsBarIconViewController.xib; sourceTree = "<group>"; };
 		75AD2E7C1ADAD193002EE482 /* book_eng.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = book_eng.epub; sourceTree = "<group>"; };
 		75AD2E7D1ADAD193002EE482 /* book_rus.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = book_rus.epub; sourceTree = "<group>"; };
 		75AD2E7E1ADAD193002EE482 /* BookOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookOptionsViewController.h; sourceTree = "<group>"; };
@@ -1096,6 +1104,12 @@
 		75EE39671B41D75900BF9A55 /* NNKSkeletNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKSkeletNode.m; sourceTree = "<group>"; };
 		75F1DB1E1A86D758005ACBA7 /* UIDevice+ScreenSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ScreenSize.h"; sourceTree = "<group>"; };
 		75F1DB1F1A86D758005ACBA7 /* UIDevice+ScreenSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ScreenSize.m"; sourceTree = "<group>"; };
+		75FE58B91C54E19300274C53 /* text_panel_empty_book_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_empty_book_sound_en.mp3; sourceTree = "<group>"; };
+		75FE58BA1C54E19300274C53 /* text_panel_empty_book_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_empty_book_sound_ru.mp3; sourceTree = "<group>"; };
+		75FE58BD1C54E32200274C53 /* text_panel_island_final_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_island_final_sound_en.mp3; sourceTree = "<group>"; };
+		75FE58BE1C54E32200274C53 /* text_panel_island_final_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_island_final_sound_ru.mp3; sourceTree = "<group>"; };
+		75FE58C11C54E33400274C53 /* text_panel_extinguisher_sound_en.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_extinguisher_sound_en.mp3; sourceTree = "<group>"; };
+		75FE58C21C54E33400274C53 /* text_panel_extinguisher_sound_ru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = text_panel_extinguisher_sound_ru.mp3; sourceTree = "<group>"; };
 		75FF2F0F1B22311D008EB9AA /* NNKJustacreepNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKJustacreepNode.h; sourceTree = "<group>"; };
 		75FF2F101B22311D008EB9AA /* NNKJustacreepNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKJustacreepNode.m; sourceTree = "<group>"; };
 		75FF2F121B22312B008EB9AA /* justacreep_anim.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = justacreep_anim.atlasc; sourceTree = "<group>"; };
@@ -1233,7 +1247,8 @@
 			children = (
 				7597094A1AC8901000FFB11E /* SettingsBarIconViewController.h */,
 				7597094B1AC8901000FFB11E /* SettingsBarIconViewController.m */,
-				7597094D1AC8947900FFB11E /* SettingsBarIconViewController.xib */,
+				75A4500C1C54CD1B00682631 /* SettingsBarIconViewController.xib */,
+				75A4500A1C54CD0C00682631 /* SettingsBarIconViewController2.xib */,
 			);
 			name = TopBar;
 			sourceTree = "<group>";
@@ -1519,8 +1534,14 @@
 				75518FA81B9110A8006A6ED8 /* text_panel_cat_final_sound_ru.mp3 */,
 				75518FA91B9110A8006A6ED8 /* text_panel_cat_initial_sound_en.mp3 */,
 				75518FAA1B9110A8006A6ED8 /* text_panel_cat_initial_sound_ru.mp3 */,
+				75FE58C11C54E33400274C53 /* text_panel_extinguisher_sound_en.mp3 */,
+				75FE58C21C54E33400274C53 /* text_panel_extinguisher_sound_ru.mp3 */,
+				75FE58B91C54E19300274C53 /* text_panel_empty_book_sound_en.mp3 */,
+				75FE58BA1C54E19300274C53 /* text_panel_empty_book_sound_ru.mp3 */,
 				75B9809E1B5916A400893462 /* text_panel_island_initial_sound_en.mp3 */,
 				75B9809F1B5916A400893462 /* text_panel_island_initial_sound_ru.mp3 */,
+				75FE58BD1C54E32200274C53 /* text_panel_island_final_sound_en.mp3 */,
+				75FE58BE1C54E32200274C53 /* text_panel_island_final_sound_ru.mp3 */,
 				75B980A01B5916A400893462 /* text_panel_island_sound_en.mp3 */,
 				75B980A11B5916A400893462 /* text_panel_island_sound_ru.mp3 */,
 				75B980A21B5916A400893462 /* text_panel_magic_ball_sound_en.mp3 */,
@@ -2329,6 +2350,7 @@
 				75DC67DE1A816AA100D6A553 /* shadow_character5_part1.png in Resources */,
 				75B980BE1B5916A400893462 /* text_panel_magic_ball_sound_en.mp3 in Resources */,
 				75DC67EE1A816AA100D6A553 /* shadow_character6_part11.png in Resources */,
+				75FE58C31C54E33400274C53 /* text_panel_extinguisher_sound_en.mp3 in Resources */,
 				75B980631B58F4A400893462 /* furcoat.mp3 in Resources */,
 				75AE583B1BA963B200DDD552 /* menu_512x512_11.png in Resources */,
 				75B19A2A1C411CE2002803CC /* text_panel_ginger_1_sound_en.mp3 in Resources */,
@@ -2339,7 +2361,6 @@
 				75B980551B58F2E300893462 /* harold.mp3 in Resources */,
 				75FF2FA51B224A0C008EB9AA /* MystieParticles.sks in Resources */,
 				75D531011B6E82D000E57D25 /* island_sound_6_en.mp3 in Resources */,
-				7597094E1AC8947900FFB11E /* SettingsBarIconViewController.xib in Resources */,
 				75041C3E1B6EAD7F00B28F3F /* shadow_sound_2_en.mp3 in Resources */,
 				75AD2E9F1ADAD424002EE482 /* Book.storyboard in Resources */,
 				75D531021B6E82D000E57D25 /* island_sound_6_ru.mp3 in Resources */,
@@ -2385,8 +2406,10 @@
 				75AE58561BA963B300DDD552 /* menu_512x512_36.png in Resources */,
 				75DC67FA1A816AA100D6A553 /* shadow_character6_part9.png in Resources */,
 				75DC67BC1A816AA100D6A553 /* shadow_character3_part14.png in Resources */,
+				75FE58C01C54E32200274C53 /* text_panel_island_final_sound_ru.mp3 in Resources */,
 				753D72391BA4CBF8006DC74A /* text_panel_sheep_initial_sound_ru.mp3 in Resources */,
 				75B980801B590FB800893462 /* text_panel_teacher_final_sound_ru.mp3 in Resources */,
+				75A4500D1C54CD1B00682631 /* SettingsBarIconViewController.xib in Resources */,
 				75DC68031A816AA100D6A553 /* shadow_character7_part17.png in Resources */,
 				75AE58651BA963B300DDD552 /* menu_512x512_7.png in Resources */,
 				75DC67A31A816AA100D6A553 /* shadow_character1_part3.png in Resources */,
@@ -2426,6 +2449,7 @@
 				75DC67E41A816AA100D6A553 /* shadow_character5_part2.png in Resources */,
 				75AE58431BA963B300DDD552 /* menu_512x512_19.png in Resources */,
 				75DC66E61A81520A00D6A553 /* full_portret_shadow_4.png in Resources */,
+				75FE58C41C54E33400274C53 /* text_panel_extinguisher_sound_ru.mp3 in Resources */,
 				75DC67BF1A816AA100D6A553 /* shadow_character3_part3.png in Resources */,
 				75DC68141A816AA100D6A553 /* shadow_character8_part14.png in Resources */,
 				75AE58481BA963B300DDD552 /* menu_512x512_23.png in Resources */,
@@ -2460,6 +2484,7 @@
 				75AE58631BA963B300DDD552 /* menu_512x512_5.png in Resources */,
 				75DC679F1A816AA100D6A553 /* shadow_character1_part10.png in Resources */,
 				75DFE1091A800CE500CE9E69 /* Shadow_portret_border_7.png in Resources */,
+				75A4500B1C54CD0C00682631 /* SettingsBarIconViewController2.xib in Resources */,
 				75AE58671BA963B300DDD552 /* menu_512x512_9.png in Resources */,
 				75041C211B6E9ED300B28F3F /* q5_sound_en.mp3 in Resources */,
 				75DC67F41A816AA100D6A553 /* shadow_character6_part3.png in Resources */,
@@ -2508,6 +2533,7 @@
 				75DFE1021A800CE500CE9E69 /* Shadow_portret_8.png in Resources */,
 				75B9805F1B58F48D00893462 /* justacreep.mp3 in Resources */,
 				75DC67D91A816AA100D6A553 /* shadow_character4_part5.png in Resources */,
+				75FE58BF1C54E32200274C53 /* text_panel_island_final_sound_en.mp3 in Resources */,
 				75B980C31B5916A400893462 /* text_panel_other_sound_ru.mp3 in Resources */,
 				754D6E851C43032C00C70AC1 /* dragon_puff.mp3 in Resources */,
 				753D723F1BA4CE25006DC74A /* text_panel_ninja_final_sound_ru.mp3 in Resources */,
@@ -2543,6 +2569,7 @@
 				75DC68121A816AA100D6A553 /* shadow_character8_part12.png in Resources */,
 				75DC67A61A816AA100D6A553 /* shadow_character1_part6.png in Resources */,
 				75041C3C1B6EAD7F00B28F3F /* shadow_sound_1_en.mp3 in Resources */,
+				75FE58BC1C54E19300274C53 /* text_panel_empty_book_sound_ru.mp3 in Resources */,
 				75DC67E51A816AA100D6A553 /* shadow_character5_part3.png in Resources */,
 				75DC67DA1A816AA100D6A553 /* shadow_character4_part6.png in Resources */,
 				75DC66E71A81520A00D6A553 /* full_portret_shadow_5.png in Resources */,
@@ -2558,6 +2585,7 @@
 				75B19A321C411CE2002803CC /* text_panel_ginger_5_sound_en.mp3 in Resources */,
 				75041C251B6E9ED300B28F3F /* q7_sound_en.mp3 in Resources */,
 				75AD2E901ADAD193002EE482 /* book_rus.epub in Resources */,
+				75FE58BB1C54E19300274C53 /* text_panel_empty_book_sound_en.mp3 in Resources */,
 				75DC67B11A816AA100D6A553 /* shadow_character2_part4.png in Resources */,
 				75DC67EC1A816AA100D6A553 /* shadow_character6_part1.png in Resources */,
 				75DC67B91A816AA100D6A553 /* shadow_character3_part11.png in Resources */,
