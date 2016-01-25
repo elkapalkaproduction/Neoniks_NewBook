@@ -20,6 +20,7 @@
 #import "NNKBatNode.h"
 #import "NNKLampNode.h"
 #import "NSArray+Intersection.h"
+#import "NNKFlowerNode.h"
 
 @interface GameScene () <DragableSpriteDelegate, UIGestureRecognizerDelegate>
 
@@ -44,6 +45,7 @@
 @property (strong, nonatomic) UITapGestureRecognizer *touch;
 @property (nonatomic, strong) DragableSpriteNode *selectedNode;
 @property (nonatomic, strong) NSMutableArray *getableObjects;
+@property (nonatomic, strong) NSMutableArray<NNKFlowerNode *> *flowersNode;
 
 @end
 
@@ -81,6 +83,9 @@
         [self.rootNode addChild:self.snail];
         [self.rootNode addChild:self.blueHouseNode];
         [self.rootNode addChild:self.catNode];
+        for (NNKFlowerNode *flower in self.flowersNode) {
+            [self.rootNode addChild:flower];
+        }
         [self.catNode runBackgrounAction];
         [self.batNode runAction];
     }
@@ -114,9 +119,13 @@
         return;
     }
     NSArray *resultArray = [nodes intersectWithArray:self.getableObjects];
+    NSArray *flowerIntersect = [nodes intersectWithArray:self.flowersNode];
     if ([resultArray count] > 0) {
         NNKGetableObject *obj = resultArray.firstObject;
         [self.gameSceneDelegate didPressGetableObjectWithType:obj.type];
+    } else if ([flowerIntersect count] > 0) {
+        NNKFlowerNode *flower = flowerIntersect.firstObject;
+        [flower runAction];
     } else if ([nodes containsObject:self.islandNode]) {
         [self.gameSceneDelegate didPressIslandInGameScene];
     } else if ([nodes containsObject:self.shadowPlay]) {
@@ -175,7 +184,7 @@
     self.rightTree = [self nodeWithImageName:@"tree_right" position:CGPointMake(2295, 335)];
     self.dandelion = [self nodeWithImageName:@"dandelion" position:CGPointMake(415, 2546)];
     self.snail = [self nodeWithImageName:@"snail" position:CGPointMake(1115, 2237)];
-    self.sheepNode = [self nodeWithClass:[NNKSheepNode class] rect:CGRectMake(718, 1116, 300, 300)];
+    self.sheepNode = [self nodeWithClass:[NNKSheepNode class] rect:CGRectMake(854, 1350, 300, 300)];
     self.batNode = [self nodeWithClass:[NNKBatNode class] rect:CGRectMake(1650, 2200, 300, 300)];
     self.lampNode = [self nodeWithClass:[NNKLampNode class] rect:CGRectMake(2100, 2250, 140, 210)];
     self.ninjaNode = [self nodeWithClass:[NNKNinjaNode class] rect:CGRectMake(307, 580, 203, 678)];
@@ -184,6 +193,23 @@
     self.goblinNode = [self nodeWithClass:[NNKGoblinNode class] rect:CGRectMake(2160, 3150, 212, 412)];
     self.blueHouseNode = [self nodeWithClass:[NNKBlueHouseNode class] rect:CGRectMake(912, 666, 676, 1105)];
     self.catNode = [self nodeWithClass:[NNKCatNode class] rect:CGRectMake(2000, 0, 1000, 600)];
+    NSArray<NSValue *> *flowersRects = @[[NSValue valueWithCGPoint:CGPointMake(900,  1050)],
+                                         [NSValue valueWithCGPoint:CGPointMake(700,  1946)],
+                                         [NSValue valueWithCGPoint:CGPointMake(1100, 1745)],
+                                         [NSValue valueWithCGPoint:CGPointMake(1900, 1880)],
+                                         [NSValue valueWithCGPoint:CGPointMake(2200, 1813)],
+                                         [NSValue valueWithCGPoint:CGPointMake(1072, 1121)],
+                                         [NSValue valueWithCGPoint:CGPointMake(872,  1171)],
+                                         [NSValue valueWithCGPoint:CGPointMake(564,  1309)],
+                                         [NSValue valueWithCGPoint:CGPointMake(1850, 1186)],
+                                         [NSValue valueWithCGPoint:CGPointMake(1800, 1720)]];
+    self.flowersNode = [[NSMutableArray alloc] init];
+    [flowersRects enumerateObjectsUsingBlock:^(NSValue *obj, NSUInteger idx, BOOL *stop) {
+        CGPoint origin = obj.CGPointValue;
+        NNKFlowerNode *flowerNode = [self nodeWithClass:[NNKFlowerNode class] rect:CGRectMake(origin.x, origin.y, 102, 78)];
+        [flowerNode setType:idx];
+        [self.flowersNode addObject:flowerNode];
+    }];
 }
 
 
